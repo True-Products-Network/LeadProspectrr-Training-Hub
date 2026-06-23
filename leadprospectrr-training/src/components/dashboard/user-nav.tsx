@@ -1,6 +1,5 @@
 'use client'
 
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -38,14 +37,12 @@ export function UserNav({ user }: UserNavProps) {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>
-        <Button variant="ghost" className="relative h-10 w-10 rounded-full">
-          <Avatar className="h-10 w-10">
-            <AvatarImage src={user.avatar_url} alt={user.name || user.email} />
-            <AvatarFallback className="bg-gradient-to-br from-blue-500 to-violet-600 text-white">
-              {initials}
-            </AvatarFallback>
-          </Avatar>
+      <DropdownMenuTrigger asChild>
+        <Button 
+          variant="ghost" 
+          className="relative h-10 w-10 rounded-full bg-gradient-to-br from-blue-500 to-violet-600 text-white font-semibold"
+        >
+          {initials}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56" align="end">
