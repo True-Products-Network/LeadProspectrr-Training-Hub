@@ -21,6 +21,7 @@ import {
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { createClient } from '@/lib/supabase/client'
+import { trackDownload } from '@/app/actions/download'
 
 const fileTypeIcons: Record<string, typeof FileText> = {
   pdf: FileText,
@@ -343,17 +344,25 @@ export function ResourcesLibrary({ resources, downloadedIds: initialDownloadedId
                               </span>
                             </div>
                           </div>
-                          <button 
-                            onClick={() => {
-                              console.log('Button clicked for:', resource.title)
-                              handleDownload(resource)
+                          <form 
+                            action={async () => {
+                              const result = await trackDownload(resource.id, userId, resource.file_url)
+                              if (result.fileUrl) {
+                                window.open(result.fileUrl, '_blank')
+                              }
+                              setDownloadedIds(prev => new Set([...prev, resource.id]))
                             }}
-                            className={`shrink-0 px-4 py-2 rounded-md font-medium flex items-center gap-2 ${isDownloaded ? 'border-2 border-slate-300 text-slate-700' : 'bg-blue-600 text-white hover:bg-blue-700'}`}
-                            type="button"
+                            className="shrink-0"
                           >
-                            <Download className="w-4 h-4" />
-                            {isDownloaded ? 'Download Again' : 'Download'}
-                          </button>
+                            <Button 
+                              type="submit"
+                              variant={isDownloaded ? 'outline' : 'default'}
+                              className="gap-2"
+                            >
+                              <Download className="w-4 h-4" />
+                              {isDownloaded ? 'Download Again' : 'Download'}
+                            </Button>
+                          </form>
                         </div>
                       </div>
                     </div>
