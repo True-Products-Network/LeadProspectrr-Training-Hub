@@ -122,12 +122,8 @@ export function ResourcesLibrary({ resources, downloadedIds: initialDownloadedId
   }, [resources, searchQuery, selectedType, selectedWeek])
 
   const handleDownload = async (resource: Resource) => {
-    // Debug: Show visible feedback
-    const debugDiv = document.createElement('div')
-    debugDiv.style.cssText = 'position:fixed;top:10px;right:10px;background:green;color:white;padding:10px;z-index:9999;border-radius:5px;'
-    debugDiv.textContent = 'Download clicked!'
-    document.body.appendChild(debugDiv)
-    setTimeout(() => debugDiv.remove(), 3000)
+    // Prevent default and stop propagation
+    console.log('Download started for:', resource.title)
     
     // Open file first in same window context to avoid popup blocker
     const newWindow = window.open('', '_blank')
