@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LeadProspectrr Training Library",
-  description: "Master lead generation with our comprehensive 6-week training program. Access guides, templates, and resources all in one secure location.",
+  title: "LeadProspectrr Training Hub",
+  description: "Simple, practical training to help you use LeadProspectrr with confidence. Learn the tools, take action, and grow your business.",
   keywords: ["lead generation", "training", "prospecting", "sales", "marketing"],
 };
 

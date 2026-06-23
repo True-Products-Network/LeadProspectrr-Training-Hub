@@ -19,7 +19,7 @@ export function WelcomeHeader({ user }: WelcomeHeaderProps) {
         {greeting()}, {user.name?.split(' ')[0] || 'there'}!
       </h1>
       <p className="text-blue-100 text-lg">
-        Welcome to your LeadProspectrr Training Library. Continue your journey to mastering lead generation.
+        Welcome to your LeadProspectrr Training Hub. Continue your journey to mastering lead generation.
       </p>
     </div>
   )

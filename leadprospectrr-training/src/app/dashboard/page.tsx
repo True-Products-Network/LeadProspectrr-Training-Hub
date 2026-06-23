@@ -87,8 +87,8 @@ export default async function DashboardPage() {
                 Weekly LeadProspectrr Clinics
               </h2>
               <p className="text-slate-600 mb-4 max-w-2xl">
-                Master the art of lead generation with our comprehensive weekly training program. 
-                New content added regularly as the clinic builds up over time.
+                Simple, practical training to help you use LeadProspectrr with confidence. 
+                Learn the tools, take action, and grow your business.
               </p>
               
               <div className="flex flex-wrap items-center gap-6 text-sm text-slate-600">

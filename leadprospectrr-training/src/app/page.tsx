@@ -44,7 +44,7 @@ export default function HomePage() {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center">
               <span className="text-white font-bold text-lg">L</span>
             </div>
-            <span className="font-bold text-xl">LeadProspectrr</span>
+            <span className="font-bold text-xl">LeadProspectrr Training Hub</span>
           </Link>
           <div className="flex items-center gap-4">
             <Link href="/login">
@@ -69,7 +69,7 @@ export default function HomePage() {
             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 leading-tight">
               Master Lead Generation with{' '}
               <span className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
-                LeadProspectrr
+                LeadProspectrr Training Hub
               </span>
             </h1>
             <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
@@ -180,10 +180,10 @@ export default function HomePage() {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center">
                 <span className="text-white font-bold text-sm">L</span>
               </div>
-              <span className="font-bold text-white">LeadProspectrr</span>
+              <span className="font-bold text-white">LeadProspectrr Training Hub</span>
             </div>
             <p className="text-sm">
-              © {new Date().getFullYear()} LeadProspectrr. All rights reserved.
+              © {new Date().getFullYear()} LeadProspectrr Training Hub. All rights reserved.
             </p>
           </div>
         </div>

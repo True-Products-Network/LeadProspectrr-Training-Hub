@@ -23,7 +23,7 @@ export default async function DashboardLayout({
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center">
                 <span className="text-white font-bold text-lg">L</span>
               </div>
-              <span className="font-bold text-xl hidden sm:block">LeadProspectrr</span>
+              <span className="font-bold text-xl hidden sm:block">LeadProspectrr Training Hub</span>
             </a>
             <DashboardNav />
           </div>

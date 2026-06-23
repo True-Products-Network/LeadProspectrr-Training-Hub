@@ -12,7 +12,7 @@ const navItems = [
     icon: LayoutDashboard,
   },
   {
-    title: 'Training Program',
+    title: 'Weekly LeadProspectrr Clinics',
     href: '/dashboard/training-program',
     icon: BookOpen,
   },

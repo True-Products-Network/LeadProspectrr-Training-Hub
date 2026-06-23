@@ -29,7 +29,7 @@ export function ClinicIntroduction() {
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div className="flex-1">
               <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                Welcome to LeadProspectrr Clinics
+                Welcome to LeadProspectrr Training Hub
               </h1>
               <p className="text-lg text-white/90 max-w-2xl">
                 Simple, practical training to help you use LeadProspectrr with confidence. 
