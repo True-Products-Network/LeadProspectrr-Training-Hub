@@ -31,10 +31,12 @@ export default async function AdminAnalytics() {
     .select('*', { count: 'exact', head: true })
     .eq('is_published', true)
 
-  // Get download stats
-  const { count: totalDownloads } = await supabase
-    .from('resource_downloads')
-    .select('*', { count: 'exact', head: true })
+  // Get download stats - sum of all download counts from resources
+  const { data: downloadData } = await supabase
+    .from('resources')
+    .select('download_count')
+  
+  const totalDownloads = downloadData?.reduce((sum, r) => sum + (r.download_count || 0), 0) || 0
 
   // Get top downloaded resources
   const { data: topResources } = await supabase
