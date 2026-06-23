@@ -1,22 +1,38 @@
 import { createClient } from '@/lib/supabase/server'
-import { getUser } from '@/lib/auth'
 import { redirect } from 'next/navigation'
-import { Plus, Edit, Eye, EyeOff, Trash2 } from 'lucide-react'
+import { Plus, Edit, Eye, EyeOff, Trash2, BookOpen } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 export default async function AdminModulesPage() {
-  const user = await getUser()
+  const supabase = await createClient()
   
-  if (!user || user.role !== 'admin') {
-    redirect('/dashboard')
+  // Check auth
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) {
+    redirect('/login?redirect=/admin/modules')
   }
 
-  const supabase = await createClient()
+  // Check admin role
+  const { data: userData } = await supabase
+    .from('users')
+    .select('role')
+    .eq('id', user.id)
+    .single()
 
-  const { data: modules } = await supabase
+  if (userData?.role !== 'admin') {
+    redirect('/dashboard?error=not_admin')
+  }
+
+  // Fetch modules
+  const { data: modules, error } = await supabase
     .from('training_modules')
-    .select('*, resources(count)')
+    .select('*')
     .order('week_number', { ascending: true })
+
+  if (error) {
+    console.error('Error fetching modules:', error)
+  }
 
   return (
     <div className="space-y-6">
@@ -25,91 +41,87 @@ export default async function AdminModulesPage() {
           <h1 className="text-3xl font-bold text-slate-900">Training Modules</h1>
           <p className="text-slate-600 mt-1">Manage your training weeks and content</p>
         </div>
-        <a href="/admin/modules/new">
+        <Link href="/admin/modules/new">
           <Button className="gap-2">
             <Plus className="w-4 h-4" />
-            Add Module
+            Add Week
           </Button>
-        </a>
+        </Link>
       </div>
 
-      <div className="bg-white rounded-xl border shadow-sm overflow-hidden">
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead className="bg-slate-50 border-b">
-              <tr>
-                <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Week</th>
-                <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Title</th>
-                <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Year/Cycle</th>
-                <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Resources</th>
-                <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Status</th>
-                <th className="px-6 py-4 text-right text-sm font-semibold text-slate-900">Actions</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y">
-              {modules?.map((module: any) => (
-                <tr key={module.id} className="hover:bg-slate-50">
-                  <td className="px-6 py-4">
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-slate-100 text-slate-700 font-semibold text-sm">
-                      {module.week_number}
-                    </span>
-                  </td>
-                  <td className="px-6 py-4">
-                    <div>
-                      <p className="font-medium text-slate-900">{module.title}</p>
-                      <p className="text-sm text-slate-500 truncate max-w-xs">{module.description}</p>
-                    </div>
-                  </td>
-                  <td className="px-6 py-4 text-sm text-slate-600">
-                    {module.year} / Cycle {module.cycle_number}
-                  </td>
-                  <td className="px-6 py-4 text-sm text-slate-600">
-                    {module.resources?.[0]?.count || 0} resources
-                  </td>
-                  <td className="px-6 py-4">
-                    <span className={`inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium ${
-                      module.is_active
-                        ? 'bg-emerald-100 text-emerald-700'
-                        : 'bg-slate-100 text-slate-700'
-                    }`}>
-                      {module.is_active ? (
-                        <><Eye className="w-3 h-3" /> Active</>
-                      ) : (
-                        <><EyeOff className="w-3 h-3" /> Inactive</>
-                      )}
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 text-right">
-                    <div className="flex items-center justify-end gap-2">
-                      <a
-                        href={`/admin/modules/${module.id}/edit`}
-                        className="p-2 text-slate-600 hover:text-violet-600 hover:bg-violet-50 rounded-lg transition-colors"
-                      >
-                        <Edit className="w-4 h-4" />
-                      </a>
-                      <form action={`/api/admin/modules/${module.id}/delete`} method="POST" className="inline">
-                        <button
-                          type="submit"
-                          className="p-2 text-slate-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-                          onClick={(e) => {
-                            if (!confirm('Are you sure you want to delete this module?')) {
-                              e.preventDefault()
-                            }
-                          }}
-                        >
-                          <Trash2 className="w-4 h-4" />
-                        </button>
-                      </form>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      {error && (
+        <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700">
+          Error loading modules: {error.message}
         </div>
-        {(!modules || modules.length === 0) && (
-          <div className="text-center py-12">
-            <p className="text-slate-500">No modules found. Create your first module to get started.</p>
+      )}
+
+      <div className="grid gap-4">
+        {modules?.map((module) => (
+          <div 
+            key={module.id} 
+            className="bg-white rounded-xl border shadow-sm p-6 flex items-center gap-4 hover:shadow-md transition-shadow"
+          >
+            <div 
+              className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold text-white"
+              style={{ 
+                backgroundColor: 
+                  module.color === 'emerald' ? '#10b981' :
+                  module.color === 'blue' ? '#3b82f6' :
+                  module.color === 'violet' ? '#8b5cf6' :
+                  module.color === 'amber' ? '#f59e0b' :
+                  module.color === 'rose' ? '#f43f5e' :
+                  module.color === 'cyan' ? '#06b6d4' :
+                  module.color === 'indigo' ? '#6366f1' :
+                  module.color === 'orange' ? '#f97316' :
+                  '#6b7280'
+              }}
+            >
+              {module.week_number}
+            </div>
+            
+            <div className="flex-1 min-w-0">
+              <h3 className="text-lg font-semibold text-slate-900">{module.title}</h3>
+              <p className="text-slate-500 text-sm truncate">{module.description || 'No description'}</p>
+              <div className="flex items-center gap-4 mt-2 text-sm text-slate-400">
+                <span>{module.year} / Cycle {module.cycle_number}</span>
+                <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium ${
+                  module.is_active
+                    ? 'bg-emerald-100 text-emerald-700'
+                    : 'bg-slate-100 text-slate-700'
+                }`}>
+                  {module.is_active ? (
+                    <><Eye className="w-3 h-3" /> Active</>
+                  ) : (
+                    <><EyeOff className="w-3 h-3" /> Inactive</>
+                  )}
+                </span>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Link href={`/admin/modules/${module.id}/edit`}>
+                <Button variant="outline" size="sm" className="gap-1">
+                  <Edit className="w-4 h-4" />
+                  Edit
+                </Button>
+              </Link>
+            </div>
+          </div>
+        ))}
+        
+        {(!modules || modules.length === 0) && !error && (
+          <div className="bg-white rounded-xl border shadow-sm p-12 text-center">
+            <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <BookOpen className="w-8 h-8 text-slate-400" />
+            </div>
+            <h3 className="text-lg font-semibold text-slate-900 mb-2">No modules yet</h3>
+            <p className="text-slate-600 mb-4">Create your first training week to get started</p>
+            <Link href="/admin/modules/new">
+              <Button className="gap-2">
+                <Plus className="w-4 h-4" />
+                Add First Week
+              </Button>
+            </Link>
           </div>
         )}
       </div>

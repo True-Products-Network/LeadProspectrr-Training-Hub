@@ -1,7 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import { AdminNav } from '@/components/admin/admin-nav'
-import { AdminUserNav } from '@/components/admin/admin-user-nav'
 
 export default async function AdminLayout({
   children,
@@ -17,13 +16,27 @@ export default async function AdminLayout({
   }
 
   // Check if user exists in public.users table
-  const { data: userData } = await supabase
+  const { data: userData, error } = await supabase
     .from('users')
     .select('role, name, email')
     .eq('id', user.id)
     .single()
 
-  // Check role - must be admin
+  if (error) {
+    console.error('Error fetching user data:', error)
+    // If we can't fetch user data, still check if they should be admin
+    // by trying a simpler query
+    const { data: simpleCheck } = await supabase
+      .from('users')
+      .select('role')
+      .eq('id', user.id)
+      .maybeSingle()
+    
+    if (simpleCheck?.role !== 'admin') {
+      redirect('/dashboard?error=not_admin')
+    }
+  }
+
   if (userData?.role !== 'admin') {
     redirect('/dashboard?error=not_admin')
   }
@@ -32,10 +45,6 @@ export default async function AdminLayout({
     <div className="min-h-screen bg-slate-50">
       <AdminNav />
       <main className="lg:ml-64 min-h-screen">
-        {/* Top bar with user nav */}
-        <div className="h-16 border-b bg-white flex items-center justify-end px-6 lg:px-8">
-          <AdminUserNav user={userData || { email: user.email }} />
-        </div>
         <div className="p-6 lg:p-8">
           {children}
         </div>
