@@ -11,6 +11,7 @@ import {
   Settings,
   BarChart3,
   ChevronLeft,
+  Activity,
 } from 'lucide-react'
 
 const navItems = [
@@ -38,6 +39,11 @@ const navItems = [
     title: 'Analytics',
     href: '/admin/analytics',
     icon: BarChart3,
+  },
+  {
+    title: 'System Status',
+    href: '/status',
+    icon: Activity,
   },
 ]
 
