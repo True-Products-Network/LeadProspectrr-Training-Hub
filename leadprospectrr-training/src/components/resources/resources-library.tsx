@@ -122,27 +122,60 @@ export function ResourcesLibrary({ resources, downloadedIds: initialDownloadedId
   }, [resources, searchQuery, selectedType, selectedWeek])
 
   const handleDownload = async (resource: Resource) => {
-    // Track download
-    await supabase
-      .from('resource_downloads')
-      .upsert({
-        user_id: userId,
-        resource_id: resource.id,
-      }, {
-        onConflict: 'user_id,resource_id'
-      })
+    // Debug: log to console
+    if (typeof window !== 'undefined') {
+      console.log('Download handler called for:', resource.title, resource.id)
+    }
+    
+    // Open file first in same window context to avoid popup blocker
+    const newWindow = window.open('', '_blank')
+    
+    try {
+      // Track download - insert and ignore duplicates
+      console.log('Attempting to insert into resource_downloads...')
+      const { data: insertData, error: downloadError } = await supabase
+        .from('resource_downloads')
+        .insert({
+          user_id: userId,
+          resource_id: resource.id,
+        })
+        .select()
+      
+      console.log('Insert result:', { data: insertData, error: downloadError })
+      
+      // Only log real errors, ignore duplicates
+      if (downloadError && !downloadError.message?.includes('duplicate') && !downloadError.code?.includes('23505')) {
+        console.error('Download tracking error:', downloadError)
+      }
 
-    // Update local state
-    setDownloadedIds(prev => new Set([...prev, resource.id]))
+      // Update local state
+      setDownloadedIds(prev => new Set([...prev, resource.id]))
 
-    // Increment download count
-    await supabase
-      .from('resources')
-      .update({ download_count: resource.download_count + 1 })
-      .eq('id', resource.id)
+      // Get current download count and increment
+      const { data: currentResource } = await supabase
+        .from('resources')
+        .select('download_count')
+        .eq('id', resource.id)
+        .single()
+      
+      if (currentResource) {
+        await supabase
+          .from('resources')
+          .update({ download_count: (currentResource.download_count || 0) + 1 })
+          .eq('id', resource.id)
+      }
 
-    // Open file
-    window.open(resource.file_url, '_blank')
+      // Now set the URL on the already opened window
+      if (newWindow) {
+        newWindow.location.href = resource.file_url
+      }
+    } catch (error) {
+      console.error('Download error:', error)
+      // Still open the file even if tracking fails
+      if (newWindow) {
+        newWindow.location.href = resource.file_url
+      }
+    }
   }
 
   const formatFileSize = (bytes?: number) => {

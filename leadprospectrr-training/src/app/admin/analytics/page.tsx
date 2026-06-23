@@ -1,4 +1,4 @@
-import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { 
   TrendingUp, 
@@ -9,7 +9,7 @@ import {
 } from 'lucide-react'
 
 export default async function AdminAnalytics() {
-  const supabase = await createClient()
+  const supabase = createAdminClient()
 
   // Get user stats
   const { count: totalUsers } = await supabase
