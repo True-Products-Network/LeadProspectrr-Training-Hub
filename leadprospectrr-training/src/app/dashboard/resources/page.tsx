@@ -30,7 +30,7 @@ export default async function ResourcesPage() {
   return (
     <ResourcesLibrary 
       resources={resources || []} 
-      downloadedIds={downloadedIds}
+      downloadedIds={Array.from(downloadedIds)}
       userId={user.id}
     />
   )

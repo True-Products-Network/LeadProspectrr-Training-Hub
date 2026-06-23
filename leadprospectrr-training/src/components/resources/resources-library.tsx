@@ -78,7 +78,7 @@ interface Resource {
 
 interface ResourcesLibraryProps {
   resources: Resource[]
-  downloadedIds: Set<string>
+  downloadedIds: string[]
   userId: string
 }
 
@@ -86,7 +86,7 @@ export function ResourcesLibrary({ resources, downloadedIds: initialDownloadedId
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedType, setSelectedType] = useState<string | null>(null)
   const [selectedWeek, setSelectedWeek] = useState<number | null>(null)
-  const [downloadedIds, setDownloadedIds] = useState<Set<string>>(initialDownloadedIds)
+  const [downloadedIds, setDownloadedIds] = useState<Set<string>>(new Set(initialDownloadedIds))
   const supabase = createClient()
 
   const fileTypes = useMemo(() => {
