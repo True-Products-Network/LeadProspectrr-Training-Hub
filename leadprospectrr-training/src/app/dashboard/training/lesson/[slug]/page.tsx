@@ -10,6 +10,50 @@ interface LessonPageProps {
   }>
 }
 
+// Learning objectives for each lesson
+const lessonObjectives: Record<string, string[]> = {
+  'why-blog-posts-matter': [
+    'Understand the value of blog content for your business',
+    'Identify how blogs support marketing and trust-building',
+    'Recognize the role of blog posts in your follow-up strategy'
+  ],
+  'planning-your-blog-post': [
+    'Plan your blog post before creating it',
+    'Use a simple structure for organizing content',
+    'Write for your target audience'
+  ],
+  'blog-settings-overview': [
+    'Find the blog feature in LeadProspectrr',
+    'Check blog settings before creating a post',
+    'Set up blog sites, categories, and authors'
+  ],
+  'creating-a-new-blog-post': [
+    'Create a new blog post',
+    'Format content using headings and paragraphs',
+    'Keep content readable and organized'
+  ],
+  'adding-images-and-links': [
+    'Add a featured image to your post',
+    'Include inline images in your content',
+    'Add links to guide readers to next steps'
+  ],
+  'seo-basics': [
+    'Complete basic SEO settings',
+    'Write effective meta descriptions',
+    'Create clean URL slugs'
+  ],
+  'preview-and-publish': [
+    'Preview your post before publishing',
+    'Check for errors and formatting issues',
+    'Publish or schedule your blog post'
+  ],
+  'sharing-your-blog-post': [
+    'Share your published blog post',
+    'Use blog content in your marketing',
+    'Track the results of your posts'
+  ]
+}
+
 export default async function LessonPage({ params }: LessonPageProps) {
   const user = await getUser()
   
@@ -68,6 +112,13 @@ export default async function LessonPage({ params }: LessonPageProps) {
     .eq('is_published', true)
     .order('created_at', { ascending: false })
 
+  // Fetch quiz questions for this lesson
+  const { data: quizQuestions } = await supabase
+    .from('lesson_quizzes')
+    .select('*')
+    .eq('lesson_id', lesson.id)
+    .order('sort_order', { ascending: true })
+
   // Handle lesson completion
   async function handleComplete() {
     'use server'
@@ -84,6 +135,8 @@ export default async function LessonPage({ params }: LessonPageProps) {
       nextLesson={nextLesson}
       prevLesson={prevLesson}
       resources={resources || []}
+      quizQuestions={quizQuestions || []}
+      learningObjectives={lessonObjectives[slug] || []}
       onComplete={handleComplete}
     />
   )

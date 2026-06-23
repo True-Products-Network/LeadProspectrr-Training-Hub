@@ -15,16 +15,23 @@ import {
   Trophy,
   ChevronRight,
   ChevronLeft,
-  Star,
   Target,
   Lightbulb,
   FileText,
   Download,
-  Lock,
-  Unlock
+  CheckSquare,
+  AlertCircle
 } from 'lucide-react'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
+
+interface QuizQuestion {
+  id: string
+  question: string
+  options: string[]
+  correct_answer: string
+  explanation: string
+}
 
 interface LessonLayoutProps {
   lesson: {
@@ -57,6 +64,8 @@ interface LessonLayoutProps {
     file_type: string
     download_count: number
   }>
+  quizQuestions?: QuizQuestion[]
+  learningObjectives?: string[]
   onComplete: () => void
 }
 
@@ -68,20 +77,34 @@ export function LessonLayout({
   nextLesson,
   prevLesson,
   resources,
+  quizQuestions = [],
+  learningObjectives = [],
   onComplete
 }: LessonLayoutProps) {
   const [activeSection, setActiveSection] = useState<'content' | 'quiz' | 'resources'>('content')
-  const [quizAnswers, setQuizAnswers] = useState<Record<number, string>>({})
+  const [quizAnswers, setQuizAnswers] = useState<Record<string, string>>({})
+  const [quizResults, setQuizResults] = useState<Record<string, boolean>>({})
   const [showQuizResults, setShowQuizResults] = useState(false)
-  const [completionChecklist, setCompletionChecklist] = useState<Record<string, boolean>>({})
+  const [objectivesChecked, setObjectivesChecked] = useState<Record<number, boolean>>({})
 
   const isCompleted = progress?.status === 'completed'
   const progressPercent = (lesson.lesson_number / totalLessons) * 100
 
+  const handleQuizSubmit = () => {
+    const results: Record<string, boolean> = {}
+    quizQuestions.forEach(q => {
+      results[q.id] = quizAnswers[q.id] === q.correct_answer
+    })
+    setQuizResults(results)
+    setShowQuizResults(true)
+  }
+
+  const allCorrect = quizQuestions.length > 0 && quizQuestions.every(q => quizResults[q.id])
+
   return (
     <div className="max-w-5xl mx-auto space-y-6">
       {/* Lesson Header */}
-      <div className={`bg-gradient-to-r from-${module.color}-500 to-${module.color}-600 rounded-3xl p-8 text-white`}>
+      <div className="bg-gradient-to-br from-blue-600 via-violet-600 to-purple-600 rounded-3xl p-8 text-white">
         <div className="flex items-center gap-2 mb-4">
           <Badge className="bg-white/20 text-white">
             Week {module.week_number} • Lesson {lesson.lesson_number} of {totalLessons}
@@ -112,6 +135,40 @@ export function LessonLayout({
         </div>
       </div>
 
+      {/* Learning Objectives - Interactive Checklist */}
+      {learningObjectives.length > 0 && (
+        <Card className="border-2 border-blue-200 bg-gradient-to-r from-blue-50 to-violet-50">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2 text-lg">
+              <Target className="w-5 h-5 text-blue-600" />
+              Learning Objectives
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="p-6">
+            <p className="text-slate-600 mb-4">By the end of this lesson, you will be able to:</p>
+            <div className="space-y-3">
+              {learningObjectives.map((objective, index) => (
+                <div key={index} className="flex items-start gap-3 p-3 bg-white rounded-lg shadow-sm">
+                  <Checkbox
+                    checked={objectivesChecked[index] || false}
+                    onCheckedChange={(checked) => {
+                      setObjectivesChecked(prev => ({
+                        ...prev,
+                        [index]: checked as boolean
+                      }))
+                    }}
+                  />
+                  <span className={cn(
+                    "text-slate-700 transition-all",
+                    objectivesChecked[index] && "line-through text-slate-400"
+                  )}>{objective}</span>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
       {/* Navigation Tabs */}
       <div className="flex gap-2 border-b">
         <button
@@ -137,6 +194,9 @@ export function LessonLayout({
         >
           <Target className="w-4 h-4 inline mr-2" />
           Knowledge Check
+          {quizQuestions.length > 0 && (
+            <span className="ml-2 text-xs bg-slate-200 px-2 py-0.5 rounded-full">{quizQuestions.length}</span>
+          )}
         </button>
         {resources && resources.length > 0 && (
           <button
@@ -157,6 +217,7 @@ export function LessonLayout({
       {/* Content Section */}
       {activeSection === 'content' && (
         <div className="space-y-6">
+          {/* Main Content */}
           <Card>
             <CardContent className="p-8">
               <div 
@@ -166,49 +227,16 @@ export function LessonLayout({
             </CardContent>
           </Card>
 
-          {/* Completion Checklist */}
-          <Card className="border-2 border-blue-200">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-blue-600" />
-                Lesson Completion Checklist
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="p-6">
-              <div className="space-y-3">
-                {[
-                  'I understand why blog posts matter for my business',
-                  'I can explain the benefits of blogging to others',
-                  'I know how blog posts support email marketing',
-                  'I understand that blog content helps build trust'
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <Checkbox
-                      checked={completionChecklist[index] || false}
-                      onCheckedChange={(checked) => {
-                        setCompletionChecklist(prev => ({
-                          ...prev,
-                          [index]: checked as boolean
-                        }))
-                      }}
-                    />
-                    <span className="text-slate-700">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-
           {/* Mark Complete Button */}
           {!isCompleted ? (
-            <Card className="bg-gradient-to-r from-blue-50 to-violet-50 border-dashed">
+            <Card className="bg-gradient-to-r from-blue-50 to-violet-50 border-dashed border-2">
               <CardContent className="p-8 text-center">
                 <Trophy className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
                   Ready to complete this lesson?
                 </h3>
                 <p className="text-slate-600 mb-6">
-                  Mark this lesson as complete to earn {lesson.points} points and continue to the knowledge check.
+                  Mark this lesson as complete to earn {lesson.points} points and unlock the knowledge check.
                 </p>
                 <Button 
                   onClick={onComplete}
@@ -262,43 +290,131 @@ export function LessonLayout({
               </CardTitle>
             </CardHeader>
             <CardContent className="p-6">
-              <p className="text-slate-600 mb-6">
-                Test your understanding with these questions. You need to answer all correctly to unlock the next lesson.
-              </p>
-              
-              <div className="space-y-6">
-                {/* Quiz questions would be dynamically loaded here */}
-                <div className="p-4 bg-slate-50 rounded-lg">
-                  <p className="font-medium mb-3">1. What is the main purpose of a blog post?</p>
-                  <div className="space-y-2">
-                    {[
-                      'To sell products directly',
-                      'To help readers understand, solve, or take the next step',
-                      'To replace your website',
-                      'To avoid talking to customers'
-                    ].map((answer, idx) => (
-                      <label key={idx} className="flex items-center gap-3 p-3 bg-white rounded-lg cursor-pointer hover:bg-slate-50">
-                        <input
-                          type="radio"
-                          name="q1"
-                          value={answer}
-                          checked={quizAnswers[1] === answer}
-                          onChange={() => setQuizAnswers(prev => ({ ...prev, 1: answer }))}
-                          className="w-4 h-4 text-blue-600"
-                        />
-                        <span>{answer}</span>
-                      </label>
-                    ))}
+              {!isCompleted ? (
+                <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">
+                  <div className="flex items-center gap-2 text-amber-800">
+                    <AlertCircle className="w-5 h-5" />
+                    <span className="font-medium">Complete the lesson first to unlock the quiz!</span>
                   </div>
                 </div>
-              </div>
+              ) : (
+                <p className="text-slate-600 mb-6">
+                  Test your understanding with these questions. Answer all correctly to fully complete this lesson.
+                </p>
+              )}
+              
+              {quizQuestions.length === 0 ? (
+                <div className="text-center py-8 text-slate-500">
+                  No quiz questions available for this lesson.
+                </div>
+              ) : (
+                <div className="space-y-6">
+                  {quizQuestions.map((q, qIndex) => (
+                    <div key={q.id} className={cn(
+                      "p-4 rounded-lg border",
+                      showQuizResults 
+                        ? quizResults[q.id] 
+                          ? "bg-green-50 border-green-200" 
+                          : "bg-red-50 border-red-200"
+                        : "bg-slate-50 border-slate-200"
+                    )}>
+                      <p className="font-medium mb-3 flex items-start gap-2">
+                        <span className="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm flex-shrink-0">
+                          {qIndex + 1}
+                        </span>
+                        {q.question}
+                      </p>
+                      <div className="space-y-2 ml-8">
+                        {q.options.map((option, idx) => (
+                          <label key={idx} className={cn(
+                            "flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-colors",
+                            showQuizResults && option === q.correct_answer
+                              ? "bg-green-100 border border-green-300"
+                              : showQuizResults && quizAnswers[q.id] === option && option !== q.correct_answer
+                                ? "bg-red-100 border border-red-300"
+                                : "bg-white hover:bg-slate-50 border border-transparent"
+                          )}>
+                            <input
+                              type="radio"
+                              name={q.id}
+                              value={option}
+                              checked={quizAnswers[q.id] === option}
+                              onChange={() => setQuizAnswers(prev => ({ ...prev, [q.id]: option }))}
+                              disabled={showQuizResults || !isCompleted}
+                              className="w-4 h-4 text-blue-600"
+                            />
+                            <span>{option}</span>
+                            {showQuizResults && option === q.correct_answer && (
+                              <CheckCircle2 className="w-5 h-5 text-green-600 ml-auto" />
+                            )}
+                          </label>
+                        ))}
+                      </div>
+                      {showQuizResults && (
+                        <div className={cn(
+                          "mt-3 ml-8 p-3 rounded-lg text-sm",
+                          quizResults[q.id] ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
+                        )}>
+                          {quizResults[q.id] ? (
+                            <span className="flex items-center gap-2">
+                              <CheckCircle2 className="w-4 h-4" />
+                              Correct! {q.explanation}
+                            </span>
+                          ) : (
+                            <span>
+                              <strong>Incorrect.</strong> {q.explanation}
+                            </span>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  ))}
 
-              <Button 
-                className="mt-6 w-full"
-                onClick={() => setShowQuizResults(true)}
-              >
-                Check Answers
-              </Button>
+                  {!showQuizResults && isCompleted && (
+                    <Button 
+                      className="w-full"
+                      onClick={handleQuizSubmit}
+                      disabled={Object.keys(quizAnswers).length !== quizQuestions.length}
+                    >
+                      Check Answers
+                    </Button>
+                  )}
+
+                  {showQuizResults && (
+                    <div className={cn(
+                      "p-4 rounded-lg text-center",
+                      allCorrect ? "bg-green-100 text-green-800" : "bg-amber-100 text-amber-800"
+                    )}>
+                      {allCorrect ? (
+                        <>
+                          <CheckCircle2 className="w-8 h-8 mx-auto mb-2" />
+                          <p className="font-bold">Perfect! You got all questions correct!</p>
+                        </>
+                      ) : (
+                        <>
+                          <AlertCircle className="w-8 h-8 mx-auto mb-2" />
+                          <p className="font-bold">You got {Object.values(quizResults).filter(Boolean).length} out of {quizQuestions.length} correct.</p>
+                          <p className="text-sm mt-1">Review the explanations and try again.</p>
+                        </>
+                      )}
+                    </div>
+                  )}
+
+                  {showQuizResults && !allCorrect && (
+                    <Button 
+                      variant="outline"
+                      className="w-full"
+                      onClick={() => {
+                        setShowQuizResults(false)
+                        setQuizAnswers({})
+                        setQuizResults({})
+                      }}
+                    >
+                      Try Again
+                    </Button>
+                  )}
+                </div>
+              )}
             </CardContent>
           </Card>
         </div>
@@ -351,7 +467,7 @@ export function LessonLayout({
           <Link href={`/dashboard/training/lesson/${prevLesson.slug}`}>
             <Button variant="outline">
               <ChevronLeft className="w-4 h-4 mr-2" />
-              Previous: {prevLesson.title}
+              Previous
             </Button>
           </Link>
         ) : (
@@ -364,7 +480,7 @@ export function LessonLayout({
         {nextLesson ? (
           <Link href={`/dashboard/training/lesson/${nextLesson.slug}`}>
             <Button variant="outline">
-              Next: {nextLesson.title}
+              Next
               <ChevronRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>
