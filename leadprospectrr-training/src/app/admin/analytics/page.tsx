@@ -31,12 +31,17 @@ export default async function AdminAnalytics() {
     .select('*', { count: 'exact', head: true })
     .eq('is_published', true)
 
-  // Get download stats - sum of all download counts from resources
+  // Get total downloads - sum of all download counts from resources (includes repeats)
   const { data: downloadData } = await supabase
     .from('resources')
     .select('download_count')
   
   const totalDownloads = downloadData?.reduce((sum, r) => sum + (r.download_count || 0), 0) || 0
+
+  // Get unique downloads - count from resource_downloads table (unique per user per resource)
+  const { count: uniqueDownloads } = await supabase
+    .from('resource_downloads')
+    .select('*', { count: 'exact', head: true })
 
   // Get top downloaded resources
   const { data: topResources } = await supabase
@@ -129,12 +134,12 @@ export default async function AdminAnalytics() {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
-              {totalUsers && totalDownloads 
-                ? Math.round((totalDownloads / totalUsers) * 10) / 10 
+              {totalUsers && uniqueDownloads 
+                ? Math.round((uniqueDownloads / totalUsers) * 10) / 10 
                 : 0}
             </div>
             <p className="text-xs text-slate-500 mt-1">
-              Downloads per user
+              Unique downloads per user
             </p>
           </CardContent>
         </Card>
