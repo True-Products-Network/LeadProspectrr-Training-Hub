@@ -223,50 +223,142 @@ export default async function TrainingProgramPage() {
         </CardContent>
       </Card>
 
-      {/* What You Get - Updated to match image */}
-      <div>
-        <h2 className="text-2xl font-bold text-slate-900 mb-6">What You Get</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Template */}
-          <Card className="bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
-            <CardContent className="p-8 text-center">
-              <div className="w-20 h-20 rounded-2xl bg-white shadow-sm flex items-center justify-center mx-auto mb-6">
-                <LayoutTemplate className="w-10 h-10 text-blue-600" />
+      {/* The 4 Steps - What You Get */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Step 1 */}
+        <Card className="border-l-4 border-l-blue-500">
+          <CardContent className="p-6">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
+                <BookOpen className="w-6 h-6 text-blue-600" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">TEMPLATE</h3>
-              <p className="text-slate-600">
-                Ready-to-use templates you can customize for your business
-              </p>
-            </CardContent>
-          </Card>
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-1">1. Understand the Basics</h3>
+                <p className="text-sm text-slate-600">
+                  Learn what the tools do and when to use them
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
 
-          {/* Cheat Sheet */}
-          <Card className="bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200">
-            <CardContent className="p-8 text-center">
-              <div className="w-20 h-20 rounded-2xl bg-white shadow-sm flex items-center justify-center mx-auto mb-6">
-                <FileText className="w-10 h-10 text-amber-600" />
+        {/* Step 2 */}
+        <Card className="border-l-4 border-l-violet-500">
+          <CardContent className="p-6">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-full bg-violet-100 flex items-center justify-center shrink-0">
+                <Zap className="w-6 h-6 text-violet-600" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">CHEAT SHEET</h3>
-              <p className="text-slate-600">
-                Quick reference guides for fast access to key information
-              </p>
-            </CardContent>
-          </Card>
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-1">2. Take Action Faster</h3>
+                <p className="text-sm text-slate-600">
+                  Work smarter with simple steps you can use right away
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
 
-          {/* Guide */}
-          <Card className="bg-gradient-to-br from-green-50 to-green-100 border-green-200">
-            <CardContent className="p-8 text-center">
-              <div className="w-20 h-20 rounded-2xl bg-white shadow-sm flex items-center justify-center mx-auto mb-6">
-                <BookOpen className="w-10 h-10 text-green-600" />
+        {/* Step 3 */}
+        <Card className="border-l-4 border-l-purple-500">
+          <CardContent className="p-6">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center shrink-0">
+                <LayoutTemplate className="w-6 h-6 text-purple-600" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">GUIDE</h3>
-              <p className="text-slate-600">
-                Step-by-step instructions to help you learn and apply
-              </p>
-            </CardContent>
-          </Card>
-        </div>
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-1">3. Use Ready-Made Tools</h3>
+                <p className="text-sm text-slate-600">
+                  Templates, cheat sheets, and guides to save time
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Step 4 */}
+        <Card className="border-l-4 border-l-emerald-500">
+          <CardContent className="p-6">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
+                <BarChart3 className="w-6 h-6 text-emerald-600" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-1">4. Grow with Confidence</h3>
+                <p className="text-sm text-slate-600">
+                  Build better systems, follow-up, and results
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </div>
+
+      {/* What You Will Find in Each Clinic */}
+      <Card>
+        <CardContent className="p-8">
+          <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+            <Award className="w-5 h-5 text-blue-600" />
+            What You Will Find in Each Clinic
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center shrink-0">
+                <LayoutTemplate className="w-5 h-5 text-blue-600" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-slate-900">Templates</h4>
+                <p className="text-sm text-slate-600">
+                  Ready-to-use templates you can customize for your business
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center shrink-0">
+                <FileText className="w-5 h-5 text-amber-600" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-slate-900">Cheat Sheets</h4>
+                <p className="text-sm text-slate-600">
+                  Quick reference guides for fast access to key information
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center shrink-0">
+                <BookOpen className="w-5 h-5 text-green-600" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-slate-900">Guides</h4>
+                <p className="text-sm text-slate-600">
+                  Step-by-step instructions to help you learn and apply
+                </p>
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Summary Card */}
+      <Card className="bg-slate-50 border-dashed">
+        <CardContent className="p-8">
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center shrink-0">
+              <Target className="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-900 mb-1">
+                Each clinic helps you learn, apply, and move forward
+              </h3>
+              <p className="text-slate-600">
+                One step at a time. Track your progress, earn points, and build your skills.
+              </p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
 
       {/* Program Outline - Color Cards */}
       <div>
