@@ -1,32 +1,73 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
 import { Switch } from '@/components/ui/switch'
 import { Bell, Lock, Eye, Moon } from 'lucide-react'
+import { getUserSettings, saveUserSettings, type UserSettings } from '@/app/actions/settings'
+import { createClient } from '@/lib/supabase/client'
 
 export default function SettingsPage() {
-  const [settings, setSettings] = useState({
-    emailNotifications: false,
-    progressReminders: false,
-    profileVisibility: true,
-    activityStatus: true,
-    darkMode: false,
+  const [settings, setSettings] = useState<UserSettings>({
+    email_notifications: false,
+    progress_reminders: false,
+    profile_visibility: true,
+    activity_status: true,
+    dark_mode: false,
   })
+  const [userId, setUserId] = useState<string | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [saving, setSaving] = useState(false)
+  const supabase = createClient()
 
-  const handleToggle = (key: keyof typeof settings) => {
+  // Load user and settings on mount
+  useEffect(() => {
+    async function loadSettings() {
+      const { data: { user } } = await supabase.auth.getUser()
+      if (user) {
+        setUserId(user.id)
+        const savedSettings = await getUserSettings(user.id)
+        if (savedSettings) {
+          setSettings(savedSettings)
+        }
+      }
+      setLoading(false)
+    }
+    loadSettings()
+  }, [])
+
+  const handleToggle = (key: keyof UserSettings) => {
     setSettings(prev => ({
       ...prev,
       [key]: !prev[key]
     }))
   }
 
-  const handleSave = () => {
-    // In a real app, this would save to the database
-    // For now, we'll just show an alert
-    alert('Settings saved! (Note: Settings are currently stored locally only)')
+  const handleSave = async () => {
+    if (!userId) return
+    
+    setSaving(true)
+    const success = await saveUserSettings(userId, settings)
+    setSaving(false)
+    
+    if (success) {
+      alert('Settings saved successfully!')
+    } else {
+      alert('Failed to save settings. Please try again.')
+    }
+  }
+
+  if (loading) {
+    return (
+      <div className="space-y-6">
+        <div>
+          <h1 className="text-3xl font-bold text-slate-900">Settings</h1>
+          <p className="text-slate-600 mt-1">Loading your preferences...</p>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -53,8 +94,8 @@ export default function SettingsPage() {
               </div>
               <Switch 
                 id="email-notifications" 
-                checked={settings.emailNotifications}
-                onCheckedChange={() => handleToggle('emailNotifications')}
+                checked={settings.email_notifications}
+                onCheckedChange={() => handleToggle('email_notifications')}
               />
             </div>
             <div className="flex items-center justify-between">
@@ -64,8 +105,8 @@ export default function SettingsPage() {
               </div>
               <Switch 
                 id="progress-reminders" 
-                checked={settings.progressReminders}
-                onCheckedChange={() => handleToggle('progressReminders')}
+                checked={settings.progress_reminders}
+                onCheckedChange={() => handleToggle('progress_reminders')}
               />
             </div>
           </CardContent>
@@ -87,8 +128,8 @@ export default function SettingsPage() {
               </div>
               <Switch 
                 id="profile-visibility" 
-                checked={settings.profileVisibility}
-                onCheckedChange={() => handleToggle('profileVisibility')}
+                checked={settings.profile_visibility}
+                onCheckedChange={() => handleToggle('profile_visibility')}
               />
             </div>
             <div className="flex items-center justify-between">
@@ -98,8 +139,8 @@ export default function SettingsPage() {
               </div>
               <Switch 
                 id="activity-status" 
-                checked={settings.activityStatus}
-                onCheckedChange={() => handleToggle('activityStatus')}
+                checked={settings.activity_status}
+                onCheckedChange={() => handleToggle('activity_status')}
               />
             </div>
           </CardContent>
@@ -121,8 +162,8 @@ export default function SettingsPage() {
               </div>
               <Switch 
                 id="dark-mode" 
-                checked={settings.darkMode}
-                onCheckedChange={() => handleToggle('darkMode')}
+                checked={settings.dark_mode}
+                onCheckedChange={() => handleToggle('dark_mode')}
               />
             </div>
           </CardContent>
@@ -156,7 +197,9 @@ export default function SettingsPage() {
       </div>
 
       <div className="flex justify-end">
-        <Button onClick={handleSave}>Save Settings</Button>
+        <Button onClick={handleSave} disabled={saving}>
+          {saving ? 'Saving...' : 'Save Settings'}
+        </Button>
       </div>
     </div>
   )
