@@ -3,18 +3,18 @@
 
 DO $$
 DECLARE
-  module_id UUID;
+  v_module_id UUID;
   lesson1_id UUID;
 BEGIN
   -- Get Module 1
-  SELECT id INTO module_id FROM public.training_modules WHERE week_number = 1 LIMIT 1;
+  SELECT id INTO v_module_id FROM public.training_modules WHERE week_number = 1 LIMIT 1;
   
   -- Get Lesson 1
-  SELECT id INTO lesson1_id FROM public.lessons WHERE slug = 'why-blog-posts-matter' AND module_id = module_id;
+  SELECT id INTO lesson1_id FROM public.lessons WHERE slug = 'why-blog-posts-matter' AND module_id = v_module_id;
   
   IF lesson1_id IS NOT NULL THEN
-    UPDATE public.lessons SET
-      content = '<div class="space-y-8">
+    UPDATE public.lessons 
+    SET content = '<div class="space-y-8">
   
   <!-- Lesson Goal -->
   <div class="bg-gradient-to-r from-blue-600 to-violet-600 rounded-2xl p-6 text-white shadow-lg">
