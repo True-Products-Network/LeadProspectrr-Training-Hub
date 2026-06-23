@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { getUser } from '@/lib/auth'
 import { redirect } from 'next/navigation'
-import { getModuleLessons, getModuleLessonProgress } from '@/app/actions/lessons'
+import { getModuleLessons, getModuleLessonProgress, getUserLessonProgress } from '@/app/actions/lessons'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Progress } from '@/components/ui/progress'
@@ -46,6 +46,14 @@ export default async function ModulePage({ params }: ModulePageProps) {
 
   // Fetch lessons for this module
   const lessons = await getModuleLessons(params.moduleId)
+  
+  // Fetch user's progress for each lesson
+  const lessonsWithProgress = await Promise.all(
+    lessons.map(async (lesson) => {
+      const userProgress = await getUserLessonProgress(user.id, lesson.id)
+      return { ...lesson, userProgress }
+    })
+  )
   
   // Fetch user's progress
   const progress = await getModuleLessonProgress(user.id, params.moduleId)
@@ -116,8 +124,8 @@ export default async function ModulePage({ params }: ModulePageProps) {
           </Card>
         ) : (
           <div className="space-y-4">
-            {lessons.map((lesson, index) => {
-              const isLocked = index > 0 && lessons[index - 1]?.userProgress?.status !== 'completed'
+            {lessonsWithProgress.map((lesson, index) => {
+              const isLocked = index > 0 && lessonsWithProgress[index - 1]?.userProgress?.status !== 'completed'
               const isCompleted = lesson.userProgress?.status === 'completed'
               const isInProgress = lesson.userProgress?.status === 'in_progress'
               
