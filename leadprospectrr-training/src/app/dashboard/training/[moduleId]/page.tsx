@@ -24,9 +24,9 @@ interface LessonWithProgress extends Lesson {
 }
 
 interface ModulePageProps {
-  params: {
+  params: Promise<{
     moduleId: string
-  }
+  }>
 }
 
 export default async function ModulePage({ params }: ModulePageProps) {
@@ -36,13 +36,16 @@ export default async function ModulePage({ params }: ModulePageProps) {
     redirect('/login')
   }
 
+  // Await params in Next.js 15
+  const { moduleId } = await params
+
   const supabase = await createClient()
 
   // Fetch module details
   const { data: module } = await supabase
     .from('training_modules')
     .select('*')
-    .eq('id', params.moduleId)
+    .eq('id', moduleId)
     .single()
 
   if (!module) {
@@ -50,7 +53,7 @@ export default async function ModulePage({ params }: ModulePageProps) {
   }
 
   // Fetch lessons for this module
-  const lessons = await getModuleLessons(params.moduleId)
+  const lessons = await getModuleLessons(moduleId)
   
   // Fetch user's progress for each lesson
   const lessonsWithProgress: LessonWithProgress[] = await Promise.all(
@@ -61,7 +64,7 @@ export default async function ModulePage({ params }: ModulePageProps) {
   )
   
   // Fetch user's progress
-  const progress = await getModuleLessonProgress(user.id, params.moduleId)
+  const progress = await getModuleLessonProgress(user.id, moduleId)
 
   // Calculate overall progress percentage
   const progressPercentage = progress.totalLessons > 0 
