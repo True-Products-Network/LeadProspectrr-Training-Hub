@@ -343,14 +343,17 @@ export function ResourcesLibrary({ resources, downloadedIds: initialDownloadedId
                               </span>
                             </div>
                           </div>
-                          <Button 
-                            onClick={() => handleDownload(resource)}
-                            className="shrink-0"
-                            variant={isDownloaded ? 'outline' : 'default'}
+                          <button 
+                            onClick={() => {
+                              console.log('Button clicked for:', resource.title)
+                              handleDownload(resource)
+                            }}
+                            className={`shrink-0 px-4 py-2 rounded-md font-medium flex items-center gap-2 ${isDownloaded ? 'border-2 border-slate-300 text-slate-700' : 'bg-blue-600 text-white hover:bg-blue-700'}`}
+                            type="button"
                           >
-                            <Download className="w-4 h-4 mr-2" />
+                            <Download className="w-4 h-4" />
                             {isDownloaded ? 'Download Again' : 'Download'}
-                          </Button>
+                          </button>
                         </div>
                       </div>
                     </div>
