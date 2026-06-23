@@ -3,9 +3,10 @@ import { NextResponse } from 'next/server'
 
 export async function PUT(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params
     const supabase = await createClient()
     
     // Check admin
@@ -36,7 +37,7 @@ export async function PUT(
         is_published: body.is_published,
         updated_at: new Date().toISOString(),
       })
-      .eq('id', params.id)
+      .eq('id', id)
       .select()
       .single()
 
@@ -52,9 +53,10 @@ export async function PUT(
 
 export async function DELETE(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params
     const supabase = await createClient()
     
     // Check admin
@@ -77,14 +79,14 @@ export async function DELETE(
     const { data: resource } = await supabase
       .from('resources')
       .select('file_url')
-      .eq('id', params.id)
+      .eq('id', id)
       .single()
 
     // Delete from database
     const { error } = await supabase
       .from('resources')
       .delete()
-      .eq('id', params.id)
+      .eq('id', id)
 
     if (error) {
       return NextResponse.json({ error: error.message }, { status: 500 })
