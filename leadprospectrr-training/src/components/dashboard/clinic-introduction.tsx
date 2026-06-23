@@ -176,7 +176,7 @@ export function ClinicIntroduction() {
                 </p>
               </div>
             </div>
-            <Link href="/dashboard/training">
+            <Link href="#modules">
               <Button className="bg-gradient-to-r from-blue-500 to-violet-600 whitespace-nowrap">
                 Start Your First Clinic
                 <ArrowRight className="w-4 h-4 ml-2" />

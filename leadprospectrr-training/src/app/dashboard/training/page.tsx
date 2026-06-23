@@ -44,7 +44,7 @@ export default async function TrainingPage() {
       {/* Clinic Introduction */}
       <ClinicIntroduction />
       
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div id="modules" className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         {modulesWithProgress?.map((module) => (
           <ModuleCard key={module.id} module={module} />
         ))}
