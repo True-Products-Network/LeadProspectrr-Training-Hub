@@ -18,7 +18,7 @@ export async function getUserStreak(userId: string): Promise<number> {
 
 export async function recordActivity(
   userId: string, 
-  activityType: 'login' | 'module_complete' | 'resource_download' | 'quiz_complete',
+  activityType: 'login' | 'module_complete' | 'resource_download' | 'quiz_complete' | 'lesson_start' | 'lesson_complete',
   metadata: Record<string, any> = {}
 ): Promise<void> {
   const supabase = createAdminClient()
