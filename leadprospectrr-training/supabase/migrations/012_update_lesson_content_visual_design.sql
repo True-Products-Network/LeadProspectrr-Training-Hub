@@ -40,36 +40,68 @@ BEGIN
       <h3 class="text-xl font-bold text-slate-900">Why Blog Posts Matter</h3>
     </div>
     
-    <p class="text-slate-700 mb-4 text-lg">Blog posts are a simple way to answer questions, educate your audience, and create content you can share again and again.</p>
+    <p class="text-slate-700 mb-4 text-lg">A blog post can help you:</p>
     
-    <div class="bg-white rounded-xl p-5 shadow-sm">
-      <p class="font-semibold text-slate-900 mb-3">A blog post can help you:</p>
-      <ul class="space-y-3">
-        <li class="flex items-start gap-3">
-          <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm flex-shrink-0 mt-0.5">✓</span>
-          <span class="text-slate-700"><strong>Explain what you do</strong> — Clarify your services for potential clients</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-sm flex-shrink-0 mt-0.5">✓</span>
-          <span class="text-slate-700"><strong>Answer common questions</strong> — Address FAQs before prospects ask</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="w-6 h-6 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center text-sm flex-shrink-0 mt-0.5">✓</span>
-          <span class="text-slate-700"><strong>Share helpful tips</strong> — Demonstrate your expertise</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="w-6 h-6 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center text-sm flex-shrink-0 mt-0.5">✓</span>
-          <span class="text-slate-700"><strong>Support email marketing</strong> — Give your emails valuable content to link to</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="w-6 h-6 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center text-sm flex-shrink-0 mt-0.5">✓</span>
-          <span class="text-slate-700"><strong>Build trust</strong> — Give leads a reason to trust your expertise</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="w-6 h-6 rounded-full bg-cyan-100 text-cyan-600 flex items-center justify-center text-sm flex-shrink-0 mt-0.5">✓</span>
-          <span class="text-slate-700"><strong>Create social content</strong> — Shareable posts for your channels</span>
-        </li>
-      </ul>
+    <div class="space-y-3">
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">Explain what you do</h4>
+          <p class="text-sm text-slate-600">Clarify your services for potential clients</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">Answer common questions</h4>
+          <p class="text-sm text-slate-600">Address FAQs before prospects ask</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">Share helpful tips</h4>
+          <p class="text-sm text-slate-600">Demonstrate your expertise</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">Support email marketing</h4>
+          <p class="text-sm text-slate-600">Give your emails valuable content to link to</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-rose-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">Build trust</h4>
+          <p class="text-sm text-slate-600">Give leads a reason to trust your expertise</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">Create social content</h4>
+          <p class="text-sm text-slate-600">Shareable posts for your channels</p>
+        </div>
+      </div>
     </div>
   </div>
 
