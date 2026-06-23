@@ -7,20 +7,7 @@ export async function trackDownload(resourceId: string, userId: string, fileUrl:
   const supabase = createAdminClient()
   
   try {
-    // Track the download
-    const { error: downloadError } = await supabase
-      .from('resource_downloads')
-      .insert({
-        user_id: userId,
-        resource_id: resourceId,
-      })
-    
-    // Ignore duplicate key errors
-    if (downloadError && !downloadError.message?.includes('duplicate') && downloadError.code !== '23505') {
-      console.error('Download tracking error:', downloadError)
-    }
-
-    // Get current download count and increment
+    // Always increment the download count first (this is what matters for analytics)
     const { data: currentResource } = await supabase
       .from('resources')
       .select('download_count')
@@ -34,6 +21,15 @@ export async function trackDownload(resourceId: string, userId: string, fileUrl:
         .eq('id', resourceId)
     }
 
+    // Try to track the download (may fail if duplicate, but that's ok)
+    // This is just for tracking unique user downloads
+    await supabase
+      .from('resource_downloads')
+      .insert({
+        user_id: userId,
+        resource_id: resourceId,
+      })
+
     // Revalidate the resources page to show updated counts
     revalidatePath('/dashboard/resources')
     revalidatePath('/admin/analytics')
@@ -41,6 +37,7 @@ export async function trackDownload(resourceId: string, userId: string, fileUrl:
     return { success: true, fileUrl }
   } catch (error) {
     console.error('Download error:', error)
-    return { success: false, fileUrl }
+    // Still return success so the file opens
+    return { success: true, fileUrl }
   }
 }
