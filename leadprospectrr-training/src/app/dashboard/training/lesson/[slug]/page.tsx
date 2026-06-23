@@ -71,6 +71,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
   // Handle lesson completion
   async function handleComplete() {
     'use server'
+    if (!lesson) return
     await completeLesson(user.id, lesson.id, lesson.duration_minutes)
   }
 
