@@ -4,12 +4,12 @@
 -- First, ensure Module 1 exists
 DO $$
 DECLARE
-  module_id UUID;
+  v_module_id UUID;
 BEGIN
   -- Get Module 1
-  SELECT id INTO module_id FROM public.training_modules WHERE week_number = 1 LIMIT 1;
+  SELECT id INTO v_module_id FROM public.training_modules WHERE week_number = 1 LIMIT 1;
   
-  IF module_id IS NULL THEN
+  IF v_module_id IS NULL THEN
     INSERT INTO public.training_modules (
       title, 
       description, 
@@ -24,11 +24,11 @@ BEGIN
       'blue',
       'active',
       true
-    ) RETURNING id INTO module_id;
+    ) RETURNING id INTO v_module_id;
   END IF;
 
   -- Delete existing lessons for this module to avoid conflicts
-  DELETE FROM public.lessons WHERE module_id = module_id;
+  DELETE FROM public.lessons WHERE module_id = v_module_id;
 
   -- Lesson 1: Why Blog Posts Matter
   INSERT INTO public.lessons (
@@ -44,7 +44,7 @@ BEGIN
     is_published,
     sort_order
   ) VALUES (
-    module_id,
+    v_module_id,
     1,
     'Why Blog Posts Matter',
     'why-blog-posts-matter',
