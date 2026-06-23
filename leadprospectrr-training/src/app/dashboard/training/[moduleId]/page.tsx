@@ -117,7 +117,7 @@ export default async function ModulePage({ params }: ModulePageProps) {
         ) : (
           <div className="space-y-4">
             {lessons.map((lesson, index) => {
-              const isLocked = index > 0 && !lessons[index - 1]?.userProgress?.status === 'completed'
+              const isLocked = index > 0 && lessons[index - 1]?.userProgress?.status !== 'completed'
               const isCompleted = lesson.userProgress?.status === 'completed'
               const isInProgress = lesson.userProgress?.status === 'in_progress'
               
