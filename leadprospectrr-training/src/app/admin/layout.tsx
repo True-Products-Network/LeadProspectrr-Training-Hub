@@ -1,52 +1,57 @@
-import { requireAdmin } from '@/lib/admin'
+import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
-import { AdminNav } from '@/components/admin/nav'
-import { getUser } from '@/lib/auth'
+import { AdminNav } from '@/components/admin/admin-nav'
 
 export default async function AdminLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const user = await getUser()
+  const supabase = await createClient()
+  
+  const { data: { user } } = await supabase.auth.getUser()
   
   if (!user) {
-    redirect('/login')
+    redirect('/login?redirect=/admin')
   }
 
-  // Check if user is admin
-  if (user.role !== 'admin') {
-    redirect('/dashboard')
+  // Check if user exists in public.users table
+  const { data: userData, error: userError } = await supabase
+    .from('users')
+    .select('role, name')
+    .eq('id', user.id)
+    .single()
+
+  // If user doesn't exist in public.users, create them
+  if (userError || !userData) {
+    const { error: insertError } = await supabase
+      .from('users')
+      .insert({
+        id: user.id,
+        email: user.email,
+        name: user.user_metadata?.name || user.email?.split('@')[0],
+        role: 'client',
+      })
+    
+    if (insertError) {
+      console.error('Error creating user:', insertError)
+    }
+    
+    redirect('/dashboard?error=not_admin')
+  }
+
+  if (userData?.role !== 'admin') {
+    redirect('/dashboard?error=not_admin')
   }
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-8">
-            <a href="/admin" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center">
-                <span className="text-white font-bold text-lg">A</span>
-              </div>
-              <span className="font-bold text-xl hidden sm:block">Admin Panel</span>
-            </a>
-          </div>
-          <div className="flex items-center gap-4">
-            <a 
-              href="/dashboard" 
-              className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
-            >
-              Back to Dashboard
-            </a>
-          </div>
-        </div>
-      </header>
-      <div className="flex">
-        <AdminNav />
-        <main className="flex-1 container mx-auto px-4 py-8">
+      <AdminNav />
+      <main className="lg:ml-64 min-h-screen">
+        <div className="p-6 lg:p-8">
           {children}
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
   )
 }
