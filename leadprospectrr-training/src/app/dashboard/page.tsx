@@ -1,11 +1,17 @@
 import { createClient } from '@/lib/supabase/server'
 import { getUser } from '@/lib/auth'
 import { redirect } from 'next/navigation'
-import { ModuleCard } from '@/components/dashboard/module-card'
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
 import { ProgressOverview } from '@/components/dashboard/progress-overview'
 import { RecentResources } from '@/components/dashboard/recent-resources'
 import { WelcomeHeader } from '@/components/dashboard/welcome-header'
+import { TrainingProgramCard } from '@/components/dashboard/training-program-card'
 import { getUserStreak, recordActivity } from '@/app/actions/gamification'
+import { BookOpen, FileText, Zap, ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 export default async function DashboardPage() {
   const user = await getUser()
@@ -72,19 +78,53 @@ export default async function DashboardPage() {
         currentStreak={currentStreak}
       />
 
-      <div>
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-slate-900">Training Program</h2>
-          <span className="text-sm text-slate-500">
-            {totalModules} weeks of content
-          </span>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-          {modulesWithProgress?.map((module) => (
-            <ModuleCard key={module.id} module={module} />
-          ))}
-        </div>
-      </div>
+      {/* Training Program Card */}
+      <Card className="bg-gradient-to-br from-blue-50 to-violet-50 border-blue-200">
+        <CardContent className="p-8">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div className="flex-1">
+              <Badge className="bg-blue-100 text-blue-700 mb-3">Training Program</Badge>
+              <h2 className="text-2xl font-bold text-slate-900 mb-2">
+                Weekly LeadProspectrr Clinics
+              </h2>
+              <p className="text-slate-600 mb-4 max-w-2xl">
+                Master the art of lead generation with our comprehensive weekly training program. 
+                New content added regularly as the clinic builds up over time.
+              </p>
+              
+              <div className="flex flex-wrap items-center gap-6 text-sm text-slate-600">
+                <span className="flex items-center gap-2">
+                  <BookOpen className="w-4 h-4" />
+                  {totalModules} Modules
+                </span>
+                <span className="flex items-center gap-2">
+                  <FileText className="w-4 h-4" />
+                  {totalResources || 0} Resources
+                </span>
+                <span className="flex items-center gap-2">
+                  <Zap className="w-4 h-4" />
+                  Growing Content
+                </span>
+              </div>
+              
+              <div className="mt-4 w-full max-w-md">
+                <div className="flex justify-between text-sm mb-1">
+                  <span className="text-slate-600">Your Progress</span>
+                  <span className="font-medium">{overallProgress}%</span>
+                </div>
+                <Progress value={overallProgress} className="h-2" />
+              </div>
+            </div>
+            
+            <Link href="/dashboard/training-program">
+              <Button className="bg-gradient-to-r from-blue-500 to-violet-600 whitespace-nowrap" size="lg">
+                Start Learning
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </CardContent>
+      </Card>
 
       <RecentResources resources={recentResources || []} />
     </div>

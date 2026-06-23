@@ -12,8 +12,8 @@ const navItems = [
     icon: LayoutDashboard,
   },
   {
-    title: 'Training',
-    href: '/dashboard/training',
+    title: 'Training Program',
+    href: '/dashboard/training-program',
     icon: BookOpen,
   },
   {
