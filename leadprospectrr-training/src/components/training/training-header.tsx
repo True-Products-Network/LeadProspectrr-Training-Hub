@@ -2,9 +2,10 @@ import { BookOpen, GraduationCap, Clock, Layers } from 'lucide-react'
 
 interface TrainingHeaderProps {
   totalModules?: number
+  totalResources?: number
 }
 
-export function TrainingHeader({ totalModules = 6 }: TrainingHeaderProps) {
+export function TrainingHeader({ totalModules = 6, totalResources = 0 }: TrainingHeaderProps) {
   return (
     <div className="bg-gradient-to-r from-violet-600 to-purple-600 rounded-3xl p-8 text-white">
       <div className="flex items-start justify-between">
@@ -24,7 +25,7 @@ export function TrainingHeader({ totalModules = 6 }: TrainingHeaderProps) {
         <div className="hidden md:block">
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
             <Layers className="w-8 h-8 mb-2" />
-            <p className="text-2xl font-bold">{totalModules}+</p>
+            <p className="text-2xl font-bold">{totalModules}</p>
             <p className="text-violet-100">Modules</p>
           </div>
         </div>
@@ -36,7 +37,7 @@ export function TrainingHeader({ totalModules = 6 }: TrainingHeaderProps) {
           <p className="text-violet-100 text-sm">Training Modules</p>
         </div>
         <div className="text-center">
-          <p className="text-3xl font-bold">24+</p>
+          <p className="text-3xl font-bold">{totalResources}</p>
           <p className="text-violet-100 text-sm">Resources</p>
         </div>
         <div className="text-center">

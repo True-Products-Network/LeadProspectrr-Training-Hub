@@ -6,9 +6,10 @@ interface ProgressOverviewProps {
   overallProgress: number
   completedModules: number
   totalModules: number
+  totalResources: number
 }
 
-export function ProgressOverview({ overallProgress, completedModules, totalModules }: ProgressOverviewProps) {
+export function ProgressOverview({ overallProgress, completedModules, totalModules, totalResources }: ProgressOverviewProps) {
   const stats = [
     {
       title: 'Overall Progress',
@@ -33,7 +34,7 @@ export function ProgressOverview({ overallProgress, completedModules, totalModul
     },
     {
       title: 'Resources',
-      value: '24+',
+      value: totalResources.toString(),
       icon: BookOpen,
       color: 'text-violet-600',
       bgColor: 'bg-violet-50',

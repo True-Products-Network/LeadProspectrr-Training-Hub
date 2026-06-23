@@ -36,6 +36,12 @@ export default async function DashboardPage() {
     .order('created_at', { ascending: false })
     .limit(4)
 
+  // Fetch total resource count
+  const { count: totalResources } = await supabase
+    .from('resources')
+    .select('*', { count: 'exact', head: true })
+    .eq('is_published', true)
+
   // Calculate overall progress
   const totalModules = modules?.length || 0
   const completedModules = progress?.filter(p => p.status === 'completed').length || 0
@@ -55,6 +61,7 @@ export default async function DashboardPage() {
         overallProgress={overallProgress}
         completedModules={completedModules}
         totalModules={totalModules}
+        totalResources={totalResources || 0}
       />
 
       <div>

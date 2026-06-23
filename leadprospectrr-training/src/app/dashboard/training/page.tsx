@@ -25,6 +25,12 @@ export default async function TrainingPage() {
     .select('*')
     .eq('user_id', user.id)
 
+  // Fetch total resource count
+  const { count: totalResources } = await supabase
+    .from('resources')
+    .select('*', { count: 'exact', head: true })
+    .eq('is_published', true)
+
   const modulesWithProgress = modules?.map(module => ({
     ...module,
     progress: progress?.find(p => p.module_id === module.id) || { status: 'not_started' }
@@ -32,7 +38,7 @@ export default async function TrainingPage() {
 
   return (
     <div className="space-y-8">
-      <TrainingHeader totalModules={modules?.length || 0} />
+      <TrainingHeader totalModules={modules?.length || 0} totalResources={totalResources || 0} />
       
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         {modulesWithProgress?.map((module) => (
