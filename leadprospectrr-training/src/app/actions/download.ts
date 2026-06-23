@@ -7,18 +7,27 @@ export async function trackDownload(resourceId: string, userId: string, fileUrl:
   const supabase = createAdminClient()
   
   try {
+    console.log('Track download called:', { resourceId, userId })
+    
     // Always increment the download count first (this is what matters for analytics)
-    const { data: currentResource } = await supabase
+    const { data: currentResource, error: fetchError } = await supabase
       .from('resources')
       .select('download_count')
       .eq('id', resourceId)
       .single()
     
+    console.log('Current resource:', { currentResource, fetchError })
+    
     if (currentResource) {
-      await supabase
+      const newCount = (currentResource.download_count || 0) + 1
+      console.log('Updating count to:', newCount)
+      
+      const { error: updateError } = await supabase
         .from('resources')
-        .update({ download_count: (currentResource.download_count || 0) + 1 })
+        .update({ download_count: newCount })
         .eq('id', resourceId)
+      
+      console.log('Update result:', { updateError })
     }
 
     // Try to track the download (may fail if duplicate, but that's ok)
