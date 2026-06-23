@@ -5,6 +5,7 @@ import { ModuleCard } from '@/components/dashboard/module-card'
 import { ProgressOverview } from '@/components/dashboard/progress-overview'
 import { RecentResources } from '@/components/dashboard/recent-resources'
 import { WelcomeHeader } from '@/components/dashboard/welcome-header'
+import { getUserStreak, recordActivity } from '@/app/actions/gamification'
 
 export default async function DashboardPage() {
   const user = await getUser()
@@ -42,6 +43,12 @@ export default async function DashboardPage() {
     .select('*', { count: 'exact', head: true })
     .eq('is_published', true)
 
+  // Get user's current streak
+  const currentStreak = await getUserStreak(user.id)
+
+  // Record login activity (for streak tracking)
+  await recordActivity(user.id, 'login')
+
   // Calculate overall progress
   const totalModules = modules?.length || 0
   const completedModules = progress?.filter(p => p.status === 'completed').length || 0
@@ -62,6 +69,7 @@ export default async function DashboardPage() {
         completedModules={completedModules}
         totalModules={totalModules}
         totalResources={totalResources || 0}
+        currentStreak={currentStreak}
       />
 
       <div>

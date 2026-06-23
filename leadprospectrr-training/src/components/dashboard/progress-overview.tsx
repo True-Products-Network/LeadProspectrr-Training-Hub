@@ -7,9 +7,10 @@ interface ProgressOverviewProps {
   completedModules: number
   totalModules: number
   totalResources: number
+  currentStreak: number
 }
 
-export function ProgressOverview({ overallProgress, completedModules, totalModules, totalResources }: ProgressOverviewProps) {
+export function ProgressOverview({ overallProgress, completedModules, totalModules, totalResources, currentStreak }: ProgressOverviewProps) {
   const stats = [
     {
       title: 'Overall Progress',
@@ -27,7 +28,7 @@ export function ProgressOverview({ overallProgress, completedModules, totalModul
     },
     {
       title: 'Current Streak',
-      value: '3 days',
+      value: `${currentStreak} day${currentStreak !== 1 ? 's' : ''}`,
       icon: Award,
       color: 'text-amber-600',
       bgColor: 'bg-amber-50',
