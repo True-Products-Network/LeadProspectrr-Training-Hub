@@ -79,9 +79,9 @@ export default async function SetupAdminPage() {
               <p className="text-slate-600 text-center">
                 An admin already exists. Please contact them for access.
               </p>
-              <Button asChild className="w-full" variant="outline">
-                <a href="/dashboard">Go to Dashboard</a>
-              </Button>
+              <a href="/dashboard" className="inline-flex items-center justify-center w-full px-4 py-2 border border-slate-300 rounded-md text-sm font-medium text-slate-700 bg-white hover:bg-slate-50">
+                Go to Dashboard
+              </a>
             </>
           )}
         </CardContent>
