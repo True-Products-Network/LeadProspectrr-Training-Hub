@@ -9,41 +9,142 @@ This skill generates course lesson content files that follow a proven visual des
 - Interactive content cards with icons
 - Key Point callouts
 - Action Steps with numbered cards
+- Quiz questions with multiple choice answers
 - Consistent color scheme and visual hierarchy
+
+## Features
+
+✅ **Interactive CLI** - Step-by-step guided lesson creation  
+✅ **Quiz Generation** - Multiple choice questions with explanations  
+✅ **Multiple Module Support** - Specify any module week/name  
+✅ **Batch Creation** - Generate multiple lessons from JSON  
+✅ **20+ Built-in Icons** - target, pencil, users, link, image, video, etc.  
+✅ **10 Color Schemes** - blue, green, amber, purple, rose, cyan, indigo, violet, teal, pink  
 
 ## Usage
 
-```
-/skill course-content-creator
+### Interactive Mode
+
+```bash
+cd skills/course-content-creator
+npm install
+npm start
 ```
 
-The skill will guide you through creating a lesson by asking for:
-1. Lesson number and title
-2. Learning goal (single statement)
-3. Main content sections
-4. Key points
-5. Action steps
+Follow the prompts to create your lesson interactively.
+
+### Batch Mode (JSON)
+
+Create a JSON file with multiple lessons:
+
+```bash
+npm start lessons-batch.json
+```
 
 ## Output Format
 
-Generates SQL migration files that can be run against the database to insert/update lesson content.
+Generates SQL migration files that can be run against Supabase/PostgreSQL to insert/update:
+- Lesson content (HTML with visual design)
+- Quiz questions and options
 
-## Example
+## Example JSON Batch File
 
-Input:
-- Lesson: "Why Blog Posts Matter"
-- Goal: "Understand why creating blog posts helps your business"
-- Content: Benefits of blogging, examples
-- Key Point: "Content does not need to be perfect"
-- Action Steps: 3 steps to prepare for next lesson
+```json
+[
+  {
+    "lessonNumber": 1,
+    "slug": "lesson-slug",
+    "title": "Lesson Title",
+    "moduleWeek": 1,
+    "moduleName": "Module Name",
+    "learningGoal": "What students will learn",
+    "sections": [
+      {
+        "title": "Section Title",
+        "icon": "pencil",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Item Title",
+            "description": "Item description"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Key takeaway",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Step title",
+        "description": "Step description"
+      }
+    ],
+    "nextLessonTitle": "Next Lesson Title",
+    "quizzes": [
+      {
+        "question": "Quiz question?",
+        "options": [
+          { "option_text": "Option A", "is_correct": false },
+          { "option_text": "Option B", "is_correct": true }
+        ],
+        "explanation": "Why B is correct"
+      }
+    ]
+  }
+]
+```
 
-Output: Complete SQL file with visual HTML structure ready to run.
+## Available Icons
+
+- `target` - Learning goal
+- `pencil` - Writing/editing
+- `info` - Information
+- `users` - People/audience
+- `tag` - Categories/tags
+- `link` - Links/URLs
+- `image` - Images/media
+- `search` - SEO/search
+- `eye` - Preview/view
+- `check` - Checkmarks
+- `clock` - Schedule/time
+- `share` - Sharing
+- `lightbulb` - Key points
+- `checklist` - Action steps
+- `warning` - Warnings
+- `star` - Achievements
+- `mail` - Email
+- `chat` - Messages
+- `location` - Location
+- `settings` - Configuration
+- `question` - Quiz questions
+- `book` - Reading/learning
+- `video` - Video content
+- `document` - Documents
+- `download` - Downloads
+- `play` - Play button
+- `trophy` - Completion
+
+## Available Colors
+
+- `blue` - Primary/info
+- `green` - Success/positive
+- `amber` - Warning/attention
+- `purple` - Creative/special
+- `rose` - Important/urgent
+- `cyan` - Tech/digital
+- `indigo` - Professional
+- `violet` - Premium/quality
+- `teal` - Growth/progress
+- `pink` - Friendly/approachable
 
 ## Files
 
-- `SKILL.md` - This file
+- `SKILL.md` - This documentation
 - `create-lesson.ts` - Main skill implementation
-- `templates/` - HTML templates for lesson sections
+- `package.json` - Dependencies
+- `example-lessons.json` - Example batch file
 
 ## Requirements
 

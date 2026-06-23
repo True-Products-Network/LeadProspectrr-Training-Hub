@@ -4,11 +4,29 @@
  * 
  * Generates visually engaging course lesson content with consistent formatting.
  * Creates SQL migration files ready for Supabase/PostgreSQL.
+ * 
+ * Features:
+ * - Interactive CLI for lesson creation
+ * - Quiz question generation
+ * - Multiple module support
+ * - Batch creation from JSON files
  */
 
 import * as fs from 'fs';
 import * as path from 'path';
 import * as readline from 'readline';
+
+// Types
+interface QuizOption {
+  option_text: string;
+  is_correct: boolean;
+}
+
+interface QuizQuestion {
+  question: string;
+  options: QuizOption[];
+  explanation: string;
+}
 
 interface LessonSection {
   title: string;
@@ -32,13 +50,17 @@ interface LessonData {
   lessonNumber: number;
   slug: string;
   title: string;
+  moduleWeek: number;
+  moduleName: string;
   learningGoal: string;
   sections: LessonSection[];
   keyPoint: string;
   actionSteps: ActionStep[];
   nextLessonTitle: string;
+  quizzes?: QuizQuestion[];
 }
 
+// Icon library
 const ICONS: Record<string, string> = {
   target: '<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>',
   pencil: '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>',
@@ -60,10 +82,18 @@ const ICONS: Record<string, string> = {
   chat: '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>',
   location: '<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>',
   settings: '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>',
+  question: '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>',
+  book: '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>',
+  video: '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>',
+  document: '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>',
+  download: '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>',
+  play: '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>',
+  trophy: '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>',
 };
 
-const COLORS = ['blue', 'green', 'amber', 'purple', 'rose', 'cyan', 'indigo', 'violet'];
+const COLORS = ['blue', 'green', 'amber', 'purple', 'rose', 'cyan', 'indigo', 'violet', 'teal', 'pink'];
 
+// HTML Generators
 function generateLearningGoal(goal: string): string {
   return `  <!-- Learning Goal -->
   <div class="bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl p-6 text-white shadow-lg">
@@ -150,7 +180,8 @@ function generateActionSteps(steps: ActionStep[], nextLessonTitle: string): stri
   </div>`;
 }
 
-function generateSQL(data: LessonData): string {
+// SQL Generators
+function generateLessonSQL(data: LessonData): string {
   const content = `<div class="space-y-8">
 ${generateLearningGoal(data.learningGoal)}
 ${data.sections.map(s => generateContentSection(s)).join('')}
@@ -159,17 +190,18 @@ ${generateActionSteps(data.actionSteps, data.nextLessonTitle)}
 </div>`;
 
   return `-- Update Lesson ${data.lessonNumber}: ${data.title}
+-- Module ${data.moduleWeek}: ${data.moduleName}
 -- Using color blocks, icons, horizontal cards, and better visual hierarchy
 
 DO $$
 DECLARE
   v_module_id UUID;
 BEGIN
-  -- Get Module 1
-  SELECT id INTO v_module_id FROM public.training_modules WHERE week_number = 1 LIMIT 1;
+  -- Get Module by week number
+  SELECT id INTO v_module_id FROM public.training_modules WHERE week_number = ${data.moduleWeek} LIMIT 1;
   
   IF v_module_id IS NULL THEN
-    RAISE NOTICE 'Module 1 not found';
+    RAISE NOTICE 'Module ${data.moduleWeek} not found';
     RETURN;
   END IF;
 
@@ -181,7 +213,66 @@ END $$;
 `;
 }
 
-async function main() {
+function generateQuizSQL(data: LessonData): string {
+  if (!data.quizzes || data.quizzes.length === 0) return '';
+
+  let sql = `-- Insert Quiz Questions for Lesson: ${data.title}
+
+DO $$
+DECLARE
+  v_lesson_id UUID;
+  v_quiz_id UUID;
+BEGIN
+  -- Get the lesson ID
+  SELECT id INTO v_lesson_id 
+  FROM public.lessons 
+  WHERE slug = '${data.slug}';
+  
+  IF v_lesson_id IS NULL THEN
+    RAISE NOTICE 'Lesson ${data.slug} not found';
+    RETURN;
+  END IF;
+
+`;
+
+  data.quizzes.forEach((quiz, index) => {
+    sql += `
+  -- Question ${index + 1}
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, '${quiz.question.replace(/'/g, "''")}', '${quiz.explanation.replace(/'/g, "''")}', ${index + 1})
+  RETURNING id INTO v_quiz_id;
+
+`;
+
+    quiz.options.forEach((option, optIndex) => {
+      sql += `  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, '${option.option_text.replace(/'/g, "''")}', ${option.is_correct}, ${optIndex + 1});
+
+`;
+    });
+  });
+
+  sql += `END $$;
+`;
+
+  return sql;
+}
+
+function generateFullSQL(data: LessonData): string {
+  const lessonSQL = generateLessonSQL(data);
+  const quizSQL = generateQuizSQL(data);
+  
+  return `-- Lesson ${data.lessonNumber}: ${data.title}
+-- Module ${data.moduleWeek}: ${data.moduleName}
+-- Generated by Course Content Creator Skill
+
+${lessonSQL}
+
+${quizSQL}`;
+}
+
+// Interactive CLI
+async function interactiveMode() {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -198,11 +289,14 @@ async function main() {
     lessonNumber: parseInt(await ask('Lesson number: ')),
     slug: await ask('Lesson slug (e.g., "lesson-title"): '),
     title: await ask('Lesson title: '),
+    moduleWeek: parseInt(await ask('Module week number: ') || '1'),
+    moduleName: await ask('Module name: ') || 'Blog Posts',
     learningGoal: await ask('Learning goal (single statement): '),
     sections: [],
     keyPoint: '',
     actionSteps: [],
-    nextLessonTitle: ''
+    nextLessonTitle: '',
+    quizzes: []
   };
 
   console.log('\n--- Content Sections ---');
@@ -215,8 +309,8 @@ async function main() {
 
     const section: LessonSection = {
       title: sectionTitle,
-      icon: await ask('Section icon (pencil/info/users/tag/link/image/search/eye/settings): '),
-      color: await ask('Section color (blue/green/amber/purple/rose/cyan/indigo/violet): '),
+      icon: await ask('Section icon (pencil/info/users/tag/link/image/search/eye/settings/book/video/document): '),
+      color: await ask('Section color (blue/green/amber/purple/rose/cyan/indigo/violet/teal/pink): '),
       items: []
     };
 
@@ -255,13 +349,82 @@ async function main() {
     stepNumber++;
   }
 
-  const sql = generateSQL(data);
+  // Quiz questions
+  console.log('\n--- Quiz Questions (Optional) ---');
+  const addQuiz = (await ask('Add quiz questions? (y/n): ')).toLowerCase() === 'y';
+  
+  if (addQuiz) {
+    let addMoreQuestions = true;
+    let questionNumber = 1;
+    while (addMoreQuestions) {
+      const question = await ask(`\nQuestion ${questionNumber} (or "done"): `);
+      if (question.toLowerCase() === 'done') break;
+
+      const quiz: QuizQuestion = {
+        question: question,
+        options: [],
+        explanation: ''
+      };
+
+      console.log('  Add 2-4 options (mark one as correct):');
+      for (let i = 1; i <= 4; i++) {
+        const optionText = await ask(`    Option ${i} (or "done"): `);
+        if (optionText.toLowerCase() === 'done') break;
+        
+        const isCorrect = (await ask('    Is this the correct answer? (y/n): ')).toLowerCase() === 'y';
+        quiz.options.push({
+          option_text: optionText,
+          is_correct: isCorrect
+        });
+      }
+
+      quiz.explanation = await ask('  Explanation (shown after answering): ');
+      data.quizzes!.push(quiz);
+      questionNumber++;
+    }
+  }
+
+  const sql = generateFullSQL(data);
   const filename = `lesson_${data.lessonNumber}_${data.slug}.sql`;
   
   fs.writeFileSync(filename, sql);
   console.log(`\n✅ Created: ${filename}`);
   
   rl.close();
+}
+
+// Batch mode from JSON
+async function batchMode(jsonFile: string) {
+  if (!fs.existsSync(jsonFile)) {
+    console.error(`❌ File not found: ${jsonFile}`);
+    process.exit(1);
+  }
+
+  const lessons: LessonData[] = JSON.parse(fs.readFileSync(jsonFile, 'utf-8'));
+  
+  console.log(`🔄 Processing ${lessons.length} lessons...\n`);
+
+  for (const lesson of lessons) {
+    const sql = generateFullSQL(lesson);
+    const filename = `lesson_${lesson.lessonNumber}_${lesson.slug}.sql`;
+    fs.writeFileSync(filename, sql);
+    console.log(`✅ Created: ${filename}`);
+  }
+
+  console.log(`\n🎉 Generated ${lessons.length} lesson files`);
+}
+
+// Main
+async function main() {
+  const args = process.argv.slice(2);
+  
+  if (args.length > 0 && args[0].endsWith('.json')) {
+    // Batch mode
+    await batchMode(args[0]);
+  } else {
+    // Interactive mode
+    await interactiveMode();
+  }
 }
 
 main().catch(console.error);
