@@ -45,7 +45,7 @@ interface LessonLayoutProps {
   }
   progress: {
     status: 'not_started' | 'in_progress' | 'completed'
-    completed_at?: string
+    completed_at?: string | null
   } | null
   totalLessons: number
   nextLesson?: { slug: string; title: string }
