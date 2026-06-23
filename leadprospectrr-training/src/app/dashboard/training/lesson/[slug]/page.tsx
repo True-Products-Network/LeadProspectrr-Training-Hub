@@ -10,6 +10,18 @@ interface LessonPageProps {
   }>
 }
 
+// Learning goals for each lesson (single goal)
+const lessonGoals: Record<string, string> = {
+  'why-blog-posts-matter': 'Understand why creating blog posts inside LeadProspectrr can help your business.',
+  'planning-your-blog-post': 'Plan your blog post before opening the editor.',
+  'blog-settings-overview': 'Understand why the Settings area should be checked before creating a new blog post.',
+  'creating-a-new-blog-post': 'Create a new blog post inside LeadProspectrr.',
+  'adding-images-and-links': 'Learn how to add visual content and useful links to your blog post.',
+  'seo-basics': 'Complete the basic SEO settings for the blog post.',
+  'preview-and-publish': 'Check the post before publishing.',
+  'sharing-your-blog-post': 'Use your published post as part of your follow-up and marketing.'
+}
+
 // Learning objectives for each lesson
 const lessonObjectives: Record<string, string[]> = {
   'why-blog-posts-matter': [
@@ -136,6 +148,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
       prevLesson={prevLesson}
       resources={resources || []}
       quizQuestions={quizQuestions || []}
+      learningGoal={lessonGoals[slug]}
       learningObjectives={lessonObjectives[slug] || []}
       onComplete={handleComplete}
     />

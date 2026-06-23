@@ -65,6 +65,7 @@ interface LessonLayoutProps {
     download_count: number
   }>
   quizQuestions?: QuizQuestion[]
+  learningGoal?: string
   learningObjectives?: string[]
   onComplete: () => void
 }
@@ -78,6 +79,7 @@ export function LessonLayout({
   prevLesson,
   resources,
   quizQuestions = [],
+  learningGoal,
   learningObjectives = [],
   onComplete
 }: LessonLayoutProps) {
@@ -135,12 +137,25 @@ export function LessonLayout({
         </div>
       </div>
 
+      {/* Learning Goal - Single Goal */}
+      {learningGoal && (
+        <div className="bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl p-6 text-white shadow-lg">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center">
+              <Target className="w-5 h-5 text-white" />
+            </div>
+            <h3 className="text-lg font-bold">Learning Goal</h3>
+          </div>
+          <p className="text-white/90 text-lg">{learningGoal}</p>
+        </div>
+      )}
+
       {/* Learning Objectives - Interactive Checklist */}
       {learningObjectives.length > 0 && (
         <Card className="border-2 border-blue-200 bg-gradient-to-r from-blue-50 to-violet-50">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg">
-              <Target className="w-5 h-5 text-blue-600" />
+              <CheckSquare className="w-5 h-5 text-blue-600" />
               Learning Objectives
             </CardTitle>
           </CardHeader>
