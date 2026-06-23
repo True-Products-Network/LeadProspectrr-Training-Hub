@@ -1,20 +1,8 @@
 import { createClient } from '@/lib/supabase/server'
-import { getUser } from '@/lib/auth'
 import { redirect } from 'next/navigation'
-import { Plus, Edit, Eye, EyeOff, Trash2, FileText, Download } from 'lucide-react'
+import { Plus, Edit, Eye, EyeOff, FileText, Download, FileIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-
-const fileTypeIcons: Record<string, string> = {
-  pdf: 'PDF',
-  doc: 'DOC',
-  video: 'Video',
-  image: 'Image',
-  template: 'Template',
-  cheatsheet: 'Sheet',
-  guide: 'Guide',
-  worksheet: 'Worksheet',
-  checklist: 'List',
-}
+import Link from 'next/link'
 
 const fileTypeColors: Record<string, string> = {
   pdf: 'bg-red-100 text-red-700',
@@ -29,18 +17,34 @@ const fileTypeColors: Record<string, string> = {
 }
 
 export default async function AdminResourcesPage() {
-  const user = await getUser()
+  const supabase = await createClient()
   
-  if (!user || user.role !== 'admin') {
-    redirect('/dashboard')
+  // Check auth
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) {
+    redirect('/login?redirect=/admin/resources')
   }
 
-  const supabase = await createClient()
+  // Check admin role
+  const { data: userData } = await supabase
+    .from('users')
+    .select('role')
+    .eq('id', user.id)
+    .single()
 
-  const { data: resources } = await supabase
+  if (userData?.role !== 'admin') {
+    redirect('/dashboard?error=not_admin')
+  }
+
+  // Fetch resources
+  const { data: resources, error } = await supabase
     .from('resources')
     .select('*, training_modules(week_number, title)')
     .order('created_at', { ascending: false })
+
+  if (error) {
+    console.error('Error fetching resources:', error)
+  }
 
   return (
     <div className="space-y-6">
@@ -49,113 +53,92 @@ export default async function AdminResourcesPage() {
           <h1 className="text-3xl font-bold text-slate-900">Resources</h1>
           <p className="text-slate-600 mt-1">Manage training materials and files</p>
         </div>
-        <a href="/admin/resources/new">
+        <Link href="/admin/resources/new">
           <Button className="gap-2">
             <Plus className="w-4 h-4" />
             Upload Resource
           </Button>
-        </a>
+        </Link>
       </div>
 
-      <div className="bg-white rounded-xl border shadow-sm overflow-hidden">
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead className="bg-slate-50 border-b">
-              <tr>
-                <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Resource</th>
-                <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Type</th>
-                <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Module</th>
-                <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Downloads</th>
-                <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900">Status</th>
-                <th className="px-6 py-4 text-right text-sm font-semibold text-slate-900">Actions</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y">
-              {resources?.map((resource: any) => (
-                <tr key={resource.id} className="hover:bg-slate-50">
-                  <td className="px-6 py-4">
-                    <div className="flex items-center gap-3">
-                      <div className={`w-10 h-10 rounded-lg flex items-center justify-center text-xs font-bold ${
-                        fileTypeColors[resource.file_type] || 'bg-slate-100 text-slate-700'
-                      }`}>
-                        {fileTypeIcons[resource.file_type] || 'File'}
-                      </div>
-                      <div>
-                        <p className="font-medium text-slate-900">{resource.title}</p>
-                        <p className="text-sm text-slate-500 truncate max-w-xs">{resource.description}</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="px-6 py-4">
-                    <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-700 capitalize">
-                      {resource.file_type}
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 text-sm text-slate-600">
-                    {resource.training_modules ? (
-                      <span>Week {resource.training_modules.week_number}: {resource.training_modules.title}</span>
-                    ) : (
-                      <span className="text-slate-400">Unassigned</span>
-                    )}
-                  </td>
-                  <td className="px-6 py-4 text-sm text-slate-600">
-                    <div className="flex items-center gap-1">
-                      <Download className="w-4 h-4" />
-                      {resource.download_count}
-                    </div>
-                  </td>
-                  <td className="px-6 py-4">
-                    <span className={`inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium ${
-                      resource.is_published
-                        ? 'bg-emerald-100 text-emerald-700'
-                        : 'bg-slate-100 text-slate-700'
-                    }`}>
-                      {resource.is_published ? (
-                        <><Eye className="w-3 h-3" /> Published</>
-                      ) : (
-                        <><EyeOff className="w-3 h-3" /> Draft</>
-                      )}
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 text-right">
-                    <div className="flex items-center justify-end gap-2">
-                      <a
-                        href={resource.file_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
-                      >
-                        <FileText className="w-4 h-4" />
-                      </a>
-                      <a
-                        href={`/admin/resources/${resource.id}/edit`}
-                        className="p-2 text-slate-600 hover:text-violet-600 hover:bg-violet-50 rounded-lg transition-colors"
-                      >
-                        <Edit className="w-4 h-4" />
-                      </a>
-                      <form action={`/api/admin/resources/${resource.id}/delete`} method="POST" className="inline">
-                        <button
-                          type="submit"
-                          className="p-2 text-slate-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-                          onClick={(e) => {
-                            if (!confirm('Are you sure you want to delete this resource?')) {
-                              e.preventDefault()
-                            }
-                          }}
-                        >
-                          <Trash2 className="w-4 h-4" />
-                        </button>
-                      </form>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      {error && (
+        <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700">
+          Error loading resources: {error.message}
         </div>
-        {(!resources || resources.length === 0) && (
-          <div className="text-center py-12">
-            <p className="text-slate-500">No resources found. Upload your first resource to get started.</p>
+      )}
+
+      <div className="grid gap-4">
+        {resources?.map((resource) => (
+          <div 
+            key={resource.id} 
+            className="bg-white rounded-xl border shadow-sm p-6 flex items-center gap-4 hover:shadow-md transition-shadow"
+          >
+            <div className={`w-14 h-14 rounded-xl flex items-center justify-center ${
+              fileTypeColors[resource.file_type] || 'bg-slate-100 text-slate-700'
+            }`}>
+              <FileIcon className="w-7 h-7" />
+            </div>
+            
+            <div className="flex-1 min-w-0">
+              <h3 className="text-lg font-semibold text-slate-900">{resource.title}</h3>
+              <p className="text-slate-500 text-sm truncate">{resource.description || 'No description'}</p>
+              <div className="flex items-center gap-4 mt-2 text-sm text-slate-400">
+                <span className="capitalize px-2 py-0.5 bg-slate-100 rounded-full text-xs">{resource.file_type}</span>
+                {resource.training_modules ? (
+                  <span>Week {resource.training_modules.week_number}: {resource.training_modules.title}</span>
+                ) : (
+                  <span className="text-slate-400">Unassigned</span>
+                )}
+                <span className="flex items-center gap-1">
+                  <Download className="w-3 h-3" />
+                  {resource.download_count} downloads
+                </span>
+                <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium ${
+                  resource.is_published
+                    ? 'bg-emerald-100 text-emerald-700'
+                    : 'bg-slate-100 text-slate-700'
+                }`}>
+                  {resource.is_published ? (
+                    <><Eye className="w-3 h-3" /> Published</>
+                  ) : (
+                    <><EyeOff className="w-3 h-3" /> Draft</>
+                  )}
+                </span>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <a
+                href={resource.file_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+              >
+                <FileText className="w-5 h-5" />
+              </a>
+              <Link href={`/admin/resources/${resource.id}/edit`}>
+                <Button variant="outline" size="sm" className="gap-1">
+                  <Edit className="w-4 h-4" />
+                  Edit
+                </Button>
+              </Link>
+            </div>
+          </div>
+        ))}
+        
+        {(!resources || resources.length === 0) && !error && (
+          <div className="bg-white rounded-xl border shadow-sm p-12 text-center">
+            <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <FileIcon className="w-8 h-8 text-slate-400" />
+            </div>
+            <h3 className="text-lg font-semibold text-slate-900 mb-2">No resources yet</h3>
+            <p className="text-slate-600 mb-4">Upload your first training resource</p>
+            <Link href="/admin/resources/new">
+              <Button className="gap-2">
+                <Plus className="w-4 h-4" />
+                Upload Resource
+              </Button>
+            </Link>
           </div>
         )}
       </div>
