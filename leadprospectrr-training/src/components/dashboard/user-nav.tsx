@@ -57,21 +57,23 @@ export function UserNav({ user }: UserNavProps) {
             <p className="text-xs text-slate-500">{user.email}</p>
           </div>
           
-          <button 
+          <a 
+            href="/dashboard/profile"
             className="w-full px-4 py-2 text-left text-sm text-slate-700 hover:bg-slate-50 flex items-center gap-2"
             onClick={() => setIsOpen(false)}
           >
             <User className="h-4 w-4" />
             Profile
-          </button>
+          </a>
           
-          <button 
+          <a 
+            href="/dashboard/settings"
             className="w-full px-4 py-2 text-left text-sm text-slate-700 hover:bg-slate-50 flex items-center gap-2"
             onClick={() => setIsOpen(false)}
           >
             <Settings className="h-4 w-4" />
             Settings
-          </button>
+          </a>
           
           <div className="border-t border-slate-100 my-1"></div>
           
