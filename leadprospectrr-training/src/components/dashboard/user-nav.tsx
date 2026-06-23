@@ -1,14 +1,6 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+import { useState, useRef, useEffect } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import { LogOut, Settings, User } from 'lucide-react'
 import { useRouter } from 'next/navigation'
@@ -25,6 +17,8 @@ interface UserNavProps {
 export function UserNav({ user }: UserNavProps) {
   const router = useRouter()
   const supabase = createClient()
+  const [isOpen, setIsOpen] = useState(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
 
   const handleSignOut = async () => {
     await supabase.auth.signOut()
@@ -35,38 +29,61 @@ export function UserNav({ user }: UserNavProps) {
     ? user.name.split(' ').map(n => n[0]).join('').toUpperCase()
     : user.email?.[0].toUpperCase() || 'U'
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button 
-          variant="ghost" 
-          className="relative h-10 w-10 rounded-full bg-gradient-to-br from-blue-500 to-violet-600 text-white font-semibold"
-        >
-          {initials}
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56" align="end">
-        <DropdownMenuLabel className="font-normal">
-          <div className="flex flex-col space-y-1">
-            <p className="text-sm font-medium leading-none">{user.name || 'User'}</p>
-            <p className="text-xs leading-none text-slate-500">{user.email}</p>
+    <div className="relative" ref={dropdownRef}>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="relative h-10 w-10 rounded-full bg-gradient-to-br from-blue-500 to-violet-600 text-white font-semibold hover:opacity-90 transition-opacity"
+        type="button"
+      >
+        {initials}
+      </button>
+
+      {isOpen && (
+        <div className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-slate-200 py-2 z-50">
+          <div className="px-4 py-3 border-b border-slate-100">
+            <p className="text-sm font-medium text-slate-900">{user.name || 'User'}</p>
+            <p className="text-xs text-slate-500">{user.email}</p>
           </div>
-        </DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem>
-          <User className="mr-2 h-4 w-4" />
-          <span>Profile</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <Settings className="mr-2 h-4 w-4" />
-          <span>Settings</span>
-        </DropdownMenuItem>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem onClick={handleSignOut} className="text-red-600 cursor-pointer">
-          <LogOut className="mr-2 h-4 w-4" />
-          <span>Log out</span>
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+          
+          <button 
+            className="w-full px-4 py-2 text-left text-sm text-slate-700 hover:bg-slate-50 flex items-center gap-2"
+            onClick={() => setIsOpen(false)}
+          >
+            <User className="h-4 w-4" />
+            Profile
+          </button>
+          
+          <button 
+            className="w-full px-4 py-2 text-left text-sm text-slate-700 hover:bg-slate-50 flex items-center gap-2"
+            onClick={() => setIsOpen(false)}
+          >
+            <Settings className="h-4 w-4" />
+            Settings
+          </button>
+          
+          <div className="border-t border-slate-100 my-1"></div>
+          
+          <button 
+            className="w-full px-4 py-2 text-left text-sm text-red-600 hover:bg-red-50 flex items-center gap-2"
+            onClick={handleSignOut}
+          >
+            <LogOut className="h-4 w-4" />
+            Log out
+          </button>
+        </div>
+      )}
+    </div>
   )
 }
