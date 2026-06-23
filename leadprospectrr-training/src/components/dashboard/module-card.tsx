@@ -132,7 +132,7 @@ export function ModuleCard({ module }: ModuleCardProps) {
   const StatusIcon = status.icon
 
   return (
-    <Link href={`/dashboard/training/week-${module.week_number}`}>
+    <Link href={`/dashboard/training/${module.id}`}>
       <Card className={cn(
         'group cursor-pointer transition-all duration-300 border-2 overflow-hidden h-full',
         colors.bg,

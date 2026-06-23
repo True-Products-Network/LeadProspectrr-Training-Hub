@@ -3,6 +3,7 @@ import { getUser } from '@/lib/auth'
 import { redirect } from 'next/navigation'
 import { ModuleCard } from '@/components/dashboard/module-card'
 import { TrainingHeader } from '@/components/training/training-header'
+import { ClinicIntroduction } from '@/components/dashboard/clinic-introduction'
 
 export default async function TrainingPage() {
   const user = await getUser()
@@ -39,6 +40,9 @@ export default async function TrainingPage() {
   return (
     <div className="space-y-8">
       <TrainingHeader totalModules={modules?.length || 0} totalResources={totalResources || 0} />
+      
+      {/* Clinic Introduction */}
+      <ClinicIntroduction />
       
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         {modulesWithProgress?.map((module) => (
