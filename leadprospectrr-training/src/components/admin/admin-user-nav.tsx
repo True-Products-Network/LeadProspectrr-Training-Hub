@@ -37,14 +37,14 @@ export function AdminUserNav({ user }: AdminUserNavProps) {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className="relative h-10 w-10 rounded-full">
+      <DropdownMenuTrigger>
+        <div className="relative h-10 w-10 rounded-full cursor-pointer">
           <Avatar className="h-10 w-10">
             <AvatarFallback className="bg-gradient-to-br from-indigo-500 to-purple-600 text-white">
               {initials}
             </AvatarFallback>
           </Avatar>
-        </Button>
+        </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56" align="end">
         <DropdownMenuLabel className="font-normal">
