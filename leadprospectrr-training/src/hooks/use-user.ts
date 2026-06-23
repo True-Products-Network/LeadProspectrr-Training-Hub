@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { createBrowserClient } from '@/lib/supabase/client'
+import { createClient } from '@/lib/supabase/client'
 
 interface User {
   id: string
@@ -15,7 +15,7 @@ export function useUser() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    const supabase = createBrowserClient()
+    const supabase = createClient()
     
     const getUser = async () => {
       const { data: { session } } = await supabase.auth.getSession()
