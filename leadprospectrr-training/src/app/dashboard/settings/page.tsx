@@ -1,17 +1,32 @@
-import { createClient } from '@/lib/supabase/server'
-import { getUser } from '@/lib/auth'
-import { redirect } from 'next/navigation'
+'use client'
+
+import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
 import { Switch } from '@/components/ui/switch'
 import { Bell, Lock, Eye, Moon } from 'lucide-react'
 
-export default async function SettingsPage() {
-  const user = await getUser()
+export default function SettingsPage() {
+  const [settings, setSettings] = useState({
+    emailNotifications: false,
+    progressReminders: false,
+    profileVisibility: true,
+    activityStatus: true,
+    darkMode: false,
+  })
 
-  if (!user) {
-    redirect('/login')
+  const handleToggle = (key: keyof typeof settings) => {
+    setSettings(prev => ({
+      ...prev,
+      [key]: !prev[key]
+    }))
+  }
+
+  const handleSave = () => {
+    // In a real app, this would save to the database
+    // For now, we'll just show an alert
+    alert('Settings saved! (Note: Settings are currently stored locally only)')
   }
 
   return (
@@ -36,14 +51,22 @@ export default async function SettingsPage() {
                 <Label htmlFor="email-notifications">Email Notifications</Label>
                 <p className="text-sm text-slate-500">Receive updates about new modules and resources</p>
               </div>
-              <Switch id="email-notifications" disabled />
+              <Switch 
+                id="email-notifications" 
+                checked={settings.emailNotifications}
+                onCheckedChange={() => handleToggle('emailNotifications')}
+              />
             </div>
             <div className="flex items-center justify-between">
               <div className="space-y-0.5">
                 <Label htmlFor="progress-reminders">Progress Reminders</Label>
                 <p className="text-sm text-slate-500">Get reminded to continue your training</p>
               </div>
-              <Switch id="progress-reminders" disabled />
+              <Switch 
+                id="progress-reminders" 
+                checked={settings.progressReminders}
+                onCheckedChange={() => handleToggle('progressReminders')}
+              />
             </div>
           </CardContent>
         </Card>
@@ -62,14 +85,22 @@ export default async function SettingsPage() {
                 <Label htmlFor="profile-visibility">Profile Visibility</Label>
                 <p className="text-sm text-slate-500">Make your profile visible to other users</p>
               </div>
-              <Switch id="profile-visibility" disabled />
+              <Switch 
+                id="profile-visibility" 
+                checked={settings.profileVisibility}
+                onCheckedChange={() => handleToggle('profileVisibility')}
+              />
             </div>
             <div className="flex items-center justify-between">
               <div className="space-y-0.5">
                 <Label htmlFor="activity-status">Show Activity Status</Label>
                 <p className="text-sm text-slate-500">Display when you're active on the platform</p>
               </div>
-              <Switch id="activity-status" disabled />
+              <Switch 
+                id="activity-status" 
+                checked={settings.activityStatus}
+                onCheckedChange={() => handleToggle('activityStatus')}
+              />
             </div>
           </CardContent>
         </Card>
@@ -88,7 +119,11 @@ export default async function SettingsPage() {
                 <Label htmlFor="dark-mode">Dark Mode</Label>
                 <p className="text-sm text-slate-500">Toggle dark mode theme</p>
               </div>
-              <Switch id="dark-mode" disabled />
+              <Switch 
+                id="dark-mode" 
+                checked={settings.darkMode}
+                onCheckedChange={() => handleToggle('darkMode')}
+              />
             </div>
           </CardContent>
         </Card>
@@ -107,21 +142,21 @@ export default async function SettingsPage() {
                 <Label>Password</Label>
                 <p className="text-sm text-slate-500">Change your account password</p>
               </div>
-              <Button variant="outline" disabled>Change Password</Button>
+              <Button variant="outline" onClick={() => alert('Password change coming soon!')}>Change Password</Button>
             </div>
             <div className="flex items-center justify-between">
               <div className="space-y-0.5">
                 <Label>Two-Factor Authentication</Label>
                 <p className="text-sm text-slate-500">Add an extra layer of security</p>
               </div>
-              <Button variant="outline" disabled>Enable 2FA</Button>
+              <Button variant="outline" onClick={() => alert('2FA coming soon!')}>Enable 2FA</Button>
             </div>
           </CardContent>
         </Card>
       </div>
 
       <div className="flex justify-end">
-        <Button disabled>Save Settings</Button>
+        <Button onClick={handleSave}>Save Settings</Button>
       </div>
     </div>
   )
