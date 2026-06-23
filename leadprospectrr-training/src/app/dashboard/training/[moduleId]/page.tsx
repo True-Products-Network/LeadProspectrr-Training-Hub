@@ -17,6 +17,11 @@ import {
   Lock
 } from 'lucide-react'
 import Link from 'next/link'
+import { Lesson, LessonProgress } from '@/app/actions/lessons'
+
+interface LessonWithProgress extends Lesson {
+  userProgress: LessonProgress | null
+}
 
 interface ModulePageProps {
   params: {
@@ -48,7 +53,7 @@ export default async function ModulePage({ params }: ModulePageProps) {
   const lessons = await getModuleLessons(params.moduleId)
   
   // Fetch user's progress for each lesson
-  const lessonsWithProgress = await Promise.all(
+  const lessonsWithProgress: LessonWithProgress[] = await Promise.all(
     lessons.map(async (lesson) => {
       const userProgress = await getUserLessonProgress(user.id, lesson.id)
       return { ...lesson, userProgress }
