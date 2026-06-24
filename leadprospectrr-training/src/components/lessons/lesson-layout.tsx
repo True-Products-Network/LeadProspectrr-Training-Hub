@@ -111,6 +111,8 @@ export function LessonLayout({
     setCompleteError(null)
     try {
       console.log('[LessonLayout] Starting lesson completion...')
+      console.log('[LessonLayout] nextLesson prop:', nextLesson)
+      console.log('[LessonLayout] module.id:', module.id)
       await onComplete()
       console.log('[LessonLayout] Lesson completed successfully, navigating...')
       // Navigate to next lesson or back to module
@@ -121,6 +123,8 @@ export function LessonLayout({
         console.log('[LessonLayout] No next lesson, navigating to module:', module.id)
         router.push(`/dashboard/training/${module.id}`)
       }
+      // Force refresh to ensure data is updated
+      router.refresh()
     } catch (err) {
       console.error('[LessonLayout] Error completing lesson:', err)
       setCompleteError('Failed to complete lesson. Please try again.')

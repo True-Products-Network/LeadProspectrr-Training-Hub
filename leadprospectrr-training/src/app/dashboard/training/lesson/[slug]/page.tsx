@@ -117,23 +117,35 @@ export default async function LessonPage({ params }: LessonPageProps) {
   const progress = await getUserLessonProgress(user.id, lesson.id)
 
   // Fetch total lessons in module
-  const { data: lessons } = await supabase
+  const { data: lessons, error: lessonsError } = await supabase
     .from('lessons')
     .select('id, slug, title, lesson_number')
     .eq('module_id', lesson.module_id)
     .eq('is_published', true)
     .order('lesson_number', { ascending: true })
 
+  console.log('[LessonPage] Lessons query:', { 
+    moduleId: lesson.module_id, 
+    lessonsCount: lessons?.length, 
+    error: lessonsError,
+    currentLessonId: lesson.id,
+    lessonNumbers: lessons?.map(l => ({ id: l.id, num: l.lesson_number, slug: l.slug }))
+  })
+
   const totalLessons = lessons?.length || 0
   
   // Find next and previous lessons
   const currentIndex = lessons?.findIndex(l => l.id === lesson.id) || -1
+  console.log('[LessonPage] currentIndex:', currentIndex, 'totalLessons:', totalLessons)
+  
   const nextLesson = currentIndex >= 0 && currentIndex < (lessons?.length || 0) - 1 
     ? lessons?.[currentIndex + 1] 
     : undefined
   const prevLesson = currentIndex > 0 
     ? lessons?.[currentIndex - 1] 
     : undefined
+    
+  console.log('[LessonPage] nextLesson:', nextLesson, 'prevLesson:', prevLesson)
 
   // Fetch resources for this lesson/module
   const { data: resources } = await supabase
