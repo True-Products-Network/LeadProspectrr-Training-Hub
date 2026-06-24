@@ -100,6 +100,14 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
   
   const lesson = await getLessonBySlug(slug)
   
+  console.log('[LessonPage] Fetched lesson:', { 
+    slug, 
+    id: lesson?.id, 
+    title: lesson?.title,
+    contentLength: lesson?.content?.length,
+    hasContent: !!lesson?.content
+  })
+  
   if (!lesson) {
     redirect('/dashboard/training-program')
   }
