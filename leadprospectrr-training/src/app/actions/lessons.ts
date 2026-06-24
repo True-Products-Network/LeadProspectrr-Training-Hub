@@ -175,14 +175,22 @@ export async function completeLesson(
       console.log('[completeLesson] Updated existing progress to completed')
       
       // Record activity
-      await recordActivity(userId, 'lesson_complete', { 
-        lesson_id: lessonId, 
-        points: pointsEarned,
-        module_id: lesson.module_id
-      })
+      try {
+        await recordActivity(userId, 'lesson_complete', { 
+          lesson_id: lessonId, 
+          points: pointsEarned,
+          module_id: lesson.module_id
+        })
+      } catch (activityErr) {
+        console.error('[completeLesson] Error recording activity:', activityErr)
+      }
       
       // Check for mystery badges
-      await supabase.rpc('check_mystery_badges', { p_user_id: userId })
+      try {
+        await supabase.rpc('check_mystery_badges', { p_user_id: userId })
+      } catch (badgeErr) {
+        console.error('[completeLesson] Error checking badges:', badgeErr)
+      }
       
       revalidatePath('/dashboard/training')
       revalidatePath('/dashboard/training/' + lesson.module_id)
@@ -215,14 +223,22 @@ export async function completeLesson(
     console.log('[completeLesson] Created new progress record')
     
     // Record activity
-    await recordActivity(userId, 'lesson_complete', { 
-      lesson_id: lessonId, 
-      points: pointsEarned,
-      module_id: lesson.module_id
-    })
+    try {
+      await recordActivity(userId, 'lesson_complete', { 
+        lesson_id: lessonId, 
+        points: pointsEarned,
+        module_id: lesson.module_id
+      })
+    } catch (activityErr) {
+      console.error('[completeLesson] Error recording activity:', activityErr)
+    }
     
     // Check for mystery badges
-    await supabase.rpc('check_mystery_badges', { p_user_id: userId })
+    try {
+      await supabase.rpc('check_mystery_badges', { p_user_id: userId })
+    } catch (badgeErr) {
+      console.error('[completeLesson] Error checking badges:', badgeErr)
+    }
     
     revalidatePath('/dashboard/training')
     revalidatePath('/dashboard/training/' + lesson.module_id)
