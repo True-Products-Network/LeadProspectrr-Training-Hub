@@ -9,6 +9,9 @@ interface LessonPageProps {
   params: Promise<{
     slug: string
   }>
+  searchParams: Promise<{
+    tab?: string
+  }>
 }
 
 // Learning goals for each lesson (single goal)
@@ -85,7 +88,7 @@ const lessonObjectives: Record<string, string[]> = {
   ]
 }
 
-export default async function LessonPage({ params }: LessonPageProps) {
+export default async function LessonPage({ params, searchParams }: LessonPageProps) {
   const user = await getUser()
   
   if (!user) {
@@ -93,6 +96,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
   }
 
   const { slug } = await params
+  const { tab } = await searchParams
   
   const lesson = await getLessonBySlug(slug)
   
@@ -197,6 +201,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
       learningGoal={lessonGoals[slug]}
       learningObjectives={lessonObjectives[slug] || []}
       onComplete={handleComplete}
+      initialTab={tab === 'quiz' ? 'quiz' : 'content'}
     />
   )
 }

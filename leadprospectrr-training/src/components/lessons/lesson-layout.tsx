@@ -70,6 +70,7 @@ interface LessonLayoutProps {
   learningGoal?: string
   learningObjectives?: string[]
   onComplete: () => Promise<void>
+  initialTab?: 'content' | 'quiz' | 'resources'
 }
 
 export function LessonLayout({
@@ -83,10 +84,11 @@ export function LessonLayout({
   quizQuestions = [],
   learningGoal,
   learningObjectives = [],
-  onComplete
+  onComplete,
+  initialTab = 'content'
 }: LessonLayoutProps) {
   const router = useRouter()
-  const [activeSection, setActiveSection] = useState<'content' | 'quiz' | 'resources'>('content')
+  const [activeSection, setActiveSection] = useState<'content' | 'quiz' | 'resources'>(initialTab)
   const [quizAnswers, setQuizAnswers] = useState<Record<string, string>>({})
   const [quizResults, setQuizResults] = useState<Record<string, boolean>>({})
   const [showQuizResults, setShowQuizResults] = useState(false)
@@ -112,13 +114,12 @@ export function LessonLayout({
     try {
       console.log('[LessonLayout] Starting lesson completion...')
       await onComplete()
-      console.log('[LessonLayout] Lesson completed successfully, quiz unlocked')
-      // Refresh to show updated state (lesson marked complete, quiz unlocked)
-      router.refresh()
+      console.log('[LessonLayout] Lesson completed successfully, navigating to quiz...')
+      // Navigate to quiz tab with full page reload to ensure fresh data
+      window.location.href = `/dashboard/training/lesson/${lesson.slug}?tab=quiz`
     } catch (err) {
       console.error('[LessonLayout] Error completing lesson:', err)
       setCompleteError('Failed to complete lesson. Please try again.')
-    } finally {
       setIsCompleting(false)
     }
   }
