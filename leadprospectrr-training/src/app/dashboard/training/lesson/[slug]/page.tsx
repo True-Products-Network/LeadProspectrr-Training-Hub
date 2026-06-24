@@ -175,10 +175,17 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
   // Handle lesson completion
   async function handleComplete() {
     'use server'
-    if (!lesson) throw new Error('Lesson not found')
     
-    console.log('[handleComplete] Starting completion for lesson:', lesson.id, 'user:', user.id)
-    const result = await completeLesson(user.id, lesson.id, lesson.duration_minutes)
+    // Get user inside the server action
+    const actionUser = await getUser()
+    if (!actionUser) throw new Error('User not authenticated')
+    
+    // Get lesson details inside the server action
+    const actionLesson = await getLessonBySlug(slug)
+    if (!actionLesson) throw new Error('Lesson not found')
+    
+    console.log('[handleComplete] Starting completion for lesson:', actionLesson.id, 'user:', actionUser.id)
+    const result = await completeLesson(actionUser.id, actionLesson.id, actionLesson.duration_minutes)
     console.log('[handleComplete] completeLesson result:', result)
     
     if (!result.success) {
@@ -187,7 +194,7 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
     
     // Revalidate all relevant paths
     revalidatePath('/dashboard/training')
-    revalidatePath(`/dashboard/training/${lesson.module_id}`)
+    revalidatePath(`/dashboard/training/${actionLesson.module_id}`)
     revalidatePath(`/dashboard/training/lesson/${slug}`)
     console.log('[handleComplete] Paths revalidated')
   }
