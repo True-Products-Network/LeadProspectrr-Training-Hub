@@ -111,22 +111,23 @@ export function LessonLayout({
     setCompleteError(null)
     try {
       console.log('[LessonLayout] Starting lesson completion...')
-      console.log('[LessonLayout] nextLesson prop:', nextLesson)
-      console.log('[LessonLayout] module.id:', module.id)
       await onComplete()
-      console.log('[LessonLayout] Lesson completed successfully, navigating...')
-      // Navigate to next lesson or back to module with full page reload
-      if (nextLesson) {
-        console.log('[LessonLayout] Navigating to next lesson:', nextLesson.slug)
-        window.location.href = `/dashboard/training/lesson/${nextLesson.slug}`
-      } else {
-        console.log('[LessonLayout] No next lesson, navigating to module:', module.id)
-        window.location.href = `/dashboard/training/${module.id}`
-      }
+      console.log('[LessonLayout] Lesson completed successfully, quiz unlocked')
+      // Refresh to show updated state (lesson marked complete, quiz unlocked)
+      router.refresh()
     } catch (err) {
       console.error('[LessonLayout] Error completing lesson:', err)
       setCompleteError('Failed to complete lesson. Please try again.')
+    } finally {
       setIsCompleting(false)
+    }
+  }
+
+  const handleContinueToNextLesson = () => {
+    if (nextLesson) {
+      window.location.href = `/dashboard/training/lesson/${nextLesson.slug}`
+    } else {
+      window.location.href = `/dashboard/training/${module.id}`
     }
   }
 
@@ -315,23 +316,18 @@ export function LessonLayout({
                 <p className="text-white/90 mb-4">
                   Great job! You've earned {lesson.points} points.
                 </p>
-                <div className="flex justify-center gap-4">
-                  {nextLesson ? (
-                    <Link href={`/dashboard/training/lesson/${nextLesson.slug}`}>
-                      <Button variant="secondary" size="lg">
-                        Next Lesson: {nextLesson.title}
-                        <ChevronRight className="w-4 h-4 ml-2" />
-                      </Button>
-                    </Link>
-                  ) : (
-                    <Link href={`/dashboard/training/${module.id}`}>
-                      <Button variant="secondary" size="lg">
-                        Back to Module
-                        <ChevronRight className="w-4 h-4 ml-2" />
-                      </Button>
-                    </Link>
-                  )}
-                </div>
+                <p className="text-white/80 mb-4">
+                  Now take the Knowledge Check to test your understanding.
+                </p>
+                <Button 
+                  variant="secondary" 
+                  size="lg"
+                  onClick={() => setActiveSection('quiz')}
+                >
+                  <Target className="w-4 h-4 mr-2" />
+                  Go to Knowledge Check
+                  <ChevronRight className="w-4 h-4 ml-2" />
+                </Button>
               </CardContent>
             </Card>
           )}
@@ -453,7 +449,7 @@ export function LessonLayout({
                         <>
                           <AlertCircle className="w-8 h-8 mx-auto mb-2" />
                           <p className="font-bold">You got {Object.values(quizResults).filter(Boolean).length} out of {quizQuestions.length} correct.</p>
-                          <p className="text-sm mt-1">Review the explanations and try again.</p>
+                          <p className="text-sm mt-1">Review the explanations above and continue when ready.</p>
                         </>
                       )}
                     </div>
@@ -462,7 +458,7 @@ export function LessonLayout({
                   {showQuizResults && !allCorrect && (
                     <Button 
                       variant="outline"
-                      className="w-full"
+                      className="w-full mb-3"
                       onClick={() => {
                         setShowQuizResults(false)
                         setQuizAnswers({})
@@ -470,6 +466,25 @@ export function LessonLayout({
                       }}
                     >
                       Try Again
+                    </Button>
+                  )}
+
+                  {showQuizResults && (
+                    <Button 
+                      className="w-full bg-gradient-to-r from-blue-500 to-violet-600"
+                      onClick={handleContinueToNextLesson}
+                    >
+                      {nextLesson ? (
+                        <>
+                          Continue to Next Lesson: {nextLesson.title}
+                          <ChevronRight className="w-4 h-4 ml-2" />
+                        </>
+                      ) : (
+                        <>
+                          Back to Module
+                          <ChevronRight className="w-4 h-4 ml-2" />
+                        </>
+                      )}
                     </Button>
                   )}
                 </div>
