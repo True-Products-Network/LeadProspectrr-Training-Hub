@@ -119,6 +119,7 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
 
   // Fetch user's progress for this lesson
   const progress = await getUserLessonProgress(user.id, lesson.id)
+  console.log('[LessonPage] User progress for lesson:', lesson.id, 'progress:', progress)
 
   // Fetch total lessons in module
   const { data: lessons, error: lessonsError } = await supabase
@@ -176,7 +177,9 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
     'use server'
     if (!lesson) throw new Error('Lesson not found')
     
+    console.log('[handleComplete] Starting completion for lesson:', lesson.id, 'user:', user.id)
     const result = await completeLesson(user.id, lesson.id, lesson.duration_minutes)
+    console.log('[handleComplete] completeLesson result:', result)
     
     if (!result.success) {
       throw new Error('Failed to complete lesson')
@@ -186,6 +189,7 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
     revalidatePath('/dashboard/training')
     revalidatePath(`/dashboard/training/${lesson.module_id}`)
     revalidatePath(`/dashboard/training/lesson/${slug}`)
+    console.log('[handleComplete] Paths revalidated')
   }
 
   return (
