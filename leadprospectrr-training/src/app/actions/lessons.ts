@@ -133,17 +133,22 @@ export async function completeLesson(
   const supabase = createAdminClient()
   
   // Get lesson details for points
-  const { data: lesson } = await supabase
+  const { data: lesson, error: lessonError } = await supabase
     .from('lessons')
     .select('points, module_id')
     .eq('id', lessonId)
     .single()
+  
+  if (lessonError) {
+    console.error('[completeLesson] Error fetching lesson:', lessonError)
+  }
   
   if (!lesson) {
     return { success: false, pointsEarned: 0 }
   }
   
   const pointsEarned = lesson.points || 10
+  const moduleId = lesson.module_id
   
   // Update or create progress record
   const { data: existing } = await supabase
@@ -181,7 +186,7 @@ export async function completeLesson(
       console.log('[completeLesson] Skipping check_mystery_badges due to potential RPC error')
       
       revalidatePath('/dashboard/training')
-      revalidatePath('/dashboard/training/' + lesson.module_id)
+      revalidatePath('/dashboard/training/' + moduleId)
       revalidatePath('/dashboard/training/lesson/[slug]', 'page')
       return { success: true, pointsEarned }
     } else {
@@ -217,7 +222,7 @@ export async function completeLesson(
     console.log('[completeLesson] Skipping check_mystery_badges due to potential RPC error')
     
     revalidatePath('/dashboard/training')
-    revalidatePath('/dashboard/training/' + lesson.module_id)
+    revalidatePath('/dashboard/training/' + moduleId)
     revalidatePath('/dashboard/training/lesson/[slug]', 'page')
     return { success: true, pointsEarned }
   }
