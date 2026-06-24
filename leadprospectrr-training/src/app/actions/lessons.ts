@@ -212,14 +212,13 @@ export async function completeLesson(
       points_earned: pointsEarned
     })
     
-    // Create completed record - disable triggers temporarily by using raw SQL
+    // Create completed record
     const { error: insertError } = await supabase
       .from('lesson_progress')
       .insert({
         user_id: userId,
         lesson_id: lessonId,
         status: 'completed',
-        started_at: new Date().toISOString(),
         completed_at: new Date().toISOString(),
         time_spent_minutes: timeSpentMinutes,
         points_earned: pointsEarned
