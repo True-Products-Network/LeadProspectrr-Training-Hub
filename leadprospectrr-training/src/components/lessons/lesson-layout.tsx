@@ -106,6 +106,29 @@ export function LessonLayout({
     setShowQuizResults(true)
   }
 
+  const handleComplete = async () => {
+    setIsCompleting(true)
+    setCompleteError(null)
+    try {
+      console.log('[LessonLayout] Starting lesson completion...')
+      await onComplete()
+      console.log('[LessonLayout] Lesson completed successfully, navigating...')
+      // Navigate to next lesson or back to module
+      if (nextLesson) {
+        console.log('[LessonLayout] Navigating to next lesson:', nextLesson.slug)
+        router.push(`/dashboard/training/lesson/${nextLesson.slug}`)
+      } else {
+        console.log('[LessonLayout] No next lesson, navigating to module:', module.id)
+        router.push(`/dashboard/training/${module.id}`)
+      }
+    } catch (err) {
+      console.error('[LessonLayout] Error completing lesson:', err)
+      setCompleteError('Failed to complete lesson. Please try again.')
+    } finally {
+      setIsCompleting(false)
+    }
+  }
+
   const allCorrect = quizQuestions.length > 0 && quizQuestions.every(q => quizResults[q.id])
 
   return (
@@ -264,19 +287,7 @@ export function LessonLayout({
                   </div>
                 )}
                 <Button 
-                  onClick={async () => {
-                    setIsCompleting(true)
-                    setCompleteError(null)
-                    try {
-                      await onComplete()
-                      router.refresh()
-                    } catch (err) {
-                      console.error('Error completing lesson:', err)
-                      setCompleteError('Failed to complete lesson. Please try again.')
-                    } finally {
-                      setIsCompleting(false)
-                    }
-                  }}
+                  onClick={handleComplete}
                   className="bg-gradient-to-r from-blue-500 to-violet-600"
                   size="lg"
                   disabled={isCompleting}

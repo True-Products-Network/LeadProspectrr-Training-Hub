@@ -9,9 +9,11 @@ interface CompleteButtonProps {
   lessonId: string
   lessonPoints: number
   onComplete: () => Promise<void>
+  nextLessonSlug?: string
+  moduleId?: string
 }
 
-export function CompleteButton({ lessonId, lessonPoints, onComplete }: CompleteButtonProps) {
+export function CompleteButton({ lessonId, lessonPoints, onComplete, nextLessonSlug, moduleId }: CompleteButtonProps) {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const router = useRouter()
@@ -22,8 +24,14 @@ export function CompleteButton({ lessonId, lessonPoints, onComplete }: CompleteB
     
     try {
       await onComplete()
-      // Refresh the page to show updated state
-      router.refresh()
+      // Navigate to next lesson or back to module
+      if (nextLessonSlug) {
+        router.push(`/dashboard/training/lesson/${nextLessonSlug}`)
+      } else if (moduleId) {
+        router.push(`/dashboard/training/${moduleId}`)
+      } else {
+        router.refresh()
+      }
     } catch (err) {
       console.error('Error completing lesson:', err)
       setError('Failed to complete lesson. Please try again.')
