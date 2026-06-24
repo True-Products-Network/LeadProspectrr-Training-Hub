@@ -20,9 +20,11 @@ import {
   FileText,
   Download,
   CheckSquare,
-  AlertCircle
+  AlertCircle,
+  Loader2
 } from 'lucide-react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { cn } from '@/lib/utils'
 
 interface QuizQuestion {
@@ -67,7 +69,7 @@ interface LessonLayoutProps {
   quizQuestions?: QuizQuestion[]
   learningGoal?: string
   learningObjectives?: string[]
-  onComplete: () => void
+  onComplete: () => Promise<void>
 }
 
 export function LessonLayout({
@@ -83,11 +85,14 @@ export function LessonLayout({
   learningObjectives = [],
   onComplete
 }: LessonLayoutProps) {
+  const router = useRouter()
   const [activeSection, setActiveSection] = useState<'content' | 'quiz' | 'resources'>('content')
   const [quizAnswers, setQuizAnswers] = useState<Record<string, string>>({})
   const [quizResults, setQuizResults] = useState<Record<string, boolean>>({})
   const [showQuizResults, setShowQuizResults] = useState(false)
   const [objectivesChecked, setObjectivesChecked] = useState<Record<number, boolean>>({})
+  const [isCompleting, setIsCompleting] = useState(false)
+  const [completeError, setCompleteError] = useState<string | null>(null)
 
   const isCompleted = progress?.status === 'completed'
   const progressPercent = (lesson.lesson_number / totalLessons) * 100
@@ -253,13 +258,40 @@ export function LessonLayout({
                 <p className="text-slate-600 mb-6">
                   Mark this lesson as complete to earn {lesson.points} points and unlock the knowledge check.
                 </p>
+                {completeError && (
+                  <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-600 text-sm">
+                    {completeError}
+                  </div>
+                )}
                 <Button 
-                  onClick={onComplete}
+                  onClick={async () => {
+                    setIsCompleting(true)
+                    setCompleteError(null)
+                    try {
+                      await onComplete()
+                      router.refresh()
+                    } catch (err) {
+                      console.error('Error completing lesson:', err)
+                      setCompleteError('Failed to complete lesson. Please try again.')
+                    } finally {
+                      setIsCompleting(false)
+                    }
+                  }}
                   className="bg-gradient-to-r from-blue-500 to-violet-600"
                   size="lg"
+                  disabled={isCompleting}
                 >
-                  <CheckCircle2 className="w-5 h-5 mr-2" />
-                  Complete Lesson & Earn {lesson.points} Points
+                  {isCompleting ? (
+                    <>
+                      <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                      Completing...
+                    </>
+                  ) : (
+                    <>
+                      <CheckCircle2 className="w-5 h-5 mr-2" />
+                      Complete Lesson & Earn {lesson.points} Points
+                    </>
+                  )}
                 </Button>
               </CardContent>
             </Card>

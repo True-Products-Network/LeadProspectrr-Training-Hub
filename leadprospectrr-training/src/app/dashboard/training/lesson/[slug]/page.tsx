@@ -3,6 +3,7 @@ import { getUser } from '@/lib/auth'
 import { redirect } from 'next/navigation'
 import { getLessonBySlug, getUserLessonProgress, completeLesson } from '@/app/actions/lessons'
 import { LessonLayout } from '@/components/lessons/lesson-layout'
+import { revalidatePath } from 'next/cache'
 
 interface LessonPageProps {
   params: Promise<{
@@ -152,8 +153,20 @@ export default async function LessonPage({ params }: LessonPageProps) {
   // Handle lesson completion
   async function handleComplete() {
     'use server'
-    if (!lesson) return
-    await completeLesson(user.id, lesson.id, lesson.duration_minutes)
+    if (!lesson) throw new Error('Lesson not found')
+    
+    const result = await completeLesson(user.id, lesson.id, lesson.duration_minutes)
+    
+    if (!result.success) {
+      throw new Error('Failed to complete lesson')
+    }
+    
+    // Revalidate all relevant paths
+    revalidatePath('/dashboard/training')
+    revalidatePath(`/dashboard/training/${lesson.module_id}`)
+    revalidatePath(`/dashboard/training/lesson/${slug}`)
+    
+    return result
   }
 
   return (
