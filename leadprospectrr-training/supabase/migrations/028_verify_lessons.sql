@@ -5,6 +5,7 @@ DECLARE
   v_module_id UUID;
   v_count INTEGER;
   v_published_count INTEGER;
+  rec RECORD;
 BEGIN
   -- Get Module 1
   SELECT id INTO v_module_id FROM public.training_modules WHERE week_number = 1 LIMIT 1;
