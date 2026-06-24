@@ -132,10 +132,10 @@ export async function completeLesson(
 ): Promise<{ success: boolean; pointsEarned: number }> {
   const supabase = createAdminClient()
   
-  // Get lesson details for points
+  // Get lesson details for points (avoid selecting module_id to prevent ambiguous column errors)
   const { data: lesson, error: lessonError } = await supabase
     .from('lessons')
-    .select('points, module_id')
+    .select('points')
     .eq('id', lessonId)
     .single()
   
@@ -148,7 +148,15 @@ export async function completeLesson(
   }
   
   const pointsEarned = lesson.points || 10
-  const moduleId = lesson.module_id
+  
+  // Get module_id separately to avoid any potential conflicts
+  const { data: lessonModule } = await supabase
+    .from('lessons')
+    .select('module_id')
+    .eq('id', lessonId)
+    .single()
+  
+  const moduleId = lessonModule?.module_id || ''
   
   // Update or create progress record
   const { data: existing } = await supabase
