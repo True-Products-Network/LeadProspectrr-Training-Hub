@@ -165,8 +165,6 @@ export default async function LessonPage({ params }: LessonPageProps) {
     revalidatePath('/dashboard/training')
     revalidatePath(`/dashboard/training/${lesson.module_id}`)
     revalidatePath(`/dashboard/training/lesson/${slug}`)
-    
-    return result
   }
 
   return (
