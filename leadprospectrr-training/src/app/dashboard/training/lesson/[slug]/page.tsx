@@ -13,12 +13,15 @@ interface LessonPageProps {
 // Learning goals for each lesson (single goal)
 const lessonGoals: Record<string, string> = {
   'why-blog-posts-matter': 'Understand why creating blog posts inside LeadProspectrr can help your business.',
-  'planning-your-blog-post': 'Plan your blog post before opening the editor.',
-  'blog-settings-overview': 'Understand why the Settings area should be checked before creating a new blog post.',
-  'creating-a-new-blog-post': 'Create a new blog post inside LeadProspectrr.',
-  'adding-images-and-links': 'Learn how to add visual content and useful links to your blog post.',
+  'planning-your-blog-post': 'Plan a simple blog post that answers one customer question.',
+  'blog-settings-overview': 'Understand the blog settings before creating your first post.',
+  'creating-a-new-blog-post': 'Create a new blog post and add the basic details.',
+  'write-and-format-your-content': 'Add and format the main content of your blog post.',
+  'adding-images-and-links': 'Add images and links to make your post more engaging.',
+  'add-categories-tags-and-author': 'Set the category, tags, and author for the blog post.',
   'seo-basics': 'Complete the basic SEO settings for the blog post.',
-  'preview-and-publish': 'Check the post before publishing.',
+  'preview-and-review': 'Check the post before publishing.',
+  'publish-or-schedule': 'Publish the blog post now or schedule it for later.',
   'sharing-your-blog-post': 'Use your published post as part of your follow-up and marketing.'
 }
 
@@ -44,20 +47,35 @@ const lessonObjectives: Record<string, string[]> = {
     'Format content using headings and paragraphs',
     'Keep content readable and organized'
   ],
+  'write-and-format-your-content': [
+    'Write engaging blog post content',
+    'Format using headings and paragraphs',
+    'Add a clear call to action'
+  ],
   'adding-images-and-links': [
     'Add a featured image to your post',
     'Include inline images in your content',
     'Add links to guide readers to next steps'
+  ],
+  'add-categories-tags-and-author': [
+    'Set the appropriate category',
+    'Add relevant tags',
+    'Assign the correct author'
   ],
   'seo-basics': [
     'Complete basic SEO settings',
     'Write effective meta descriptions',
     'Create clean URL slugs'
   ],
-  'preview-and-publish': [
+  'preview-and-review': [
     'Preview your post before publishing',
     'Check for errors and formatting issues',
-    'Publish or schedule your blog post'
+    'Test all links and images'
+  ],
+  'publish-or-schedule': [
+    'Publish your post immediately',
+    'Schedule for future publication',
+    'Copy the blog post URL'
   ],
   'sharing-your-blog-post': [
     'Share your published blog post',
