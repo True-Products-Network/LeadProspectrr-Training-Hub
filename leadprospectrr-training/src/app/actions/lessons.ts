@@ -71,6 +71,8 @@ export async function getLessonBySlug(slug: string): Promise<Lesson | null> {
 export async function getUserLessonProgress(userId: string, lessonId: string): Promise<LessonProgress | null> {
   const supabase = createAdminClient()
   
+  console.log('[getUserLessonProgress] Fetching progress for user:', userId, 'lesson:', lessonId)
+  
   const { data, error } = await supabase
     .from('lesson_progress')
     .select('*')
@@ -78,8 +80,10 @@ export async function getUserLessonProgress(userId: string, lessonId: string): P
     .eq('lesson_id', lessonId)
     .single()
   
-  if (error && error.code !== 'PGRST116') {
-    console.error('Error fetching lesson progress:', error)
+  if (error) {
+    console.log('[getUserLessonProgress] Error or no data:', error.code, error.message)
+  } else {
+    console.log('[getUserLessonProgress] Found progress:', data)
   }
   
   return data
@@ -150,9 +154,10 @@ export async function completeLesson(
     .single()
   
   if (existing) {
+    console.log('[completeLesson] Existing progress found:', existing)
     // Only update if not already completed
     if (existing.status !== 'completed') {
-      await supabase
+      const { error: updateError } = await supabase
         .from('lesson_progress')
         .update({
           status: 'completed',
@@ -161,6 +166,13 @@ export async function completeLesson(
           points_earned: pointsEarned
         })
         .eq('id', existing.id)
+      
+      if (updateError) {
+        console.error('[completeLesson] Update error:', updateError)
+        return { success: false, pointsEarned: 0 }
+      }
+      
+      console.log('[completeLesson] Updated existing progress to completed')
       
       // Record activity
       await recordActivity(userId, 'lesson_complete', { 
@@ -176,10 +188,14 @@ export async function completeLesson(
       revalidatePath('/dashboard/training/' + lesson.module_id)
       revalidatePath('/dashboard/training/lesson/[slug]', 'page')
       return { success: true, pointsEarned }
+    } else {
+      console.log('[completeLesson] Lesson already completed')
+      return { success: true, pointsEarned: existing.points_earned || pointsEarned }
     }
   } else {
+    console.log('[completeLesson] No existing progress, creating new record')
     // Create completed record
-    await supabase
+    const { error: insertError } = await supabase
       .from('lesson_progress')
       .insert({
         user_id: userId,
@@ -190,6 +206,13 @@ export async function completeLesson(
         time_spent_minutes: timeSpentMinutes,
         points_earned: pointsEarned
       })
+    
+    if (insertError) {
+      console.error('[completeLesson] Insert error:', insertError)
+      return { success: false, pointsEarned: 0 }
+    }
+    
+    console.log('[completeLesson] Created new progress record')
     
     // Record activity
     await recordActivity(userId, 'lesson_complete', { 
