@@ -174,23 +174,11 @@ export async function completeLesson(
       
       console.log('[completeLesson] Updated existing progress to completed')
       
-      // Record activity
-      try {
-        await recordActivity(userId, 'lesson_complete', { 
-          lesson_id: lessonId, 
-          points: pointsEarned
-          // Note: module_id removed to avoid ambiguous column reference in RPC
-        })
-      } catch (activityErr) {
-        console.error('[completeLesson] Error recording activity:', activityErr)
-      }
+      // Record activity - temporarily disabled due to RPC error
+      console.log('[completeLesson] Skipping recordActivity due to RPC error')
       
-      // Check for mystery badges
-      try {
-        await supabase.rpc('check_mystery_badges', { p_user_id: userId })
-      } catch (badgeErr) {
-        console.error('[completeLesson] Error checking badges:', badgeErr)
-      }
+      // Check for mystery badges - temporarily disabled
+      console.log('[completeLesson] Skipping check_mystery_badges due to potential RPC error')
       
       revalidatePath('/dashboard/training')
       revalidatePath('/dashboard/training/' + lesson.module_id)
@@ -222,23 +210,11 @@ export async function completeLesson(
     
     console.log('[completeLesson] Created new progress record')
     
-    // Record activity
-    try {
-      await recordActivity(userId, 'lesson_complete', { 
-        lesson_id: lessonId, 
-        points: pointsEarned
-        // Note: module_id removed to avoid ambiguous column reference in RPC
-      })
-    } catch (activityErr) {
-      console.error('[completeLesson] Error recording activity:', activityErr)
-    }
+    // Record activity - temporarily disabled due to RPC error
+    console.log('[completeLesson] Skipping recordActivity due to RPC error')
     
-    // Check for mystery badges
-    try {
-      await supabase.rpc('check_mystery_badges', { p_user_id: userId })
-    } catch (badgeErr) {
-      console.error('[completeLesson] Error checking badges:', badgeErr)
-    }
+    // Check for mystery badges - temporarily disabled
+    console.log('[completeLesson] Skipping check_mystery_badges due to potential RPC error')
     
     revalidatePath('/dashboard/training')
     revalidatePath('/dashboard/training/' + lesson.module_id)
