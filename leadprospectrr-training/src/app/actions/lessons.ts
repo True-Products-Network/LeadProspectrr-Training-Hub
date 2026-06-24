@@ -173,6 +173,8 @@ export async function completeLesson(
       await supabase.rpc('check_mystery_badges', { p_user_id: userId })
       
       revalidatePath('/dashboard/training')
+      revalidatePath('/dashboard/training/' + lesson.module_id)
+      revalidatePath('/dashboard/training/lesson/[slug]', 'page')
       return { success: true, pointsEarned }
     }
   } else {
@@ -200,6 +202,8 @@ export async function completeLesson(
     await supabase.rpc('check_mystery_badges', { p_user_id: userId })
     
     revalidatePath('/dashboard/training')
+    revalidatePath('/dashboard/training/' + lesson.module_id)
+    revalidatePath('/dashboard/training/lesson/[slug]', 'page')
     return { success: true, pointsEarned }
   }
   
