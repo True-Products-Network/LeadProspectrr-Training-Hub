@@ -178,8 +178,8 @@ export async function completeLesson(
       try {
         await recordActivity(userId, 'lesson_complete', { 
           lesson_id: lessonId, 
-          points: pointsEarned,
-          module_id: lesson.module_id
+          points: pointsEarned
+          // Note: module_id removed to avoid ambiguous column reference in RPC
         })
       } catch (activityErr) {
         console.error('[completeLesson] Error recording activity:', activityErr)
@@ -226,8 +226,8 @@ export async function completeLesson(
     try {
       await recordActivity(userId, 'lesson_complete', { 
         lesson_id: lessonId, 
-        points: pointsEarned,
-        module_id: lesson.module_id
+        points: pointsEarned
+        // Note: module_id removed to avoid ambiguous column reference in RPC
       })
     } catch (activityErr) {
       console.error('[completeLesson] Error recording activity:', activityErr)
