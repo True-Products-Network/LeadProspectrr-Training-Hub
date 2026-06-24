@@ -99,6 +99,8 @@ export function LessonLayout({
 
   const isCompleted = progress?.status === 'completed'
   const progressPercent = (lesson.lesson_number / totalLessons) * 100
+  
+  console.log('[LessonLayout] nextLesson prop:', nextLesson)
 
   const handleQuizSubmit = () => {
     const results: Record<string, boolean> = {}
