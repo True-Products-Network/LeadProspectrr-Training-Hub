@@ -21,7 +21,8 @@ import {
   Download,
   CheckSquare,
   AlertCircle,
-  Loader2
+  Loader2,
+  Lock
 } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -57,7 +58,7 @@ interface LessonLayoutProps {
     completed_at?: string | null
   } | null
   totalLessons: number
-  nextLesson?: { slug: string; title: string }
+  nextLesson?: { slug: string; title: string; isLocked?: boolean }
   prevLesson?: { slug: string; title: string }
   resources?: Array<{
     id: string
@@ -553,12 +554,19 @@ export function LessonLayout({
         )}
         
         {nextLesson ? (
-          <Link href={`/dashboard/training/lesson/${nextLesson.slug}`}>
-            <Button variant="outline">
-              Next
-              <ChevronRight className="w-4 h-4 ml-2" />
+          nextLesson.isLocked ? (
+            <Button variant="outline" disabled>
+              <Lock className="w-4 h-4 mr-2" />
+              Locked
             </Button>
-          </Link>
+          ) : (
+            <Link href={`/dashboard/training/lesson/${nextLesson.slug}`}>
+              <Button variant="outline">
+                Next
+                <ChevronRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
+          )
         ) : (
           <Button variant="outline" disabled>
             Next

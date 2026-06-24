@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cup 2026 Planner & Predictor</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(90deg, #e94560, #ff6b6b);
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(233, 69, 96, 0.3);
+        }
+        header h1 { font-size: 3em; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        header p { font-size: 1.2em; opacity: 0.9; }
+        .trophy { font-size: 4em; margin-bottom: 10px; }
+        .tabs { display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; justify-content: center; }
+        .tab-btn {
+            padding: 15px 30px;
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.2);
+            color: #fff;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1em;
+            font-weight: 600;
+        }
+        .tab-btn:hover, .tab-btn.active { background: #e94560; border-color: #e94560; transform: translateY(-2px); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .group-stage { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 20px; }
+        .group {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .group h3 { color: #e94560; margin-bottom: 15px; font-size: 1.5em; text-align: center; }
+        .standings { margin-bottom: 20px; }
+        .standings table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+        .standings th, .standings td { padding: 6px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .standings th { color: #e94560; font-weight: 600; }
+        .standings .team-name { text-align: left; }
+        .match {
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .match-info { font-size: 0.75em; color: #888; width: 100%; margin-bottom: 3px; }
+        .match-teams { display: flex; align-items: center; gap: 10px; flex: 1; }
+        .team { display: flex; align-items: center; gap: 6px; font-weight: 600; font-size: 0.9em; }
+        .vs { color: #e94560; font-weight: bold; font-size: 0.8em; }
+        .score-inputs { display: flex; gap: 8px; align-items: center; }
+        .score-inputs input {
+            width: 45px; padding: 8px; border: 2px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.1); color: #fff; border-radius: 8px;
+            text-align: center; font-size: 1.1em; font-weight: bold;
+        }
+        .score-inputs input:focus { outline: none; border-color: #e94560; }
+        .pos-1 { background: rgba(46, 204, 113, 0.25); }
+        .pos-2 { background: rgba(46, 204, 113, 0.15); }
+        .pos-3 { background: rgba(241, 196, 15, 0.15); }
+        .pos-4 { opacity: 0.6; }
+        .knockout-stage { display: flex; flex-direction: column; gap: 30px; }
+        .round { background: rgba(255,255,255,0.05); border-radius: 15px; padding: 20px; }
+        .round h3 { color: #e94560; margin-bottom: 20px; text-align: center; font-size: 1.5em; }
+        .bracket { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 15px; }
+        .knockout-match {
+            background: rgba(255,255,255,0.08);
+            border-radius: 10px;
+            padding: 15px;
+            border: 2px solid rgba(233, 69, 96, 0.3);
+        }
+        .knockout-match .match-date { font-size: 0.8em; color: #888; margin-bottom: 10px; }
+        .knockout-match .teams { display: flex; flex-direction: column; gap: 8px; }
+        .knockout-team {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;
+        }
+        .knockout-team.winner { background: rgba(46, 204, 113, 0.3); border: 1px solid #2ecc71; }
+        .knockout-team input {
+            width: 45px; padding: 8px; border: 2px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.1); color: #fff; border-radius: 8px;
+            text-align: center; font-size: 1.1em; font-weight: bold;
+        }
+        .knockout-team input:focus { outline: none; border-color: #e94560; }
+        .stats-section { background: rgba(255,255,255,0.05); border-radius: 15px; padding: 30px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .stat-card { background: rgba(255,255,255,0.08); border-radius: 10px; padding: 20px; text-align: center; }
+        .stat-card h4 { color: #e94560; margin-bottom: 10px; }
+        .stat-value { font-size: 2em; font-weight: bold; }
+        .info-section { background: rgba(255,255,255,0.05); border-radius: 15px; padding: 30px; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
+        .info-card { background: rgba(255,255,255,0.08); border-radius: 10px; padding: 20px; }
+        .info-card h4 { color: #e94560; margin-bottom: 10px; }
+        .host-cities { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+        .city-tag { background: rgba(233, 69, 96, 0.2); padding: 5px 15px; border-radius: 20px; font-size: 0.9em; }
+        .legend { display: flex; gap: 20px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; }
+        .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.9em; }
+        .legend-color { width: 20px; height: 20px; border-radius: 4px; }
+        .reset-btn {
+            position: fixed; bottom: 30px; right: 30px; padding: 15px 30px;
+            background: #e94560; border: none; color: #fff; border-radius: 50px;
+            cursor: pointer; font-weight: 600; box-shadow: 0 5px 20px rgba(233, 69, 96, 0.4);
+            transition: all 0.3s;
+        }
+        .reset-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(233, 69, 96, 0.5); }
+        .advancement-note {
+            background: rgba(233, 69, 96, 0.1); border-left: 4px solid #e94560;
+            padding: 15px; margin-bottom: 20px; border-radius: 0 8px 8px 0;
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2em; }
+            .group-stage { grid-template-columns: 1fr; }
+            .match { flex-direction: column; align-items: stretch; }
+            .match-teams { justify-content: center; }
+            .score-inputs { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="trophy">🏆</div>
+            <h1>FIFA World Cup 2026</h1>
+            <p>USA • Canada • Mexico | June 11 - July 19, 2026</p>
+            <p style="margin-top: 10px; font-size: 1em;">48 Teams • 104 Matches • 12 Groups</p>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('groups')">Group Stage</button>
+            <button class="tab-btn" onclick="showTab('knockout')">Knockout Stage</button>
+            <button class="tab-btn" onclick="showTab('stats')">My Stats</button>
+            <button class="tab-btn" onclick="showTab('info')">Tournament Info</button>
+        </div>
+
+        <div id="groups" class="tab-content active">
+            <div class="advancement-note">
+                <strong>Advancement:</strong> Top 2 from each group qualify + 8 best 3rd-placed teams
+            </div>
+            <div class="legend">
+                <div class="legend-item"><div class="legend-color" style="background: rgba(46, 204, 113, 0.3);"></div><span>1st Place</span></div>
+                <div class="legend-item"><div class="legend-color" style="background: rgba(46, 204, 113, 0.15);"></div><span>2nd Place</span></div>
+                <div class="legend-item"><div class="legend-color" style="background: rgba(241, 196, 15, 0.2);"></div><span>3rd Place (Possible)</span></div>
+            </div>
+            <div class="group-stage" id="groupStage"></div>
+        </div>
+
+        <div id="knockout" class="tab-content">
+            <div class="advancement-note">
+                <strong>Knockout Format:</strong> Teams advance automatically based on group results. Enter scores to see winners progress!
+            </div>
+            <div class="knockout-stage" id="knockoutStage"></div>
+        </div>
+
+        <div id="stats" class="tab-content">
+            <div class="stats-section">
+                <h2 style="text-align: center; margin-bottom: 10px;">My World Cup Tracker</h2>
+                <div class="stats-grid">
+                    <div class="stat-card"><h4>Group Matches Predicted</h4><div class="stat-value" id="matchesPredicted">0</div></div>
+                    <div class="stat-card"><h4>Knockout Matches Set</h4><div class="stat-value" id="knockoutMatches">0</div></div>
+                    <div class="stat-card"><h4>Goals Predicted</h4><div class="stat-value" id="totalGoals">0</div></div>
+                    <div class="stat-card"><h4>Groups Completed</h4><div class="stat-value" id="groupsCompleted">0/12</div></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="info" class="tab-content">
+            <div class="info-section">
+                <h2 style="text-align: center; margin-bottom: 10px;">Tournament Information</h2>
+                <div class="info-grid">
+                    <div class="info-card"><h4>🗓️ Dates</h4><p>June 11 - July 19, 2026</p><p>39 days of football action</p></div>
+                    <div class="info-card">
+                        <h4>🏟️ Host Cities</h4>
+                        <div class="host-cities">
+                            <span class="city-tag">🇺🇸 Atlanta</span><span class="city-tag">🇺🇸 Boston</span><span class="city-tag">🇺🇸 Dallas</span>
+                            <span class="city-tag">🇺🇸 Houston</span><span class="city-tag">🇺🇸 Kansas City</span><span class="city-tag">🇺🇸 LA</span>
+                            <span class="city-tag">🇺🇸 Miami</span><span class="city-tag">🇺🇸 NY/NJ</span><span class="city-tag">🇺🇸 Philadelphia</span>
+                            <span class="city-tag">🇺🇸 San Francisco</span><span class="city-tag">🇺🇸 Seattle</span><span class="city-tag">🇨🇦 Toronto</span>
+                            <span class="city-tag">🇨🇦 Vancouver</span><span class="city-tag">🇲🇽 Guadalajara</span><span class="city-tag">🇲🇽 Mexico City</span>
+                            <span class="city-tag">🇲🇽 Monterrey</span>
+                        </div>
+                    </div>
+                    <div class="info-card"><h4>⚽ Format</h4><p>• 12 groups of 4 teams</p><p>• Top 2 + 8 best 3rd place advance</p><p>• Round of 32 (new for 2026!)</p></div>
+                    <div class="info-card"><h4>🌟 Defending Champions</h4><p>🇦🇷 Argentina (2022 Qatar)</p></div>
+                </div>
+            </div>
+        </div>
+
+        <button class="reset-btn" onclick="resetAll()">🔄 Reset All Predictions</button>
+    </div>
+
+    <script>
+        // World Cup 2026 - Actual Draw Results
+        const groups = {
+            A: {
+                teams: [
+                    { name: 'Mexico', flag: '🇲🇽' },
+                    { name: 'South Africa', flag: '🇿🇦' },
+                    { name: 'Korea Republic', flag: '🇰🇷' },
+                    { name: 'Czechia', flag: '🇨🇿' }
+                ],
+                matches: []
+            },
+            B: {
+                teams: [
+                    { name: 'Canada', flag: '🇨🇦' },
+                    { name: 'Bosnia and Herzegovina', flag: '🇧🇦' },
+                    { name: 'Qatar', flag: '🇶🇦' },
+                    { name: 'Switzerland', flag: '🇨🇭' }
+                ],
+                matches: []
+            },
+            C: {
+                teams: [
+                    { name: 'Brazil', flag: '🇧🇷' },
+                    { name: 'Morocco', flag: '🇲🇦' },
+                    { name: 'Haiti', flag: '🇭🇹' },
+                    { name: 'Scotland', flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿' }
+                ],
+                matches: []
+            },
+            D: {
+                teams: [
+                    { name: 'United States', flag: '🇺🇸' },
+                    { name: 'Paraguay', flag: '🇵🇾' },
+                    { name: 'Australia', flag: '🇦🇺' },
+                    { name: 'Turkiye', flag: '🇹🇷' }
+                ],
+                matches: []
+            },
+            E: {
+                teams: [
+                    { name: 'Germany', flag: '🇩🇪' },
+                    { name: 'Curacao', flag: '🇨🇼' },
+                    { name: 'Ivory Coast', flag: '🇨🇮' },
+                    { name: 'Ecuador', flag: '🇪🇨' }
+                ],
+                matches: []
+            },
+            F: {
+                teams: [
+                    { name: 'Netherlands', flag: '🇳🇱' },
+                    { name: 'Japan', flag: '🇯🇵' },
+                    { name: 'Sweden', flag: '🇸🇪' },
+                    { name: 'Tunisia', flag: '🇹🇳' }
+                ],
+                matches: []
+            },
+            G: {
+                teams: [
+                    { name: 'Belgium', flag: '🇧🇪' },
+                    { name: 'Egypt', flag: '🇪🇬' },
+                    { name: 'Iran', flag: '🇮🇷' },
+                    { name: 'New Zealand', flag: '🇳🇿' }
+                ],
+                matches: []
+            },
+            H: {
+                teams: [
+                    { name: 'Spain', flag: '🇪🇸' },
+                    { name: 'Cape Verde', flag: '🇨🇻' },
+                    { name: 'Saudi Arabia', flag: '🇸🇦' },
+                    { name: 'Uruguay', flag: '🇺🇾' }
+                ],
+                matches: []
+            },
+            I: {
+                teams: [
+                    { name: 'France', flag: '🇫🇷' },
+                    { name: 'Senegal', flag: '🇸🇳' },
+                    { name: 'Iraq', flag: '🇮🇶' },
+                    { name: 'Norway', flag: '🇳🇴' }
+                ],
+                matches: []
+            },
+            J: {
+                teams: [
+                    { name: 'Argentina', flag: '🇦🇷' },
+                    { name: 'Algeria', flag: '🇩🇿' },
+                    { name: 'Austria', flag: '🇦🇹' },
+                    { name: 'Jordan', flag: '🇯🇴' }
+                ],
+                matches: []
+            },
+            K: {
+                teams: [
+                    { name: 'Portugal', flag: '🇵🇹' },
+                    { name: 'DR Congo', flag: '🇨🇩' },
+                    { name: 'Uzbekistan', flag: '🇺🇿' },
+                    { name: 'Colombia', flag: '🇨🇴' }
+                ],
+                matches: []
+            },
+            L: {
+                teams: [
+                    { name: 'England', flag: '🏴󠁧󠁢󠁥󠁮󠁧󠁿' },
+                    { name: 'Croatia', flag: '🇭🇷' },
+                    { name: 'Ghana', flag: '🇬🇭' },
+                    { name: 'Panama', flag: '🇵🇦' }
+                ],
+                matches: []
+            }
+        };
+
+        // Actual World Cup 2026 Group Stage Schedule
+        const groupSchedule = {
+            A: [
+                { date: 'June 11', time: '2:00 PM', team1: 'Mexico', team2: 'South Africa' },
+                { date: 'June 11', time: '9:00 PM', team1: 'Korea Republic', team2: 'Czechia' },
+                { date: 'June 18', time: '11:00 AM', team1: 'Czechia', team2: 'South Africa' },
+                { date: 'June 18', time: '8:00 PM', team1: 'Mexico', team2: 'Korea Republic' },
+                { date: 'June 24', time: '8:00 PM', team1: 'Czechia', team2: 'Mexico' },
+                { date: 'June 24', time: '8:00 PM', team1: 'South Africa', team2: 'Korea Republic' }
+            ],
+            B: [
+                { date: 'June 12', time: '2:00 PM', team1: 'Canada', team2: 'Bosnia and Herzegovina' },
+                { date: 'June 13', time: '2:00 PM', team1: 'Qatar', team2: 'Switzerland' },
+                { date: 'June 18', time: '2:00 PM', team1: 'Switzerland', team2: 'Bosnia and Herzegovina' },
+                { date: 'June 18', time: '5:00 PM', team1: 'Canada', team2: 'Qatar' },
+                { date: 'June 24', time: '2:00 PM', team1: 'Switzerland', team2: 'Canada' },
+                { date: 'June 24', time: '2:00 PM', team1: 'Bosnia and Herzegovina', team2: 'Qatar' }
+            ],
+            C: [
+                { date: 'June 13', time: '5:00 PM', team1: 'Brazil', team2: 'Morocco' },
+                { date: 'June 13', time: '8:00 PM', team1: 'Haiti', team2: 'Scotland' },
+                { date: 'June 19', time: '5:00 PM', team1: 'Scotland', team2: 'Morocco' },
+                { date: 'June 19', time: '7:30 PM', team1: 'Brazil', team2: 'Haiti' },
+                { date: 'June 24', time: '5:00 PM', team1: 'Scotland', team2: 'Brazil' },
+                { date: 'June 24', time: '5:00 PM', team1: 'Morocco', team2: 'Haiti' }
+            ],
+            D: [
+                { date: 'June 12', time: '8:00 PM', team1: 'United States', team2: 'Paraguay' },
+                { date: 'June 13', time: '11:00 PM', team1: 'Australia', team2: 'Turkiye' },
+                { date: 'June 19', time: '2:00 PM', team1: 'United States', team2: 'Australia' },
+                { date: 'June 19', time: '10:00 PM', team1: 'Turkiye', team2: 'Paraguay' },
+                { date: 'June 25', time: '9:00 PM', team1: 'Turkiye', team2: 'United States' },
+                { date: 'June 25', time: '9:00 PM', team1: 'Paraguay', team2: 'Australia' }
+            ],
+            E: [
+                { date: 'June 14', time: '12:00 PM', team1: 'Germany', team2: 'Curacao' },
+                { date: 'June 14', time: '6:00 PM', team1: 'Ivory Coast', team2: 'Ecuador' },
+                { date: 'June 20', time: '3:00 PM', team1: 'Germany', team2: 'Ivory Coast' },
+                { date: 'June 20', time: '7:00 PM', team1: 'Ecuador', team2: 'Curacao' },
+                { date: 'June 25', time: '3:00 PM', team1: 'Ecuador', team2: 'Germany' },
+                { date: 'June 25', time: '3:00 PM', team1: 'Curacao', team2: 'Ivory Coast' }
+            ],
+            F: [
+                { date: 'June 14', time: '3:00 PM', team1: 'Netherlands', team2: 'Japan' },
+                { date: 'June 14', time: '9:00 PM', team1: 'Sweden', team2: 'Tunisia' },
+                { date: 'June 20', time: '12:00 PM', team1: 'Netherlands', team2: 'Sweden' },
+                { date: 'June 20', time: '11:00 PM', team1: 'Tunisia', team2: 'Japan' },
+                { date: 'June 25', time: '6:00 PM', team1: 'Tunisia', team2: 'Netherlands' },
+                { date: 'June 25', time: '6:00 PM', team1: 'Japan', team2: 'Sweden' }
+            ],
+            G: [
+                { date: 'June 15', time: '2:00 PM', team1: 'Belgium', team2: 'Egypt' },
+                { date: 'June 15', time: '8:00 PM', team1: 'Iran', team2: 'New Zealand' },
+                { date: 'June 21', time: '2:00 PM', team1: 'Belgium', team2: 'Iran' },
+                { date: 'June 21', time: '8:00 PM', team1: 'New Zealand', team2: 'Egypt' },
+                { date: 'June 26', time: '10:00 PM', team1: 'New Zealand', team2: 'Belgium' },
+                { date: 'June 26', time: '10:00 PM', team1: 'Egypt', team2: 'Iran' }
+            ],
+            H: [
+                { date: 'June 15', time: '11:00 AM', team1: 'Spain', team2: 'Cape Verde' },
+                { date: 'June 15', time: '5:00 PM', team1: 'Saudi Arabia', team2: 'Uruguay' },
+                { date: 'June 21', time: '11:00 AM', team1: 'Spain', team2: 'Saudi Arabia' },
+                { date: 'June 21', time: '5:00 PM', team1: 'Uruguay', team2: 'Cape Verde' },
+                { date: 'June 26', time: '7:00 PM', team1: 'Uruguay', team2: 'Spain' },
+                { date: 'June 26', time: '7:00 PM', team1: 'Cape Verde', team2: 'Saudi Arabia' }
+            ],
+            I: [
+                { date: 'June 16', time: '2:00 PM', team1: 'France', team2: 'Senegal' },
+                { date: 'June 16', time: '5:00 PM', team1: 'Iraq', team2: 'Norway' },
+                { date: 'June 22', time: '4:00 PM', team1: 'France', team2: 'Iraq' },
+                { date: 'June 22', time: '7:00 PM', team1: 'Norway', team2: 'Senegal' },
+                { date: 'June 26', time: '2:00 PM', team1: 'Norway', team2: 'France' },
+                { date: 'June 26', time: '2:00 PM', team1: 'Senegal', team2: 'Iraq' }
+            ],
+            J: [
+                { date: 'June 16', time: '8:00 PM', team1: 'Argentina', team2: 'Algeria' },
+                { date: 'June 16', time: '11:00 PM', team1: 'Austria', team2: 'Jordan' },
+                { date: 'June 22', time: '12:00 PM', team1: 'Argentina', team2: 'Austria' },
+                { date: 'June 22', time: '10:00 PM', team1: 'Jordan', team2: 'Algeria' },
+                { date: 'June 27', time: '9:00 PM', team1: 'Jordan', team2: 'Argentina' },
+                { date: 'June 27', time: '9:00 PM', team1: 'Algeria', team2: 'Austria' }
+            ],
+            K: [
+                { date: 'June 17', time: '12:00 PM', team1: 'Portugal', team2: 'DR Congo' },
+                { date: 'June 17', time: '9:00 PM', team1: 'Uzbekistan', team2: 'Colombia' },
+                { date: 'June 23', time: '12:00 PM', team1: 'Portugal', team2: 'Uzbekistan' },
+                { date: 'June 23', time: '9:00 PM', team1: 'Colombia', team2: 'DR Congo' },
+                { date: 'June 27', time: '6:30 PM', team1: 'Colombia', team2: 'Portugal' },
+                { date: 'June 27', time: '6:30 PM', team1: 'DR Congo', team2: 'Uzbekistan' }
+            ],
+            L: [
+                { date: 'June 17', time: '3:00 PM', team1: 'England', team2: 'Croatia' },
+                { date: 'June 17', time: '6:00 PM', team1: 'Ghana', team2: 'Panama' },
+                { date: 'June 23', time: '3:00 PM', team1: 'England', team2: 'Ghana' },
+                { date: 'June 23', time: '6:00 PM', team1: 'Panama', team2: 'Croatia' },
+                { date: 'June 27', time: '4:00 PM', team1: 'Panama', team2: 'England' },
+                { date: 'June 27', time: '4:00 PM', team1: 'Croatia', team2: 'Ghana' }
+            ]
+        };
+
+        // Generate group matches from actual schedule
+        function generateGroupMatches() {
+            Object.keys(groups).forEach(groupName => {
+                const schedule = groupSchedule[groupName];
+                const teams = groups[groupName].teams;
+                groups[groupName].matches = schedule.map(match => ({
+                    date: match.date,
+                    time: match.time,
+                    team1: teams.find(t => t.name === match.team1),
+                    team2: teams.find(t => t.name === match.team2)
+                }));
+            });
+        }
+
+        // Load/Save data
+        function loadData() {
+            const saved = localStorage.getItem('wc2026_data');
+            return saved ? JSON.parse(saved) : { predictions: {}, knockout: {} };
+        }
+        function saveData(data) {
+            localStorage.setItem('wc2026_data', JSON.stringify(data));
+        }
+
+        // Update standings for a group
+        function updateStandings(groupName) {
+            const data = loadData();
+            const group = groups[groupName];
+            const standings = group.teams.map((team, idx) => ({
+                idx, team, played: 0, won: 0, drawn: 0, lost: 0, gf: 0, ga: 0, points: 0
+            }));
+
+            group.matches.forEach((match, mIdx) => {
+                const key = `${groupName}-${mIdx}`;
+                const pred = data.predictions[key];
+                if (pred && pred.home !== '' && pred.away !== '') {
+                    const home = parseInt(pred.home), away = parseInt(pred.away);
+                    const t1 = standings.find(s => s.team === match.team1);
+                    const t2 = standings.find(s => s.team === match.team2);
+                    t1.played++; t2.played++;
+                    t1.gf += home; t1.ga += away;
+                    t2.gf += away; t2.ga += home;
+                    if (home > away) { t1.won++; t1.points += 3; t2.lost++; }
+                    else if (away > home) { t2.won++; t2.points += 3; t1.lost++; }
+                    else { t1.drawn++; t2.drawn++; t1.points++; t2.points++; }
+                }
+            });
+
+            return standings.sort((a, b) => b.points - a.points || (b.gf - b.ga) - (a.gf - a.ga) || b.gf - a.gf);
+        }
+
+        // Get all group standings
+        function getAllStandings() {
+            const result = {};
+            Object.keys(groups).forEach(g => result[g] = updateStandings(g));
+            return result;
+        }
+
+        // Get qualified teams for knockout
+        function getQualifiedTeams() {
+            const allStandings = getAllStandings();
+            const qualified = [];
+            const thirdPlaced = [];
+            const qualifiedTeamNames = new Set();
+
+            Object.keys(allStandings).forEach(group => {
+                const standings = allStandings[group];
+                // 1st place
+                if (standings[0]) {
+                    qualified.push({ ...standings[0], position: '1' + group, group });
+                    qualifiedTeamNames.add(standings[0].team.name);
+                }
+                // 2nd place
+                if (standings[1]) {
+                    qualified.push({ ...standings[1], position: '2' + group, group });
+                    qualifiedTeamNames.add(standings[1].team.name);
+                }
+                // 3rd place (collect for later ranking)
+                if (standings[2]) {
+                    thirdPlaced.push({ ...standings[2], position: '3' + group, group });
+                }
+            });
+
+            // Sort 3rd placed by: points, goal difference, goals scored, goals conceded (fewer is better), then random
+            thirdPlaced.sort((a, b) => {
+                // Points
+                if (b.points !== a.points) return b.points - a.points;
+                // Goal difference
+                const gdA = a.gf - a.ga;
+                const gdB = b.gf - b.ga;
+                if (gdB !== gdA) return gdB - gdA;
+                // Goals scored
+                if (b.gf !== a.gf) return b.gf - a.gf;
+                // Goals conceded (fewer is better)
+                if (a.ga !== b.ga) return a.ga - b.ga;
+                // Random choice as final tiebreaker
+                return Math.random() - 0.5;
+            });
+
+            // Add top 8 third-placed teams that aren't already qualified
+            let thirdPlaceCount = 0;
+            for (const team of thirdPlaced) {
+                if (thirdPlaceCount >= 8) break;
+                if (!qualifiedTeamNames.has(team.team.name)) {
+                    qualified.push({ ...team, position: '3' + team.group });
+                    qualifiedTeamNames.add(team.team.name);
+                    thirdPlaceCount++;
+                }
+            }
+
+            return qualified;
+        }
+
+        // Pre-calculate 3rd place team assignments for the knockout stage
+        // Returns a map of slot reference -> assigned team position
+        function calculateThirdPlaceAssignments(qualified) {
+            const assignments = new Map();
+            const usedTeams = new Set();
+            
+            // Define all 3rd place slots in the order they appear in the bracket
+            const thirdPlaceSlots = [
+                { slot: '3A/B/C/D/F', matchId: '74' },
+                { slot: '3C/D/F/G/H', matchId: '77' },
+                { slot: '3C/E/F/H/I', matchId: '79' },
+                { slot: '3E/H/I/J/K', matchId: '80' },
+                { slot: '3B/E/F/I/J', matchId: '81' },
+                { slot: '3A/E/H/I/J', matchId: '82' },
+                { slot: '3E/F/G/I/J', matchId: '85' },
+                { slot: '3D/E/I/J/L', matchId: '87' }
+            ];
+            
+            // Get ALL 3rd place teams from group standings (not just the top 8)
+            const allStandings = getAllStandings();
+            const allThirdPlaced = [];
+            Object.keys(allStandings).forEach(group => {
+                const standings = allStandings[group];
+                if (standings[2]) {
+                    allThirdPlaced.push({ ...standings[2], position: '3' + group, group });
+                }
+            });
+            
+            // Sort ALL 3rd placed teams by: points, GD, GF, GA (fewer)
+            // Groups of tied teams will be shuffled randomly
+            allThirdPlaced.sort((a, b) => {
+                if (b.points !== a.points) return b.points - a.points;
+                const gdA = a.gf - a.ga;
+                const gdB = b.gf - b.ga;
+                if (gdB !== gdA) return gdB - gdA;
+                if (b.gf !== a.gf) return b.gf - a.gf;
+                return a.ga - b.ga;
+            });
+            
+            // Shuffle teams that are tied on all criteria (points, GD, GF, GA)
+            for (let i = 0; i < allThirdPlaced.length; i++) {
+                // Find the range of tied teams
+                let tieEnd = i;
+                while (tieEnd < allThirdPlaced.length - 1 && 
+                       allThirdPlaced[tieEnd].points === allThirdPlaced[tieEnd + 1].points &&
+                       (allThirdPlaced[tieEnd].gf - allThirdPlaced[tieEnd].ga) === (allThirdPlaced[tieEnd + 1].gf - allThirdPlaced[tieEnd + 1].ga) &&
+                       allThirdPlaced[tieEnd].gf === allThirdPlaced[tieEnd + 1].gf &&
+                       allThirdPlaced[tieEnd].ga === allThirdPlaced[tieEnd + 1].ga) {
+                    tieEnd++;
+                }
+                
+                // If there's a tie group (more than 1 team), shuffle them
+                if (tieEnd > i) {
+                    const tiedTeams = allThirdPlaced.slice(i, tieEnd + 1);
+                    // Fisher-Yates shuffle
+                    for (let j = tiedTeams.length - 1; j > 0; j--) {
+                        const k = Math.floor(Math.random() * (j + 1));
+                        [tiedTeams[j], tiedTeams[k]] = [tiedTeams[k], tiedTeams[j]];
+                    }
+                    // Put shuffled teams back
+                    for (let j = 0; j < tiedTeams.length; j++) {
+                        allThirdPlaced[i + j] = tiedTeams[j];
+                    }
+                    i = tieEnd; // Skip past this tie group
+                }
+            }
+            
+            for (const { slot } of thirdPlaceSlots) {
+                const options = slot.substring(1).split('/'); // Get letters after "3"
+                
+                // Find all 3rd placed teams from these groups (from ALL 3rd place teams, not just qualified)
+                const candidates = [];
+                options.forEach(letter => {
+                    const team = allThirdPlaced.find(t => t.position === '3' + letter);
+                    if (team) candidates.push(team);
+                });
+                
+                // Sort by the overall ranking
+                candidates.sort((a, b) => {
+                    const idxA = allThirdPlaced.findIndex(t => t.position === a.position);
+                    const idxB = allThirdPlaced.findIndex(t => t.position === b.position);
+                    return idxA - idxB;
+                });
+                
+                // Find first candidate that hasn't been used yet
+                let assigned = null;
+                for (const candidate of candidates) {
+                    if (!usedTeams.has(candidate.position)) {
+                        assigned = candidate;
+                        usedTeams.add(candidate.position);
+                        break;
+                    }
+                }
+                
+                // If no unused candidate found, pick the best one anyway (shouldn't happen with 12 groups)
+                if (!assigned && candidates.length > 0) {
+                    assigned = candidates[0];
+                    usedTeams.add(assigned.position);
+                }
+                
+                // Store assignment (even if null - will show TBD)
+                assignments.set(slot, assigned);
+            }
+            
+            return assignments;
+        }
+
+        // Resolve team reference (e.g., "1A", "3A/B/C/D/F", "W-73")
+        function resolveTeam(ref, qualified, knockoutWinners, thirdPlaceAssignments) {
+            if (!ref) return { name: 'TBD', flag: '❓' };
+            
+            // Direct group position reference (1A, 2B, 3C)
+            if (/^[123][A-L]$/.test(ref)) {
+                const team = qualified.find(q => q.position === ref);
+                return team ? { name: team.team.name, flag: team.team.flag } : { name: ref, flag: '❓' };
+            }
+            
+            // 3rd place with options (3A/B/C/D/F) - use pre-calculated assignment
+            if (/^3[A-L](\/[A-L])+$/.test(ref)) {
+                const assigned = thirdPlaceAssignments ? thirdPlaceAssignments.get(ref) : null;
+                if (assigned) {
+                    return { name: assigned.team.name, flag: assigned.team.flag };
+                }
+                return { name: 'TBD', flag: '❓' };
+            }
+            
+            // Winner of previous round (W-73, W-89, etc.)
+            if (ref.startsWith('W-')) {
+                const winner = knockoutWinners[ref];
+                return winner || { name: ref, flag: '❓' };
+            }
+            
+            return { name: ref, flag: '❓' };
+        }
+
+        // Render group stage
+        function renderGroupStage() {
+            const container = document.getElementById('groupStage');
+            const data = loadData();
+
+            container.innerHTML = Object.keys(groups).map(groupName => {
+                const standings = updateStandings(groupName);
+                const group = groups[groupName];
+
+                return `<div class="group">
+                    <h3>Group ${groupName}</h3>
+                    <div class="standings">
+                        <table>
+                            <tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>Pts</th></tr>
+                            ${standings.map((s, i) => `<tr class="pos-${i + 1}">
+                                <td class="team-name">${s.team.flag} ${s.team.name}</td>
+                                <td>${s.played}</td><td>${s.won}</td><td>${s.drawn}</td><td>${s.lost}</td>
+                                <td>${s.gf}</td><td>${s.ga}</td><td><strong>${s.points}</strong></td>
+                            </tr>`).join('')}
+                        </table>
+                    </div>
+                    ${group.matches.map((match, idx) => {
+                        const key = `${groupName}-${idx}`;
+                        const pred = data.predictions[key] || { home: '', away: '' };
+                        return `<div class="match">
+                            <div class="match-info">${match.date} • ${match.time} • Match ${idx + 1}</div>
+                            <div class="match-teams">
+                                <div class="team">${match.team1.flag} ${match.team1.name}</div>
+                                <span class="vs">VS</span>
+                                <div class="team">${match.team2.flag} ${match.team2.name}</div>
+                            </div>
+                            <div class="score-inputs">
+                                <input type="number" min="0" placeholder="-" value="${pred.home}" onchange="saveMatch('${key}', 'home', this.value)">
+                                <span>-</span>
+                                <input type="number" min="0" placeholder="-" value="${pred.away}" onchange="saveMatch('${key}', 'away', this.value)">
+                            </div>
+                        </div>`;
+                    }).join('')}
+                </div>`;
+            }).join('');
+        }
+
+        // Save match prediction
+        function saveMatch(key, side, value) {
+            const data = loadData();
+            if (!data.predictions[key]) data.predictions[key] = {};
+            data.predictions[key][side] = value;
+            saveData(data);
+            updateStats();
+            renderGroupStage();
+            renderKnockoutStage();
+        }
+
+        // Save knockout prediction
+        function saveKnockout(matchId, side, value) {
+            const data = loadData();
+            if (!data.knockout[matchId]) data.knockout[matchId] = {};
+            data.knockout[matchId][side] = value;
+            saveData(data);
+            updateStats();
+            renderKnockoutStage();
+        }
+
+        // Render knockout stage
+        function renderKnockoutStage() {
+            const container = document.getElementById('knockoutStage');
+            const data = loadData();
+            const qualified = getQualifiedTeams();
+            const knockoutWinners = {};
+            
+            // Pre-calculate 3rd place assignments to ensure each team appears only once
+            const thirdPlaceAssignments = calculateThirdPlaceAssignments(qualified);
+
+            // Calculate winners for each round - CORRECT 2026 WORLD CUP BRACKET
+            const rounds = [
+                { name: 'Round of 32', matches: [
+                    { id: '73', date: 'June 27', home: '2A', away: '2B' },           // Match 73: 2A vs 2B
+                    { id: '74', date: 'June 27', home: '1E', away: '3A/B/C/D/F' },  // Match 74: 1E vs 3rd A/B/C/D/F
+                    { id: '75', date: 'June 27', home: '1F', away: '2C' },           // Match 75: 1F vs 2C
+                    { id: '76', date: 'June 27', home: '1C', away: '2F' },           // Match 76: 1C vs 2F
+                    { id: '77', date: 'June 28', home: '1I', away: '3C/D/F/G/H' },  // Match 77: 1I vs 3rd C/D/F/G/H
+                    { id: '78', date: 'June 28', home: '2E', away: '2I' },           // Match 78: 2E vs 2I
+                    { id: '79', date: 'June 28', home: '1A', away: '3C/E/F/H/I' },  // Match 79: 1A vs 3rd C/E/F/H/I
+                    { id: '80', date: 'June 28', home: '1L', away: '3E/H/I/J/K' },  // Match 80: 1L vs 3rd E/H/I/J/K
+                    { id: '81', date: 'June 29', home: '1D', away: '3B/E/F/I/J' },  // Match 81: 1D vs 3rd B/E/F/I/J
+                    { id: '82', date: 'June 29', home: '1G', away: '3A/E/H/I/J' },  // Match 82: 1G vs 3rd A/E/H/I/J
+                    { id: '83', date: 'June 29', home: '2K', away: '2L' },           // Match 83: 2K vs 2L
+                    { id: '84', date: 'June 29', home: '1H', away: '2J' },           // Match 84: 1H vs 2J
+                    { id: '85', date: 'June 30', home: '1B', away: '3E/F/G/I/J' },  // Match 85: 1B vs 3rd E/F/G/I/J
+                    { id: '86', date: 'June 30', home: '1J', away: '2H' },           // Match 86: 1J vs 2H
+                    { id: '87', date: 'June 30', home: '1K', away: '3D/E/I/J/L' },  // Match 87: 1K vs 3rd D/E/I/J/L
+                    { id: '88', date: 'June 30', home: '2D', away: '2G' }            // Match 88: 2D vs 2G
+                ]},
+                { name: 'Round of 16', matches: [
+                    { id: '89', date: 'July 2', home: 'W-73', away: 'W-75' },   // Match 89: W73 vs W75
+                    { id: '90', date: 'July 2', home: 'W-74', away: 'W-77' },   // Match 90: W74 vs W77
+                    { id: '91', date: 'July 3', home: 'W-76', away: 'W-78' },   // Match 91: W76 vs W78
+                    { id: '92', date: 'July 3', home: 'W-79', away: 'W-80' },   // Match 92: W79 vs W80
+                    { id: '93', date: 'July 4', home: 'W-83', away: 'W-84' },   // Match 93: W83 vs W84
+                    { id: '94', date: 'July 4', home: 'W-81', away: 'W-82' },   // Match 94: W81 vs W82
+                    { id: '95', date: 'July 5', home: 'W-86', away: 'W-88' },   // Match 95: W86 vs W88
+                    { id: '96', date: 'July 5', home: 'W-85', away: 'W-87' }    // Match 96: W85 vs W87
+                ]},
+                { name: 'Quarter Finals', matches: [
+                    { id: '97', date: 'July 8', home: 'W-89', away: 'W-90' },   // QF 97: W89 vs W90
+                    { id: '98', date: 'July 8', home: 'W-93', away: 'W-94' },   // QF 98: W93 vs W94
+                    { id: '99', date: 'July 9', home: 'W-91', away: 'W-92' },   // QF 99: W91 vs W92
+                    { id: '100', date: 'July 9', home: 'W-95', away: 'W-96' }   // QF 100: W95 vs W96
+                ]},
+                { name: 'Semi Finals', matches: [
+                    { id: '101', date: 'July 14', home: 'W-97', away: 'W-98' },  // SF 101: W97 vs W98
+                    { id: '102', date: 'July 15', home: 'W-99', away: 'W-100' }  // SF 102: W99 vs W100
+                ]},
+                { name: 'Final', matches: [
+                    { id: '104', date: 'July 19', home: 'W-101', away: 'W-102' }  // Final 104: W101 vs W102
+                ]}
+            ];
+
+            // Process rounds sequentially to determine winners
+            rounds.forEach(round => {
+                round.matches.forEach(match => {
+                    const pred = data.knockout[match.id];
+                    if (pred && pred.home !== '' && pred.away !== '') {
+                        const homeScore = parseInt(pred.home);
+                        const awayScore = parseInt(pred.away);
+                        const homeTeam = resolveTeam(match.home, qualified, knockoutWinners, thirdPlaceAssignments);
+                        const awayTeam = resolveTeam(match.away, qualified, knockoutWinners, thirdPlaceAssignments);
+                        
+                        if (homeScore > awayScore) {
+                            knockoutWinners['W-' + match.id] = homeTeam;
+                        } else if (awayScore > homeScore) {
+                            knockoutWinners['W-' + match.id] = awayTeam;
+                        }
+                    }
+                });
+            });
+
+            container.innerHTML = rounds.map(round => {
+                return `<div class="round">
+                    <h3>${round.name}</h3>
+                    <div class="bracket">
+                        ${round.matches.map(match => {
+                            const pred = data.knockout[match.id] || { home: '', away: '' };
+                            const homeTeam = resolveTeam(match.home, qualified, knockoutWinners, thirdPlaceAssignments);
+                            const awayTeam = resolveTeam(match.away, qualified, knockoutWinners, thirdPlaceAssignments);
+                            const homeScore = parseInt(pred.home) || 0;
+                            const awayScore = parseInt(pred.away) || 0;
+                            const homeWinner = pred.home !== '' && pred.away !== '' && homeScore > awayScore;
+                            const awayWinner = pred.home !== '' && pred.away !== '' && awayScore > homeScore;
+
+                            return `<div class="knockout-match">
+                                <div class="match-date">${match.date} • ${match.home} vs ${match.away}</div>
+                                <div class="teams">
+                                    <div class="knockout-team ${homeWinner ? 'winner' : ''}">
+                                        <div class="team-info">${homeTeam.flag} ${homeTeam.name}</div>
+                                        <input type="number" min="0" placeholder="-" value="${pred.home}" onchange="saveKnockout('${match.id}', 'home', this.value)">
+                                    </div>
+                                    <div class="knockout-team ${awayWinner ? 'winner' : ''}">
+                                        <div class="team-info">${awayTeam.flag} ${awayTeam.name}</div>
+                                        <input type="number" min="0" placeholder="-" value="${pred.away}" onchange="saveKnockout('${match.id}', 'away', this.value)">
+                                    </div>
+                                </div>
+                            </div>`;
+                        }).join('')}
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        // Update stats
+        function updateStats() {
+            const data = loadData();
+            let groupMatches = 0, knockoutMatches = 0, totalGoals = 0, completedGroups = 0;
+
+            Object.keys(data.predictions).forEach(key => {
+                const pred = data.predictions[key];
+                if (pred.home !== '' && pred.away !== '') {
+                    groupMatches++;
+                    totalGoals += parseInt(pred.home) + parseInt(pred.away);
+                }
+            });
+
+            Object.keys(data.knockout).forEach(key => {
+                const pred = data.knockout[key];
+                if (pred.home !== '' && pred.away !== '') {
+                    knockoutMatches++;
+                    totalGoals += parseInt(pred.home) + parseInt(pred.away);
+                }
+            });
+
+            // Count completed groups (all 6 matches predicted)
+            Object.keys(groups).forEach(g => {
+                let matches = 0;
+                for (let i = 0; i < 6; i++) {
+                    const key = `${g}-${i}`;
+                    if (data.predictions[key] && data.predictions[key].home !== '' && data.predictions[key].away !== '') {
+                        matches++;
+                    }
+                }
+                if (matches === 6) completedGroups++;
+            });
+
+            document.getElementById('matchesPredicted').textContent = groupMatches;
+            document.getElementById('knockoutMatches').textContent = knockoutMatches;
+            document.getElementById('totalGoals').textContent = totalGoals;
+            document.getElementById('groupsCompleted').textContent = `${completedGroups}/12`;
+        }
+
+        // Reset all
+        function resetAll() {
+            if (confirm('Reset all predictions? This cannot be undone.')) {
+                localStorage.removeItem('wc2026_data');
+                renderGroupStage();
+                renderKnockoutStage();
+                updateStats();
+            }
+        }
+
+        // Tab switching
+        function showTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Initialize
+        generateGroupMatches();
+        renderGroupStage();
+        renderKnockoutStage();
+        updateStats();
+    </script>
+</body>
+</html>

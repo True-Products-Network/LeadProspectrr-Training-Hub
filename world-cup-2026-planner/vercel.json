@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "world-cup-2026-planner",
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

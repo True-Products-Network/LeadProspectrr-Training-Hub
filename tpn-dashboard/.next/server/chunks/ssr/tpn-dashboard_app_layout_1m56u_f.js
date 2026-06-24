@@ -1,0 +1,3 @@
+module.exports=[99089,a=>{"use strict";var b=a.i(9351);a.s(["default",0,function({children:a}){return(0,b.jsx)("html",{lang:"en",children:(0,b.jsx)("body",{style:{margin:0,fontFamily:"system-ui, -apple-system, sans-serif"},children:a})})},"metadata",0,{title:"True Products Network - Dashboard",description:"Daily execution system for True Products Network"}])},75595,a=>{a.n(a.i(99089))}];
+
+//# sourceMappingURL=tpn-dashboard_app_layout_1m56u_f.js.map

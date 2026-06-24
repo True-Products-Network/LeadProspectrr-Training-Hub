@@ -1,0 +1,169 @@
+{
+  "newsletter_info": {
+    "name": "STL Business Guide",
+    "date": "June 18, 2026",
+    "week_number": 2,
+    "monthly_theme": "Summer Kickoff",
+    "weekly_topic": "Food & Drink"
+  },
+  "sponsor": {
+    "business_name": "MJM Lawn & Land",
+    "category": "Landscaping",
+    "area": "Chesterfield, MO",
+    "listing_link": "https://stlbusinessguide.com/business/mjm-lawn-land",
+    "notes": "Professional lawn care and landscaping services for residential and commercial properties. VIP member with featured placement. 4.9 rating with 56 reviews. Perfect for summer prep!",
+    "tier": "VIP",
+    "phone": "(314) 555-0789",
+    "website": "https://mjmlawn.com",
+    "short_description": "Professional lawn care and landscaping",
+    "services": ["Lawn Care", "Landscaping", "Maintenance"],
+    "rating": 4.9,
+    "review_count": 56
+  },
+  "vip_listings": [
+    {
+      "business_name": "True Products Marketing",
+      "category": "Marketing Agency",
+      "area": "Chesterfield, MO",
+      "listing_link": "https://stlbusinessguide.com/business/true-products-marketing",
+      "notes": "Full-service digital marketing agency helping local businesses grow online presence. Specializes in SEO, web design, and social media marketing. 5.0 rating with 47 reviews.",
+      "tier": "VIP",
+      "phone": "(314) 886-8084",
+      "website": "https://trueproductsnetwork.com",
+      "short_description": "Digital marketing agency specializing in SEO and web design",
+      "services": ["SEO", "Web Design", "Social Media"],
+      "rating": 5.0,
+      "review_count": 47
+    },
+    {
+      "business_name": "MJM Lawn & Land",
+      "category": "Landscaping",
+      "area": "Chesterfield, MO",
+      "listing_link": "https://stlbusinessguide.com/business/mjm-lawn-land",
+      "notes": "Professional lawn care and landscaping services for residential and commercial properties. 4.9 rating with 56 reviews.",
+      "tier": "VIP",
+      "phone": "(314) 555-0789",
+      "website": "https://mjmlawn.com",
+      "short_description": "Professional lawn care and landscaping",
+      "services": ["Lawn Care", "Landscaping", "Maintenance"],
+      "rating": 4.9,
+      "review_count": 56
+    }
+  ],
+  "premium_listings": [
+    {
+      "business_name": "AIM Training & Consultancy",
+      "category": "Business Training",
+      "area": "St. Louis, MO",
+      "listing_link": "https://stlbusinessguide.com/business/aim-training-consultancy",
+      "notes": "Professional training and consulting services for businesses of all sizes. 4.9 rating with 32 reviews.",
+      "tier": "Premium",
+      "phone": "(314) 555-0123",
+      "website": "https://aimtraining.com",
+      "short_description": "Business training and consulting services",
+      "services": ["Training", "Consulting", "Coaching"],
+      "rating": 4.9,
+      "review_count": 32
+    },
+    {
+      "business_name": "Missouri SEO Agency",
+      "category": "SEO Services",
+      "area": "St. Charles, MO",
+      "listing_link": "https://stlbusinessguide.com/business/missouri-seo-agency",
+      "notes": "Expert SEO services to get your business ranking on page one of Google. 4.8 rating with 28 reviews.",
+      "tier": "Premium",
+      "phone": "(636) 555-0456",
+      "website": "https://missouriseo.com",
+      "short_description": "Expert SEO services for local businesses",
+      "services": ["SEO", "PPC", "Analytics"],
+      "rating": 4.8,
+      "review_count": 28
+    },
+    {
+      "business_name": "Elite Dental Care",
+      "category": "Dental Services",
+      "area": "St. Charles, MO",
+      "listing_link": "https://stlbusinessguide.com/business/elite-dental-care",
+      "notes": "Comprehensive dental care with state-of-the-art technology. 4.9 rating with 124 reviews.",
+      "tier": "Premium",
+      "phone": "(636) 555-0654",
+      "website": "https://elitedental.com",
+      "short_description": "Comprehensive dental care",
+      "services": ["Dental", "Cosmetic", "Family"],
+      "rating": 4.9,
+      "review_count": 124
+    }
+  ],
+  "all_featured": [
+    {
+      "business_name": "True Products Marketing",
+      "category": "Marketing Agency",
+      "area": "Chesterfield, MO",
+      "listing_link": "https://stlbusinessguide.com/business/true-products-marketing",
+      "notes": "Full-service digital marketing agency helping local businesses grow online presence. VIP tier.",
+      "tier": "VIP",
+      "phone": "(314) 886-8084",
+      "website": "https://trueproductsnetwork.com",
+      "short_description": "Digital marketing agency specializing in SEO and web design",
+      "services": ["SEO", "Web Design", "Social Media"],
+      "rating": 5.0,
+      "review_count": 47
+    },
+    {
+      "business_name": "MJM Lawn & Land",
+      "category": "Landscaping",
+      "area": "Chesterfield, MO",
+      "listing_link": "https://stlbusinessguide.com/business/mjm-lawn-land",
+      "notes": "Professional lawn care and landscaping services. VIP tier, featured member.",
+      "tier": "VIP",
+      "phone": "(314) 555-0789",
+      "website": "https://mjmlawn.com",
+      "short_description": "Professional lawn care and landscaping",
+      "services": ["Lawn Care", "Landscaping", "Maintenance"],
+      "rating": 4.9,
+      "review_count": 56
+    },
+    {
+      "business_name": "AIM Training & Consultancy",
+      "category": "Business Training",
+      "area": "St. Louis, MO",
+      "listing_link": "https://stlbusinessguide.com/business/aim-training-consultancy",
+      "notes": "Professional training and consulting services for businesses of all sizes. Premium tier.",
+      "tier": "Premium",
+      "phone": "(314) 555-0123",
+      "website": "https://aimtraining.com",
+      "short_description": "Business training and consulting services",
+      "services": ["Training", "Consulting", "Coaching"],
+      "rating": 4.9,
+      "review_count": 32
+    },
+    {
+      "business_name": "Missouri SEO Agency",
+      "category": "SEO Services",
+      "area": "St. Charles, MO",
+      "listing_link": "https://stlbusinessguide.com/business/missouri-seo-agency",
+      "notes": "Expert SEO services to get your business ranking on page one of Google. Premium tier.",
+      "tier": "Premium",
+      "phone": "(636) 555-0456",
+      "website": "https://missouriseo.com",
+      "short_description": "Expert SEO services for local businesses",
+      "services": ["SEO", "PPC", "Analytics"],
+      "rating": 4.8,
+      "review_count": 28
+    },
+    {
+      "business_name": "Elite Dental Care",
+      "category": "Dental Services",
+      "area": "St. Charles, MO",
+      "listing_link": "https://stlbusinessguide.com/business/elite-dental-care",
+      "notes": "Comprehensive dental care with state-of-the-art technology. Premium tier.",
+      "tier": "Premium",
+      "phone": "(636) 555-0654",
+      "website": "https://elitedental.com",
+      "short_description": "Comprehensive dental care",
+      "services": ["Dental", "Cosmetic", "Family"],
+      "rating": 4.9,
+      "review_count": 124
+    }
+  ]
+}

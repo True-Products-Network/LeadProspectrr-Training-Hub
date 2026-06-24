@@ -156,14 +156,27 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
     foundMatch: lessons?.some(l => l.id === lesson.id)
   })
   
-  const nextLesson = currentIndex >= 0 && currentIndex < (lessons?.length || 0) - 1 
+  const nextLessonData = currentIndex >= 0 && currentIndex < (lessons?.length || 0) - 1 
     ? lessons?.[currentIndex + 1] 
     : undefined
   const prevLesson = currentIndex > 0 
     ? lessons?.[currentIndex - 1] 
     : undefined
     
-  console.log('[LessonPage] nextLesson:', nextLesson, 'prevLesson:', prevLesson)
+  // Check if next lesson is locked (current lesson not completed)
+  // First lesson is always unlocked, subsequent lessons require previous completion
+  let nextLessonIsLocked = false
+  if (nextLessonData && currentIndex >= 0) {
+    const currentLessonProgress = await getUserLessonProgress(user.id, lesson.id)
+    nextLessonIsLocked = currentLessonProgress?.status !== 'completed'
+  }
+  
+  const nextLesson = nextLessonData ? {
+    ...nextLessonData,
+    isLocked: nextLessonIsLocked
+  } : undefined
+    
+  console.log('[LessonPage] nextLesson:', nextLesson, 'prevLesson:', prevLesson, 'nextLessonIsLocked:', nextLessonIsLocked)
 
   // Fetch resources for this lesson/module
   const { data: resources } = await supabase
