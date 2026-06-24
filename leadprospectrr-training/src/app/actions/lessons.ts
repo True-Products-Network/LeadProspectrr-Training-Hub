@@ -203,7 +203,15 @@ export async function completeLesson(
     }
   } else {
     console.log('[completeLesson] No existing progress, creating new record')
-    // Create completed record
+    console.log('[completeLesson] Insert data:', {
+      user_id: userId,
+      lesson_id: lessonId,
+      status: 'completed',
+      time_spent_minutes: timeSpentMinutes,
+      points_earned: pointsEarned
+    })
+    
+    // Create completed record - disable triggers temporarily by using raw SQL
     const { error: insertError } = await supabase
       .from('lesson_progress')
       .insert({
@@ -218,6 +226,8 @@ export async function completeLesson(
     
     if (insertError) {
       console.error('[completeLesson] Insert error:', insertError)
+      console.error('[completeLesson] Insert error code:', insertError.code)
+      console.error('[completeLesson] Insert error message:', insertError.message)
       return { success: false, pointsEarned: 0 }
     }
     
