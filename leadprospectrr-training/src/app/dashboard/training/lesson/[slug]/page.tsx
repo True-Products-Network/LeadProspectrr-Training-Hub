@@ -135,8 +135,13 @@ export default async function LessonPage({ params }: LessonPageProps) {
   const totalLessons = lessons?.length || 0
   
   // Find next and previous lessons
-  const currentIndex = lessons?.findIndex(l => l.id === lesson.id) || -1
+  const currentIndex = lessons?.findIndex(l => l.id === lesson.id) ?? -1
   console.log('[LessonPage] currentIndex:', currentIndex, 'totalLessons:', totalLessons)
+  console.log('[LessonPage] Lesson ID comparison:', { 
+    lessonId: lesson.id, 
+    availableIds: lessons?.map(l => l.id),
+    foundMatch: lessons?.some(l => l.id === lesson.id)
+  })
   
   const nextLesson = currentIndex >= 0 && currentIndex < (lessons?.length || 0) - 1 
     ? lessons?.[currentIndex + 1] 
