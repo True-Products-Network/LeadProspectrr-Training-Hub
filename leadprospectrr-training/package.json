@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "create-lesson": "./scripts/create-lessons.sh",
+    "lesson": "./scripts/create-lessons.sh"
   },
   "dependencies": {
     "@auth/supabase-adapter": "^1.11.2",
