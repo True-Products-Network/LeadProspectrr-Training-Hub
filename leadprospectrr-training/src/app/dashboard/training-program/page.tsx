@@ -22,6 +22,7 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
+import { HeroSection } from './hero-section'
 
 // Extended icons for unlimited weeks
 const moduleIcons = [
@@ -162,39 +163,7 @@ export default async function TrainingProgramPage() {
   return (
     <div className="space-y-8">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-blue-600 via-violet-600 to-purple-600 rounded-3xl p-8 text-white">
-        <div className="max-w-3xl">
-          <Badge className="bg-white/20 text-white mb-4">
-            Weekly LeadProspectrr Clinics
-          </Badge>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Welcome to LeadProspectrr Clinics
-          </h1>
-          <p className="text-xl text-white/90 mb-6">
-            Simple, practical training to help you use LeadProspectrr with confidence. 
-            Learn the tools, take action, and grow your business.
-          </p>
-          
-          {/* Program Stats */}
-          <div className="grid grid-cols-3 gap-4 mt-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center">
-              <BookOpen className="w-6 h-6 mx-auto mb-2" />
-              <p className="text-2xl font-bold">{totalModules}</p>
-              <p className="text-sm text-white/80">Modules</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center">
-              <FileText className="w-6 h-6 mx-auto mb-2" />
-              <p className="text-2xl font-bold">{totalResources || 0}</p>
-              <p className="text-sm text-white/80">Resources</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center">
-              <Zap className="w-6 h-6 mx-auto mb-2" />
-              <p className="text-2xl font-bold">Growing</p>
-              <p className="text-sm text-white/80">Content</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HeroSection totalModules={totalModules} totalResources={totalResources || 0} />
 
       {/* How It Works */}
       <Card className="bg-slate-50">
