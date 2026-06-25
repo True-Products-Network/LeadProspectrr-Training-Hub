@@ -67,7 +67,7 @@ export default async function DashboardPage() {
 
   return (
     <div className="space-y-8">
-      <WelcomeHeader user={user} />
+      <WelcomeHeader user={user} timezone={user.timezone || 'America/Chicago'} />
       
       <ProgressOverview 
         overallProgress={overallProgress}
