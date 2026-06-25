@@ -17,7 +17,8 @@ This skill generates course lesson content files that follow a proven visual des
 ✅ **Interactive CLI** - Step-by-step guided lesson creation  
 ✅ **Quiz Generation** - Multiple choice questions with explanations  
 ✅ **Multiple Module Support** - Specify any module week/name  
-✅ **Batch Creation** - Generate multiple lessons from JSON  
+✅ **Batch Creation** - Generate from single JSON file or directory of files  
+✅ **JSON Validation** - Validates lesson structure before generating SQL  
 ✅ **20+ Built-in Icons** - target, pencil, users, link, image, video, etc.  
 ✅ **10 Color Schemes** - blue, green, amber, purple, rose, cyan, indigo, violet, teal, pink  
 
@@ -35,11 +36,25 @@ Follow the prompts to create your lesson interactively.
 
 ### Batch Mode (JSON)
 
-Create a JSON file with multiple lessons:
+Create a JSON file with one or multiple lessons:
 
 ```bash
 npm start lessons-batch.json
 ```
+
+### Directory Mode (Multiple Files)
+
+Process all JSON files in a directory:
+
+```bash
+npm start ./lessons/
+```
+
+This will:
+- Load all `.json` files from the directory (sorted alphabetically)
+- Validate each lesson
+- Generate individual SQL files in `generated-sql/`
+- Create a combined `all-lessons.sql` file
 
 ## Output Format
 
@@ -47,52 +62,61 @@ Generates SQL migration files that can be run against Supabase/PostgreSQL to ins
 - Lesson content (HTML with visual design)
 - Quiz questions and options
 
-## Example JSON Batch File
+## Example JSON Format
+
+### Single Lesson (Object)
+
+```json
+{
+  "lessonNumber": 1,
+  "slug": "lesson-slug",
+  "title": "Lesson Title",
+  "moduleWeek": 1,
+  "moduleName": "Module Name",
+  "learningGoal": "What students will learn",
+  "sections": [
+    {
+      "title": "Section Title",
+      "icon": "pencil",
+      "color": "blue",
+      "items": [
+        {
+          "icon": "info",
+          "color": "blue",
+          "title": "Item Title",
+          "description": "Item description"
+        }
+      ]
+    }
+  ],
+  "keyPoint": "Key takeaway",
+  "actionSteps": [
+    {
+      "number": 1,
+      "title": "Step title",
+      "description": "Step description"
+    }
+  ],
+  "nextLessonTitle": "Next Lesson Title",
+  "quizzes": [
+    {
+      "question": "Quiz question?",
+      "options": [
+        { "option_text": "Option A", "is_correct": false },
+        { "option_text": "Option B", "is_correct": true }
+      ],
+      "explanation": "Why B is correct"
+    }
+  ]
+}
+```
+
+### Multiple Lessons (Array)
 
 ```json
 [
-  {
-    "lessonNumber": 1,
-    "slug": "lesson-slug",
-    "title": "Lesson Title",
-    "moduleWeek": 1,
-    "moduleName": "Module Name",
-    "learningGoal": "What students will learn",
-    "sections": [
-      {
-        "title": "Section Title",
-        "icon": "pencil",
-        "color": "blue",
-        "items": [
-          {
-            "icon": "info",
-            "color": "blue",
-            "title": "Item Title",
-            "description": "Item description"
-          }
-        ]
-      }
-    ],
-    "keyPoint": "Key takeaway",
-    "actionSteps": [
-      {
-        "number": 1,
-        "title": "Step title",
-        "description": "Step description"
-      }
-    ],
-    "nextLessonTitle": "Next Lesson Title",
-    "quizzes": [
-      {
-        "question": "Quiz question?",
-        "options": [
-          { "option_text": "Option A", "is_correct": false },
-          { "option_text": "Option B", "is_correct": true }
-        ],
-        "explanation": "Why B is correct"
-      }
-    ]
-  }
+  { /* lesson 1 */ },
+  { /* lesson 2 */ }
 ]
 ```
 
@@ -144,7 +168,14 @@ Generates SQL migration files that can be run against Supabase/PostgreSQL to ins
 - `SKILL.md` - This documentation
 - `create-lesson.ts` - Main skill implementation
 - `package.json` - Dependencies
-- `example-lessons.json` - Example batch file
+- `example-lesson.json` - Example single lesson file
+- `example-lessons.json` - Example batch file with multiple lessons
+
+## Output
+
+All generated SQL files are placed in the `generated-sql/` directory:
+- Individual files: `lesson_{number}_{slug}.sql`
+- Combined file: `all-lessons.sql`
 
 ## Requirements
 

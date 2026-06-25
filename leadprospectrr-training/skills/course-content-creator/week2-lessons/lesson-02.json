@@ -1,0 +1,54 @@
+[
+{
+  "lessonNumber": 2,
+  "slug": "review-contacts-page",
+  "title": "Review the Contacts Page",
+  "moduleWeek": 2,
+  "moduleName": "Contacts and Smart Lists",
+  "learningGoal": "Learn what to look for on the Contacts page and understand the information displayed.",
+  "sections": [
+    {
+      "title": "What You'll See",
+      "icon": "eye",
+      "color": "indigo",
+      "items": [
+        {"icon": "info", "color": "blue", "title": "Name, Email, Phone", "description": "Basic contact information for each person"},
+        {"icon": "tag", "color": "amber", "title": "Tags & Status", "description": "Labels and lead status for organization"},
+        {"icon": "users", "color": "purple", "title": "Contact Type & Source", "description": "How they entered your system and what type they are"},
+        {"icon": "settings", "color": "cyan", "title": "Assigned User", "description": "Who is responsible for this contact"}
+      ]
+    },
+    {
+      "title": "Available Options",
+      "icon": "settings",
+      "color": "teal",
+      "items": [
+        {"icon": "search", "color": "blue", "title": "Search", "description": "Find specific contacts quickly"},
+        {"icon": "check", "color": "green", "title": "Filters & Smart Lists", "description": "Narrow down and save contact views"},
+        {"icon": "document", "color": "purple", "title": "Columns", "description": "Customize what information is displayed"},
+        {"icon": "checklist", "color": "amber", "title": "Bulk Actions", "description": "Perform actions on multiple contacts at once"}
+      ]
+    }
+  ],
+  "keyPoint": "The Contacts page gives you the big picture. It shows who is in your CRM and helps you decide who needs attention.",
+  "actionSteps": [
+    {"number": 1, "title": "Go to Contacts", "description": "Navigate to the Contacts section"},
+    {"number": 2, "title": "Use the search bar", "description": "Try searching for a specific contact"},
+    {"number": 3, "title": "Review columns", "description": "Look at what information is displayed for each contact"},
+    {"number": 4, "title": "Check tags and status", "description": "Notice how contacts are organized"}
+  ],
+  "nextLessonTitle": "Open a Contact Record",
+  "quizzes": [
+    {
+      "question": "Which of the following is NOT typically shown on the Contacts page?",
+      "options": [
+        {"option_text": "Name and email", "is_correct": false},
+        {"option_text": "Full conversation history", "is_correct": true},
+        {"option_text": "Tags and lead status", "is_correct": false},
+        {"option_text": "Contact type and source", "is_correct": false}
+      ],
+      "explanation": "Full conversation history is found inside the individual contact record, not on the main Contacts page list view."
+    }
+  ]
+}
+]

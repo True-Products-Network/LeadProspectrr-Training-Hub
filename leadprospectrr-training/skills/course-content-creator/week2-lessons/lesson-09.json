@@ -1,0 +1,64 @@
+[
+{
+  "lessonNumber": 9,
+  "slug": "use-smart-list",
+  "title": "Use Your Smart List",
+  "moduleWeek": 2,
+  "moduleName": "Contacts and Smart Lists",
+  "learningGoal": "Understand how Smart Lists can support follow-up and contact management.",
+  "sections": [
+    {
+      "title": "What Smart Lists Help You Do",
+      "icon": "target",
+      "color": "blue",
+      "items": [
+        {"icon": "search", "color": "blue", "title": "Find new leads quickly", "description": "Access recent leads without rebuilding filters"},
+        {"icon": "target", "color": "rose", "title": "Review hot leads", "description": "Keep track of people close to buying"},
+        {"icon": "users", "color": "green", "title": "Find people who need follow-up", "description": "Identify contacts waiting for your response"},
+        {"icon": "clock", "color": "amber", "title": "Find contacts with no appointment", "description": "See who may need a booking reminder"}
+      ]
+    },
+    {
+      "title": "More Uses for Smart Lists",
+      "icon": "checklist",
+      "color": "green",
+      "items": [
+        {"icon": "mail", "color": "blue", "title": "Send targeted email follow-up", "description": "Reach specific groups with relevant messages"},
+        {"icon": "chat", "color": "green", "title": "Send SMS follow-up", "description": "Text the right people at the right time"},
+        {"icon": "warning", "color": "amber", "title": "Clean up missing contact data", "description": "Find contacts with incomplete information"},
+        {"icon": "users", "color": "purple", "title": "Track clients and prospects", "description": "Monitor different groups over time"}
+      ]
+    },
+    {
+      "title": "Example: Leads With No Appointment",
+      "icon": "clock",
+      "color": "amber",
+      "items": [
+        {"icon": "filter", "color": "blue", "title": "Contact Type = Lead", "description": "Only show leads"},
+        {"icon": "target", "color": "rose", "title": "Lead Status = Warm or Hot", "description": "Focus on engaged leads"},
+        {"icon": "clock", "color": "amber", "title": "Appointment is not booked", "description": "Find those without appointments"},
+        {"icon": "tag", "color": "green", "title": "Tag does not include Client", "description": "Exclude existing clients"}
+      ]
+    }
+  ],
+  "keyPoint": "A Smart List should help you decide what to do next.",
+  "actionSteps": [
+    {"number": 1, "title": "Open a saved Smart List", "description": "Navigate to your Smart Lists and open one"},
+    {"number": 2, "title": "Review the contacts", "description": "See who appears in the list"},
+    {"number": 3, "title": "Decide on action", "description": "What should happen next for these contacts?"},
+    {"number": 4, "title": "Take action", "description": "Follow up, send messages, or book appointments"}
+  ],
+  "nextLessonTitle": "Edit and Reuse Smart Lists",
+  "quizzes": [
+    {
+      "question": "What should you do after saving a Smart List?",
+      "options": [
+        {"option_text": "Forget about it", "is_correct": false},
+        {"option_text": "Use it to take action, such as following up with leads, checking missing contact data, reviewing hot leads, or tracking appointments", "is_correct": true},
+        {"option_text": "Delete it immediately", "is_correct": false},
+        {"option_text": "Only look at it once", "is_correct": false}
+      ],
+      "explanation": "A Smart List is only valuable if you use it. The goal is to help you take action on the right contacts at the right time."}
+  ]
+}
+]

@@ -1,0 +1,55 @@
+[
+{
+  "lessonNumber": 6,
+  "slug": "before-building-smart-list",
+  "title": "Before You Build a Smart List",
+  "moduleWeek": 2,
+  "moduleName": "Contacts and Smart Lists",
+  "learningGoal": "Plan the Smart List before creating it to ensure it stays useful.",
+  "sections": [
+    {
+      "title": "Planning Checklist",
+      "icon": "checklist",
+      "color": "green",
+      "items": [
+        {"icon": "target", "color": "blue", "title": "Know your group", "description": "What group of contacts do you want to find?"},
+        {"icon": "question", "color": "amber", "title": "Know your why", "description": "Why does this list matter? What will you do with it?"},
+        {"icon": "filter", "color": "purple", "title": "Plan your filters", "description": "What filters will help you find them?"},
+        {"icon": "check", "color": "cyan", "title": "Choose a clear name", "description": "Use a name that explains exactly what the list shows"}
+      ]
+    },
+    {
+      "title": "Questions to Ask",
+      "icon": "question",
+      "color": "indigo",
+      "items": [
+        {"icon": "users", "color": "blue", "title": "Who do I want to find?", "description": "Be specific about the group"},
+        {"icon": "target", "color": "green", "title": "Why do I need this list?", "description": "What action will you take?"},
+        {"icon": "filter", "color": "amber", "title": "What filters will help?", "description": "Which criteria will find them?"},
+        {"icon": "play", "color": "purple", "title": "What action follows?", "description": "What will you do after finding them?"},
+        {"icon": "clock", "color": "cyan", "title": "Will I use this again?", "description": "Is this a one-time need or ongoing?"}
+      ]
+    }
+  ],
+  "keyPoint": "If you do not know why you need the Smart List, do not create it yet.",
+  "actionSteps": [
+    {"number": 1, "title": "Choose a group to find", "description": "Example: New leads from the last 30 days"},
+    {"number": 2, "title": "Define your reason", "description": "Example: I want to follow up with recent leads"},
+    {"number": 3, "title": "Plan your filters", "description": "Example: Date added, lead status, contact type"},
+    {"number": 4, "title": "Draft a name", "description": "Example: New Leads — Last 30 Days"}
+  ],
+  "nextLessonTitle": "Build Your Filters",
+  "quizzes": [
+    {
+      "question": "What should you do before creating a Smart List?",
+      "options": [
+        {"option_text": "Create it immediately", "is_correct": false},
+        {"option_text": "Plan who you want to find, why you need it, what filters to use, and choose a clear name", "is_correct": true},
+        {"option_text": "Ask someone else to create it", "is_correct": false},
+        {"option_text": "Only think about the name", "is_correct": false}
+      ],
+      "explanation": "Planning before creating prevents building lists that are unclear or unused. Know your group, your why, your filters, and your name before starting."
+    }
+  ]
+}
+]

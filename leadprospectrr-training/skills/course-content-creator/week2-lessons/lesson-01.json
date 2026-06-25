@@ -1,0 +1,42 @@
+[
+{
+  "lessonNumber": 1,
+  "slug": "why-contacts-matter",
+  "title": "Why Contacts Matter",
+  "moduleWeek": 2,
+  "moduleName": "Contacts and Smart Lists",
+  "learningGoal": "Understand why the Contacts page is one of the most important areas in LeadProspectrr.",
+  "sections": [
+    {
+      "title": "Your Contacts Page",
+      "icon": "users",
+      "color": "blue",
+      "items": [
+        {"icon": "users", "color": "blue", "title": "New leads", "description": "People who recently entered your system"},
+        {"icon": "users", "color": "green", "title": "Current & past clients", "description": "People you've worked with or are working with"},
+        {"icon": "users", "color": "amber", "title": "Prospects & partners", "description": "Potential customers and referral partners"},
+        {"icon": "users", "color": "purple", "title": "Event attendees & subscribers", "description": "People from events, forms, and newsletters"}
+      ]
+    }
+  ],
+  "keyPoint": "Your Contacts page shows the people in your CRM. Smart Lists help you find the right people fast.",
+  "actionSteps": [
+    {"number": 1, "title": "Go to Contacts", "description": "Navigate to the Contacts area in LeadProspectrr"},
+    {"number": 2, "title": "Review your contact list", "description": "Take a look at who is currently in your system"},
+    {"number": 3, "title": "Identify groups", "description": "Notice the different types of people (leads, clients, prospects)"}
+  ],
+  "nextLessonTitle": "Review the Contacts Page",
+  "quizzes": [
+    {
+      "question": "What does the Contacts page show?",
+      "options": [
+        {"option_text": "Only current clients", "is_correct": false},
+        {"option_text": "The people stored in your CRM, such as leads, clients, prospects, and other contacts", "is_correct": true},
+        {"option_text": "Only email subscribers", "is_correct": false},
+        {"option_text": "Just appointment bookings", "is_correct": false}
+      ],
+      "explanation": "The Contacts page shows all people in your CRM including leads, clients, prospects, referral partners, event attendees, newsletter subscribers, and more."
+    }
+  ]
+}
+]

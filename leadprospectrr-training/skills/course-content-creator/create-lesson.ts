@@ -393,38 +393,154 @@ async function interactiveMode() {
   rl.close();
 }
 
-// Batch mode from JSON
-async function batchMode(jsonFile: string) {
-  if (!fs.existsSync(jsonFile)) {
-    console.error(`❌ File not found: ${jsonFile}`);
+// Parse JSON input - handles both single objects and arrays
+function parseLessons(jsonContent: string): LessonData[] {
+  const parsed = JSON.parse(jsonContent);
+  
+  // If it's an array, return it directly
+  if (Array.isArray(parsed)) {
+    return parsed;
+  }
+  
+  // If it's a single object, wrap it in an array
+  if (typeof parsed === 'object' && parsed !== null) {
+    return [parsed];
+  }
+  
+  throw new Error('Invalid JSON: expected object or array');
+}
+
+// Validate lesson data
+function validateLesson(lesson: LessonData, index: number): string[] {
+  const errors: string[] = [];
+  const prefix = `Lesson ${index + 1}`;
+  
+  if (!lesson.lessonNumber) errors.push(`${prefix}: missing lessonNumber`);
+  if (!lesson.slug) errors.push(`${prefix}: missing slug`);
+  if (!lesson.title) errors.push(`${prefix}: missing title`);
+  if (!lesson.moduleWeek) errors.push(`${prefix}: missing moduleWeek`);
+  if (!lesson.moduleName) errors.push(`${prefix}: missing moduleName`);
+  if (!lesson.learningGoal) errors.push(`${prefix}: missing learningGoal`);
+  if (!lesson.keyPoint) errors.push(`${prefix}: missing keyPoint`);
+  if (!lesson.nextLessonTitle) errors.push(`${prefix}: missing nextLessonTitle`);
+  
+  if (!lesson.sections || lesson.sections.length === 0) {
+    errors.push(`${prefix}: no sections defined`);
+  }
+  
+  if (!lesson.actionSteps || lesson.actionSteps.length === 0) {
+    errors.push(`${prefix}: no actionSteps defined`);
+  }
+  
+  return errors;
+}
+
+// Batch mode from JSON file or directory
+async function batchMode(inputPath: string) {
+  if (!fs.existsSync(inputPath)) {
+    console.error(`❌ File or directory not found: ${inputPath}`);
     process.exit(1);
   }
 
-  const lessons: LessonData[] = JSON.parse(fs.readFileSync(jsonFile, 'utf-8'));
+  const stats = fs.statSync(inputPath);
+  let lessons: LessonData[] = [];
+  let sourceFiles: string[] = [];
   
+  if (stats.isDirectory()) {
+    // Process all JSON files in directory
+    const files = fs.readdirSync(inputPath)
+      .filter(f => f.endsWith('.json'))
+      .sort();
+    
+    if (files.length === 0) {
+      console.error(`❌ No JSON files found in directory: ${inputPath}`);
+      process.exit(1);
+    }
+    
+    console.log(`📁 Found ${files.length} JSON files in directory\n`);
+    
+    for (const file of files) {
+      const filePath = path.join(inputPath, file);
+      const content = fs.readFileSync(filePath, 'utf-8');
+      try {
+        const fileLessons = parseLessons(content);
+        lessons.push(...fileLessons);
+        sourceFiles.push(file);
+        console.log(`  📄 Loaded: ${file} (${fileLessons.length} lesson(s))`);
+      } catch (err) {
+        console.error(`  ❌ Error in ${file}: ${(err as Error).message}`);
+      }
+    }
+    console.log();
+  } else {
+    // Process single JSON file
+    const content = fs.readFileSync(inputPath, 'utf-8');
+    lessons = parseLessons(content);
+    sourceFiles = [path.basename(inputPath)];
+  }
+  
+  if (lessons.length === 0) {
+    console.error('❌ No valid lessons found');
+    process.exit(1);
+  }
+  
+  // Validate all lessons
+  console.log('🔍 Validating lessons...\n');
+  const allErrors: string[] = [];
+  for (let i = 0; i < lessons.length; i++) {
+    const errors = validateLesson(lessons[i], i);
+    allErrors.push(...errors);
+  }
+  
+  if (allErrors.length > 0) {
+    console.error('❌ Validation errors found:\n');
+    allErrors.forEach(err => console.error(`  • ${err}`));
+    console.error('\nPlease fix these errors and try again.');
+    process.exit(1);
+  }
+  
+  console.log(`✅ All ${lessons.length} lessons validated\n`);
   console.log(`🔄 Processing ${lessons.length} lessons...\n`);
+
+  // Create output directory if it doesn't exist
+  const outputDir = 'generated-sql';
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir);
+  }
 
   for (const lesson of lessons) {
     const sql = generateFullSQL(lesson);
     const filename = `lesson_${lesson.lessonNumber}_${lesson.slug}.sql`;
-    fs.writeFileSync(filename, sql);
-    console.log(`✅ Created: ${filename}`);
+    const outputPath = path.join(outputDir, filename);
+    fs.writeFileSync(outputPath, sql);
+    console.log(`✅ Created: ${outputPath}`);
   }
 
-  console.log(`\n🎉 Generated ${lessons.length} lesson files`);
+  // Create combined SQL file
+  const combinedSQL = lessons.map(l => generateFullSQL(l)).join('\n\n');
+  const combinedPath = path.join(outputDir, 'all-lessons.sql');
+  fs.writeFileSync(combinedPath, combinedSQL);
+  console.log(`\n📦 Combined: ${combinedPath}`);
+
+  console.log(`\n🎉 Generated ${lessons.length} lesson files in ${outputDir}/`);
 }
 
 // Main
 async function main() {
   const args = process.argv.slice(2);
   
-  if (args.length > 0 && args[0].endsWith('.json')) {
-    // Batch mode
-    await batchMode(args[0]);
-  } else {
-    // Interactive mode
-    await interactiveMode();
+  if (args.length > 0) {
+    const inputPath = args[0];
+    // Check if it's a JSON file or directory
+    if (inputPath.endsWith('.json') || fs.existsSync(inputPath) && fs.statSync(inputPath).isDirectory()) {
+      // Batch mode (file or directory)
+      await batchMode(inputPath);
+      return;
+    }
   }
+  
+  // Interactive mode
+  await interactiveMode();
 }
 
 main().catch(console.error);

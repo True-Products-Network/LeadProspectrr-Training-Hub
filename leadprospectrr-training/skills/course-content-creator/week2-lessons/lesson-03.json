@@ -1,0 +1,55 @@
+[
+{
+  "lessonNumber": 3,
+  "slug": "open-contact-record",
+  "title": "Open a Contact Record",
+  "moduleWeek": 2,
+  "moduleName": "Contacts and Smart Lists",
+  "learningGoal": "Learn how to open and review an individual contact record to understand the full story of a person.",
+  "sections": [
+    {
+      "title": "How to Open a Contact Record",
+      "icon": "document",
+      "color": "blue",
+      "items": [
+        {"icon": "search", "color": "blue", "title": "Step 1: Go to Contacts", "description": "Navigate to the Contacts page"},
+        {"icon": "search", "color": "green", "title": "Step 2: Search if needed", "description": "Use the search bar to find a specific person"},
+        {"icon": "pencil", "color": "amber", "title": "Step 3: Click the name", "description": "Click on the contact's name to open their record"},
+        {"icon": "eye", "color": "purple", "title": "Step 4: Review details", "description": "Look through all the information available"}
+      ]
+    },
+    {
+      "title": "What's Inside a Contact Record",
+      "icon": "document",
+      "color": "indigo",
+      "items": [
+        {"icon": "info", "color": "blue", "title": "Basic Info", "description": "Name, email, phone, address"},
+        {"icon": "tag", "color": "amber", "title": "Tags & Status", "description": "Labels, lead status, contact type, source"},
+        {"icon": "users", "color": "purple", "title": "Assignment", "description": "Who is responsible for this contact"},
+        {"icon": "chat", "color": "green", "title": "Activity", "description": "Notes, conversations, appointments, opportunities"}
+      ]
+    }
+  ],
+  "keyPoint": "The contact record helps you understand the person, not just store their information.",
+  "actionSteps": [
+    {"number": 1, "title": "Open a sample contact", "description": "Click on any contact's name to view their record"},
+    {"number": 2, "title": "Review basic details", "description": "Check name, email, and phone information"},
+    {"number": 3, "title": "Check tags and status", "description": "See how the contact is labeled and categorized"},
+    {"number": 4, "title": "Review activity", "description": "Look at notes, conversations, and appointments"},
+    {"number": 5, "title": "Ask the key question", "description": "What does this contact need next?"}
+  ],
+  "nextLessonTitle": "Understand Key Contact Details",
+  "quizzes": [
+    {
+      "question": "What does a contact record help you understand?",
+      "options": [
+        {"option_text": "Only their email address", "is_correct": false},
+        {"option_text": "Who the person is, where they came from, what activity has happened, and what they may need next", "is_correct": true},
+        {"option_text": "Just their phone number", "is_correct": false},
+        {"option_text": "Only their appointment history", "is_correct": false}
+      ],
+      "explanation": "A contact record tells the complete story of a person - who they are, where they came from, what conversations have happened, and what they need next."
+    }
+  ]
+}
+]

@@ -1,0 +1,54 @@
+[
+{
+  "lessonNumber": 10,
+  "slug": "edit-reuse-smart-lists",
+  "title": "Edit and Reuse Smart Lists",
+  "moduleWeek": 2,
+  "moduleName": "Contacts and Smart Lists",
+  "learningGoal": "Learn how to reuse and update Smart Lists over time.",
+  "sections": [
+    {
+      "title": "When to Edit a Smart List",
+      "icon": "pencil",
+      "color": "amber",
+      "items": [
+        {"icon": "filter", "color": "blue", "title": "Filters need to change", "description": "Your criteria for finding contacts has evolved"},
+        {"icon": "warning", "color": "amber", "title": "List name is unclear", "description": "The name doesn't explain what the list does"},
+        {"icon": "target", "color": "rose", "title": "Lead stages changed", "description": "Your sales process has been updated"},
+        {"icon": "tag", "color": "green", "title": "New tags added", "description": "You have new ways of organizing contacts"}
+      ]
+    },
+    {
+      "title": "How to Keep Lists Useful",
+      "icon": "check",
+      "color": "green",
+      "items": [
+        {"icon": "clock", "color": "blue", "title": "Open lists regularly", "description": "Reuse them as part of your weekly workflow"},
+        {"icon": "eye", "color": "green", "title": "Review contacts shown", "description": "Make sure the right people still appear"},
+        {"icon": "pencil", "color": "amber", "title": "Update filters if needed", "description": "Adjust criteria as your process changes"},
+        {"icon": "pencil", "color": "purple", "title": "Rename if needed", "description": "Keep names clear and descriptive"}
+      ]
+    }
+  ],
+  "keyPoint": "Smart Lists should stay useful. If a list no longer helps you take action, clean it up or remove it.",
+  "actionSteps": [
+    {"number": 1, "title": "Open the Smart List again later", "description": "Navigate back to your saved list"},
+    {"number": 2, "title": "Review the contacts shown", "description": "Check that the right people still appear"},
+    {"number": 3, "title": "Update filters if needed", "description": "Adjust criteria to match current needs"},
+    {"number": 4, "title": "Rename if needed", "description": "Keep the name clear and descriptive"},
+    {"number": 5, "title": "Reuse it weekly", "description": "Make it part of your regular workflow"}
+  ],
+  "nextLessonTitle": "Module 2 Practice Activity",
+  "quizzes": [
+    {
+      "question": "When might you need to edit a Smart List?",
+      "options": [
+        {"option_text": "Never, Smart Lists cannot be changed", "is_correct": false},
+        {"option_text": "When filters need to change, the name is unclear, lead stages changed, or you added new tags", "is_correct": true},
+        {"option_text": "Only on Mondays", "is_correct": false},
+        {"option_text": "Only admins can edit Smart Lists", "is_correct": false}
+      ],
+      "explanation": "Smart Lists should evolve with your business. Edit them when your processes change, names become unclear, or you need to track different groups."}
+  ]
+}
+]
