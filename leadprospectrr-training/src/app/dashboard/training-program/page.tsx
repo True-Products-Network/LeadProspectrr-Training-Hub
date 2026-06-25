@@ -196,29 +196,42 @@ export default async function TrainingProgramPage() {
         </div>
       </div>
 
-      {/* Your Progress */}
-      <Card>
+      {/* How It Works */}
+      <Card className="bg-slate-50">
         <CardContent className="p-8">
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <div className="flex-1">
-              <h2 className="text-2xl font-bold text-slate-900 mb-2">Your Progress</h2>
-              <p className="text-slate-600 mb-4">
-                {completedModules} of {totalModules} modules completed • {inProgressModules} in progress
-              </p>
-              <div className="w-full max-w-md">
-                <Progress value={overallProgress} className="h-3" />
-                <p className="text-sm text-slate-500 mt-2">{overallProgress}% complete</p>
+          <h2 className="text-2xl font-bold text-slate-900 mb-6">How It Works</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-3">
+                <Target className="w-6 h-6 text-blue-600" />
               </div>
+              <h3 className="font-semibold text-slate-900 mb-1">1. Follow Weekly</h3>
+              <p className="text-sm text-slate-600">Each week covers a new topic</p>
             </div>
             
-            {firstModule && (
-              <Link href={`/dashboard/training/${firstModule.id}`}>
-                <Button className="bg-gradient-to-r from-blue-500 to-violet-600 whitespace-nowrap" size="lg">
-                  {completedModules === 0 ? 'Start First Clinic' : 'Continue Training'}
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
-            )}
+            <div className="text-center">
+              <div className="w-12 h-12 rounded-full bg-violet-100 flex items-center justify-center mx-auto mb-3">
+                <Clock className="w-6 h-6 text-violet-600" />
+              </div>
+              <h3 className="font-semibold text-slate-900 mb-1">2. Learn at Your Pace</h3>
+              <p className="text-sm text-slate-600">Complete lessons when ready</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mx-auto mb-3">
+                <Award className="w-6 h-6 text-purple-600" />
+              </div>
+              <h3 className="font-semibold text-slate-900 mb-1">3. Earn Points</h3>
+              <p className="text-sm text-slate-600">Track progress and achievements</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-3">
+                <BarChart3 className="w-6 h-6 text-emerald-600" />
+              </div>
+              <h3 className="font-semibold text-slate-900 mb-1">4. Grow Your Skills</h3>
+              <p className="text-sm text-slate-600">Build expertise over time</p>
+            </div>
           </div>
         </CardContent>
       </Card>
@@ -360,6 +373,33 @@ export default async function TrainingProgramPage() {
         </CardContent>
       </Card>
 
+      {/* Your Progress */}
+      <Card>
+        <CardContent className="p-8">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div className="flex-1">
+              <h2 className="text-2xl font-bold text-slate-900 mb-2">Your Progress</h2>
+              <p className="text-slate-600 mb-4">
+                {completedModules} of {totalModules} modules completed • {inProgressModules} in progress
+              </p>
+              <div className="w-full max-w-md">
+                <Progress value={overallProgress} className="h-3" />
+                <p className="text-sm text-slate-500 mt-2">{overallProgress}% complete</p>
+              </div>
+            </div>
+            
+            {firstModule && (
+              <Link href={`/dashboard/training/${firstModule.id}`}>
+                <Button className="bg-gradient-to-r from-blue-500 to-violet-600 whitespace-nowrap" size="lg">
+                  {completedModules === 0 ? 'Start First Clinic' : 'Continue Training'}
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+            )}
+          </div>
+        </CardContent>
+      </Card>
+
       {/* Program Outline - Color Cards */}
       <div>
         <h2 className="text-2xl font-bold text-slate-900 mb-6">Program Outline</h2>
@@ -428,45 +468,6 @@ export default async function TrainingProgramPage() {
         </div>
       </div>
 
-      {/* How It Works */}
-      <Card className="bg-slate-50">
-        <CardContent className="p-8">
-          <h2 className="text-2xl font-bold text-slate-900 mb-6">How It Works</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-3">
-                <Target className="w-6 h-6 text-blue-600" />
-              </div>
-              <h3 className="font-semibold text-slate-900 mb-1">1. Follow Weekly</h3>
-              <p className="text-sm text-slate-600">Each week covers a new topic</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-12 h-12 rounded-full bg-violet-100 flex items-center justify-center mx-auto mb-3">
-                <Clock className="w-6 h-6 text-violet-600" />
-              </div>
-              <h3 className="font-semibold text-slate-900 mb-1">2. Learn at Your Pace</h3>
-              <p className="text-sm text-slate-600">Complete lessons when ready</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mx-auto mb-3">
-                <Award className="w-6 h-6 text-purple-600" />
-              </div>
-              <h3 className="font-semibold text-slate-900 mb-1">3. Earn Points</h3>
-              <p className="text-sm text-slate-600">Track progress and achievements</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-3">
-                <BarChart3 className="w-6 h-6 text-emerald-600" />
-              </div>
-              <h3 className="font-semibold text-slate-900 mb-1">4. Grow Your Skills</h3>
-              <p className="text-sm text-slate-600">Build expertise over time</p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
     </div>
   )
 }

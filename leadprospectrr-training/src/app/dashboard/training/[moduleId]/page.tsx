@@ -75,7 +75,7 @@ export default async function ModulePage({ params }: ModulePageProps) {
     <div className="space-y-6">
       {/* Header */}
       <div className="flex items-center gap-4">
-        <Link href="/dashboard/training">
+        <Link href="/dashboard/training-program">
           <Button variant="ghost" size="sm">
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Modules
