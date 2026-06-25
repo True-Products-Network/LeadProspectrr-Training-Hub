@@ -49,6 +49,26 @@
         {"option_text": "Only think about the name", "is_correct": false}
       ],
       "explanation": "Planning before creating prevents building lists that are unclear or unused. Know your group, your why, your filters, and your name before starting."
+    },
+    {
+      "question": "Why is it important to know 'why' you need a Smart List?",
+      "options": [
+        {"option_text": "It is not important", "is_correct": false},
+        {"option_text": "If you don't know why you need it, you should not create it yet", "is_correct": true},
+        {"option_text": "It is only for administrators to know", "is_correct": false},
+        {"option_text": "It helps you delete contacts faster", "is_correct": false}
+      ],
+      "explanation": "Understanding why you need a Smart List ensures it will actually be useful. Without a clear purpose, the list may go unused."
+    },
+    {
+      "question": "What makes a good Smart List name?",
+      "options": [
+        {"option_text": "Something vague like 'List 1'", "is_correct": false},
+        {"option_text": "A clear name that explains exactly what the list shows", "is_correct": true},
+        {"option_text": "A random number", "is_correct": false},
+        {"option_text": "Your own name", "is_correct": false}
+      ],
+      "explanation": "Clear names like 'New Leads — Last 30 Days' tell you exactly what the list contains, making it easy to know when to use it."
     }
   ]
 }

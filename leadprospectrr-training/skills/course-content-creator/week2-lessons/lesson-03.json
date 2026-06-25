@@ -49,6 +49,26 @@
         {"option_text": "Only their appointment history", "is_correct": false}
       ],
       "explanation": "A contact record tells the complete story of a person - who they are, where they came from, what conversations have happened, and what they need next."
+    },
+    {
+      "question": "How do you open a contact record?",
+      "options": [
+        {"option_text": "Send them an email first", "is_correct": false},
+        {"option_text": "Click on the contact's name in the Contacts list", "is_correct": true},
+        {"option_text": "Call them on the phone", "is_correct": false},
+        {"option_text": "Wait for them to contact you", "is_correct": false}
+      ],
+      "explanation": "To open a contact record, simply click on the contact's name in the Contacts list."
+    },
+    {
+      "question": "What information is typically found inside a contact record?",
+      "options": [
+        {"option_text": "Only the person's name", "is_correct": false},
+        {"option_text": "Name, email, phone, tags, status, activity history, and more", "is_correct": true},
+        {"option_text": "Your company's financial data", "is_correct": false},
+        {"option_text": "Other people's contact records", "is_correct": false}
+      ],
+      "explanation": "A contact record contains comprehensive information including basic details, tags, status, assignment, and activity history like notes and conversations."
     }
   ]
 }

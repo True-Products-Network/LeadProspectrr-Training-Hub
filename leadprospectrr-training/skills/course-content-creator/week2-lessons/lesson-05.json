@@ -52,6 +52,26 @@
         {"option_text": "They all do the same thing", "is_correct": false}
       ],
       "explanation": "Tags label individual contacts. Filters help you search for contacts matching rules. Smart Lists save those filtered views for reuse."
+    },
+    {
+      "question": "What is the purpose of a filter?",
+      "options": [
+        {"option_text": "To delete contacts", "is_correct": false},
+        {"option_text": "To search for contacts matching certain criteria", "is_correct": true},
+        {"option_text": "To send emails", "is_correct": false},
+        {"option_text": "To create new contacts", "is_correct": false}
+      ],
+      "explanation": "Filters are rules that help you search for and find contacts that match specific criteria you set."
+    },
+    {
+      "question": "Why would you create a Smart List?",
+      "options": [
+        {"option_text": "To delete old contacts", "is_correct": false},
+        {"option_text": "To save a filtered view so you don't have to rebuild it every time", "is_correct": true},
+        {"option_text": "To change contact passwords", "is_correct": false},
+        {"option_text": "To block spam contacts", "is_correct": false}
+      ],
+      "explanation": "Smart Lists save you time by storing your filtered views, so you can quickly access specific contact groups without rebuilding filters."
     }
   ]
 }

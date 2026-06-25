@@ -349,39 +349,35 @@ async function interactiveMode() {
     stepNumber++;
   }
 
-  // Quiz questions
-  console.log('\n--- Quiz Questions (Optional) ---');
-  const addQuiz = (await ask('Add quiz questions? (y/n): ')).toLowerCase() === 'y';
+  // Quiz questions - exactly 3 required
+  console.log('\n--- Quiz Questions (3 Required) ---');
   
-  if (addQuiz) {
-    let addMoreQuestions = true;
-    let questionNumber = 1;
-    while (addMoreQuestions) {
-      const question = await ask(`\nQuestion ${questionNumber} (or "done"): `);
-      if (question.toLowerCase() === 'done') break;
+  for (let questionNumber = 1; questionNumber <= 3; questionNumber++) {
+    console.log(`\n📋 Question ${questionNumber} of 3:`);
+    const question = await ask('Question text: ');
 
-      const quiz: QuizQuestion = {
-        question: question,
-        options: [],
-        explanation: ''
-      };
+    const quiz: QuizQuestion = {
+      question: question,
+      options: [],
+      explanation: ''
+    };
 
-      console.log('  Add 2-4 options (mark one as correct):');
-      for (let i = 1; i <= 4; i++) {
-        const optionText = await ask(`    Option ${i} (or "done"): `);
-        if (optionText.toLowerCase() === 'done') break;
-        
-        const isCorrect = (await ask('    Is this the correct answer? (y/n): ')).toLowerCase() === 'y';
-        quiz.options.push({
-          option_text: optionText,
-          is_correct: isCorrect
-        });
-      }
-
-      quiz.explanation = await ask('  Explanation (shown after answering): ');
-      data.quizzes!.push(quiz);
-      questionNumber++;
+    console.log('  Add 2-4 options (mark one as correct):');
+    let optionCount = 0;
+    for (let i = 1; i <= 4; i++) {
+      const optionText = await ask(`    Option ${i} (or "done"): `);
+      if (optionText.toLowerCase() === 'done') break;
+      
+      const isCorrect = (await ask('    Is this the correct answer? (y/n): ')).toLowerCase() === 'y';
+      quiz.options.push({
+        option_text: optionText,
+        is_correct: isCorrect
+      });
+      optionCount++;
     }
+
+    quiz.explanation = await ask('  Explanation (shown after answering): ');
+    data.quizzes!.push(quiz);
   }
 
   const sql = generateFullSQL(data);
@@ -430,6 +426,24 @@ function validateLesson(lesson: LessonData, index: number): string[] {
   
   if (!lesson.actionSteps || lesson.actionSteps.length === 0) {
     errors.push(`${prefix}: no actionSteps defined`);
+  }
+  
+  // Validate quizzes - exactly 3 required
+  if (!lesson.quizzes || lesson.quizzes.length === 0) {
+    errors.push(`${prefix}: no quizzes defined (3 required)`);
+  } else if (lesson.quizzes.length !== 3) {
+    errors.push(`${prefix}: must have exactly 3 quizzes (found ${lesson.quizzes.length})`);
+  } else {
+    // Validate each quiz has at least 2 options and exactly 1 correct answer
+    lesson.quizzes.forEach((quiz, qIndex) => {
+      if (!quiz.options || quiz.options.length < 2) {
+        errors.push(`${prefix}: quiz ${qIndex + 1} must have at least 2 options`);
+      }
+      const correctCount = quiz.options?.filter(o => o.is_correct).length || 0;
+      if (correctCount !== 1) {
+        errors.push(`${prefix}: quiz ${qIndex + 1} must have exactly 1 correct answer (found ${correctCount})`);
+      }
+    });
   }
   
   return errors;

@@ -36,6 +36,26 @@
         {"option_text": "Just appointment bookings", "is_correct": false}
       ],
       "explanation": "The Contacts page shows all people in your CRM including leads, clients, prospects, referral partners, event attendees, newsletter subscribers, and more."
+    },
+    {
+      "question": "Which of these would you NOT typically find on the Contacts page?",
+      "options": [
+        {"option_text": "Leads who filled out a form", "is_correct": false},
+        {"option_text": "Past clients you worked with", "is_correct": false},
+        {"option_text": "Your company's financial reports", "is_correct": true},
+        {"option_text": "Newsletter subscribers", "is_correct": false}
+      ],
+      "explanation": "The Contacts page contains people-related information, not financial reports or other business data."
+    },
+    {
+      "question": "Why is the Contacts page important?",
+      "options": [
+        {"option_text": "It stores all your company's files", "is_correct": false},
+        {"option_text": "It shows who is in your system and helps you decide who needs attention", "is_correct": true},
+        {"option_text": "It only shows completed sales", "is_correct": false},
+        {"option_text": "It is only for administrators", "is_correct": false}
+      ],
+      "explanation": "The Contacts page gives you the big picture of who is in your CRM and helps you decide who needs attention and follow-up."
     }
   ]
 }

@@ -48,6 +48,26 @@
         {"option_text": "Contact type and source", "is_correct": false}
       ],
       "explanation": "Full conversation history is found inside the individual contact record, not on the main Contacts page list view."
+    },
+    {
+      "question": "What can you do with the search bar on the Contacts page?",
+      "options": [
+        {"option_text": "Only search by first name", "is_correct": false},
+        {"option_text": "Find specific contacts quickly using various criteria", "is_correct": true},
+        {"option_text": "Delete contacts permanently", "is_correct": false},
+        {"option_text": "Change contact passwords", "is_correct": false}
+      ],
+      "explanation": "The search bar helps you find specific contacts quickly using various search criteria."
+    },
+    {
+      "question": "What are Smart Lists used for on the Contacts page?",
+      "options": [
+        {"option_text": "To delete old contacts", "is_correct": false},
+        {"option_text": "To narrow down and save specific contact views for later use", "is_correct": true},
+        {"option_text": "To send spam emails", "is_correct": false},
+        {"option_text": "To block contacts", "is_correct": false}
+      ],
+      "explanation": "Smart Lists let you save filtered views of your contacts so you can quickly access specific groups later without rebuilding filters."
     }
   ]
 }

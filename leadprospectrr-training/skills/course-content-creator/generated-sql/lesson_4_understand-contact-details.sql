@@ -238,4 +238,40 @@ BEGIN
   INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
   VALUES (v_quiz_id, 'Smart Lists are created automatically', false, 4);
 
+
+  -- Question 2
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'What does Lead Status tell you?', 'Lead Status helps you understand how engaged or ready a lead is, using categories like New, Cold, Warm, Hot, Customer, or Past Customer.', 2)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'How much money they have', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'How warm or ready a lead may be (New, Cold, Warm, Hot, etc.)', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Their physical location', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Their age group', false, 4);
+
+
+  -- Question 3
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'Why is the Source field important?', 'The Source field tells you where a contact originated from, helping you understand which marketing channels are working best.', 3)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It tells you where they live', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It shows where the contact came from (Website, Facebook, Referral, etc.)', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It shows their income level', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It is not important', false, 4);
+
 END $$;

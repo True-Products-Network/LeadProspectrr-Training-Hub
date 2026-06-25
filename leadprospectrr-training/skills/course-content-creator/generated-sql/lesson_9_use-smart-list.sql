@@ -274,4 +274,40 @@ BEGIN
   INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
   VALUES (v_quiz_id, 'Only look at it once', false, 4);
 
+
+  -- Question 2
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'How can Smart Lists help with follow-up?', 'Smart Lists help you quickly find specific groups of contacts who need attention, making follow-up more efficient and targeted.', 2)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'They automatically send emails for you', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'They help you quickly find specific groups of contacts who need follow-up', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'They delete contacts who don''t respond', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'They block unwanted contacts', false, 4);
+
+
+  -- Question 3
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'What is the main purpose of a Smart List?', 'A Smart List should help you decide what to do next by showing you specific groups of contacts that need attention or action.', 3)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To store old contacts you want to delete later', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To help you decide what action to take next with specific contact groups', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To hide contacts from other users', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To automatically update contact information', false, 4);
+
 END $$;

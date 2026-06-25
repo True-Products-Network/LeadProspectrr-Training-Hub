@@ -55,6 +55,26 @@
         {"option_text": "Smart Lists are created automatically", "is_correct": false}
       ],
       "explanation": "Tags are labels added to individual contacts. Smart Lists are saved filtered views that show contacts matching specific criteria."
+    },
+    {
+      "question": "What does Lead Status tell you?",
+      "options": [
+        {"option_text": "How much money they have", "is_correct": false},
+        {"option_text": "How warm or ready a lead may be (New, Cold, Warm, Hot, etc.)", "is_correct": true},
+        {"option_text": "Their physical location", "is_correct": false},
+        {"option_text": "Their age group", "is_correct": false}
+      ],
+      "explanation": "Lead Status helps you understand how engaged or ready a lead is, using categories like New, Cold, Warm, Hot, Customer, or Past Customer."
+    },
+    {
+      "question": "Why is the Source field important?",
+      "options": [
+        {"option_text": "It tells you where they live", "is_correct": false},
+        {"option_text": "It shows where the contact came from (Website, Facebook, Referral, etc.)", "is_correct": true},
+        {"option_text": "It shows their income level", "is_correct": false},
+        {"option_text": "It is not important", "is_correct": false}
+      ],
+      "explanation": "The Source field tells you where a contact originated from, helping you understand which marketing channels are working best."
     }
   ]
 }

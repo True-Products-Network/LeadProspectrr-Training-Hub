@@ -232,4 +232,40 @@ BEGIN
   INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
   VALUES (v_quiz_id, 'Only their appointment history', false, 4);
 
+
+  -- Question 2
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'How do you open a contact record?', 'To open a contact record, simply click on the contact''s name in the Contacts list.', 2)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Send them an email first', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Click on the contact''s name in the Contacts list', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Call them on the phone', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Wait for them to contact you', false, 4);
+
+
+  -- Question 3
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'What information is typically found inside a contact record?', 'A contact record contains comprehensive information including basic details, tags, status, assignment, and activity history like notes and conversations.', 3)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Only the person''s name', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Name, email, phone, tags, status, activity history, and more', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Your company''s financial data', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Other people''s contact records', false, 4);
+
 END $$;

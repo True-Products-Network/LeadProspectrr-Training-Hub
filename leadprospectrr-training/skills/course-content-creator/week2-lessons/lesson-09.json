@@ -58,7 +58,28 @@
         {"option_text": "Delete it immediately", "is_correct": false},
         {"option_text": "Only look at it once", "is_correct": false}
       ],
-      "explanation": "A Smart List is only valuable if you use it. The goal is to help you take action on the right contacts at the right time."}
+      "explanation": "A Smart List is only valuable if you use it. The goal is to help you take action on the right contacts at the right time."
+    },
+    {
+      "question": "How can Smart Lists help with follow-up?",
+      "options": [
+        {"option_text": "They automatically send emails for you", "is_correct": false},
+        {"option_text": "They help you quickly find specific groups of contacts who need follow-up", "is_correct": true},
+        {"option_text": "They delete contacts who don't respond", "is_correct": false},
+        {"option_text": "They block unwanted contacts", "is_correct": false}
+      ],
+      "explanation": "Smart Lists help you quickly find specific groups of contacts who need attention, making follow-up more efficient and targeted."
+    },
+    {
+      "question": "What is the main purpose of a Smart List?",
+      "options": [
+        {"option_text": "To store old contacts you want to delete later", "is_correct": false},
+        {"option_text": "To help you decide what action to take next with specific contact groups", "is_correct": true},
+        {"option_text": "To hide contacts from other users", "is_correct": false},
+        {"option_text": "To automatically update contact information", "is_correct": false}
+      ],
+      "explanation": "A Smart List should help you decide what to do next by showing you specific groups of contacts that need attention or action."
+    }
   ]
 }
 ]

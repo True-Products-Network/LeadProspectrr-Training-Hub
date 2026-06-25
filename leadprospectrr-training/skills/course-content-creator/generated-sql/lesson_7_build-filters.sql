@@ -290,4 +290,40 @@ BEGIN
   INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
   VALUES (v_quiz_id, 'You don''t need to use filters first', false, 4);
 
+
+  -- Question 2
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'Where do you go to add a filter?', 'To add a filter, navigate to the Contacts page and click on ''Add Filter'' to start building your criteria.', 2)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Settings → Profile', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Contacts → Add Filter', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Reports → Analytics', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Dashboard → Home', false, 4);
+
+
+  -- Question 3
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'What should you do after setting up filters?', 'Always review the contacts that your filters return to ensure you''re getting exactly the group you intended before saving as a Smart List.', 3)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Immediately save without checking', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Review the contacts returned to make sure they match what you want', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Delete the filtered contacts', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Send emails to all filtered contacts', false, 4);
+
 END $$;

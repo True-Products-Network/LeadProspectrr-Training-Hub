@@ -169,6 +169,42 @@ BEGIN
   INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
   VALUES (v_quiz_id, 'Just appointment bookings', false, 4);
 
+
+  -- Question 2
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'Which of these would you NOT typically find on the Contacts page?', 'The Contacts page contains people-related information, not financial reports or other business data.', 2)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Leads who filled out a form', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Past clients you worked with', false, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Your company''s financial reports', true, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Newsletter subscribers', false, 4);
+
+
+  -- Question 3
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'Why is the Contacts page important?', 'The Contacts page gives you the big picture of who is in your CRM and helps you decide who needs attention and follow-up.', 3)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It stores all your company''s files', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It shows who is in your system and helps you decide who needs attention', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It only shows completed sales', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It is only for administrators', false, 4);
+
 END $$;
 
 
@@ -398,6 +434,42 @@ BEGIN
 
   INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
   VALUES (v_quiz_id, 'Contact type and source', false, 4);
+
+
+  -- Question 2
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'What can you do with the search bar on the Contacts page?', 'The search bar helps you find specific contacts quickly using various search criteria.', 2)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Only search by first name', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Find specific contacts quickly using various criteria', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Delete contacts permanently', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Change contact passwords', false, 4);
+
+
+  -- Question 3
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'What are Smart Lists used for on the Contacts page?', 'Smart Lists let you save filtered views of your contacts so you can quickly access specific groups later without rebuilding filters.', 3)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To delete old contacts', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To narrow down and save specific contact views for later use', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To send spam emails', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To block contacts', false, 4);
 
 END $$;
 
@@ -635,6 +707,42 @@ BEGIN
 
   INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
   VALUES (v_quiz_id, 'Only their appointment history', false, 4);
+
+
+  -- Question 2
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'How do you open a contact record?', 'To open a contact record, simply click on the contact''s name in the Contacts list.', 2)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Send them an email first', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Click on the contact''s name in the Contacts list', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Call them on the phone', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Wait for them to contact you', false, 4);
+
+
+  -- Question 3
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'What information is typically found inside a contact record?', 'A contact record contains comprehensive information including basic details, tags, status, assignment, and activity history like notes and conversations.', 3)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Only the person''s name', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Name, email, phone, tags, status, activity history, and more', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Your company''s financial data', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Other people''s contact records', false, 4);
 
 END $$;
 
@@ -879,6 +987,42 @@ BEGIN
   INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
   VALUES (v_quiz_id, 'Smart Lists are created automatically', false, 4);
 
+
+  -- Question 2
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'What does Lead Status tell you?', 'Lead Status helps you understand how engaged or ready a lead is, using categories like New, Cold, Warm, Hot, Customer, or Past Customer.', 2)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'How much money they have', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'How warm or ready a lead may be (New, Cold, Warm, Hot, etc.)', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Their physical location', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Their age group', false, 4);
+
+
+  -- Question 3
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'Why is the Source field important?', 'The Source field tells you where a contact originated from, helping you understand which marketing channels are working best.', 3)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It tells you where they live', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It shows where the contact came from (Website, Facebook, Referral, etc.)', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It shows their income level', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It is not important', false, 4);
+
 END $$;
 
 
@@ -1096,6 +1240,42 @@ BEGIN
 
   INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
   VALUES (v_quiz_id, 'They all do the same thing', false, 4);
+
+
+  -- Question 2
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'What is the purpose of a filter?', 'Filters are rules that help you search for and find contacts that match specific criteria you set.', 2)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To delete contacts', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To search for contacts matching certain criteria', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To send emails', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To create new contacts', false, 4);
+
+
+  -- Question 3
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'Why would you create a Smart List?', 'Smart Lists save you time by storing your filtered views, so you can quickly access specific contact groups without rebuilding filters.', 3)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To delete old contacts', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To save a filtered view so you don''t have to rebuild it every time', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To change contact passwords', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To block spam contacts', false, 4);
 
 END $$;
 
@@ -1335,6 +1515,42 @@ BEGIN
 
   INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
   VALUES (v_quiz_id, 'Only think about the name', false, 4);
+
+
+  -- Question 2
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'Why is it important to know ''why'' you need a Smart List?', 'Understanding why you need a Smart List ensures it will actually be useful. Without a clear purpose, the list may go unused.', 2)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It is not important', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'If you don''t know why you need it, you should not create it yet', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It is only for administrators to know', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'It helps you delete contacts faster', false, 4);
+
+
+  -- Question 3
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'What makes a good Smart List name?', 'Clear names like ''New Leads — Last 30 Days'' tell you exactly what the list contains, making it easy to know when to use it.', 3)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Something vague like ''List 1''', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'A clear name that explains exactly what the list shows', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'A random number', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Your own name', false, 4);
 
 END $$;
 
@@ -1630,6 +1846,42 @@ BEGIN
 
   INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
   VALUES (v_quiz_id, 'You don''t need to use filters first', false, 4);
+
+
+  -- Question 2
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'Where do you go to add a filter?', 'To add a filter, navigate to the Contacts page and click on ''Add Filter'' to start building your criteria.', 2)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Settings → Profile', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Contacts → Add Filter', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Reports → Analytics', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Dashboard → Home', false, 4);
+
+
+  -- Question 3
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'What should you do after setting up filters?', 'Always review the contacts that your filters return to ensure you''re getting exactly the group you intended before saving as a Smart List.', 3)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Immediately save without checking', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Review the contacts returned to make sure they match what you want', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Delete the filtered contacts', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Send emails to all filtered contacts', false, 4);
 
 END $$;
 
@@ -1928,6 +2180,42 @@ BEGIN
   INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
   VALUES (v_quiz_id, 'Names are just for decoration', false, 4);
 
+
+  -- Question 2
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'Which is an example of a GOOD Smart List name?', '''Hot Leads — Need Follow-Up'' is clear and specific, telling you exactly what the list contains and what action to take.', 2)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'List 1', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Test', false, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Hot Leads — Need Follow-Up', true, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Contacts', false, 4);
+
+
+  -- Question 3
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'What should you do after saving a Smart List?', 'After saving, you should reopen the Smart List to verify it shows the correct contacts and works as expected.', 3)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Never use it again', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Reopen it to verify it works correctly', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Delete it immediately', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Tell everyone not to use it', false, 4);
+
 END $$;
 
 
@@ -2207,6 +2495,42 @@ BEGIN
   INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
   VALUES (v_quiz_id, 'Only look at it once', false, 4);
 
+
+  -- Question 2
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'How can Smart Lists help with follow-up?', 'Smart Lists help you quickly find specific groups of contacts who need attention, making follow-up more efficient and targeted.', 2)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'They automatically send emails for you', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'They help you quickly find specific groups of contacts who need follow-up', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'They delete contacts who don''t respond', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'They block unwanted contacts', false, 4);
+
+
+  -- Question 3
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'What is the main purpose of a Smart List?', 'A Smart List should help you decide what to do next by showing you specific groups of contacts that need attention or action.', 3)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To store old contacts you want to delete later', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To help you decide what action to take next with specific contact groups', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To hide contacts from other users', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'To automatically update contact information', false, 4);
+
 END $$;
 
 
@@ -2443,5 +2767,41 @@ BEGIN
 
   INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
   VALUES (v_quiz_id, 'Only admins can edit Smart Lists', false, 4);
+
+
+  -- Question 2
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'How can you keep Smart Lists useful over time?', 'Keep Smart Lists useful by regularly using them, reviewing the contacts shown, updating filters when processes change, and keeping names clear.', 2)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Never look at them again after creating', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Open them regularly, review contacts, update filters, and rename as needed', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Delete them every week and recreate', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Share them with competitors', false, 4);
+
+
+  -- Question 3
+  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
+  VALUES (v_lesson_id, 'What should you do if a Smart List is no longer helpful?', 'If a Smart List no longer helps you take action, you should either update it to make it useful again or remove it to keep your workspace organized.', 3)
+  RETURNING id INTO v_quiz_id;
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Keep it forever anyway', false, 1);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Clean it up or remove it', true, 2);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Hide it from other users', false, 3);
+
+  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
+  VALUES (v_quiz_id, 'Add more filters randomly', false, 4);
 
 END $$;

@@ -100,7 +100,23 @@ Generates SQL migration files that can be run against Supabase/PostgreSQL to ins
   "nextLessonTitle": "Next Lesson Title",
   "quizzes": [
     {
-      "question": "Quiz question?",
+      "question": "Quiz question 1?",
+      "options": [
+        { "option_text": "Option A", "is_correct": false },
+        { "option_text": "Option B", "is_correct": true }
+      ],
+      "explanation": "Why B is correct"
+    },
+    {
+      "question": "Quiz question 2?",
+      "options": [
+        { "option_text": "Option A", "is_correct": true },
+        { "option_text": "Option B", "is_correct": false }
+      ],
+      "explanation": "Why A is correct"
+    },
+    {
+      "question": "Quiz question 3?",
       "options": [
         { "option_text": "Option A", "is_correct": false },
         { "option_text": "Option B", "is_correct": true }
@@ -119,6 +135,16 @@ Generates SQL migration files that can be run against Supabase/PostgreSQL to ins
   { /* lesson 2 */ }
 ]
 ```
+
+## Validation Requirements
+
+Each lesson must have:
+- ✅ All required fields (lessonNumber, slug, title, moduleWeek, moduleName, learningGoal, keyPoint, nextLessonTitle)
+- ✅ At least one section
+- ✅ At least one action step
+- ✅ **Exactly 3 quiz questions** (required)
+- ✅ Each quiz must have at least 2 options
+- ✅ Each quiz must have exactly 1 correct answer
 
 ## Available Icons
 
