@@ -16,6 +16,7 @@ interface LessonPageProps {
 
 // Learning goals for each lesson (single goal)
 const lessonGoals: Record<string, string> = {
+  // Module 1: Blog Posts
   'why-blog-posts-matter': 'Understand why creating blog posts inside LeadProspectrr can help your business.',
   'planning-your-blog-post': 'Plan a simple blog post that answers one customer question.',
   'blog-settings-overview': 'Understand the blog settings before creating your first post.',
@@ -26,11 +27,23 @@ const lessonGoals: Record<string, string> = {
   'seo-basics': 'Complete the basic SEO settings for the blog post.',
   'preview-and-review': 'Check the post before publishing.',
   'publish-or-schedule': 'Publish the blog post now or schedule it for later.',
-  'sharing-your-blog-post': 'Use your published post as part of your follow-up and marketing.'
+  'sharing-your-blog-post': 'Use your published post as part of your follow-up and marketing.',
+  // Module 2: Contacts and Smart Lists
+  'why-contacts-matter': 'Understand why the Contacts page is one of the most important areas in LeadProspectrr.',
+  'review-contacts-page': 'Learn how to navigate and understand your Contacts page layout.',
+  'open-contact-record': 'Learn how to open and view individual contact details.',
+  'understand-contact-details': 'Learn what information is stored in a contact record.',
+  'tags-filters-smart-lists': 'Understand the tools for organizing and finding contacts.',
+  'before-building-smart-list': 'Plan your Smart List before you start building it.',
+  'build-filters': 'Learn how to create filters to find specific contacts.',
+  'save-smart-list': 'Save your filtered results as a reusable Smart List.',
+  'use-smart-list': 'Learn how to use your saved Smart Lists.',
+  'edit-reuse-smart-lists': 'Learn how to update and reuse your Smart Lists over time.'
 }
 
 // Learning objectives for each lesson
 const lessonObjectives: Record<string, string[]> = {
+  // Module 1: Blog Posts
   'why-blog-posts-matter': [
     'Understand the value of blog content for your business',
     'Identify how blogs support marketing and trust-building',
@@ -85,6 +98,57 @@ const lessonObjectives: Record<string, string[]> = {
     'Share your published blog post',
     'Use blog content in your marketing',
     'Track the results of your posts'
+  ],
+  // Module 2: Contacts and Smart Lists
+  'why-contacts-matter': [
+    'Understand why the Contacts page is important',
+    'Identify the types of people in your CRM',
+    'Recognize how contacts support your business'
+  ],
+  'review-contacts-page': [
+    'Navigate the Contacts page',
+    'Understand the layout and features',
+    'Find your way around contact lists'
+  ],
+  'open-contact-record': [
+    'Open individual contact records',
+    'Navigate contact details',
+    'Find specific contact information'
+  ],
+  'understand-contact-details': [
+    'Know what information is stored',
+    'Understand contact fields',
+    'Find contact history'
+  ],
+  'tags-filters-smart-lists': [
+    'Understand tags and how to use them',
+    'Know what filters are available',
+    'Learn what Smart Lists can do'
+  ],
+  'before-building-smart-list': [
+    'Plan what you want to find',
+    'Choose the right criteria',
+    'Think about how you will use the list'
+  ],
+  'build-filters': [
+    'Create filters to find contacts',
+    'Combine multiple filters',
+    'Narrow down your search results'
+  ],
+  'save-smart-list': [
+    'Save your filter combinations',
+    'Name your Smart Lists clearly',
+    'Organize your lists for easy access'
+  ],
+  'use-smart-list': [
+    'Access saved Smart Lists',
+    'View contacts in a Smart List',
+    'Use lists for campaigns and follow-ups'
+  ],
+  'edit-reuse-smart-lists': [
+    'Update existing Smart Lists',
+    'Modify filters when needed',
+    'Keep lists current and useful'
   ]
 }
 
