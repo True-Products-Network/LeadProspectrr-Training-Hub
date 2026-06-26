@@ -404,56 +404,38 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'What is the simple formula for understanding these three tools?', 'Tags label individual contacts. Filters help you search for contacts matching rules. Smart Lists save those filtered views for reuse.', 1)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'What is the simple formula for understanding these three tools?', 
+    '[{"id":1,"text":"Tags save searches, filters label people, Smart Lists find people","is_correct":false},{"id":2,"text":"Tags label people, filters find people, Smart Lists save the search","is_correct":true},{"id":3,"text":"Tags find people, filters save searches, Smart Lists label people","is_correct":false},{"id":4,"text":"They all do the same thing","is_correct":false}]'::jsonb,
+    'Tags label individual contacts. Filters help you search for contacts matching rules. Smart Lists save those filtered views for reuse.', 
+    1
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Tags save searches, filters label people, Smart Lists find people', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Tags label people, filters find people, Smart Lists save the search', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Tags find people, filters save searches, Smart Lists label people', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'They all do the same thing', false, 4);
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'What is the purpose of a filter?', 'Filters are rules that help you search for and find contacts that match specific criteria you set.', 2)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'What is the purpose of a filter?', 
+    '[{"id":1,"text":"To delete contacts","is_correct":false},{"id":2,"text":"To search for contacts matching certain criteria","is_correct":true},{"id":3,"text":"To send emails","is_correct":false},{"id":4,"text":"To create new contacts","is_correct":false}]'::jsonb,
+    'Filters are rules that help you search for and find contacts that match specific criteria you set.', 
+    2
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'To delete contacts', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'To search for contacts matching certain criteria', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'To send emails', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'To create new contacts', false, 4);
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'Why would you create a Smart List?', 'Smart Lists save you time by storing your filtered views, so you can quickly access specific contact groups without rebuilding filters.', 3)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'Why would you create a Smart List?', 
+    '[{"id":1,"text":"To delete old contacts","is_correct":false},{"id":2,"text":"To save a filtered view so you don''t have to rebuild it every time","is_correct":true},{"id":3,"text":"To change contact passwords","is_correct":false},{"id":4,"text":"To block spam contacts","is_correct":false}]'::jsonb,
+    'Smart Lists save you time by storing your filtered views, so you can quickly access specific contact groups without rebuilding filters.', 
+    3
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'To delete old contacts', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'To save a filtered view so you don''t have to rebuild it every time', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'To change contact passwords', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'To block spam contacts', false, 4);
 
 END $$;

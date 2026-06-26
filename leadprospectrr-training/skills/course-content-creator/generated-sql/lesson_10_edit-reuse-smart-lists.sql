@@ -442,56 +442,38 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'When might you need to edit a Smart List?', 'Smart Lists should evolve with your business. Edit them when your processes change, names become unclear, or you need to track different groups.', 1)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'When might you need to edit a Smart List?', 
+    '[{"id":1,"text":"Never, Smart Lists cannot be changed","is_correct":false},{"id":2,"text":"When filters need to change, the name is unclear, lead stages changed, or you added new tags","is_correct":true},{"id":3,"text":"Only on Mondays","is_correct":false},{"id":4,"text":"Only admins can edit Smart Lists","is_correct":false}]'::jsonb,
+    'Smart Lists should evolve with your business. Edit them when your processes change, names become unclear, or you need to track different groups.', 
+    1
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Never, Smart Lists cannot be changed', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'When filters need to change, the name is unclear, lead stages changed, or you added new tags', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Only on Mondays', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Only admins can edit Smart Lists', false, 4);
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'How can you keep Smart Lists useful over time?', 'Keep Smart Lists useful by regularly using them, reviewing the contacts shown, updating filters when processes change, and keeping names clear.', 2)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'How can you keep Smart Lists useful over time?', 
+    '[{"id":1,"text":"Never look at them again after creating","is_correct":false},{"id":2,"text":"Open them regularly, review contacts, update filters, and rename as needed","is_correct":true},{"id":3,"text":"Delete them every week and recreate","is_correct":false},{"id":4,"text":"Share them with competitors","is_correct":false}]'::jsonb,
+    'Keep Smart Lists useful by regularly using them, reviewing the contacts shown, updating filters when processes change, and keeping names clear.', 
+    2
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Never look at them again after creating', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Open them regularly, review contacts, update filters, and rename as needed', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Delete them every week and recreate', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Share them with competitors', false, 4);
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'What should you do if a Smart List is no longer helpful?', 'If a Smart List no longer helps you take action, you should either update it to make it useful again or remove it to keep your workspace organized.', 3)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'What should you do if a Smart List is no longer helpful?', 
+    '[{"id":1,"text":"Keep it forever anyway","is_correct":false},{"id":2,"text":"Clean it up or remove it","is_correct":true},{"id":3,"text":"Hide it from other users","is_correct":false},{"id":4,"text":"Add more filters randomly","is_correct":false}]'::jsonb,
+    'If a Smart List no longer helps you take action, you should either update it to make it useful again or remove it to keep your workspace organized.', 
+    3
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Keep it forever anyway', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Clean it up or remove it', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Hide it from other users', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Add more filters randomly', false, 4);
 
 END $$;

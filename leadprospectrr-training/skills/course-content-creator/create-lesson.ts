@@ -290,20 +290,26 @@ BEGIN
 `;
 
   data.quizzes.forEach((quiz, index) => {
+    // Build options JSON array
+    const optionsJson = JSON.stringify(quiz.options.map((o, i) => ({
+      id: i + 1,
+      text: o.option_text,
+      is_correct: o.is_correct
+    })));
+    
     sql += `
   -- Question ${index + 1}
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, '${quiz.question.replace(/'/g, "''")}', '${quiz.explanation.replace(/'/g, "''")}', ${index + 1})
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    '${quiz.question.replace(/'/g, "''")}', 
+    '${optionsJson.replace(/'/g, "''")}'::jsonb,
+    '${quiz.explanation.replace(/'/g, "''")}', 
+    ${index + 1}
+  )
   RETURNING id INTO v_quiz_id;
 
 `;
-
-    quiz.options.forEach((option, optIndex) => {
-      sql += `  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, '${option.option_text.replace(/'/g, "''")}', ${option.is_correct}, ${optIndex + 1});
-
-`;
-    });
   });
 
   sql += `END $$;

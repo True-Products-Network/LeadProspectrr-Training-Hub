@@ -446,56 +446,38 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'What should you do before creating a Smart List?', 'Planning before creating prevents building lists that are unclear or unused. Know your group, your why, your filters, and your name before starting.', 1)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'What should you do before creating a Smart List?', 
+    '[{"id":1,"text":"Create it immediately","is_correct":false},{"id":2,"text":"Plan who you want to find, why you need it, what filters to use, and choose a clear name","is_correct":true},{"id":3,"text":"Ask someone else to create it","is_correct":false},{"id":4,"text":"Only think about the name","is_correct":false}]'::jsonb,
+    'Planning before creating prevents building lists that are unclear or unused. Know your group, your why, your filters, and your name before starting.', 
+    1
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Create it immediately', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Plan who you want to find, why you need it, what filters to use, and choose a clear name', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Ask someone else to create it', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Only think about the name', false, 4);
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'Why is it important to know ''why'' you need a Smart List?', 'Understanding why you need a Smart List ensures it will actually be useful. Without a clear purpose, the list may go unused.', 2)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'Why is it important to know ''why'' you need a Smart List?', 
+    '[{"id":1,"text":"It is not important","is_correct":false},{"id":2,"text":"If you don''t know why you need it, you should not create it yet","is_correct":true},{"id":3,"text":"It is only for administrators to know","is_correct":false},{"id":4,"text":"It helps you delete contacts faster","is_correct":false}]'::jsonb,
+    'Understanding why you need a Smart List ensures it will actually be useful. Without a clear purpose, the list may go unused.', 
+    2
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'It is not important', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'If you don''t know why you need it, you should not create it yet', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'It is only for administrators to know', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'It helps you delete contacts faster', false, 4);
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'What makes a good Smart List name?', 'Clear names like ''New Leads — Last 30 Days'' tell you exactly what the list contains, making it easy to know when to use it.', 3)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'What makes a good Smart List name?', 
+    '[{"id":1,"text":"Something vague like ''List 1''","is_correct":false},{"id":2,"text":"A clear name that explains exactly what the list shows","is_correct":true},{"id":3,"text":"A random number","is_correct":false},{"id":4,"text":"Your own name","is_correct":false}]'::jsonb,
+    'Clear names like ''New Leads — Last 30 Days'' tell you exactly what the list contains, making it easy to know when to use it.', 
+    3
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Something vague like ''List 1''', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'A clear name that explains exactly what the list shows', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'A random number', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Your own name', false, 4);
 
 END $$;

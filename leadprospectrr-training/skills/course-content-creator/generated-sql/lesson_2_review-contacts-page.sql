@@ -428,56 +428,38 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'Which of the following is NOT typically shown on the Contacts page?', 'Full conversation history is found inside the individual contact record, not on the main Contacts page list view.', 1)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'Which of the following is NOT typically shown on the Contacts page?', 
+    '[{"id":1,"text":"Name and email","is_correct":false},{"id":2,"text":"Full conversation history","is_correct":true},{"id":3,"text":"Tags and lead status","is_correct":false},{"id":4,"text":"Contact type and source","is_correct":false}]'::jsonb,
+    'Full conversation history is found inside the individual contact record, not on the main Contacts page list view.', 
+    1
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Name and email', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Full conversation history', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Tags and lead status', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Contact type and source', false, 4);
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'What can you do with the search bar on the Contacts page?', 'The search bar helps you find specific contacts quickly using various search criteria.', 2)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'What can you do with the search bar on the Contacts page?', 
+    '[{"id":1,"text":"Only search by first name","is_correct":false},{"id":2,"text":"Find specific contacts quickly using various criteria","is_correct":true},{"id":3,"text":"Delete contacts permanently","is_correct":false},{"id":4,"text":"Change contact passwords","is_correct":false}]'::jsonb,
+    'The search bar helps you find specific contacts quickly using various search criteria.', 
+    2
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Only search by first name', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Find specific contacts quickly using various criteria', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Delete contacts permanently', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Change contact passwords', false, 4);
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'What are Smart Lists used for on the Contacts page?', 'Smart Lists let you save filtered views of your contacts so you can quickly access specific groups later without rebuilding filters.', 3)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'What are Smart Lists used for on the Contacts page?', 
+    '[{"id":1,"text":"To delete old contacts","is_correct":false},{"id":2,"text":"To narrow down and save specific contact views for later use","is_correct":true},{"id":3,"text":"To send spam emails","is_correct":false},{"id":4,"text":"To block contacts","is_correct":false}]'::jsonb,
+    'Smart Lists let you save filtered views of your contacts so you can quickly access specific groups later without rebuilding filters.', 
+    3
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'To delete old contacts', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'To narrow down and save specific contact views for later use', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'To send spam emails', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'To block contacts', false, 4);
 
 END $$;

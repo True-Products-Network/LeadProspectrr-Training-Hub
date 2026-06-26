@@ -454,56 +454,38 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'What is the difference between a tag and a Smart List?', 'Tags are labels added to individual contacts. Smart Lists are saved filtered views that show contacts matching specific criteria.', 1)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'What is the difference between a tag and a Smart List?', 
+    '[{"id":1,"text":"They are the same thing","is_correct":false},{"id":2,"text":"A tag labels a contact; a Smart List is a saved filtered view of contacts","is_correct":true},{"id":3,"text":"Tags are for clients only","is_correct":false},{"id":4,"text":"Smart Lists are created automatically","is_correct":false}]'::jsonb,
+    'Tags are labels added to individual contacts. Smart Lists are saved filtered views that show contacts matching specific criteria.', 
+    1
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'They are the same thing', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'A tag labels a contact; a Smart List is a saved filtered view of contacts', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Tags are for clients only', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Smart Lists are created automatically', false, 4);
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'What does Lead Status tell you?', 'Lead Status helps you understand how engaged or ready a lead is, using categories like New, Cold, Warm, Hot, Customer, or Past Customer.', 2)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'What does Lead Status tell you?', 
+    '[{"id":1,"text":"How much money they have","is_correct":false},{"id":2,"text":"How warm or ready a lead may be (New, Cold, Warm, Hot, etc.)","is_correct":true},{"id":3,"text":"Their physical location","is_correct":false},{"id":4,"text":"Their age group","is_correct":false}]'::jsonb,
+    'Lead Status helps you understand how engaged or ready a lead is, using categories like New, Cold, Warm, Hot, Customer, or Past Customer.', 
+    2
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'How much money they have', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'How warm or ready a lead may be (New, Cold, Warm, Hot, etc.)', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Their physical location', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Their age group', false, 4);
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'Why is the Source field important?', 'The Source field tells you where a contact originated from, helping you understand which marketing channels are working best.', 3)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'Why is the Source field important?', 
+    '[{"id":1,"text":"It tells you where they live","is_correct":false},{"id":2,"text":"It shows where the contact came from (Website, Facebook, Referral, etc.)","is_correct":true},{"id":3,"text":"It shows their income level","is_correct":false},{"id":4,"text":"It is not important","is_correct":false}]'::jsonb,
+    'The Source field tells you where a contact originated from, helping you understand which marketing channels are working best.', 
+    3
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'It tells you where they live', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'It shows where the contact came from (Website, Facebook, Referral, etc.)', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'It shows their income level', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'It is not important', false, 4);
 
 END $$;

@@ -558,56 +558,38 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'Why should you use filters before saving a Smart List?', 'Filters are the foundation of a Smart List. They define which contacts appear in the list. Getting the filters right ensures your Smart List shows exactly who you want.', 1)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'Why should you use filters before saving a Smart List?', 
+    '[{"id":1,"text":"Filters are required but not useful","is_correct":false},{"id":2,"text":"Filters help you find the specific group of contacts you want. Once the filters are correct, you can save that view as a Smart List","is_correct":true},{"id":3,"text":"Filters are just for decoration","is_correct":false},{"id":4,"text":"You don''t need to use filters first","is_correct":false}]'::jsonb,
+    'Filters are the foundation of a Smart List. They define which contacts appear in the list. Getting the filters right ensures your Smart List shows exactly who you want.', 
+    1
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Filters are required but not useful', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Filters help you find the specific group of contacts you want. Once the filters are correct, you can save that view as a Smart List', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Filters are just for decoration', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'You don''t need to use filters first', false, 4);
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'Where do you go to add a filter?', 'To add a filter, navigate to the Contacts page and click on ''Add Filter'' to start building your criteria.', 2)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'Where do you go to add a filter?', 
+    '[{"id":1,"text":"Settings → Profile","is_correct":false},{"id":2,"text":"Contacts → Add Filter","is_correct":true},{"id":3,"text":"Reports → Analytics","is_correct":false},{"id":4,"text":"Dashboard → Home","is_correct":false}]'::jsonb,
+    'To add a filter, navigate to the Contacts page and click on ''Add Filter'' to start building your criteria.', 
+    2
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Settings → Profile', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Contacts → Add Filter', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Reports → Analytics', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Dashboard → Home', false, 4);
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'What should you do after setting up filters?', 'Always review the contacts that your filters return to ensure you''re getting exactly the group you intended before saving as a Smart List.', 3)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'What should you do after setting up filters?', 
+    '[{"id":1,"text":"Immediately save without checking","is_correct":false},{"id":2,"text":"Review the contacts returned to make sure they match what you want","is_correct":true},{"id":3,"text":"Delete the filtered contacts","is_correct":false},{"id":4,"text":"Send emails to all filtered contacts","is_correct":false}]'::jsonb,
+    'Always review the contacts that your filters return to ensure you''re getting exactly the group you intended before saving as a Smart List.', 
+    3
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Immediately save without checking', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Review the contacts returned to make sure they match what you want', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Delete the filtered contacts', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Send emails to all filtered contacts', false, 4);
 
 END $$;

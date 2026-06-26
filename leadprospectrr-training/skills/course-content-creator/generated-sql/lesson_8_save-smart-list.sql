@@ -562,56 +562,38 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'Why should Smart List names be clear?', 'Clear names like ''Hot Leads — Need Follow-Up'' tell you exactly what the list contains and when to use it, saving time and preventing confusion.', 1)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'Why should Smart List names be clear?', 
+    '[{"id":1,"text":"They don''t need to be clear","is_correct":false},{"id":2,"text":"Clear names help you quickly understand what the list shows and when to use it","is_correct":true},{"id":3,"text":"Only admins see the names","is_correct":false},{"id":4,"text":"Names are just for decoration","is_correct":false}]'::jsonb,
+    'Clear names like ''Hot Leads — Need Follow-Up'' tell you exactly what the list contains and when to use it, saving time and preventing confusion.', 
+    1
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'They don''t need to be clear', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Clear names help you quickly understand what the list shows and when to use it', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Only admins see the names', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Names are just for decoration', false, 4);
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'Which is an example of a GOOD Smart List name?', '''Hot Leads — Need Follow-Up'' is clear and specific, telling you exactly what the list contains and what action to take.', 2)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'Which is an example of a GOOD Smart List name?', 
+    '[{"id":1,"text":"List 1","is_correct":false},{"id":2,"text":"Test","is_correct":false},{"id":3,"text":"Hot Leads — Need Follow-Up","is_correct":true},{"id":4,"text":"Contacts","is_correct":false}]'::jsonb,
+    '''Hot Leads — Need Follow-Up'' is clear and specific, telling you exactly what the list contains and what action to take.', 
+    2
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'List 1', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Test', false, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Hot Leads — Need Follow-Up', true, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Contacts', false, 4);
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'What should you do after saving a Smart List?', 'After saving, you should reopen the Smart List to verify it shows the correct contacts and works as expected.', 3)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'What should you do after saving a Smart List?', 
+    '[{"id":1,"text":"Never use it again","is_correct":false},{"id":2,"text":"Reopen it to verify it works correctly","is_correct":true},{"id":3,"text":"Delete it immediately","is_correct":false},{"id":4,"text":"Tell everyone not to use it","is_correct":false}]'::jsonb,
+    'After saving, you should reopen the Smart List to verify it shows the correct contacts and works as expected.', 
+    3
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Never use it again', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Reopen it to verify it works correctly', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Delete it immediately', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Tell everyone not to use it', false, 4);
 
 END $$;

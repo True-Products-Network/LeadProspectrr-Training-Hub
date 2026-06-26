@@ -316,56 +316,38 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'What does the Contacts page show?', 'The Contacts page shows all people in your CRM including leads, clients, prospects, referral partners, event attendees, newsletter subscribers, and more.', 1)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'What does the Contacts page show?', 
+    '[{"id":1,"text":"Only current clients","is_correct":false},{"id":2,"text":"The people stored in your CRM, such as leads, clients, prospects, and other contacts","is_correct":true},{"id":3,"text":"Only email subscribers","is_correct":false},{"id":4,"text":"Just appointment bookings","is_correct":false}]'::jsonb,
+    'The Contacts page shows all people in your CRM including leads, clients, prospects, referral partners, event attendees, newsletter subscribers, and more.', 
+    1
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Only current clients', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'The people stored in your CRM, such as leads, clients, prospects, and other contacts', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Only email subscribers', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Just appointment bookings', false, 4);
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'Which of these would you NOT typically find on the Contacts page?', 'The Contacts page contains people-related information, not financial reports or other business data.', 2)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'Which of these would you NOT typically find on the Contacts page?', 
+    '[{"id":1,"text":"Leads who filled out a form","is_correct":false},{"id":2,"text":"Past clients you worked with","is_correct":false},{"id":3,"text":"Your company''s financial reports","is_correct":true},{"id":4,"text":"Newsletter subscribers","is_correct":false}]'::jsonb,
+    'The Contacts page contains people-related information, not financial reports or other business data.', 
+    2
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Leads who filled out a form', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Past clients you worked with', false, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Your company''s financial reports', true, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'Newsletter subscribers', false, 4);
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, explanation, sort_order)
-  VALUES (v_lesson_id, 'Why is the Contacts page important?', 'The Contacts page gives you the big picture of who is in your CRM and helps you decide who needs attention and follow-up.', 3)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  VALUES (
+    v_lesson_id, 
+    'Why is the Contacts page important?', 
+    '[{"id":1,"text":"It stores all your company''s files","is_correct":false},{"id":2,"text":"It shows who is in your system and helps you decide who needs attention","is_correct":true},{"id":3,"text":"It only shows completed sales","is_correct":false},{"id":4,"text":"It is only for administrators","is_correct":false}]'::jsonb,
+    'The Contacts page gives you the big picture of who is in your CRM and helps you decide who needs attention and follow-up.', 
+    3
+  )
   RETURNING id INTO v_quiz_id;
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'It stores all your company''s files', false, 1);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'It shows who is in your system and helps you decide who needs attention', true, 2);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'It only shows completed sales', false, 3);
-
-  INSERT INTO public.lesson_quiz_options (quiz_id, option_text, is_correct, sort_order)
-  VALUES (v_quiz_id, 'It is only for administrators', false, 4);
 
 END $$;
