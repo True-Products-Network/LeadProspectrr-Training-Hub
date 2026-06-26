@@ -566,8 +566,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'Why should Smart List names be clear?', 
-    '[{"id":1,"text":"They don''t need to be clear","is_correct":false},{"id":2,"text":"Clear names help you quickly understand what the list shows and when to use it","is_correct":true},{"id":3,"text":"Only admins see the names","is_correct":false},{"id":4,"text":"Names are just for decoration","is_correct":false}]'::jsonb,
-    2,
+    '["They don''t need to be clear","Clear names help you quickly understand what the list shows and when to use it","Only admins see the names","Names are just for decoration"]'::jsonb,
+    'Clear names help you quickly understand what the list shows and when to use it',
     'Clear names like ''Hot Leads — Need Follow-Up'' tell you exactly what the list contains and when to use it, saving time and preventing confusion.', 
     1
   )
@@ -579,8 +579,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'Which is an example of a GOOD Smart List name?', 
-    '[{"id":1,"text":"List 1","is_correct":false},{"id":2,"text":"Test","is_correct":false},{"id":3,"text":"Hot Leads — Need Follow-Up","is_correct":true},{"id":4,"text":"Contacts","is_correct":false}]'::jsonb,
-    3,
+    '["List 1","Test","Hot Leads — Need Follow-Up","Contacts"]'::jsonb,
+    'Hot Leads — Need Follow-Up',
     '''Hot Leads — Need Follow-Up'' is clear and specific, telling you exactly what the list contains and what action to take.', 
     2
   )
@@ -592,8 +592,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'What should you do after saving a Smart List?', 
-    '[{"id":1,"text":"Never use it again","is_correct":false},{"id":2,"text":"Reopen it to verify it works correctly","is_correct":true},{"id":3,"text":"Delete it immediately","is_correct":false},{"id":4,"text":"Tell everyone not to use it","is_correct":false}]'::jsonb,
-    2,
+    '["Never use it again","Reopen it to verify it works correctly","Delete it immediately","Tell everyone not to use it"]'::jsonb,
+    'Reopen it to verify it works correctly',
     'After saving, you should reopen the Smart List to verify it shows the correct contacts and works as expected.', 
     3
   )

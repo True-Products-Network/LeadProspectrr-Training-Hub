@@ -432,8 +432,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'Which of the following is NOT typically shown on the Contacts page?', 
-    '[{"id":1,"text":"Name and email","is_correct":false},{"id":2,"text":"Full conversation history","is_correct":true},{"id":3,"text":"Tags and lead status","is_correct":false},{"id":4,"text":"Contact type and source","is_correct":false}]'::jsonb,
-    2,
+    '["Name and email","Full conversation history","Tags and lead status","Contact type and source"]'::jsonb,
+    'Full conversation history',
     'Full conversation history is found inside the individual contact record, not on the main Contacts page list view.', 
     1
   )
@@ -445,8 +445,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'What can you do with the search bar on the Contacts page?', 
-    '[{"id":1,"text":"Only search by first name","is_correct":false},{"id":2,"text":"Find specific contacts quickly using various criteria","is_correct":true},{"id":3,"text":"Delete contacts permanently","is_correct":false},{"id":4,"text":"Change contact passwords","is_correct":false}]'::jsonb,
-    2,
+    '["Only search by first name","Find specific contacts quickly using various criteria","Delete contacts permanently","Change contact passwords"]'::jsonb,
+    'Find specific contacts quickly using various criteria',
     'The search bar helps you find specific contacts quickly using various search criteria.', 
     2
   )
@@ -458,8 +458,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'What are Smart Lists used for on the Contacts page?', 
-    '[{"id":1,"text":"To delete old contacts","is_correct":false},{"id":2,"text":"To narrow down and save specific contact views for later use","is_correct":true},{"id":3,"text":"To send spam emails","is_correct":false},{"id":4,"text":"To block contacts","is_correct":false}]'::jsonb,
-    2,
+    '["To delete old contacts","To narrow down and save specific contact views for later use","To send spam emails","To block contacts"]'::jsonb,
+    'To narrow down and save specific contact views for later use',
     'Smart Lists let you save filtered views of your contacts so you can quickly access specific groups later without rebuilding filters.', 
     3
   )

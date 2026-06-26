@@ -450,8 +450,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'What should you do before creating a Smart List?', 
-    '[{"id":1,"text":"Create it immediately","is_correct":false},{"id":2,"text":"Plan who you want to find, why you need it, what filters to use, and choose a clear name","is_correct":true},{"id":3,"text":"Ask someone else to create it","is_correct":false},{"id":4,"text":"Only think about the name","is_correct":false}]'::jsonb,
-    2,
+    '["Create it immediately","Plan who you want to find, why you need it, what filters to use, and choose a clear name","Ask someone else to create it","Only think about the name"]'::jsonb,
+    'Plan who you want to find, why you need it, what filters to use, and choose a clear name',
     'Planning before creating prevents building lists that are unclear or unused. Know your group, your why, your filters, and your name before starting.', 
     1
   )
@@ -463,8 +463,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'Why is it important to know ''why'' you need a Smart List?', 
-    '[{"id":1,"text":"It is not important","is_correct":false},{"id":2,"text":"If you don''t know why you need it, you should not create it yet","is_correct":true},{"id":3,"text":"It is only for administrators to know","is_correct":false},{"id":4,"text":"It helps you delete contacts faster","is_correct":false}]'::jsonb,
-    2,
+    '["It is not important","If you don''t know why you need it, you should not create it yet","It is only for administrators to know","It helps you delete contacts faster"]'::jsonb,
+    'If you don''t know why you need it, you should not create it yet',
     'Understanding why you need a Smart List ensures it will actually be useful. Without a clear purpose, the list may go unused.', 
     2
   )
@@ -476,8 +476,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'What makes a good Smart List name?', 
-    '[{"id":1,"text":"Something vague like ''List 1''","is_correct":false},{"id":2,"text":"A clear name that explains exactly what the list shows","is_correct":true},{"id":3,"text":"A random number","is_correct":false},{"id":4,"text":"Your own name","is_correct":false}]'::jsonb,
-    2,
+    '["Something vague like ''List 1''","A clear name that explains exactly what the list shows","A random number","Your own name"]'::jsonb,
+    'A clear name that explains exactly what the list shows',
     'Clear names like ''New Leads — Last 30 Days'' tell you exactly what the list contains, making it easy to know when to use it.', 
     3
   )

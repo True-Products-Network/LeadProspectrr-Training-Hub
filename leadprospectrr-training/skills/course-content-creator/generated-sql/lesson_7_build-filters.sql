@@ -562,8 +562,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'Why should you use filters before saving a Smart List?', 
-    '[{"id":1,"text":"Filters are required but not useful","is_correct":false},{"id":2,"text":"Filters help you find the specific group of contacts you want. Once the filters are correct, you can save that view as a Smart List","is_correct":true},{"id":3,"text":"Filters are just for decoration","is_correct":false},{"id":4,"text":"You don''t need to use filters first","is_correct":false}]'::jsonb,
-    2,
+    '["Filters are required but not useful","Filters help you find the specific group of contacts you want. Once the filters are correct, you can save that view as a Smart List","Filters are just for decoration","You don''t need to use filters first"]'::jsonb,
+    'Filters help you find the specific group of contacts you want. Once the filters are correct, you can save that view as a Smart List',
     'Filters are the foundation of a Smart List. They define which contacts appear in the list. Getting the filters right ensures your Smart List shows exactly who you want.', 
     1
   )
@@ -575,8 +575,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'Where do you go to add a filter?', 
-    '[{"id":1,"text":"Settings → Profile","is_correct":false},{"id":2,"text":"Contacts → Add Filter","is_correct":true},{"id":3,"text":"Reports → Analytics","is_correct":false},{"id":4,"text":"Dashboard → Home","is_correct":false}]'::jsonb,
-    2,
+    '["Settings → Profile","Contacts → Add Filter","Reports → Analytics","Dashboard → Home"]'::jsonb,
+    'Contacts → Add Filter',
     'To add a filter, navigate to the Contacts page and click on ''Add Filter'' to start building your criteria.', 
     2
   )
@@ -588,8 +588,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'What should you do after setting up filters?', 
-    '[{"id":1,"text":"Immediately save without checking","is_correct":false},{"id":2,"text":"Review the contacts returned to make sure they match what you want","is_correct":true},{"id":3,"text":"Delete the filtered contacts","is_correct":false},{"id":4,"text":"Send emails to all filtered contacts","is_correct":false}]'::jsonb,
-    2,
+    '["Immediately save without checking","Review the contacts returned to make sure they match what you want","Delete the filtered contacts","Send emails to all filtered contacts"]'::jsonb,
+    'Review the contacts returned to make sure they match what you want',
     'Always review the contacts that your filters return to ensure you''re getting exactly the group you intended before saving as a Smart List.', 
     3
   )

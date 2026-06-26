@@ -446,8 +446,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'What does a contact record help you understand?', 
-    '[{"id":1,"text":"Only their email address","is_correct":false},{"id":2,"text":"Who the person is, where they came from, what activity has happened, and what they may need next","is_correct":true},{"id":3,"text":"Just their phone number","is_correct":false},{"id":4,"text":"Only their appointment history","is_correct":false}]'::jsonb,
-    2,
+    '["Only their email address","Who the person is, where they came from, what activity has happened, and what they may need next","Just their phone number","Only their appointment history"]'::jsonb,
+    'Who the person is, where they came from, what activity has happened, and what they may need next',
     'A contact record tells the complete story of a person - who they are, where they came from, what conversations have happened, and what they need next.', 
     1
   )
@@ -459,8 +459,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'How do you open a contact record?', 
-    '[{"id":1,"text":"Send them an email first","is_correct":false},{"id":2,"text":"Click on the contact''s name in the Contacts list","is_correct":true},{"id":3,"text":"Call them on the phone","is_correct":false},{"id":4,"text":"Wait for them to contact you","is_correct":false}]'::jsonb,
-    2,
+    '["Send them an email first","Click on the contact''s name in the Contacts list","Call them on the phone","Wait for them to contact you"]'::jsonb,
+    'Click on the contact''s name in the Contacts list',
     'To open a contact record, simply click on the contact''s name in the Contacts list.', 
     2
   )
@@ -472,8 +472,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'What information is typically found inside a contact record?', 
-    '[{"id":1,"text":"Only the person''s name","is_correct":false},{"id":2,"text":"Name, email, phone, tags, status, activity history, and more","is_correct":true},{"id":3,"text":"Your company''s financial data","is_correct":false},{"id":4,"text":"Other people''s contact records","is_correct":false}]'::jsonb,
-    2,
+    '["Only the person''s name","Name, email, phone, tags, status, activity history, and more","Your company''s financial data","Other people''s contact records"]'::jsonb,
+    'Name, email, phone, tags, status, activity history, and more',
     'A contact record contains comprehensive information including basic details, tags, status, assignment, and activity history like notes and conversations.', 
     3
   )

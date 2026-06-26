@@ -290,15 +290,13 @@ BEGIN
 `;
 
   data.quizzes.forEach((quiz, index) => {
-    // Build options JSON array
-    const optionsJson = JSON.stringify(quiz.options.map((o, i) => ({
-      id: i + 1,
-      text: o.option_text,
-      is_correct: o.is_correct
-    })));
+    // Build options as simple string array (matching Module 1 format)
+    const optionsArray = quiz.options.map(o => o.option_text);
+    const optionsJson = JSON.stringify(optionsArray);
     
-    // Find the correct answer (index + 1 since IDs are 1-based)
-    const correctAnswer = quiz.options.findIndex(o => o.is_correct) + 1;
+    // Find the correct answer text (matching Module 1 format)
+    const correctOption = quiz.options.find(o => o.is_correct);
+    const correctAnswer = correctOption ? correctOption.option_text : '';
     
     sql += `
   -- Question ${index + 1}
@@ -307,7 +305,7 @@ BEGIN
     v_lesson_id, 
     '${quiz.question.replace(/'/g, "''")}', 
     '${optionsJson.replace(/'/g, "''")}'::jsonb,
-    ${correctAnswer},
+    '${correctAnswer.replace(/'/g, "''")}',
     '${quiz.explanation.replace(/'/g, "''")}', 
     ${index + 1}
   )

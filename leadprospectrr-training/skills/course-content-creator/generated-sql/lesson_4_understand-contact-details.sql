@@ -458,8 +458,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'What is the difference between a tag and a Smart List?', 
-    '[{"id":1,"text":"They are the same thing","is_correct":false},{"id":2,"text":"A tag labels a contact; a Smart List is a saved filtered view of contacts","is_correct":true},{"id":3,"text":"Tags are for clients only","is_correct":false},{"id":4,"text":"Smart Lists are created automatically","is_correct":false}]'::jsonb,
-    2,
+    '["They are the same thing","A tag labels a contact; a Smart List is a saved filtered view of contacts","Tags are for clients only","Smart Lists are created automatically"]'::jsonb,
+    'A tag labels a contact; a Smart List is a saved filtered view of contacts',
     'Tags are labels added to individual contacts. Smart Lists are saved filtered views that show contacts matching specific criteria.', 
     1
   )
@@ -471,8 +471,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'What does Lead Status tell you?', 
-    '[{"id":1,"text":"How much money they have","is_correct":false},{"id":2,"text":"How warm or ready a lead may be (New, Cold, Warm, Hot, etc.)","is_correct":true},{"id":3,"text":"Their physical location","is_correct":false},{"id":4,"text":"Their age group","is_correct":false}]'::jsonb,
-    2,
+    '["How much money they have","How warm or ready a lead may be (New, Cold, Warm, Hot, etc.)","Their physical location","Their age group"]'::jsonb,
+    'How warm or ready a lead may be (New, Cold, Warm, Hot, etc.)',
     'Lead Status helps you understand how engaged or ready a lead is, using categories like New, Cold, Warm, Hot, Customer, or Past Customer.', 
     2
   )
@@ -484,8 +484,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'Why is the Source field important?', 
-    '[{"id":1,"text":"It tells you where they live","is_correct":false},{"id":2,"text":"It shows where the contact came from (Website, Facebook, Referral, etc.)","is_correct":true},{"id":3,"text":"It shows their income level","is_correct":false},{"id":4,"text":"It is not important","is_correct":false}]'::jsonb,
-    2,
+    '["It tells you where they live","It shows where the contact came from (Website, Facebook, Referral, etc.)","It shows their income level","It is not important"]'::jsonb,
+    'It shows where the contact came from (Website, Facebook, Referral, etc.)',
     'The Source field tells you where a contact originated from, helping you understand which marketing channels are working best.', 
     3
   )

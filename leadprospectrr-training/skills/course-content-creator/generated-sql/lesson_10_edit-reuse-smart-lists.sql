@@ -446,8 +446,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'When might you need to edit a Smart List?', 
-    '[{"id":1,"text":"Never, Smart Lists cannot be changed","is_correct":false},{"id":2,"text":"When filters need to change, the name is unclear, lead stages changed, or you added new tags","is_correct":true},{"id":3,"text":"Only on Mondays","is_correct":false},{"id":4,"text":"Only admins can edit Smart Lists","is_correct":false}]'::jsonb,
-    2,
+    '["Never, Smart Lists cannot be changed","When filters need to change, the name is unclear, lead stages changed, or you added new tags","Only on Mondays","Only admins can edit Smart Lists"]'::jsonb,
+    'When filters need to change, the name is unclear, lead stages changed, or you added new tags',
     'Smart Lists should evolve with your business. Edit them when your processes change, names become unclear, or you need to track different groups.', 
     1
   )
@@ -459,8 +459,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'How can you keep Smart Lists useful over time?', 
-    '[{"id":1,"text":"Never look at them again after creating","is_correct":false},{"id":2,"text":"Open them regularly, review contacts, update filters, and rename as needed","is_correct":true},{"id":3,"text":"Delete them every week and recreate","is_correct":false},{"id":4,"text":"Share them with competitors","is_correct":false}]'::jsonb,
-    2,
+    '["Never look at them again after creating","Open them regularly, review contacts, update filters, and rename as needed","Delete them every week and recreate","Share them with competitors"]'::jsonb,
+    'Open them regularly, review contacts, update filters, and rename as needed',
     'Keep Smart Lists useful by regularly using them, reviewing the contacts shown, updating filters when processes change, and keeping names clear.', 
     2
   )
@@ -472,8 +472,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'What should you do if a Smart List is no longer helpful?', 
-    '[{"id":1,"text":"Keep it forever anyway","is_correct":false},{"id":2,"text":"Clean it up or remove it","is_correct":true},{"id":3,"text":"Hide it from other users","is_correct":false},{"id":4,"text":"Add more filters randomly","is_correct":false}]'::jsonb,
-    2,
+    '["Keep it forever anyway","Clean it up or remove it","Hide it from other users","Add more filters randomly"]'::jsonb,
+    'Clean it up or remove it',
     'If a Smart List no longer helps you take action, you should either update it to make it useful again or remove it to keep your workspace organized.', 
     3
   )

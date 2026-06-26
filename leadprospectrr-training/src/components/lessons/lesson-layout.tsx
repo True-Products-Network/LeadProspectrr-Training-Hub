@@ -28,17 +28,11 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { cn } from '@/lib/utils'
 
-interface QuizOption {
-  id: number
-  text: string
-  is_correct: boolean
-}
-
 interface QuizQuestion {
   id: string
   question: string
-  options: QuizOption[] | string[]
-  correct_answer: number | string
+  options: string[]
+  correct_answer: string
   explanation: string
 }
 
@@ -108,35 +102,10 @@ export function LessonLayout({
   
   console.log('[LessonLayout] nextLesson prop:', nextLesson)
 
-  // Helper to get options array (handles both old string[] and new {id, text, is_correct}[] formats)
-  const getOptions = (q: QuizQuestion): { id: number; text: string }[] => {
-    if (q.options.length === 0) return []
-    const firstOption = q.options[0]
-    if (typeof firstOption === 'string') {
-      // Old format: string[]
-      return (q.options as string[]).map((text, idx) => ({ id: idx + 1, text }))
-    }
-    // New format: {id, text, is_correct}[]
-    return (q.options as QuizOption[]).map(o => ({ id: o.id, text: o.text }))
-  }
-
-  // Helper to get correct answer ID
-  const getCorrectAnswerId = (q: QuizQuestion): number => {
-    if (typeof q.correct_answer === 'number') {
-      return q.correct_answer
-    }
-    // Old format: string - find the index
-    const options = getOptions(q)
-    const idx = options.findIndex(o => o.text === q.correct_answer)
-    return idx >= 0 ? idx + 1 : 1
-  }
-
   const handleQuizSubmit = () => {
     const results: Record<string, boolean> = {}
     quizQuestions.forEach(q => {
-      const selectedOptionId = parseInt(quizAnswers[q.id] || '0')
-      const correctId = getCorrectAnswerId(q)
-      results[q.id] = selectedOptionId === correctId
+      results[q.id] = quizAnswers[q.id] === q.correct_answer
     })
     setQuizResults(results)
     setShowQuizResults(true)
@@ -399,72 +368,66 @@ export function LessonLayout({
                 </div>
               ) : (
                 <div className="space-y-6">
-                  {quizQuestions.map((q, qIndex) => {
-                    const options = getOptions(q)
-                    const correctId = getCorrectAnswerId(q)
-                    const selectedId = parseInt(quizAnswers[q.id] || '0')
-                    
-                    return (
-                      <div key={q.id} className={cn(
-                        "p-4 rounded-lg border",
-                        showQuizResults 
-                          ? quizResults[q.id] 
-                            ? "bg-green-50 border-green-200" 
-                            : "bg-red-50 border-red-200"
-                          : "bg-slate-50 border-slate-200"
-                      )}>
-                        <p className="font-medium mb-3 flex items-start gap-2">
-                          <span className="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm flex-shrink-0">
-                            {qIndex + 1}
-                          </span>
-                          {q.question}
-                        </p>
-                        <div className="space-y-2 ml-8">
-                          {options.map((option) => (
-                            <label key={option.id} className={cn(
-                              "flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-colors",
-                              showQuizResults && option.id === correctId
-                                ? "bg-green-100 border border-green-300"
-                                : showQuizResults && selectedId === option.id && option.id !== correctId
-                                  ? "bg-red-100 border border-red-300"
-                                  : "bg-white hover:bg-slate-50 border border-transparent"
-                            )}>
-                              <input
-                                type="radio"
-                                name={q.id}
-                                value={option.id}
-                                checked={selectedId === option.id}
-                                onChange={() => setQuizAnswers(prev => ({ ...prev, [q.id]: String(option.id) }))}
-                                disabled={showQuizResults || !isCompleted}
-                                className="w-4 h-4 text-blue-600"
-                              />
-                              <span>{option.text}</span>
-                              {showQuizResults && option.id === correctId && (
-                                <CheckCircle2 className="w-5 h-5 text-green-600 ml-auto" />
-                              )}
-                            </label>
-                          ))}
-                        </div>
-                        {showQuizResults && (
-                          <div className={cn(
-                            "mt-3 ml-8 p-3 rounded-lg text-sm",
-                            quizResults[q.id] ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
+                  {quizQuestions.map((q, qIndex) => (
+                    <div key={q.id} className={cn(
+                      "p-4 rounded-lg border",
+                      showQuizResults 
+                        ? quizResults[q.id] 
+                          ? "bg-green-50 border-green-200" 
+                          : "bg-red-50 border-red-200"
+                        : "bg-slate-50 border-slate-200"
+                    )}>
+                      <p className="font-medium mb-3 flex items-start gap-2">
+                        <span className="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm flex-shrink-0">
+                          {qIndex + 1}
+                        </span>
+                        {q.question}
+                      </p>
+                      <div className="space-y-2 ml-8">
+                        {q.options.map((option, idx) => (
+                          <label key={idx} className={cn(
+                            "flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-colors",
+                            showQuizResults && option === q.correct_answer
+                              ? "bg-green-100 border border-green-300"
+                              : showQuizResults && quizAnswers[q.id] === option && option !== q.correct_answer
+                                ? "bg-red-100 border border-red-300"
+                                : "bg-white hover:bg-slate-50 border border-transparent"
                           )}>
-                            {quizResults[q.id] ? (
-                              <span className="flex items-center gap-2">
-                                <CheckCircle2 className="w-4 h-4" />
-                                Correct! {q.explanation}
-                              </span>
-                            ) : (
-                              <span>
-                                <strong>Incorrect.</strong> {q.explanation}
-                              </span>
+                            <input
+                              type="radio"
+                              name={q.id}
+                              value={option}
+                              checked={quizAnswers[q.id] === option}
+                              onChange={() => setQuizAnswers(prev => ({ ...prev, [q.id]: option }))}
+                              disabled={showQuizResults || !isCompleted}
+                              className="w-4 h-4 text-blue-600"
+                            />
+                            <span>{option}</span>
+                            {showQuizResults && option === q.correct_answer && (
+                              <CheckCircle2 className="w-5 h-5 text-green-600 ml-auto" />
                             )}
-                          </div>
-                        )}
+                          </label>
+                        ))}
                       </div>
-                    )
-                  })}
+                      {showQuizResults && (
+                        <div className={cn(
+                          "mt-3 ml-8 p-3 rounded-lg text-sm",
+                          quizResults[q.id] ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
+                        )}>
+                          {quizResults[q.id] ? (
+                            <span className="flex items-center gap-2">
+                              <CheckCircle2 className="w-4 h-4" />
+                              Correct! {q.explanation}
+                            </span>
+                          ) : (
+                            <span>
+                              <strong>Incorrect.</strong> {q.explanation}
+                            </span>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  ))}
 
                   {!showQuizResults && isCompleted && (
                     <Button 

@@ -320,8 +320,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'What does the Contacts page show?', 
-    '[{"id":1,"text":"Only current clients","is_correct":false},{"id":2,"text":"The people stored in your CRM, such as leads, clients, prospects, and other contacts","is_correct":true},{"id":3,"text":"Only email subscribers","is_correct":false},{"id":4,"text":"Just appointment bookings","is_correct":false}]'::jsonb,
-    2,
+    '["Only current clients","The people stored in your CRM, such as leads, clients, prospects, and other contacts","Only email subscribers","Just appointment bookings"]'::jsonb,
+    'The people stored in your CRM, such as leads, clients, prospects, and other contacts',
     'The Contacts page shows all people in your CRM including leads, clients, prospects, referral partners, event attendees, newsletter subscribers, and more.', 
     1
   )
@@ -333,8 +333,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'Which of these would you NOT typically find on the Contacts page?', 
-    '[{"id":1,"text":"Leads who filled out a form","is_correct":false},{"id":2,"text":"Past clients you worked with","is_correct":false},{"id":3,"text":"Your company''s financial reports","is_correct":true},{"id":4,"text":"Newsletter subscribers","is_correct":false}]'::jsonb,
-    3,
+    '["Leads who filled out a form","Past clients you worked with","Your company''s financial reports","Newsletter subscribers"]'::jsonb,
+    'Your company''s financial reports',
     'The Contacts page contains people-related information, not financial reports or other business data.', 
     2
   )
@@ -346,8 +346,8 @@ BEGIN
   VALUES (
     v_lesson_id, 
     'Why is the Contacts page important?', 
-    '[{"id":1,"text":"It stores all your company''s files","is_correct":false},{"id":2,"text":"It shows who is in your system and helps you decide who needs attention","is_correct":true},{"id":3,"text":"It only shows completed sales","is_correct":false},{"id":4,"text":"It is only for administrators","is_correct":false}]'::jsonb,
-    2,
+    '["It stores all your company''s files","It shows who is in your system and helps you decide who needs attention","It only shows completed sales","It is only for administrators"]'::jsonb,
+    'It shows who is in your system and helps you decide who needs attention',
     'The Contacts page gives you the big picture of who is in your CRM and helps you decide who needs attention and follow-up.', 
     3
   )
