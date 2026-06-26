@@ -277,7 +277,9 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
       console.log('[handleComplete] completeLesson result:', result)
       
       if (!result.success) {
-        throw new Error('Failed to complete lesson: Server returned unsuccessful result')
+        const errorMsg = result.error || 'Server returned unsuccessful result'
+        console.error('[handleComplete] completeLesson failed:', errorMsg)
+        throw new Error(`Failed to complete lesson: ${errorMsg}`)
       }
       
       // Revalidate all relevant paths

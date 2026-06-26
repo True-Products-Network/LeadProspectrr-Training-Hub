@@ -129,9 +129,10 @@ export async function completeLesson(
   userId: string, 
   lessonId: string, 
   timeSpentMinutes: number = 0
-): Promise<{ success: boolean; pointsEarned: number }> {
+): Promise<{ success: boolean; pointsEarned: number; error?: string }> {
   try {
   const supabase = createAdminClient()
+  console.log('[completeLesson] Starting with userId:', userId, 'lessonId:', lessonId)
   
   // Get lesson details for points (avoid selecting module_id to prevent ambiguous column errors)
   const { data: lesson, error: lessonError } = await supabase
@@ -273,11 +274,17 @@ export async function completeLesson(
   return { success: false, pointsEarned: 0 }
   } catch (err) {
     console.error('[completeLesson] UNEXPECTED ERROR:', err)
+    let errorMessage = 'Unknown error'
     if (err instanceof Error) {
       console.error('[completeLesson] Error message:', err.message)
       console.error('[completeLesson] Error stack:', err.stack)
+      errorMessage = err.message
+    } else if (typeof err === 'string') {
+      errorMessage = err
+    } else if (err && typeof err === 'object') {
+      errorMessage = JSON.stringify(err)
     }
-    return { success: false, pointsEarned: 0 }
+    return { success: false, pointsEarned: 0, error: errorMessage }
   }
 }
 
