@@ -18,7 +18,7 @@ export function HeroSection({ totalModules, totalResources }: HeroSectionProps) 
   return (
     <div className="bg-gradient-to-br from-blue-600 via-violet-600 to-purple-600 rounded-3xl p-8 text-white">
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
-        <div className="max-w-3xl">
+        <div className="lg:w-[55%]">
           <Badge className="bg-white/20 text-white mb-4">
             Weekly LeadProspectrr Clinics
           </Badge>
@@ -51,17 +51,17 @@ export function HeroSection({ totalModules, totalResources }: HeroSectionProps) 
         </div>
 
         {/* Hero Image with Modal */}
-        <div className="flex-shrink-0 lg:pl-4">
+        <div className="flex-shrink-0 lg:pl-4 lg:w-[45%]">
           <Dialog>
             <DialogTrigger
               render={
-                <button className="relative group cursor-pointer rounded-2xl overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-105 hover:shadow-3xl">
+                <button className="relative group cursor-pointer rounded-2xl overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-105 hover:shadow-3xl w-full">
                   <Image
                     src="/training-hero-image.jpg"
                     alt="Training Program"
-                    width={400}
-                    height={300}
-                    className="object-cover rounded-2xl"
+                    width={600}
+                    height={450}
+                    className="object-cover rounded-2xl w-full h-auto"
                     priority
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
@@ -71,14 +71,14 @@ export function HeroSection({ totalModules, totalResources }: HeroSectionProps) 
                 </button>
               }
             />
-            <DialogContent className="max-w-4xl p-0 bg-transparent border-0 shadow-none">
-              <div className="relative">
+            <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 bg-transparent border-0 shadow-none">
+              <div className="relative flex items-center justify-center">
                 <Image
                   src="/training-hero-image.jpg"
                   alt="Training Program"
-                  width={1200}
-                  height={900}
-                  className="object-contain rounded-lg max-h-[85vh] w-auto"
+                  width={1920}
+                  height={1440}
+                  className="object-contain rounded-lg max-w-[90vw] max-h-[90vh] w-auto h-auto"
                   priority
                 />
               </div>
