@@ -92,6 +92,18 @@ export async function getUserLessonProgress(userId: string, lessonId: string): P
 export async function startLesson(userId: string, lessonId: string): Promise<void> {
   const supabase = createAdminClient()
   
+  // Get lesson details to find module_id
+  const { data: lesson } = await supabase
+    .from('lessons')
+    .select('module_id')
+    .eq('id', lessonId)
+    .single()
+  
+  if (!lesson) {
+    console.error('[startLesson] Lesson not found:', lessonId)
+    return
+  }
+  
   // Check if progress exists
   const { data: existing } = await supabase
     .from('lesson_progress')
@@ -102,7 +114,7 @@ export async function startLesson(userId: string, lessonId: string): Promise<voi
   
   if (!existing) {
     // Create new progress record
-    await supabase
+    const { error: insertError } = await supabase
       .from('lesson_progress')
       .insert({
         user_id: userId,
@@ -111,17 +123,59 @@ export async function startLesson(userId: string, lessonId: string): Promise<voi
         started_at: new Date().toISOString()
       })
     
+    if (insertError) {
+      console.error('[startLesson] Error inserting lesson_progress:', insertError)
+      return
+    }
+    
+    console.log('[startLesson] Created lesson_progress for user:', userId, 'lesson:', lessonId)
+    
+    // Also ensure module progress exists (in case trigger doesn't fire)
+    const { data: existingModuleProgress } = await supabase
+      .from('user_progress')
+      .select('*')
+      .eq('user_id', userId)
+      .eq('module_id', lesson.module_id)
+      .single()
+    
+    if (!existingModuleProgress) {
+      const { error: moduleInsertError } = await supabase
+        .from('user_progress')
+        .insert({
+          user_id: userId,
+          module_id: lesson.module_id,
+          status: 'in_progress',
+          started_at: new Date().toISOString()
+        })
+      
+      if (moduleInsertError) {
+        console.error('[startLesson] Error inserting user_progress:', moduleInsertError)
+      } else {
+        console.log('[startLesson] Created user_progress for module:', lesson.module_id)
+      }
+    }
+    
     // Record activity
-    await recordActivity(userId, 'lesson_start', { lesson_id: lessonId })
+    try {
+      await recordActivity(userId, 'lesson_start', { lesson_id: lessonId })
+    } catch (activityErr) {
+      console.error('[startLesson] Error recording activity:', activityErr)
+    }
   } else if (existing.status === 'not_started') {
     // Update to in_progress
-    await supabase
+    const { error: updateError } = await supabase
       .from('lesson_progress')
       .update({
         status: 'in_progress',
         started_at: new Date().toISOString()
       })
       .eq('id', existing.id)
+    
+    if (updateError) {
+      console.error('[startLesson] Error updating lesson_progress:', updateError)
+    } else {
+      console.log('[startLesson] Updated lesson_progress to in_progress')
+    }
   }
 }
 
