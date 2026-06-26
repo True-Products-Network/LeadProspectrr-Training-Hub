@@ -316,11 +316,12 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What does the Contacts page show?', 
     '[{"id":1,"text":"Only current clients","is_correct":false},{"id":2,"text":"The people stored in your CRM, such as leads, clients, prospects, and other contacts","is_correct":true},{"id":3,"text":"Only email subscribers","is_correct":false},{"id":4,"text":"Just appointment bookings","is_correct":false}]'::jsonb,
+    2,
     'The Contacts page shows all people in your CRM including leads, clients, prospects, referral partners, event attendees, newsletter subscribers, and more.', 
     1
   )
@@ -328,11 +329,12 @@ BEGIN
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'Which of these would you NOT typically find on the Contacts page?', 
     '[{"id":1,"text":"Leads who filled out a form","is_correct":false},{"id":2,"text":"Past clients you worked with","is_correct":false},{"id":3,"text":"Your company''s financial reports","is_correct":true},{"id":4,"text":"Newsletter subscribers","is_correct":false}]'::jsonb,
+    3,
     'The Contacts page contains people-related information, not financial reports or other business data.', 
     2
   )
@@ -340,11 +342,12 @@ BEGIN
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'Why is the Contacts page important?', 
     '[{"id":1,"text":"It stores all your company''s files","is_correct":false},{"id":2,"text":"It shows who is in your system and helps you decide who needs attention","is_correct":true},{"id":3,"text":"It only shows completed sales","is_correct":false},{"id":4,"text":"It is only for administrators","is_correct":false}]'::jsonb,
+    2,
     'The Contacts page gives you the big picture of who is in your CRM and helps you decide who needs attention and follow-up.', 
     3
   )
@@ -783,11 +786,12 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'Which of the following is NOT typically shown on the Contacts page?', 
     '[{"id":1,"text":"Name and email","is_correct":false},{"id":2,"text":"Full conversation history","is_correct":true},{"id":3,"text":"Tags and lead status","is_correct":false},{"id":4,"text":"Contact type and source","is_correct":false}]'::jsonb,
+    2,
     'Full conversation history is found inside the individual contact record, not on the main Contacts page list view.', 
     1
   )
@@ -795,11 +799,12 @@ BEGIN
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What can you do with the search bar on the Contacts page?', 
     '[{"id":1,"text":"Only search by first name","is_correct":false},{"id":2,"text":"Find specific contacts quickly using various criteria","is_correct":true},{"id":3,"text":"Delete contacts permanently","is_correct":false},{"id":4,"text":"Change contact passwords","is_correct":false}]'::jsonb,
+    2,
     'The search bar helps you find specific contacts quickly using various search criteria.', 
     2
   )
@@ -807,11 +812,12 @@ BEGIN
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What are Smart Lists used for on the Contacts page?', 
     '[{"id":1,"text":"To delete old contacts","is_correct":false},{"id":2,"text":"To narrow down and save specific contact views for later use","is_correct":true},{"id":3,"text":"To send spam emails","is_correct":false},{"id":4,"text":"To block contacts","is_correct":false}]'::jsonb,
+    2,
     'Smart Lists let you save filtered views of your contacts so you can quickly access specific groups later without rebuilding filters.', 
     3
   )
@@ -1264,11 +1270,12 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What does a contact record help you understand?', 
     '[{"id":1,"text":"Only their email address","is_correct":false},{"id":2,"text":"Who the person is, where they came from, what activity has happened, and what they may need next","is_correct":true},{"id":3,"text":"Just their phone number","is_correct":false},{"id":4,"text":"Only their appointment history","is_correct":false}]'::jsonb,
+    2,
     'A contact record tells the complete story of a person - who they are, where they came from, what conversations have happened, and what they need next.', 
     1
   )
@@ -1276,11 +1283,12 @@ BEGIN
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'How do you open a contact record?', 
     '[{"id":1,"text":"Send them an email first","is_correct":false},{"id":2,"text":"Click on the contact''s name in the Contacts list","is_correct":true},{"id":3,"text":"Call them on the phone","is_correct":false},{"id":4,"text":"Wait for them to contact you","is_correct":false}]'::jsonb,
+    2,
     'To open a contact record, simply click on the contact''s name in the Contacts list.', 
     2
   )
@@ -1288,11 +1296,12 @@ BEGIN
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What information is typically found inside a contact record?', 
     '[{"id":1,"text":"Only the person''s name","is_correct":false},{"id":2,"text":"Name, email, phone, tags, status, activity history, and more","is_correct":true},{"id":3,"text":"Your company''s financial data","is_correct":false},{"id":4,"text":"Other people''s contact records","is_correct":false}]'::jsonb,
+    2,
     'A contact record contains comprehensive information including basic details, tags, status, assignment, and activity history like notes and conversations.', 
     3
   )
@@ -1757,11 +1766,12 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What is the difference between a tag and a Smart List?', 
     '[{"id":1,"text":"They are the same thing","is_correct":false},{"id":2,"text":"A tag labels a contact; a Smart List is a saved filtered view of contacts","is_correct":true},{"id":3,"text":"Tags are for clients only","is_correct":false},{"id":4,"text":"Smart Lists are created automatically","is_correct":false}]'::jsonb,
+    2,
     'Tags are labels added to individual contacts. Smart Lists are saved filtered views that show contacts matching specific criteria.', 
     1
   )
@@ -1769,11 +1779,12 @@ BEGIN
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What does Lead Status tell you?', 
     '[{"id":1,"text":"How much money they have","is_correct":false},{"id":2,"text":"How warm or ready a lead may be (New, Cold, Warm, Hot, etc.)","is_correct":true},{"id":3,"text":"Their physical location","is_correct":false},{"id":4,"text":"Their age group","is_correct":false}]'::jsonb,
+    2,
     'Lead Status helps you understand how engaged or ready a lead is, using categories like New, Cold, Warm, Hot, Customer, or Past Customer.', 
     2
   )
@@ -1781,11 +1792,12 @@ BEGIN
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'Why is the Source field important?', 
     '[{"id":1,"text":"It tells you where they live","is_correct":false},{"id":2,"text":"It shows where the contact came from (Website, Facebook, Referral, etc.)","is_correct":true},{"id":3,"text":"It shows their income level","is_correct":false},{"id":4,"text":"It is not important","is_correct":false}]'::jsonb,
+    2,
     'The Source field tells you where a contact originated from, helping you understand which marketing channels are working best.', 
     3
   )
@@ -2200,11 +2212,12 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What is the simple formula for understanding these three tools?', 
     '[{"id":1,"text":"Tags save searches, filters label people, Smart Lists find people","is_correct":false},{"id":2,"text":"Tags label people, filters find people, Smart Lists save the search","is_correct":true},{"id":3,"text":"Tags find people, filters save searches, Smart Lists label people","is_correct":false},{"id":4,"text":"They all do the same thing","is_correct":false}]'::jsonb,
+    2,
     'Tags label individual contacts. Filters help you search for contacts matching rules. Smart Lists save those filtered views for reuse.', 
     1
   )
@@ -2212,11 +2225,12 @@ BEGIN
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What is the purpose of a filter?', 
     '[{"id":1,"text":"To delete contacts","is_correct":false},{"id":2,"text":"To search for contacts matching certain criteria","is_correct":true},{"id":3,"text":"To send emails","is_correct":false},{"id":4,"text":"To create new contacts","is_correct":false}]'::jsonb,
+    2,
     'Filters are rules that help you search for and find contacts that match specific criteria you set.', 
     2
   )
@@ -2224,11 +2238,12 @@ BEGIN
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'Why would you create a Smart List?', 
     '[{"id":1,"text":"To delete old contacts","is_correct":false},{"id":2,"text":"To save a filtered view so you don''t have to rebuild it every time","is_correct":true},{"id":3,"text":"To change contact passwords","is_correct":false},{"id":4,"text":"To block spam contacts","is_correct":false}]'::jsonb,
+    2,
     'Smart Lists save you time by storing your filtered views, so you can quickly access specific contact groups without rebuilding filters.', 
     3
   )
@@ -2685,11 +2700,12 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What should you do before creating a Smart List?', 
     '[{"id":1,"text":"Create it immediately","is_correct":false},{"id":2,"text":"Plan who you want to find, why you need it, what filters to use, and choose a clear name","is_correct":true},{"id":3,"text":"Ask someone else to create it","is_correct":false},{"id":4,"text":"Only think about the name","is_correct":false}]'::jsonb,
+    2,
     'Planning before creating prevents building lists that are unclear or unused. Know your group, your why, your filters, and your name before starting.', 
     1
   )
@@ -2697,11 +2713,12 @@ BEGIN
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'Why is it important to know ''why'' you need a Smart List?', 
     '[{"id":1,"text":"It is not important","is_correct":false},{"id":2,"text":"If you don''t know why you need it, you should not create it yet","is_correct":true},{"id":3,"text":"It is only for administrators to know","is_correct":false},{"id":4,"text":"It helps you delete contacts faster","is_correct":false}]'::jsonb,
+    2,
     'Understanding why you need a Smart List ensures it will actually be useful. Without a clear purpose, the list may go unused.', 
     2
   )
@@ -2709,11 +2726,12 @@ BEGIN
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What makes a good Smart List name?', 
     '[{"id":1,"text":"Something vague like ''List 1''","is_correct":false},{"id":2,"text":"A clear name that explains exactly what the list shows","is_correct":true},{"id":3,"text":"A random number","is_correct":false},{"id":4,"text":"Your own name","is_correct":false}]'::jsonb,
+    2,
     'Clear names like ''New Leads — Last 30 Days'' tell you exactly what the list contains, making it easy to know when to use it.', 
     3
   )
@@ -3282,11 +3300,12 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'Why should you use filters before saving a Smart List?', 
     '[{"id":1,"text":"Filters are required but not useful","is_correct":false},{"id":2,"text":"Filters help you find the specific group of contacts you want. Once the filters are correct, you can save that view as a Smart List","is_correct":true},{"id":3,"text":"Filters are just for decoration","is_correct":false},{"id":4,"text":"You don''t need to use filters first","is_correct":false}]'::jsonb,
+    2,
     'Filters are the foundation of a Smart List. They define which contacts appear in the list. Getting the filters right ensures your Smart List shows exactly who you want.', 
     1
   )
@@ -3294,11 +3313,12 @@ BEGIN
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'Where do you go to add a filter?', 
     '[{"id":1,"text":"Settings → Profile","is_correct":false},{"id":2,"text":"Contacts → Add Filter","is_correct":true},{"id":3,"text":"Reports → Analytics","is_correct":false},{"id":4,"text":"Dashboard → Home","is_correct":false}]'::jsonb,
+    2,
     'To add a filter, navigate to the Contacts page and click on ''Add Filter'' to start building your criteria.', 
     2
   )
@@ -3306,11 +3326,12 @@ BEGIN
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What should you do after setting up filters?', 
     '[{"id":1,"text":"Immediately save without checking","is_correct":false},{"id":2,"text":"Review the contacts returned to make sure they match what you want","is_correct":true},{"id":3,"text":"Delete the filtered contacts","is_correct":false},{"id":4,"text":"Send emails to all filtered contacts","is_correct":false}]'::jsonb,
+    2,
     'Always review the contacts that your filters return to ensure you''re getting exactly the group you intended before saving as a Smart List.', 
     3
   )
@@ -3883,11 +3904,12 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'Why should Smart List names be clear?', 
     '[{"id":1,"text":"They don''t need to be clear","is_correct":false},{"id":2,"text":"Clear names help you quickly understand what the list shows and when to use it","is_correct":true},{"id":3,"text":"Only admins see the names","is_correct":false},{"id":4,"text":"Names are just for decoration","is_correct":false}]'::jsonb,
+    2,
     'Clear names like ''Hot Leads — Need Follow-Up'' tell you exactly what the list contains and when to use it, saving time and preventing confusion.', 
     1
   )
@@ -3895,11 +3917,12 @@ BEGIN
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'Which is an example of a GOOD Smart List name?', 
     '[{"id":1,"text":"List 1","is_correct":false},{"id":2,"text":"Test","is_correct":false},{"id":3,"text":"Hot Leads — Need Follow-Up","is_correct":true},{"id":4,"text":"Contacts","is_correct":false}]'::jsonb,
+    3,
     '''Hot Leads — Need Follow-Up'' is clear and specific, telling you exactly what the list contains and what action to take.', 
     2
   )
@@ -3907,11 +3930,12 @@ BEGIN
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What should you do after saving a Smart List?', 
     '[{"id":1,"text":"Never use it again","is_correct":false},{"id":2,"text":"Reopen it to verify it works correctly","is_correct":true},{"id":3,"text":"Delete it immediately","is_correct":false},{"id":4,"text":"Tell everyone not to use it","is_correct":false}]'::jsonb,
+    2,
     'After saving, you should reopen the Smart List to verify it shows the correct contacts and works as expected.', 
     3
   )
@@ -4448,11 +4472,12 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What should you do after saving a Smart List?', 
     '[{"id":1,"text":"Forget about it","is_correct":false},{"id":2,"text":"Use it to take action, such as following up with leads, checking missing contact data, reviewing hot leads, or tracking appointments","is_correct":true},{"id":3,"text":"Delete it immediately","is_correct":false},{"id":4,"text":"Only look at it once","is_correct":false}]'::jsonb,
+    2,
     'A Smart List is only valuable if you use it. The goal is to help you take action on the right contacts at the right time.', 
     1
   )
@@ -4460,11 +4485,12 @@ BEGIN
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'How can Smart Lists help with follow-up?', 
     '[{"id":1,"text":"They automatically send emails for you","is_correct":false},{"id":2,"text":"They help you quickly find specific groups of contacts who need follow-up","is_correct":true},{"id":3,"text":"They delete contacts who don''t respond","is_correct":false},{"id":4,"text":"They block unwanted contacts","is_correct":false}]'::jsonb,
+    2,
     'Smart Lists help you quickly find specific groups of contacts who need attention, making follow-up more efficient and targeted.', 
     2
   )
@@ -4472,11 +4498,12 @@ BEGIN
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What is the main purpose of a Smart List?', 
     '[{"id":1,"text":"To store old contacts you want to delete later","is_correct":false},{"id":2,"text":"To help you decide what action to take next with specific contact groups","is_correct":true},{"id":3,"text":"To hide contacts from other users","is_correct":false},{"id":4,"text":"To automatically update contact information","is_correct":false}]'::jsonb,
+    2,
     'A Smart List should help you decide what to do next by showing you specific groups of contacts that need attention or action.', 
     3
   )
@@ -4929,11 +4956,12 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'When might you need to edit a Smart List?', 
     '[{"id":1,"text":"Never, Smart Lists cannot be changed","is_correct":false},{"id":2,"text":"When filters need to change, the name is unclear, lead stages changed, or you added new tags","is_correct":true},{"id":3,"text":"Only on Mondays","is_correct":false},{"id":4,"text":"Only admins can edit Smart Lists","is_correct":false}]'::jsonb,
+    2,
     'Smart Lists should evolve with your business. Edit them when your processes change, names become unclear, or you need to track different groups.', 
     1
   )
@@ -4941,11 +4969,12 @@ BEGIN
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'How can you keep Smart Lists useful over time?', 
     '[{"id":1,"text":"Never look at them again after creating","is_correct":false},{"id":2,"text":"Open them regularly, review contacts, update filters, and rename as needed","is_correct":true},{"id":3,"text":"Delete them every week and recreate","is_correct":false},{"id":4,"text":"Share them with competitors","is_correct":false}]'::jsonb,
+    2,
     'Keep Smart Lists useful by regularly using them, reviewing the contacts shown, updating filters when processes change, and keeping names clear.', 
     2
   )
@@ -4953,11 +4982,12 @@ BEGIN
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What should you do if a Smart List is no longer helpful?', 
     '[{"id":1,"text":"Keep it forever anyway","is_correct":false},{"id":2,"text":"Clean it up or remove it","is_correct":true},{"id":3,"text":"Hide it from other users","is_correct":false},{"id":4,"text":"Add more filters randomly","is_correct":false}]'::jsonb,
+    2,
     'If a Smart List no longer helps you take action, you should either update it to make it useful again or remove it to keep your workspace organized.', 
     3
   )

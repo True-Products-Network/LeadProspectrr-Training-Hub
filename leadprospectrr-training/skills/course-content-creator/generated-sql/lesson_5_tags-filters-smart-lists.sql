@@ -404,11 +404,12 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What is the simple formula for understanding these three tools?', 
     '[{"id":1,"text":"Tags save searches, filters label people, Smart Lists find people","is_correct":false},{"id":2,"text":"Tags label people, filters find people, Smart Lists save the search","is_correct":true},{"id":3,"text":"Tags find people, filters save searches, Smart Lists label people","is_correct":false},{"id":4,"text":"They all do the same thing","is_correct":false}]'::jsonb,
+    2,
     'Tags label individual contacts. Filters help you search for contacts matching rules. Smart Lists save those filtered views for reuse.', 
     1
   )
@@ -416,11 +417,12 @@ BEGIN
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What is the purpose of a filter?', 
     '[{"id":1,"text":"To delete contacts","is_correct":false},{"id":2,"text":"To search for contacts matching certain criteria","is_correct":true},{"id":3,"text":"To send emails","is_correct":false},{"id":4,"text":"To create new contacts","is_correct":false}]'::jsonb,
+    2,
     'Filters are rules that help you search for and find contacts that match specific criteria you set.', 
     2
   )
@@ -428,11 +430,12 @@ BEGIN
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'Why would you create a Smart List?', 
     '[{"id":1,"text":"To delete old contacts","is_correct":false},{"id":2,"text":"To save a filtered view so you don''t have to rebuild it every time","is_correct":true},{"id":3,"text":"To change contact passwords","is_correct":false},{"id":4,"text":"To block spam contacts","is_correct":false}]'::jsonb,
+    2,
     'Smart Lists save you time by storing your filtered views, so you can quickly access specific contact groups without rebuilding filters.', 
     3
   )

@@ -454,11 +454,12 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What is the difference between a tag and a Smart List?', 
     '[{"id":1,"text":"They are the same thing","is_correct":false},{"id":2,"text":"A tag labels a contact; a Smart List is a saved filtered view of contacts","is_correct":true},{"id":3,"text":"Tags are for clients only","is_correct":false},{"id":4,"text":"Smart Lists are created automatically","is_correct":false}]'::jsonb,
+    2,
     'Tags are labels added to individual contacts. Smart Lists are saved filtered views that show contacts matching specific criteria.', 
     1
   )
@@ -466,11 +467,12 @@ BEGIN
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What does Lead Status tell you?', 
     '[{"id":1,"text":"How much money they have","is_correct":false},{"id":2,"text":"How warm or ready a lead may be (New, Cold, Warm, Hot, etc.)","is_correct":true},{"id":3,"text":"Their physical location","is_correct":false},{"id":4,"text":"Their age group","is_correct":false}]'::jsonb,
+    2,
     'Lead Status helps you understand how engaged or ready a lead is, using categories like New, Cold, Warm, Hot, Customer, or Past Customer.', 
     2
   )
@@ -478,11 +480,12 @@ BEGIN
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'Why is the Source field important?', 
     '[{"id":1,"text":"It tells you where they live","is_correct":false},{"id":2,"text":"It shows where the contact came from (Website, Facebook, Referral, etc.)","is_correct":true},{"id":3,"text":"It shows their income level","is_correct":false},{"id":4,"text":"It is not important","is_correct":false}]'::jsonb,
+    2,
     'The Source field tells you where a contact originated from, helping you understand which marketing channels are working best.', 
     3
   )

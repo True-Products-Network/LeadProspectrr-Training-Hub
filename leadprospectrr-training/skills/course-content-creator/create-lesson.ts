@@ -297,13 +297,17 @@ BEGIN
       is_correct: o.is_correct
     })));
     
+    // Find the correct answer (index + 1 since IDs are 1-based)
+    const correctAnswer = quiz.options.findIndex(o => o.is_correct) + 1;
+    
     sql += `
   -- Question ${index + 1}
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     '${quiz.question.replace(/'/g, "''")}', 
     '${optionsJson.replace(/'/g, "''")}'::jsonb,
+    ${correctAnswer},
     '${quiz.explanation.replace(/'/g, "''")}', 
     ${index + 1}
   )

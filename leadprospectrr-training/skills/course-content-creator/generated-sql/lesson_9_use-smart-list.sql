@@ -526,11 +526,12 @@ BEGIN
 
 
   -- Question 1
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What should you do after saving a Smart List?', 
     '[{"id":1,"text":"Forget about it","is_correct":false},{"id":2,"text":"Use it to take action, such as following up with leads, checking missing contact data, reviewing hot leads, or tracking appointments","is_correct":true},{"id":3,"text":"Delete it immediately","is_correct":false},{"id":4,"text":"Only look at it once","is_correct":false}]'::jsonb,
+    2,
     'A Smart List is only valuable if you use it. The goal is to help you take action on the right contacts at the right time.', 
     1
   )
@@ -538,11 +539,12 @@ BEGIN
 
 
   -- Question 2
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'How can Smart Lists help with follow-up?', 
     '[{"id":1,"text":"They automatically send emails for you","is_correct":false},{"id":2,"text":"They help you quickly find specific groups of contacts who need follow-up","is_correct":true},{"id":3,"text":"They delete contacts who don''t respond","is_correct":false},{"id":4,"text":"They block unwanted contacts","is_correct":false}]'::jsonb,
+    2,
     'Smart Lists help you quickly find specific groups of contacts who need attention, making follow-up more efficient and targeted.', 
     2
   )
@@ -550,11 +552,12 @@ BEGIN
 
 
   -- Question 3
-  INSERT INTO public.lesson_quizzes (lesson_id, question, options, explanation, sort_order)
+  INSERT INTO public.lesson_quizzes (lesson_id, question, options, correct_answer, explanation, sort_order)
   VALUES (
     v_lesson_id, 
     'What is the main purpose of a Smart List?', 
     '[{"id":1,"text":"To store old contacts you want to delete later","is_correct":false},{"id":2,"text":"To help you decide what action to take next with specific contact groups","is_correct":true},{"id":3,"text":"To hide contacts from other users","is_correct":false},{"id":4,"text":"To automatically update contact information","is_correct":false}]'::jsonb,
+    2,
     'A Smart List should help you decide what to do next by showing you specific groups of contacts that need attention or action.', 
     3
   )
