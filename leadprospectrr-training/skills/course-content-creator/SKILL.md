@@ -146,6 +146,43 @@ Each lesson must have:
 - ✅ Each quiz must have at least 2 options
 - ✅ Each quiz must have exactly 1 correct answer
 
+## Pre-Flight Checklist (CRITICAL)
+
+Before creating lessons for a new module, you MUST:
+
+### 1. Verify Database Schema
+Run this SQL in Supabase to ensure all columns exist:
+```sql
+SELECT column_name FROM information_schema.columns 
+WHERE table_name = 'lesson_progress';
+```
+**Required columns:** `id`, `user_id`, `lesson_id`, `status`, `started_at`, `completed_at`, `time_spent_minutes`, `points_earned`, `created_at`
+
+If `started_at` is missing, run:
+```sql
+ALTER TABLE public.lesson_progress ADD COLUMN IF NOT EXISTS started_at TIMESTAMP WITH TIME ZONE;
+```
+
+### 2. Verify Activity Type Constraint
+```sql
+SELECT conname, pg_get_constraintdef(oid) 
+FROM pg_constraint 
+WHERE conrelid = 'user_activity'::regclass;
+```
+Must include: `'lesson_start'` and `'lesson_complete'`
+
+### 3. Update lesson page with learning goals
+Before running SQL, add lesson slugs to `src/app/dashboard/training/lesson/[slug]/page.tsx`:
+- Add entries to `lessonGoals` object
+- Add entries to `lessonObjectives` object
+
+### 4. Verify Training Module Exists
+```sql
+SELECT id, week_number, title FROM public.training_modules WHERE week_number = [YOUR_MODULE_NUMBER];
+```
+
+See full checklist: `docs/MODULE_CREATION_CHECKLIST.md`
+
 ## Available Icons
 
 - `target` - Learning goal
