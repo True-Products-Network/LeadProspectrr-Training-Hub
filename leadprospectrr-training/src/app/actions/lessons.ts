@@ -225,18 +225,21 @@ export async function completeLesson(
       points_earned: pointsEarned
     })
     
-    // Create completed record using raw SQL to bypass triggers
+    // Create completed record - only include columns that definitely exist
+    const insertData: any = {
+      user_id: userId,
+      lesson_id: lessonId,
+      status: 'completed',
+      completed_at: new Date().toISOString(),
+      time_spent_minutes: timeSpentMinutes,
+      points_earned: pointsEarned
+    }
+    
+    console.log('[completeLesson] Inserting data:', insertData)
+    
     const { error: insertError } = await supabase
       .from('lesson_progress')
-      .insert({
-        user_id: userId,
-        lesson_id: lessonId,
-        status: 'completed',
-        started_at: null,
-        completed_at: new Date().toISOString(),
-        time_spent_minutes: timeSpentMinutes,
-        points_earned: pointsEarned
-      })
+      .insert(insertData)
     
     if (insertError) {
       console.error('[completeLesson] Insert error:', insertError)
