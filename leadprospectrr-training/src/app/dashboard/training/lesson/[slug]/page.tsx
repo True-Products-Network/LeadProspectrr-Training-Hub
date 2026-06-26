@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { getUser } from '@/lib/auth'
 import { redirect } from 'next/navigation'
-import { getLessonBySlug, getUserLessonProgress, completeLesson, startLesson } from '@/app/actions/lessons'
+import { getLessonBySlug, getUserLessonProgress, completeLesson } from '@/app/actions/lessons'
 import { LessonLayout } from '@/components/lessons/lesson-layout'
 import { revalidatePath } from 'next/cache'
 
@@ -190,17 +190,8 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
   }
 
   // Fetch user's progress for this lesson
-  let progress = await getUserLessonProgress(user.id, lesson.id)
+  const progress = await getUserLessonProgress(user.id, lesson.id)
   console.log('[LessonPage] User progress for lesson:', lesson.id, 'progress:', progress)
-  
-  // Auto-start lesson if not started yet (this updates module status to 'in_progress')
-  if (!progress || progress.status === 'not_started') {
-    console.log('[LessonPage] Auto-starting lesson for user:', user.id, 'lesson:', lesson.id)
-    await startLesson(user.id, lesson.id)
-    // Refresh progress after starting
-    progress = await getUserLessonProgress(user.id, lesson.id)
-    console.log('[LessonPage] Lesson started, new progress:', progress)
-  }
 
   // Fetch total lessons in module
   const { data: lessons, error: lessonsError } = await supabase
