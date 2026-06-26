@@ -188,11 +188,23 @@ export async function completeLesson(
       
       console.log('[completeLesson] Updated existing progress to completed')
       
-      // Record activity - temporarily disabled due to RPC error
-      console.log('[completeLesson] Skipping recordActivity due to RPC error')
+      // Record activity - now enabled with fixed constraint
+      try {
+        await recordActivity(userId, 'lesson_complete', { lesson_id: lessonId, points: pointsEarned })
+        console.log('[completeLesson] Activity recorded successfully')
+      } catch (activityErr) {
+        console.error('[completeLesson] Error recording activity:', activityErr)
+        // Don't fail the lesson completion if activity recording fails
+      }
       
-      // Check for mystery badges - temporarily disabled
-      console.log('[completeLesson] Skipping check_mystery_badges due to potential RPC error')
+      // Check for mystery badges
+      try {
+        await supabase.rpc('check_mystery_badges', { p_user_id: userId })
+        console.log('[completeLesson] Mystery badges checked')
+      } catch (badgeErr) {
+        console.error('[completeLesson] Error checking mystery badges:', badgeErr)
+        // Don't fail the lesson completion if badge check fails
+      }
       
       revalidatePath('/dashboard/training')
       revalidatePath('/dashboard/training/' + moduleId)
@@ -234,11 +246,23 @@ export async function completeLesson(
     
     console.log('[completeLesson] Created new progress record')
     
-    // Record activity - temporarily disabled due to RPC error
-    console.log('[completeLesson] Skipping recordActivity due to RPC error')
+    // Record activity - now enabled with fixed constraint
+    try {
+      await recordActivity(userId, 'lesson_complete', { lesson_id: lessonId, points: pointsEarned })
+      console.log('[completeLesson] Activity recorded successfully')
+    } catch (activityErr) {
+      console.error('[completeLesson] Error recording activity:', activityErr)
+      // Don't fail the lesson completion if activity recording fails
+    }
     
-    // Check for mystery badges - temporarily disabled
-    console.log('[completeLesson] Skipping check_mystery_badges due to potential RPC error')
+    // Check for mystery badges
+    try {
+      await supabase.rpc('check_mystery_badges', { p_user_id: userId })
+      console.log('[completeLesson] Mystery badges checked')
+    } catch (badgeErr) {
+      console.error('[completeLesson] Error checking mystery badges:', badgeErr)
+      // Don't fail the lesson completion if badge check fails
+    }
     
     revalidatePath('/dashboard/training')
     revalidatePath('/dashboard/training/' + moduleId)

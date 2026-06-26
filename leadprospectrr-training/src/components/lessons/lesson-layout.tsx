@@ -122,7 +122,16 @@ export function LessonLayout({
       window.location.href = `/dashboard/training/lesson/${lesson.slug}?tab=quiz`
     } catch (err) {
       console.error('[LessonLayout] Error completing lesson:', err)
-      setCompleteError('Failed to complete lesson. Please try again.')
+      // Extract more detailed error message if available
+      let errorMessage = 'Failed to complete lesson. Please try again.'
+      if (err instanceof Error) {
+        errorMessage = err.message || errorMessage
+      } else if (typeof err === 'string') {
+        errorMessage = err
+      } else if (err && typeof err === 'object' && 'message' in err) {
+        errorMessage = String(err.message) || errorMessage
+      }
+      setCompleteError(errorMessage)
       setIsCompleting(false)
     }
   }

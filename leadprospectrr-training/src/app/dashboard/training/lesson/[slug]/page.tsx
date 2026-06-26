@@ -199,27 +199,36 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
   async function handleComplete() {
     'use server'
     
-    // Get user inside the server action
-    const actionUser = await getUser()
-    if (!actionUser) throw new Error('User not authenticated')
-    
-    // Get lesson details inside the server action
-    const actionLesson = await getLessonBySlug(slug)
-    if (!actionLesson) throw new Error('Lesson not found')
-    
-    console.log('[handleComplete] Starting completion for lesson:', actionLesson.id, 'user:', actionUser.id)
-    const result = await completeLesson(actionUser.id, actionLesson.id, actionLesson.duration_minutes)
-    console.log('[handleComplete] completeLesson result:', result)
-    
-    if (!result.success) {
-      throw new Error('Failed to complete lesson')
+    try {
+      // Get user inside the server action
+      const actionUser = await getUser()
+      if (!actionUser) throw new Error('User not authenticated')
+      
+      // Get lesson details inside the server action
+      const actionLesson = await getLessonBySlug(slug)
+      if (!actionLesson) throw new Error('Lesson not found')
+      
+      console.log('[handleComplete] Starting completion for lesson:', actionLesson.id, 'user:', actionUser.id)
+      const result = await completeLesson(actionUser.id, actionLesson.id, actionLesson.duration_minutes)
+      console.log('[handleComplete] completeLesson result:', result)
+      
+      if (!result.success) {
+        throw new Error('Failed to complete lesson: Server returned unsuccessful result')
+      }
+      
+      // Revalidate all relevant paths
+      revalidatePath('/dashboard/training')
+      revalidatePath(`/dashboard/training/${actionLesson.module_id}`)
+      revalidatePath(`/dashboard/training/lesson/${slug}`)
+      console.log('[handleComplete] Paths revalidated')
+    } catch (error) {
+      console.error('[handleComplete] Error in handleComplete:', error)
+      // Re-throw with more context
+      if (error instanceof Error) {
+        throw new Error(`Lesson completion failed: ${error.message}`)
+      }
+      throw new Error('Lesson completion failed due to an unexpected error')
     }
-    
-    // Revalidate all relevant paths
-    revalidatePath('/dashboard/training')
-    revalidatePath(`/dashboard/training/${actionLesson.module_id}`)
-    revalidatePath(`/dashboard/training/lesson/${slug}`)
-    console.log('[handleComplete] Paths revalidated')
   }
 
   return (

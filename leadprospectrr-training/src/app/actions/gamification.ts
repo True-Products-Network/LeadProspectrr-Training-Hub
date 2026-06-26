@@ -23,12 +23,30 @@ export async function recordActivity(
 ): Promise<void> {
   const supabase = createAdminClient()
   
-  await supabase
+  const { error: rpcError } = await supabase
     .rpc('record_user_activity', {
       p_user_id: userId,
       p_activity_type: activityType,
       p_metadata: metadata
     })
+  
+  if (rpcError) {
+    console.error('[recordActivity] RPC error:', rpcError)
+    // Try direct insert as fallback
+    const { error: insertError } = await supabase
+      .from('user_activity')
+      .insert({
+        user_id: userId,
+        activity_date: new Date().toISOString().split('T')[0],
+        activity_type: activityType,
+        metadata: metadata
+      })
+    
+    if (insertError) {
+      console.error('[recordActivity] Fallback insert error:', insertError)
+      throw insertError
+    }
+  }
   
   // Update user's streak
   const streak = await getUserStreak(userId)
