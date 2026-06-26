@@ -189,13 +189,14 @@ ${generateKeyPoint(data.keyPoint)}
 ${generateActionSteps(data.actionSteps, data.nextLessonTitle)}
 </div>`;
 
-  return `-- Update Lesson ${data.lessonNumber}: ${data.title}
+  return `-- Insert/Update Lesson ${data.lessonNumber}: ${data.title}
 -- Module ${data.moduleWeek}: ${data.moduleName}
 -- Using color blocks, icons, horizontal cards, and better visual hierarchy
 
 DO $$
 DECLARE
   v_module_id UUID;
+  v_lesson_id UUID;
 BEGIN
   -- Get Module by week number
   SELECT id INTO v_module_id FROM public.training_modules WHERE week_number = ${data.moduleWeek} LIMIT 1;
@@ -205,9 +206,50 @@ BEGIN
     RETURN;
   END IF;
 
-  UPDATE public.lessons 
-  SET content = '${content.replace(/'/g, "''")}'
+  -- Check if lesson exists
+  SELECT id INTO v_lesson_id 
+  FROM public.lessons 
   WHERE slug = '${data.slug}' AND module_id = v_module_id;
+  
+  IF v_lesson_id IS NULL THEN
+    -- Insert new lesson
+    INSERT INTO public.lessons (
+      module_id, 
+      lesson_number, 
+      title, 
+      slug, 
+      content, 
+      is_published, 
+      sort_order,
+      created_at,
+      updated_at
+    ) VALUES (
+      v_module_id,
+      ${data.lessonNumber},
+      '${data.title.replace(/'/g, "''")}',
+      '${data.slug}',
+      '${content.replace(/'/g, "''")}',
+      true,
+      ${data.lessonNumber},
+      NOW(),
+      NOW()
+    )
+    RETURNING id INTO v_lesson_id;
+    
+    RAISE NOTICE 'Created lesson: ${data.title}';
+  ELSE
+    -- Update existing lesson
+    UPDATE public.lessons 
+    SET 
+      content = '${content.replace(/'/g, "''")}',
+      title = '${data.title.replace(/'/g, "''")}',
+      lesson_number = ${data.lessonNumber},
+      sort_order = ${data.lessonNumber},
+      updated_at = NOW()
+    WHERE id = v_lesson_id;
+    
+    RAISE NOTICE 'Updated lesson: ${data.title}';
+  END IF;
 
 END $$;
 `;
@@ -220,18 +262,30 @@ function generateQuizSQL(data: LessonData): string {
 
 DO $$
 DECLARE
+  v_module_id UUID;
   v_lesson_id UUID;
   v_quiz_id UUID;
 BEGIN
+  -- Get Module by week number
+  SELECT id INTO v_module_id FROM public.training_modules WHERE week_number = ${data.moduleWeek} LIMIT 1;
+  
+  IF v_module_id IS NULL THEN
+    RAISE NOTICE 'Module ${data.moduleWeek} not found';
+    RETURN;
+  END IF;
+
   -- Get the lesson ID
   SELECT id INTO v_lesson_id 
   FROM public.lessons 
-  WHERE slug = '${data.slug}';
+  WHERE slug = '${data.slug}' AND module_id = v_module_id;
   
   IF v_lesson_id IS NULL THEN
-    RAISE NOTICE 'Lesson ${data.slug} not found';
+    RAISE NOTICE 'Lesson ${data.slug} not found in module ${data.moduleWeek}';
     RETURN;
   END IF;
+  
+  -- Delete existing quizzes to avoid duplicates
+  DELETE FROM public.lesson_quizzes WHERE lesson_id = v_lesson_id;
 
 `;
 
