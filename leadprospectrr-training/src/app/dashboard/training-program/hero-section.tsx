@@ -71,14 +71,14 @@ export function HeroSection({ totalModules, totalResources }: HeroSectionProps) 
                 </button>
               }
             />
-            <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 bg-transparent border-0 shadow-none">
-              <div className="relative flex items-center justify-center">
+            <DialogContent className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95vw] h-[95vh] p-0 bg-transparent border-0 shadow-none flex items-center justify-center">
+              <div className="relative flex items-center justify-center w-full h-full">
                 <Image
                   src="/training-hero-image.jpg"
                   alt="Training Program"
                   width={1920}
                   height={1440}
-                  className="object-contain rounded-lg max-w-[90vw] max-h-[90vh] w-auto h-auto"
+                  className="object-contain rounded-lg max-w-[90vw] max-h-[90vh]"
                   priority
                 />
               </div>
