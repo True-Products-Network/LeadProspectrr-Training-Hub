@@ -185,12 +185,16 @@ export default function HomePage() {
             <div className="flex items-center gap-6">
               <a 
                 href="https://hub.leadprospectrr.com/terms" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm hover:text-white transition-colors"
               >
                 Terms of Service
               </a>
               <a 
                 href="https://hub.leadprospectrr.com/privacy" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm hover:text-white transition-colors"
               >
                 Privacy Policy
