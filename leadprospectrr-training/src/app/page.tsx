@@ -182,6 +182,20 @@ export default function HomePage() {
               </div>
               <span className="font-bold text-white">LeadProspectrr Training Hub</span>
             </div>
+            <div className="flex items-center gap-6">
+              <a 
+                href="https://hub.leadprospectrr.com/terms" 
+                className="text-sm hover:text-white transition-colors"
+              >
+                Terms of Service
+              </a>
+              <a 
+                href="https://hub.leadprospectrr.com/privacy" 
+                className="text-sm hover:text-white transition-colors"
+              >
+                Privacy Policy
+              </a>
+            </div>
             <p className="text-sm">
               © {new Date().getFullYear()} LeadProspectrr Training Hub. All rights reserved.
             </p>
