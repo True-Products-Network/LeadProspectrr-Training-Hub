@@ -1,0 +1,17 @@
+{
+  "node": {
+    "002548b21acfe9f90d1348c0aa34187b0f801e8d07": {
+      "workers": {
+        "app/setup-admin/page": {
+          "moduleId": 15435,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "leadprospectrr-training/src/app/setup-admin/page.tsx"
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "leadprospectrr-training/src/app/setup-admin/page.tsx"
+    }
+  },
+  "edge": {}
+}

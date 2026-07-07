@@ -13,13 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Business Directory - Admin Dashboard",
-  description: "Manage business listings with approval workflow",
-  icons: {
-    icon: '/favicon.svg',
-    shortcut: '/favicon.svg',
-    apple: '/favicon.svg',
-  },
+  title: "LeadProspectrr Training Hub",
+  description: "Simple, practical training to help you use LeadProspectrr with confidence. Learn the tools, take action, and grow your business.",
+  keywords: ["lead generation", "training", "prospecting", "sales", "marketing"],
 };
 
 export default function RootLayout({
@@ -28,12 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
