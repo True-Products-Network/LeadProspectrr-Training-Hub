@@ -1,0 +1,486 @@
+'use server'
+
+import { createAdminClient } from '@/lib/supabase/admin'
+import { revalidatePath } from 'next/cache'
+import { recordActivity } from './gamification'
+
+export interface Lesson {
+  id: string
+  module_id: string
+  lesson_number: number
+  title: string
+  slug: string
+  description: string | null
+  content: string
+  lesson_type: string
+  video_url: string | null
+  duration_minutes: number
+  points: number
+  is_published: boolean
+  sort_order: number
+}
+
+export interface LessonProgress {
+  id: string
+  user_id: string
+  lesson_id: string
+  status: 'not_started' | 'in_progress' | 'completed'
+  started_at: string | null
+  completed_at: string | null
+  time_spent_minutes: number
+  points_earned: number
+}
+
+export async function getModuleLessons(moduleId: string): Promise<Lesson[]> {
+  const supabase = createAdminClient()
+  
+  const { data, error } = await supabase
+    .from('lessons')
+    .select('*')
+    .eq('module_id', moduleId)
+    .eq('is_published', true)
+    .order('sort_order', { ascending: true })
+    .order('lesson_number', { ascending: true })
+  
+  if (error) {
+    console.error('Error fetching lessons:', error)
+    return []
+  }
+  
+  return data || []
+}
+
+export async function getLessonBySlug(slug: string): Promise<Lesson | null> {
+  const supabase = createAdminClient()
+  
+  const { data, error } = await supabase
+    .from('lessons')
+    .select('*')
+    .eq('slug', slug)
+    .eq('is_published', true)
+    .single()
+  
+  if (error) {
+    console.error('Error fetching lesson:', error)
+    return null
+  }
+  
+  return data
+}
+
+export async function getUserLessonProgress(userId: string, lessonId: string): Promise<LessonProgress | null> {
+  const supabase = createAdminClient()
+  
+  console.log('[getUserLessonProgress] Fetching progress for user:', userId, 'lesson:', lessonId)
+  
+  const { data, error } = await supabase
+    .from('lesson_progress')
+    .select('*')
+    .eq('user_id', userId)
+    .eq('lesson_id', lessonId)
+    .single()
+  
+  if (error) {
+    console.log('[getUserLessonProgress] Error or no data:', error.code, error.message)
+  } else {
+    console.log('[getUserLessonProgress] Found progress:', data)
+  }
+  
+  return data
+}
+
+export async function startLesson(userId: string, lessonId: string): Promise<void> {
+  const supabase = createAdminClient()
+  
+  // Get lesson details to find module_id
+  const { data: lesson } = await supabase
+    .from('lessons')
+    .select('module_id')
+    .eq('id', lessonId)
+    .single()
+  
+  if (!lesson) {
+    console.error('[startLesson] Lesson not found:', lessonId)
+    return
+  }
+  
+  // Check if progress exists
+  const { data: existing } = await supabase
+    .from('lesson_progress')
+    .select('*')
+    .eq('user_id', userId)
+    .eq('lesson_id', lessonId)
+    .single()
+  
+  if (!existing) {
+    // Create new progress record
+    const { error: insertError } = await supabase
+      .from('lesson_progress')
+      .insert({
+        user_id: userId,
+        lesson_id: lessonId,
+        status: 'in_progress',
+        started_at: new Date().toISOString()
+      })
+    
+    if (insertError) {
+      console.error('[startLesson] Error inserting lesson_progress:', insertError)
+      return
+    }
+    
+    console.log('[startLesson] Created lesson_progress for user:', userId, 'lesson:', lessonId)
+    
+    // Also ensure module progress exists (in case trigger doesn't fire)
+    const { data: existingModuleProgress } = await supabase
+      .from('user_progress')
+      .select('*')
+      .eq('user_id', userId)
+      .eq('module_id', lesson.module_id)
+      .single()
+    
+    if (!existingModuleProgress) {
+      const { error: moduleInsertError } = await supabase
+        .from('user_progress')
+        .insert({
+          user_id: userId,
+          module_id: lesson.module_id,
+          status: 'in_progress',
+          started_at: new Date().toISOString()
+        })
+      
+      if (moduleInsertError) {
+        console.error('[startLesson] Error inserting user_progress:', moduleInsertError)
+      } else {
+        console.log('[startLesson] Created user_progress for module:', lesson.module_id)
+      }
+    }
+    
+    // Record activity
+    try {
+      await recordActivity(userId, 'lesson_start', { lesson_id: lessonId })
+    } catch (activityErr) {
+      console.error('[startLesson] Error recording activity:', activityErr)
+    }
+  } else if (existing.status === 'not_started') {
+    // Update to in_progress
+    const { error: updateError } = await supabase
+      .from('lesson_progress')
+      .update({
+        status: 'in_progress',
+        started_at: new Date().toISOString()
+      })
+      .eq('id', existing.id)
+    
+    if (updateError) {
+      console.error('[startLesson] Error updating lesson_progress:', updateError)
+    } else {
+      console.log('[startLesson] Updated lesson_progress to in_progress')
+    }
+  }
+}
+
+export async function completeLesson(
+  userId: string, 
+  lessonId: string, 
+  timeSpentMinutes: number = 0
+): Promise<{ success: boolean; pointsEarned: number; error?: string }> {
+  try {
+  const supabase = createAdminClient()
+  console.log('[completeLesson] Starting with userId:', userId, 'lessonId:', lessonId)
+  
+  // Get lesson details for points (avoid selecting module_id to prevent ambiguous column errors)
+  const { data: lesson, error: lessonError } = await supabase
+    .from('lessons')
+    .select('points')
+    .eq('id', lessonId)
+    .single()
+  
+  if (lessonError) {
+    console.error('[completeLesson] Error fetching lesson:', lessonError)
+  }
+  
+  if (!lesson) {
+    return { success: false, pointsEarned: 0 }
+  }
+  
+  const pointsEarned = lesson.points || 10
+  
+  // Get module_id separately to avoid any potential conflicts
+  const { data: lessonModule } = await supabase
+    .from('lessons')
+    .select('module_id')
+    .eq('id', lessonId)
+    .single()
+  
+  const moduleId = lessonModule?.module_id || ''
+  
+  // Update or create progress record
+  const { data: existing } = await supabase
+    .from('lesson_progress')
+    .select('*')
+    .eq('user_id', userId)
+    .eq('lesson_id', lessonId)
+    .single()
+  
+  if (existing) {
+    console.log('[completeLesson] Existing progress found:', existing)
+    // Only update if not already completed
+    if (existing.status !== 'completed') {
+      const { error: updateError } = await supabase
+        .from('lesson_progress')
+        .update({
+          status: 'completed',
+          completed_at: new Date().toISOString(),
+          time_spent_minutes: timeSpentMinutes,
+          points_earned: pointsEarned
+        })
+        .eq('id', existing.id)
+      
+      if (updateError) {
+        console.error('[completeLesson] Update error:', updateError)
+        return { success: false, pointsEarned: 0 }
+      }
+      
+      console.log('[completeLesson] Updated existing progress to completed')
+      
+      // Record activity - now enabled with fixed constraint
+      try {
+        await recordActivity(userId, 'lesson_complete', { lesson_id: lessonId, points: pointsEarned })
+        console.log('[completeLesson] Activity recorded successfully')
+      } catch (activityErr) {
+        console.error('[completeLesson] Error recording activity:', activityErr)
+        // Don't fail the lesson completion if activity recording fails
+      }
+      
+      // Check for mystery badges
+      try {
+        await supabase.rpc('check_mystery_badges', { p_user_id: userId })
+        console.log('[completeLesson] Mystery badges checked')
+      } catch (badgeErr) {
+        console.error('[completeLesson] Error checking mystery badges:', badgeErr)
+        // Don't fail the lesson completion if badge check fails
+      }
+      
+      revalidatePath('/dashboard/training')
+      revalidatePath('/dashboard/training/' + moduleId)
+      revalidatePath('/dashboard/training/lesson/[slug]', 'page')
+      return { success: true, pointsEarned }
+    } else {
+      console.log('[completeLesson] Lesson already completed')
+      return { success: true, pointsEarned: existing.points_earned || pointsEarned }
+    }
+  } else {
+    console.log('[completeLesson] No existing progress, creating new record')
+    console.log('[completeLesson] Insert data:', {
+      user_id: userId,
+      lesson_id: lessonId,
+      status: 'completed',
+      time_spent_minutes: timeSpentMinutes,
+      points_earned: pointsEarned
+    })
+    
+    // Create completed record - only include columns that definitely exist
+    const insertData: any = {
+      user_id: userId,
+      lesson_id: lessonId,
+      status: 'completed',
+      completed_at: new Date().toISOString(),
+      time_spent_minutes: timeSpentMinutes,
+      points_earned: pointsEarned
+    }
+    
+    console.log('[completeLesson] Inserting data:', insertData)
+    
+    const { error: insertError } = await supabase
+      .from('lesson_progress')
+      .insert(insertData)
+    
+    if (insertError) {
+      console.error('[completeLesson] Insert error:', insertError)
+      console.error('[completeLesson] Insert error code:', insertError.code)
+      console.error('[completeLesson] Insert error message:', insertError.message)
+      return { success: false, pointsEarned: 0 }
+    }
+    
+    console.log('[completeLesson] Created new progress record')
+    
+    // Record activity - now enabled with fixed constraint
+    try {
+      await recordActivity(userId, 'lesson_complete', { lesson_id: lessonId, points: pointsEarned })
+      console.log('[completeLesson] Activity recorded successfully')
+    } catch (activityErr) {
+      console.error('[completeLesson] Error recording activity:', activityErr)
+      // Don't fail the lesson completion if activity recording fails
+    }
+    
+    // Check for mystery badges
+    try {
+      await supabase.rpc('check_mystery_badges', { p_user_id: userId })
+      console.log('[completeLesson] Mystery badges checked')
+    } catch (badgeErr) {
+      console.error('[completeLesson] Error checking mystery badges:', badgeErr)
+      // Don't fail the lesson completion if badge check fails
+    }
+    
+    revalidatePath('/dashboard/training')
+    revalidatePath('/dashboard/training/' + moduleId)
+    revalidatePath('/dashboard/training/lesson/[slug]', 'page')
+    return { success: true, pointsEarned }
+  }
+  
+  return { success: false, pointsEarned: 0 }
+  } catch (err) {
+    console.error('[completeLesson] UNEXPECTED ERROR:', err)
+    let errorMessage = 'Unknown error'
+    if (err instanceof Error) {
+      console.error('[completeLesson] Error message:', err.message)
+      console.error('[completeLesson] Error stack:', err.stack)
+      errorMessage = err.message
+    } else if (typeof err === 'string') {
+      errorMessage = err
+    } else if (err && typeof err === 'object') {
+      errorMessage = JSON.stringify(err)
+    }
+    return { success: false, pointsEarned: 0, error: errorMessage }
+  }
+}
+
+export async function getModuleLessonProgress(
+  userId: string, 
+  moduleId: string
+): Promise<{ 
+  totalLessons: number; 
+  completedLessons: number; 
+  inProgressLessons: number;
+  totalPoints: number;
+}> {
+  const supabase = createAdminClient()
+  
+  // Get all published lessons for this module
+  const { data: lessons } = await supabase
+    .from('lessons')
+    .select('id, points')
+    .eq('module_id', moduleId)
+    .eq('is_published', true)
+  
+  if (!lessons || lessons.length === 0) {
+    return { totalLessons: 0, completedLessons: 0, inProgressLessons: 0, totalPoints: 0 }
+  }
+  
+  const lessonIds = lessons.map(l => l.id)
+  
+  // Get user's progress for these lessons
+  const { data: progress } = await supabase
+    .from('lesson_progress')
+    .select('status, points_earned')
+    .eq('user_id', userId)
+    .in('lesson_id', lessonIds)
+  
+  const completedLessons = progress?.filter(p => p.status === 'completed').length || 0
+  const inProgressLessons = progress?.filter(p => p.status === 'in_progress').length || 0
+  const totalPoints = progress?.reduce((sum, p) => sum + (p.points_earned || 0), 0) || 0
+  
+  return {
+    totalLessons: lessons.length,
+    completedLessons,
+    inProgressLessons,
+    totalPoints
+  }
+}
+
+export async function getDailyChallenge(userId: string) {
+  const supabase = createAdminClient()
+  
+  // Get today's challenge
+  const { data: challenge } = await supabase
+    .from('daily_challenges')
+    .select('*')
+    .eq('challenge_date', new Date().toISOString().split('T')[0])
+    .eq('is_active', true)
+    .single()
+  
+  if (!challenge) return null
+  
+  // Get user's progress on this challenge
+  const { data: userProgress } = await supabase
+    .from('user_daily_challenges')
+    .select('*')
+    .eq('user_id', userId)
+    .eq('challenge_id', challenge.id)
+    .single()
+  
+  return {
+    ...challenge,
+    userProgress: userProgress || { progress: 0, completed: false }
+  }
+}
+
+export async function updateChallengeProgress(
+  userId: string, 
+  challengeId: string, 
+  progress: number
+): Promise<void> {
+  const supabase = createAdminClient()
+  
+  const { data: challenge } = await supabase
+    .from('daily_challenges')
+    .select('*')
+    .eq('id', challengeId)
+    .single()
+  
+  if (!challenge) return
+  
+  const completed = progress >= challenge.target_value
+  
+  await supabase
+    .from('user_daily_challenges')
+    .upsert({
+      user_id: userId,
+      challenge_id: challengeId,
+      progress,
+      completed,
+      completed_at: completed ? new Date().toISOString() : null
+    }, {
+      onConflict: 'user_id,challenge_id'
+    })
+  
+  if (completed) {
+    // Award bonus points
+    await supabase
+      .from('users')
+      .update({
+        total_points: supabase.rpc('increment', { x: challenge.bonus_points })
+      })
+      .eq('id', userId)
+  }
+}
+
+export async function getStudyBuddies(userId: string) {
+  const supabase = createAdminClient()
+  
+  const { data: buddies } = await supabase
+    .from('study_buddies')
+    .select(`
+      *,
+      buddy:users!buddy_id(id, name, email, avatar_url, current_streak, total_points)
+    `)
+    .eq('user_id', userId)
+    .eq('status', 'accepted')
+  
+  return buddies || []
+}
+
+export async function getUserMysteryBadges(userId: string) {
+  const supabase = createAdminClient()
+  
+  const { data: badges } = await supabase
+    .from('user_mystery_badges')
+    .select(`
+      *,
+      badge:mystery_badges(*)
+    `)
+    .eq('user_id', userId)
+    .order('earned_at', { ascending: false })
+  
+  return badges || []
+}

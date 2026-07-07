@@ -1,0 +1,81 @@
+[
+{
+  "lessonNumber": 4,
+  "slug": "understand-contact-details",
+  "title": "Understand Key Contact Details",
+  "moduleWeek": 2,
+  "moduleName": "Contacts and Smart Lists",
+  "learningGoal": "Understand the most important fields inside a contact record and how they help with organization and follow-up.",
+  "sections": [
+    {
+      "title": "Basic Details",
+      "icon": "info",
+      "color": "blue",
+      "items": [
+        {"icon": "users", "color": "blue", "title": "Name", "description": "Verify the contact has a correct name"},
+        {"icon": "mail", "color": "green", "title": "Email", "description": "Check that the email address looks correct"},
+        {"icon": "clock", "color": "amber", "title": "Phone", "description": "Ensure phone number is present if needed"}
+      ]
+    },
+    {
+      "title": "Organization Fields",
+      "icon": "tag",
+      "color": "amber",
+      "items": [
+        {"icon": "tag", "color": "amber", "title": "Tags", "description": "Labels like Webinar Attendee, New Lead, Client, Newsletter, Follow-Up Needed"},
+        {"icon": "target", "color": "rose", "title": "Lead Status", "description": "Shows how warm/ready: New, Cold, Warm, Hot, Customer, Past Customer"},
+        {"icon": "users", "color": "purple", "title": "Contact Type", "description": "Groups: Lead, Client, Prospect, Partner, Vendor"},
+        {"icon": "location", "color": "cyan", "title": "Source", "description": "Where they came from: Website, Facebook, Referral, Event, Talkadot"}
+      ]
+    },
+    {
+      "title": "Assignment",
+      "icon": "users",
+      "color": "indigo",
+      "items": [
+        {"icon": "users", "color": "indigo", "title": "Assigned User", "description": "Shows who is responsible for the contact - helpful when multiple people work in the account"}
+      ]
+    }
+  ],
+  "keyPoint": "Good contact details make filtering and follow-up much easier.",
+  "actionSteps": [
+    {"number": 1, "title": "Review a contact's tags", "description": "See what labels are applied and what they mean"},
+    {"number": 2, "title": "Check lead status", "description": "Understand how warm or ready this lead is"},
+    {"number": 3, "title": "Note the source", "description": "See where this contact came from"},
+    {"number": 4, "title": "Verify contact type", "description": "Confirm they are categorized correctly"}
+  ],
+  "nextLessonTitle": "Tags, Filters, and Smart Lists",
+  "quizzes": [
+    {
+      "question": "What is the difference between a tag and a Smart List?",
+      "options": [
+        {"option_text": "They are the same thing", "is_correct": false},
+        {"option_text": "A tag labels a contact; a Smart List is a saved filtered view of contacts", "is_correct": true},
+        {"option_text": "Tags are for clients only", "is_correct": false},
+        {"option_text": "Smart Lists are created automatically", "is_correct": false}
+      ],
+      "explanation": "Tags are labels added to individual contacts. Smart Lists are saved filtered views that show contacts matching specific criteria."
+    },
+    {
+      "question": "What does Lead Status tell you?",
+      "options": [
+        {"option_text": "How much money they have", "is_correct": false},
+        {"option_text": "How warm or ready a lead may be (New, Cold, Warm, Hot, etc.)", "is_correct": true},
+        {"option_text": "Their physical location", "is_correct": false},
+        {"option_text": "Their age group", "is_correct": false}
+      ],
+      "explanation": "Lead Status helps you understand how engaged or ready a lead is, using categories like New, Cold, Warm, Hot, Customer, or Past Customer."
+    },
+    {
+      "question": "Why is the Source field important?",
+      "options": [
+        {"option_text": "It tells you where they live", "is_correct": false},
+        {"option_text": "It shows where the contact came from (Website, Facebook, Referral, etc.)", "is_correct": true},
+        {"option_text": "It shows their income level", "is_correct": false},
+        {"option_text": "It is not important", "is_correct": false}
+      ],
+      "explanation": "The Source field tells you where a contact originated from, helping you understand which marketing channels are working best."
+    }
+  ]
+}
+]

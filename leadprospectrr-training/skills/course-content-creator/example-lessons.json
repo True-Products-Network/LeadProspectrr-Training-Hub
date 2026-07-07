@@ -1,0 +1,150 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "why-blog-posts-matter",
+    "title": "Why Blog Posts Matter",
+    "moduleWeek": 1,
+    "moduleName": "Blog Posts",
+    "learningGoal": "Understand why creating blog posts helps your business.",
+    "sections": [
+      {
+        "title": "Why Blog Posts Matter",
+        "icon": "pencil",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "users",
+            "color": "blue",
+            "title": "Build Trust",
+            "description": "Blog posts help potential customers learn about your expertise before they ever talk to you."
+          },
+          {
+            "icon": "search",
+            "color": "green",
+            "title": "Get Found Online",
+            "description": "Each blog post is a chance to show up in Google when people search for topics related to your business."
+          },
+          {
+            "icon": "link",
+            "color": "amber",
+            "title": "Support Your Follow-Up",
+            "description": "When you follow up with leads, sharing a helpful blog post gives them value instead of just asking for a sale."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "You do not need to be a professional writer. Content that is clear and helpful beats perfect content that never gets published.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Think of one question your customers ask often",
+        "description": "This will be the topic for your first blog post"
+      },
+      {
+        "number": 2,
+        "title": "Write down a simple answer",
+        "description": "Keep it conversational, like you are explaining to a friend"
+      },
+      {
+        "number": 3,
+        "title": "Keep it ready for the next lesson",
+        "description": "We will turn this into a full blog post"
+      }
+    ],
+    "nextLessonTitle": "Prepare for Lesson 2",
+    "quizzes": [
+      {
+        "question": "What is the main benefit of blog posts for your business?",
+        "options": [
+          {
+            "option_text": "They replace your website",
+            "is_correct": false
+          },
+          {
+            "option_text": "They build trust and help you get found online",
+            "is_correct": true
+          },
+          {
+            "option_text": "They are only for professional writers",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Blog posts help build trust with potential customers and improve your visibility in search engines."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "planning-your-blog-post",
+    "title": "Planning Your Blog Post",
+    "moduleWeek": 1,
+    "moduleName": "Blog Posts",
+    "learningGoal": "Plan a simple blog post that answers one customer question.",
+    "sections": [
+      {
+        "title": "Planning Your Blog Post",
+        "icon": "document",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "question",
+            "color": "blue",
+            "title": "Pick One Question",
+            "description": "Choose one question your customers ask. Examples: How do I know if I need...? What is the difference between...?"
+          },
+          {
+            "icon": "pencil",
+            "color": "green",
+            "title": "Write a Simple Title",
+            "description": "Use the question as your title or turn it into a statement. Example: 5 Signs You Need a New Roof"
+          },
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "Outline 3-5 Key Points",
+            "description": "Break your answer into a few short sections. Each section should be 2-4 sentences."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A good blog post does not need to be long. It needs to be clear and helpful.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Write your blog post title",
+        "description": "Make it clear and specific"
+      },
+      {
+        "number": 2,
+        "title": "List 3-5 key points you will cover",
+        "description": "These become your section headers"
+      },
+      {
+        "number": 3,
+        "title": "Write 2-4 sentences for each point",
+        "description": "Keep it simple and conversational"
+      }
+    ],
+    "nextLessonTitle": "Prepare for Lesson 3",
+    "quizzes": [
+      {
+        "question": "How many key points should your blog post outline include?",
+        "options": [
+          {
+            "option_text": "Exactly 10 points",
+            "is_correct": false
+          },
+          {
+            "option_text": "3-5 key points",
+            "is_correct": true
+          },
+          {
+            "option_text": "As many as possible",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A good blog post has 3-5 key points to keep it focused and easy to read."
+      }
+    ]
+  }
+]

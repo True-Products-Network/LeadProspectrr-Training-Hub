@@ -1,0 +1,87 @@
+[
+{
+  "lessonNumber": 8,
+  "slug": "save-smart-list",
+  "title": "Save the Smart List",
+  "moduleWeek": 2,
+  "moduleName": "Contacts and Smart Lists",
+  "learningGoal": "Save a filtered view so it can be used again later.",
+  "sections": [
+    {
+      "title": "Steps to Save",
+      "icon": "check",
+      "color": "purple",
+      "items": [
+        {"icon": "filter", "color": "blue", "title": "Step 1", "description": "Build your filters"},
+        {"icon": "eye", "color": "green", "title": "Step 2", "description": "Review the contacts shown"},
+        {"icon": "check", "color": "purple", "title": "Step 3", "description": "Click Save as Smart List"},
+        {"icon": "pencil", "color": "amber", "title": "Step 4", "description": "Give the list a clear name"},
+        {"icon": "check", "color": "green", "title": "Step 5", "description": "Save it"},
+        {"icon": "clock", "color": "cyan", "title": "Step 6", "description": "Reopen it later when needed"}
+      ]
+    },
+    {
+      "title": "Good Smart List Names",
+      "icon": "star",
+      "color": "green",
+      "items": [
+        {"icon": "star", "color": "green", "title": "New Leads — Last 30 Days", "description": "Clear and specific"},
+        {"icon": "star", "color": "green", "title": "Hot Leads — Need Follow-Up", "description": "Shows status and action needed"},
+        {"icon": "star", "color": "green", "title": "Leads — No Appointment Booked", "description": "Specific criteria and purpose"},
+        {"icon": "star", "color": "green", "title": "Clients — Active", "description": "Simple and clear"}
+      ]
+    },
+    {
+      "title": "Weak Smart List Names",
+      "icon": "warning",
+      "color": "rose",
+      "items": [
+        {"icon": "warning", "color": "rose", "title": "List 1", "description": "Too vague - doesn't explain what it contains"},
+        {"icon": "warning", "color": "rose", "title": "Test", "description": "Not descriptive - temporary name that stayed"},
+        {"icon": "warning", "color": "rose", "title": "Follow-Up", "description": "Too general - which follow-up?"},
+        {"icon": "warning", "color": "rose", "title": "Contacts", "description": "Not helpful - all contacts are contacts"}
+      ]
+    }
+  ],
+  "keyPoint": "A clear Smart List name saves time later. You should know what the list does just by reading the name.",
+  "actionSteps": [
+    {"number": 1, "title": "Build your filters", "description": "Get the right contacts showing"},
+    {"number": 2, "title": "Click Save as Smart List", "description": "Start the save process"},
+    {"number": 3, "title": "Use a clear name", "description": "Name it so you know what it does at a glance"},
+    {"number": 4, "title": "Save and test", "description": "Save it and reopen to verify it works"}
+  ],
+  "nextLessonTitle": "Use Your Smart List",
+  "quizzes": [
+    {
+      "question": "Why should Smart List names be clear?",
+      "options": [
+        {"option_text": "They don't need to be clear", "is_correct": false},
+        {"option_text": "Clear names help you quickly understand what the list shows and when to use it", "is_correct": true},
+        {"option_text": "Only admins see the names", "is_correct": false},
+        {"option_text": "Names are just for decoration", "is_correct": false}
+      ],
+      "explanation": "Clear names like 'Hot Leads — Need Follow-Up' tell you exactly what the list contains and when to use it, saving time and preventing confusion."
+    },
+    {
+      "question": "Which is an example of a GOOD Smart List name?",
+      "options": [
+        {"option_text": "List 1", "is_correct": false},
+        {"option_text": "Test", "is_correct": false},
+        {"option_text": "Hot Leads — Need Follow-Up", "is_correct": true},
+        {"option_text": "Contacts", "is_correct": false}
+      ],
+      "explanation": "'Hot Leads — Need Follow-Up' is clear and specific, telling you exactly what the list contains and what action to take."
+    },
+    {
+      "question": "What should you do after saving a Smart List?",
+      "options": [
+        {"option_text": "Never use it again", "is_correct": false},
+        {"option_text": "Reopen it to verify it works correctly", "is_correct": true},
+        {"option_text": "Delete it immediately", "is_correct": false},
+        {"option_text": "Tell everyone not to use it", "is_correct": false}
+      ],
+      "explanation": "After saving, you should reopen the Smart List to verify it shows the correct contacts and works as expected."
+    }
+  ]
+}
+]

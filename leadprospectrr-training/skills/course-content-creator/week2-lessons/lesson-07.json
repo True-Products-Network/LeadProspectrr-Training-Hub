@@ -1,0 +1,87 @@
+[
+{
+  "lessonNumber": 7,
+  "slug": "build-filters",
+  "title": "Build Your Filters",
+  "moduleWeek": 2,
+  "moduleName": "Contacts and Smart Lists",
+  "learningGoal": "Learn how to use filters to find a specific group of contacts.",
+  "sections": [
+    {
+      "title": "Where to Go",
+      "icon": "location",
+      "color": "blue",
+      "items": [
+        {"icon": "location", "color": "blue", "title": "Navigation", "description": "Contacts → Add Filter"}
+      ]
+    },
+    {
+      "title": "Common Filters",
+      "icon": "filter",
+      "color": "indigo",
+      "items": [
+        {"icon": "tag", "color": "amber", "title": "Tag", "description": "Filter by labels like Webinar Attendee, Client, etc."},
+        {"icon": "target", "color": "rose", "title": "Lead Status", "description": "New, Cold, Warm, Hot, Customer, Past Customer"},
+        {"icon": "users", "color": "purple", "title": "Contact Type", "description": "Lead, Client, Prospect, Partner, Vendor"},
+        {"icon": "location", "color": "cyan", "title": "Source", "description": "Website form, Facebook ad, Referral, Event, Talkadot"},
+        {"icon": "clock", "color": "green", "title": "Date Added", "description": "When the contact entered your system"},
+        {"icon": "users", "color": "indigo", "title": "Assigned User", "description": "Who is responsible for the contact"}
+      ]
+    },
+    {
+      "title": "Steps to Build Filters",
+      "icon": "checklist",
+      "color": "green",
+      "items": [
+        {"icon": "location", "color": "blue", "title": "Step 1", "description": "Go to Contacts"},
+        {"icon": "check", "color": "green", "title": "Step 2", "description": "Click Add Filter"},
+        {"icon": "list", "color": "amber", "title": "Step 3", "description": "Choose the field to filter by"},
+        {"icon": "settings", "color": "purple", "title": "Step 4", "description": "Select the condition"},
+        {"icon": "check", "color": "cyan", "title": "Step 5", "description": "Add more filters if needed"},
+        {"icon": "eye", "color": "indigo", "title": "Step 6", "description": "Review the contacts returned"}
+      ]
+    }
+  ],
+  "keyPoint": "Filters help you find the right group. The better the filters, the better the Smart List.",
+  "actionSteps": [
+    {"number": 1, "title": "Go to Contacts", "description": "Navigate to the Contacts page"},
+    {"number": 2, "title": "Click Add Filter", "description": "Start building your filter criteria"},
+    {"number": 3, "title": "Choose filters", "description": "Select lead status, contact type, tags, or other criteria"},
+    {"number": 4, "title": "Combine filters", "description": "Add multiple filters to narrow results"},
+    {"number": 5, "title": "Review results", "description": "Check that the right contacts are shown"}
+  ],
+  "nextLessonTitle": "Save the Smart List",
+  "quizzes": [
+    {
+      "question": "Why should you use filters before saving a Smart List?",
+      "options": [
+        {"option_text": "Filters are required but not useful", "is_correct": false},
+        {"option_text": "Filters help you find the specific group of contacts you want. Once the filters are correct, you can save that view as a Smart List", "is_correct": true},
+        {"option_text": "Filters are just for decoration", "is_correct": false},
+        {"option_text": "You don't need to use filters first", "is_correct": false}
+      ],
+      "explanation": "Filters are the foundation of a Smart List. They define which contacts appear in the list. Getting the filters right ensures your Smart List shows exactly who you want."
+    },
+    {
+      "question": "Where do you go to add a filter?",
+      "options": [
+        {"option_text": "Settings → Profile", "is_correct": false},
+        {"option_text": "Contacts → Add Filter", "is_correct": true},
+        {"option_text": "Reports → Analytics", "is_correct": false},
+        {"option_text": "Dashboard → Home", "is_correct": false}
+      ],
+      "explanation": "To add a filter, navigate to the Contacts page and click on 'Add Filter' to start building your criteria."
+    },
+    {
+      "question": "What should you do after setting up filters?",
+      "options": [
+        {"option_text": "Immediately save without checking", "is_correct": false},
+        {"option_text": "Review the contacts returned to make sure they match what you want", "is_correct": true},
+        {"option_text": "Delete the filtered contacts", "is_correct": false},
+        {"option_text": "Send emails to all filtered contacts", "is_correct": false}
+      ],
+      "explanation": "Always review the contacts that your filters return to ensure you're getting exactly the group you intended before saving as a Smart List."
+    }
+  ]
+}
+]
