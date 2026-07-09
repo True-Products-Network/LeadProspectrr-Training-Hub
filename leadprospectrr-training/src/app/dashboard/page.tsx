@@ -48,11 +48,20 @@ export default async function DashboardPage() {
     .select('*', { count: 'exact', head: true })
     .eq('is_published', true)
 
-  // Get user's current streak
-  const currentStreak = await getUserStreak(user.id)
+  // Get user's current streak (with error handling)
+  let currentStreak = 0
+  try {
+    currentStreak = await getUserStreak(user.id)
+  } catch (e) {
+    console.error('Failed to get user streak:', e)
+  }
 
-  // Record login activity (for streak tracking)
-  await recordActivity(user.id, 'login')
+  // Record login activity (for streak tracking) - don't block on error
+  try {
+    await recordActivity(user.id, 'login')
+  } catch (e) {
+    console.error('Failed to record activity:', e)
+  }
 
   // Calculate overall progress
   const totalModules = modules?.length || 0
