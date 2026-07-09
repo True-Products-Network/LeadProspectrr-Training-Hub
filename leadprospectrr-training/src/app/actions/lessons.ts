@@ -252,17 +252,10 @@ export async function completeLesson(
         // Don't fail the lesson completion if activity recording fails
       }
       
-      // Check for mystery badges (optional - may not exist)
-      try {
-        const { error: rpcError } = await supabase.rpc('check_mystery_badges', { p_user_id: userId })
-        if (rpcError) {
-          console.log('[completeLesson] Mystery badges RPC not available:', rpcError.message)
-        } else {
-          console.log('[completeLesson] Mystery badges checked')
-        }
-      } catch (badgeErr) {
-        console.log('[completeLesson] Mystery badges check skipped (function may not exist)')
-        // Don't fail the lesson completion if badge check fails
+      // Check for mystery badges
+      const { error: badgeError } = await supabase.rpc('check_mystery_badges', { p_user_id: userId })
+      if (badgeError) {
+        console.error('[completeLesson] Error checking mystery badges:', badgeError)
       }
       
       revalidatePath('/dashboard/training')
@@ -318,17 +311,10 @@ export async function completeLesson(
       // Don't fail the lesson completion if activity recording fails
     }
     
-    // Check for mystery badges (optional - may not exist)
-    try {
-      const { error: rpcError } = await supabase.rpc('check_mystery_badges', { p_user_id: userId })
-      if (rpcError) {
-        console.log('[completeLesson] Mystery badges RPC not available:', rpcError.message)
-      } else {
-        console.log('[completeLesson] Mystery badges checked')
-      }
-    } catch (badgeErr) {
-      console.log('[completeLesson] Mystery badges check skipped (function may not exist)')
-      // Don't fail the lesson completion if badge check fails
+    // Check for mystery badges
+    const { error: badgeError2 } = await supabase.rpc('check_mystery_badges', { p_user_id: userId })
+    if (badgeError2) {
+      console.error('[completeLesson] Error checking mystery badges:', badgeError2)
     }
     
     revalidatePath('/dashboard/training')
