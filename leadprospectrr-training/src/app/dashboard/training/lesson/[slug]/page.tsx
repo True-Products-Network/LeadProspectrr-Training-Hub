@@ -288,12 +288,15 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
       revalidatePath(`/dashboard/training/lesson/${slug}`)
       console.log('[handleComplete] Paths revalidated')
     } catch (error) {
-      console.error('[handleComplete] Error in handleComplete:', error)
-      // Re-throw with more context
+      // Log full error details for debugging
+      console.error('[handleComplete] FULL ERROR:', error)
       if (error instanceof Error) {
-        throw new Error(`Lesson completion failed: ${error.message}`)
+        console.error('[handleComplete] Error name:', error.name)
+        console.error('[handleComplete] Error message:', error.message)
+        console.error('[handleComplete] Error stack:', error.stack)
+        throw error // Re-throw original error to preserve details
       }
-      throw new Error('Lesson completion failed due to an unexpected error')
+      throw new Error(String(error))
     }
   }
 
