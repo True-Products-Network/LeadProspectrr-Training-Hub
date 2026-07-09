@@ -14,6 +14,8 @@ export interface Project {
   nextAction: string;
   assetLocation: string;
   revenueImpact: string;
+  goalIds?: string[]; // Links to strategic goals
+  progress?: number; // 0-100 calculated from tasks
 }
 
 export const projects: Project[] = [
