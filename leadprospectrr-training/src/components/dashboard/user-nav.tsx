@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { createClient } from '@/lib/supabase/client'
-import { LogOut, Settings, User } from 'lucide-react'
+import { LogOut, Settings, User, Shield } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 
 interface UserNavProps {
@@ -74,6 +74,17 @@ export function UserNav({ user }: UserNavProps) {
             <Settings className="h-4 w-4" />
             Settings
           </a>
+          
+          {user.role === 'admin' && (
+            <a 
+              href="/admin"
+              className="w-full px-4 py-2 text-left text-sm text-violet-700 hover:bg-violet-50 flex items-center gap-2"
+              onClick={() => setIsOpen(false)}
+            >
+              <Shield className="h-4 w-4" />
+              Admin Panel
+            </a>
+          )}
           
           <div className="border-t border-slate-100 my-1"></div>
           
