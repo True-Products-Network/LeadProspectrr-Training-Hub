@@ -252,12 +252,16 @@ export async function completeLesson(
         // Don't fail the lesson completion if activity recording fails
       }
       
-      // Check for mystery badges
+      // Check for mystery badges (optional - may not exist)
       try {
-        await supabase.rpc('check_mystery_badges', { p_user_id: userId })
-        console.log('[completeLesson] Mystery badges checked')
+        const { error: rpcError } = await supabase.rpc('check_mystery_badges', { p_user_id: userId })
+        if (rpcError) {
+          console.log('[completeLesson] Mystery badges RPC not available:', rpcError.message)
+        } else {
+          console.log('[completeLesson] Mystery badges checked')
+        }
       } catch (badgeErr) {
-        console.error('[completeLesson] Error checking mystery badges:', badgeErr)
+        console.log('[completeLesson] Mystery badges check skipped (function may not exist)')
         // Don't fail the lesson completion if badge check fails
       }
       
@@ -279,11 +283,12 @@ export async function completeLesson(
       points_earned: pointsEarned
     })
     
-    // Create completed record - only include columns that definitely exist
+    // Create completed record - include started_at to satisfy any constraints
     const insertData: any = {
       user_id: userId,
       lesson_id: lessonId,
       status: 'completed',
+      started_at: new Date().toISOString(),
       completed_at: new Date().toISOString(),
       time_spent_minutes: timeSpentMinutes,
       points_earned: pointsEarned
@@ -313,12 +318,16 @@ export async function completeLesson(
       // Don't fail the lesson completion if activity recording fails
     }
     
-    // Check for mystery badges
+    // Check for mystery badges (optional - may not exist)
     try {
-      await supabase.rpc('check_mystery_badges', { p_user_id: userId })
-      console.log('[completeLesson] Mystery badges checked')
+      const { error: rpcError } = await supabase.rpc('check_mystery_badges', { p_user_id: userId })
+      if (rpcError) {
+        console.log('[completeLesson] Mystery badges RPC not available:', rpcError.message)
+      } else {
+        console.log('[completeLesson] Mystery badges checked')
+      }
     } catch (badgeErr) {
-      console.error('[completeLesson] Error checking mystery badges:', badgeErr)
+      console.log('[completeLesson] Mystery badges check skipped (function may not exist)')
       // Don't fail the lesson completion if badge check fails
     }
     
