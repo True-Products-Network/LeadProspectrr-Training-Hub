@@ -1,0 +1,29 @@
+{
+  "name": "@blm/database",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "migrate": "node-pg-migrate up",
+    "migrate:rollback": "node-pg-migrate down",
+    "migrate:create": "node-pg-migrate create",
+    "seed": "ts-node src/seed.ts",
+    "reset": "ts-node src/reset.ts",
+    "generate": "kanel",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "pg": "^8.12.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.0",
+    "@types/uuid": "^10.0.0",
+    "node-pg-migrate": "^7.5.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.4.0"
+  }
+}

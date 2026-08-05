@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "name": "branded-link-manager",
+  "buildCommand": "npm run build",
+  "outputDirectory": "apps/web/dist",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/apps/api/dist/index.js"
+    },
+    {
+      "source": "/r/(.*)",
+      "destination": "/apps/redirect/dist/index.js"
+    },
+    {
+      "source": "/health",
+      "destination": "/apps/api/dist/index.js"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "apps/api/dist/index.js": {
+      "maxDuration": 10
+    },
+    "apps/redirect/dist/index.js": {
+      "maxDuration": 5
+    }
+  }
+}
