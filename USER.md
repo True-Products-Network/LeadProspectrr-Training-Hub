@@ -28,10 +28,22 @@ _Learn about the person you're helping. Update this as you go._
 - Pushes to wrong repositories
 - Half-baked features that don't work end-to-end
 
-**Recent Work (Aug 5, 2026):**
-- GHL Integration: Added Tested badge, blue Test Connection button, red Disconnect button
-- User Management: Fixed to show actual users from users table (not contacts), added Role column, fixed search input styling
-- Both features now live on Property-Management-Portal repo
+**Recent Work (Aug 5-10, 2026):**
+- **Dropdown System Overhaul**: Made all dropdowns tenant-specific with proper database constraints
+  - Inspection dropdowns: Type (12), Status (6), Overall Result (5)
+  - Approval dropdowns: Type (10) including vendor_selection
+  - All dropdowns now isolated per tenant for true multi-tenancy
+- **Contact Roles Refactor**: Moved from join table to JSON array in contacts table
+  - Added Board Position and Status fields
+  - Dynamic dropdown loading for all contact fields
+- **GHL Integration**: Added Tested badge, blue Test Connection button, red Disconnect button
+- **User Management**: Fixed to show actual users from users table (not contacts), added Role column
+- **Association Management**: Full CRUD with all fields (fiscal year, tax ID, financial platform, etc.)
+- **Maintenance Requests**: Working property links, vendor assignment, cost tracking, escalation
+- **Menu System**: Admin users see both Portfolio and Dashboard
+- **People Tab**: Renamed from Contacts, shows role badges
+- **Database**: Added property_count and unit_count columns to associations table
+- **All features now live on Property-Management-Portal repo**
 
 ---
 
