@@ -85,7 +85,24 @@ pwd && git remote -v
 
 ## Recent Work Log (August 2026)
 
-### Aug 10, 2026 (Today)
+### Aug 11, 2026 (Today) - MAJOR PROGRESS
+- **Business Selector Infinite Loop**: FIXED after 2+ hours of debugging
+  - Root cause: Session was using regular Supabase client (RLS) for business lookups
+  - Fix: Changed getSession() to use service client for business queries
+  - Added sessionStorage flag to prevent infinite reload loops
+  - Dashboard now auto-sets business when user has only one
+  - Created /api/auth/session endpoint for full session data
+  
+- **UI Updates - Button & Label Changes**:
+  - Dashboard: "View Portfolio" → "View Reports", Add Document icon $ → Upload
+  - Portfolio: Added "View Summary" button, "Associations" → "Businesses"
+  - Summary: "Back to Dashboard" → "Back to Portfolio"
+  - Associations pages: All "Association" labels → "Business"
+  - Header: "Request Board Approval" button now goes to working /approvals/new page
+  
+- **Key Commits**: Dashboard loading properly with business auto-select
+
+### Aug 10, 2026
 - **Dropdown Settings Tenant Isolation**: Made dropdown_settings tenant-specific
   - Updated unique constraint to include tenant_id
   - Made tenant_id NOT NULL
