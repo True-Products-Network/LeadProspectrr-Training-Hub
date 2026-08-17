@@ -188,7 +188,7 @@ export default function AdminUsers() {
                         
                         {/* Delete User Button */}
                         <Dialog open={deleteDialogOpen === user.id} onOpenChange={(open) => setDeleteDialogOpen(open ? user.id : null)}>
-                          <DialogTrigger asChild>
+                          <DialogTrigger>
                             <Button 
                               variant="ghost" 
                               size="icon"
