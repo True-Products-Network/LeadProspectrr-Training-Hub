@@ -1,0 +1,1659 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "why-opportunities-pipelines-matter",
+    "title": "Why Opportunities & Pipelines Matter",
+    "moduleWeek": 5,
+    "moduleName": "Opportunities and Pipelines",
+    "learningGoal": "Understand why leads get lost and how Opportunities and Pipelines help prevent that.",
+    "sections": [
+      {
+        "title": "Why Leads Get Lost",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "The Problem",
+            "description": "Most leads are not lost because someone said no. They are often lost because: Nobody followed up. The lead stayed buried in the inbox. The business owner forgot the next step. There was no clear sales process. The lead was interested, but nobody tracked the opportunity."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "The Solution",
+            "description": "LeadProspectrr helps fix this by giving you a clear place to track who is interested and where they are in the process."
+          }
+        ]
+      },
+      {
+        "title": "Key Idea",
+        "icon": "lightbulb",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "chat",
+            "color": "cyan",
+            "title": "The Inbox Shows Conversation",
+            "description": "Conversations are where messages happen."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "The Pipeline Shows Business Status",
+            "description": "Opportunities are where possible business is tracked. Pipelines show the path each lead moves through."
+          }
+        ]
+      },
+      {
+        "title": "Example",
+        "icon": "mic",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "message",
+            "color": "blue",
+            "title": "Speaker Receives Message",
+            "description": "Hi, I saw your post about helping speakers follow up after events. I would like to know more about how that works."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "What Should Happen",
+            "description": "That person should not just stay in the inbox. They should be added as an Opportunity so they can be followed up with properly."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "If someone could become a client, they should be tracked as an Opportunity. The inbox shows conversation; the pipeline shows business status.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Think of a Recent Lead",
+        "description": "Think of one person who recently showed interest in your service."
+      },
+      {
+        "number": 2,
+        "title": "Ask Yourself",
+        "description": "Are they currently tracked somewhere? Do I know their next step? Could I find them quickly today?"
+      },
+      {
+        "number": 3,
+        "title": "Identify the Gap",
+        "description": "If you cannot answer yes to all three questions, you need Opportunities and Pipelines."
+      }
+    ],
+    "nextLessonTitle": "What Is an Opportunity?",
+    "quizzes": [
+      {
+        "question": "Why do most leads get lost?",
+        "options": [
+          {
+            "option_text": "Because they said no",
+            "is_correct": false
+          },
+          {
+            "option_text": "Because nobody followed up, the lead stayed in inbox, or the next step was forgotten",
+            "is_correct": true
+          },
+          {
+            "option_text": "Because they were not interested",
+            "is_correct": false
+          },
+          {
+            "option_text": "Because the price was too high",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Most leads are lost due to lack of follow-up, not because of price or interest. They get buried in the inbox or the next step is forgotten."
+      },
+      {
+        "question": "What does the pipeline show?",
+        "options": [
+          {
+            "option_text": "Email conversations",
+            "is_correct": false
+          },
+          {
+            "option_text": "Business status and where leads are in the sales process",
+            "is_correct": true
+          },
+          {
+            "option_text": "Social media posts",
+            "is_correct": false
+          },
+          {
+            "option_text": "Website analytics",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The pipeline shows business status - where each lead stands in the sales process. The inbox shows conversations, but the pipeline shows the sales journey."
+      },
+      {
+        "question": "What should happen when someone shows interest?",
+        "options": [
+          {
+            "option_text": "Let them stay in the inbox",
+            "is_correct": false
+          },
+          {
+            "option_text": "Add them as an Opportunity for proper follow-up",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete their message",
+            "is_correct": false
+          },
+          {
+            "option_text": "Wait for them to contact again",
+            "is_correct": false
+          }
+        ],
+        "explanation": "When someone shows interest, they should be added as an Opportunity so they can be properly tracked and followed up with, not left in the inbox."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "what-is-opportunity",
+    "title": "What Is an Opportunity?",
+    "moduleWeek": 5,
+    "moduleName": "Opportunities and Pipelines",
+    "learningGoal": "Understand what an Opportunity is and when to create one.",
+    "sections": [
+      {
+        "title": "Simple Explanation",
+        "icon": "target",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "An Opportunity Is",
+            "description": "A lead, contact, or business that could become a client. It is not just a name in your contacts. It is someone who has shown some kind of interest."
+          }
+        ]
+      },
+      {
+        "title": "When to Create an Opportunity",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "form",
+            "color": "blue",
+            "title": "Form Submissions",
+            "description": "They fill out a form asking about your services."
+          },
+          {
+            "icon": "calendar",
+            "color": "cyan",
+            "title": "Booked Calls",
+            "description": "They book a call or consultation."
+          },
+          {
+            "icon": "dollar",
+            "color": "green",
+            "title": "Pricing Inquiries",
+            "description": "They ask for pricing or a quote."
+          },
+          {
+            "icon": "chat",
+            "color": "amber",
+            "title": "Replies and Questions",
+            "description": "They reply to a text or email, or ask about a service."
+          },
+          {
+            "icon": "download",
+            "color": "purple",
+            "title": "Downloads with Interest",
+            "description": "They download a guide and show interest."
+          }
+        ]
+      },
+      {
+        "title": "Audience Examples",
+        "icon": "users",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "Coach",
+            "description": "Someone downloads a leadership guide and replies asking about private coaching."
+          },
+          {
+            "icon": "briefcase",
+            "color": "cyan",
+            "title": "Consultant",
+            "description": "A business owner asks for help fixing a messy sales process."
+          },
+          {
+            "icon": "mic",
+            "color": "purple",
+            "title": "Speaker",
+            "description": "An event planner asks about availability and speaking fees."
+          },
+          {
+            "icon": "users",
+            "color": "amber",
+            "title": "Trainer",
+            "description": "A company asks about a team workshop."
+          }
+        ]
+      },
+      {
+        "title": "What Opportunities Track",
+        "icon": "list",
+        "color": "green",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "Key Information",
+            "description": "Who the lead is, what they are interested in, where they are in the sales process, what the possible value is, what happened last, what needs to happen next."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A contact is a person. An Opportunity is a possible sale, project, booking, or client relationship. Create Opportunities when someone shows interest in becoming a client.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "List Potential Opportunities",
+        "description": "Write down three people who could be added as Opportunities in your business."
+      },
+      {
+        "number": 2,
+        "title": "Identify Interest Signals",
+        "description": "What did they do that showed interest? (Form, call booking, pricing question, etc.)"
+      },
+      {
+        "number": 3,
+        "title": "Plan Next Steps",
+        "description": "For each person, what would be the next step if they were an Opportunity?"
+      }
+    ],
+    "nextLessonTitle": "What Is a Pipeline?",
+    "quizzes": [
+      {
+        "question": "What is an Opportunity?",
+        "options": [
+          {
+            "option_text": "Just a name in your contacts",
+            "is_correct": false
+          },
+          {
+            "option_text": "A lead, contact, or business that could become a client",
+            "is_correct": true
+          },
+          {
+            "option_text": "A completed sale",
+            "is_correct": false
+          },
+          {
+            "option_text": "A marketing campaign",
+            "is_correct": false
+          }
+        ],
+        "explanation": "An Opportunity is a lead, contact, or business that could become a client. It represents possible business, not just a contact name."
+      },
+      {
+        "question": "When should you create an Opportunity?",
+        "options": [
+          {
+            "option_text": "Only after they have paid",
+            "is_correct": false
+          },
+          {
+            "option_text": "When they show interest by filling out a form, booking a call, asking for pricing, or inquiring about services",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only for existing customers",
+            "is_correct": false
+          },
+          {
+            "option_text": "Never, Opportunities are not useful",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Create an Opportunity when someone shows interest in becoming a client - through form submissions, call bookings, pricing inquiries, or service questions."
+      },
+      {
+        "question": "What information does an Opportunity help you track?",
+        "options": [
+          {
+            "option_text": "Only the person's name",
+            "is_correct": false
+          },
+          {
+            "option_text": "Who the lead is, what they want, where they are in the process, the value, what happened, and what's next",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only their email address",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only the final sale amount",
+            "is_correct": false
+          }
+        ],
+        "explanation": "An Opportunity tracks comprehensive information: who the lead is, what they are interested in, their stage in the sales process, possible value, recent activity, and next steps."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "slug": "what-is-pipeline",
+    "title": "What Is a Pipeline?",
+    "moduleWeek": 5,
+    "moduleName": "Opportunities and Pipelines",
+    "learningGoal": "Understand how a Pipeline works and why it makes follow-up easier.",
+    "sections": [
+      {
+        "title": "Simple Explanation",
+        "icon": "layout",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "arrow-right",
+            "color": "blue",
+            "title": "The Path",
+            "description": "A Pipeline is the path a lead moves through from first interest to a final decision. Think of it as a row of buckets. Each bucket shows where the lead is right now."
+          }
+        ]
+      },
+      {
+        "title": "Simple Pipeline Stages",
+        "icon": "list",
+        "color": "green",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "1. New Lead",
+            "description": "Someone has shown interest, but no real follow-up has happened yet."
+          },
+          {
+            "icon": "chat",
+            "color": "cyan",
+            "title": "2. Contacted",
+            "description": "You have replied, called, texted, or emailed the lead."
+          },
+          {
+            "icon": "calendar",
+            "color": "amber",
+            "title": "3. Appointment Booked",
+            "description": "The lead has booked a call, consultation, meeting, or session."
+          },
+          {
+            "icon": "document",
+            "color": "purple",
+            "title": "4. Proposal Sent",
+            "description": "You have sent pricing, a proposal, agreement, or next-step details."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "5. Won",
+            "description": "The person has agreed to move forward."
+          },
+          {
+            "icon": "x",
+            "color": "rose",
+            "title": "6. Lost",
+            "description": "The person is not moving forward right now."
+          }
+        ]
+      },
+      {
+        "title": "Important Note",
+        "icon": "info",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "info",
+            "color": "amber",
+            "title": "Lost Is Not Failure",
+            "description": "Lost does not mean failure. It simply means the lead is no longer active in this pipeline. They may re-engage later or be better suited for a different offer."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A Pipeline gives you a visual way to see where every lead stands. It is like a row of buckets - each lead sits in the bucket that matches their current status.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Review the Stages",
+        "description": "Look at the six stages: New Lead, Contacted, Appointment Booked, Proposal Sent, Won, Lost."
+      },
+      {
+        "number": 2,
+        "title": "Adapt for Your Business",
+        "description": "Would these stages work for your business, or do you need one or two different names?"
+      },
+      {
+        "number": 3,
+        "title": "Define Your Stages",
+        "description": "Write down the 4-6 stages that match your sales process."
+      }
+    ],
+    "nextLessonTitle": "Finding the Opportunities Area",
+    "quizzes": [
+      {
+        "question": "What is a Pipeline?",
+        "options": [
+          {
+            "option_text": "A list of email templates",
+            "is_correct": false
+          },
+          {
+            "option_text": "The path a lead moves through from first interest to final decision",
+            "is_correct": true
+          },
+          {
+            "option_text": "A social media strategy",
+            "is_correct": false
+          },
+          {
+            "option_text": "A type of contact form",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A Pipeline is the path a lead moves through from first interest to final decision. It visualizes the sales journey with stages like New Lead, Contacted, Appointment Booked, etc."
+      },
+      {
+        "question": "What does the 'Lost' stage mean?",
+        "options": [
+          {
+            "option_text": "You failed as a salesperson",
+            "is_correct": false
+          },
+          {
+            "option_text": "The lead is not moving forward right now in this pipeline",
+            "is_correct": true
+          },
+          {
+            "option_text": "The lead should be deleted forever",
+            "is_correct": false
+          },
+          {
+            "option_text": "You should never contact them again",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Lost does not mean failure. It simply means the lead is not moving forward in this pipeline right now. They may re-engage later or be suited for a different offer."
+      },
+      {
+        "question": "Which stage comes after 'Contacted'?",
+        "options": [
+          {
+            "option_text": "Won",
+            "is_correct": false
+          },
+          {
+            "option_text": "Appointment Booked",
+            "is_correct": true
+          },
+          {
+            "option_text": "Lost",
+            "is_correct": false
+          },
+          {
+            "option_text": "New Lead",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The typical flow is: New Lead → Contacted → Appointment Booked → Proposal Sent → Won/Lost. After Contacted comes Appointment Booked."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "slug": "finding-opportunities-area",
+    "title": "Finding the Opportunities Area",
+    "moduleWeek": 5,
+    "moduleName": "Opportunities and Pipelines",
+    "learningGoal": "Know where to go inside LeadProspectrr to view and manage Opportunities.",
+    "sections": [
+      {
+        "title": "Where Sales Tracking Lives",
+        "icon": "target",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "location",
+            "color": "blue",
+            "title": "The Opportunities Area",
+            "description": "The Opportunities area is where your sales tracking lives. This is where you can see leads as cards inside different pipeline stages."
+          }
+        ]
+      },
+      {
+        "title": "What to Look For",
+        "icon": "eye",
+        "color": "green",
+        "items": [
+          {
+            "icon": "layout",
+            "color": "blue",
+            "title": "Board Elements",
+            "description": "Pipeline name, stage columns, lead cards, contact names, opportunity value, status, notes, assigned user, stage movement options."
+          }
+        ]
+      },
+      {
+        "title": "What the Board Shows You",
+        "icon": "help",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "Key Questions Answered",
+            "description": "Who is new? Who has been contacted? Who has booked a call? Who needs a proposal? Who has said yes? Who is no longer moving forward?"
+          }
+        ]
+      },
+      {
+        "title": "Trainer Note",
+        "icon": "info",
+        "color": "cyan",
+        "items": [
+          {
+            "icon": "clock",
+            "color": "cyan",
+            "title": "Take Your Time",
+            "description": "Move slowly through this part during the clinic. The goal is not to click fast. The goal is for users to understand what they are looking at."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The Opportunities area is the visual board that helps you see possible business at a glance. It shows leads as cards in different pipeline stages.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Open Opportunities Area",
+        "description": "Navigate to the Opportunities area in LeadProspectrr."
+      },
+      {
+        "number": 2,
+        "title": "Identify Pipeline Stages",
+        "description": "Look at the columns and identify the pipeline stages you can see."
+      },
+      {
+        "number": 3,
+        "title": "Explore the Board",
+        "description": "Click on a few cards to see what information is displayed."
+      }
+    ],
+    "nextLessonTitle": "Creating a Sample Opportunity",
+    "quizzes": [
+      {
+        "question": "Where does sales tracking live in LeadProspectrr?",
+        "options": [
+          {
+            "option_text": "In the Settings menu",
+            "is_correct": false
+          },
+          {
+            "option_text": "In the Opportunities area",
+            "is_correct": true
+          },
+          {
+            "option_text": "In the Reports section only",
+            "is_correct": false
+          },
+          {
+            "option_text": "In the email inbox",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The Opportunities area is where sales tracking lives in LeadProspectrr. It displays leads as cards in different pipeline stages."
+      },
+      {
+        "question": "What can you see on the Opportunities board?",
+        "options": [
+          {
+            "option_text": "Only contact names",
+            "is_correct": false
+          },
+          {
+            "option_text": "Pipeline name, stages, lead cards, values, status, notes, and assigned users",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only email messages",
+            "is_correct": false
+          },
+          {
+            "option_text": "Social media feeds",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The Opportunities board shows: pipeline name, stage columns, lead cards, contact names, opportunity value, status, notes, assigned user, and stage movement options."
+      },
+      {
+        "question": "What question can the board help you answer?",
+        "options": [
+          {
+            "option_text": "What is the weather today?",
+            "is_correct": false
+          },
+          {
+            "option_text": "Who is new, who has been contacted, who booked a call, who needs a proposal",
+            "is_correct": true
+          },
+          {
+            "option_text": "What to have for lunch",
+            "is_correct": false
+          },
+          {
+            "option_text": "How to write code",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The board helps answer sales questions: Who is new? Who has been contacted? Who has booked a call? Who needs a proposal? Who has said yes? Who is no longer moving forward?"
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "slug": "creating-sample-opportunity",
+    "title": "Creating a Sample Opportunity",
+    "moduleWeek": 5,
+    "moduleName": "Opportunities and Pipelines",
+    "learningGoal": "Learn how to create an Opportunity using a simple example.",
+    "sections": [
+      {
+        "title": "Example Lead",
+        "icon": "user",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "Sarah Johnson",
+            "description": "Name: Sarah Johnson. Interest: Website redesign. Estimated Value: $2,500. Current Stage: New Lead. Next Step: Book a call."
+          }
+        ]
+      },
+      {
+        "title": "Steps to Create Opportunity",
+        "icon": "list",
+        "color": "green",
+        "items": [
+          {
+            "icon": "location",
+            "color": "blue",
+            "title": "1-3. Navigate",
+            "description": "Go to Opportunities area. Choose correct Pipeline. Add new Opportunity."
+          },
+          {
+            "icon": "user",
+            "color": "cyan",
+            "title": "4-5. Contact Details",
+            "description": "Select or create contact. Add Opportunity name."
+          },
+          {
+            "icon": "dollar",
+            "color": "green",
+            "title": "6-7. Value and Stage",
+            "description": "Add estimated value. Choose correct stage."
+          },
+          {
+            "icon": "edit",
+            "color": "amber",
+            "title": "8-9. Note and Save",
+            "description": "Add short note. Save the Opportunity."
+          }
+        ]
+      },
+      {
+        "title": "Example Note",
+        "icon": "document",
+        "color": "cyan",
+        "items": [
+          {
+            "icon": "document",
+            "color": "cyan",
+            "title": "Good Note",
+            "description": "Sarah asked about a website redesign. Needs a short discovery call to understand project scope and timeline."
+          }
+        ]
+      },
+      {
+        "title": "About Estimated Value",
+        "icon": "info",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "info",
+            "color": "amber",
+            "title": "Does Not Need to Be Perfect",
+            "description": "The estimated value does not have to be perfect. It helps you understand possible revenue in the pipeline."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Creating an Opportunity gives a lead a clear place in your sales process. Include contact details, value, stage, and notes for proper tracking.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create Sample Opportunity",
+        "description": "Use Sarah Johnson example or create your own sample lead."
+      },
+      {
+        "number": 2,
+        "title": "Fill All Fields",
+        "description": "Add name, value, stage, and a descriptive note."
+      },
+      {
+        "number": 3,
+        "title": "Save and Verify",
+        "description": "Save the Opportunity and confirm it appears in the correct stage."
+      }
+    ],
+    "nextLessonTitle": "Moving Leads Through the Pipeline",
+    "quizzes": [
+      {
+        "question": "What is the first step in creating an Opportunity?",
+        "options": [
+          {
+            "option_text": "Add a note",
+            "is_correct": false
+          },
+          {
+            "option_text": "Go to the Opportunities area",
+            "is_correct": true
+          },
+          {
+            "option_text": "Send an email",
+            "is_correct": false
+          },
+          {
+            "option_text": "Delete the contact",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The first step is to go to the Opportunities area in LeadProspectrr, then choose the correct pipeline and add a new Opportunity."
+      },
+      {
+        "question": "Why add an estimated value to an Opportunity?",
+        "options": [
+          {
+            "option_text": "It must be exactly correct",
+            "is_correct": false
+          },
+          {
+            "option_text": "It helps you understand possible revenue in the pipeline",
+            "is_correct": true
+          },
+          {
+            "option_text": "It automatically charges the client",
+            "is_correct": false
+          },
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The estimated value helps you understand possible revenue in your pipeline. It does not need to be perfect - it is for tracking and forecasting purposes."
+      },
+      {
+        "question": "What should a good note include?",
+        "options": [
+          {
+            "option_text": "Just the person's name",
+            "is_correct": false
+          },
+          {
+            "option_text": "Details about what they want, project scope, and next steps",
+            "is_correct": true
+          },
+          {
+            "option_text": "Your personal opinions about the lead",
+            "is_correct": false
+          },
+          {
+            "option_text": "Random thoughts",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A good note includes details about what the lead asked for, project scope, timeline, and next steps. Example: 'Sarah asked about website redesign. Needs discovery call to understand scope and timeline.'"
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "slug": "moving-leads-pipeline",
+    "title": "Moving Leads Through the Pipeline",
+    "moduleWeek": 5,
+    "moduleName": "Opportunities and Pipelines",
+    "learningGoal": "Learn how and when to move an Opportunity from one stage to another.",
+    "sections": [
+      {
+        "title": "When to Move Leads",
+        "icon": "arrow-right",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "arrow-right",
+            "color": "blue",
+            "title": "Move When Something Changes",
+            "description": "A lead should move when something changes. Contacted them? Move to Contacted. They booked a call? Move to Appointment Booked. Sent proposal? Move to Proposal Sent. They said yes? Move to Won. Not moving forward? Move to Lost."
+          }
+        ]
+      },
+      {
+        "title": "Example: Sarah's Journey",
+        "icon": "user",
+        "color": "green",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "1. New Lead",
+            "description": "Sarah asked about a website redesign."
+          },
+          {
+            "icon": "chat",
+            "color": "cyan",
+            "title": "2. Contacted",
+            "description": "You replied and asked her to book a call."
+          },
+          {
+            "icon": "calendar",
+            "color": "amber",
+            "title": "3. Appointment Booked",
+            "description": "Sarah booked a discovery call."
+          },
+          {
+            "icon": "document",
+            "color": "purple",
+            "title": "4. Proposal Sent",
+            "description": "You sent her the website proposal."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "5. Won",
+            "description": "Sarah accepted and paid the deposit."
+          }
+        ]
+      },
+      {
+        "title": "Why This Matters",
+        "icon": "target",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "eye",
+            "color": "amber",
+            "title": "Visual Clarity",
+            "description": "Moving cards through the pipeline helps you avoid guessing. You can look at the board and know what needs attention."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Move the Opportunity card whenever the sales status changes. This keeps your pipeline accurate and shows you exactly what needs attention.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Review Current Opportunities",
+        "description": "Look at your Opportunities and identify which ones need to move stages."
+      },
+      {
+        "number": 2,
+        "title": "Move One Lead",
+        "description": "Take one example lead and move them to the correct stage based on what has happened."
+      },
+      {
+        "number": 3,
+        "title": "Update Notes",
+        "description": "Add a note about why you moved them and what happened."
+      }
+    ],
+    "nextLessonTitle": "Adding Notes and Next Steps",
+    "quizzes": [
+      {
+        "question": "When should you move a lead to the 'Contacted' stage?",
+        "options": [
+          {
+            "option_text": "When they first show interest",
+            "is_correct": false
+          },
+          {
+            "option_text": "When you have replied, called, texted, or emailed them",
+            "is_correct": true
+          },
+          {
+            "option_text": "When they pay",
+            "is_correct": false
+          },
+          {
+            "option_text": "Never",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Move a lead to Contacted when you have actively reached out to them - by replying, calling, texting, or emailing. This shows the lead has been contacted, not just that they showed interest."
+      },
+      {
+        "question": "Why is moving leads through the pipeline important?",
+        "options": [
+          {
+            "option_text": "It makes the board look colorful",
+            "is_correct": false
+          },
+          {
+            "option_text": "It helps you avoid guessing and know what needs attention",
+            "is_correct": true
+          },
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          },
+          {
+            "option_text": "It deletes old leads",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Moving leads through the pipeline gives you visual clarity. You can look at the board and immediately know what needs attention - who is new, who has been contacted, who needs a proposal, etc."
+      },
+      {
+        "question": "What should you do when a lead says yes to your offer?",
+        "options": [
+          {
+            "option_text": "Delete the Opportunity",
+            "is_correct": false
+          },
+          {
+            "option_text": "Move them to the 'Won' stage",
+            "is_correct": true
+          },
+          {
+            "option_text": "Leave them in 'New Lead'",
+            "is_correct": false
+          },
+          {
+            "option_text": "Move them to 'Lost'",
+            "is_correct": false
+          }
+        ],
+        "explanation": "When a lead agrees to move forward and becomes a client, move them to the 'Won' stage. This tracks your successful conversions and clears them from active follow-up stages."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "slug": "adding-notes-next-steps",
+    "title": "Adding Notes and Next Steps",
+    "moduleWeek": 5,
+    "moduleName": "Opportunities and Pipelines",
+    "learningGoal": "Understand why notes and next steps are part of good follow-up.",
+    "sections": [
+      {
+        "title": "Three Things You Need",
+        "icon": "list",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "Stage + Note + Next Step",
+            "description": "A pipeline stage tells you where the lead is. A note tells you what happened. A next step tells you what to do next. You need all three."
+          }
+        ]
+      },
+      {
+        "title": "Good Notes Include",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "document",
+            "color": "green",
+            "title": "What to Record",
+            "description": "What the lead asked for. What service they are interested in. What was discussed. Any deadline or event date. Any pricing concern. The next promised action."
+          }
+        ]
+      },
+      {
+        "title": "Bad vs Better Note Example",
+        "icon": "edit",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "x",
+            "color": "rose",
+            "title": "Bad Note",
+            "description": "Spoke to her. (Too vague - no useful information)"
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Better Note",
+            "description": "Spoke with Sarah about website redesign. She wants a cleaner site and better lead capture. Send proposal by Thursday and follow up Monday if no reply."
+          }
+        ]
+      },
+      {
+        "title": "Next Step Examples",
+        "icon": "arrow-right",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "document",
+            "color": "blue",
+            "title": "Common Next Steps",
+            "description": "Send proposal. Book consultation. Follow up in 3 days. Send payment link. Ask for event date. Send case study."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A lead without a note and next step is easy to forget. Always record what happened and what needs to happen next.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Review Your Opportunities",
+        "description": "Look at your current Opportunities and check if they have notes."
+      },
+      {
+        "number": 2,
+        "title": "Add a Note",
+        "description": "Add a short, descriptive note to one Opportunity with details about what was discussed."
+      },
+      {
+        "number": 3,
+        "title": "Set Next Step",
+        "description": "Add a clear next step so you know what to do next."
+      }
+    ],
+    "nextLessonTitle": "Daily Pipeline Check-In",
+    "quizzes": [
+      {
+        "question": "What three things do you need for good follow-up?",
+        "options": [
+          {
+            "option_text": "Name, email, phone",
+            "is_correct": false
+          },
+          {
+            "option_text": "Stage, note, and next step",
+            "is_correct": true
+          },
+          {
+            "option_text": "Price, discount, invoice",
+            "is_correct": false
+          },
+          {
+            "option_text": "Social media, website, ads",
+            "is_correct": false
+          }
+        ],
+        "explanation": "You need three things: the pipeline stage (where they are), a note (what happened), and a next step (what to do next). All three are essential for good follow-up."
+      },
+      {
+        "question": "What makes a good note?",
+        "options": [
+          {
+            "option_text": "Just the person's name",
+            "is_correct": false
+          },
+          {
+            "option_text": "Details about what they want, what was discussed, deadlines, and next actions",
+            "is_correct": true
+          },
+          {
+            "option_text": "A single word like 'Called'",
+            "is_correct": false
+          },
+          {
+            "option_text": "Your opinion about their personality",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A good note includes details: what the lead asked for, what service they want, what was discussed, any deadlines, pricing concerns, and the next promised action."
+      },
+      {
+        "question": "Why are next steps important?",
+        "options": [
+          {
+            "option_text": "They are not important",
+            "is_correct": false
+          },
+          {
+            "option_text": "A lead without a next step is easy to forget",
+            "is_correct": true
+          },
+          {
+            "option_text": "They automatically send emails",
+            "is_correct": false
+          },
+          {
+            "option_text": "They delete old leads",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Next steps are crucial because a lead without a defined next action is easy to forget. Clear next steps ensure consistent follow-up."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 8,
+    "slug": "daily-pipeline-check-in",
+    "title": "Daily Pipeline Check-In",
+    "moduleWeek": 5,
+    "moduleName": "Opportunities and Pipelines",
+    "learningGoal": "Build a simple habit for keeping the pipeline clean and useful.",
+    "sections": [
+      {
+        "title": "Why Check Daily",
+        "icon": "clock",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Pipeline Only Works If Checked",
+            "description": "Your pipeline only works if you check it regularly. This does not need to take long. A five-minute check-in can stop leads from being forgotten."
+          }
+        ]
+      },
+      {
+        "title": "Daily Check-In Routine",
+        "icon": "list",
+        "color": "green",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "8-Step Routine",
+            "description": "1. Open Opportunities. 2. Review New Leads. 3. Review Contacted leads. 4. Check Appointment Booked. 5. Check Proposal Sent. 6. Move anything that has changed. 7. Add notes where needed. 8. Set the next follow-up action."
+          }
+        ]
+      },
+      {
+        "title": "Best Time to Check",
+        "icon": "calendar",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "sun",
+            "color": "blue",
+            "title": "Choose a Regular Time",
+            "description": "Start of the day. After lunch. End of the day. Choose one regular time each workday."
+          }
+        ]
+      },
+      {
+        "title": "Simple Rule",
+        "icon": "star",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "alert",
+            "color": "rose",
+            "title": "Never Close Without Next Step",
+            "description": "Never close the pipeline if an active lead has no next step."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A simple daily review keeps your follow-up under control. Choose a regular time and never close the pipeline if an active lead has no next step.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Choose Your Time",
+        "description": "Choose a daily time for your pipeline check-in (start of day, after lunch, or end of day)."
+      },
+      {
+        "number": 2,
+        "title": "Set a Reminder",
+        "description": "Set a calendar reminder or alarm for your daily check-in."
+      },
+      {
+        "number": 3,
+        "title": "Do First Check-In",
+        "description": "Complete your first 8-step check-in today."
+      }
+    ],
+    "nextLessonTitle": "Common Mistakes to Avoid",
+    "quizzes": [
+      {
+        "question": "How long should a daily pipeline check-in take?",
+        "options": [
+          {
+            "option_text": "At least 2 hours",
+            "is_correct": false
+          },
+          {
+            "option_text": "About five minutes",
+            "is_correct": true
+          },
+          {
+            "option_text": "All day",
+            "is_correct": false
+          },
+          {
+            "option_text": "It is not necessary",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A daily pipeline check-in only takes about five minutes. This short time investment prevents leads from being forgotten."
+      },
+      {
+        "question": "What is the simple rule for closing the pipeline?",
+        "options": [
+          {
+            "option_text": "Close it whenever you want",
+            "is_correct": false
+          },
+          {
+            "option_text": "Never close the pipeline if an active lead has no next step",
+            "is_correct": true
+          },
+          {
+            "option_text": "Always delete old leads first",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only check it once per month",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The simple rule: Never close the pipeline if an active lead has no next step. This ensures every lead has a defined follow-up action."
+      },
+      {
+        "question": "What should you do during the daily check-in?",
+        "options": [
+          {
+            "option_text": "Only look at new leads",
+            "is_correct": false
+          },
+          {
+            "option_text": "Review all stages, move changed leads, add notes, set next actions",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete all old opportunities",
+            "is_correct": false
+          },
+          {
+            "option_text": "Nothing, just close it",
+            "is_correct": false
+          }
+        ],
+        "explanation": "During the daily check-in: review New Leads, Contacted, Appointment Booked, Proposal Sent; move anything that changed; add notes; set next follow-up actions."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 9,
+    "slug": "common-mistakes-avoid",
+    "title": "Common Mistakes to Avoid",
+    "moduleWeek": 5,
+    "moduleName": "Opportunities and Pipelines",
+    "learningGoal": "Avoid the habits that make pipelines messy and hard to use.",
+    "sections": [
+      {
+        "title": "Mistake 1: Too Many Stages",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Keep It Simple",
+            "description": "Too many stages makes the pipeline confusing. Keep it simple with 4-6 clear stages."
+          }
+        ]
+      },
+      {
+        "title": "Mistake 2: Not Moving Leads",
+        "icon": "x",
+        "color": "rose",
+        "items": [
+          {
+            "icon": "x",
+            "color": "rose",
+            "title": "Move When Status Changes",
+            "description": "If the lead has changed status, the card should move. Don't leave leads in the wrong stage."
+          }
+        ]
+      },
+      {
+        "title": "Mistake 3: Leaving Old Leads Active",
+        "icon": "user",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "user",
+            "color": "amber",
+            "title": "Move to Lost When Appropriate",
+            "description": "If someone is not moving forward, move them to Lost or another inactive stage. Don't clutter active stages."
+          }
+        ]
+      },
+      {
+        "title": "Mistake 4: Forgetting Notes",
+        "icon": "document",
+        "color": "cyan",
+        "items": [
+          {
+            "icon": "document",
+            "color": "cyan",
+            "title": "Always Add Notes",
+            "description": "Without notes, you may not remember what happened. Always record key information."
+          }
+        ]
+      },
+      {
+        "title": "Mistake 5: Using Inbox as Sales Tracker",
+        "icon": "mail",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "mail",
+            "color": "blue",
+            "title": "Inbox vs Pipeline",
+            "description": "The inbox is for messages. The pipeline is for sales status. Don't confuse the two."
+          }
+        ]
+      },
+      {
+        "title": "Mistake 6: Not Checking Pipeline",
+        "icon": "eye",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "eye",
+            "color": "purple",
+            "title": "Check Regularly",
+            "description": "A pipeline that is not checked becomes another forgotten system. Daily check-ins are essential."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A clean pipeline is easier to use and more likely to bring in business. Avoid too many stages, not moving leads, leaving old leads active, forgetting notes, using inbox as tracker, and not checking regularly.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Review Your Pipeline",
+        "description": "Look at your current pipeline for any of these six mistakes."
+      },
+      {
+        "number": 2,
+        "title": "Identify One Fix",
+        "description": "Find one mistake you can clean up today."
+      },
+      {
+        "number": 3,
+        "title": "Make the Fix",
+        "description": "Take action to correct the identified mistake."
+      }
+    ],
+    "nextLessonTitle": "Real-World Practice Exercise",
+    "quizzes": [
+      {
+        "question": "What is Mistake 1 to avoid?",
+        "options": [
+          {
+            "option_text": "Having too few stages",
+            "is_correct": false
+          },
+          {
+            "option_text": "Creating too many stages",
+            "is_correct": true
+          },
+          {
+            "option_text": "Moving leads too quickly",
+            "is_correct": false
+          },
+          {
+            "option_text": "Checking the pipeline daily",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Mistake 1 is creating too many stages. Too many stages makes the pipeline confusing. Keep it simple with 4-6 clear stages."
+      },
+      {
+        "question": "Why should you not use the inbox as your sales tracker?",
+        "options": [
+          {
+            "option_text": "The inbox is faster",
+            "is_correct": false
+          },
+          {
+            "option_text": "The inbox is for messages; the pipeline is for sales status",
+            "is_correct": true
+          },
+          {
+            "option_text": "Emails are not important",
+            "is_correct": false
+          },
+          {
+            "option_text": "The inbox shows more information",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The inbox is for messages and conversations. The pipeline is for tracking sales status. They serve different purposes - don't confuse them."
+      },
+      {
+        "question": "What should you do with old leads who are not moving forward?",
+        "options": [
+          {
+            "option_text": "Leave them in active stages forever",
+            "is_correct": false
+          },
+          {
+            "option_text": "Move them to Lost or inactive stages",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete their contact record",
+            "is_correct": false
+          },
+          {
+            "option_text": "Ignore them",
+            "is_correct": false
+          }
+        ],
+        "explanation": "If someone is not moving forward, move them to Lost or another inactive stage. This keeps your active pipeline clean and focused on real opportunities."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 10,
+    "slug": "real-world-practice",
+    "title": "Real-World Practice Exercise",
+    "moduleWeek": 5,
+    "moduleName": "Opportunities and Pipelines",
+    "learningGoal": "Apply what you learned to a practical business scenario.",
+    "sections": [
+      {
+        "title": "Scenario: The Forgotten Lead",
+        "icon": "message",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "message",
+            "color": "blue",
+            "title": "The Message",
+            "description": "Hi, I saw your post about helping speakers follow up after events. I would like to know more about how that works."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "What Happened",
+            "description": "The business owner replies once, then gets busy and forgets to follow up."
+          }
+        ]
+      },
+      {
+        "title": "Questions and Answers",
+        "icon": "help",
+        "color": "green",
+        "items": [
+          {
+            "icon": "question",
+            "color": "blue",
+            "title": "Q1: Should this be an Opportunity?",
+            "description": "Answer: Yes. They showed interest in a service."
+          },
+          {
+            "icon": "question",
+            "color": "cyan",
+            "title": "Q2: What stage?",
+            "description": "Answer: New Lead or Contacted, depending on whether the owner already replied."
+          },
+          {
+            "icon": "question",
+            "color": "amber",
+            "title": "Q3: What note?",
+            "description": "Example: Interested in post-event follow-up system for speakers. Needs details and possible consultation."
+          },
+          {
+            "icon": "question",
+            "color": "green",
+            "title": "Q4: What next action?",
+            "description": "Example: Send a short reply and invite them to book a call."
+          }
+        ]
+      },
+      {
+        "title": "Practice Task",
+        "icon": "target",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "Coach Example",
+            "description": "A person downloaded a leadership guide and replied asking about private coaching."
+          },
+          {
+            "icon": "briefcase",
+            "color": "cyan",
+            "title": "Consultant Example",
+            "description": "A business owner asked about improving their follow-up process."
+          },
+          {
+            "icon": "mic",
+            "color": "purple",
+            "title": "Speaker Example",
+            "description": "An event planner asked about availability for a company event."
+          },
+          {
+            "icon": "users",
+            "color": "amber",
+            "title": "Trainer Example",
+            "description": "A company contact asked about a workshop for their team."
+          }
+        ]
+      },
+      {
+        "title": "Fill-In Template",
+        "icon": "edit",
+        "color": "green",
+        "items": [
+          {
+            "icon": "document",
+            "color": "green",
+            "title": "Create Your Opportunity",
+            "description": "Contact Name: ___. Service Interest: ___. Estimated Value: ___. Current Pipeline Stage: ___. Next Follow-Up Action: ___. Short Note: ___."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The system only becomes useful when you use it with real leads. Create an Opportunity for a real or realistic scenario from your business.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Choose Your Scenario",
+        "description": "Pick the example closest to your business or create your own."
+      },
+      {
+        "number": 2,
+        "title": "Fill the Template",
+        "description": "Complete all fields: name, interest, value, stage, next action, note."
+      },
+      {
+        "number": 3,
+        "title": "Create in LeadProspectrr",
+        "description": "Actually create this Opportunity in your LeadProspectrr account."
+      }
+    ],
+    "nextLessonTitle": "Module 5 Complete",
+    "quizzes": [
+      {
+        "question": "Should the person in the scenario be added as an Opportunity?",
+        "options": [
+          {
+            "option_text": "No, they are not serious",
+            "is_correct": false
+          },
+          {
+            "option_text": "Yes, they showed interest in a service",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only if they pay first",
+            "is_correct": false
+          },
+          {
+            "option_text": "No, leave them in the inbox",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Yes, they should be added as an Opportunity because they showed interest in a service. Anyone who could become a client should be tracked as an Opportunity."
+      },
+      {
+        "question": "What is a good next action for the scenario?",
+        "options": [
+          {
+            "option_text": "Ignore the message",
+            "is_correct": false
+          },
+          {
+            "option_text": "Send a short reply and invite them to book a call",
+            "is_correct": true
+          },
+          {
+            "option_text": "Wait for them to contact again",
+            "is_correct": false
+          },
+          {
+            "option_text": "Delete the message",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A good next action is to send a short reply and invite them to book a call. This continues the conversation and moves them toward becoming a client."
+      },
+      {
+        "question": "What makes the system useful?",
+        "options": [
+          {
+            "option_text": "Reading about it",
+            "is_correct": false
+          },
+          {
+            "option_text": "Using it with real leads",
+            "is_correct": true
+          },
+          {
+            "option_text": "Setting it up once and forgetting it",
+            "is_correct": false
+          },
+          {
+            "option_text": "Having many empty stages",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The system only becomes useful when you actually use it with real leads. Theory and setup are important, but practical application is what brings results."
+      }
+    ]
+  }
+]
