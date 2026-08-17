@@ -1,0 +1,1517 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "what-is-crm",
+    "title": "What Is a CRM?",
+    "moduleWeek": 9,
+    "moduleName": "CRM Overview",
+    "learningGoal": "Understand what a CRM does and why LeadProspectrr should be treated as one connected business system.",
+    "sections": [
+      {
+        "title": "CRM Explained",
+        "icon": "target",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "users",
+            "color": "blue",
+            "title": "Customer Relationship Management",
+            "description": "CRM stands for Customer Relationship Management. At its simplest, a CRM keeps track of the people and businesses you communicate with."
+          },
+          {
+            "icon": "help",
+            "color": "cyan",
+            "title": "Questions a CRM Answers",
+            "description": "Who is this person? How did they find us? What are they interested in? What have we sent them? Have they replied? Have they booked? What should happen next?"
+          }
+        ]
+      },
+      {
+        "title": "Contact List vs CRM",
+        "icon": "document",
+        "color": "green",
+        "items": [
+          {
+            "icon": "list",
+            "color": "amber",
+            "title": "Contact List Stores Information",
+            "description": "A contact list is just a database of names and details. It does not help you act on that information."
+          },
+          {
+            "icon": "settings",
+            "color": "green",
+            "title": "CRM Helps You Act",
+            "description": "A CRM tracks conversations, appointments, tasks, notes, sales opportunities, tags, custom fields, documents, payments, and automated follow-up."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Every lead should have a clear next step. A CRM is not just storage—it is a system for action.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Think About Your Current System",
+        "description": "How do you currently track leads? Spreadsheets? Sticky notes? Memory?"
+      },
+      {
+        "number": 2,
+        "title": "Identify Gaps",
+        "description": "What information do you lose or forget between first contact and sale?"
+      },
+      {
+        "number": 3,
+        "title": "List Your Needs",
+        "description": "Write down the top 3 things you need a CRM to help you track."
+      }
+    ],
+    "nextLessonTitle": "The Eight-Part LeadProspectrr System",
+    "quizzes": [
+      {
+        "question": "What does CRM stand for?",
+        "options": [
+          {
+            "option_text": "Customer Revenue Management",
+            "is_correct": false
+          },
+          {
+            "option_text": "Customer Relationship Management",
+            "is_correct": true
+          },
+          {
+            "option_text": "Company Resource Management",
+            "is_correct": false
+          },
+          {
+            "option_text": "Contact Record Management",
+            "is_correct": false
+          }
+        ],
+        "explanation": "CRM stands for Customer Relationship Management. It is a system for managing interactions with current and potential customers."
+      },
+      {
+        "question": "What is the difference between a contact list and a CRM?",
+        "options": [
+          {
+            "option_text": "There is no difference",
+            "is_correct": false
+          },
+          {
+            "option_text": "A contact list stores information; a CRM helps you act on that information",
+            "is_correct": true
+          },
+          {
+            "option_text": "Contact lists are more expensive",
+            "is_correct": false
+          },
+          {
+            "option_text": "CRMs do not store contact information",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A contact list is passive storage. A CRM actively helps you track interactions, automate follow-up, and manage the customer journey."
+      },
+      {
+        "question": "What is the key rule of a working CRM?",
+        "options": [
+          {
+            "option_text": "Store as much data as possible",
+            "is_correct": false
+          },
+          {
+            "option_text": "Every lead should have a clear next step",
+            "is_correct": true
+          },
+          {
+            "option_text": "Never delete anything",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only track paying customers",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The key rule is that every lead should have a clear next step. A CRM is an action system, not just a storage system."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "eight-part-system",
+    "title": "The Eight-Part LeadProspectrr System",
+    "moduleWeek": 9,
+    "moduleName": "CRM Overview",
+    "learningGoal": "Understand the overall flow of LeadProspectrr and how the eight parts connect.",
+    "sections": [
+      {
+        "title": "The Eight Parts",
+        "icon": "layout",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "1. Attract",
+            "description": "Bring people to your business through websites, funnels, social media, email, reviews, advertising, prospecting, and referrals."
+          },
+          {
+            "icon": "download",
+            "color": "cyan",
+            "title": "2. Capture",
+            "description": "Collect information through forms, surveys, calendar bookings, website chat, calls, text messages, imports, or manual entry."
+          },
+          {
+            "icon": "folder",
+            "color": "green",
+            "title": "3. Organize",
+            "description": "Store and classify people using contact records, tags, custom fields, notes, tasks, appointments, companies, and opportunities."
+          },
+          {
+            "icon": "chat",
+            "color": "amber",
+            "title": "4. Communicate",
+            "description": "Manage supported communication such as email, SMS, phone calls, website chat, and connected social messages."
+          }
+        ]
+      },
+      {
+        "title": "The Final Four",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "5. Track",
+            "description": "Use Opportunities and Pipelines to track possible sales, stages, values, statuses, and assigned team members."
+          },
+          {
+            "icon": "play",
+            "color": "indigo",
+            "title": "6. Follow Up",
+            "description": "Use Workflows for repeatable actions such as emails, texts, reminders, tasks, tags, and internal notifications."
+          },
+          {
+            "icon": "check",
+            "color": "rose",
+            "title": "7. Sell",
+            "description": "Support the sales process with calendars, documents, contracts, invoices, payment links, products, and subscriptions."
+          },
+          {
+            "icon": "chart",
+            "color": "teal",
+            "title": "8. Report",
+            "description": "Use dashboards and reports to review contacts, appointments, opportunities, pipeline value, payments, revenue, and other activity."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "LeadProspectrr connects all eight parts of the customer journey. Understanding the flow helps you see how each feature supports the others.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Map Your Journey",
+        "description": "Choose one service you sell and map its customer journey using the eight headings."
+      },
+      {
+        "number": 2,
+        "title": "Identify Weak Points",
+        "description": "Which of the eight parts is weakest in your current process?"
+      },
+      {
+        "number": 3,
+        "title": "Plan Improvements",
+        "description": "Write down one action you could take to strengthen each weak point."
+      }
+    ],
+    "nextLessonTitle": "Contacts — The Center of the CRM",
+    "quizzes": [
+      {
+        "question": "What are the eight parts of the LeadProspectrr system?",
+        "options": [
+          {
+            "option_text": "Email, Phone, Text, Chat, Social, Video, Mail, In-person",
+            "is_correct": false
+          },
+          {
+            "option_text": "Attract, Capture, Organize, Communicate, Track, Follow Up, Sell, Report",
+            "is_correct": true
+          },
+          {
+            "option_text": "Prospecting, Pitching, Closing, Delivering, Billing, Supporting, Retaining, Growing",
+            "is_correct": false
+          },
+          {
+            "option_text": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Holiday",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The eight parts are: Attract, Capture, Organize, Communicate, Track, Follow Up, Sell, and Report. This covers the complete customer journey."
+      },
+      {
+        "question": "Which part involves using Opportunities and Pipelines?",
+        "options": [
+          {
+            "option_text": "Communicate",
+            "is_correct": false
+          },
+          {
+            "option_text": "Track",
+            "is_correct": true
+          },
+          {
+            "option_text": "Attract",
+            "is_correct": false
+          },
+          {
+            "option_text": "Report",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The Track phase uses Opportunities and Pipelines to monitor possible sales, stages, values, and statuses."
+      },
+      {
+        "question": "What is the purpose of the Follow Up phase?",
+        "options": [
+          {
+            "option_text": "To find new customers",
+            "is_correct": false
+          },
+          {
+            "option_text": "To use Workflows for repeatable actions like emails, texts, and reminders",
+            "is_correct": true
+          },
+          {
+            "option_text": "To create invoices",
+            "is_correct": false
+          },
+          {
+            "option_text": "To delete old contacts",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The Follow Up phase uses Workflows to automate repeatable actions like sending emails, texts, reminders, and creating tasks."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "slug": "contacts-center",
+    "title": "Contacts — The Center of the CRM",
+    "moduleWeek": 9,
+    "moduleName": "CRM Overview",
+    "learningGoal": "Understand how LeadProspectrr stores information about people and businesses.",
+    "sections": [
+      {
+        "title": "What a Contact Record Includes",
+        "icon": "user",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "Basic Information",
+            "description": "Name, Email, Phone number, Company, Source. The foundation of every contact record."
+          },
+          {
+            "icon": "tag",
+            "color": "cyan",
+            "title": "Organization",
+            "description": "Tags, Custom fields. Help you classify and segment contacts for targeted action."
+          },
+          {
+            "icon": "document",
+            "color": "green",
+            "title": "Activity History",
+            "description": "Notes, Tasks, Appointments, Conversations, Opportunities, Documents, Payments."
+          }
+        ]
+      },
+      {
+        "title": "Example: Sarah's Journey",
+        "icon": "star",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "download",
+            "color": "blue",
+            "title": "Sarah Downloads a Guide",
+            "description": "LeadProspectrr creates Sarah as a contact, records the form she submitted, adds a tag, and starts a follow-up workflow."
+          },
+          {
+            "icon": "chat",
+            "color": "cyan",
+            "title": "Future Interactions",
+            "description": "All future messages, appointments, opportunities, and payment activity are connected to Sarah's contact record."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The contact record is the center of everything. All activity, communication, and history connects back to the contact.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Open a Contact Record",
+        "description": "Find one existing contact in LeadProspectrr and review their complete record."
+      },
+      {
+        "number": 2,
+        "title": "Check for Completeness",
+        "description": "Can you find their source, tags, notes, conversations, appointments, and opportunities?"
+      },
+      {
+        "number": 3,
+        "title": "Ask the Key Question",
+        "description": "Could another team member understand what has happened and what should happen next?"
+      }
+    ],
+    "nextLessonTitle": "Conversations and Calendars",
+    "quizzes": [
+      {
+        "question": "What is at the center of the LeadProspectrr CRM?",
+        "options": [
+          {
+            "option_text": "The dashboard",
+            "is_correct": false
+          },
+          {
+            "option_text": "The contact record",
+            "is_correct": true
+          },
+          {
+            "option_text": "The settings menu",
+            "is_correct": false
+          },
+          {
+            "option_text": "The reports section",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The contact record is the center of the CRM. All activity, communication, appointments, and opportunities connect back to the contact."
+      },
+      {
+        "question": "What information can a contact record include?",
+        "options": [
+          {
+            "option_text": "Only name and email",
+            "is_correct": false
+          },
+          {
+            "option_text": "Name, email, phone, company, source, tags, custom fields, notes, tasks, appointments, conversations, opportunities, documents, and payments",
+            "is_correct": true
+          },
+          {
+            "option_text": "Just the phone number",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only tags",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A complete contact record includes basic information, organization tags and fields, and full activity history including notes, tasks, appointments, conversations, opportunities, documents, and payments."
+      },
+      {
+        "question": "Why is the contact record important?",
+        "options": [
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          },
+          {
+            "option_text": "All activity and history connects to it, creating a complete picture of the relationship",
+            "is_correct": true
+          },
+          {
+            "option_text": "It takes up storage space",
+            "is_correct": false
+          },
+          {
+            "option_text": "It slows down the system",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The contact record is important because it connects all activity, communication, and history in one place, giving you a complete picture of each relationship."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "slug": "conversations-calendars",
+    "title": "Conversations and Calendars",
+    "moduleWeek": 9,
+    "moduleName": "CRM Overview",
+    "learningGoal": "Understand how communication and appointments connect back to the contact record.",
+    "sections": [
+      {
+        "title": "Conversations",
+        "icon": "chat",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "chat",
+            "color": "blue",
+            "title": "Unified Communication",
+            "description": "The Conversations area keeps supported messages together so communication is not scattered across separate systems."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Connected to Contacts",
+            "description": "Every message is linked to the contact record, creating a complete communication history."
+          }
+        ]
+      },
+      {
+        "title": "Calendars",
+        "icon": "calendar",
+        "color": "green",
+        "items": [
+          {
+            "icon": "calendar",
+            "color": "green",
+            "title": "Booking Made Easy",
+            "description": "Calendars allow prospects and clients to book available times: discovery calls, strategy sessions, coaching, consultations, onboarding, speaking enquiries, service appointments."
+          },
+          {
+            "icon": "bell",
+            "color": "amber",
+            "title": "Automated Actions",
+            "description": "Bookings can trigger confirmation messages, reminders, workflow actions, opportunity updates, and internal notifications."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Conversations and Calendars keep communication and appointments organized and connected to contacts. Everything is in one place.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Test Conversations",
+        "description": "Using a test contact, send or record a message and check that it appears in their contact record."
+      },
+      {
+        "number": 2,
+        "title": "Test Calendars",
+        "description": "Book an appointment for a test contact and verify it appears in their contact record."
+      },
+      {
+        "number": 3,
+        "title": "Review the Connection",
+        "description": "Open the contact record and confirm both the message and appointment appear correctly."
+      }
+    ],
+    "nextLessonTitle": "Opportunities and Pipelines",
+    "quizzes": [
+      {
+        "question": "What does the Conversations area do?",
+        "options": [
+          {
+            "option_text": "Deletes all messages",
+            "is_correct": false
+          },
+          {
+            "option_text": "Keeps supported messages together in one place",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only stores emails",
+            "is_correct": false
+          },
+          {
+            "option_text": "Blocks all communication",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The Conversations area unifies communication channels so messages are not scattered across separate systems. Everything connects to the contact record."
+      },
+      {
+        "question": "What can calendar bookings trigger?",
+        "options": [
+          {
+            "option_text": "Nothing happens",
+            "is_correct": false
+          },
+          {
+            "option_text": "Confirmation messages, reminders, workflow actions, opportunity updates, and internal notifications",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only deletion of the contact",
+            "is_correct": false
+          },
+          {
+            "option_text": "Automatic payment only",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Calendar bookings can trigger multiple automated actions: confirmations, reminders, workflows, opportunity updates, and notifications to your team."
+      },
+      {
+        "question": "Why is it important that conversations and calendars connect to contacts?",
+        "options": [
+          {
+            "option_text": "It is not important",
+            "is_correct": false
+          },
+          {
+            "option_text": "It creates a complete history of all interactions in one place",
+            "is_correct": true
+          },
+          {
+            "option_text": "It makes the system slower",
+            "is_correct": false
+          },
+          {
+            "option_text": "It costs extra money",
+            "is_correct": false
+          }
+        ],
+        "explanation": "When conversations and calendars connect to contacts, you get a complete history of all interactions in one place. This helps with context and follow-up."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "slug": "opportunities-pipelines-overview",
+    "title": "Opportunities and Pipelines",
+    "moduleWeek": 9,
+    "moduleName": "CRM Overview",
+    "learningGoal": "Understand the difference between a contact and a possible sale.",
+    "sections": [
+      {
+        "title": "Contact vs Opportunity",
+        "icon": "users",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "A Contact is the Person",
+            "description": "A contact is the person or business you are communicating with. They may or may not be interested in buying."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "An Opportunity is a Possible Sale",
+            "description": "An opportunity is a possible sale connected to that person. It represents potential revenue."
+          }
+        ]
+      },
+      {
+        "title": "Pipelines",
+        "icon": "layout",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "eye",
+            "color": "purple",
+            "title": "Visual Sales Process",
+            "description": "A pipeline is a visual representation of your sales process. It shows where each opportunity stands."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Example Pipeline",
+            "description": "New Lead → Contacted → Appointment Booked → Proposal Sent → Decision Pending → Won/Lost"
+          }
+        ]
+      },
+      {
+        "title": "What Pipelines Help You See",
+        "icon": "search",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "help",
+            "color": "blue",
+            "title": "Key Questions",
+            "description": "Who needs follow-up? Who has booked? Who has received a proposal? Which deals have gone quiet? What is the value of open opportunities?"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A contact is the person. An opportunity is a possible sale. Pipelines help you track and manage the sales process visually.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Sketch Your Pipeline",
+        "description": "Create or sketch one pipeline for your business with 4-6 stages."
+      },
+      {
+        "number": 2,
+        "title": "Examples to Consider",
+        "description": "Speaker: Speaking Enquiry → Qualification → Call → Proposal → Contract → Booked. Consultant: New Enquiry → Discovery Call → Proposal → Follow-Up → Won/Lost"
+      },
+      {
+        "number": 3,
+        "title": "Define Your Stages",
+        "description": "Write down what happens at each stage and what moves someone to the next stage."
+      }
+    ],
+    "nextLessonTitle": "Sites, Forms, Funnels, and Lead Capture",
+    "quizzes": [
+      {
+        "question": "What is the difference between a contact and an opportunity?",
+        "options": [
+          {
+            "option_text": "There is no difference",
+            "is_correct": false
+          },
+          {
+            "option_text": "A contact is the person; an opportunity is a possible sale connected to that person",
+            "is_correct": true
+          },
+          {
+            "option_text": "Contacts are free; opportunities cost money",
+            "is_correct": false
+          },
+          {
+            "option_text": "Opportunities are not stored in LeadProspectrr",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A contact represents the person or business. An opportunity represents a possible sale connected to that contact. One contact can have multiple opportunities."
+      },
+      {
+        "question": "What is a pipeline?",
+        "options": [
+          {
+            "option_text": "A type of email",
+            "is_correct": false
+          },
+          {
+            "option_text": "A visual representation of your sales process",
+            "is_correct": true
+          },
+          {
+            "option_text": "A type of contact",
+            "is_correct": false
+          },
+          {
+            "option_text": "A payment method",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A pipeline visually represents your sales process with stages like New Lead, Contacted, Appointment Booked, Proposal Sent, and Won/Lost."
+      },
+      {
+        "question": "What can pipelines help you see?",
+        "options": [
+          {
+            "option_text": "Only the weather forecast",
+            "is_correct": false
+          },
+          {
+            "option_text": "Who needs follow-up, who has booked, who received proposals, deal values, and won/lost sales",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only email addresses",
+            "is_correct": false
+          },
+          {
+            "option_text": "Nothing useful",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Pipelines help you see who needs follow-up, who has booked appointments, who received proposals, which deals have gone quiet, the value of open opportunities, and which sales were won or lost."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "slug": "sites-forms-funnels",
+    "title": "Sites, Forms, Funnels, and Lead Capture",
+    "moduleWeek": 9,
+    "moduleName": "CRM Overview",
+    "learningGoal": "Understand how people enter the CRM and what happens after they take action.",
+    "sections": [
+      {
+        "title": "Lead Entry Points",
+        "icon": "target",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "globe",
+            "color": "blue",
+            "title": "Websites and Funnels",
+            "description": "LeadProspectrr uses websites, funnels, landing pages, forms, surveys, chat widgets, and calendars to capture leads."
+          },
+          {
+            "icon": "download",
+            "color": "cyan",
+            "title": "Example Lead Journey",
+            "description": "Visitor lands on page → completes form → contact created → tag added → workflow begins → confirmation sent → appointment booked → opportunity created."
+          }
+        ]
+      },
+      {
+        "title": "The Key Idea",
+        "icon": "star",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "lightbulb",
+            "color": "amber",
+            "title": "Page is Just the Beginning",
+            "description": "The page itself is only the beginning. The value comes from what happens after the visitor takes action."
+          },
+          {
+            "icon": "arrow-right",
+            "color": "green",
+            "title": "Focus on the Follow-Up",
+            "description": "A beautiful page with no follow-up is worthless. A simple page with great follow-up is powerful."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The page is just the beginning. The real value comes from what happens after the visitor takes action—contact creation, tagging, workflows, and follow-up.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Pick One Form or Page",
+        "description": "Choose one existing form or landing page in your LeadProspectrr account."
+      },
+      {
+        "number": 2,
+        "title": "Audit the Follow-Up",
+        "description": "Answer: What happens after submission? Is a contact created? Is the source recorded? Is a tag added? Does someone get notified?"
+      },
+      {
+        "number": 3,
+        "title": "Identify Gaps",
+        "description": "Does follow-up begin? Should an opportunity be created? Fix any missing pieces."
+      }
+    ],
+    "nextLessonTitle": "Workflows and Follow-Up",
+    "quizzes": [
+      {
+        "question": "How do people enter LeadProspectrr?",
+        "options": [
+          {
+            "option_text": "Only by phone call",
+            "is_correct": false
+          },
+          {
+            "option_text": "Through websites, funnels, landing pages, forms, surveys, chat widgets, and calendars",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only by email",
+            "is_correct": false
+          },
+          {
+            "option_text": "They cannot enter the system",
+            "is_correct": false
+          }
+        ],
+        "explanation": "People enter LeadProspectrr through multiple channels: websites, funnels, landing pages, forms, surveys, chat widgets, and calendar bookings."
+      },
+      {
+        "question": "What is the key idea about pages and funnels?",
+        "options": [
+          {
+            "option_text": "The page design is everything",
+            "is_correct": false
+          },
+          {
+            "option_text": "The page is just the beginning; the value comes from what happens after the visitor takes action",
+            "is_correct": true
+          },
+          {
+            "option_text": "Pages should have no follow-up",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only beautiful pages work",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The page or funnel is just the entry point. The real value comes from the follow-up: contact creation, tagging, workflows, notifications, and nurture sequences."
+      },
+      {
+        "question": "What happens in a typical lead journey?",
+        "options": [
+          {
+            "option_text": "Visitor lands on page and nothing else happens",
+            "is_correct": false
+          },
+          {
+            "option_text": "Visitor completes form, contact created, tag added, workflow begins, confirmation sent, appointment booked, opportunity created",
+            "is_correct": true
+          },
+          {
+            "option_text": "Visitor is automatically deleted",
+            "is_correct": false
+          },
+          {
+            "option_text": "Visitor receives spam",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A typical lead journey includes: landing on page, completing form, contact creation, tagging, workflow trigger, confirmation email, appointment booking, and opportunity creation."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "slug": "workflows-followup",
+    "title": "Workflows and Follow-Up",
+    "moduleWeek": 9,
+    "moduleName": "CRM Overview",
+    "learningGoal": "Understand how LeadProspectrr can automate repeatable actions.",
+    "sections": [
+      {
+        "title": "What Are Workflows?",
+        "icon": "play",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "settings",
+            "color": "blue",
+            "title": "Automatic Actions",
+            "description": "A workflow is a set of automatic actions triggered by an event. They save time and ensure consistency."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Example Trigger",
+            "description": "Trigger: A visitor completes a consultation form. This starts the workflow."
+          }
+        ]
+      },
+      {
+        "title": "Possible Workflow Actions",
+        "icon": "checklist",
+        "color": "green",
+        "items": [
+          {
+            "icon": "tag",
+            "color": "blue",
+            "title": "1. Add a Tag",
+            "description": "Organize and segment the contact based on their action."
+          },
+          {
+            "icon": "mail",
+            "color": "cyan",
+            "title": "2. Send Confirmation Email",
+            "description": "Let them know their request was received."
+          },
+          {
+            "icon": "message",
+            "color": "amber",
+            "title": "3. Send Text Message",
+            "description": "Reach them on their phone with important updates."
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "4. Create Opportunity",
+            "description": "Add them to your sales pipeline."
+          },
+          {
+            "icon": "user",
+            "color": "indigo",
+            "title": "5. Assign Contact",
+            "description": "Give ownership to a specific team member."
+          },
+          {
+            "icon": "check",
+            "color": "rose",
+            "title": "6. Create Task",
+            "description": "Ensure someone follows up manually if needed."
+          },
+          {
+            "icon": "clock",
+            "color": "amber",
+            "title": "7. Wait",
+            "description": "Pause before the next action."
+          },
+          {
+            "icon": "search",
+            "color": "cyan",
+            "title": "8. Check for Reply",
+            "description": "See if they responded before sending more messages."
+          },
+          {
+            "icon": "send",
+            "color": "green",
+            "title": "9. Send Follow-Up",
+            "description": "Continue the conversation if no reply was received."
+          },
+          {
+            "icon": "stop",
+            "color": "rose",
+            "title": "10. Stop Sequence",
+            "description": "End the workflow when they book an appointment or complete the desired action."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Automate a clear process. If the manual process does not make sense, automating it will not fix it. Map the process first, then automate.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Choose a Repeatable Task",
+        "description": "Pick one task you do repeatedly: replying to enquiries, sending reminders, following up after proposals, asking for reviews."
+      },
+      {
+        "number": 2,
+        "title": "Write the Manual Process",
+        "description": "Document each step you currently take manually."
+      },
+      {
+        "number": 3,
+        "title": "Identify Automation Opportunities",
+        "description": "Which steps could be automated? Which need human touch?"
+      }
+    ],
+    "nextLessonTitle": "Payments, Documents, and Reputation",
+    "quizzes": [
+      {
+        "question": "What is a workflow?",
+        "options": [
+          {
+            "option_text": "A type of contact",
+            "is_correct": false
+          },
+          {
+            "option_text": "A set of automatic actions triggered by an event",
+            "is_correct": true
+          },
+          {
+            "option_text": "A payment method",
+            "is_correct": false
+          },
+          {
+            "option_text": "A report type",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A workflow is a series of automatic actions triggered by an event, such as form submission, tag application, or appointment booking."
+      },
+      {
+        "question": "What can workflow actions include?",
+        "options": [
+          {
+            "option_text": "Only sending emails",
+            "is_correct": false
+          },
+          {
+            "option_text": "Adding tags, sending emails and texts, creating opportunities, assigning contacts, creating tasks, waiting, and checking for replies",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only deleting contacts",
+            "is_correct": false
+          },
+          {
+            "option_text": "Nothing, workflows do nothing",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Workflows can perform many actions: add tags, send emails and texts, create opportunities, assign contacts, create tasks, wait, check for replies, and much more."
+      },
+      {
+        "question": "What is the key idea about workflows?",
+        "options": [
+          {
+            "option_text": "Automate everything without thinking",
+            "is_correct": false
+          },
+          {
+            "option_text": "Automate a clear process. If the manual process does not make sense, automating it will not fix it.",
+            "is_correct": true
+          },
+          {
+            "option_text": "Never use workflows",
+            "is_correct": false
+          },
+          {
+            "option_text": "Workflows replace all human interaction",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The key is to automate a clear, working process. Map out the manual process first, then automate it. Automation amplifies good processes and bad processes alike."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 8,
+    "slug": "payments-documents-reputation",
+    "title": "Payments, Documents, and Reputation",
+    "moduleWeek": 9,
+    "moduleName": "CRM Overview",
+    "learningGoal": "Understand how LeadProspectrr supports the later stages of the customer journey.",
+    "sections": [
+      {
+        "title": "Documents and Agreements",
+        "icon": "document",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "file",
+            "color": "blue",
+            "title": "Paperwork Management",
+            "description": "Depending on your setup, you may manage proposals, documents, contracts, and electronic signatures inside LeadProspectrr."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Connected to Contacts",
+            "description": "All documents are linked to the contact record for easy access and tracking."
+          }
+        ]
+      },
+      {
+        "title": "Payments",
+        "icon": "credit-card",
+        "color": "green",
+        "items": [
+          {
+            "icon": "credit-card",
+            "color": "green",
+            "title": "Payment Tools",
+            "description": "Payment tools may include invoices, payment links, products, order forms, and subscriptions."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Integrated with CRM",
+            "description": "Payment activity is recorded on the contact record, giving you a complete financial history."
+          }
+        ]
+      },
+      {
+        "title": "Reputation Management",
+        "icon": "star",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "message",
+            "color": "amber",
+            "title": "Review Process",
+            "description": "A simple review process: Service completed → workflow sends review request → customer follows link → business monitors response → relationship continues."
+          },
+          {
+            "icon": "users",
+            "color": "purple",
+            "title": "Build Trust",
+            "description": "Reviews and testimonials build trust with future prospects."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The customer journey does not end at the sale. Documents, payments, and reputation management support the complete relationship lifecycle.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Map Your Post-Sale Process",
+        "description": "What happens after someone says yes to working with you?"
+      },
+      {
+        "number": 2,
+        "title": "List Requirements",
+        "description": "What must they sign? What do they pay? What do they receive? What happens after delivery?"
+      },
+      {
+        "number": 3,
+        "title": "Plan Your Review Process",
+        "description": "How will you ask for reviews? When? What workflow will trigger the request?"
+      }
+    ],
+    "nextLessonTitle": "Dashboards and Reporting",
+    "quizzes": [
+      {
+        "question": "What payment tools might LeadProspectrr include?",
+        "options": [
+          {
+            "option_text": "Only cash payments",
+            "is_correct": false
+          },
+          {
+            "option_text": "Invoices, payment links, products, order forms, and subscriptions",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only checks",
+            "is_correct": false
+          },
+          {
+            "option_text": "No payment tools",
+            "is_correct": false
+          }
+        ],
+        "explanation": "LeadProspectrr can include various payment tools: invoices, payment links, products, order forms, and subscriptions, all connected to contact records."
+      },
+      {
+        "question": "What is a simple review process?",
+        "options": [
+          {
+            "option_text": "Never ask for reviews",
+            "is_correct": false
+          },
+          {
+            "option_text": "Service completed → workflow sends review request → customer follows link → business monitors response → relationship continues",
+            "is_correct": true
+          },
+          {
+            "option_text": "Buy fake reviews",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only ask unhappy customers",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A good review process uses workflows to automatically request reviews after service completion, making it easy for customers to leave feedback."
+      },
+      {
+        "question": "Why are documents connected to contacts important?",
+        "options": [
+          {
+            "option_text": "They take up storage space",
+            "is_correct": false
+          },
+          {
+            "option_text": "They provide easy access to proposals, contracts, and agreements in one place",
+            "is_correct": true
+          },
+          {
+            "option_text": "They are not important",
+            "is_correct": false
+          },
+          {
+            "option_text": "They slow down the system",
+            "is_correct": false
+          }
+        ],
+        "explanation": "When documents are connected to contacts, you have easy access to all proposals, contracts, and agreements in one place, creating a complete record of the relationship."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 9,
+    "slug": "dashboards-reporting",
+    "title": "Dashboards and Reporting",
+    "moduleWeek": 9,
+    "moduleName": "CRM Overview",
+    "learningGoal": "Understand how reporting helps you see what is happening in the business.",
+    "sections": [
+      {
+        "title": "What Can Be Reported",
+        "icon": "chart",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "users",
+            "color": "blue",
+            "title": "Contact Activity",
+            "description": "Contacts, conversations, calls, appointments."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Sales Metrics",
+            "description": "Opportunities, pipeline value, conversion activity."
+          },
+          {
+            "icon": "credit-card",
+            "color": "amber",
+            "title": "Financial Data",
+            "description": "Payments, revenue, outstanding invoices."
+          }
+        ]
+      },
+      {
+        "title": "Questions Reports Answer",
+        "icon": "help",
+        "color": "green",
+        "items": [
+          {
+            "icon": "question",
+            "color": "blue",
+            "title": "Key Business Questions",
+            "description": "How many new leads? Where did they come from? How many booked appointments? How many opportunities are open? Where are deals getting stuck? How much potential business is in the pipeline? How many sales were won? What revenue was collected?"
+          }
+        ]
+      },
+      {
+        "title": "Key Idea",
+        "icon": "star",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "lightbulb",
+            "color": "amber",
+            "title": "Dashboard Shows What Is Happening",
+            "description": "A dashboard shows what is happening. It does not replace a clear sales and follow-up process."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Dashboards and reports show what is happening in your business. Use them to make informed decisions, but remember they complement—do not replace—your sales process.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Choose Three Numbers",
+        "description": "Pick three metrics that would help you make better decisions each week."
+      },
+      {
+        "number": 2,
+        "title": "Plan Your Response",
+        "description": "Decide what action you would take if each number was too low."
+      },
+      {
+        "number": 3,
+        "title": "Set Up Dashboard",
+        "description": "Configure your LeadProspectrr dashboard to show these key metrics."
+      }
+    ],
+    "nextLessonTitle": "Build Your First Connected CRM Journey",
+    "quizzes": [
+      {
+        "question": "What can LeadProspectrr report on?",
+        "options": [
+          {
+            "option_text": "Nothing",
+            "is_correct": false
+          },
+          {
+            "option_text": "Contacts, conversations, appointments, opportunities, pipeline value, conversion activity, payments, and revenue",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only email addresses",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only the weather",
+            "is_correct": false
+          }
+        ],
+        "explanation": "LeadProspectrr can report on many areas: contacts, conversations, calls, appointments, opportunities, pipeline value, conversion activity, payments, and revenue."
+      },
+      {
+        "question": "What is the key idea about dashboards?",
+        "options": [
+          {
+            "option_text": "They replace the need for a sales process",
+            "is_correct": false
+          },
+          {
+            "option_text": "They show what is happening but do not replace a clear sales and follow-up process",
+            "is_correct": true
+          },
+          {
+            "option_text": "They are not useful",
+            "is_correct": false
+          },
+          {
+            "option_text": "They automatically fix problems",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Dashboards show what is happening in your business, but they complement—do not replace—your sales and follow-up processes. You still need clear processes."
+      },
+      {
+        "question": "What questions should reports help answer?",
+        "options": [
+          {
+            "option_text": "Only the CEO's salary",
+            "is_correct": false
+          },
+          {
+            "option_text": "How many new leads, where they came from, appointments booked, opportunities open, deals stuck, pipeline value, sales won, and revenue collected",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only employee birthdays",
+            "is_correct": false
+          },
+          {
+            "option_text": "What to have for lunch",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Reports should answer key business questions: lead volume, sources, appointments, opportunities, pipeline value, conversions, and revenue."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 10,
+    "slug": "build-connected-journey",
+    "title": "Build Your First Connected CRM Journey",
+    "moduleWeek": 9,
+    "moduleName": "CRM Overview",
+    "learningGoal": "Bring the main areas together into one working customer journey.",
+    "sections": [
+      {
+        "title": "Example: Consultation Request Journey",
+        "icon": "layout",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "The Complete Flow",
+            "description": "Visitor reaches landing page → completes form → contact created → tag added → workflow sends confirmation → opportunity created → contact books appointment → reminders sent → consultation takes place → proposal sent → opportunity marked won/lost → next follow-up begins → review request sent → dashboard reviewed."
+          }
+        ]
+      },
+      {
+        "title": "Beginner Setup Order",
+        "icon": "checklist",
+        "color": "green",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "1. Add or Import Contacts",
+            "description": "Start with the people you already know."
+          },
+          {
+            "icon": "settings",
+            "color": "cyan",
+            "title": "2. Create Contact Fields",
+            "description": "Set up custom fields you need for your business."
+          },
+          {
+            "icon": "tag",
+            "color": "amber",
+            "title": "3. Create Useful Tags",
+            "description": "Organize contacts by source, interest, or status."
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "4. Set Up One Pipeline",
+            "description": "Create a simple sales pipeline with 4-6 stages."
+          },
+          {
+            "icon": "calendar",
+            "color": "green",
+            "title": "5. Connect One Calendar",
+            "description": "Set up booking for consultations or discovery calls."
+          },
+          {
+            "icon": "form",
+            "color": "indigo",
+            "title": "6. Create One Lead Form",
+            "description": "Build a simple form to capture new leads."
+          },
+          {
+            "icon": "mail",
+            "color": "rose",
+            "title": "7. Create Confirmation Message",
+            "description": "Set up a thank-you email for form submissions."
+          },
+          {
+            "icon": "play",
+            "color": "teal",
+            "title": "8. Create Follow-Up Workflow",
+            "description": "Build a simple workflow for new leads."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "9. Test the Full Journey",
+            "description": "Use your own email to test everything works."
+          },
+          {
+            "icon": "chart",
+            "color": "amber",
+            "title": "10. Review Results",
+            "description": "Check your dashboard and make improvements."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A working six-step process is more useful than a complicated twenty-step process that nobody uses. Start simple, test thoroughly, then improve.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Map Your Journey",
+        "description": "Choose one real customer journey and map it using the eight LeadProspectrr parts."
+      },
+      {
+        "number": 2,
+        "title": "Answer the Questions",
+        "description": "How do they enter? What is captured? How are they organized? What communication happens? When do they become an opportunity? What pipeline stage? What follow-up? How do they book? How do they buy? What happens after? What will you measure?"
+      },
+      {
+        "number": 3,
+        "title": "Build and Test",
+        "description": "Use your own email address to test the complete journey from form to pipeline."
+      }
+    ],
+    "nextLessonTitle": "Module 9 Complete",
+    "quizzes": [
+      {
+        "question": "What is the recommended beginner setup order?",
+        "options": [
+          {
+            "option_text": "Start with complex workflows first",
+            "is_correct": false
+          },
+          {
+            "option_text": "Contacts, fields, tags, pipeline, calendar, form, confirmation, workflow, test, review",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only set up payments",
+            "is_correct": false
+          },
+          {
+            "option_text": "Do everything at once",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The recommended order is: add contacts, create fields, create tags, set up pipeline, connect calendar, create form, create confirmation, create workflow, test, and review."
+      },
+      {
+        "question": "Why test with your own email?",
+        "options": [
+          {
+            "option_text": "To spam yourself",
+            "is_correct": false
+          },
+          {
+            "option_text": "To experience the journey as a real lead would and catch any issues",
+            "is_correct": true
+          },
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          },
+          {
+            "option_text": "To delete the test data",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Testing with your own email lets you experience the complete journey as a real lead would, helping you catch issues before real prospects encounter them."
+      },
+      {
+        "question": "What is better: a simple six-step process or a complex twenty-step process?",
+        "options": [
+          {
+            "option_text": "The complex twenty-step process",
+            "is_correct": false
+          },
+          {
+            "option_text": "A working six-step process is more useful than a complicated process nobody uses",
+            "is_correct": true
+          },
+          {
+            "option_text": "Neither is useful",
+            "is_correct": false
+          },
+          {
+            "option_text": "It depends on the weather",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A simple working process is always better than a complex one that is too difficult to use. Start simple, get it working, then add complexity only if needed."
+      }
+    ]
+  }
+]
