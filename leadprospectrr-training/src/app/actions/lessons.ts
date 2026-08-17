@@ -46,10 +46,7 @@ export async function getModuleLessonsWithProgress(
   // Single query to get all lessons for this module
   const { data: lessons, error: lessonsError } = await supabase
     .from('lessons')
-    .select(`
-      id, module_id, lesson_number, title, slug, description,
-      lesson_type, video_url, duration_minutes, points, is_published, sort_order
-    `)
+    .select('*')
     .eq('module_id', moduleId)
     .eq('is_published', true)
     .order('sort_order', { ascending: true })
