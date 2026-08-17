@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { getUser } from '@/lib/auth'
 import { redirect } from 'next/navigation'
-import { getModuleLessons, getModuleLessonProgress, getUserLessonProgress } from '@/app/actions/lessons'
+import { getModuleLessonsWithProgress, getModuleLessonProgress } from '@/app/actions/lessons'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Progress } from '@/components/ui/progress'
@@ -17,11 +17,7 @@ import {
   Lock
 } from 'lucide-react'
 import Link from 'next/link'
-import { Lesson, LessonProgress } from '@/app/actions/lessons'
-
-interface LessonWithProgress extends Lesson {
-  userProgress: LessonProgress | null
-}
+import { LessonWithProgress } from '@/app/actions/lessons'
 
 interface ModulePageProps {
   params: Promise<{
@@ -52,16 +48,8 @@ export default async function ModulePage({ params }: ModulePageProps) {
     redirect('/dashboard/training')
   }
 
-  // Fetch lessons for this module
-  const lessons = await getModuleLessons(moduleId)
-  
-  // Fetch user's progress for each lesson
-  const lessonsWithProgress: LessonWithProgress[] = await Promise.all(
-    lessons.map(async (lesson) => {
-      const userProgress = await getUserLessonProgress(user.id, lesson.id)
-      return { ...lesson, userProgress }
-    })
-  )
+  // Fetch lessons with progress in a single optimized query
+  const lessonsWithProgress = await getModuleLessonsWithProgress(moduleId, user.id)
   
   // Fetch user's progress
   const progress = await getModuleLessonProgress(user.id, moduleId)
@@ -123,7 +111,7 @@ export default async function ModulePage({ params }: ModulePageProps) {
       <div>
         <h2 className="text-2xl font-bold text-slate-900 mb-6">Lessons</h2>
         
-        {lessons.length === 0 ? (
+        {lessonsWithProgress.length === 0 ? (
           <Card>
             <CardContent className="p-8 text-center">
               <BookOpen className="w-12 h-12 text-slate-300 mx-auto mb-4" />
