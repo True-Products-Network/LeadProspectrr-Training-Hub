@@ -197,7 +197,7 @@ export default async function TestModulePage({ params }: ModulePageProps) {
                                 {lesson.points} points
                               </span>
                               {lesson.userProgress?.status && (
-                                <Badge variant={isCompleted ? "success" : "default"} className="text-xs">
+                                <Badge variant={isCompleted ? "default" : "secondary"} className={`text-xs ${isCompleted ? 'bg-green-100 text-green-800 hover:bg-green-100' : ''}`}>
                                   {lesson.userProgress.status}
                                 </Badge>
                               )}
