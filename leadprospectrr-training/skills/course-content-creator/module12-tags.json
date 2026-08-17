@@ -1,0 +1,1040 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "understanding-tags",
+    "title": "Understanding Tags",
+    "moduleWeek": 12,
+    "moduleName": "Tags: Organizing Contacts with Tags",
+    "learningGoal": "Understand what a tag is, how it helps, and when another part of LeadProspectrr is a better choice.",
+    "sections": [
+      {
+        "title": "What Is a Tag?",
+        "icon": "tag",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "tag",
+            "color": "blue",
+            "title": "A Short Label",
+            "description": "A tag is a short label attached to a contact. Think of tags as labels on folders. The label helps you find a group of people who share something in common."
+          },
+          {
+            "icon": "document",
+            "color": "cyan",
+            "title": "Examples",
+            "description": "INT-Coaching, ACT-Booked-Call, STS-Qualified. One contact can have several tags telling a short story without reading every note."
+          }
+        ]
+      },
+      {
+        "title": "What Tags Can Do",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "search",
+            "color": "blue",
+            "title": "Find and Filter",
+            "description": "Search for contacts, filter contacts, build Smart Lists."
+          },
+          {
+            "icon": "mail",
+            "color": "cyan",
+            "title": "Communication",
+            "description": "Select recipients for email or SMS campaigns."
+          },
+          {
+            "icon": "play",
+            "color": "green",
+            "title": "Automation",
+            "description": "Start a workflow, guide contacts through workflow paths, record meaningful actions."
+          }
+        ]
+      },
+      {
+        "title": "What Tags Should Not Do",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "x",
+            "color": "rose",
+            "title": "Not a Replacement",
+            "description": "Tags should not replace every other part of the CRM. Use the right tool for each job."
+          },
+          {
+            "icon": "table",
+            "color": "purple",
+            "title": "Best Place for Information",
+            "description": "Shared label to group people: Tag. Details like budget or renewal date: Custom field. Broad relationship like lead or client: Contact type. Sales deal steps: Pipeline stage. Background info: Note. Reminders: Task."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Tags are short labels that group contacts. Use them for what they do best, and use other CRM features for details, deals, notes, and tasks.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Review Your Current Tags",
+        "description": "Look at tags you currently use. Are any being used for things better suited to fields, pipelines, or notes?"
+      },
+      {
+        "number": 2,
+        "title": "Identify Misused Tags",
+        "description": "Find tags storing details that should be custom fields, or tracking deals that should be in pipelines."
+      },
+      {
+        "number": 3,
+        "title": "Plan Corrections",
+        "description": "Decide which tags to keep, which to convert to other features, and which to delete."
+      }
+    ],
+    "nextLessonTitle": "Build a Simple Tagging Structure",
+    "quizzes": [
+      {
+        "question": "What is the main purpose of a tag?",
+        "options": [
+          {
+            "option_text": "To store detailed contact information like budget amounts",
+            "is_correct": false
+          },
+          {
+            "option_text": "To group contacts using a shared label for finding, filtering, and automation",
+            "is_correct": true
+          },
+          {
+            "option_text": "To replace all other CRM features",
+            "is_correct": false
+          },
+          {
+            "option_text": "To send emails directly without workflows",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Tags are short labels that group contacts who share something in common. They help with finding, filtering, communication, and automation—but they don't replace other CRM features like custom fields or pipelines."
+      },
+      {
+        "question": "Where should you store a prospect's budget information?",
+        "options": [
+          {
+            "option_text": "In a tag like Budget-5000",
+            "is_correct": false
+          },
+          {
+            "option_text": "In a custom field",
+            "is_correct": true
+          },
+          {
+            "option_text": "In the contact's first name",
+            "is_correct": false
+          },
+          {
+            "option_text": "In a workflow name",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Budget information belongs in a custom field, not a tag. Creating tags for every budget range creates too many tags and makes the list unmanageable."
+      },
+      {
+        "question": "Where should you track a deal moving from Proposal Sent to Contract Signed?",
+        "options": [
+          {
+            "option_text": "Using tags like STS-Proposal-Sent and STS-Contract-Signed",
+            "is_correct": false
+          },
+          {
+            "option_text": "In the opportunity pipeline",
+            "is_correct": true
+          },
+          {
+            "option_text": "In the contact's email address",
+            "is_correct": false
+          },
+          {
+            "option_text": "In a note only",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Sales deal stages belong in the opportunity pipeline, not tags. Pipelines are designed to track deals moving through defined steps with values and statuses."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "build-tagging-structure",
+    "title": "Build a Simple Tagging Structure",
+    "moduleWeek": 12,
+    "moduleName": "Tags: Organizing Contacts with Tags",
+    "learningGoal": "Create a shared naming structure that makes each tag easy to understand.",
+    "sections": [
+      {
+        "title": "The Three-Part Tagging Model",
+        "icon": "layout",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "heart",
+            "color": "blue",
+            "title": "INT- = Interest",
+            "description": "What does this person care about? Examples: INT-Speaking, INT-Executive-Coaching, INT-Consulting."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "ACT- = Action",
+            "description": "What has this person done? Examples: ACT-Downloaded-Guide, ACT-Booked-Call, ACT-Attended-Clinic."
+          },
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "STS- = Status",
+            "description": "Where does this person currently stand? Examples: STS-New-Lead, STS-Qualified, STS-Client."
+          }
+        ]
+      },
+      {
+        "title": "Interest Tags",
+        "icon": "heart",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "heart",
+            "color": "blue",
+            "title": "What They Care About",
+            "description": "Interest tags identify the topic, service, programme, or offer that matters to the contact. A contact can have multiple Interest tags."
+          },
+          {
+            "icon": "users",
+            "color": "cyan",
+            "title": "Examples",
+            "description": "Speaker: INT-Keynote and INT-Workshop. Coach: INT-One-to-One-Coaching and INT-Group-Coaching."
+          }
+        ]
+      },
+      {
+        "title": "Action Tags",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "What They Did",
+            "description": "Action tags record meaningful behaviour. Most useful when the action changes what should happen next."
+          },
+          {
+            "icon": "lightbulb",
+            "color": "amber",
+            "title": "Good Examples",
+            "description": "ACT-Downloaded-Guide, ACT-Attended-Clinic, ACT-Booked-Call, ACT-Requested-Proposal."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Avoid Over-Tagging",
+            "description": "Avoid creating tags for every small activity. Hundreds of tags for email opens make the list harder to use."
+          }
+        ]
+      },
+      {
+        "title": "Status Tags",
+        "icon": "target",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "Where They Stand",
+            "description": "Status tags describe the contact's current position. Require tighter control than Interest and Action tags."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Examples",
+            "description": "STS-New-Lead, STS-Qualified, STS-Client, STS-Inactive."
+          },
+          {
+            "icon": "refresh",
+            "color": "cyan",
+            "title": "Changing Status",
+            "description": "When status changes: 1) Remove old Status tag. 2) Add new Status tag. A person should not normally be both STS-New-Lead and STS-Client."
+          }
+        ]
+      },
+      {
+        "title": "Naming Rules",
+        "icon": "edit",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Good Pattern",
+            "description": "PREFIX-Clear-Description. Examples: INT-Speaking, ACT-Booked-Call, STS-Qualified."
+          },
+          {
+            "icon": "x",
+            "color": "rose",
+            "title": "Avoid These",
+            "description": "speaker interest, Interested in speaking, Booked call 2026, Hot!!!, Follow up sometime. Problems: different formats, dates in tags, opinion-based labels, vague wording."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Use the three-part model: INT- for Interest, ACT- for Action, STS- for Status. Follow the PREFIX-Clear-Description naming pattern. Avoid duplicates, dates, and vague labels.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Choose Your Service",
+        "description": "Pick one service or offer from your business."
+      },
+      {
+        "number": 2,
+        "title": "Create Three Tags",
+        "description": "Create one INT- tag, one ACT- tag, and one STS- tag for that service."
+      },
+      {
+        "number": 3,
+        "title": "Check Naming",
+        "description": "Verify each tag follows PREFIX-Clear-Description format."
+      }
+    ],
+    "nextLessonTitle": "Add and Remove Tags",
+    "quizzes": [
+      {
+        "question": "Which prefix is used for an Interest tag?",
+        "options": [
+          {
+            "option_text": "ACT-",
+            "is_correct": false
+          },
+          {
+            "option_text": "INT-",
+            "is_correct": true
+          },
+          {
+            "option_text": "STS-",
+            "is_correct": false
+          },
+          {
+            "option_text": "TAG-",
+            "is_correct": false
+          }
+        ],
+        "explanation": "INT- is the prefix for Interest tags. ACT- is for Action tags, and STS- is for Status tags."
+      },
+      {
+        "question": "What should you do when a contact's status changes from New Lead to Qualified?",
+        "options": [
+          {
+            "option_text": "Keep both STS-New-Lead and STS-Qualified tags",
+            "is_correct": false
+          },
+          {
+            "option_text": "Remove STS-New-Lead and add STS-Qualified",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete all tags and start over",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only add STS-Qualified without removing anything",
+            "is_correct": false
+          }
+        ],
+        "explanation": "When status changes, remove the old Status tag and add the new one. A contact should not normally have multiple conflicting Status tags."
+      },
+      {
+        "question": "Which tag best records that someone booked a call?",
+        "options": [
+          {
+            "option_text": "INT-Booked-Call",
+            "is_correct": false
+          },
+          {
+            "option_text": "ACT-Booked-Call",
+            "is_correct": true
+          },
+          {
+            "option_text": "STS-Booked-Call",
+            "is_correct": false
+          },
+          {
+            "option_text": "Booked call 2026",
+            "is_correct": false
+          }
+        ],
+        "explanation": "ACT-Booked-Call is correct because booking a call is an action the contact took. Avoid putting dates in tags like Booked call 2026."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "slug": "add-remove-tags",
+    "title": "Add and Remove Tags",
+    "moduleWeek": 12,
+    "moduleName": "Tags: Organizing Contacts with Tags",
+    "learningGoal": "Apply tags correctly to individual contacts and groups of contacts.",
+    "sections": [
+      {
+        "title": "Add a Tag to One Contact",
+        "icon": "user",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "search",
+            "color": "blue",
+            "title": "Steps",
+            "description": "1. Open Contacts. 2. Search for the contact. 3. Open contact record. 4. Find Tags area. 5. Select existing tag or type new approved name. 6. Confirm tag appears."
+          }
+        ]
+      },
+      {
+        "title": "Remove a Tag from One Contact",
+        "icon": "user-minus",
+        "color": "rose",
+        "items": [
+          {
+            "icon": "x",
+            "color": "rose",
+            "title": "Steps",
+            "description": "1. Open contact record. 2. Find tag to remove. 3. Select removal option. 4. Confirm tag disappeared. Removing a tag does not delete the contact or their information."
+          }
+        ]
+      },
+      {
+        "title": "Bulk Tagging",
+        "icon": "users",
+        "color": "green",
+        "items": [
+          {
+            "icon": "plus",
+            "color": "green",
+            "title": "Add Tags to Several Contacts",
+            "description": "1. Open Contacts. 2. Filter if needed. 3. Select contacts with checkboxes. 4. Choose Add Tags from bulk action bar. 5. Select tags. 6. Enter clear action name. 7. Submit. 8. Review results."
+          },
+          {
+            "icon": "minus",
+            "color": "amber",
+            "title": "Remove Tags from Several Contacts",
+            "description": "1. Select contacts. 2. Choose Remove Tags. 3. Select exact tag(s). 4. Give action clear name. 5. Submit. 6. Review results."
+          }
+        ]
+      },
+      {
+        "title": "Important Warnings",
+        "icon": "warning",
+        "color": "rose",
+        "items": [
+          {
+            "icon": "alert",
+            "color": "rose",
+            "title": "Remove All Tags Warning",
+            "description": "Use Remove all tags only when goal is to clear every tag from selected contacts. Bulk removal has no one-click undo."
+          },
+          {
+            "icon": "shield",
+            "color": "amber",
+            "title": "Safe Bulk Process",
+            "description": "Before bulk change: Filter carefully. Review several records. Confirm number selected. Apply exact tag. Check results. Open contacts to confirm."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Add and remove tags one at a time or in bulk. Use safe processes for bulk changes. Remember: removing a tag does not delete the contact.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create Test Contact",
+        "description": "Create a test contact called Jamie Example."
+      },
+      {
+        "number": 2,
+        "title": "Add Tags",
+        "description": "Add your INT- tag, ACT- tag, and STS-New-Lead tag."
+      },
+      {
+        "number": 3,
+        "title": "Change Status",
+        "description": "Remove STS-New-Lead and add STS-Qualified. Confirm only correct Status tag remains."
+      }
+    ],
+    "nextLessonTitle": "Find Contacts with Tags and Smart Lists",
+    "quizzes": [
+      {
+        "question": "What happens when you remove a tag from a contact?",
+        "options": [
+          {
+            "option_text": "The contact and all their data are deleted",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only the tag is removed; the contact and their information remain",
+            "is_correct": true
+          },
+          {
+            "option_text": "All tags are removed from the contact",
+            "is_correct": false
+          },
+          {
+            "option_text": "The contact's email address is deleted",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Removing a tag only removes that label from the contact. The contact record, messages, notes, and all other information remain intact."
+      },
+      {
+        "question": "What is the risk of using Remove all tags in bulk?",
+        "options": [
+          {
+            "option_text": "It only removes one selected tag",
+            "is_correct": false
+          },
+          {
+            "option_text": "It clears every tag from selected contacts with no one-click undo",
+            "is_correct": true
+          },
+          {
+            "option_text": "It deletes the selected contacts",
+            "is_correct": false
+          },
+          {
+            "option_text": "It automatically adds new tags",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Remove all tags clears every tag from the selected contacts, not just one. There is no one-click undo, so you must know which contacts should receive which tags again."
+      },
+      {
+        "question": "What should you do before applying a bulk tag change?",
+        "options": [
+          {
+            "option_text": "Apply the change immediately to all contacts",
+            "is_correct": false
+          },
+          {
+            "option_text": "Filter carefully, review records, confirm number selected, then apply",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete all existing tags first",
+            "is_correct": false
+          },
+          {
+            "option_text": "Send an email to all contacts first",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Before bulk tagging, filter carefully, review several records from the result, confirm the number of selected contacts, apply the exact tag, check results, and open contacts to confirm the change."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "slug": "find-contacts-smart-lists",
+    "title": "Find Contacts with Tags and Smart Lists",
+    "moduleWeek": 12,
+    "moduleName": "Tags: Organizing Contacts with Tags",
+    "learningGoal": "Turn tags into useful contact groups that can be found and reused.",
+    "sections": [
+      {
+        "title": "Filter by One Tag",
+        "icon": "filter",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "search",
+            "color": "blue",
+            "title": "Steps",
+            "description": "1. Open Contacts or Smart Lists. 2. Open Advanced Filters. 3. Search for Tag filter. 4. Select condition. 5. Choose tag (e.g., INT-Coaching). 6. Apply filter."
+          }
+        ]
+      },
+      {
+        "title": "Combine Tag Filters",
+        "icon": "layers",
+        "color": "green",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Example",
+            "description": "Find qualified contacts interested in coaching: Use INT-Coaching AND STS-Qualified."
+          },
+          {
+            "icon": "settings",
+            "color": "cyan",
+            "title": "Match All vs Match Any",
+            "description": "Match all returns people with BOTH tags. Match any returns people with at least ONE of the tags."
+          }
+        ]
+      },
+      {
+        "title": "Save as Smart List",
+        "icon": "save",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "save",
+            "color": "purple",
+            "title": "Steps",
+            "description": "1. Confirm filter produces correct contacts. 2. Save filtered view as Smart List. 3. Give it a clear name (e.g., Qualified Coaching Prospects)."
+          },
+          {
+            "icon": "refresh",
+            "color": "cyan",
+            "title": "Smart List Behavior",
+            "description": "A Smart List is a saved view. Contacts appear or disappear as their information changes."
+          }
+        ]
+      },
+      {
+        "title": "Useful Smart List Ideas",
+        "icon": "lightbulb",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "mic",
+            "color": "blue",
+            "title": "Speakers",
+            "description": "Meeting planners interested in keynotes. Prospects who requested speaker packet. Qualified contacts who have not booked."
+          },
+          {
+            "icon": "user",
+            "color": "green",
+            "title": "Coaches",
+            "description": "People interested in group coaching. Assessment completers who have not booked. Current clients interested in new programme."
+          },
+          {
+            "icon": "briefcase",
+            "color": "purple",
+            "title": "Consultants",
+            "description": "Qualified CRM prospects. People who requested proposal. Past clients interested in ongoing support."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Filter contacts by tags, combine multiple tag conditions, and save useful combinations as Smart Lists. Smart Lists update automatically as contact information changes.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Filter by Tag",
+        "description": "Find everyone with your INT- tag."
+      },
+      {
+        "number": 2,
+        "title": "Combine Filters",
+        "description": "Add STS-Qualified condition and set to Match all."
+      },
+      {
+        "number": 3,
+        "title": "Save Smart List",
+        "description": "Save with a clear name like Qualified Coaching Prospects."
+      }
+    ],
+    "nextLessonTitle": "Use Tags with Workflows",
+    "quizzes": [
+      {
+        "question": "What is the difference between Match all and Match any when combining tag filters?",
+        "options": [
+          {
+            "option_text": "There is no difference",
+            "is_correct": false
+          },
+          {
+            "option_text": "Match all returns people with BOTH tags; Match any returns people with at least ONE tag",
+            "is_correct": true
+          },
+          {
+            "option_text": "Match all deletes contacts; Match any saves them",
+            "is_correct": false
+          },
+          {
+            "option_text": "Match all is slower than Match any",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Match all returns contacts who have every specified tag. Match any returns contacts who have at least one of the specified tags. Choose based on whether you need all conditions or any condition."
+      },
+      {
+        "question": "What does a Smart List do?",
+        "options": [
+          {
+            "option_text": "It creates a static list that never changes",
+            "is_correct": false
+          },
+          {
+            "option_text": "It saves a filtered view that updates as contacts meet or stop meeting conditions",
+            "is_correct": true
+          },
+          {
+            "option_text": "It deletes contacts that don't match",
+            "is_correct": false
+          },
+          {
+            "option_text": "It sends emails automatically",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A Smart List is a saved, dynamic view. Contacts automatically appear when they meet the conditions and disappear when they no longer meet them."
+      },
+      {
+        "question": "When should you save a filtered view as a Smart List?",
+        "options": [
+          {
+            "option_text": "Only if you will never use it again",
+            "is_correct": false
+          },
+          {
+            "option_text": "When the filtered group will be used again",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only for deleted contacts",
+            "is_correct": false
+          },
+          {
+            "option_text": "Never, Smart Lists are not useful",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Save a filtered view as a Smart List when you will use that group of contacts repeatedly. This saves time and ensures the list stays current."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "slug": "use-tags-workflows",
+    "title": "Use Tags with Workflows",
+    "moduleWeek": 12,
+    "moduleName": "Tags: Organizing Contacts with Tags",
+    "learningGoal": "Start and update simple automations based on contact tags.",
+    "sections": [
+      {
+        "title": "Start Workflow When Tag Added",
+        "icon": "play",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "play",
+            "color": "blue",
+            "title": "Example",
+            "description": "Send follow-up after someone downloads a guide."
+          },
+          {
+            "icon": "settings",
+            "color": "cyan",
+            "title": "Steps",
+            "description": "1. Open Automations → Workflows. 2. Create or open workflow. 3. Add Trigger. 4. Choose Contact Tag. 5. Set to Tag Added. 6. Select ACT-Downloaded-Guide. 7. Add actions. 8. Save. 9. Test. 10. Publish."
+          }
+        ]
+      },
+      {
+        "title": "Start Workflow When Tag Removed",
+        "icon": "minus",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "minus",
+            "color": "amber",
+            "title": "Example",
+            "description": "Removing STS-Client could start an offboarding process."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Important",
+            "description": "Before using tag-removal trigger, define exactly why the tag would be removed and what should happen next."
+          }
+        ]
+      },
+      {
+        "title": "Add or Remove Tags Inside Workflow",
+        "icon": "refresh",
+        "color": "green",
+        "items": [
+          {
+            "icon": "plus",
+            "color": "green",
+            "title": "Add Contact Tag Action",
+            "description": "Use when automation should label the contact. Example: Contact submits form → Workflow sends confirmation → Workflow adds ACT-Completed-Assessment."
+          },
+          {
+            "icon": "minus",
+            "color": "amber",
+            "title": "Remove Contact Tag Action",
+            "description": "Use when tag is no longer correct. Example: Contact becomes qualified → Workflow removes STS-New-Lead → Workflow adds STS-Qualified."
+          }
+        ]
+      },
+      {
+        "title": "Prevent Workflow Loops",
+        "icon": "shield",
+        "color": "rose",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Be Careful",
+            "description": "Be careful when one workflow adds a tag that triggers another workflow, especially if the second workflow adds the original tag again."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Before Publishing",
+            "description": "Write down which tag starts each workflow. List every tag added or removed. Check whether another workflow reacts to those changes. Test with one contact. Review workflow history."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Use Contact Tag triggers to start workflows when tags are added or removed. Use Add/Remove Contact Tag actions inside workflows. Always check for potential loops before publishing.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create Tag Workflow",
+        "description": "Create workflow with trigger: Contact Tag Added: ACT-Downloaded-Guide."
+      },
+      {
+        "number": 2,
+        "title": "Add Actions",
+        "description": "Send guide email, wait one day, send follow-up question, add task for personal follow-up."
+      },
+      {
+        "number": 3,
+        "title": "Test and Check",
+        "description": "Test with one contact. Check for loops. Review workflow history."
+      }
+    ],
+    "nextLessonTitle": "Keep the Tag List Clean",
+    "quizzes": [
+      {
+        "question": "Which workflow trigger responds when a tag is added or removed?",
+        "options": [
+          {
+            "option_text": "Form Submitted",
+            "is_correct": false
+          },
+          {
+            "option_text": "Contact Tag",
+            "is_correct": true
+          },
+          {
+            "option_text": "Appointment Booked",
+            "is_correct": false
+          },
+          {
+            "option_text": "Payment Received",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The Contact Tag trigger can start workflows when a tag is added or removed. Set the event to Tag Added or Tag Removed and select the specific tag."
+      },
+      {
+        "question": "What should you do before publishing a workflow that adds or removes tags?",
+        "options": [
+          {
+            "option_text": "Publish immediately without checking",
+            "is_correct": false
+          },
+          {
+            "option_text": "Check for workflow loops by reviewing which tags trigger which workflows",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete all existing tags",
+            "is_correct": false
+          },
+          {
+            "option_text": "Create duplicate workflows",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Before publishing, write down which tag starts each workflow, list every tag added or removed, check whether another workflow reacts to those changes, test with one contact, and review the workflow history."
+      },
+      {
+        "question": "In what order should you remove and add Status tags in a workflow?",
+        "options": [
+          {
+            "option_text": "Add new tag first, then remove old tag",
+            "is_correct": false
+          },
+          {
+            "option_text": "Remove old tag first, then add new tag",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only add new tag without removing old one",
+            "is_correct": false
+          },
+          {
+            "option_text": "Remove both tags and add nothing",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The removal action should come before the new Status tag is added. This reduces the chance of conflicting Status tags existing at the same time."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "slug": "keep-tag-list-clean",
+    "title": "Keep the Tag List Clean",
+    "moduleWeek": 12,
+    "moduleName": "Tags: Organizing Contacts with Tags",
+    "learningGoal": "Review existing tags and reduce confusion without breaking active processes.",
+    "sections": [
+      {
+        "title": "Common Tag Problems",
+        "icon": "alert",
+        "color": "rose",
+        "items": [
+          {
+            "icon": "copy",
+            "color": "rose",
+            "title": "Look For",
+            "description": "Duplicate tags with different spellings. Tags with no clear meaning. Old event or campaign tags no longer needed. Conflicting Status tags. Tags used as notes. Tags containing dates. Tags from old integrations. Tags no current process uses."
+          },
+          {
+            "icon": "x",
+            "color": "amber",
+            "title": "Duplicate Example",
+            "description": "INT-Coaching, Coaching Interest, interested-coaching, Coach Lead. These may describe the same group. Choose one approved tag."
+          }
+        ]
+      },
+      {
+        "title": "Check Before Renaming or Deleting",
+        "icon": "search",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "link",
+            "color": "amber",
+            "title": "Where Tags May Be Connected",
+            "description": "Workflow triggers, workflow actions, Smart Lists, campaign filters, forms and surveys, contact imports, third-party connections, reports, manual processes."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Important",
+            "description": "Do not rename or delete a tag until you know where it is being used."
+          }
+        ]
+      },
+      {
+        "title": "Tag Cleanup Process",
+        "icon": "refresh",
+        "color": "green",
+        "items": [
+          {
+            "icon": "list",
+            "color": "blue",
+            "title": "10-Step Process",
+            "description": "1. Export current tag list. 2. Group into Interest, Action, Status, Other. 3. Mark duplicates. 4. Identify tag name to remain. 5. Check every process using old tags. 6. Apply approved tag to correct contacts. 7. Update workflows, filters, campaigns. 8. Remove old tags from contacts. 9. Delete old tags only after checks complete. 10. Record approved naming rules."
+          }
+        ]
+      },
+      {
+        "title": "Create a Tag Register",
+        "icon": "book",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "table",
+            "color": "purple",
+            "title": "Keep a Simple List",
+            "description": "Track: Tag name, Group, Meaning, Added by, Used in, Review status. This helps future users understand and maintain the tagging system."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Regularly review tags for duplicates and unclear names. Check where tags are used before changing them. Follow a safe cleanup process. Maintain a tag register.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Audit Five Tags",
+        "description": "Choose five tags and answer: What does it mean? What group? Any duplicates? Where used? Keep, rename, merge, or remove?"
+      },
+      {
+        "number": 2,
+        "title": "Start Tag Register",
+        "description": "Create a simple list of approved tags with their group, meaning, and where used."
+      },
+      {
+        "number": 3,
+        "title": "Plan Cleanup",
+        "description": "Identify which tags need attention but do not delete live tags until all connected processes are checked."
+      }
+    ],
+    "nextLessonTitle": "Module 12 Complete",
+    "quizzes": [
+      {
+        "question": "What should you check before renaming or deleting a tag?",
+        "options": [
+          {
+            "option_text": "Nothing, just delete it immediately",
+            "is_correct": false
+          },
+          {
+            "option_text": "Workflows, Smart Lists, campaigns, forms, imports, integrations, and reports that use the tag",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only the tag color",
+            "is_correct": false
+          },
+          {
+            "option_text": "Whether it is the oldest tag",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Before renaming or deleting a tag, check every place it might be used: workflow triggers and actions, Smart Lists, campaign filters, forms, imports, third-party connections, reports, and manual processes."
+      },
+      {
+        "question": "What is the first step in the tag cleanup process?",
+        "options": [
+          {
+            "option_text": "Immediately delete all old tags",
+            "is_correct": false
+          },
+          {
+            "option_text": "Export or record the current tag list",
+            "is_correct": true
+          },
+          {
+            "option_text": "Create new tags without checking existing ones",
+            "is_correct": false
+          },
+          {
+            "option_text": "Rename everything at once",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The first step is to export or record the current tag list. This gives you a complete picture before making any changes."
+      },
+      {
+        "question": "Why should you maintain a tag register?",
+        "options": [
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          },
+          {
+            "option_text": "It helps future users understand what each tag means and where it is used",
+            "is_correct": true
+          },
+          {
+            "option_text": "It makes tags automatically apply to contacts",
+            "is_correct": false
+          },
+          {
+            "option_text": "It deletes old tags automatically",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A tag register documents approved tags, their meanings, and where they are used. This helps team members understand and maintain the tagging system consistently."
+      }
+    ]
+  }
+]
