@@ -1,0 +1,1462 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "what-calendars-do",
+    "title": "What Calendars Do Inside LeadProspectrr",
+    "moduleWeek": 6,
+    "moduleName": "Calendars and Appointment Booking",
+    "learningGoal": "Understand how calendars in LeadProspectrr replace back-and-forth scheduling messages with a simple booking link.",
+    "sections": [
+      {
+        "title": "Your Digital Booking Desk",
+        "icon": "calendar",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "link",
+            "color": "blue",
+            "title": "One Link Replaces Many Messages",
+            "description": "Instead of asking 'What time works for you?' you send one booking link. The person chooses a time and LeadProspectrr handles the rest."
+          },
+          {
+            "icon": "mail",
+            "color": "green",
+            "title": "Automatic Confirmations",
+            "description": "LeadProspectrr records the appointment, sends confirmations, and can send reminders before the meeting."
+          },
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "The Bridge to Conversation",
+            "description": "The calendar is often the bridge between interest and a real conversation. A clean booking link removes friction."
+          }
+        ]
+      },
+      {
+        "title": "Business Example",
+        "icon": "users",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "chat",
+            "color": "rose",
+            "title": "Without a Booking Link",
+            "description": "The consultant asks 'What days work for you?' The prospect replies later. Times are suggested. One time no longer works. The conversation slows down."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "With a Booking Link",
+            "description": "The consultant says 'Here is the link to choose a time that works for you.' The prospect books immediately. Cleaner, faster, easier for both sides."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A booking calendar turns scheduling from a conversation into a simple action. One link, one choice, one confirmed appointment.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Think About Your Scheduling",
+        "description": "How do you currently book appointments? Count how many messages it typically takes."
+      },
+      {
+        "number": 2,
+        "title": "Identify Your Main Appointment Type",
+        "description": "What is your most common booking? Discovery call? Strategy session? Client check-in?"
+      },
+      {
+        "number": 3,
+        "title": "Open LeadProspectrr Calendars",
+        "description": "Navigate to the calendar area and take a look at what's available."
+      }
+    ],
+    "nextLessonTitle": "Key Calendar Terms",
+    "quizzes": [
+      {
+        "question": "What is the main purpose of a booking calendar in LeadProspectrr?",
+        "options": [
+          {
+            "option_text": "To replace your existing calendar app",
+            "is_correct": false
+          },
+          {
+            "option_text": "To let someone choose an appointment time from times you make available",
+            "is_correct": true
+          },
+          {
+            "option_text": "To send unlimited emails to prospects",
+            "is_correct": false
+          },
+          {
+            "option_text": "To block all incoming calls",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A booking calendar lets prospects and clients choose appointment times from your available slots, eliminating back-and-forth scheduling messages."
+      },
+      {
+        "question": "What happens automatically when someone books through your link?",
+        "options": [
+          {
+            "option_text": "Nothing happens until you manually confirm",
+            "is_correct": false
+          },
+          {
+            "option_text": "LeadProspectrr records the appointment and can send confirmations and reminders",
+            "is_correct": true
+          },
+          {
+            "option_text": "They are immediately charged a fee",
+            "is_correct": false
+          },
+          {
+            "option_text": "Your calendar is deleted",
+            "is_correct": false
+          }
+        ],
+        "explanation": "LeadProspectrr automatically records the appointment and can send confirmation emails and reminder messages before the meeting."
+      },
+      {
+        "question": "Why is a booking link better than email scheduling?",
+        "options": [
+          {
+            "option_text": "It requires more steps",
+            "is_correct": false
+          },
+          {
+            "option_text": "It removes friction and lets people book immediately",
+            "is_correct": true
+          },
+          {
+            "option_text": "It costs less money",
+            "is_correct": false
+          },
+          {
+            "option_text": "It works offline only",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A booking link removes the back-and-forth of email scheduling, letting prospects book immediately while their interest is high."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "key-calendar-terms",
+    "title": "Key Calendar Terms Made Simple",
+    "moduleWeek": 6,
+    "moduleName": "Calendars and Appointment Booking",
+    "learningGoal": "Learn the essential calendar vocabulary used in LeadProspectrr.",
+    "sections": [
+      {
+        "title": "Core Calendar Terms",
+        "icon": "book",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "calendar",
+            "color": "blue",
+            "title": "Calendar",
+            "description": "The booking setup for one type of appointment. Think of it as a template for a specific meeting type."
+          },
+          {
+            "icon": "clock",
+            "color": "green",
+            "title": "Appointment",
+            "description": "A meeting someone has booked. The actual event on your schedule."
+          },
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "Availability",
+            "description": "The days and times people are allowed to book. You control when people can see open slots."
+          },
+          {
+            "icon": "settings",
+            "color": "purple",
+            "title": "Buffer Time",
+            "description": "Extra space before or after appointments. Breathing room for prep, notes, or travel."
+          }
+        ]
+      },
+      {
+        "title": "Booking and Communication Terms",
+        "icon": "link",
+        "color": "cyan",
+        "items": [
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Booking Link",
+            "description": "The link people use to choose a time. Share this link anywhere you want people to book."
+          },
+          {
+            "icon": "mail",
+            "color": "green",
+            "title": "Confirmation",
+            "description": "The message sent after someone books. Usually includes appointment details and calendar invite."
+          },
+          {
+            "icon": "bell",
+            "color": "amber",
+            "title": "Reminder",
+            "description": "The message sent before the appointment. Reduces no-shows by reminding people of upcoming meetings."
+          },
+          {
+            "icon": "share",
+            "color": "indigo",
+            "title": "Connected Calendar",
+            "description": "An outside calendar like Google or Outlook connected to LeadProspectrr to prevent double-booking."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Conflict Calendar",
+            "description": "A calendar used to block unavailable times. Shows LeadProspectrr when you are already busy."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Understanding these terms helps you set up your calendar correctly and avoid common mistakes like double-booking or missing appointments.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Review the Terms",
+        "description": "Read through each term and think about how it applies to your business."
+      },
+      {
+        "number": 2,
+        "title": "Identify Your Needs",
+        "description": "Which terms are most relevant to your current scheduling challenges?"
+      },
+      {
+        "number": 3,
+        "title": "Open Your Calendar Settings",
+        "description": "Look for these terms in the LeadProspectrr calendar area to see them in context."
+      }
+    ],
+    "nextLessonTitle": "The Simple Booking Flow",
+    "quizzes": [
+      {
+        "question": "What is 'availability' in calendar terms?",
+        "options": [
+          {
+            "option_text": "Your entire calendar schedule",
+            "is_correct": false
+          },
+          {
+            "option_text": "The days and times people are allowed to book",
+            "is_correct": true
+          },
+          {
+            "option_text": "The number of appointments you can handle",
+            "is_correct": false
+          },
+          {
+            "option_text": "Your business hours only",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Availability refers to the specific days and times you make available for people to book appointments."
+      },
+      {
+        "question": "What is the purpose of 'buffer time'?",
+        "options": [
+          {
+            "option_text": "To make appointments longer",
+            "is_correct": false
+          },
+          {
+            "option_text": "To create space before or after appointments for prep, notes, or travel",
+            "is_correct": true
+          },
+          {
+            "option_text": "To block all bookings",
+            "is_correct": false
+          },
+          {
+            "option_text": "To send more reminders",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Buffer time creates breathing room between appointments so you have time to prepare, take notes, or travel to your next meeting."
+      },
+      {
+        "question": "What does a 'conflict calendar' do?",
+        "options": [
+          {
+            "option_text": "Creates more appointments",
+            "is_correct": false
+          },
+          {
+            "option_text": "Blocks unavailable times to prevent double-booking",
+            "is_correct": true
+          },
+          {
+            "option_text": "Sends marketing emails",
+            "is_correct": false
+          },
+          {
+            "option_text": "Deletes old appointments",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A conflict calendar shows LeadProspectrr when you are already busy, blocking those times from being booked to prevent double-booking."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "slug": "simple-booking-flow",
+    "title": "The Simple Booking Flow",
+    "moduleWeek": 6,
+    "moduleName": "Calendars and Appointment Booking",
+    "learningGoal": "Understand the 10-step process for setting up and using a booking calendar.",
+    "sections": [
+      {
+        "title": "The 10-Step Booking Flow",
+        "icon": "checklist",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "settings",
+            "color": "blue",
+            "title": "1. Create Calendar",
+            "description": "Create a calendar in LeadProspectrr for a specific appointment type."
+          },
+          {
+            "icon": "tag",
+            "color": "cyan",
+            "title": "2. Set Appointment Type",
+            "description": "Define what kind of meeting this is: discovery call, strategy session, etc."
+          },
+          {
+            "icon": "clock",
+            "color": "green",
+            "title": "3. Set Appointment Length",
+            "description": "Choose how long the meeting will last: 15, 30, 45, or 60 minutes."
+          },
+          {
+            "icon": "calendar",
+            "color": "amber",
+            "title": "4. Set Availability",
+            "description": "Choose which days and times people can book."
+          },
+          {
+            "icon": "settings",
+            "color": "purple",
+            "title": "5. Add Buffer Time",
+            "description": "Add breathing room before or after appointments if needed."
+          }
+        ]
+      },
+      {
+        "title": "Completing the Setup",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "location",
+            "color": "indigo",
+            "title": "6. Add Meeting Details",
+            "description": "Specify phone, Zoom, Google Meet, or physical address."
+          },
+          {
+            "icon": "bell",
+            "color": "amber",
+            "title": "7. Set Confirmations and Reminders",
+            "description": "Configure messages sent after booking and before appointments."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "8. Copy the Booking Link",
+            "description": "Get your unique booking link to share with others."
+          },
+          {
+            "icon": "share",
+            "color": "green",
+            "title": "9. Share the Booking Link",
+            "description": "Add the link to your email signature, website, or messages."
+          },
+          {
+            "icon": "check",
+            "color": "rose",
+            "title": "10. Test the Process",
+            "description": "Book a test appointment to make sure everything works."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The calendar should not confuse the person booking. They should know what they are booking, how long it takes, what happens after, where it happens, and how they will be reminded.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Review the Flow",
+        "description": "Read through all 10 steps and identify which ones you need help with."
+      },
+      {
+        "number": 2,
+        "title": "Open Calendar Settings",
+        "description": "Navigate to LeadProspectrr calendars and locate each setting mentioned."
+      },
+      {
+        "number": 3,
+        "title": "Plan Your Setup",
+        "description": "Write down your choices for appointment length, availability, and meeting location."
+      }
+    ],
+    "nextLessonTitle": "Choose the Right Calendar Type",
+    "quizzes": [
+      {
+        "question": "What is the first step in the booking flow?",
+        "options": [
+          {
+            "option_text": "Share the booking link",
+            "is_correct": false
+          },
+          {
+            "option_text": "Create a calendar in LeadProspectrr",
+            "is_correct": true
+          },
+          {
+            "option_text": "Test the process",
+            "is_correct": false
+          },
+          {
+            "option_text": "Set reminders",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The first step is to create a calendar in LeadProspectrr. You need a calendar before you can share a link or book appointments."
+      },
+      {
+        "question": "Why is step 10 (Test the Process) important?",
+        "options": [
+          {
+            "option_text": "It is optional and can be skipped",
+            "is_correct": false
+          },
+          {
+            "option_text": "It ensures everything works before real prospects use it",
+            "is_correct": true
+          },
+          {
+            "option_text": "It deletes the calendar",
+            "is_correct": false
+          },
+          {
+            "option_text": "It costs extra money",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Testing protects your business from looking unprofessional. It ensures confirmations, reminders, and meeting details all work correctly before real prospects use the link."
+      },
+      {
+        "question": "What should someone know after viewing your booking page?",
+        "options": [
+          {
+            "option_text": "Only the date and time",
+            "is_correct": false
+          },
+          {
+            "option_text": "What they are booking, how long, what happens after, where, and how they will be reminded",
+            "is_correct": true
+          },
+          {
+            "option_text": "Your personal phone number",
+            "is_correct": false
+          },
+          {
+            "option_text": "Your home address",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A good booking page clearly communicates what is being booked, duration, next steps, location, and reminder details so the person feels confident completing the booking."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "slug": "choose-calendar-type",
+    "title": "Choose the Right Calendar Type",
+    "moduleWeek": 6,
+    "moduleName": "Calendars and Appointment Booking",
+    "learningGoal": "Understand the three types of calendars and when to use each one.",
+    "sections": [
+      {
+        "title": "Personal Booking Calendar",
+        "icon": "user",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "star",
+            "color": "blue",
+            "title": "Start Here",
+            "description": "For most clients, start with a simple Personal Booking Calendar for one-to-one appointments."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Good Examples",
+            "description": "15-Minute Intro Call, 30-Minute Discovery Call, 45-Minute Strategy Session, Client Check-In, Support Call."
+          },
+          {
+            "icon": "lightbulb",
+            "color": "amber",
+            "title": "Best For",
+            "description": "Coaches, consultants, speakers, trainers, and anyone booking individual calls with prospects or clients."
+          }
+        ]
+      },
+      {
+        "title": "Event Calendar",
+        "icon": "users",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "When to Use",
+            "description": "Use when the event itself is the focus, not one staff member's personal availability."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Good Examples",
+            "description": "Clinic session, Workshop, Seminar, Group training, Public booking session."
+          },
+          {
+            "icon": "users",
+            "color": "cyan",
+            "title": "Best For",
+            "description": "Group events where multiple people book into the same session at a specific date and time."
+          }
+        ]
+      },
+      {
+        "title": "Service Calendar",
+        "icon": "settings",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "When to Use",
+            "description": "Use when booking a service, staff member, time slot, and possibly payment."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Good Examples",
+            "description": "Paid consultation, Coaching session, Service appointment, Team-based service booking."
+          },
+          {
+            "icon": "star",
+            "color": "rose",
+            "title": "Best For",
+            "description": "Businesses with multiple staff, services with different durations, or appointments requiring payment."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Start simple. Create the calendar that matches the most common booking you need right now. Do not build five calendars when one good calendar will solve the problem.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Identify Your Main Booking Type",
+        "description": "What is your most common appointment? One-on-one call, group event, or paid service?"
+      },
+      {
+        "number": 2,
+        "title": "Choose Your Calendar Type",
+        "description": "Select Personal, Event, or Service based on your main booking type."
+      },
+      {
+        "number": 3,
+        "title": "Name Your First Calendar",
+        "description": "Use a clear name like '30-Minute Discovery Call' that your prospects will understand."
+      }
+    ],
+    "nextLessonTitle": "Set Up a Basic Calendar",
+    "quizzes": [
+      {
+        "question": "Which calendar type should most people start with?",
+        "options": [
+          {
+            "option_text": "Event Calendar",
+            "is_correct": false
+          },
+          {
+            "option_text": "Personal Booking Calendar",
+            "is_correct": true
+          },
+          {
+            "option_text": "Service Calendar",
+            "is_correct": false
+          },
+          {
+            "option_text": "None of the above",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Most clients should start with a Personal Booking Calendar for one-to-one appointments like discovery calls or client check-ins."
+      },
+      {
+        "question": "When should you use an Event Calendar?",
+        "options": [
+          {
+            "option_text": "For one-on-one coaching calls",
+            "is_correct": false
+          },
+          {
+            "option_text": "When the event itself is the focus, like workshops or group training",
+            "is_correct": true
+          },
+          {
+            "option_text": "For paid consultations only",
+            "is_correct": false
+          },
+          {
+            "option_text": "For internal team meetings",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Use an Event Calendar when multiple people book into the same session, like workshops, seminars, or group training sessions."
+      },
+      {
+        "question": "What is the simple rule for getting started?",
+        "options": [
+          {
+            "option_text": "Create all calendar types immediately",
+            "is_correct": false
+          },
+          {
+            "option_text": "Start simple with one calendar for your most common booking need",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only use Service Calendars",
+            "is_correct": false
+          },
+          {
+            "option_text": "Create a new calendar for every prospect",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Start with one simple calendar that matches your most common booking need. You can always add more calendars later as your business grows."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "slug": "setup-basic-calendar",
+    "title": "Set Up a Basic Calendar",
+    "moduleWeek": 6,
+    "moduleName": "Calendars and Appointment Booking",
+    "learningGoal": "Learn the 10 steps to create and configure a working booking calendar.",
+    "sections": [
+      {
+        "title": "Steps 1-5: Calendar Basics",
+        "icon": "settings",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "location",
+            "color": "blue",
+            "title": "1. Go to Calendars",
+            "description": "Inside LeadProspectrr, go to the calendar area and open calendar settings."
+          },
+          {
+            "icon": "pencil",
+            "color": "cyan",
+            "title": "2. Create or Edit",
+            "description": "Choose to create a new calendar or edit an existing one. For training, use '30-Minute Discovery Call'."
+          },
+          {
+            "icon": "tag",
+            "color": "green",
+            "title": "3. Name It Clearly",
+            "description": "Good names: '30-Minute Discovery Call', 'Client Check-In', 'Strategy Session'. Poor names: 'Calendar 1', 'Test'."
+          },
+          {
+            "icon": "clock",
+            "color": "amber",
+            "title": "4. Set Appointment Length",
+            "description": "Quick Intro: 15 min, Discovery: 30 min, Strategy: 45-60 min, Check-In: 15-30 min."
+          },
+          {
+            "icon": "calendar",
+            "color": "purple",
+            "title": "5. Set Availability",
+            "description": "Set days and times people can book. Consider working hours, lunch, admin time, and timezone."
+          }
+        ]
+      },
+      {
+        "title": "Steps 6-10: Finalizing Your Calendar",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "settings",
+            "color": "indigo",
+            "title": "6. Add Buffer Time",
+            "description": "Add breathing room: 10 min before to prepare, 15 min after for notes, 30 min between long meetings."
+          },
+          {
+            "icon": "location",
+            "color": "cyan",
+            "title": "7. Add Meeting Details",
+            "description": "Specify phone, Zoom, Google Meet, or address. Make the next step crystal clear."
+          },
+          {
+            "icon": "bell",
+            "color": "amber",
+            "title": "8. Set Notifications",
+            "description": "Configure confirmation email, reminder email, SMS reminder, and internal notifications."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "9. Save and Review",
+            "description": "Check name, length, availability, location, reminders, timezone, and booking link before saving."
+          },
+          {
+            "icon": "link",
+            "color": "rose",
+            "title": "10. Copy the Booking Link",
+            "description": "Copy your unique booking link and prepare to test it before sharing."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A well-configured calendar removes all confusion. The person booking knows exactly what they are getting, when, where, and what happens next.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create Your First Calendar",
+        "description": "Follow the 10 steps to create a '30-Minute Discovery Call' calendar."
+      },
+      {
+        "number": 2,
+        "title": "Set Real Availability",
+        "description": "Only show times you are truly available and want people to book."
+      },
+      {
+        "number": 3,
+        "title": "Add Clear Meeting Details",
+        "description": "Specify exactly how the meeting will happen: phone number, video link, or address."
+      },
+      {
+        "number": 4,
+        "title": "Save and Copy Your Link",
+        "description": "Review all settings, save the calendar, and copy the booking link."
+      }
+    ],
+    "nextLessonTitle": "Connect Calendars and Reduce Double-Booking",
+    "quizzes": [
+      {
+        "question": "What makes a good calendar name?",
+        "options": [
+          {
+            "option_text": "Calendar 1",
+            "is_correct": false
+          },
+          {
+            "option_text": "30-Minute Discovery Call",
+            "is_correct": true
+          },
+          {
+            "option_text": "Test",
+            "is_correct": false
+          },
+          {
+            "option_text": "New Calendar",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Good calendar names are clear and descriptive, like '30-Minute Discovery Call' or 'Client Check-In', so prospects understand what they are booking."
+      },
+      {
+        "question": "How long should a discovery call typically be?",
+        "options": [
+          {
+            "option_text": "5 minutes",
+            "is_correct": false
+          },
+          {
+            "option_text": "30 minutes",
+            "is_correct": true
+          },
+          {
+            "option_text": "2 hours",
+            "is_correct": false
+          },
+          {
+            "option_text": "All day",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A standard discovery call is typically 30 minutes—long enough to understand needs but short enough to respect everyone's time."
+      },
+      {
+        "question": "What should you check before saving your calendar?",
+        "options": [
+          {
+            "option_text": "Only the name",
+            "is_correct": false
+          },
+          {
+            "option_text": "Name, length, availability, location, reminders, timezone, and booking link",
+            "is_correct": true
+          },
+          {
+            "option_text": "Nothing, just save it",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only the color scheme",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Before saving, review all settings: name, appointment length, availability, meeting location, reminders, timezone, and booking link to ensure everything is correct."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "slug": "connect-calendars",
+    "title": "Connect Calendars and Reduce Double-Booking",
+    "moduleWeek": 6,
+    "moduleName": "Calendars and Appointment Booking",
+    "learningGoal": "Learn how to connect external calendars and prevent double-booking.",
+    "sections": [
+      {
+        "title": "Why Connect Calendars?",
+        "icon": "link",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "The Double-Booking Problem",
+            "description": "If you have meetings in Google Calendar, Outlook, or other calendars, LeadProspectrr needs to know when you are busy."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "The Solution",
+            "description": "Connected calendars and conflict calendars show LeadProspectrr your real availability and block busy times."
+          },
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "Professional Protection",
+            "description": "Preventing double-booking protects your reputation and avoids embarrassing scheduling conflicts."
+          }
+        ]
+      },
+      {
+        "title": "What to Check",
+        "icon": "checklist",
+        "color": "green",
+        "items": [
+          {
+            "icon": "link",
+            "color": "blue",
+            "title": "Correct Calendar Connected?",
+            "description": "Is the right external calendar (Google, Outlook) connected to LeadProspectrr?"
+          },
+          {
+            "icon": "search",
+            "color": "cyan",
+            "title": "Right Conflict Calendar?",
+            "description": "Is the correct calendar being checked for conflicts and busy times?"
+          },
+          {
+            "icon": "clock",
+            "color": "amber",
+            "title": "Busy Times Blocking?",
+            "description": "Are your busy times properly blocking appointment slots?"
+          },
+          {
+            "icon": "share",
+            "color": "indigo",
+            "title": "Bookings Syncing Back?",
+            "description": "Are new bookings appearing on your external calendar if needed?"
+          },
+          {
+            "icon": "location",
+            "color": "purple",
+            "title": "Timezone Correct?",
+            "description": "Is the timezone setting correct for both calendars?"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Double-booking usually happens when the calendar is not checking the real calendar where you already have meetings. Always connect your main calendar as a conflict calendar.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Identify Your Main Calendar",
+        "description": "Where do you currently track meetings? Google Calendar? Outlook? Apple Calendar?"
+      },
+      {
+        "number": 2,
+        "title": "Connect Your Calendar",
+        "description": "In LeadProspectrr, connect your main external calendar to prevent double-booking."
+      },
+      {
+        "number": 3,
+        "title": "Set as Conflict Calendar",
+        "description": "Make sure your connected calendar is set as a conflict calendar to block busy times."
+      },
+      {
+        "number": 4,
+        "title": "Test the Connection",
+        "description": "Create a test event on your external calendar and verify it blocks that time in LeadProspectrr."
+      }
+    ],
+    "nextLessonTitle": "Where to Use the Booking Link",
+    "quizzes": [
+      {
+        "question": "What usually causes double-booking?",
+        "options": [
+          {
+            "option_text": "Having too many calendars",
+            "is_correct": false
+          },
+          {
+            "option_text": "The calendar not checking your real calendar where you already have meetings",
+            "is_correct": true
+          },
+          {
+            "option_text": "Sending too many reminders",
+            "is_correct": false
+          },
+          {
+            "option_text": "Using a booking link",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Double-booking happens when LeadProspectrr doesn't know about meetings on your external calendar. Connecting your main calendar as a conflict calendar prevents this."
+      },
+      {
+        "question": "What is a conflict calendar?",
+        "options": [
+          {
+            "option_text": "A calendar that creates conflicts",
+            "is_correct": false
+          },
+          {
+            "option_text": "A calendar used to block unavailable times and prevent double-booking",
+            "is_correct": true
+          },
+          {
+            "option_text": "A calendar for arguments",
+            "is_correct": false
+          },
+          {
+            "option_text": "A backup calendar",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A conflict calendar is an external calendar (like Google or Outlook) that LeadProspectrr checks to block times when you are already busy."
+      },
+      {
+        "question": "What should you verify after connecting a calendar?",
+        "options": [
+          {
+            "option_text": "Only the color",
+            "is_correct": false
+          },
+          {
+            "option_text": "Correct calendar connected, right conflict calendar set, busy times blocking, bookings syncing, timezone correct",
+            "is_correct": true
+          },
+          {
+            "option_text": "Nothing, it works automatically",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only the name",
+            "is_correct": false
+          }
+        ],
+        "explanation": "After connecting a calendar, verify: correct calendar is connected, right conflict calendar is set, busy times are blocking slots, bookings sync back, and timezone is correct."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "slug": "where-to-use-booking-link",
+    "title": "Where to Use the Booking Link",
+    "moduleWeek": 6,
+    "moduleName": "Calendars and Appointment Booking",
+    "learningGoal": "Learn the best places to share your booking link for maximum impact.",
+    "sections": [
+      {
+        "title": "Places to Share Your Link",
+        "icon": "share",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "mail",
+            "color": "blue",
+            "title": "Email Signature",
+            "description": "Add your booking link to your email signature so it's always available when you send emails."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Website Button",
+            "description": "Add a 'Book a Call' button to your website's contact page or homepage."
+          },
+          {
+            "icon": "chat",
+            "color": "cyan",
+            "title": "Follow-Up Messages",
+            "description": "Include the link in sales emails, text message follow-ups, and social media profiles."
+          },
+          {
+            "icon": "check",
+            "color": "amber",
+            "title": "Thank-You Pages",
+            "description": "After someone fills out a form, redirect them to your booking link or show it on the thank-you page."
+          }
+        ]
+      },
+      {
+        "title": "Messaging Templates",
+        "icon": "document",
+        "color": "green",
+        "items": [
+          {
+            "icon": "document",
+            "color": "blue",
+            "title": "Standard Version",
+            "description": "Here is the link to choose a time that works for you: [booking link]. Once you book, you will receive the appointment details by email."
+          },
+          {
+            "icon": "chat",
+            "color": "cyan",
+            "title": "Short Version",
+            "description": "You can book a time here: [booking link]"
+          },
+          {
+            "icon": "users",
+            "color": "purple",
+            "title": "Warmer Version",
+            "description": "I would be happy to talk this through with you. Here is the link to choose a time that works: [booking link]"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Share your booking link wherever people are most likely to take action. The easier you make it to book, the more appointments you will get.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Add to Email Signature",
+        "description": "Update your email signature to include your booking link."
+      },
+      {
+        "number": 2,
+        "title": "Add to Website",
+        "description": "Add a 'Book a Call' button to your website's contact page."
+      },
+      {
+        "number": 3,
+        "title": "Create Message Templates",
+        "description": "Save the standard, short, and warm versions as templates for quick use."
+      }
+    ],
+    "nextLessonTitle": "Test the Booking Process",
+    "quizzes": [
+      {
+        "question": "Where is a good place to share your booking link?",
+        "options": [
+          {
+            "option_text": "Only on your personal Facebook page",
+            "is_correct": false
+          },
+          {
+            "option_text": "Email signature, website, follow-up messages, thank-you pages",
+            "is_correct": true
+          },
+          {
+            "option_text": "Nowhere, keep it secret",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only in text messages",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Share your booking link wherever prospects are likely to take action: email signature, website buttons, follow-up messages, thank-you pages, and social media profiles."
+      },
+      {
+        "question": "What should your booking message include?",
+        "options": [
+          {
+            "option_text": "Just the link",
+            "is_correct": false
+          },
+          {
+            "option_text": "Clear instructions about what happens after they book",
+            "is_correct": true
+          },
+          {
+            "option_text": "Your life story",
+            "is_correct": false
+          },
+          {
+            "option_text": "A sales pitch only",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A good booking message includes the link and clear instructions about what happens after booking, like 'Once you book, you will receive the appointment details by email.'"
+      },
+      {
+        "question": "Why put the booking link on your website?",
+        "options": [
+          {
+            "option_text": "To make the website look busy",
+            "is_correct": false
+          },
+          {
+            "option_text": "So interested visitors can immediately take action while their interest is high",
+            "is_correct": true
+          },
+          {
+            "option_text": "To confuse visitors",
+            "is_correct": false
+          },
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Adding a booking link to your website lets interested visitors book immediately while their interest is high, converting website traffic into actual appointments."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 8,
+    "slug": "test-booking-process",
+    "title": "Test the Booking Process",
+    "moduleWeek": 6,
+    "moduleName": "Calendars and Appointment Booking",
+    "learningGoal": "Learn how to thoroughly test your booking process before sharing it with real prospects.",
+    "sections": [
+      {
+        "title": "The Test Checklist",
+        "icon": "checklist",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "eye",
+            "color": "blue",
+            "title": "Open in Private Browser",
+            "description": "Open the booking link in a private/incognito browser window to see what prospects see."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Book Test Appointment",
+            "description": "Book a test appointment using a different email address than your admin email."
+          },
+          {
+            "icon": "search",
+            "color": "cyan",
+            "title": "Check LeadProspectrr",
+            "description": "Verify the appointment appears correctly in your LeadProspectrr calendar."
+          },
+          {
+            "icon": "mail",
+            "color": "amber",
+            "title": "Check Confirmation",
+            "description": "Confirm the confirmation email arrives with correct details."
+          }
+        ]
+      },
+      {
+        "title": "Complete Testing",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "bell",
+            "color": "amber",
+            "title": "Check Reminders",
+            "description": "Verify reminder messages are scheduled correctly."
+          },
+          {
+            "icon": "location",
+            "color": "indigo",
+            "title": "Check Meeting Details",
+            "description": "Ensure meeting location (phone, Zoom, address) is clear in all messages."
+          },
+          {
+            "icon": "calendar",
+            "color": "purple",
+            "title": "Check External Calendar",
+            "description": "Confirm the appointment appears on your connected external calendar."
+          },
+          {
+            "icon": "pencil",
+            "color": "cyan",
+            "title": "Test Cancel/Reschedule",
+            "description": "Cancel or reschedule the test appointment and confirm the system updates correctly."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Testing protects your business from looking messy in front of a real prospect. Always test before sharing your booking link publicly.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Book a Test Appointment",
+        "description": "Use a different email to book a test appointment through your link."
+      },
+      {
+        "number": 2,
+        "title": "Check All Messages",
+        "description": "Verify confirmation and reminder emails arrive with correct details."
+      },
+      {
+        "number": 3,
+        "title": "Test Cancel/Reschedule",
+        "description": "Cancel or reschedule the test to ensure the system handles changes correctly."
+      }
+    ],
+    "nextLessonTitle": "Common Mistakes and Better Options",
+    "quizzes": [
+      {
+        "question": "Why should you test your booking link before sharing it?",
+        "options": [
+          {
+            "option_text": "It is optional",
+            "is_correct": false
+          },
+          {
+            "option_text": "To make sure confirmations, reminders, and meeting details all work properly",
+            "is_correct": true
+          },
+          {
+            "option_text": "To waste time",
+            "is_correct": false
+          },
+          {
+            "option_text": "To create fake appointments",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Testing ensures your booking process works correctly before real prospects use it, protecting your professional reputation."
+      },
+      {
+        "question": "What should you use to book a test appointment?",
+        "options": [
+          {
+            "option_text": "Your admin email",
+            "is_correct": false
+          },
+          {
+            "option_text": "A different email address than your admin email",
+            "is_correct": true
+          },
+          {
+            "option_text": "No email",
+            "is_correct": false
+          },
+          {
+            "option_text": "A fake email that doesn't exist",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Use a different email address than your admin email to simulate the real prospect experience and ensure all notifications work correctly."
+      },
+      {
+        "question": "What should you verify during testing?",
+        "options": [
+          {
+            "option_text": "Only the booking page design",
+            "is_correct": false
+          },
+          {
+            "option_text": "Confirmation, reminders, meeting details, calendar sync, and cancel/reschedule",
+            "is_correct": true
+          },
+          {
+            "option_text": "Nothing, it always works",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only the color scheme",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Thorough testing includes verifying confirmations, reminders, meeting details, calendar synchronization, and the cancel/reschedule process."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 9,
+    "slug": "common-mistakes",
+    "title": "Common Mistakes and Better Options",
+    "moduleWeek": 6,
+    "moduleName": "Calendars and Appointment Booking",
+    "learningGoal": "Learn the most common calendar mistakes and how to avoid them.",
+    "sections": [
+      {
+        "title": "Common Mistakes",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Using One Calendar for Everything",
+            "description": "Mistake: One calendar for all appointment types. Better: Create different calendars for different appointment types."
+          },
+          {
+            "icon": "clock",
+            "color": "amber",
+            "title": "Leaving Availability Too Open",
+            "description": "Mistake: Showing all hours. Better: Only show times you are happy for people to book."
+          },
+          {
+            "icon": "bell",
+            "color": "cyan",
+            "title": "No Reminders",
+            "description": "Mistake: Skipping reminders. Better: Use email and/or SMS reminders to reduce no-shows."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Sharing Before Testing",
+            "description": "Mistake: Sharing the link immediately. Better: Book a test appointment first."
+          }
+        ]
+      },
+      {
+        "title": "More Mistakes to Avoid",
+        "icon": "info",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "tag",
+            "color": "purple",
+            "title": "Confusing Calendar Names",
+            "description": "Mistake: Names like 'Calendar 1'. Better: Use names clients understand like 'Discovery Call'."
+          },
+          {
+            "icon": "location",
+            "color": "indigo",
+            "title": "No Meeting Location",
+            "description": "Mistake: Unclear meeting details. Better: Add phone, Zoom, Google Meet, or address details."
+          },
+          {
+            "icon": "location",
+            "color": "rose",
+            "title": "Wrong Timezone",
+            "description": "Mistake: Incorrect timezone settings. Better: Check timezone before sharing the link."
+          },
+          {
+            "icon": "calendar",
+            "color": "amber",
+            "title": "No Conflict Calendar",
+            "description": "Mistake: No external calendar connected. Better: Connect the calendar showing your real busy times."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Most calendar problems come from rushing the setup. Take time to configure properly, test thoroughly, and review regularly.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Review Your Calendar",
+        "description": "Check if you are making any of these common mistakes."
+      },
+      {
+        "number": 2,
+        "title": "Fix One Issue",
+        "description": "Choose one mistake to fix right now and update your calendar settings."
+      },
+      {
+        "number": 3,
+        "title": "Set a Review Reminder",
+        "description": "Schedule a monthly reminder to review your calendar settings and fix any issues."
+      }
+    ],
+    "nextLessonTitle": "Module 6 Complete",
+    "quizzes": [
+      {
+        "question": "What is a common mistake when setting up availability?",
+        "options": [
+          {
+            "option_text": "Showing too few hours",
+            "is_correct": false
+          },
+          {
+            "option_text": "Leaving availability too open and showing times you don't want booked",
+            "is_correct": true
+          },
+          {
+            "option_text": "Using buffer time",
+            "is_correct": false
+          },
+          {
+            "option_text": "Setting a timezone",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A common mistake is leaving availability too open, showing times you don't actually want people to book. Only show times you are truly available."
+      },
+      {
+        "question": "Why should you avoid using one calendar for everything?",
+        "options": [
+          {
+            "option_text": "It is cheaper",
+            "is_correct": false
+          },
+          {
+            "option_text": "Different appointment types need different settings, lengths, and availability",
+            "is_correct": true
+          },
+          {
+            "option_text": "It looks better",
+            "is_correct": false
+          },
+          {
+            "option_text": "It is required",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Different appointment types (discovery calls vs. client check-ins) need different lengths, availability, and settings. Separate calendars keep everything organized."
+      },
+      {
+        "question": "What should you do before sharing your booking link?",
+        "options": [
+          {
+            "option_text": "Post it everywhere immediately",
+            "is_correct": false
+          },
+          {
+            "option_text": "Book a test appointment first",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete your calendar",
+            "is_correct": false
+          },
+          {
+            "option_text": "Change the name",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Always book a test appointment before sharing your link publicly. This ensures everything works correctly and protects your professional reputation."
+      }
+    ]
+  }
+]
