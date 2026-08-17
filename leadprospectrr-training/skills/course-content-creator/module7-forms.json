@@ -1,0 +1,1473 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "what-forms-do",
+    "title": "What Forms Do Inside LeadProspectrr",
+    "moduleWeek": 7,
+    "moduleName": "Forms: Capturing Leads the Right Way",
+    "learningGoal": "Understand how forms capture leads and start the follow-up process automatically.",
+    "sections": [
+      {
+        "title": "Forms: The Entry Point",
+        "icon": "document",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "First Step in the Journey",
+            "description": "A form is often the first step in the customer journey. Someone fills out a form to request a consultation, download a guide, join a newsletter, or ask for a quote."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "The Big Mistake",
+            "description": "Many people think the form is the whole process. It is not. A form should start the next action, not end the interaction."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "What LeadProspectrr Can Do",
+            "description": "When someone fills out a form, LeadProspectrr can create a contact, add a tag, send notifications, send thank-you emails, add leads to pipelines, start workflows, and redirect to booking pages."
+          }
+        ]
+      },
+      {
+        "title": "The Three Questions",
+        "icon": "question",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "Who is this person?",
+            "description": "Capture their name, email, and contact information so you know who they are."
+          },
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "What do they want?",
+            "description": "Understand their interest, need, or goal so you can help them appropriately."
+          },
+          {
+            "icon": "arrow-right",
+            "color": "green",
+            "title": "What should happen next?",
+            "description": "Trigger the right follow-up: notification, email, pipeline entry, or workflow."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The form collects the lead. The follow-up turns that lead into a conversation. A good form starts a process, not just collects data.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Review Your Current Forms",
+        "description": "Look at any forms you currently use. Do they answer the three questions: Who, What, and What Next?"
+      },
+      {
+        "number": 2,
+        "title": "Identify Gaps",
+        "description": "Where do leads currently enter your business? Email? Contact forms? Direct messages? Spreadsheets?"
+      },
+      {
+        "number": 3,
+        "title": "Open LeadProspectrr Forms",
+        "description": "Navigate to Sites → Forms and explore what is available."
+      }
+    ],
+    "nextLessonTitle": "When to Use a Form",
+    "quizzes": [
+      {
+        "question": "What is the main purpose of a form in LeadProspectrr?",
+        "options": [
+          {
+            "option_text": "To collect data and end the interaction",
+            "is_correct": false
+          },
+          {
+            "option_text": "To start the next action and trigger follow-up",
+            "is_correct": true
+          },
+          {
+            "option_text": "To replace your website",
+            "is_correct": false
+          },
+          {
+            "option_text": "To send spam emails",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A form should start the next action, not end the interaction. It triggers follow-up processes like notifications, emails, and workflows."
+      },
+      {
+        "question": "What are the three questions a good form should answer?",
+        "options": [
+          {
+            "option_text": "Name, Email, Phone",
+            "is_correct": false
+          },
+          {
+            "option_text": "Who is this person, What do they want, What should happen next",
+            "is_correct": true
+          },
+          {
+            "option_text": "Budget, Timeline, Authority",
+            "is_correct": false
+          },
+          {
+            "option_text": "Color, Size, Quantity",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A good form answers: Who is this person? What do they want? What should happen next? This ensures proper follow-up."
+      },
+      {
+        "question": "What can LeadProspectrr do when someone submits a form?",
+        "options": [
+          {
+            "option_text": "Nothing, it just stores the data",
+            "is_correct": false
+          },
+          {
+            "option_text": "Create contacts, add tags, send notifications, start workflows, add to pipelines",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete the lead",
+            "is_correct": false
+          },
+          {
+            "option_text": "Charge their credit card",
+            "is_correct": false
+          }
+        ],
+        "explanation": "LeadProspectrr can automatically create contacts, add tags, send notifications and emails, add leads to pipelines, start workflows, and redirect to booking pages."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "when-to-use-forms",
+    "title": "When to Use a Form",
+    "moduleWeek": 7,
+    "moduleName": "Forms: Capturing Leads the Right Way",
+    "learningGoal": "Learn the best use cases for forms and when to create different types of forms.",
+    "sections": [
+      {
+        "title": "Good Uses for Forms",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "chat",
+            "color": "blue",
+            "title": "Contact & Consultation",
+            "description": "Contact forms, consultation requests, discovery call requests. Capture interest from prospects ready to talk."
+          },
+          {
+            "icon": "download",
+            "color": "cyan",
+            "title": "Downloads & Signups",
+            "description": "Lead magnet downloads, newsletter signups, guide requests. Build your email list with interested prospects."
+          },
+          {
+            "icon": "calendar",
+            "color": "amber",
+            "title": "Events & Registration",
+            "description": "Event registration, speaking inquiries, workshop signups. Manage attendance and follow-up for events."
+          },
+          {
+            "icon": "document",
+            "color": "purple",
+            "title": "Business Requests",
+            "description": "Client intake, quote requests, feedback requests. Collect specific information for business processes."
+          }
+        ]
+      },
+      {
+        "title": "The Golden Rule",
+        "icon": "star",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Do Not Use One Form for Everything",
+            "description": "Different goals need different forms. A consultation form should not look the same as a newsletter signup form."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Match Form to Purpose",
+            "description": "Create specific forms for specific purposes. This helps with tagging, follow-up, and understanding lead quality."
+          },
+          {
+            "icon": "lightbulb",
+            "color": "amber",
+            "title": "Where to Find Forms",
+            "description": "In LeadProspectrr: Sites → Forms. From there you can view, create, edit, preview, and get embed codes."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Use a form when you need to collect information and send it into LeadProspectrr. Create different forms for different purposes—do not use one form for everything.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "List Your Form Needs",
+        "description": "Write down all the places where you currently collect lead information."
+      },
+      {
+        "number": 2,
+        "title": "Categorize by Purpose",
+        "description": "Group them by type: consultation, download, event, quote request, etc."
+      },
+      {
+        "number": 3,
+        "title": "Plan Your Forms",
+        "description": "Decide how many forms you need and what each one should capture."
+      }
+    ],
+    "nextLessonTitle": "What Makes a Good Lead Capture Form",
+    "quizzes": [
+      {
+        "question": "When should you use a form?",
+        "options": [
+          {
+            "option_text": "Only for contact pages",
+            "is_correct": false
+          },
+          {
+            "option_text": "When you need to collect information and send it into LeadProspectrr",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only for paid customers",
+            "is_correct": false
+          },
+          {
+            "option_text": "Never, forms are outdated",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Use a form whenever you need to collect information from someone and send it into LeadProspectrr for follow-up and organization."
+      },
+      {
+        "question": "Why should you create different forms for different purposes?",
+        "options": [
+          {
+            "option_text": "To make things more complicated",
+            "is_correct": false
+          },
+          {
+            "option_text": "Different goals need different fields, tags, and follow-up processes",
+            "is_correct": true
+          },
+          {
+            "option_text": "Forms are free so you should make many",
+            "is_correct": false
+          },
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Different forms allow you to capture the right information, apply appropriate tags, and trigger the correct follow-up for each specific purpose."
+      },
+      {
+        "question": "Where do you find forms in LeadProspectrr?",
+        "options": [
+          {
+            "option_text": "Settings → General",
+            "is_correct": false
+          },
+          {
+            "option_text": "Sites → Forms",
+            "is_correct": true
+          },
+          {
+            "option_text": "Contacts → Import",
+            "is_correct": false
+          },
+          {
+            "option_text": "Dashboard → Widgets",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Forms are found under Sites → Forms in LeadProspectrr, where you can view, create, edit, and manage all your forms."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "slug": "good-lead-capture-form",
+    "title": "What Makes a Good Lead Capture Form",
+    "moduleWeek": 7,
+    "moduleName": "Forms: Capturing Leads the Right Way",
+    "learningGoal": "Learn the difference between good and poor forms, and what fields to include.",
+    "sections": [
+      {
+        "title": "Good Form Example",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "document",
+            "color": "blue",
+            "title": "Consultation Request Form",
+            "description": "First Name, Last Name, Email, Phone, What service are you interested in?, What is your biggest challenge right now?"
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Why It Works",
+            "description": "It is enough to start a useful conversation without overwhelming the prospect. Clear, short, purposeful."
+          }
+        ]
+      },
+      {
+        "title": "Poor Form Example",
+        "icon": "warning",
+        "color": "rose",
+        "items": [
+          {
+            "icon": "document",
+            "color": "rose",
+            "title": "The Overwhelming Form",
+            "description": "Full address, Company size, Budget, Website, Social media links, Full business history, Ten open-ended questions."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Why It Fails",
+            "description": "That is too much too soon. People are more likely to complete a form when it feels easy. Long forms reduce responses."
+          }
+        ]
+      },
+      {
+        "title": "The Right Fields",
+        "icon": "settings",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "Basic Fields",
+            "description": "First Name, Last Name, Email, Phone. Start with these for most lead capture forms."
+          },
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "Interest Field",
+            "description": "Add one field that helps you understand what they want: What service are you interested in? What do you need help with?"
+          },
+          {
+            "icon": "chat",
+            "color": "cyan",
+            "title": "Message Field",
+            "description": "Use when you want them to explain their situation. Keep it simple. Do not ask for a full essay."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A good form is clear, short, and connected to the next step. Ask only for what you need right now. People complete forms that feel easy.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Audit Your Current Forms",
+        "description": "Review your existing forms. Are they closer to the good example or the poor example?"
+      },
+      {
+        "number": 2,
+        "title": "Count Your Fields",
+        "description": "How many fields are required? Can you remove any without hurting the follow-up process?"
+      },
+      {
+        "number": 3,
+        "title": "Plan a Simple Form",
+        "description": "Design a form with only the essential fields: Name, Email, Phone, and one interest question."
+      }
+    ],
+    "nextLessonTitle": "Required vs Optional Fields",
+    "quizzes": [
+      {
+        "question": "What makes a good lead capture form?",
+        "options": [
+          {
+            "option_text": "Asking for as much information as possible",
+            "is_correct": false
+          },
+          {
+            "option_text": "Being clear, short, and connected to the next step",
+            "is_correct": true
+          },
+          {
+            "option_text": "Having 20+ fields",
+            "is_correct": false
+          },
+          {
+            "option_text": "Using technical jargon",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A good form is clear, short, and connected to the next step. It asks only for what is needed to start a useful conversation."
+      },
+      {
+        "question": "What fields should you start with for most lead capture forms?",
+        "options": [
+          {
+            "option_text": "Full address, company size, budget, website",
+            "is_correct": false
+          },
+          {
+            "option_text": "First Name, Last Name, Email, Phone",
+            "is_correct": true
+          },
+          {
+            "option_text": "Social security number, birth date, mother's maiden name",
+            "is_correct": false
+          },
+          {
+            "option_text": "Credit card number, expiration date, CVV",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Start with the basics: First Name, Last Name, Email, Phone. Add one interest field to understand what they want."
+      },
+      {
+        "question": "Why do long forms reduce responses?",
+        "options": [
+          {
+            "option_text": "They look more professional",
+            "is_correct": false
+          },
+          {
+            "option_text": "People are more likely to complete forms when they feel easy",
+            "is_correct": true
+          },
+          {
+            "option_text": "Short forms cost more",
+            "is_correct": false
+          },
+          {
+            "option_text": "Long forms load faster",
+            "is_correct": false
+          }
+        ],
+        "explanation": "People abandon long, complex forms. Keep forms short and easy to maximize completion rates."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "slug": "required-vs-optional",
+    "title": "Required vs Optional Fields",
+    "moduleWeek": 7,
+    "moduleName": "Forms: Capturing Leads the Right Way",
+    "learningGoal": "Learn which fields should be required and which should be optional to maximize form completion.",
+    "sections": [
+      {
+        "title": "Make These Required",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "First Name",
+            "description": "You need to know who they are to personalize follow-up."
+          },
+          {
+            "icon": "mail",
+            "color": "cyan",
+            "title": "Email",
+            "description": "Essential for contact and follow-up communication."
+          },
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "Main Request or Interest",
+            "description": "You need to know what they want to route them correctly."
+          }
+        ]
+      },
+      {
+        "title": "Consider These Optional",
+        "icon": "settings",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "phone",
+            "color": "green",
+            "title": "Phone Number",
+            "description": "Important but some people prefer initial contact by email. Consider making optional."
+          },
+          {
+            "icon": "chat",
+            "color": "cyan",
+            "title": "Longer Message",
+            "description": "Let them share more if they want, but do not require it."
+          },
+          {
+            "icon": "building",
+            "color": "purple",
+            "title": "Company Name & Website",
+            "description": "Useful for B2B but may not be essential for all forms."
+          }
+        ]
+      },
+      {
+        "title": "The Balance",
+        "icon": "target",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Too Many Required Fields",
+            "description": "If you make too many fields required, some people will leave without submitting."
+          },
+          {
+            "icon": "lightbulb",
+            "color": "amber",
+            "title": "The Rule",
+            "description": "Only make a field required if you truly need it before the next step can happen."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Balance information needs with completion rates. Only require fields you absolutely need. Optional fields let interested prospects share more without blocking those who want to move quickly.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Review Required Fields",
+        "description": "Look at your forms. Are any required fields actually optional?"
+      },
+      {
+        "number": 2,
+        "title": "Make Phone Optional",
+        "description": "Consider making phone number optional unless you absolutely need it for the first contact."
+      },
+      {
+        "number": 3,
+        "title": "Test the Change",
+        "description": "Make fields optional and see if form completion rates improve."
+      }
+    ],
+    "nextLessonTitle": "Button Text That Converts",
+    "quizzes": [
+      {
+        "question": "Which fields should typically be required?",
+        "options": [
+          {
+            "option_text": "All fields",
+            "is_correct": false
+          },
+          {
+            "option_text": "First Name, Email, and Main Request or Interest",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only the email field",
+            "is_correct": false
+          },
+          {
+            "option_text": "None of the fields",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Typically require First Name, Email, and the main request or interest field. These are essential for follow-up and routing."
+      },
+      {
+        "question": "Why should you consider making phone number optional?",
+        "options": [
+          {
+            "option_text": "Phone numbers are never useful",
+            "is_correct": false
+          },
+          {
+            "option_text": "Some people prefer initial contact by email and requiring phone may reduce form completions",
+            "is_correct": true
+          },
+          {
+            "option_text": "Phone fields break forms",
+            "is_correct": false
+          },
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Some prospects prefer email first. Making phone optional reduces friction while still capturing it from those willing to share."
+      },
+      {
+        "question": "What happens if you make too many fields required?",
+        "options": [
+          {
+            "option_text": "You get better quality leads",
+            "is_correct": false
+          },
+          {
+            "option_text": "Some people will leave without submitting the form",
+            "is_correct": true
+          },
+          {
+            "option_text": "The form loads faster",
+            "is_correct": false
+          },
+          {
+            "option_text": "Nothing changes",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Too many required fields creates friction. Some prospects will abandon the form rather than complete all required fields."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "slug": "button-text",
+    "title": "Button Text That Converts",
+    "moduleWeek": 7,
+    "moduleName": "Forms: Capturing Leads the Right Way",
+    "learningGoal": "Learn how to write button text that tells people exactly what happens next.",
+    "sections": [
+      {
+        "title": "The Problem with Submit",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "document",
+            "color": "blue",
+            "title": "Submit Works But...",
+            "description": "Many forms use 'Submit' as button text. That works, but it is not very clear about what happens next."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Better Button Text",
+            "description": "Better button wording tells the person what they are doing and what happens next."
+          }
+        ]
+      },
+      {
+        "title": "Better Button Examples",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "phone",
+            "color": "blue",
+            "title": "Request My Call",
+            "description": "Perfect for consultation or discovery call forms."
+          },
+          {
+            "icon": "send",
+            "color": "cyan",
+            "title": "Send My Request",
+            "description": "Good for general inquiry or quote request forms."
+          },
+          {
+            "icon": "download",
+            "color": "amber",
+            "title": "Get the Guide",
+            "description": "Ideal for lead magnet or download forms."
+          },
+          {
+            "icon": "calendar",
+            "color": "green",
+            "title": "Book My Consultation",
+            "description": "Great for calendar booking or appointment forms."
+          },
+          {
+            "icon": "users",
+            "color": "purple",
+            "title": "Join the List",
+            "description": "Perfect for newsletter or email list signups."
+          },
+          {
+            "icon": "check",
+            "color": "rose",
+            "title": "Register Now",
+            "description": "Ideal for event or workshop registration forms."
+          }
+        ]
+      },
+      {
+        "title": "The Golden Rule",
+        "icon": "star",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Match Button to Purpose",
+            "description": "The button should match the purpose of the form. Tell people exactly what action they are taking."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Button text matters. Clear, action-oriented buttons tell people exactly what happens next and increase form completion rates. Match the button text to your form's purpose.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Review Your Button Text",
+        "description": "Look at your current forms. Do they all say 'Submit'?"
+      },
+      {
+        "number": 2,
+        "title": "Choose Better Text",
+        "description": "Update button text to match what the person is actually doing: requesting, booking, downloading, etc."
+      },
+      {
+        "number": 3,
+        "title": "Test the Change",
+        "description": "Monitor if clearer button text improves form completion rates."
+      }
+    ],
+    "nextLessonTitle": "What Happens After Submit",
+    "quizzes": [
+      {
+        "question": "Why is 'Submit' not the best button text?",
+        "options": [
+          {
+            "option_text": "It is grammatically incorrect",
+            "is_correct": false
+          },
+          {
+            "option_text": "It does not tell people what happens next",
+            "is_correct": true
+          },
+          {
+            "option_text": "It is too long",
+            "is_correct": false
+          },
+          {
+            "option_text": "It is not allowed",
+            "is_correct": false
+          }
+        ],
+        "explanation": "'Submit' is vague. Better button text tells people exactly what action they are taking and what happens next."
+      },
+      {
+        "question": "What is a good button text for a consultation form?",
+        "options": [
+          {
+            "option_text": "Submit",
+            "is_correct": false
+          },
+          {
+            "option_text": "Request My Call",
+            "is_correct": true
+          },
+          {
+            "option_text": "Click Here",
+            "is_correct": false
+          },
+          {
+            "option_text": "Go",
+            "is_correct": false
+          }
+        ],
+        "explanation": "'Request My Call' clearly tells the person what they are doing and what happens next—requesting a call."
+      },
+      {
+        "question": "What should button text do?",
+        "options": [
+          {
+            "option_text": "Be as short as possible",
+            "is_correct": false
+          },
+          {
+            "option_text": "Match the purpose of the form and tell people what happens next",
+            "is_correct": true
+          },
+          {
+            "option_text": "Use technical language",
+            "is_correct": false
+          },
+          {
+            "option_text": "Be mysterious",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Button text should match the form's purpose and clearly communicate what action the person is taking and what happens next."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "slug": "what-happens-after-submit",
+    "title": "What Happens After Submit",
+    "moduleWeek": 7,
+    "moduleName": "Forms: Capturing Leads the Right Way",
+    "learningGoal": "Learn how to set up automated follow-up actions when someone submits a form.",
+    "sections": [
+      {
+        "title": "The Follow-Up Process",
+        "icon": "settings",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "1. Contact Created or Updated",
+            "description": "LeadProspectrr automatically creates a new contact or updates an existing one."
+          },
+          {
+            "icon": "tag",
+            "color": "cyan",
+            "title": "2. Tag Added",
+            "description": "Add a tag like 'New Lead - Consultation Request' to organize and segment the lead."
+          },
+          {
+            "icon": "bell",
+            "color": "amber",
+            "title": "3. Internal Notification",
+            "description": "Alert yourself or your team that a new lead has come in."
+          },
+          {
+            "icon": "mail",
+            "color": "green",
+            "title": "4. Thank-You Email",
+            "description": "Send a confirmation email to the lead so they know their request was received."
+          }
+        ]
+      },
+      {
+        "title": "Advanced Actions",
+        "icon": "star",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "5. Add to Pipeline",
+            "description": "Add the lead to the right pipeline stage if this is a sales or opportunity-based form."
+          },
+          {
+            "icon": "play",
+            "color": "indigo",
+            "title": "6. Start Workflow",
+            "description": "Trigger an automation sequence for nurture, follow-up, or onboarding."
+          },
+          {
+            "icon": "arrow-right",
+            "color": "rose",
+            "title": "7. Redirect to Next Step",
+            "description": "Send the person to a thank-you page, booking calendar, or download page."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The form collects the lead. The follow-up turns that lead into a conversation. Set up automated actions so no lead sits unseen in an inbox.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Map Your Follow-Up",
+        "description": "For each form, list what should happen after someone submits it."
+      },
+      {
+        "number": 2,
+        "title": "Set Up Tags",
+        "description": "Create clear tags for each form type so you can segment and track leads."
+      },
+      {
+        "number": 3,
+        "title": "Configure Notifications",
+        "description": "Make sure you or your team get alerted when new leads come in."
+      },
+      {
+        "number": 4,
+        "title": "Create Thank-You Emails",
+        "description": "Write simple confirmation emails that let leads know their request was received."
+      }
+    ],
+    "nextLessonTitle": "Testing Your Form",
+    "quizzes": [
+      {
+        "question": "What should happen after someone submits a form?",
+        "options": [
+          {
+            "option_text": "Nothing, the form just stores the data",
+            "is_correct": false
+          },
+          {
+            "option_text": "Contact creation, tagging, notifications, thank-you emails, pipeline entry, and workflows",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete the submission",
+            "is_correct": false
+          },
+          {
+            "option_text": "Send a bill",
+            "is_correct": false
+          }
+        ],
+        "explanation": "After form submission, LeadProspectrr can create contacts, add tags, send notifications and emails, add to pipelines, start workflows, and redirect to next steps."
+      },
+      {
+        "question": "Why should you add a tag when someone submits a form?",
+        "options": [
+          {
+            "option_text": "Tags are required by law",
+            "is_correct": false
+          },
+          {
+            "option_text": "To organize leads by interest and know where they came from",
+            "is_correct": true
+          },
+          {
+            "option_text": "To delete the lead later",
+            "is_correct": false
+          },
+          {
+            "option_text": "To charge them money",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Tags help you organize leads by interest, track where they came from, and segment them for appropriate follow-up."
+      },
+      {
+        "question": "Why is a thank-you email important?",
+        "options": [
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          },
+          {
+            "option_text": "People like to know their request was received and what happens next",
+            "is_correct": true
+          },
+          {
+            "option_text": "It sells products immediately",
+            "is_correct": false
+          },
+          {
+            "option_text": "It deletes the form submission",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A thank-you email confirms the submission was received, sets expectations for follow-up, and starts building trust with the lead."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "slug": "testing-your-form",
+    "title": "Testing Your Form",
+    "moduleWeek": 7,
+    "moduleName": "Forms: Capturing Leads the Right Way",
+    "learningGoal": "Learn how to thoroughly test forms before publishing them live.",
+    "sections": [
+      {
+        "title": "Never Skip Testing",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "The Risk",
+            "description": "Never publish a form without testing it first. Testing catches small problems before real leads use the form."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "The Cost",
+            "description": "A broken form can quietly cost you leads. One error can mean lost opportunities."
+          }
+        ]
+      },
+      {
+        "title": "Form Testing Checklist",
+        "icon": "checklist",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "Submit Test Lead",
+            "description": "Submit the form as a test lead using a different email address."
+          },
+          {
+            "icon": "search",
+            "color": "cyan",
+            "title": "Check Contact Created",
+            "description": "Verify the contact appears in LeadProspectrr with correct information."
+          },
+          {
+            "icon": "tag",
+            "color": "amber",
+            "title": "Check Tag Applied",
+            "description": "Confirm the correct tag was added to the contact."
+          },
+          {
+            "icon": "bell",
+            "color": "green",
+            "title": "Check Notification Sent",
+            "description": "Verify internal notifications were sent to you or your team."
+          },
+          {
+            "icon": "mail",
+            "color": "purple",
+            "title": "Check Thank-You Email",
+            "description": "Confirm the thank-you email was sent and contains correct information."
+          }
+        ]
+      },
+      {
+        "title": "Complete Testing",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "play",
+            "color": "indigo",
+            "title": "Check Workflow Started",
+            "description": "Verify any workflows were triggered correctly."
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Check Pipeline Updated",
+            "description": "Confirm the lead was added to the correct pipeline stage."
+          },
+          {
+            "icon": "arrow-right",
+            "color": "rose",
+            "title": "Check Redirect Works",
+            "description": "Verify the redirect page loads correctly after submission."
+          },
+          {
+            "icon": "eye",
+            "color": "blue",
+            "title": "Check Desktop and Mobile",
+            "description": "Test the form on both desktop and mobile devices."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Testing protects your business from losing leads due to broken forms. Always test every field, notification, email, and redirect before going live.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Submit Test Lead",
+        "description": "Fill out your form as if you were a prospect using a test email address."
+      },
+      {
+        "number": 2,
+        "title": "Verify All Actions",
+        "description": "Check that contact, tag, notification, email, pipeline, and workflow all worked correctly."
+      },
+      {
+        "number": 3,
+        "title": "Test on Mobile",
+        "description": "Many leads will use mobile devices. Test your form on a phone or tablet."
+      },
+      {
+        "number": 4,
+        "title": "Fix Any Issues",
+        "description": "If anything does not work, fix it before sharing the form publicly."
+      }
+    ],
+    "nextLessonTitle": "Common Mistakes to Avoid",
+    "quizzes": [
+      {
+        "question": "Why should you test a form before publishing it?",
+        "options": [
+          {
+            "option_text": "Testing is optional",
+            "is_correct": false
+          },
+          {
+            "option_text": "To catch problems before real leads use the form",
+            "is_correct": true
+          },
+          {
+            "option_text": "To delete test data",
+            "is_correct": false
+          },
+          {
+            "option_text": "To make the form longer",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Testing catches errors, broken notifications, missing tags, and other issues before real prospects encounter them."
+      },
+      {
+        "question": "What should you check when testing a form?",
+        "options": [
+          {
+            "option_text": "Only the form design",
+            "is_correct": false
+          },
+          {
+            "option_text": "Contact creation, tags, notifications, emails, workflows, pipeline, and redirect",
+            "is_correct": true
+          },
+          {
+            "option_text": "Nothing, forms always work",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only the button color",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Thorough testing includes verifying contact creation, tag application, notifications, emails, workflows, pipeline updates, redirects, and mobile compatibility."
+      },
+      {
+        "question": "Why test on mobile devices?",
+        "options": [
+          {
+            "option_text": "Mobile testing is not important",
+            "is_correct": false
+          },
+          {
+            "option_text": "Many leads use mobile devices to fill out forms",
+            "is_correct": true
+          },
+          {
+            "option_text": "Mobile forms are always broken",
+            "is_correct": false
+          },
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Many prospects will access your form on mobile devices. Testing ensures the form works properly on all screen sizes."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 8,
+    "slug": "common-mistakes-forms",
+    "title": "Common Mistakes to Avoid",
+    "moduleWeek": 7,
+    "moduleName": "Forms: Capturing Leads the Right Way",
+    "learningGoal": "Learn the most common form mistakes and how to avoid them.",
+    "sections": [
+      {
+        "title": "Form Mistakes",
+        "icon": "warning",
+        "color": "rose",
+        "items": [
+          {
+            "icon": "document",
+            "color": "rose",
+            "title": "Asking for Too Much",
+            "description": "Mistake: Long forms with many fields. Fix: Ask only for what you need right now."
+          },
+          {
+            "icon": "pencil",
+            "color": "amber",
+            "title": "Vague Button Text",
+            "description": "Mistake: Using 'Submit' on every form. Fix: Use clear action buttons like 'Request My Call'."
+          },
+          {
+            "icon": "tag",
+            "color": "cyan",
+            "title": "Not Adding Tags",
+            "description": "Mistake: No tags on form submissions. Fix: Tag every form so you know where leads came from."
+          },
+          {
+            "icon": "bell",
+            "color": "purple",
+            "title": "No Internal Notification",
+            "description": "Mistake: Nobody gets alerted. Fix: Set up notifications so leads are not missed."
+          }
+        ]
+      },
+      {
+        "title": "More Mistakes",
+        "icon": "info",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "mail",
+            "color": "blue",
+            "title": "No Follow-Up Email",
+            "description": "Mistake: No confirmation email. Fix: Send a thank-you email so leads know you received their request."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "No Pipeline Update",
+            "description": "Mistake: Leads not added to pipeline. Fix: Add sales leads to the appropriate pipeline stage."
+          },
+          {
+            "icon": "check",
+            "color": "rose",
+            "title": "Not Testing",
+            "description": "Mistake: Publishing without testing. Fix: Always test before going live."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Most form problems come from rushing the setup. Take time to configure properly, test thoroughly, and review regularly.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Review Your Forms",
+        "description": "Check if you are making any of these common mistakes."
+      },
+      {
+        "number": 2,
+        "title": "Fix One Issue",
+        "description": "Choose one mistake to fix right now and update your form."
+      },
+      {
+        "number": 3,
+        "title": "Set a Review Schedule",
+        "description": "Schedule quarterly reviews of your forms to catch and fix issues."
+      }
+    ],
+    "nextLessonTitle": "Module 7 Complete",
+    "quizzes": [
+      {
+        "question": "What is a common mistake when creating forms?",
+        "options": [
+          {
+            "option_text": "Making forms too short",
+            "is_correct": false
+          },
+          {
+            "option_text": "Asking for too much information",
+            "is_correct": true
+          },
+          {
+            "option_text": "Using clear button text",
+            "is_correct": false
+          },
+          {
+            "option_text": "Testing before publishing",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A common mistake is asking for too much information. Long forms reduce completion rates. Ask only for what you truly need."
+      },
+      {
+        "question": "Why is not adding tags a mistake?",
+        "options": [
+          {
+            "option_text": "Tags cost extra money",
+            "is_correct": false
+          },
+          {
+            "option_text": "Without tags, it is harder to know where leads came from or what they wanted",
+            "is_correct": true
+          },
+          {
+            "option_text": "Tags delete leads",
+            "is_correct": false
+          },
+          {
+            "option_text": "Tags are required by law",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Without tags, you cannot easily segment leads, track their source, or trigger appropriate follow-up workflows."
+      },
+      {
+        "question": "What happens if you do not set up internal notifications?",
+        "options": [
+          {
+            "option_text": "Leads are automatically deleted",
+            "is_correct": false
+          },
+          {
+            "option_text": "The lead may be missed or sit unseen in the system",
+            "is_correct": true
+          },
+          {
+            "option_text": "Forms load faster",
+            "is_correct": false
+          },
+          {
+            "option_text": "Nothing happens",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Without notifications, you may not know when new leads come in, causing delays in follow-up or missed opportunities entirely."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 9,
+    "slug": "real-world-examples",
+    "title": "Real-World Form Examples",
+    "moduleWeek": 7,
+    "moduleName": "Forms: Capturing Leads the Right Way",
+    "learningGoal": "See real-world examples of forms for different business types.",
+    "sections": [
+      {
+        "title": "Coach: Discovery Call",
+        "icon": "user",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "document",
+            "color": "blue",
+            "title": "Form Fields",
+            "description": "First Name, Email, Phone, What are you looking for support with?"
+          },
+          {
+            "icon": "arrow-right",
+            "color": "green",
+            "title": "Next Steps",
+            "description": "Add tag: Discovery Call Request. Send notification. Send thank-you email. Redirect to booking calendar."
+          }
+        ]
+      },
+      {
+        "title": "Speaker: Speaking Inquiry",
+        "icon": "mic",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "document",
+            "color": "purple",
+            "title": "Form Fields",
+            "description": "First Name, Last Name, Email, Phone, Organization, Event Date, Tell us about your event"
+          },
+          {
+            "icon": "arrow-right",
+            "color": "green",
+            "title": "Next Steps",
+            "description": "Add tag: Speaking Inquiry. Add to pipeline. Notify team. Send confirmation email."
+          }
+        ]
+      },
+      {
+        "title": "Consultant: Guide Download",
+        "icon": "download",
+        "color": "cyan",
+        "items": [
+          {
+            "icon": "document",
+            "color": "cyan",
+            "title": "Form Fields",
+            "description": "First Name, Email"
+          },
+          {
+            "icon": "arrow-right",
+            "color": "green",
+            "title": "Next Steps",
+            "description": "Add tag: Guide Download. Send guide by email. Start nurture workflow."
+          }
+        ]
+      },
+      {
+        "title": "Service Business: Quote Request",
+        "icon": "briefcase",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "document",
+            "color": "amber",
+            "title": "Form Fields",
+            "description": "First Name, Last Name, Email, Phone, What service do you need?, Message"
+          },
+          {
+            "icon": "arrow-right",
+            "color": "green",
+            "title": "Next Steps",
+            "description": "Add tag: Quote Request. Notify business owner. Add to pipeline. Send thank-you email."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Different businesses need different forms. Match your form fields and follow-up to your specific business type and customer journey.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Choose Your Example",
+        "description": "Pick the example closest to your business type."
+      },
+      {
+        "number": 2,
+        "title": "Adapt to Your Needs",
+        "description": "Modify the example fields and follow-up to match your specific business."
+      },
+      {
+        "number": 3,
+        "title": "Build Your Form",
+        "description": "Create your form in LeadProspectrr using the example as a template."
+      }
+    ],
+    "nextLessonTitle": "Module 7 Complete",
+    "quizzes": [
+      {
+        "question": "What fields might a coach use for a discovery call form?",
+        "options": [
+          {
+            "option_text": "Full business history and budget",
+            "is_correct": false
+          },
+          {
+            "option_text": "First Name, Email, Phone, What are you looking for support with?",
+            "is_correct": true
+          },
+          {
+            "option_text": "Social security number and birth date",
+            "is_correct": false
+          },
+          {
+            "option_text": "Credit card information",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A coach's discovery call form should be simple: name, contact info, and what they need support with. Enough to start a conversation."
+      },
+      {
+        "question": "What follow-up should happen after a guide download form?",
+        "options": [
+          {
+            "option_text": "Nothing, the download is enough",
+            "is_correct": false
+          },
+          {
+            "option_text": "Add tag, send guide by email, start nurture workflow",
+            "is_correct": true
+          },
+          {
+            "option_text": "Immediately call the person 10 times",
+            "is_correct": false
+          },
+          {
+            "option_text": "Delete the lead",
+            "is_correct": false
+          }
+        ],
+        "explanation": "After a guide download, tag the lead, deliver the guide by email, and start a nurture workflow to build the relationship over time."
+      },
+      {
+        "question": "Why would a speaker need different fields than a consultant?",
+        "options": [
+          {
+            "option_text": "They do not need different fields",
+            "is_correct": false
+          },
+          {
+            "option_text": "Different businesses need different information to evaluate and follow up on leads",
+            "is_correct": true
+          },
+          {
+            "option_text": "Speakers never use forms",
+            "is_correct": false
+          },
+          {
+            "option_text": "Consultants do not need contact information",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Different business types need different information. A speaker needs event details, while a consultant might need service type and challenges."
+      }
+    ]
+  }
+]
