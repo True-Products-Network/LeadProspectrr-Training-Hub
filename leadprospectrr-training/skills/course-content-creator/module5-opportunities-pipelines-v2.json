@@ -1,6 +1,6 @@
 [
   {
-    "lessonNumber": 1,
+    "lessonNumber": 2,
     "slug": "why-opportunities-pipelines-matter",
     "title": "Why Opportunities & Pipelines Matter",
     "moduleWeek": 5,
@@ -154,7 +154,7 @@
     ]
   },
   {
-    "lessonNumber": 2,
+    "lessonNumber": 3,
     "slug": "what-is-opportunity",
     "title": "What Is an Opportunity?",
     "moduleWeek": 5,
@@ -345,7 +345,7 @@
     ]
   },
   {
-    "lessonNumber": 3,
+    "lessonNumber": 4,
     "slug": "what-is-pipeline",
     "title": "What Is a Pipeline?",
     "moduleWeek": 5,
@@ -511,7 +511,7 @@
     ]
   },
   {
-    "lessonNumber": 4,
+    "lessonNumber": 5,
     "slug": "finding-opportunities-area",
     "title": "Finding the Opportunities Area",
     "moduleWeek": 5,
@@ -660,7 +660,7 @@
     ]
   },
   {
-    "lessonNumber": 5,
+    "lessonNumber": 6,
     "slug": "creating-sample-opportunity",
     "title": "Creating a Sample Opportunity",
     "moduleWeek": 5,
@@ -827,7 +827,7 @@
     ]
   },
   {
-    "lessonNumber": 6,
+    "lessonNumber": 7,
     "slug": "moving-leads-pipeline",
     "title": "Moving Leads Through the Pipeline",
     "moduleWeek": 5,
@@ -987,7 +987,7 @@
     ]
   },
   {
-    "lessonNumber": 7,
+    "lessonNumber": 8,
     "slug": "adding-notes-next-steps",
     "title": "Adding Notes and Next Steps",
     "moduleWeek": 5,
@@ -1142,7 +1142,7 @@
     ]
   },
   {
-    "lessonNumber": 8,
+    "lessonNumber": 9,
     "slug": "daily-pipeline-check-in",
     "title": "Daily Pipeline Check-In",
     "moduleWeek": 5,
@@ -1291,7 +1291,7 @@
     ]
   },
   {
-    "lessonNumber": 9,
+    "lessonNumber": 10,
     "slug": "common-mistakes-avoid",
     "title": "Common Mistakes to Avoid",
     "moduleWeek": 5,
@@ -1466,7 +1466,7 @@
     ]
   },
   {
-    "lessonNumber": 10,
+    "lessonNumber": 11,
     "slug": "real-world-practice",
     "title": "Real-World Practice Exercise",
     "moduleWeek": 5,
