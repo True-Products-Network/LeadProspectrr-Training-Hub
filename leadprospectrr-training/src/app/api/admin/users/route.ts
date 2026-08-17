@@ -1,10 +1,14 @@
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { NextRequest, NextResponse } from 'next/server'
 
 // DELETE /api/admin/users?id=user-id
 export async function DELETE(request: NextRequest) {
   try {
+    // Use regular client for auth check
     const supabase = await createClient()
+    // Use admin client for user deletion (requires service role key)
+    const adminSupabase = createAdminClient()
     
     // Check if user is admin
     const { data: { user: adminUser } } = await supabase.auth.getUser()
@@ -36,8 +40,8 @@ export async function DELETE(request: NextRequest) {
       return NextResponse.json({ error: 'Cannot delete yourself' }, { status: 400 })
     }
     
-    // Delete user from auth (this will cascade to users table via trigger)
-    const { error: authError } = await supabase.auth.admin.deleteUser(userId)
+    // Delete user from auth using admin client (requires service role key)
+    const { error: authError } = await adminSupabase.auth.admin.deleteUser(userId)
     
     if (authError) {
       console.error('Error deleting auth user:', authError)
