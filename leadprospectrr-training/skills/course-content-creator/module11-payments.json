@@ -1,0 +1,1502 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "three-payment-tools",
+    "title": "The Three Payment Tools",
+    "moduleWeek": 11,
+    "moduleName": "Payments: Simple Invoices, Products, and Payment Links",
+    "learningGoal": "Understand the job of a product, invoice, and payment link before creating anything.",
+    "sections": [
+      {
+        "title": "1. Product",
+        "icon": "box",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "box",
+            "color": "blue",
+            "title": "What is a Product?",
+            "description": "A product is the saved record for something you sell. It can represent a physical item, digital item, session, package, ticket, programme, or service."
+          },
+          {
+            "icon": "document",
+            "color": "cyan",
+            "title": "Product Record Includes",
+            "description": "A name, a short description, a price, a payment type (one-time or recurring), and any tax or quantity settings that apply."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Important Note",
+            "description": "Creating a product does not collect payment by itself. The product must be offered through an invoice, payment link, order form, store, calendar, or another supported checkout."
+          }
+        ]
+      },
+      {
+        "title": "2. Invoice",
+        "icon": "file-text",
+        "color": "green",
+        "items": [
+          {
+            "icon": "file-text",
+            "color": "green",
+            "title": "What is an Invoice?",
+            "description": "An invoice is a payment request addressed to a named customer. It records what they are buying, the amount owed, the issue date, and the due date."
+          },
+          {
+            "icon": "check",
+            "color": "cyan",
+            "title": "Use an Invoice When",
+            "description": "The buyer is already known, the amount or scope is specific to that client, the buyer needs a formal record, payment is due by a particular date, you need to see status (draft, sent, viewed, paid, overdue)."
+          }
+        ]
+      },
+      {
+        "title": "3. Payment Link",
+        "icon": "link",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "link",
+            "color": "purple",
+            "title": "What is a Payment Link?",
+            "description": "A payment link is a shareable checkout page attached to one or more saved products and prices."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Use a Payment Link When",
+            "description": "The offer and price are already set, several buyers may purchase the same offer, the buyer does not need a custom invoice first, you want to place the link in email, message, QR code, button, or social post."
+          }
+        ]
+      },
+      {
+        "title": "Quick Comparison",
+        "icon": "table",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "box",
+            "color": "blue",
+            "title": "Product",
+            "description": "Stores what you sell and how it is priced. Example: 90-Minute Strategy Session."
+          },
+          {
+            "icon": "file-text",
+            "color": "green",
+            "title": "Invoice",
+            "description": "Requests payment from one named client. Example: Invoice Amy for a custom consulting session."
+          },
+          {
+            "icon": "link",
+            "color": "purple",
+            "title": "Payment Link",
+            "description": "Gives buyers a reusable checkout. Example: Share a link for a workshop ticket."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Products store what you sell. Invoices request payment from named clients. Payment links provide reusable checkout pages. Choose the right tool for each situation.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Identify Your Offers",
+        "description": "Write down 2-3 things you currently sell or plan to sell."
+      },
+      {
+        "number": 2,
+        "title": "Choose the Right Tool",
+        "description": "For each offer, decide: Is it a product? Would you use an invoice or payment link to sell it?"
+      },
+      {
+        "number": 3,
+        "title": "Write Down One Real Offer",
+        "description": "Choose one offer you will use throughout this module."
+      }
+    ],
+    "nextLessonTitle": "Prepare the Account and Plan the Sale",
+    "quizzes": [
+      {
+        "question": "What is the main job of a product in LeadProspectrr?",
+        "options": [
+          {
+            "option_text": "It stores what you sell and how it is priced",
+            "is_correct": true
+          },
+          {
+            "option_text": "It automatically collects payments from customers",
+            "is_correct": false
+          },
+          {
+            "option_text": "It sends invoices to all your contacts",
+            "is_correct": false
+          },
+          {
+            "option_text": "It creates payment links automatically",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A product stores the name, description, price, and payment type for something you sell. It does not collect payment by itself—it must be offered through invoices, payment links, or other checkout methods."
+      },
+      {
+        "question": "When should you use an invoice instead of a payment link?",
+        "options": [
+          {
+            "option_text": "When you want to share the same offer with many buyers",
+            "is_correct": false
+          },
+          {
+            "option_text": "When the buyer is already known and the amount is specific to that client",
+            "is_correct": true
+          },
+          {
+            "option_text": "When you want to post on social media",
+            "is_correct": false
+          },
+          {
+            "option_text": "When you do not know who the buyer is",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Use an invoice when the buyer is known, the amount or scope is client-specific, they need a formal record, or payment is due by a specific date."
+      },
+      {
+        "question": "What is a payment link best used for?",
+        "options": [
+          {
+            "option_text": "Sending custom billing records to one client",
+            "is_correct": false
+          },
+          {
+            "option_text": "Creating a shareable checkout page for a fixed offer that many buyers can purchase",
+            "is_correct": true
+          },
+          {
+            "option_text": "Storing product descriptions only",
+            "is_correct": false
+          },
+          {
+            "option_text": "Tracking overdue payments",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A payment link creates a reusable checkout page for a fixed offer. It is ideal when several buyers may purchase the same thing and you want to share the link via email, social media, QR codes, or buttons."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "prepare-account-plan-sale",
+    "title": "Prepare the Account and Plan the Sale",
+    "moduleWeek": 11,
+    "moduleName": "Payments: Simple Invoices, Products, and Payment Links",
+    "learningGoal": "Check the payment foundation and define the offer before opening the product editor.",
+    "sections": [
+      {
+        "title": "Check the Payment Provider",
+        "icon": "settings",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "link",
+            "color": "blue",
+            "title": "Go to Payments → Integrations",
+            "description": "Confirm the payment provider intended for this account is connected."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "What to Check",
+            "description": "Correct business or sub-account connected, correct payment provider selected, test mode and live mode clearly identified, account can accept intended currency and payment method, you have permission to make payment changes."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Security Note",
+            "description": "Do not enter private API keys or card details into training notes, screenshots, chat messages, or shared documents."
+          }
+        ]
+      },
+      {
+        "title": "Check Business and Invoice Details",
+        "icon": "building",
+        "color": "green",
+        "items": [
+          {
+            "icon": "settings",
+            "color": "green",
+            "title": "Go to Payments → Invoices & Estimates → Settings",
+            "description": "Review general invoice details available in the account."
+          },
+          {
+            "icon": "check",
+            "color": "cyan",
+            "title": "What to Review",
+            "description": "Business name, address, contact email and phone, logo, default payment terms, invoice numbering or prefix, tax settings, accepted payment methods."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Tax Note",
+            "description": "Tax rules vary by location and by what is being sold. Use advice from a qualified tax professional when unsure whether to charge tax."
+          }
+        ]
+      },
+      {
+        "title": "Test Mode vs Live Mode",
+        "icon": "toggle",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "eye",
+            "color": "cyan",
+            "title": "Test Mode",
+            "description": "Simulates payment and does not charge a real card."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Live Mode",
+            "description": "Processes a real customer transaction."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Important",
+            "description": "Provider settings for test and live mode may be separate. A working test connection does not prove live connection is ready. Do not test a live checkout with a customer's card."
+          }
+        ]
+      },
+      {
+        "title": "The CLEAR Offer Check",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "C — Customer",
+            "description": "Who is buying?"
+          },
+          {
+            "icon": "tag",
+            "color": "cyan",
+            "title": "L — Label",
+            "description": "Is the product name easy to understand?"
+          },
+          {
+            "icon": "dollar",
+            "color": "green",
+            "title": "E — Exact Amount",
+            "description": "Is the price correct?"
+          },
+          {
+            "icon": "calendar",
+            "color": "amber",
+            "title": "A — Arrangement",
+            "description": "Is it one-time or recurring?"
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "R — Result",
+            "description": "What happens after payment?"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Before creating products or payment links, check your payment provider connection, business details, and understand test vs live mode. Use the CLEAR check to plan your offer.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Check Payment Provider",
+        "description": "Go to Payments → Integrations and verify everything is connected correctly."
+      },
+      {
+        "number": 2,
+        "title": "Review Business Details",
+        "description": "Go to Payments → Invoices & Estimates → Settings and confirm all details are accurate."
+      },
+      {
+        "number": 3,
+        "title": "Complete CLEAR Check",
+        "description": "Use the CLEAR framework to plan your offer before building."
+      }
+    ],
+    "nextLessonTitle": "Create a Simple Product",
+    "quizzes": [
+      {
+        "question": "What should you check before creating products or payment links?",
+        "options": [
+          {
+            "option_text": "Only the product name",
+            "is_correct": false
+          },
+          {
+            "option_text": "Payment provider connection, business details, and test vs live mode",
+            "is_correct": true
+          },
+          {
+            "option_text": "Just your social media accounts",
+            "is_correct": false
+          },
+          {
+            "option_text": "Nothing, you can start immediately",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Before creating products, check your payment provider connection, business and invoice details, and understand the difference between test mode and live mode."
+      },
+      {
+        "question": "What is the difference between test mode and live mode?",
+        "options": [
+          {
+            "option_text": "There is no difference",
+            "is_correct": false
+          },
+          {
+            "option_text": "Test mode simulates payment without charging; live mode processes real transactions",
+            "is_correct": true
+          },
+          {
+            "option_text": "Test mode is more expensive",
+            "is_correct": false
+          },
+          {
+            "option_text": "Live mode is only for testing",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Test mode simulates payment without charging a real card. Live mode processes actual customer transactions. Always test in test mode first."
+      },
+      {
+        "question": "What does the CLEAR offer check stand for?",
+        "options": [
+          {
+            "option_text": "Create, Launch, Earn, Analyze, Repeat",
+            "is_correct": false
+          },
+          {
+            "option_text": "Customer, Label, Exact amount, Arrangement, Result",
+            "is_correct": true
+          },
+          {
+            "option_text": "Cash, Login, Email, Account, Receipt",
+            "is_correct": false
+          },
+          {
+            "option_text": "Company, Location, Employees, Assets, Revenue",
+            "is_correct": false
+          }
+        ],
+        "explanation": "CLEAR stands for: Customer (who is buying), Label (is the name clear), Exact amount (is the price correct), Arrangement (one-time or recurring), Result (what happens after payment)."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "slug": "create-simple-product",
+    "title": "Create a Simple Product",
+    "moduleWeek": 11,
+    "moduleName": "Payments: Simple Invoices, Products, and Payment Links",
+    "learningGoal": "Create a reusable one-time service product with a clear name, description, and price.",
+    "sections": [
+      {
+        "title": "Step 1: Open Products",
+        "icon": "box",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "location",
+            "color": "blue",
+            "title": "Navigate to Products",
+            "description": "Go to Payments → Products. Select Create Product. Choose the standard product option."
+          }
+        ]
+      },
+      {
+        "title": "Step 2: Add Product Information",
+        "icon": "edit",
+        "color": "cyan",
+        "items": [
+          {
+            "icon": "tag",
+            "color": "blue",
+            "title": "Name and Description",
+            "description": "Name: 90-Minute Strategy Session. Description: A focused 90-minute session to review one business challenge and agree on the next actions."
+          },
+          {
+            "icon": "image",
+            "color": "purple",
+            "title": "Image (Optional)",
+            "description": "Add an image only if it helps the buyer recognize the offer."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Keep Names Clear",
+            "description": "Avoid internal codes or vague labels that a buyer will not understand."
+          }
+        ]
+      },
+      {
+        "title": "Step 3: Add the Price",
+        "icon": "dollar",
+        "color": "green",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Price Settings",
+            "description": "Payment type: One-time. Amount: $495.00 (or your selected price). Currency: The currency used by the connected account."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Recurring Prices",
+            "description": "Create recurring prices only after deciding billing frequency, start date, cancellation terms, and what the customer receives each period."
+          }
+        ]
+      },
+      {
+        "title": "Step 4: Review and Save",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "settings",
+            "color": "blue",
+            "title": "Optional Settings",
+            "description": "Check taxes, product statement description, quantity, online-store visibility, inventory (if physical item)."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Don't Enable Unnecessary Settings",
+            "description": "Do not turn on a setting simply because it is available. It should match how this offer is sold and delivered."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Save and Inspect",
+            "description": "Save the product, then reopen it and verify: name is correct, description is clear, amount and currency are correct, price is one-time, tax settings match, product is active."
+          }
+        ]
+      },
+      {
+        "title": "Naming Examples",
+        "icon": "tag",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Clear Names",
+            "description": "Coach: Leadership Coaching Session — 60 Minutes. Consultant: Operations Review — Half Day. Speaker: Virtual Keynote — 45 Minutes."
+          },
+          {
+            "icon": "x",
+            "color": "rose",
+            "title": "Weak Names",
+            "description": "Avoid vague names like: Coaching, Consulting Work, Speaking, Training, Plan A."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Create a clear, descriptive product with the correct price and payment type. Save and inspect before using it in invoices or payment links.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create Your Product",
+        "description": "Go to Payments → Products and create your service product with a clear name and description."
+      },
+      {
+        "number": 2,
+        "title": "Set the Price",
+        "description": "Add a one-time price with the correct amount and currency."
+      },
+      {
+        "number": 3,
+        "title": "Save and Verify",
+        "description": "Save the product, reopen it, and check all details are correct."
+      }
+    ],
+    "nextLessonTitle": "Prepare and Send a Simple Invoice",
+    "quizzes": [
+      {
+        "question": "Why should a product be created before a payment link?",
+        "options": [
+          {
+            "option_text": "Payment links are not necessary",
+            "is_correct": false
+          },
+          {
+            "option_text": "The payment link needs a saved product and price to display what the buyer is purchasing",
+            "is_correct": true
+          },
+          {
+            "option_text": "Products automatically create payment links",
+            "is_correct": false
+          },
+          {
+            "option_text": "Invoices do not need products",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A payment link needs a saved product and price to display what the buyer is purchasing and how much they will pay. The product must exist first."
+      },
+      {
+        "question": "What makes a good product name?",
+        "options": [
+          {
+            "option_text": "Internal codes like PRD-001",
+            "is_correct": false
+          },
+          {
+            "option_text": "Clear, descriptive names buyers understand like 'Leadership Coaching Session — 60 Minutes'",
+            "is_correct": true
+          },
+          {
+            "option_text": "Vague labels like 'Coaching' or 'Plan A'",
+            "is_correct": false
+          },
+          {
+            "option_text": "Random numbers and letters",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Good product names are clear and descriptive so buyers understand what they are purchasing. Avoid internal codes and vague labels."
+      },
+      {
+        "question": "What should you check after saving a product?",
+        "options": [
+          {
+            "option_text": "Nothing, it is automatically correct",
+            "is_correct": false
+          },
+          {
+            "option_text": "Name, description, amount, currency, payment type, tax settings, and availability",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only the product image",
+            "is_correct": false
+          },
+          {
+            "option_text": "Just the creation date",
+            "is_correct": false
+          }
+        ],
+        "explanation": "After saving, reopen the product and verify: name is correct, description is clear, amount and currency are correct, price is one-time (if intended), tax settings match, and product is active."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "slug": "prepare-send-invoice",
+    "title": "Prepare and Send a Simple Invoice",
+    "moduleWeek": 11,
+    "moduleName": "Payments: Simple Invoices, Products, and Payment Links",
+    "learningGoal": "Create a draft invoice for one named contact, inspect it, and understand the sending options.",
+    "sections": [
+      {
+        "title": "Step 1: Open Invoice Editor",
+        "icon": "file-text",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "location",
+            "color": "blue",
+            "title": "Navigate to Invoices",
+            "description": "Go to Payments → Invoices & Estimates. Select New → New Invoice."
+          }
+        ]
+      },
+      {
+        "title": "Step 2: Select the Customer",
+        "icon": "user",
+        "color": "green",
+        "items": [
+          {
+            "icon": "user",
+            "color": "green",
+            "title": "Choose Test Contact",
+            "description": "Select the test contact whose email address you control. Check their name, email, phone (if sending by text), and billing information."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Critical Check",
+            "description": "An invoice sent to the wrong contact creates a privacy and payment problem. Stop and correct the record before sending."
+          }
+        ]
+      },
+      {
+        "title": "Step 3: Add the Item",
+        "icon": "plus",
+        "color": "cyan",
+        "items": [
+          {
+            "icon": "box",
+            "color": "blue",
+            "title": "Add Product",
+            "description": "Add '90-Minute Strategy Session' from saved products. Confirm: Quantity is 1, Rate is correct, Tax is correct, Discount is correct (if agreed), Total matches agreement."
+          }
+        ]
+      },
+      {
+        "title": "Step 4: Set Invoice Details",
+        "icon": "settings",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "document",
+            "color": "blue",
+            "title": "Review Details",
+            "description": "Invoice number, Issue date, Due date, Payment terms, Notes or instructions, Accepted payment methods, Linked opportunity (if used)."
+          },
+          {
+            "icon": "document",
+            "color": "cyan",
+            "title": "Suggested Note",
+            "description": "Thank you for choosing the 90-Minute Strategy Session. Payment confirms your session. Booking instructions will be sent after payment is recorded."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Important",
+            "description": "Do not promise automatic delivery unless the follow-up process has been built and tested."
+          }
+        ]
+      },
+      {
+        "title": "Step 5: The INVOICE Check",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "I — Identity",
+            "description": "Is this the correct customer?"
+          },
+          {
+            "icon": "hash",
+            "color": "cyan",
+            "title": "N — Number",
+            "description": "Is the invoice number correct?"
+          },
+          {
+            "icon": "dollar",
+            "color": "green",
+            "title": "V — Value",
+            "description": "Are subtotal, tax, discount, and total correct?"
+          },
+          {
+            "icon": "box",
+            "color": "purple",
+            "title": "O — Offer",
+            "description": "Is the product or service described clearly?"
+          },
+          {
+            "icon": "calendar",
+            "color": "amber",
+            "title": "I — Important dates",
+            "description": "Are issue date and due date correct?"
+          },
+          {
+            "icon": "credit-card",
+            "color": "indigo",
+            "title": "C — Collection method",
+            "description": "Can the customer use the intended payment method?"
+          },
+          {
+            "icon": "mail",
+            "color": "rose",
+            "title": "E — Email and experience",
+            "description": "Is the sending address correct, and does the preview look professional?"
+          }
+        ]
+      },
+      {
+        "title": "Step 6: Send When Ready",
+        "icon": "send",
+        "color": "green",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Final Check",
+            "description": "When every item passes, select Send and choose delivery method (email or text)."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Training Safety",
+            "description": "Send only to a test contact you control. Use test mode. Do not send practice invoices to real customers. Keep unfinished practice invoices in Draft."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Create invoices carefully, verify all details with the INVOICE check, and only send when everything is correct. Always double-check the recipient.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create Draft Invoice",
+        "description": "Go to Payments → Invoices & Estimates and create a new invoice for your test contact."
+      },
+      {
+        "number": 2,
+        "title": "Add Product and Details",
+        "description": "Add your saved product and set all invoice details correctly."
+      },
+      {
+        "number": 3,
+        "title": "Run INVOICE Check",
+        "description": "Verify Identity, Number, Value, Offer, Important dates, Collection method, Email and experience."
+      }
+    ],
+    "nextLessonTitle": "Create and Share a Payment Link",
+    "quizzes": [
+      {
+        "question": "What should you check before sending an invoice?",
+        "options": [
+          {
+            "option_text": "Only the total amount",
+            "is_correct": false
+          },
+          {
+            "option_text": "Customer identity, invoice number, values, offer description, dates, payment method, and email experience",
+            "is_correct": true
+          },
+          {
+            "option_text": "Just the invoice number",
+            "is_correct": false
+          },
+          {
+            "option_text": "Nothing, invoices are always correct",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Use the INVOICE check: Identity (correct customer), Number (correct invoice number), Value (subtotal, tax, discount, total), Offer (clear description), Important dates, Collection method, Email and experience."
+      },
+      {
+        "question": "Why is it critical to verify the customer before sending an invoice?",
+        "options": [
+          {
+            "option_text": "It does not matter who receives it",
+            "is_correct": false
+          },
+          {
+            "option_text": "An invoice sent to the wrong contact creates privacy and payment problems",
+            "is_correct": true
+          },
+          {
+            "option_text": "Invoices are always private",
+            "is_correct": false
+          },
+          {
+            "option_text": "Wrong recipients get discounts",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Sending an invoice to the wrong contact creates serious privacy issues and payment problems. Always verify the recipient before sending."
+      },
+      {
+        "question": "What does the 'E' in INVOICE stand for?",
+        "options": [
+          {
+            "option_text": "Everything is fine",
+            "is_correct": false
+          },
+          {
+            "option_text": "Email and experience",
+            "is_correct": true
+          },
+          {
+            "option_text": "End of invoice",
+            "is_correct": false
+          },
+          {
+            "option_text": "Extra charges",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The E in INVOICE stands for Email and experience: Is the sending address correct, and does the preview look professional?"
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "slug": "create-share-payment-link",
+    "title": "Create and Share a Payment Link",
+    "moduleWeek": 11,
+    "moduleName": "Payments: Simple Invoices, Products, and Payment Links",
+    "learningGoal": "Create a reusable checkout for the saved product and inspect it before sharing.",
+    "sections": [
+      {
+        "title": "Step 1: Open Payment Links",
+        "icon": "link",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "location",
+            "color": "blue",
+            "title": "Navigate to Payment Links",
+            "description": "Go to Payments → Payment Links. Select Create Link or Create New Payment Link."
+          },
+          {
+            "icon": "tag",
+            "color": "cyan",
+            "title": "Name Your Link",
+            "description": "Enter a clear internal name, such as '90-Minute Strategy Session — $495'."
+          }
+        ]
+      },
+      {
+        "title": "Step 2: Select Product and Price",
+        "icon": "box",
+        "color": "green",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Select Product",
+            "description": "Select '90-Minute Strategy Session'. Select the correct one-time price. Confirm currency and amount."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Troubleshooting",
+            "description": "If product or price does not appear, return to Payments → Products and check it was saved correctly and is available."
+          }
+        ]
+      },
+      {
+        "title": "Step 3: Review Checkout Settings",
+        "icon": "settings",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "list",
+            "color": "blue",
+            "title": "Available Options",
+            "description": "Quantity, Adjustable quantity, Buyer contact fields, Coupon codes, Terms or consent checkboxes, Redirect or thank-you page, Product image and description, Payment methods, Branding or theme, Tracking details."
+          },
+          {
+            "icon": "lightbulb",
+            "color": "amber",
+            "title": "Keep It Simple",
+            "description": "For the first payment link, keep the checkout short. Ask only for information needed to take payment and deliver the offer."
+          }
+        ]
+      },
+      {
+        "title": "Step 4: Save and Preview",
+        "icon": "eye",
+        "color": "green",
+        "items": [
+          {
+            "icon": "save",
+            "color": "green",
+            "title": "Save the Link",
+            "description": "Select Save, then select Preview."
+          },
+          {
+            "icon": "eye",
+            "color": "blue",
+            "title": "Preview Check",
+            "description": "Open the checkout in a private browser window. Check it on phone-sized screen and desktop."
+          }
+        ]
+      },
+      {
+        "title": "Step 5: The LINK Check",
+        "icon": "check",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "tag",
+            "color": "blue",
+            "title": "L — Label",
+            "description": "Does the buyer see the correct offer name?"
+          },
+          {
+            "icon": "info",
+            "color": "cyan",
+            "title": "I — Information",
+            "description": "Are the description and buyer fields clear?"
+          },
+          {
+            "icon": "dollar",
+            "color": "green",
+            "title": "N — Number",
+            "description": "Are amount, currency, quantity, discount, and tax correct?"
+          },
+          {
+            "icon": "arrow-right",
+            "color": "purple",
+            "title": "K — Keep going",
+            "description": "Does the buyer know what happens after payment?"
+          }
+        ]
+      },
+      {
+        "title": "Step 6: Copy and Share",
+        "icon": "share",
+        "color": "green",
+        "items": [
+          {
+            "icon": "copy",
+            "color": "green",
+            "title": "Copy the URL",
+            "description": "Copy the checkout URL only after previewing and testing it."
+          },
+          {
+            "icon": "share",
+            "color": "cyan",
+            "title": "Where to Share",
+            "description": "Email, text message, website button, QR code, social message, proposal or follow-up document."
+          },
+          {
+            "icon": "check",
+            "color": "amber",
+            "title": "Reuse the Same Link",
+            "description": "Use the same approved link rather than creating new links for every buyer when product and price are identical."
+          }
+        ]
+      },
+      {
+        "title": "When NOT to Use a Payment Link",
+        "icon": "warning",
+        "color": "rose",
+        "items": [
+          {
+            "icon": "x",
+            "color": "rose",
+            "title": "Use Invoice Instead",
+            "description": "Amount is different for each buyer, buyer needs purchase order first, offer contains private client-specific information, buyer negotiated different terms, link would expose offer that should not be public."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Create payment links with clear names, select the correct product and price, review settings, preview on desktop and mobile, use the LINK check, then share. Use invoices when payment links are not appropriate.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create Payment Link",
+        "description": "Go to Payments → Payment Links and create a new link with a clear name."
+      },
+      {
+        "number": 2,
+        "title": "Select Product and Price",
+        "description": "Choose your saved product and confirm the correct one-time price."
+      },
+      {
+        "number": 3,
+        "title": "Preview and Test",
+        "description": "Save, preview on desktop and mobile, run the LINK check before sharing."
+      }
+    ],
+    "nextLessonTitle": "Test the Full Payment Journey",
+    "quizzes": [
+      {
+        "question": "What does the LINK check stand for?",
+        "options": [
+          {
+            "option_text": "Login, Invoice, Number, Knowledge",
+            "is_correct": false
+          },
+          {
+            "option_text": "Label, Information, Number, Keep going",
+            "is_correct": true
+          },
+          {
+            "option_text": "Launch, Integrate, Notify, Collect",
+            "is_correct": false
+          },
+          {
+            "option_text": "List, Itemize, Note, Know",
+            "is_correct": false
+          }
+        ],
+        "explanation": "LINK stands for: Label (correct offer name), Information (clear description and fields), Number (correct amount, currency, quantity), Keep going (buyer knows what happens after payment)."
+      },
+      {
+        "question": "When should you NOT use a general payment link?",
+        "options": [
+          {
+            "option_text": "When the offer and price are fixed",
+            "is_correct": false
+          },
+          {
+            "option_text": "When the amount is different for each buyer or the offer contains private information",
+            "is_correct": true
+          },
+          {
+            "option_text": "When you want to share on social media",
+            "is_correct": false
+          },
+          {
+            "option_text": "When you have a saved product",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Do not use a general payment link when: amount varies per buyer, buyer needs PO first, offer has private info, terms were negotiated differently, or the link would expose a non-public offer. Use an invoice instead."
+      },
+      {
+        "question": "Why preview the payment link on mobile?",
+        "options": [
+          {
+            "option_text": "Mobile preview is not important",
+            "is_correct": false
+          },
+          {
+            "option_text": "Many buyers will complete purchases on mobile devices",
+            "is_correct": true
+          },
+          {
+            "option_text": "Desktop preview is enough",
+            "is_correct": false
+          },
+          {
+            "option_text": "Mobile links work differently",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Many buyers complete purchases on mobile devices. Always preview your payment link on both desktop and mobile to ensure a good experience on all screen sizes."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "slug": "test-full-payment-journey",
+    "title": "Test the Full Payment Journey",
+    "moduleWeek": 11,
+    "moduleName": "Payments: Simple Invoices, Products, and Payment Links",
+    "learningGoal": "Run a controlled test and confirm the records, messages, checkout, and next action.",
+    "sections": [
+      {
+        "title": "The PAY FIRST Safety Check",
+        "icon": "shield",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "box",
+            "color": "blue",
+            "title": "P — Product",
+            "description": "Correct name, description, and price."
+          },
+          {
+            "icon": "settings",
+            "color": "cyan",
+            "title": "A — Account",
+            "description": "Correct business, payment provider, and currency."
+          },
+          {
+            "icon": "user",
+            "color": "green",
+            "title": "Y — Your buyer",
+            "description": "Correct contact and delivery details."
+          },
+          {
+            "icon": "calculator",
+            "color": "amber",
+            "title": "F — Figures",
+            "description": "Correct quantity, discount, tax, total, and due date."
+          },
+          {
+            "icon": "message",
+            "color": "purple",
+            "title": "I — Instructions",
+            "description": "Clear note about what happens after payment."
+          },
+          {
+            "icon": "play",
+            "color": "indigo",
+            "title": "R — Run a test",
+            "description": "Use the approved test process."
+          },
+          {
+            "icon": "eye",
+            "color": "rose",
+            "title": "S — Screen check",
+            "description": "Review desktop and mobile checkout."
+          },
+          {
+            "icon": "chart",
+            "color": "teal",
+            "title": "T — Track the result",
+            "description": "Confirm payment and follow-up record inside LeadProspectrr."
+          }
+        ]
+      },
+      {
+        "title": "Test the Product",
+        "icon": "box",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "check",
+            "color": "blue",
+            "title": "Product Checklist",
+            "description": "Reopen the product. Check name and description. Check one-time vs recurring. Check amount and currency. Check tax and availability settings."
+          }
+        ]
+      },
+      {
+        "title": "Test the Invoice",
+        "icon": "file-text",
+        "color": "green",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Invoice Checklist",
+            "description": "Use test contact you control. Confirm customer identity. Preview the invoice. Check dates, item, subtotal, tax, discount, total. Check email or text content. Confirm status changes as expected."
+          }
+        ]
+      },
+      {
+        "title": "Test the Payment Link",
+        "icon": "link",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "check",
+            "color": "purple",
+            "title": "Link Checklist",
+            "description": "Open in private browser. Check desktop and mobile layouts. Confirm offer name, amount, currency, quantity. Complete test-mode transaction. Check confirmation shown to buyer. Check payment/order record. Check contact record. Check receipt or notification. Check booking, delivery, or follow-up step."
+          }
+        ]
+      },
+      {
+        "title": "Test Mode Warning",
+        "icon": "warning",
+        "color": "rose",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Important",
+            "description": "Test mode and live mode may use different provider settings. After test passes: confirm live provider connection separately, switch only intended checkout to live mode, open final live link without entering card details, check visible offer, amount, currency, and business details again."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Use the PAY FIRST safety check before any payment request goes live. Test products, invoices, and payment links thoroughly. Confirm test mode vs live mode settings.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Run PAY FIRST Check",
+        "description": "Verify Product, Account, Your buyer, Figures, Instructions before testing."
+      },
+      {
+        "number": 2,
+        "title": "Test Each Component",
+        "description": "Test the product, invoice, and payment link using the checklists."
+      },
+      {
+        "number": 3,
+        "title": "Confirm Live Mode",
+        "description": "After test passes, verify live provider connection before going live."
+      }
+    ],
+    "nextLessonTitle": "Apply the Payment Path to Your Business",
+    "quizzes": [
+      {
+        "question": "What does PAY FIRST stand for?",
+        "options": [
+          {
+            "option_text": "Pay All Your Fees Immediately, Receive Service Today",
+            "is_correct": false
+          },
+          {
+            "option_text": "Product, Account, Your buyer, Figures, Instructions, Run a test, Screen check, Track the result",
+            "is_correct": true
+          },
+          {
+            "option_text": "Purchase All Your Financial Items, Record Sales Transactions",
+            "is_correct": false
+          },
+          {
+            "option_text": "Process All Yearly Financial Income Reports Swiftly Today",
+            "is_correct": false
+          }
+        ],
+        "explanation": "PAY FIRST stands for: Product, Account, Your buyer, Figures, Instructions, Run a test, Screen check, Track the result. Use this before any payment request goes live."
+      },
+      {
+        "question": "Why should you test in a private browser window?",
+        "options": [
+          {
+            "option_text": "It is faster",
+            "is_correct": false
+          },
+          {
+            "option_text": "It shows more closely what a buyer who is not signed in will see",
+            "is_correct": true
+          },
+          {
+            "option_text": "It saves money",
+            "is_correct": false
+          },
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A private browser window shows what a buyer who is not signed into your account will see, giving you a more accurate test of the customer experience."
+      },
+      {
+        "question": "What should you do after a test passes?",
+        "options": [
+          {
+            "option_text": "Immediately switch everything to live mode",
+            "is_correct": false
+          },
+          {
+            "option_text": "Confirm the live provider connection separately before switching to live mode",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete the test data",
+            "is_correct": false
+          },
+          {
+            "option_text": "Never use live mode",
+            "is_correct": false
+          }
+        ],
+        "explanation": "After a test passes, confirm the live provider connection separately. Test and live mode may use different provider settings. Switch only the intended checkout to live mode and verify again."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "slug": "apply-payment-path",
+    "title": "Apply the Payment Path to Your Business",
+    "moduleWeek": 11,
+    "moduleName": "Payments: Simple Invoices, Products, and Payment Links",
+    "learningGoal": "Build a payment path for a real offer used by your business.",
+    "sections": [
+      {
+        "title": "Choose Your Scenario",
+        "icon": "target",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "Scenario A: Coach",
+            "description": "Create one-time product for 60-minute coaching session. Prepare invoice for named client and payment link for same standard session."
+          },
+          {
+            "icon": "briefcase",
+            "color": "cyan",
+            "title": "Scenario B: Consultant",
+            "description": "Create half-day review product. Use invoice for client-specific engagement. Decide if general payment link is appropriate."
+          },
+          {
+            "icon": "mic",
+            "color": "purple",
+            "title": "Scenario C: Speaker",
+            "description": "Create virtual keynote deposit product. Prepare invoice for event organizer. Do not create public link if amount varies by event."
+          },
+          {
+            "icon": "users",
+            "color": "amber",
+            "title": "Scenario D: Trainer",
+            "description": "Create team workshop ticket product. Build reusable payment link for organizations purchasing same package at same price."
+          },
+          {
+            "icon": "tool",
+            "color": "green",
+            "title": "Scenario E: Service Business",
+            "description": "Create initial service-call product. Prepare invoice for existing customer and link for fixed-price booking or deposit."
+          }
+        ]
+      },
+      {
+        "title": "Exercise Steps",
+        "icon": "checklist",
+        "color": "green",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "1. Name Customer and Offer",
+            "description": "Identify who is buying and what they are buying."
+          },
+          {
+            "icon": "edit",
+            "color": "cyan",
+            "title": "2. Write Product Details",
+            "description": "Product name and buyer-facing description."
+          },
+          {
+            "icon": "dollar",
+            "color": "green",
+            "title": "3. Set Price and Currency",
+            "description": "Price, currency, and payment type (one-time)."
+          },
+          {
+            "icon": "settings",
+            "color": "amber",
+            "title": "4. Decide on Tax/Discount",
+            "description": "Whether tax, discount, or quantity applies."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "5. Create and Inspect Product",
+            "description": "Build the product and verify all details."
+          },
+          {
+            "icon": "file-text",
+            "color": "indigo",
+            "title": "6. Create Draft Invoice",
+            "description": "For a test contact."
+          },
+          {
+            "icon": "link",
+            "color": "purple",
+            "title": "7. Create Payment Link",
+            "description": "Only if offer and price can be shared safely."
+          },
+          {
+            "icon": "shield",
+            "color": "rose",
+            "title": "8. Run PAY FIRST Check",
+            "description": "Verify everything before testing."
+          },
+          {
+            "icon": "play",
+            "color": "teal",
+            "title": "9. Complete Test",
+            "description": "Run approved test process."
+          },
+          {
+            "icon": "arrow-right",
+            "color": "amber",
+            "title": "10. Record Next Action",
+            "description": "What happens after payment and who owns it."
+          }
+        ]
+      },
+      {
+        "title": "Finish Line",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Complete When",
+            "description": "One clearly named product with correct price and type. One invoice prepared for correct test contact. One payment link previewed on desktop and mobile (if appropriate). Correct provider and mode checked. Test result appears in payment and contact records. Buyer told what happens next. Named person owns delivery or follow-up."
+          }
+        ]
+      },
+      {
+        "title": "What to Add Later",
+        "icon": "star",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "plus",
+            "color": "amber",
+            "title": "Future Improvements",
+            "description": "After basic payment path works, add one at a time: Recurring prices or subscriptions, Recurring invoices, Estimates, Deposits or payment schedules, Invoice reminders, Coupons, Multiple-product links, Text-to-pay, Payment-received workflows, Booking or digital delivery after payment, Pipeline updates and team notifications. Test complete buyer journey after every change."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Apply the payment path to your real business. Complete all exercise steps, reach the finish line, and test thoroughly. Add improvements one at a time after the basic path works.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Choose Your Scenario",
+        "description": "Select the scenario closest to your business or create your own."
+      },
+      {
+        "number": 2,
+        "title": "Work Through Exercise Steps",
+        "description": "Complete all 10 steps from naming the customer to recording the next action."
+      },
+      {
+        "number": 3,
+        "title": "Reach the Finish Line",
+        "description": "Ensure all completion criteria are met before considering the payment path done."
+      }
+    ],
+    "nextLessonTitle": "Module 11 Complete",
+    "quizzes": [
+      {
+        "question": "What is the first step in applying the payment path?",
+        "options": [
+          {
+            "option_text": "Immediately create a payment link",
+            "is_correct": false
+          },
+          {
+            "option_text": "Name the customer and the offer",
+            "is_correct": true
+          },
+          {
+            "option_text": "Skip planning and start building",
+            "is_correct": false
+          },
+          {
+            "option_text": "Delete existing products",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The first step is to identify who is buying (the customer) and what they are buying (the offer). Planning before building prevents errors."
+      },
+      {
+        "question": "When is the exercise complete?",
+        "options": [
+          {
+            "option_text": "When the product is created",
+            "is_correct": false
+          },
+          {
+            "option_text": "When all criteria are met: product created, invoice prepared, link previewed, provider checked, test completed, and follow-up owner named",
+            "is_correct": true
+          },
+          {
+            "option_text": "When you run out of time",
+            "is_correct": false
+          },
+          {
+            "option_text": "When the invoice is sent",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The exercise is complete when: product is clearly named with correct price, invoice prepared for correct contact, payment link previewed (if appropriate), provider and mode checked, test results appear in records, buyer knows next steps, and a named person owns follow-up."
+      },
+      {
+        "question": "What should you do after the basic payment path works?",
+        "options": [
+          {
+            "option_text": "Immediately add all possible features",
+            "is_correct": false
+          },
+          {
+            "option_text": "Add one improvement at a time and test the complete journey after every change",
+            "is_correct": true
+          },
+          {
+            "option_text": "Never touch it again",
+            "is_correct": false
+          },
+          {
+            "option_text": "Delete it and start over",
+            "is_correct": false
+          }
+        ],
+        "explanation": "After the basic payment path works, add improvements one at a time: recurring billing, estimates, deposits, reminders, coupons, workflows, etc. Test the complete buyer journey after every change."
+      }
+    ]
+  }
+]
