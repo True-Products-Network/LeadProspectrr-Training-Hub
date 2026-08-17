@@ -1,0 +1,1413 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "email-templates-vs-campaigns",
+    "title": "Email Templates vs Campaigns",
+    "moduleWeek": 3,
+    "moduleName": "Creating Email Templates and Campaigns",
+    "learningGoal": "Understand the difference between email templates, campaigns, and workflow emails in LeadProspectrr.",
+    "sections": [
+      {
+        "title": "Know the Difference",
+        "icon": "info",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "document",
+            "color": "blue",
+            "title": "Email Template",
+            "description": "A reusable saved email like 'Thanks for booking a call' that you can use again and again"
+          },
+          {
+            "icon": "mail",
+            "color": "green",
+            "title": "Email Campaign",
+            "description": "A message sent to a group, like a monthly newsletter to your contact list"
+          },
+          {
+            "icon": "settings",
+            "color": "purple",
+            "title": "Workflow Email",
+            "description": "An email sent automatically after a trigger, like when someone fills out a form"
+          }
+        ]
+      },
+      {
+        "title": "Simple Rule to Remember",
+        "icon": "lightbulb",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "Template = the message",
+            "description": "The actual email content you write and save"
+          },
+          {
+            "icon": "users",
+            "color": "amber",
+            "title": "Campaign = who gets it and when",
+            "description": "How you send that message to the right people at the right time"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Start with templates first. Learn to write and save a good email template before using campaigns and workflows.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Review your current emails",
+        "description": "Think about emails you send repeatedly to leads or clients"
+      },
+      {
+        "number": 2,
+        "title": "Identify template opportunities",
+        "description": "List 3 emails you write often that could become templates"
+      },
+      {
+        "number": 3,
+        "title": "Navigate to Marketing > Emails",
+        "description": "Familiarize yourself with where templates and campaigns live in LeadProspectrr"
+      }
+    ],
+    "nextLessonTitle": "Plan Your Email Before Building",
+    "quizzes": [
+      {
+        "question": "What is the main difference between an email template and an email campaign?",
+        "options": [
+          {
+            "option_text": "Templates are more expensive than campaigns",
+            "is_correct": false
+          },
+          {
+            "option_text": "A template is the reusable message; a campaign is who gets it and when it is sent",
+            "is_correct": true
+          },
+          {
+            "option_text": "Campaigns can only be sent once",
+            "is_correct": false
+          },
+          {
+            "option_text": "Templates are only for automated emails",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Templates are reusable email messages you create once and use multiple times. Campaigns are how you send those messages to specific groups of contacts."
+      },
+      {
+        "question": "Which of these is an example of a workflow email?",
+        "options": [
+          {
+            "option_text": "A monthly newsletter you send to your entire list",
+            "is_correct": false
+          },
+          {
+            "option_text": "A thank-you email template you save for future use",
+            "is_correct": false
+          },
+          {
+            "option_text": "An email that sends automatically when someone fills out a form on your website",
+            "is_correct": true
+          },
+          {
+            "option_text": "A one-time announcement about a new product",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Workflow emails are automated and triggered by specific actions, like filling out a form, booking an appointment, or making a purchase."
+      },
+      {
+        "question": "What should you learn first before creating campaigns and workflows?",
+        "options": [
+          {
+            "option_text": "How to write complex automation rules",
+            "is_correct": false
+          },
+          {
+            "option_text": "How to import contacts from a spreadsheet",
+            "is_correct": false
+          },
+          {
+            "option_text": "How to create and save a good email template",
+            "is_correct": true
+          },
+          {
+            "option_text": "How to design custom HTML emails",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Start with templates first. Once you know how to write effective email templates, you can use them in campaigns and workflows."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "plan-your-email",
+    "title": "Plan Your Email Before Building",
+    "moduleWeek": 3,
+    "moduleName": "Creating Email Templates and Campaigns",
+    "learningGoal": "Learn how to plan your email by answering five key questions before creating it in LeadProspectrr.",
+    "sections": [
+      {
+        "title": "Five Questions to Answer First",
+        "icon": "checklist",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "users",
+            "color": "blue",
+            "title": "Who is this email for?",
+            "description": "Define your specific audience - new leads, past clients, webinar attendees"
+          },
+          {
+            "icon": "question",
+            "color": "green",
+            "title": "Why are they receiving it?",
+            "description": "What triggered this email? What is the context?"
+          },
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "What do I want them to do?",
+            "description": "One clear action - book a call, download a guide, reply to the email"
+          },
+          {
+            "icon": "link",
+            "color": "purple",
+            "title": "What link or button do they need?",
+            "description": "The specific URL or call-to-action button they'll click"
+          },
+          {
+            "icon": "document",
+            "color": "cyan",
+            "title": "Should this be a reusable template?",
+            "description": "Will you send this same type of email multiple times?"
+          }
+        ]
+      },
+      {
+        "title": "Example Scenario",
+        "icon": "lightbulb",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "info",
+            "color": "amber",
+            "title": "Coach following up on a free guide download",
+            "description": "Goal: Thank them, give them the resource, and invite them to book a call - not tell their whole life story"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "One email. One message. One action. If your email tries to do too many things, people will do nothing.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Choose one email to write",
+        "description": "Pick a specific email you need to create from your plan"
+      },
+      {
+        "number": 2,
+        "title": "Answer the five questions",
+        "description": "Write down answers to who, why, what action, what link, and whether to save as template"
+      },
+      {
+        "number": 3,
+        "title": "Write one sentence for the goal",
+        "description": "Summarize what this email needs to accomplish in a single sentence"
+      }
+    ],
+    "nextLessonTitle": "Create an Email Template",
+    "quizzes": [
+      {
+        "question": "Why is it important to answer 'Who is this email for?' before writing?",
+        "options": [
+          {
+            "option_text": "So you can charge them more money",
+            "is_correct": false
+          },
+          {
+            "option_text": "To know which font size to use",
+            "is_correct": false
+          },
+          {
+            "option_text": "So you can tailor the message to their specific situation and needs",
+            "is_correct": true
+          },
+          {
+            "option_text": "To decide what time to send it",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Knowing your audience helps you write relevant content that speaks to their specific situation, increasing the chances they'll take action."
+      },
+      {
+        "question": "What happens if your email has too many ideas or calls-to-action?",
+        "options": [
+          {
+            "option_text": "People will share it more often",
+            "is_correct": false
+          },
+          {
+            "option_text": "People will do nothing because they are confused about what to do",
+            "is_correct": true
+          },
+          {
+            "option_text": "It will automatically be split into multiple emails",
+            "is_correct": false
+          },
+          {
+            "option_text": "The email will be marked as spam",
+            "is_correct": false
+          }
+        ],
+        "explanation": "When you give people too many options or messages, they experience decision paralysis and often take no action at all."
+      },
+      {
+        "question": "When should you save an email as a reusable template?",
+        "options": [
+          {
+            "option_text": "Only for welcome emails",
+            "is_correct": false
+          },
+          {
+            "option_text": "When you will send the same type of email multiple times",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only for emails with images",
+            "is_correct": false
+          },
+          {
+            "option_text": "Never - templates are not recommended",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Save any email as a template if you'll send similar messages repeatedly - follow-ups, thank-yous, reminders, resource deliveries, etc."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "slug": "create-email-template",
+    "title": "Create an Email Template",
+    "moduleWeek": 3,
+    "moduleName": "Creating Email Templates and Campaigns",
+    "learningGoal": "Learn how to create a reusable email template in LeadProspectrr from start to finish.",
+    "sections": [
+      {
+        "title": "Step-by-Step Walkthrough",
+        "icon": "checklist",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "settings",
+            "color": "blue",
+            "title": "1. Go to Marketing > Emails > Templates",
+            "description": "Navigate to the Templates section in LeadProspectrr"
+          },
+          {
+            "icon": "document",
+            "color": "green",
+            "title": "2. Click New Template",
+            "description": "Choose a blank template or simple layout to start"
+          },
+          {
+            "icon": "tag",
+            "color": "amber",
+            "title": "3. Add a clear template name",
+            "description": "Use descriptive names like 'Welcome - New Lead' or 'Follow-Up - No Response'"
+          },
+          {
+            "icon": "mail",
+            "color": "purple",
+            "title": "4. Add subject line and email body",
+            "description": "Write your message following the one email, one message, one action rule"
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "5. Add buttons or links",
+            "description": "Include your call-to-action with working links"
+          },
+          {
+            "icon": "eye",
+            "color": "indigo",
+            "title": "6. Preview and test",
+            "description": "Send yourself a test email to see how it looks"
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "7. Save the template",
+            "description": "Your template is now ready to use in campaigns"
+          }
+        ]
+      },
+      {
+        "title": "Good Template Naming Examples",
+        "icon": "lightbulb",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "Clear names make templates easy to find",
+            "description": "Welcome - New Lead | Follow-Up - No Response | Thank You - After Session | Reminder - Upcoming Appointment | Offer - Book a Strategy Call | Resource Delivery - Free Guide"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Always send yourself a test email before saving. Check how it looks on desktop and mobile.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Navigate to Marketing > Emails > Templates",
+        "description": "Find the Templates section in your LeadProspectrr account"
+      },
+      {
+        "number": 2,
+        "title": "Create a new template",
+        "description": "Click New Template and choose a simple layout"
+      },
+      {
+        "number": 3,
+        "title": "Name your template clearly",
+        "description": "Use a descriptive name you'll recognize later"
+      },
+      {
+        "number": 4,
+        "title": "Send a test email",
+        "description": "Preview and send a test to yourself before saving"
+      }
+    ],
+    "nextLessonTitle": "Write Effective Email Content",
+    "quizzes": [
+      {
+        "question": "Where do you go to create a new email template in LeadProspectrr?",
+        "options": [
+          {
+            "option_text": "Contacts > Import",
+            "is_correct": false
+          },
+          {
+            "option_text": "Marketing > Emails > Templates",
+            "is_correct": true
+          },
+          {
+            "option_text": "Settings > Integrations",
+            "is_correct": false
+          },
+          {
+            "option_text": "Dashboard > Reports",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Email templates are created in the Marketing section under Emails, then Templates."
+      },
+      {
+        "question": "Why is it important to use clear template names?",
+        "options": [
+          {
+            "option_text": "It makes the email send faster",
+            "is_correct": false
+          },
+          {
+            "option_text": "So you can easily find and identify the right template later",
+            "is_correct": true
+          },
+          {
+            "option_text": "It improves email deliverability",
+            "is_correct": false
+          },
+          {
+            "option_text": "It is required by LeadProspectrr",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Clear names like 'Welcome - New Lead' help you quickly find the right template when you need it, especially as your template library grows."
+      },
+      {
+        "question": "What should you do before saving a new template?",
+        "options": [
+          {
+            "option_text": "Delete all other templates",
+            "is_correct": false
+          },
+          {
+            "option_text": "Send yourself a test email to check how it looks",
+            "is_correct": true
+          },
+          {
+            "option_text": "Share it on social media",
+            "is_correct": false
+          },
+          {
+            "option_text": "Print a physical copy",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Always send yourself a test email to preview formatting, check links, and see how it appears on both desktop and mobile before saving."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "slug": "write-effective-email",
+    "title": "Write Effective Email Content",
+    "moduleWeek": 3,
+    "moduleName": "Creating Email Templates and Campaigns",
+    "learningGoal": "Learn the simple structure for writing clear, effective emails that get results.",
+    "sections": [
+      {
+        "title": "Email Structure Framework",
+        "icon": "document",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "mail",
+            "color": "blue",
+            "title": "Subject Line",
+            "description": "Tells them why to open the email. Keep it clear and specific."
+          },
+          {
+            "icon": "chat",
+            "color": "green",
+            "title": "First Line",
+            "description": "Explains why they are receiving this email. Sets the context."
+          },
+          {
+            "icon": "info",
+            "color": "amber",
+            "title": "Main Message",
+            "description": "Gives the useful information they need. Keep it concise."
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Call to Action",
+            "description": "Tells them exactly what to do next. One clear action."
+          },
+          {
+            "icon": "users",
+            "color": "cyan",
+            "title": "Sign-Off",
+            "description": "Keeps it personal and professional."
+          }
+        ]
+      },
+      {
+        "title": "The Golden Rule",
+        "icon": "star",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "One email. One message. One action.",
+            "description": "If your email tries to do too many things, people will do nothing. Focus on a single goal."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Write for your audience using words they understand. Keep sentences short and paragraphs to 2-3 sentences.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Choose one email to write",
+        "description": "Pick a specific email you need to create from your plan"
+      },
+      {
+        "number": 2,
+        "title": "Write each section",
+        "description": "Subject line, first line, main message, CTA, and sign-off"
+      },
+      {
+        "number": 3,
+        "title": "Check the one-action rule",
+        "description": "Make sure you're only asking for one thing in this email"
+      }
+    ],
+    "nextLessonTitle": "Add Personalization to Emails",
+    "quizzes": [
+      {
+        "question": "What is the purpose of the subject line?",
+        "options": [
+          {
+            "option_text": "To tell the full story of the email",
+            "is_correct": false
+          },
+          {
+            "option_text": "To tell them why they should open the email",
+            "is_correct": true
+          },
+          {
+            "option_text": "To include all your contact information",
+            "is_correct": false
+          },
+          {
+            "option_text": "To make the email look longer",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The subject line's job is to get the email opened. It should be clear, specific, and give the recipient a reason to open and read more."
+      },
+      {
+        "question": "According to the golden rule, how many actions should one email contain?",
+        "options": [
+          {
+            "option_text": "As many as possible",
+            "is_correct": false
+          },
+          {
+            "option_text": "Three to five actions",
+            "is_correct": false
+          },
+          {
+            "option_text": "One clear action",
+            "is_correct": true
+          },
+          {
+            "option_text": "It depends on the email length",
+            "is_correct": false
+          }
+        ],
+        "explanation": "One email, one message, one action. Multiple calls-to-action confuse readers and reduce the chance they'll take any action at all."
+      },
+      {
+        "question": "What should the first line of your email do?",
+        "options": [
+          {
+            "option_text": "Include your company history",
+            "is_correct": false
+          },
+          {
+            "option_text": "List all your services",
+            "is_correct": false
+          },
+          {
+            "option_text": "Explain why they are receiving this email and set the context",
+            "is_correct": true
+          },
+          {
+            "option_text": "Ask for a sale immediately",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The first line sets context and reminds the recipient why they're getting this email, making them more likely to continue reading."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "slug": "add-personalization",
+    "title": "Add Personalization to Emails",
+    "moduleWeek": 3,
+    "moduleName": "Creating Email Templates and Campaigns",
+    "learningGoal": "Learn how to use personalization fields to make emails feel more human and relevant.",
+    "sections": [
+      {
+        "title": "Common Personalization Fields",
+        "icon": "users",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "users",
+            "color": "blue",
+            "title": "First name",
+            "description": "Hi {{contact.first_name}}, makes the email feel personal"
+          },
+          {
+            "icon": "building",
+            "color": "green",
+            "title": "Business name",
+            "description": "Reference their company or organization"
+          },
+          {
+            "icon": "clock",
+            "color": "amber",
+            "title": "Appointment time",
+            "description": "Confirm scheduled meetings or calls"
+          },
+          {
+            "icon": "link",
+            "color": "purple",
+            "title": "Calendar link",
+            "description": "Personal booking links for each contact"
+          },
+          {
+            "icon": "download",
+            "color": "cyan",
+            "title": "Resource link",
+            "description": "Specific guides or downloads they requested"
+          }
+        ]
+      },
+      {
+        "title": "Example with Personalization",
+        "icon": "lightbulb",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "chat",
+            "color": "amber",
+            "title": "Hi {{contact.first_name}},",
+            "description": "Thanks for joining today's session. This small touch makes the email feel written just for them."
+          }
+        ]
+      },
+      {
+        "title": "Important Warning",
+        "icon": "warning",
+        "color": "rose",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Always test personalization before sending",
+            "description": "A broken personalization field like 'Hi {{contact.first_name}},' when the field is empty makes your email look careless and unprofessional"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Personalization makes emails feel human, but broken personalization fields destroy credibility. Always test first.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Identify personalization opportunities",
+        "description": "Look at your email and see where adding a name or detail would help"
+      },
+      {
+        "number": 2,
+        "title": "Add one personalization field",
+        "description": "Start with first name - it's the most common and impactful"
+      },
+      {
+        "number": 3,
+        "title": "Send a test email",
+        "description": "Verify the personalization renders correctly with real data"
+      }
+    ],
+    "nextLessonTitle": "Create an Email Campaign",
+    "quizzes": [
+      {
+        "question": "What is the benefit of using personalization fields in emails?",
+        "options": [
+          {
+            "option_text": "It makes the email send faster",
+            "is_correct": false
+          },
+          {
+            "option_text": "It makes the email feel more human and relevant to the recipient",
+            "is_correct": true
+          },
+          {
+            "option_text": "It reduces the email file size",
+            "is_correct": false
+          },
+          {
+            "option_text": "It automatically translates the email",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Personalization fields like first name make emails feel individually written, increasing engagement and response rates."
+      },
+      {
+        "question": "What happens if a personalization field is broken or empty?",
+        "options": [
+          {
+            "option_text": "The email sends normally with no issues",
+            "is_correct": false
+          },
+          {
+            "option_text": "The email looks careless and unprofessional",
+            "is_correct": true
+          },
+          {
+            "option_text": "The email is automatically deleted",
+            "is_correct": false
+          },
+          {
+            "option_text": "The recipient cannot open the email",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Broken personalization fields show the raw code (like '{{contact.first_name}}') or blank spaces, making your email look sloppy and automated rather than personal."
+      },
+      {
+        "question": "Which personalization field is most commonly used and impactful?",
+        "options": [
+          {
+            "option_text": "IP address",
+            "is_correct": false
+          },
+          {
+            "option_text": "First name",
+            "is_correct": true
+          },
+          {
+            "option_text": "Browser type",
+            "is_correct": false
+          },
+          {
+            "option_text": "Email domain",
+            "is_correct": false
+          }
+        ],
+        "explanation": "First name is the most common and impactful personalization field. Starting an email with 'Hi Sarah,' feels much more personal than 'Hi there,' or 'Dear Customer,'"
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "slug": "create-email-campaign",
+    "title": "Create an Email Campaign",
+    "moduleWeek": 3,
+    "moduleName": "Creating Email Templates and Campaigns",
+    "learningGoal": "Learn how to create and send an email campaign to the right audience in LeadProspectrr.",
+    "sections": [
+      {
+        "title": "Campaign Creation Walkthrough",
+        "icon": "checklist",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "settings",
+            "color": "blue",
+            "title": "1. Go to Marketing > Email Campaigns",
+            "description": "Navigate to the Campaigns section"
+          },
+          {
+            "icon": "document",
+            "color": "green",
+            "title": "2. Create a new campaign",
+            "description": "Click to start a new campaign"
+          },
+          {
+            "icon": "mail",
+            "color": "amber",
+            "title": "3. Choose your email template",
+            "description": "Select the template you created earlier"
+          },
+          {
+            "icon": "users",
+            "color": "purple",
+            "title": "4. Select the audience or smart list",
+            "description": "Choose who should receive this email - not everyone, just the right group"
+          },
+          {
+            "icon": "check",
+            "color": "cyan",
+            "title": "5. Confirm the contact list",
+            "description": "Double-check you're sending to the right people"
+          },
+          {
+            "icon": "user",
+            "color": "indigo",
+            "title": "6. Check sender name and email",
+            "description": "Verify the from name and reply-to address"
+          },
+          {
+            "icon": "eye",
+            "color": "violet",
+            "title": "7. Preview and send a test",
+            "description": "See how it looks and test all links"
+          },
+          {
+            "icon": "clock",
+            "color": "teal",
+            "title": "8. Schedule or send",
+            "description": "Send immediately or schedule for later"
+          },
+          {
+            "icon": "chart",
+            "color": "pink",
+            "title": "9. Review results",
+            "description": "Check opens, clicks, and replies after sending"
+          }
+        ]
+      },
+      {
+        "title": "Key Point",
+        "icon": "lightbulb",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "users",
+            "color": "amber",
+            "title": "Send to the right group, not everyone",
+            "description": "Do not send to everyone just because they are in the CRM. Send the right message to the right group."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Campaigns connect your template to your audience. Choose the right people and always test before sending.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Navigate to Marketing > Email Campaigns",
+        "description": "Find the Campaigns section in LeadProspectrr"
+      },
+      {
+        "number": 2,
+        "title": "Create a new campaign",
+        "description": "Start the campaign creation process"
+      },
+      {
+        "number": 3,
+        "title": "Select your template and audience",
+        "description": "Choose the email template and the right smart list or audience"
+      },
+      {
+        "number": 4,
+        "title": "Send a test email",
+        "description": "Always test before sending to your full list"
+      }
+    ],
+    "nextLessonTitle": "Review Before Sending",
+    "quizzes": [
+      {
+        "question": "Where do you go to create an email campaign in LeadProspectrr?",
+        "options": [
+          {
+            "option_text": "Contacts > Import",
+            "is_correct": false
+          },
+          {
+            "option_text": "Marketing > Email Campaigns",
+            "is_correct": true
+          },
+          {
+            "option_text": "Settings > Users",
+            "is_correct": false
+          },
+          {
+            "option_text": "Dashboard > Analytics",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Email campaigns are created in the Marketing section under Email Campaigns, separate from where you create templates."
+      },
+      {
+        "question": "What should you do before sending a campaign to your full list?",
+        "options": [
+          {
+            "option_text": "Post about it on social media",
+            "is_correct": false
+          },
+          {
+            "option_text": "Send a test email to yourself first",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete your contact list",
+            "is_correct": false
+          },
+          {
+            "option_text": "Wait for a holiday",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Always send yourself a test email to check formatting, links, personalization, and how it appears on different devices before sending to your full audience."
+      },
+      {
+        "question": "Why shouldn't you send every campaign to your entire contact list?",
+        "options": [
+          {
+            "option_text": "It costs more money",
+            "is_correct": false
+          },
+          {
+            "option_text": "Not everyone is interested in every message, which can lead to unsubscribes",
+            "is_correct": true
+          },
+          {
+            "option_text": "The system won't allow it",
+            "is_correct": false
+          },
+          {
+            "option_text": "It takes longer to send",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Sending irrelevant emails to your entire list leads to lower engagement and higher unsubscribe rates. Use smart lists to send the right message to the right people."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "slug": "review-before-sending",
+    "title": "Review Before Sending",
+    "moduleWeek": 3,
+    "moduleName": "Creating Email Templates and Campaigns",
+    "learningGoal": "Learn the essential checklist to review before sending any email campaign.",
+    "sections": [
+      {
+        "title": "Pre-Send Checklist",
+        "icon": "checklist",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "users",
+            "color": "blue",
+            "title": "Is the audience correct?",
+            "description": "Double-check you're sending to the right people"
+          },
+          {
+            "icon": "mail",
+            "color": "green",
+            "title": "Is the subject line clear?",
+            "description": "Would you open this email?"
+          },
+          {
+            "icon": "info",
+            "color": "amber",
+            "title": "Is the email too long?",
+            "description": "Shorter emails get better response rates"
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Does the CTA make sense?",
+            "description": "Is the next step clear and easy?"
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Do all links work?",
+            "description": "Click every link to verify"
+          },
+          {
+            "icon": "eye",
+            "color": "indigo",
+            "title": "Does it look good on mobile?",
+            "description": "Most emails are opened on phones"
+          },
+          {
+            "icon": "check",
+            "color": "violet",
+            "title": "Did I send myself a test?",
+            "description": "Always test before the real send"
+          },
+          {
+            "icon": "user",
+            "color": "teal",
+            "title": "Is the sender name correct?",
+            "description": "Will recipients recognize who it's from?"
+          },
+          {
+            "icon": "mail",
+            "color": "pink",
+            "title": "Is the reply email correct?",
+            "description": "Where do replies go?"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Taking five minutes to review can save you from embarrassing mistakes and improve your results dramatically.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Print or save the checklist",
+        "description": "Keep this checklist handy for every campaign"
+      },
+      {
+        "number": 2,
+        "title": "Review your current draft",
+        "description": "Go through each item on the checklist"
+      },
+      {
+        "number": 3,
+        "title": "Fix any issues found",
+        "description": "Make corrections before sending"
+      }
+    ],
+    "nextLessonTitle": "Understand Campaign Results",
+    "quizzes": [
+      {
+        "question": "Why is it important to check if the email looks good on mobile?",
+        "options": [
+          {
+            "option_text": "Mobile emails are more expensive to send",
+            "is_correct": false
+          },
+          {
+            "option_text": "Most emails are opened on mobile devices",
+            "is_correct": true
+          },
+          {
+            "option_text": "Desktop email is being discontinued",
+            "is_correct": false
+          },
+          {
+            "option_text": "Mobile emails send faster",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Over 60% of emails are opened on mobile devices. If your email doesn't look good on a phone, most of your audience will have a poor experience."
+      },
+      {
+        "question": "What should you do if you find a broken link during your review?",
+        "options": [
+          {
+            "option_text": "Send it anyway - most people won't click",
+            "is_correct": false
+          },
+          {
+            "option_text": "Fix the link before sending",
+            "is_correct": true
+          },
+          {
+            "option_text": "Remove all links from the email",
+            "is_correct": false
+          },
+          {
+            "option_text": "Add more links to compensate",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Broken links destroy credibility and waste the opportunity. Always fix broken links before sending - the call-to-action is the whole point of the email."
+      },
+      {
+        "question": "How long should your review take?",
+        "options": [
+          {
+            "option_text": "At least one hour",
+            "is_correct": false
+          },
+          {
+            "option_text": "Five minutes is enough to catch most issues",
+            "is_correct": true
+          },
+          {
+            "option_text": "No review is needed if you use templates",
+            "is_correct": false
+          },
+          {
+            "option_text": "Reviews should be done by a committee",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A quick five-minute review using a checklist can catch most major issues and save you from embarrassing mistakes. It's a small investment for much better results."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 8,
+    "slug": "understand-campaign-results",
+    "title": "Understand Campaign Results",
+    "moduleWeek": 3,
+    "moduleName": "Creating Email Templates and Campaigns",
+    "learningGoal": "Learn what the basic campaign metrics mean and how to use them to improve future emails.",
+    "sections": [
+      {
+        "title": "Key Metrics Explained",
+        "icon": "chart",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "mail",
+            "color": "blue",
+            "title": "Sent",
+            "description": "How many emails were successfully sent out"
+          },
+          {
+            "icon": "eye",
+            "color": "green",
+            "title": "Opened",
+            "description": "How many people opened the email - indicates subject line effectiveness"
+          },
+          {
+            "icon": "link",
+            "color": "amber",
+            "title": "Clicked",
+            "description": "How many clicked a link - shows CTA and content effectiveness"
+          },
+          {
+            "icon": "chat",
+            "color": "purple",
+            "title": "Replied",
+            "description": "How many responded directly to the email"
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Bounced",
+            "description": "Emails that couldn't be delivered - bad addresses"
+          },
+          {
+            "icon": "user",
+            "color": "cyan",
+            "title": "Unsubscribed",
+            "description": "People who opted out - normal but watch for spikes"
+          }
+        ]
+      },
+      {
+        "title": "What to Look For",
+        "icon": "lightbulb",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "search",
+            "color": "amber",
+            "title": "Low opens?",
+            "description": "Your subject line may need work"
+          },
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "Opens but no clicks?",
+            "description": "Your CTA or offer may not be clear enough"
+          },
+          {
+            "icon": "check",
+            "color": "amber",
+            "title": "Look for patterns",
+            "description": "Don't judge one email too harshly - look at trends over time"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Use results to improve, not to judge. One email is a data point - patterns over time show you what works.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Wait 24-48 hours after sending",
+        "description": "Give people time to open and engage"
+      },
+      {
+        "number": 2,
+        "title": "Review your campaign results",
+        "description": "Check opens, clicks, and other metrics in LeadProspectrr"
+      },
+      {
+        "number": 3,
+        "title": "Note one improvement",
+        "description": "What will you do differently next time?"
+      }
+    ],
+    "nextLessonTitle": "Create Your Follow-Up Template",
+    "quizzes": [
+      {
+        "question": "What does a high open rate but low click rate indicate?",
+        "options": [
+          {
+            "option_text": "Your subject line is ineffective",
+            "is_correct": false
+          },
+          {
+            "option_text": "Your call-to-action or offer isn't compelling enough",
+            "is_correct": true
+          },
+          {
+            "option_text": "Your email is too short",
+            "is_correct": false
+          },
+          {
+            "option_text": "You sent it at the wrong time of day",
+            "is_correct": false
+          }
+        ],
+        "explanation": "If people open but don't click, your subject line worked (they opened) but your content or CTA didn't motivate action."
+      },
+      {
+        "question": "What should you do if your open rate is low?",
+        "options": [
+          {
+            "option_text": "Send the same email again immediately",
+            "is_correct": false
+          },
+          {
+            "option_text": "Work on improving your subject line",
+            "is_correct": true
+          },
+          {
+            "option_text": "Add more links to the email",
+            "is_correct": false
+          },
+          {
+            "option_text": "Send to more people",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Low open rates usually indicate the subject line isn't compelling enough. Test different subject lines to see what resonates with your audience."
+      },
+      {
+        "question": "How should you interpret results from a single email campaign?",
+        "options": [
+          {
+            "option_text": "Judge it harshly if it doesn't perform perfectly",
+            "is_correct": false
+          },
+          {
+            "option_text": "Use it as one data point and look for patterns over time",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete the email and never send campaigns again",
+            "is_correct": false
+          },
+          {
+            "option_text": "Immediately change your entire business strategy",
+            "is_correct": false
+          }
+        ],
+        "explanation": "One email is a single data point. Look for patterns across multiple campaigns to understand what works for your specific audience."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 9,
+    "slug": "create-followup-template",
+    "title": "Create Your Follow-Up Template",
+    "moduleWeek": 3,
+    "moduleName": "Creating Email Templates and Campaigns",
+    "learningGoal": "Apply everything you've learned to create a reusable follow-up email template for your business.",
+    "sections": [
+      {
+        "title": "Real-World Exercise",
+        "icon": "target",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "users",
+            "color": "blue",
+            "title": "Scenario",
+            "description": "Someone downloaded your free guide, attended your event, or spoke with you briefly but hasn't booked a call yet"
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Email Goal",
+            "description": "Thank them, remind them why they connected, and invite them to take one next step"
+          },
+          {
+            "icon": "tag",
+            "color": "amber",
+            "title": "Template Name",
+            "description": "Follow-Up - Book a Call"
+          }
+        ]
+      },
+      {
+        "title": "Subject Line Options",
+        "icon": "mail",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "check",
+            "color": "purple",
+            "title": "Choose one",
+            "description": "Quick follow-up | Your next step | Thanks for connecting | Here's the next step we discussed"
+          }
+        ]
+      },
+      {
+        "title": "Sample Email Structure",
+        "icon": "document",
+        "color": "cyan",
+        "items": [
+          {
+            "icon": "chat",
+            "color": "cyan",
+            "title": "Hi {{contact.first_name}},",
+            "description": "Thanks again for connecting. I wanted to follow up and share a simple next step. If you're still interested in [topic], we can schedule a short call and look at what would help most right now. [Calendar Link] Thanks, {{user.name}}"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "This template will become one of your most-used assets. Take time to get it right.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create the email template",
+        "description": "Go to Marketing > Emails > Templates and create your follow-up template"
+      },
+      {
+        "number": 2,
+        "title": "Name it clearly",
+        "description": "Use 'Follow-Up - Book a Call' or similar descriptive name"
+      },
+      {
+        "number": 3,
+        "title": "Send yourself a test",
+        "description": "Verify links work and personalization renders correctly"
+      },
+      {
+        "number": 4,
+        "title": "Save the template",
+        "description": "Your follow-up template is now ready to use"
+      }
+    ],
+    "nextLessonTitle": "Module Completion",
+    "quizzes": [
+      {
+        "question": "What is the primary goal of a follow-up email?",
+        "options": [
+          {
+            "option_text": "To tell your entire company history",
+            "is_correct": false
+          },
+          {
+            "option_text": "To thank them, remind them why they connected, and invite one next step",
+            "is_correct": true
+          },
+          {
+            "option_text": "To ask for multiple things at once",
+            "is_correct": false
+          },
+          {
+            "option_text": "To send as many emails as possible",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Follow-up emails should be focused: thank the person, remind them of the context, and give them one clear next step to take."
+      },
+      {
+        "question": "Why should you save follow-up emails as templates?",
+        "options": [
+          {
+            "option_text": "They are required by law",
+            "is_correct": false
+          },
+          {
+            "option_text": "You will send this type of email repeatedly",
+            "is_correct": true
+          },
+          {
+            "option_text": "Templates send automatically",
+            "is_correct": false
+          },
+          {
+            "option_text": "They cost less to send",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Follow-up situations happen repeatedly in business. Having a template saves time and ensures consistency in your messaging."
+      },
+      {
+        "question": "What should you always do before saving a follow-up template?",
+        "options": [
+          {
+            "option_text": "Share it on social media",
+            "is_correct": false
+          },
+          {
+            "option_text": "Send yourself a test email to verify everything works",
+            "is_correct": true
+          },
+          {
+            "option_text": "Ask your competitors to review it",
+            "is_correct": false
+          },
+          {
+            "option_text": "Print a physical copy",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Always test your template by sending it to yourself. Check that links work, personalization renders correctly, and the formatting looks good."
+      }
+    ]
+  }
+]
