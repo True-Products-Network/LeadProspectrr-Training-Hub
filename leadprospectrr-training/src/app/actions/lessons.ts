@@ -31,6 +31,59 @@ export interface LessonProgress {
   points_earned: number
 }
 
+export interface LessonWithProgress extends Lesson {
+  userProgress: LessonProgress | null
+}
+
+// NEW: Optimized function to get lessons with progress in a single query
+// Use this instead of getModuleLessons + looping through getUserLessonProgress
+export async function getModuleLessonsWithProgress(
+  moduleId: string, 
+  userId: string
+): Promise<LessonWithProgress[]> {
+  const supabase = createAdminClient()
+  
+  // Single query to get all lessons for this module
+  const { data: lessons, error: lessonsError } = await supabase
+    .from('lessons')
+    .select(`
+      id, module_id, lesson_number, title, slug, description,
+      lesson_type, video_url, duration_minutes, points, is_published, sort_order
+    `)
+    .eq('module_id', moduleId)
+    .eq('is_published', true)
+    .order('sort_order', { ascending: true })
+    .order('lesson_number', { ascending: true })
+  
+  if (lessonsError || !lessons || lessons.length === 0) {
+    console.error('Error fetching lessons:', lessonsError)
+    return []
+  }
+  
+  // Single query to get all progress for this user in this module
+  const lessonIds = lessons.map(l => l.id)
+  const { data: progressData, error: progressError } = await supabase
+    .from('lesson_progress')
+    .select('lesson_id, status, points_earned, started_at, completed_at, time_spent_minutes')
+    .eq('user_id', userId)
+    .in('lesson_id', lessonIds)
+  
+  if (progressError) {
+    console.error('Error fetching progress:', progressError)
+  }
+  
+  // Create a map for O(1) lookup
+  const progressMap = new Map(
+    progressData?.map(p => [p.lesson_id, p]) || []
+  )
+  
+  // Combine lessons with their progress
+  return lessons.map(lesson => ({
+    ...lesson,
+    userProgress: progressMap.get(lesson.id) || null
+  }))
+}
+
 export async function getModuleLessons(moduleId: string): Promise<Lesson[]> {
   const supabase = createAdminClient()
   
