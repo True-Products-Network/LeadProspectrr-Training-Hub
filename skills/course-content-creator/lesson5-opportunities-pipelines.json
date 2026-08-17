@@ -1,10 +1,10 @@
 [
   {
-    "lessonNumber": 5,
+    "lessonNumber": 1,
     "slug": "opportunities-and-pipelines",
     "title": "Opportunities and Pipelines",
-    "moduleWeek": 1,
-    "moduleName": "Lead Management",
+    "moduleWeek": 5,
+    "moduleName": "Opportunities and Pipelines",
     "learningGoal": "Learn how to use Opportunities and Pipelines to track leads, monitor sales status, and keep follow-up clear.",
     "sections": [
       {
