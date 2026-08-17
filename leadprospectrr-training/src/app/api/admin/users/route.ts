@@ -41,7 +41,7 @@ export async function DELETE(request: NextRequest) {
     
     if (authError) {
       console.error('Error deleting auth user:', authError)
-      return NextResponse.json({ error: authError.message }, { status: 500 }}
+      return NextResponse.json({ error: authError.message }, { status: 500 })
     }
     
     return NextResponse.json({ success: true })
