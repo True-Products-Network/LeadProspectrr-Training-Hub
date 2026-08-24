@@ -1,7 +1,8 @@
 -- Module 13: Custom Fields vs Custom Values
 -- Migration: Add Module 13 and all 7 lessons with quizzes
+-- NOTE: This will delete and recreate Module 13 lessons to ensure clean data
 
--- Insert Module 13
+-- Insert/Update Module 13
 INSERT INTO public.training_modules (
   week_number, year, cycle_number, title, description, color, is_active, created_at, updated_at
 ) VALUES (
@@ -11,6 +12,23 @@ INSERT INTO public.training_modules (
 )
 ON CONFLICT (week_number, year, cycle_number) 
 DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = NOW();
+
+-- Clean up existing Module 13 lessons and quizzes (to ensure fresh data)
+DO $$
+DECLARE
+  v_module_id UUID;
+BEGIN
+  SELECT id INTO v_module_id FROM public.training_modules WHERE week_number = 13 LIMIT 1;
+  IF v_module_id IS NOT NULL THEN
+    -- Delete quizzes first (due to foreign key constraints)
+    DELETE FROM public.lesson_quizzes WHERE lesson_id IN (
+      SELECT id FROM public.lessons WHERE module_id = v_module_id
+    );
+    -- Delete lessons
+    DELETE FROM public.lessons WHERE module_id = v_module_id;
+    RAISE NOTICE 'Cleaned up existing Module 13 lessons and quizzes';
+  END IF;
+END $$;
 
 -- Lesson 1: What Custom Fields Are
 -- Module 13: Custom Fields vs Custom Values
