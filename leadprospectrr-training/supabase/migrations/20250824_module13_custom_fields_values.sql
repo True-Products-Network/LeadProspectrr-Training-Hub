@@ -175,7 +175,7 @@ BEGIN
 </div>',
     true, 1, NOW(), NOW()
   )
-  ON CONFLICT (slug, module_id) DO UPDATE SET title = EXCLUDED.title, content = EXCLUDED.content, updated_at = NOW()
+  ON CONFLICT (slug) DO UPDATE SET title = EXCLUDED.title, content = EXCLUDED.content, updated_at = NOW()
   RETURNING id INTO v_lesson_id;
 
   INSERT INTO public.quiz_questions (lesson_id, question, options, explanation, sort_order, created_at, updated_at) VALUES
@@ -316,7 +316,7 @@ BEGIN
 </div>',
     true, 2, NOW(), NOW()
   )
-  ON CONFLICT (slug, module_id) DO UPDATE SET title = EXCLUDED.title, content = EXCLUDED.content, updated_at = NOW()
+  ON CONFLICT (slug) DO UPDATE SET title = EXCLUDED.title, content = EXCLUDED.content, updated_at = NOW()
   RETURNING id INTO v_lesson_id;
 
   INSERT INTO public.quiz_questions (lesson_id, question, options, explanation, sort_order, created_at, updated_at) VALUES
@@ -460,7 +460,7 @@ BEGIN
 </div>',
     true, 3, NOW(), NOW()
   )
-  ON CONFLICT (slug, module_id) DO UPDATE SET title = EXCLUDED.title, content = EXCLUDED.content, updated_at = NOW()
+  ON CONFLICT (slug) DO UPDATE SET title = EXCLUDED.title, content = EXCLUDED.content, updated_at = NOW()
   RETURNING id INTO v_lesson_id;
 
   INSERT INTO public.quiz_questions (lesson_id, question, options, explanation, sort_order, created_at, updated_at) VALUES
@@ -567,7 +567,7 @@ BEGIN
 </div>',
     true, 4, NOW(), NOW()
   )
-  ON CONFLICT (slug, module_id) DO UPDATE SET title = EXCLUDED.title, content = EXCLUDED.content, updated_at = NOW()
+  ON CONFLICT (slug) DO UPDATE SET title = EXCLUDED.title, content = EXCLUDED.content, updated_at = NOW()
   RETURNING id INTO v_lesson_id;
 
   INSERT INTO public.quiz_questions (lesson_id, question, options, explanation, sort_order, created_at, updated_at) VALUES
@@ -670,7 +670,7 @@ BEGIN
 </div>',
     true, 5, NOW(), NOW()
   )
-  ON CONFLICT (slug, module_id) DO UPDATE SET title = EXCLUDED.title, content = EXCLUDED.content, updated_at = NOW()
+  ON CONFLICT (slug) DO UPDATE SET title = EXCLUDED.title, content = EXCLUDED.content, updated_at = NOW()
   RETURNING id INTO v_lesson_id;
 
   INSERT INTO public.quiz_questions (lesson_id, question, options, explanation, sort_order, created_at, updated_at) VALUES
@@ -801,7 +801,7 @@ BEGIN
 </div>',
     true, 6, NOW(), NOW()
   )
-  ON CONFLICT (slug, module_id) DO UPDATE SET title = EXCLUDED.title, content = EXCLUDED.content, updated_at = NOW()
+  ON CONFLICT (slug) DO UPDATE SET title = EXCLUDED.title, content = EXCLUDED.content, updated_at = NOW()
   RETURNING id INTO v_lesson_id;
 
   INSERT INTO public.quiz_questions (lesson_id, question, options, explanation, sort_order, created_at, updated_at) VALUES
@@ -980,7 +980,7 @@ BEGIN
 </div>',
     true, 7, NOW(), NOW()
   )
-  ON CONFLICT (slug, module_id) DO UPDATE SET title = EXCLUDED.title, content = EXCLUDED.content, updated_at = NOW()
+  ON CONFLICT (slug) DO UPDATE SET title = EXCLUDED.title, content = EXCLUDED.content, updated_at = NOW()
   RETURNING id INTO v_lesson_id;
 
   INSERT INTO public.quiz_questions (lesson_id, question, options, explanation, sort_order, created_at, updated_at) VALUES
