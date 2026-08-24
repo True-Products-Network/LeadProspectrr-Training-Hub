@@ -1,0 +1,162 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "what-custom-fields-are",
+    "title": "What Custom Fields Are",
+    "moduleWeek": 13,
+    "moduleName": "Custom Fields vs Custom Values",
+    "learningGoal": "Understand what custom fields are, where they live in LeadProspectrr, and when to use them instead of tags or notes.",
+    "sections": [
+      {
+        "title": "What Is a Custom Field?",
+        "icon": "document",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "document",
+            "color": "blue",
+            "title": "A Data Container",
+            "description": "A custom field is a container you create to store specific information about contacts or opportunities. Think of it as a blank space on a form that you design yourself."
+          },
+          {
+            "icon": "info",
+            "color": "cyan",
+            "title": "Examples for Different Businesses",
+            "description": "Speakers: Event Date, Budget Range, Audience Size. Coaches: Coaching Package, Session Count, Assessment Score. Consultants: Project Type, Contract Value, Industry Vertical."
+          }
+        ]
+      },
+      {
+        "title": "Where Custom Fields Live",
+        "icon": "location",
+        "color": "green",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "Contact Records",
+            "description": "Contact custom fields appear on every contact record. They store information about the person: their preferences, history, or attributes."
+          },
+          {
+            "icon": "briefcase",
+            "color": "purple",
+            "title": "Opportunity Records",
+            "description": "Opportunity custom fields appear on deals and sales opportunities. They store information about the specific transaction or project."
+          }
+        ]
+      },
+      {
+        "title": "Custom Fields vs Other Tools",
+        "icon": "scale",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "tag",
+            "color": "blue",
+            "title": "vs Tags",
+            "description": "Use tags to group people. Use custom fields to store specific data values like dates, numbers, or text."
+          },
+          {
+            "icon": "edit",
+            "color": "cyan",
+            "title": "vs Notes",
+            "description": "Use notes for free-form text and background information. Use custom fields when you need structured, searchable data."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "When to Choose Custom Fields",
+            "description": "Choose custom fields when: you need to filter or search by the value, you want to use the data in automations, the information needs to be reportable, or you need consistent formatting."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Custom fields are structured data containers that store specific information about contacts or opportunities. Use them when you need searchable, reportable, automation-ready data\u2014not for grouping or free-form notes.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Identify One Data Point",
+        "description": "Think of one piece of information you currently track about prospects or clients that would be better in a structured field than a tag or note."
+      },
+      {
+        "number": 2,
+        "title": "Decide the Field Type",
+        "description": "Would this data work best as text, a number, a date, a dropdown list, or a checkbox?"
+      },
+      {
+        "number": 3,
+        "title": "Note Where It Belongs",
+        "description": "Should this field live on the contact record (about the person) or the opportunity record (about the deal)?"
+      }
+    ],
+    "nextLessonTitle": "What Custom Values Are",
+    "quizzes": [
+      {
+        "question": "What is the primary purpose of a custom field?",
+        "options": [
+          {
+            "option_text": "To group contacts together like tags do",
+            "is_correct": false
+          },
+          {
+            "option_text": "To store structured, specific information about contacts or opportunities",
+            "is_correct": true
+          },
+          {
+            "option_text": "To replace the need for notes entirely",
+            "is_correct": false
+          },
+          {
+            "option_text": "To send emails automatically",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Custom fields are structured data containers that store specific information. They are not for grouping (that's tags) and they complement rather than replace notes."
+      },
+      {
+        "question": "When should you use a custom field instead of a note?",
+        "options": [
+          {
+            "option_text": "When you want to write free-form background information",
+            "is_correct": false
+          },
+          {
+            "option_text": "When you need structured, searchable, reportable data",
+            "is_correct": true
+          },
+          {
+            "option_text": "When you want to add images to a contact record",
+            "is_correct": false
+          },
+          {
+            "option_text": "When you are writing a personal message",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Use custom fields when you need data that can be filtered, searched, used in automations, or reported on. Use notes for free-form background information."
+      },
+      {
+        "question": "Where can custom fields be created in LeadProspectrr?",
+        "options": [
+          {
+            "option_text": "Only on contact records",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only on opportunity records",
+            "is_correct": false
+          },
+          {
+            "option_text": "On both contact and opportunity records",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only in workflow automations",
+            "is_correct": false
+          }
+        ],
+        "explanation": "LeadProspectrr allows custom fields on both contact records (for information about the person) and opportunity records (for information about the deal or project)."
+      }
+    ]
+  }
+]

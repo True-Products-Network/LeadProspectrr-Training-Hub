@@ -28,6 +28,14 @@ const lessonGoals: Record<string, string> = {
   'preview-and-review': 'Check the post before publishing.',
   'publish-or-schedule': 'Publish the blog post now or schedule it for later.',
   'sharing-your-blog-post': 'Use your published post as part of your follow-up and marketing.',
+  // Module 13: Custom Fields vs Custom Values
+  'what-custom-fields-are': 'Understand what a Custom Field is and why it matters for storing record-specific information.',
+  'what-custom-values-are': 'Understand what a Custom Value is and why it saves time by storing reusable business information.',
+  'contact-vs-opportunity-fields': 'Learn to put information in the correct place by understanding the difference between Contact and Opportunity fields.',
+  'create-use-custom-fields': 'Learn the simple setup process for creating Custom Fields in LeadProspectrr.',
+  'create-use-custom-values': 'Learn the simple setup process for creating Custom Values in LeadProspectrr.',
+  'common-mistakes': 'Keep your setup clean and useful by avoiding common mistakes with Custom Fields and Custom Values.',
+  'final-business-project': 'Build a clean Custom Fields and Custom Values setup for your business.',
   // Module 2: Contacts and Smart Lists
   'why-contacts-matter': 'Understand why the Contacts page is one of the most important areas in LeadProspectrr.',
   'review-contacts-page': 'Learn how to navigate and understand your Contacts page layout.',
@@ -98,6 +106,42 @@ const lessonObjectives: Record<string, string[]> = {
     'Share your published blog post',
     'Use blog content in your marketing',
     'Track the results of your posts'
+  ],
+  // Module 13: Custom Fields vs Custom Values
+  'what-custom-fields-are': [
+    'Understand what a Custom Field is',
+    'Know when to use Custom Fields',
+    'Identify examples of useful Custom Fields'
+  ],
+  'what-custom-values-are': [
+    'Understand what a Custom Value is',
+    'Know when to use Custom Values',
+    'Identify examples of useful Custom Values'
+  ],
+  'contact-vs-opportunity-fields': [
+    'Understand the difference between Contact and Opportunity fields',
+    'Know where to store different types of information',
+    'Keep contact and deal data properly separated'
+  ],
+  'create-use-custom-fields': [
+    'Learn the steps to create Custom Fields',
+    'Choose the right record type and field type',
+    'Use Custom Fields in forms and workflows'
+  ],
+  'create-use-custom-values': [
+    'Learn the steps to create Custom Values',
+    'Use the picker to insert Custom Values',
+    'Update Custom Values and see changes everywhere'
+  ],
+  'common-mistakes': [
+    'Identify common mistakes with Custom Fields and Values',
+    'Know how to avoid these mistakes',
+    'Keep your CRM setup clean and useful'
+  ],
+  'final-business-project': [
+    'Create a complete Custom Fields setup',
+    'Create a complete Custom Values setup',
+    'Tailor your setup to your specific business type'
   ],
   // Module 2: Contacts and Smart Lists
   'why-contacts-matter': [
