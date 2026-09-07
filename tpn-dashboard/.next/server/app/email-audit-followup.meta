@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/email-audit-followup/layout,_N_T_/email-audit-followup/page,_N_T_/email-audit-followup"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/email-audit-followup/__PAGE__",
+    "/email-audit-followup",
+    "/_index",
+    "/_head"
+  ]
+}

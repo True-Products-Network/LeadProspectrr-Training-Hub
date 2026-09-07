@@ -1,0 +1,78 @@
+[
+{
+  "lessonNumber": 5,
+  "slug": "tags-filters-smart-lists",
+  "title": "Tags, Filters, and Smart Lists",
+  "moduleWeek": 2,
+  "moduleName": "Contacts and Smart Lists",
+  "learningGoal": "Understand the difference between tags, filters, and Smart Lists and how they work together.",
+  "sections": [
+    {
+      "title": "Tags Label People",
+      "icon": "tag",
+      "color": "amber",
+      "items": [
+        {"icon": "tag", "color": "amber", "title": "What are Tags?", "description": "Labels added to a contact to identify what they're connected to"},
+        {"icon": "star", "color": "green", "title": "Example", "description": "Webinar Attendee - tells you this contact attended a webinar"}
+      ]
+    },
+    {
+      "title": "Filters Find People",
+      "icon": "search",
+      "color": "blue",
+      "items": [
+        {"icon": "search", "color": "blue", "title": "What are Filters?", "description": "Rules to search for contacts matching certain criteria"},
+        {"icon": "star", "color": "green", "title": "Example", "description": "Show me contacts where Tag = Webinar Attendee AND Lead Status = Hot"}
+      ]
+    },
+    {
+      "title": "Smart Lists Save the Search",
+      "icon": "check",
+      "color": "purple",
+      "items": [
+        {"icon": "check", "color": "purple", "title": "What are Smart Lists?", "description": "Saved filtered views you can reopen anytime"},
+        {"icon": "star", "color": "green", "title": "Benefit", "description": "Instead of building the same filter repeatedly, save it as a Smart List"}
+      ]
+    }
+  ],
+  "keyPoint": "Tags label people. Filters find people. Smart Lists save the search.",
+  "actionSteps": [
+    {"number": 1, "title": "Review tags on contacts", "description": "Look at how contacts are labeled"},
+    {"number": 2, "title": "Think about filters", "description": "Consider what rules you might use to find specific groups"},
+    {"number": 3, "title": "Plan a Smart List", "description": "Think of a group you'd want to save and reuse"}
+  ],
+  "nextLessonTitle": "Before You Build a Smart List",
+  "quizzes": [
+    {
+      "question": "What is the simple formula for understanding these three tools?",
+      "options": [
+        {"option_text": "Tags save searches, filters label people, Smart Lists find people", "is_correct": false},
+        {"option_text": "Tags label people, filters find people, Smart Lists save the search", "is_correct": true},
+        {"option_text": "Tags find people, filters save searches, Smart Lists label people", "is_correct": false},
+        {"option_text": "They all do the same thing", "is_correct": false}
+      ],
+      "explanation": "Tags label individual contacts. Filters help you search for contacts matching rules. Smart Lists save those filtered views for reuse."
+    },
+    {
+      "question": "What is the purpose of a filter?",
+      "options": [
+        {"option_text": "To delete contacts", "is_correct": false},
+        {"option_text": "To search for contacts matching certain criteria", "is_correct": true},
+        {"option_text": "To send emails", "is_correct": false},
+        {"option_text": "To create new contacts", "is_correct": false}
+      ],
+      "explanation": "Filters are rules that help you search for and find contacts that match specific criteria you set."
+    },
+    {
+      "question": "Why would you create a Smart List?",
+      "options": [
+        {"option_text": "To delete old contacts", "is_correct": false},
+        {"option_text": "To save a filtered view so you don't have to rebuild it every time", "is_correct": true},
+        {"option_text": "To change contact passwords", "is_correct": false},
+        {"option_text": "To block spam contacts", "is_correct": false}
+      ],
+      "explanation": "Smart Lists save you time by storing your filtered views, so you can quickly access specific contact groups without rebuilding filters."
+    }
+  ]
+}
+]

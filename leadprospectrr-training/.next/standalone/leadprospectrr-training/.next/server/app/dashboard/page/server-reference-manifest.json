@@ -1,0 +1,65 @@
+{
+  "node": {
+    "008034a109f877ae30881614f9f104fd78432ed930": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 82970,
+          "async": false,
+          "exportedName": "getAllAchievements",
+          "filename": "leadprospectrr-training/src/app/actions/gamification.ts"
+        }
+      },
+      "exportedName": "getAllAchievements",
+      "filename": "leadprospectrr-training/src/app/actions/gamification.ts"
+    },
+    "401ad26c55048ec06c3f6023602e9f55be78cb1ae9": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 82970,
+          "async": false,
+          "exportedName": "getUserAchievements",
+          "filename": "leadprospectrr-training/src/app/actions/gamification.ts"
+        }
+      },
+      "exportedName": "getUserAchievements",
+      "filename": "leadprospectrr-training/src/app/actions/gamification.ts"
+    },
+    "4034ecbd7ae4fa7da304a329e340f5a5b09450472b": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 82970,
+          "async": false,
+          "exportedName": "checkAchievements",
+          "filename": "leadprospectrr-training/src/app/actions/gamification.ts"
+        }
+      },
+      "exportedName": "checkAchievements",
+      "filename": "leadprospectrr-training/src/app/actions/gamification.ts"
+    },
+    "40858784dcf899141bf5a9074ada9ec4d55660edad": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 82970,
+          "async": false,
+          "exportedName": "getUserStreak",
+          "filename": "leadprospectrr-training/src/app/actions/gamification.ts"
+        }
+      },
+      "exportedName": "getUserStreak",
+      "filename": "leadprospectrr-training/src/app/actions/gamification.ts"
+    },
+    "709cf03747847c57d852fbac535f394a7559e113fa": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 82970,
+          "async": false,
+          "exportedName": "recordActivity",
+          "filename": "leadprospectrr-training/src/app/actions/gamification.ts"
+        }
+      },
+      "exportedName": "recordActivity",
+      "filename": "leadprospectrr-training/src/app/actions/gamification.ts"
+    }
+  },
+  "edge": {}
+}

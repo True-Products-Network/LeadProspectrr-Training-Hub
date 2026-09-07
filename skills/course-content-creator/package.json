@@ -1,0 +1,24 @@
+{
+  "name": "course-content-creator",
+  "version": "1.0.0",
+  "description": "Generate visually engaging course lesson content with consistent formatting",
+  "main": "create-lesson.ts",
+  "scripts": {
+    "start": "ts-node create-lesson.ts",
+    "build": "tsc create-lesson.ts"
+  },
+  "keywords": [
+    "course",
+    "content",
+    "education",
+    "html",
+    "sql"
+  ],
+  "author": "LeadProspectrr Training Hub",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "branded-link-manager",
+  "version": "0.1.0",
+  "description": "SaaS platform for branded short links",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "dev:api": "cd apps/api && npm run dev",
+    "dev:redirect": "cd apps/redirect && npm run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "test:e2e": "turbo run test:e2e",
+    "db:migrate": "cd packages/database && npm run migrate",
+    "db:migrate:rollback": "cd packages/database && npm run migrate:rollback",
+    "db:seed": "cd packages/database && npm run seed",
+    "db:reset": "cd packages/database && npm run reset",
+    "db:generate": "cd packages/database && npm run generate",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "typecheck": "turbo run typecheck",
+    "vercel:deploy": "vercel --prod",
+    "vercel:dev": "vercel dev"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

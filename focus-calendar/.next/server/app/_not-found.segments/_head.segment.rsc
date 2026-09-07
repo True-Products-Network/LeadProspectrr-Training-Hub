@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[47385,["/_next/static/chunks/05jgvw8xy~02o.js"],"ViewportBoundary"]
+3:I[47385,["/_next/static/chunks/05jgvw8xy~02o.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Focus Calendar - Stay on Track"}],["$","meta","1",{"name":"description","content":"A daily calendar designed to keep you focused and productive"}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"lvL5rpKPr3Mh2uAIGqf0W"}

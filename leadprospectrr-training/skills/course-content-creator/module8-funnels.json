@@ -1,0 +1,1128 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "what-is-lead-capture-funnel",
+    "title": "What Is a Lead Capture Funnel?",
+    "moduleWeek": 8,
+    "moduleName": "Funnels: Building a Simple Lead Capture Funnel",
+    "learningGoal": "Understand what a lead capture funnel is and why it matters for your business.",
+    "sections": [
+      {
+        "title": "The Funnel Explained",
+        "icon": "target",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "arrow-right",
+            "color": "blue",
+            "title": "A Simple Online Path",
+            "description": "A lead capture funnel is a simple online path that moves someone from visitor to lead. The person sees an offer, fills out a form, lands on a thank-you page, and receives follow-up."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Four Key Jobs",
+            "description": "A basic funnel needs to do four things well: Get attention, Collect the lead, Confirm the next step, and Follow up."
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "One Clear Goal",
+            "description": "A funnel is different from a normal website because it has one main goal. A website may have many pages and actions. A funnel should have one clear offer and one clear action."
+          }
+        ]
+      },
+      {
+        "title": "Example Funnel",
+        "icon": "document",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "download",
+            "color": "cyan",
+            "title": "The Offer",
+            "description": "Instead of sending someone to a full website, you send them to a page that says: Get the Free Business Follow-Up Checklist"
+          },
+          {
+            "icon": "user",
+            "color": "green",
+            "title": "The Exchange",
+            "description": "They enter their name and email, receive the checklist, and are added to your follow-up process."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A funnel is a focused path with one goal: turn visitors into leads. Keep it simple with one offer, one action, and clear follow-up.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Think About Your Business",
+        "description": "What could you offer that would make someone give you their email address?"
+      },
+      {
+        "number": 2,
+        "title": "Write Down Ideas",
+        "description": "List 3-5 possible offers: free guide, checklist, webinar, consultation, coupon, video, assessment."
+      },
+      {
+        "number": 3,
+        "title": "Choose Your Best Offer",
+        "description": "Pick the one offer that would be most valuable to your ideal customer."
+      }
+    ],
+    "nextLessonTitle": "Choose the Offer",
+    "quizzes": [
+      {
+        "question": "What is a lead capture funnel?",
+        "options": [
+          {
+            "option_text": "A complex website with many pages",
+            "is_correct": false
+          },
+          {
+            "option_text": "A simple online path that moves someone from visitor to lead",
+            "is_correct": true
+          },
+          {
+            "option_text": "A paid advertising campaign",
+            "is_correct": false
+          },
+          {
+            "option_text": "A social media profile",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A lead capture funnel is a focused path that guides visitors through a specific journey: see offer, fill form, land on thank-you page, receive follow-up."
+      },
+      {
+        "question": "What makes a funnel different from a website?",
+        "options": [
+          {
+            "option_text": "Funnels cost more money",
+            "is_correct": false
+          },
+          {
+            "option_text": "A funnel has one clear offer and one clear action",
+            "is_correct": true
+          },
+          {
+            "option_text": "Websites are never used",
+            "is_correct": false
+          },
+          {
+            "option_text": "Funnels do not work",
+            "is_correct": false
+          }
+        ],
+        "explanation": "While websites have many pages and actions, a funnel is focused on one specific goal with one offer and one clear call-to-action."
+      },
+      {
+        "question": "What are the four jobs of a basic funnel?",
+        "options": [
+          {
+            "option_text": "Design, code, test, launch",
+            "is_correct": false
+          },
+          {
+            "option_text": "Get attention, Collect the lead, Confirm the next step, Follow up",
+            "is_correct": true
+          },
+          {
+            "option_text": "Write, edit, publish, promote",
+            "is_correct": false
+          },
+          {
+            "option_text": "Buy, sell, trade, invest",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A basic funnel must get attention with the offer, collect the lead through a form, confirm the next step with a thank-you page, and follow up with automation."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "choose-the-offer",
+    "title": "Choose the Offer",
+    "moduleWeek": 8,
+    "moduleName": "Funnels: Building a Simple Lead Capture Funnel",
+    "learningGoal": "Learn how to choose a compelling offer that makes visitors want to submit the form.",
+    "sections": [
+      {
+        "title": "What Is the Offer?",
+        "icon": "gift",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "The Exchange",
+            "description": "The offer is what the visitor gets in exchange for their contact information. If the offer is weak or unclear, people are less likely to fill out the form."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Good Offers",
+            "description": "Free checklist, Free guide, Free consultation, Free webinar, Free video training, Free quote request, Free assessment, Special discount."
+          }
+        ]
+      },
+      {
+        "title": "Offer Checklist",
+        "icon": "checklist",
+        "color": "green",
+        "items": [
+          {
+            "icon": "eye",
+            "color": "blue",
+            "title": "Easy to Understand",
+            "description": "The offer should be clear in seconds. No confusion about what they get."
+          },
+          {
+            "icon": "users",
+            "color": "cyan",
+            "title": "Useful to the Audience",
+            "description": "It must solve a real problem or address a real need your target customer has."
+          },
+          {
+            "icon": "link",
+            "color": "purple",
+            "title": "Connected to What You Sell",
+            "description": "The offer should naturally lead to your paid products or services."
+          },
+          {
+            "icon": "settings",
+            "color": "amber",
+            "title": "Simple to Deliver",
+            "description": "Can you actually deliver this easily? Digital downloads work great."
+          },
+          {
+            "icon": "star",
+            "color": "rose",
+            "title": "Worth an Email Address",
+            "description": "Is it valuable enough that someone would trade their contact info for it?"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Do not start by building the page. Start by answering: What would make someone say yes today? A strong offer is the foundation of every successful funnel.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Complete the Sentence",
+        "description": "Write this down: I want people to sign up so they can get ________________."
+      },
+      {
+        "number": 2,
+        "title": "Check Against the Checklist",
+        "description": "Does your offer meet all five criteria: easy to understand, useful, connected to sales, simple to deliver, worth an email?"
+      },
+      {
+        "number": 3,
+        "title": "Refine If Needed",
+        "description": "If your offer is weak on any criteria, adjust it before moving forward."
+      }
+    ],
+    "nextLessonTitle": "Build the Funnel Page",
+    "quizzes": [
+      {
+        "question": "What is the offer in a lead capture funnel?",
+        "options": [
+          {
+            "option_text": "What you sell to customers",
+            "is_correct": false
+          },
+          {
+            "option_text": "What the visitor gets in exchange for their contact information",
+            "is_correct": true
+          },
+          {
+            "option_text": "Your business card",
+            "is_correct": false
+          },
+          {
+            "option_text": "A paid product",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The offer is what you give visitors in exchange for their contact information—like a free guide, checklist, or consultation."
+      },
+      {
+        "question": "Why should the offer be connected to what you sell?",
+        "options": [
+          {
+            "option_text": "It does not matter",
+            "is_correct": false
+          },
+          {
+            "option_text": "It should naturally lead to your paid products or services",
+            "is_correct": true
+          },
+          {
+            "option_text": "To confuse customers",
+            "is_correct": false
+          },
+          {
+            "option_text": "To give away everything for free",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The offer should attract people who are likely to become customers. A relevant offer pre-qualifies leads for your paid offerings."
+      },
+      {
+        "question": "What should you do before building the funnel page?",
+        "options": [
+          {
+            "option_text": "Start building immediately",
+            "is_correct": false
+          },
+          {
+            "option_text": "Choose a compelling offer first",
+            "is_correct": true
+          },
+          {
+            "option_text": "Hire a designer",
+            "is_correct": false
+          },
+          {
+            "option_text": "Buy advertising",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Always start with the offer. A great page cannot save a weak offer. Know what will make someone say yes before you build anything."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "slug": "build-funnel-page",
+    "title": "Build the Funnel Page",
+    "moduleWeek": 8,
+    "moduleName": "Funnels: Building a Simple Lead Capture Funnel",
+    "learningGoal": "Learn how to create an effective funnel page that converts visitors into leads.",
+    "sections": [
+      {
+        "title": "Page Structure",
+        "icon": "layout",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "tag",
+            "color": "blue",
+            "title": "1. Headline",
+            "description": "Tell the visitor what they get. Example: Get the Free Business Follow-Up Checklist"
+          },
+          {
+            "icon": "document",
+            "color": "cyan",
+            "title": "2. Short Description",
+            "description": "Explain why the offer is useful. Example: Learn how to follow up with new leads faster, better, and with less manual work."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "3. Simple Bullet Points",
+            "description": "Use 3 to 5 bullet points showing benefits. Example: Know what to do after a new lead comes in, Avoid missed opportunities, Use automation to save time."
+          },
+          {
+            "icon": "form",
+            "color": "amber",
+            "title": "4. Form Area",
+            "description": "Place the form where it is easy to see and complete."
+          },
+          {
+            "icon": "target",
+            "color": "rose",
+            "title": "5. Call-to-Action Button",
+            "description": "Use clear button text: Send Me the Checklist, Get the Free Guide, Save My Seat, Request the Resource."
+          }
+        ]
+      },
+      {
+        "title": "Key Principles",
+        "icon": "star",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Stay Focused",
+            "description": "The page should not try to explain everything about your business. It should focus on getting the visitor to take the next step."
+          },
+          {
+            "icon": "eye",
+            "color": "blue",
+            "title": "One Goal Only",
+            "description": "Remove distractions. No navigation menus, no multiple offers, no links that take people away from the form."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A funnel page has one job: get the visitor to fill out the form. Keep it focused with a strong headline, clear benefits, and one clear call-to-action.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Write Your Headline",
+        "description": "Create a headline that clearly states what they get. Include the word 'Free' if applicable."
+      },
+      {
+        "number": 2,
+        "title": "Draft Your Description",
+        "description": "Write one or two sentences explaining why this offer is valuable."
+      },
+      {
+        "number": 3,
+        "title": "Create Bullet Points",
+        "description": "List 3-5 specific benefits the visitor will get from your offer."
+      },
+      {
+        "number": 4,
+        "title": "Choose Button Text",
+        "description": "Write clear button text that matches your offer."
+      }
+    ],
+    "nextLessonTitle": "Create the Lead Capture Form",
+    "quizzes": [
+      {
+        "question": "What is the main job of a funnel page?",
+        "options": [
+          {
+            "option_text": "Explain everything about your business",
+            "is_correct": false
+          },
+          {
+            "option_text": "Get the visitor to fill out the form",
+            "is_correct": true
+          },
+          {
+            "option_text": "Show your entire product catalog",
+            "is_correct": false
+          },
+          {
+            "option_text": "Link to your social media",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A funnel page has one job: convert visitors into leads by getting them to fill out the form. Everything on the page should support that goal."
+      },
+      {
+        "question": "How many bullet points should you use?",
+        "options": [
+          {
+            "option_text": "As many as possible",
+            "is_correct": false
+          },
+          {
+            "option_text": "3 to 5 simple bullet points",
+            "is_correct": true
+          },
+          {
+            "option_text": "None",
+            "is_correct": false
+          },
+          {
+            "option_text": "Exactly 10",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Use 3 to 5 bullet points to highlight key benefits. Too many bullet points overwhelm visitors; too few may not provide enough motivation."
+      },
+      {
+        "question": "What should you remove from a funnel page?",
+        "options": [
+          {
+            "option_text": "The headline",
+            "is_correct": false
+          },
+          {
+            "option_text": "Navigation menus and distractions that take people away from the form",
+            "is_correct": true
+          },
+          {
+            "option_text": "The form",
+            "is_correct": false
+          },
+          {
+            "option_text": "The button",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Remove navigation menus, multiple offers, and external links that could distract visitors from completing the form. Keep the page focused on one goal."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "slug": "create-lead-capture-form",
+    "title": "Create the Lead Capture Form",
+    "moduleWeek": 8,
+    "moduleName": "Funnels: Building a Simple Lead Capture Funnel",
+    "learningGoal": "Learn how to create and configure a form that collects lead details.",
+    "sections": [
+      {
+        "title": "Form Fields",
+        "icon": "form",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "Required Fields",
+            "description": "First Name, Email. Start simple with just these two fields for most funnels."
+          },
+          {
+            "icon": "phone",
+            "color": "cyan",
+            "title": "Optional Fields",
+            "description": "Phone Number, Business Name, What do you need help with?, Best time to contact you?"
+          }
+        ]
+      },
+      {
+        "title": "Form Setup Checklist",
+        "icon": "checklist",
+        "color": "green",
+        "items": [
+          {
+            "icon": "tag",
+            "color": "blue",
+            "title": "Name the Form Clearly",
+            "description": "Example: Simple Lead Capture Funnel Form. Clear names help you identify the form later."
+          },
+          {
+            "icon": "settings",
+            "color": "cyan",
+            "title": "Add Correct Fields",
+            "description": "Choose fields based on what you actually need. More fields = more friction."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Use Clear Button Text",
+            "description": "Example: Send Me the Checklist. Match the button text to your offer."
+          },
+          {
+            "icon": "check",
+            "color": "amber",
+            "title": "Confirm Field Mapping",
+            "description": "Make sure form fields map correctly to contact fields in LeadProspectrr."
+          },
+          {
+            "icon": "link",
+            "color": "purple",
+            "title": "Set Form Redirect",
+            "description": "Redirect to the thank-you page after form submission."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Only ask for information you actually need. The more fields you add, the more friction you create. Start with First Name and Email, add more only if necessary.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create Your Form",
+        "description": "In LeadProspectrr, create a new form with a clear name."
+      },
+      {
+        "number": 2,
+        "title": "Add Essential Fields",
+        "description": "Add First Name and Email as required fields."
+      },
+      {
+        "number": 3,
+        "title": "Consider Optional Fields",
+        "description": "Add Phone only if you truly need it for immediate follow-up."
+      },
+      {
+        "number": 4,
+        "title": "Set Button Text",
+        "description": "Use action-oriented button text that matches your offer."
+      },
+      {
+        "number": 5,
+        "title": "Configure Redirect",
+        "description": "Set the form to redirect to your thank-you page after submission."
+      }
+    ],
+    "nextLessonTitle": "Create the Thank-You Page",
+    "quizzes": [
+      {
+        "question": "What fields should you start with for most funnels?",
+        "options": [
+          {
+            "option_text": "Full address, company size, budget, website",
+            "is_correct": false
+          },
+          {
+            "option_text": "First Name and Email",
+            "is_correct": true
+          },
+          {
+            "option_text": "Social security number and birth date",
+            "is_correct": false
+          },
+          {
+            "option_text": "Credit card information",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Start with First Name and Email. These give you what you need to follow up while keeping friction low. Add more fields only if truly necessary."
+      },
+      {
+        "question": "Why should you minimize form fields?",
+        "options": [
+          {
+            "option_text": "To make the form look prettier",
+            "is_correct": false
+          },
+          {
+            "option_text": "More fields create more friction and reduce completion rates",
+            "is_correct": true
+          },
+          {
+            "option_text": "Fields cost extra money",
+            "is_correct": false
+          },
+          {
+            "option_text": "LeadProspectrr limits fields",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Every additional field creates friction. Visitors are more likely to complete short forms. Only ask for information you truly need."
+      },
+      {
+        "question": "Where should the form redirect after submission?",
+        "options": [
+          {
+            "option_text": "Back to the homepage",
+            "is_correct": false
+          },
+          {
+            "option_text": "To the thank-you page",
+            "is_correct": true
+          },
+          {
+            "option_text": "To a competitor's website",
+            "is_correct": false
+          },
+          {
+            "option_text": "Nowhere, leave them on the same page",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Always redirect to a thank-you page after form submission. This confirms the action, sets expectations, and guides them to the next step."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "slug": "create-thank-you-page",
+    "title": "Create the Thank-You Page",
+    "moduleWeek": 8,
+    "moduleName": "Funnels: Building a Simple Lead Capture Funnel",
+    "learningGoal": "Learn how to create a thank-you page that confirms the submission and guides next steps.",
+    "sections": [
+      {
+        "title": "Thank-You Page Structure",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "1. Confirmation Message",
+            "description": "Example: Thank you. Your checklist is on the way. Confirm the action was successful."
+          },
+          {
+            "icon": "clock",
+            "color": "amber",
+            "title": "2. Set Expectations",
+            "description": "Example: Please check your email in the next few minutes. If you do not see it, check your promotions or spam folder."
+          },
+          {
+            "icon": "arrow-right",
+            "color": "blue",
+            "title": "3. Optional Next Step",
+            "description": "Examples: Book a call, Watch a short video, Visit the website, Join a group, Follow on social media."
+          }
+        ]
+      },
+      {
+        "title": "Why Thank-You Pages Matter",
+        "icon": "star",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Not a Dead End",
+            "description": "The thank-you page should not be ignored. It is part of the follow-up experience and sets the tone for your relationship."
+          },
+          {
+            "icon": "users",
+            "color": "cyan",
+            "title": "Guide the Journey",
+            "description": "Confirm the action and guide the person to the next step. Keep momentum going."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The thank-you page confirms the action, sets expectations for what happens next, and can guide leads to additional valuable actions. Never ignore this page.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Write Confirmation Message",
+        "description": "Create a clear message confirming their request was received."
+      },
+      {
+        "number": 2,
+        "title": "Set Expectations",
+        "description": "Tell them what happens next and when. Include instructions for checking spam folders."
+      },
+      {
+        "number": 3,
+        "title": "Add Optional Next Step",
+        "description": "Consider adding one relevant next action: book a call, watch a video, or follow you."
+      },
+      {
+        "number": 4,
+        "title": "Connect Form to Page",
+        "description": "Make sure your form redirects to this thank-you page after submission."
+      }
+    ],
+    "nextLessonTitle": "Build the Follow-Up Workflow",
+    "quizzes": [
+      {
+        "question": "What is the main purpose of a thank-you page?",
+        "options": [
+          {
+            "option_text": "To end the interaction",
+            "is_correct": false
+          },
+          {
+            "option_text": "To confirm the submission and tell the lead what happens next",
+            "is_correct": true
+          },
+          {
+            "option_text": "To sell them something immediately",
+            "is_correct": false
+          },
+          {
+            "option_text": "To collect more information",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The thank-you page confirms the form was submitted successfully and sets expectations for what happens next, building trust and reducing anxiety."
+      },
+      {
+        "question": "What should you include on a thank-you page?",
+        "options": [
+          {
+            "option_text": "A complex navigation menu",
+            "is_correct": false
+          },
+          {
+            "option_text": "Confirmation message, expectations, and optional next step",
+            "is_correct": true
+          },
+          {
+            "option_text": "A request for payment",
+            "is_correct": false
+          },
+          {
+            "option_text": "Nothing, keep it blank",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A good thank-you page includes: a confirmation message, expectations about what happens next (and when), and optionally one next step to continue engagement."
+      },
+      {
+        "question": "Why should you tell people to check spam folders?",
+        "options": [
+          {
+            "option_text": "To confuse them",
+            "is_correct": false
+          },
+          {
+            "option_text": "Emails sometimes end up in spam, and this helps them find your messages",
+            "is_correct": true
+          },
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          },
+          {
+            "option_text": "To make them work harder",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Even legitimate emails can end up in spam or promotions folders. Telling people to check these locations ensures they actually receive your content."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "slug": "build-follow-up-workflow",
+    "title": "Build the Follow-Up Workflow",
+    "moduleWeek": 8,
+    "moduleName": "Funnels: Building a Simple Lead Capture Funnel",
+    "learningGoal": "Learn how to create an automation that handles follow-up after form submission.",
+    "sections": [
+      {
+        "title": "Workflow Trigger",
+        "icon": "play",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "Form Submitted",
+            "description": "Trigger: Simple Lead Capture Funnel Form Submitted. This starts the automation when someone completes your form."
+          }
+        ]
+      },
+      {
+        "title": "Essential Workflow Steps",
+        "icon": "settings",
+        "color": "green",
+        "items": [
+          {
+            "icon": "tag",
+            "color": "blue",
+            "title": "Step 1: Add Tag",
+            "description": "Action: Add Contact Tag. Suggested: Funnel - Simple Lead Capture. Why: Identifies where the lead came from."
+          },
+          {
+            "icon": "bell",
+            "color": "amber",
+            "title": "Step 2: Send Internal Notification",
+            "description": "Action: Send Email or SMS Notification. Message: New lead submitted the Simple Lead Capture Funnel form. Include name, email, phone."
+          },
+          {
+            "icon": "mail",
+            "color": "green",
+            "title": "Step 3: Send Confirmation Email",
+            "description": "Action: Send Email. Purpose: Confirm request and deliver the promised resource. Subject: Here's the checklist you requested."
+          }
+        ]
+      },
+      {
+        "title": "Follow-Up Sequence",
+        "icon": "clock",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "clock",
+            "color": "amber",
+            "title": "Step 4: Wait 1 Day",
+            "description": "Action: Wait 1 day. Why: Gives lead time to read or review the resource."
+          },
+          {
+            "icon": "mail",
+            "color": "cyan",
+            "title": "Step 5: Send Value Email",
+            "description": "Action: Send Email. Purpose: Give one useful tip related to the offer. Example topic: The biggest mistake people make after capturing a lead."
+          },
+          {
+            "icon": "clock",
+            "color": "amber",
+            "title": "Step 6: Wait 2 Days",
+            "description": "Action: Wait 2 days. Build anticipation for the next message."
+          },
+          {
+            "icon": "mail",
+            "color": "purple",
+            "title": "Step 7: Soft Call-to-Action",
+            "description": "Action: Send Email. Purpose: Invite lead to take the next step. Example: Would you like help setting this up? Book a quick session here."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The follow-up workflow is where LeadProspectrr saves time and prevents leads from being missed. Set up tags, notifications, confirmation emails, and a nurture sequence.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create the Workflow",
+        "description": "In LeadProspectrr, create a new workflow triggered by your form submission."
+      },
+      {
+        "number": 2,
+        "title": "Add Tag Step",
+        "description": "Add a tag to identify where this lead came from. Example: Funnel - Simple Lead Capture"
+      },
+      {
+        "number": 3,
+        "title": "Set Up Notifications",
+        "description": "Configure internal notifications so you or your team know when new leads arrive."
+      },
+      {
+        "number": 4,
+        "title": "Write Confirmation Email",
+        "description": "Create an email that confirms their request and delivers the promised resource."
+      },
+      {
+        "number": 5,
+        "title": "Add Follow-Up Emails",
+        "description": "Create 2-3 additional emails with value and soft calls-to-action."
+      }
+    ],
+    "nextLessonTitle": "Test the Funnel",
+    "quizzes": [
+      {
+        "question": "What should be the first step in a follow-up workflow?",
+        "options": [
+          {
+            "option_text": "Send a sales pitch immediately",
+            "is_correct": false
+          },
+          {
+            "option_text": "Add a tag to identify where the lead came from",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete the lead",
+            "is_correct": false
+          },
+          {
+            "option_text": "Wait one week",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The first step should be adding a tag. This helps you identify the lead source and segment your contacts for appropriate follow-up."
+      },
+      {
+        "question": "Why send an internal notification?",
+        "options": [
+          {
+            "option_text": "To spam your team",
+            "is_correct": false
+          },
+          {
+            "option_text": "So the business owner or team knows a new lead came in",
+            "is_correct": true
+          },
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          },
+          {
+            "option_text": "To charge the lead money",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Internal notifications alert you or your team when new leads come in, ensuring timely follow-up and preventing leads from being missed."
+      },
+      {
+        "question": "What is the purpose of the confirmation email?",
+        "options": [
+          {
+            "option_text": "To sell them immediately",
+            "is_correct": false
+          },
+          {
+            "option_text": "To confirm the request and deliver the promised resource",
+            "is_correct": true
+          },
+          {
+            "option_text": "To ask for more information",
+            "is_correct": false
+          },
+          {
+            "option_text": "To unsubscribe them",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The confirmation email serves two purposes: it confirms their request was received and delivers the promised resource (checklist, guide, etc.)."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "slug": "test-the-funnel",
+    "title": "Test the Funnel",
+    "moduleWeek": 8,
+    "moduleName": "Funnels: Building a Simple Lead Capture Funnel",
+    "learningGoal": "Learn how to thoroughly test your funnel before sharing it with real prospects.",
+    "sections": [
+      {
+        "title": "Why Testing Matters",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Never Skip Testing",
+            "description": "A funnel should always be tested before it is published or promoted. Testing helps catch problems before real leads go through the process."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Protect Your Reputation",
+            "description": "A broken funnel can quietly cost you leads. One error can mean lost opportunities and damage to your professional reputation."
+          }
+        ]
+      },
+      {
+        "title": "Testing Checklist",
+        "icon": "checklist",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "eye",
+            "color": "blue",
+            "title": "Open the Funnel Page",
+            "description": "View the page as a visitor would see it. Check layout, text, and form placement."
+          },
+          {
+            "icon": "form",
+            "color": "cyan",
+            "title": "Submit the Form",
+            "description": "Use a test contact with a different email address. Fill out all fields and submit."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Confirm Thank-You Page",
+            "description": "Verify you are redirected to the thank-you page and the message displays correctly."
+          },
+          {
+            "icon": "user",
+            "color": "purple",
+            "title": "Check Contact Record",
+            "description": "Confirm the contact was created in LeadProspectrr with correct information."
+          },
+          {
+            "icon": "tag",
+            "color": "amber",
+            "title": "Verify Tag Applied",
+            "description": "Check that the correct tag was added to the contact."
+          }
+        ]
+      },
+      {
+        "title": "Complete Testing",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "mail",
+            "color": "blue",
+            "title": "Check Confirmation Email",
+            "description": "Verify the confirmation email was sent and contains the promised resource."
+          },
+          {
+            "icon": "bell",
+            "color": "amber",
+            "title": "Check Internal Notification",
+            "description": "Confirm the notification was sent to you or your team."
+          },
+          {
+            "icon": "play",
+            "color": "indigo",
+            "title": "Verify Workflow Started",
+            "description": "Check that the workflow was triggered and is running correctly."
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Check Opportunities/Tasks",
+            "description": "If configured, verify any opportunities or tasks were created."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Never assume the funnel works just because the page looks good. Test the full process from start to finish before sharing with real prospects.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Submit Test Lead",
+        "description": "Go through your funnel as if you were a prospect. Use a test email address."
+      },
+      {
+        "number": 2,
+        "title": "Check All Systems",
+        "description": "Verify: page, form, thank-you page, contact creation, tags, emails, notifications, workflow."
+      },
+      {
+        "number": 3,
+        "title": "Fix Any Issues",
+        "description": "If anything does not work, fix it before sharing the funnel publicly."
+      },
+      {
+        "number": 4,
+        "title": "Test on Mobile",
+        "description": "Many visitors use mobile devices. Test your funnel on a phone or tablet."
+      }
+    ],
+    "nextLessonTitle": "Module 8 Complete",
+    "quizzes": [
+      {
+        "question": "Why is testing a funnel important?",
+        "options": [
+          {
+            "option_text": "It is optional and can be skipped",
+            "is_correct": false
+          },
+          {
+            "option_text": "To catch problems before real leads go through the process",
+            "is_correct": true
+          },
+          {
+            "option_text": "To waste time",
+            "is_correct": false
+          },
+          {
+            "option_text": "To delete test data",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Testing catches errors, broken links, missing emails, and other issues before real prospects encounter them, protecting your reputation."
+      },
+      {
+        "question": "What should you check when testing a funnel?",
+        "options": [
+          {
+            "option_text": "Only the page design",
+            "is_correct": false
+          },
+          {
+            "option_text": "Page, form, thank-you page, contact, tags, emails, notifications, and workflow",
+            "is_correct": true
+          },
+          {
+            "option_text": "Nothing, funnels always work",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only the button color",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Thorough testing includes the entire process: funnel page, form submission, thank-you page, contact creation, tags, confirmation email, internal notification, and workflow execution."
+      },
+      {
+        "question": "Why test on mobile devices?",
+        "options": [
+          {
+            "option_text": "Mobile testing is not important",
+            "is_correct": false
+          },
+          {
+            "option_text": "Many visitors use mobile devices to access funnels",
+            "is_correct": true
+          },
+          {
+            "option_text": "Mobile funnels are always broken",
+            "is_correct": false
+          },
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A significant portion of visitors will access your funnel on mobile devices. Testing ensures the experience works properly on all screen sizes."
+      }
+    ]
+  }
+]

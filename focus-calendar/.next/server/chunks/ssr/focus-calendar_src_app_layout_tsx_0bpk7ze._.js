@@ -1,0 +1,3 @@
+module.exports=[4446,a=>{"use strict";var b=a.i(26853);a.s(["default",0,function({children:a}){return(0,b.jsx)("html",{lang:"en",children:(0,b.jsx)("body",{className:"antialiased",children:a})})},"metadata",0,{title:"Focus Calendar - Stay on Track",description:"A daily calendar designed to keep you focused and productive"}])},80457,a=>{a.n(a.i(4446))}];
+
+//# sourceMappingURL=focus-calendar_src_app_layout_tsx_0bpk7ze._.js.map

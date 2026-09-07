@@ -1,0 +1,29 @@
+{
+  "node": {
+    "402e30029304360c36326315fa463351f8c94d3d4f": {
+      "workers": {
+        "app/dashboard/settings/page": {
+          "moduleId": 40037,
+          "async": false,
+          "exportedName": "getUserSettings",
+          "filename": "leadprospectrr-training/src/app/actions/settings.ts"
+        }
+      },
+      "exportedName": "getUserSettings",
+      "filename": "leadprospectrr-training/src/app/actions/settings.ts"
+    },
+    "6087f82abcbdeca2af1e6bcaf60006b541b49aff47": {
+      "workers": {
+        "app/dashboard/settings/page": {
+          "moduleId": 40037,
+          "async": false,
+          "exportedName": "saveUserSettings",
+          "filename": "leadprospectrr-training/src/app/actions/settings.ts"
+        }
+      },
+      "exportedName": "saveUserSettings",
+      "filename": "leadprospectrr-training/src/app/actions/settings.ts"
+    }
+  },
+  "edge": {}
+}

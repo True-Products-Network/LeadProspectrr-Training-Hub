@@ -1,0 +1,1191 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "what-workflow-does",
+    "title": "What a Workflow Does",
+    "moduleWeek": 10,
+    "moduleName": "Workflows: An Introduction and Your First Simple Automation",
+    "learningGoal": "Understand what a workflow is and choose a process that is a good fit for automation.",
+    "sections": [
+      {
+        "title": "Workflows in Plain English",
+        "icon": "play",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "settings",
+            "color": "blue",
+            "title": "Automatic Instructions",
+            "description": "A workflow tells LeadProspectrr what to do after a specific event occurs. It repeats the process in the same order each time."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Examples",
+            "description": "When someone submits a speaking inquiry form, send a confirmation. When a prospect books a strategy call, send reminders. When a client pays an invoice, send welcome information."
+          }
+        ]
+      },
+      {
+        "title": "Good First Workflows",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "star",
+            "color": "green",
+            "title": "Characteristics",
+            "description": "One clear starting event. One type of contact. No more than three or four actions. One person responsible for the next human step. A result that is easy to test."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "What to Avoid",
+            "description": "Do not begin with a long process containing many branches, messages, offers, and exceptions. Start with one small job that can fit on one screen."
+          }
+        ]
+      },
+      {
+        "title": "Quick Check",
+        "icon": "help",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Better First Workflow",
+            "description": "A form confirmation that sends one email, adds one tag, and notifies one person. It has one purpose and is easier to test than a complex 90-day sales process."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A workflow repeats a process in the same order each time. You decide the process first, then build the instructions. Start small and simple.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Identify a Repeated Task",
+        "description": "Write down one repeated task that begins after a prospect takes a clear action."
+      },
+      {
+        "number": 2,
+        "title": "Check the Fit",
+        "description": "Does it have one clear starting event, one contact type, and 3-4 actions?"
+      },
+      {
+        "number": 3,
+        "title": "Choose Your First Workflow",
+        "description": "Pick the simplest, most repeatable task to automate first."
+      }
+    ],
+    "nextLessonTitle": "The Building Blocks",
+    "quizzes": [
+      {
+        "question": "What is a workflow?",
+        "options": [
+          {
+            "option_text": "A type of contact",
+            "is_correct": false
+          },
+          {
+            "option_text": "A set of instructions LeadProspectrr follows automatically after a specific event",
+            "is_correct": true
+          },
+          {
+            "option_text": "A payment method",
+            "is_correct": false
+          },
+          {
+            "option_text": "A report type",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A workflow is a set of automatic instructions that LeadProspectrr follows when a specific trigger event occurs. It repeats the process consistently each time."
+      },
+      {
+        "question": "What makes a good first workflow?",
+        "options": [
+          {
+            "option_text": "A 90-day sales process with twelve emails and many branches",
+            "is_correct": false
+          },
+          {
+            "option_text": "One clear starting event, one contact type, 3-4 actions, one owner, easy to test",
+            "is_correct": true
+          },
+          {
+            "option_text": "Complex processes with many exceptions",
+            "is_correct": false
+          },
+          {
+            "option_text": "No clear starting point",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A good first workflow is simple: one clear trigger, one contact type, 3-4 actions, one person responsible, and results that are easy to test."
+      },
+      {
+        "question": "What should you avoid as a first workflow?",
+        "options": [
+          {
+            "option_text": "Simple form confirmations",
+            "is_correct": false
+          },
+          {
+            "option_text": "Long processes with many branches, messages, offers, and exceptions",
+            "is_correct": true
+          },
+          {
+            "option_text": "Tagging contacts",
+            "is_correct": false
+          },
+          {
+            "option_text": "Sending emails",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Avoid complex first workflows with many branches and exceptions. Start with a simple, linear process that fits on one screen."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "building-blocks",
+    "title": "The Building Blocks",
+    "moduleWeek": 10,
+    "moduleName": "Workflows: An Introduction and Your First Simple Automation",
+    "learningGoal": "Recognize the parts of a workflow and the job each part performs.",
+    "sections": [
+      {
+        "title": "The Six Building Blocks",
+        "icon": "layout",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "play",
+            "color": "blue",
+            "title": "1. Trigger",
+            "description": "The event that starts the workflow. Examples: Form submitted, Appointment booked, Tag added, Payment received, Customer replied."
+          },
+          {
+            "icon": "filter",
+            "color": "cyan",
+            "title": "2. Filter",
+            "description": "Narrows the trigger. Without a filter, a workflow may start after every form submission. The filter tells it to respond only to specific events."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "3. Action",
+            "description": "A task LeadProspectrr completes after the trigger. Examples: Send email, Add tag, Send notification."
+          }
+        ]
+      },
+      {
+        "title": "More Building Blocks",
+        "icon": "settings",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "clock",
+            "color": "amber",
+            "title": "4. Wait",
+            "description": "Pauses the contact before the next action. Useful for timing follow-up messages or creating delays."
+          },
+          {
+            "icon": "stop",
+            "color": "rose",
+            "title": "5. End Point",
+            "description": "Shows where the process finishes. A booked appointment, reply, payment, or status change may stop further actions."
+          },
+          {
+            "icon": "document",
+            "color": "purple",
+            "title": "6. Draft and Published",
+            "description": "Draft: saved but does not respond to real triggers. Published: can process contacts who meet trigger rules."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Workflows have six building blocks: Trigger, Filter, Action, Wait, End Point, and Draft/Published status. Each has a specific job in the automation process.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Match Items to Jobs",
+        "description": "Trigger starts, Filter limits, Action does, Wait pauses, End point finishes, Draft/Published controls if it runs."
+      },
+      {
+        "number": 2,
+        "title": "Identify in Examples",
+        "description": "Look at the example workflows and identify each building block."
+      },
+      {
+        "number": 3,
+        "title": "Plan Your Blocks",
+        "description": "For your first workflow, which blocks will you need?"
+      }
+    ],
+    "nextLessonTitle": "Map the Process Before Building",
+    "quizzes": [
+      {
+        "question": "What does a trigger do?",
+        "options": [
+          {
+            "option_text": "Pauses the workflow",
+            "is_correct": false
+          },
+          {
+            "option_text": "Starts the workflow",
+            "is_correct": true
+          },
+          {
+            "option_text": "Ends the workflow",
+            "is_correct": false
+          },
+          {
+            "option_text": "Deletes the contact",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The trigger is the event that starts the workflow. Examples include form submissions, appointment bookings, tag additions, and payments received."
+      },
+      {
+        "question": "What is the purpose of a filter?",
+        "options": [
+          {
+            "option_text": "To send emails",
+            "is_correct": false
+          },
+          {
+            "option_text": "To limit which events or contacts qualify for the workflow",
+            "is_correct": true
+          },
+          {
+            "option_text": "To pause the workflow",
+            "is_correct": false
+          },
+          {
+            "option_text": "To end the workflow",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A filter narrows the trigger so the workflow only responds to specific events or contacts, preventing unwanted workflow runs."
+      },
+      {
+        "question": "What is the difference between Draft and Published?",
+        "options": [
+          {
+            "option_text": "There is no difference",
+            "is_correct": false
+          },
+          {
+            "option_text": "Draft does not respond to real triggers; Published can process qualifying contacts",
+            "is_correct": true
+          },
+          {
+            "option_text": "Draft is more expensive",
+            "is_correct": false
+          },
+          {
+            "option_text": "Published cannot be edited",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Draft workflows are saved but inactive. Published workflows actively process contacts who meet the trigger conditions."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "slug": "map-process-before-building",
+    "title": "Map the Process Before Building",
+    "moduleWeek": 10,
+    "moduleName": "Workflows: An Introduction and Your First Simple Automation",
+    "learningGoal": "Turn a real business need into a simple workflow plan.",
+    "sections": [
+      {
+        "title": "The Five Planning Questions",
+        "icon": "help",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "play",
+            "color": "blue",
+            "title": "1. What event starts the process?",
+            "description": "Identify the trigger event that should begin the automation."
+          },
+          {
+            "icon": "filter",
+            "color": "cyan",
+            "title": "2. Which contact or event should qualify?",
+            "description": "Define the filter criteria to limit who enters the workflow."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "3. What should happen first, second, third?",
+            "description": "List the actions in order of execution."
+          },
+          {
+            "icon": "user",
+            "color": "purple",
+            "title": "4. Who owns the next human action?",
+            "description": "Name the person responsible for follow-up after the automation."
+          },
+          {
+            "icon": "check",
+            "color": "amber",
+            "title": "5. How will you prove it worked?",
+            "description": "Define how you will test and verify the workflow functions correctly."
+          }
+        ]
+      },
+      {
+        "title": "Module Example: Consultation Inquiry",
+        "icon": "document",
+        "color": "green",
+        "items": [
+          {
+            "icon": "play",
+            "color": "blue",
+            "title": "What starts it?",
+            "description": "A contact submits the Consultation Inquiry Form."
+          },
+          {
+            "icon": "filter",
+            "color": "cyan",
+            "title": "Who qualifies?",
+            "description": "Only contacts who submit that exact form."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "What happens?",
+            "description": "First: Send confirmation email. Second: Add tag inquiry-new. Third: Notify business owner."
+          },
+          {
+            "icon": "user",
+            "color": "purple",
+            "title": "Who owns follow-up?",
+            "description": "The business owner or assigned team member."
+          },
+          {
+            "icon": "check",
+            "color": "amber",
+            "title": "How is it tested?",
+            "description": "Submit the form with your own email and check all three results."
+          }
+        ]
+      },
+      {
+        "title": "Naming Your Workflow",
+        "icon": "tag",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "tag",
+            "color": "amber",
+            "title": "Recommended Pattern",
+            "description": "SOURCE – PURPOSE – MAIN RESULT. Example: FORM – New Inquiry – Confirm + Tag + Notify"
+          },
+          {
+            "icon": "lightbulb",
+            "color": "green",
+            "title": "More Examples",
+            "description": "FORM – Speaking Inquiry – Confirm + Notify. FORM – Coaching Application – Tag + Assign. CALENDAR – Strategy Call – Confirm + Remind."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Answer the five planning questions before opening the Workflow Builder. A clear plan makes building faster and reduces errors.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Complete the Planner",
+        "description": "Answer all five planning questions for your first workflow."
+      },
+      {
+        "number": 2,
+        "title": "Name Your Workflow",
+        "description": "Use the pattern: SOURCE – PURPOSE – MAIN RESULT"
+      },
+      {
+        "number": 3,
+        "title": "Review Before Building",
+        "description": "Make sure your plan is clear and simple before opening the Workflow Builder."
+      }
+    ],
+    "nextLessonTitle": "Create the Workflow and Trigger",
+    "quizzes": [
+      {
+        "question": "What are the five planning questions?",
+        "options": [
+          {
+            "option_text": "Who, what, when, where, why",
+            "is_correct": false
+          },
+          {
+            "option_text": "What event starts it, who qualifies, what happens, who owns follow-up, how to prove it worked",
+            "is_correct": true
+          },
+          {
+            "option_text": "How much, how many, how long, how often, how far",
+            "is_correct": false
+          },
+          {
+            "option_text": "What color, what size, what shape, what weight, what material",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The five planning questions are: What event starts the process? Which contact qualifies? What should happen? Who owns the next action? How will you prove it worked?"
+      },
+      {
+        "question": "What is the recommended workflow naming pattern?",
+        "options": [
+          {
+            "option_text": "Random words",
+            "is_correct": false
+          },
+          {
+            "option_text": "SOURCE – PURPOSE – MAIN RESULT",
+            "is_correct": true
+          },
+          {
+            "option_text": "Your name and date",
+            "is_correct": false
+          },
+          {
+            "option_text": "Numbers only",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Use the pattern SOURCE – PURPOSE – MAIN RESULT. Example: FORM – New Inquiry – Confirm + Tag + Notify. This makes workflows easy to identify."
+      },
+      {
+        "question": "Why map the process before building?",
+        "options": [
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          },
+          {
+            "option_text": "A clear plan makes building faster and reduces errors",
+            "is_correct": true
+          },
+          {
+            "option_text": "It makes the workflow slower",
+            "is_correct": false
+          },
+          {
+            "option_text": "It is not important",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Mapping the process before building creates a clear plan, making construction faster and reducing mistakes. It ensures you know what you want before you start building."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "slug": "create-workflow-trigger",
+    "title": "Create the Workflow and Trigger",
+    "moduleWeek": 10,
+    "moduleName": "Workflows: An Introduction and Your First Simple Automation",
+    "learningGoal": "Create a blank workflow and connect it to one selected form.",
+    "sections": [
+      {
+        "title": "Step 1: Open Workflow Builder",
+        "icon": "settings",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "location",
+            "color": "blue",
+            "title": "Navigate to Workflows",
+            "description": "Go to Automations → Workflows. Select Create Workflow. Choose Start from Scratch."
+          },
+          {
+            "icon": "tag",
+            "color": "cyan",
+            "title": "Name Your Workflow",
+            "description": "Enter the workflow name: FORM – New Inquiry – Confirm + Tag + Notify. Keep it in Draft while building."
+          }
+        ]
+      },
+      {
+        "title": "Step 2: Add the Trigger",
+        "icon": "play",
+        "color": "green",
+        "items": [
+          {
+            "icon": "plus",
+            "color": "green",
+            "title": "Add New Trigger",
+            "description": "Select Add New Trigger. Search for Form Submitted. Select the trigger."
+          },
+          {
+            "icon": "tag",
+            "color": "amber",
+            "title": "Label the Trigger",
+            "description": "Give it a clear name: New Inquiry Form Submitted."
+          }
+        ]
+      },
+      {
+        "title": "Step 3: Add the Form Filter",
+        "icon": "filter",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "filter",
+            "color": "amber",
+            "title": "Filter to Specific Form",
+            "description": "Add filter Form Is. Select the exact inquiry form. Save the trigger."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Why the Filter Matters",
+            "description": "Without a form filter, other submissions may start the workflow. A specific filter keeps it tied to one business purpose."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Create the workflow in Draft, add a Form Submitted trigger with a specific form filter, and save each step before continuing.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create Workflow",
+        "description": "Go to Automations → Workflows → Create Workflow → Start from Scratch."
+      },
+      {
+        "number": 2,
+        "title": "Name It Clearly",
+        "description": "Use the pattern: FORM – New Inquiry – Confirm + Tag + Notify"
+      },
+      {
+        "number": 3,
+        "title": "Add Trigger and Filter",
+        "description": "Add Form Submitted trigger, label it, and filter to your specific form."
+      },
+      {
+        "number": 4,
+        "title": "Check Before Continuing",
+        "description": "Verify: clear name, correct trigger, clear label, correct form filter, saved trigger, Draft status."
+      }
+    ],
+    "nextLessonTitle": "Add the Three Actions",
+    "quizzes": [
+      {
+        "question": "Where do you create a workflow?",
+        "options": [
+          {
+            "option_text": "Contacts → Import",
+            "is_correct": false
+          },
+          {
+            "option_text": "Automations → Workflows",
+            "is_correct": true
+          },
+          {
+            "option_text": "Settings → General",
+            "is_correct": false
+          },
+          {
+            "option_text": "Dashboard → Widgets",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Workflows are created in Automations → Workflows. This is where you build, edit, and manage all automation sequences."
+      },
+      {
+        "question": "Why should you keep the workflow in Draft while building?",
+        "options": [
+          {
+            "option_text": "Draft workflows are faster",
+            "is_correct": false
+          },
+          {
+            "option_text": "Draft does not respond to real triggers, so you can build safely",
+            "is_correct": true
+          },
+          {
+            "option_text": "Draft is required by law",
+            "is_correct": false
+          },
+          {
+            "option_text": "Published workflows cannot be edited",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Keeping a workflow in Draft while building prevents it from responding to real trigger events. This lets you build and test safely before going live."
+      },
+      {
+        "question": "Why does the Form Submitted trigger need a filter?",
+        "options": [
+          {
+            "option_text": "It makes the workflow slower",
+            "is_correct": false
+          },
+          {
+            "option_text": "It limits the workflow to the selected form and prevents unrelated submissions from starting it",
+            "is_correct": true
+          },
+          {
+            "option_text": "It is not necessary",
+            "is_correct": false
+          },
+          {
+            "option_text": "It deletes the form",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Without a form filter, any form submission could trigger the workflow. The filter ensures only submissions from your specific form start this workflow."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "slug": "add-three-actions",
+    "title": "Add the Three Actions",
+    "moduleWeek": 10,
+    "moduleName": "Workflows: An Introduction and Your First Simple Automation",
+    "learningGoal": "Add the contact message, contact tag, and team notification in the correct order.",
+    "sections": [
+      {
+        "title": "Action 1: Send Confirmation Email",
+        "icon": "mail",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "plus",
+            "color": "blue",
+            "title": "Add Email Action",
+            "description": "Select + below trigger. Choose Send Email. Enter sender name and connected address. Add subject and message. Save."
+          },
+          {
+            "icon": "document",
+            "color": "cyan",
+            "title": "Suggested Email",
+            "description": "Subject: We received your request. Body: Thank you for getting in touch. We received your request and will review it shortly. You can expect to hear from us within [response time]."
+          }
+        ]
+      },
+      {
+        "title": "Action 2: Add Contact Tag",
+        "icon": "tag",
+        "color": "green",
+        "items": [
+          {
+            "icon": "plus",
+            "color": "green",
+            "title": "Add Tag Action",
+            "description": "Select next +. Choose Add Contact Tag. Select or create inquiry-new. Save."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Use Consistent Spelling",
+            "description": "Use one spelling for the tag. Small differences create separate tags and make lists harder to manage."
+          }
+        ]
+      },
+      {
+        "title": "Action 3: Send Internal Notification",
+        "icon": "bell",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "plus",
+            "color": "amber",
+            "title": "Add Notification Action",
+            "description": "Select next +. Choose Internal Notification. Select notification method. Choose recipient. Add contact details and response time. Save."
+          },
+          {
+            "icon": "document",
+            "color": "cyan",
+            "title": "Suggested Notification",
+            "description": "Subject: New inquiry received. Body: Name, Email, Phone, Next action: Review and respond within [response time]."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Add three actions in order: confirmation email, contact tag, internal notification. Save each action and review the full path before testing.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Add Confirmation Email",
+        "description": "Write and save the confirmation email action."
+      },
+      {
+        "number": 2,
+        "title": "Add Contact Tag",
+        "description": "Add the inquiry-new tag action with consistent spelling."
+      },
+      {
+        "number": 3,
+        "title": "Add Internal Notification",
+        "description": "Configure who receives the notification and what it says."
+      },
+      {
+        "number": 4,
+        "title": "Review Full Path",
+        "description": "Check: correct form, accurate email, correct tag spelling, right recipient, all saved."
+      }
+    ],
+    "nextLessonTitle": "Test, Inspect, and Correct",
+    "quizzes": [
+      {
+        "question": "What are the three actions in this workflow?",
+        "options": [
+          {
+            "option_text": "Delete contact, send spam, ignore inquiry",
+            "is_correct": false
+          },
+          {
+            "option_text": "Send confirmation email, add tag inquiry-new, send internal notification",
+            "is_correct": true
+          },
+          {
+            "option_text": "Create invoice, charge payment, ship product",
+            "is_correct": false
+          },
+          {
+            "option_text": "Block contact, unsubscribe, delete data",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The three actions are: 1) Send a confirmation email to the contact, 2) Add the tag inquiry-new to organize the lead, 3) Send an internal notification to the team."
+      },
+      {
+        "question": "Why use consistent tag spelling?",
+        "options": [
+          {
+            "option_text": "It looks prettier",
+            "is_correct": false
+          },
+          {
+            "option_text": "Small differences create separate tags and make lists harder to manage",
+            "is_correct": true
+          },
+          {
+            "option_text": "It is required by law",
+            "is_correct": false
+          },
+          {
+            "option_text": "Tags cannot be edited",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Consistent tag spelling is crucial. inquiry-new and Inquiry-New would be treated as two different tags, fragmenting your contact organization."
+      },
+      {
+        "question": "What should the internal notification include?",
+        "options": [
+          {
+            "option_text": "Only the contact's favorite color",
+            "is_correct": false
+          },
+          {
+            "option_text": "Name, email, phone, and expected response time",
+            "is_correct": true
+          },
+          {
+            "option_text": "A sales pitch",
+            "is_correct": false
+          },
+          {
+            "option_text": "Nothing, blank is fine",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The internal notification should include the contact's name, email, phone, and the expected response time so the team member has all information needed for follow-up."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "slug": "test-inspect-correct",
+    "title": "Test, Inspect, and Correct",
+    "moduleWeek": 10,
+    "moduleName": "Workflows: An Introduction and Your First Simple Automation",
+    "learningGoal": "Run a controlled test and verify each result before real prospects enter the workflow.",
+    "sections": [
+      {
+        "title": "Test with Real Trigger",
+        "icon": "target",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "check",
+            "color": "blue",
+            "title": "Strongest Test Method",
+            "description": "Publish the workflow briefly and complete the real starting event. Review every step, change to Published, open the form as a visitor, submit with your own details, check contact record and inboxes."
+          }
+        ]
+      },
+      {
+        "title": "The Three-Result Test",
+        "icon": "checklist",
+        "color": "green",
+        "items": [
+          {
+            "icon": "mail",
+            "color": "blue",
+            "title": "Result 1: Confirmation Email",
+            "description": "The confirmation email arrived at the test contact's email address."
+          },
+          {
+            "icon": "tag",
+            "color": "green",
+            "title": "Result 2: Contact Tag",
+            "description": "The contact record contains inquiry-new."
+          },
+          {
+            "icon": "bell",
+            "color": "amber",
+            "title": "Result 3: Internal Notification",
+            "description": "The internal notification reached the selected person."
+          }
+        ]
+      },
+      {
+        "title": "Troubleshooting Guide",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "help",
+            "color": "blue",
+            "title": "Nothing happened?",
+            "description": "Is the workflow Published?"
+          },
+          {
+            "icon": "help",
+            "color": "cyan",
+            "title": "Test contact did not enter?",
+            "description": "Did you submit the exact form selected in the trigger?"
+          },
+          {
+            "icon": "help",
+            "color": "green",
+            "title": "Email did not arrive?",
+            "description": "Check sending address, contact email, message setup, and DND status."
+          },
+          {
+            "icon": "help",
+            "color": "amber",
+            "title": "Tag is missing?",
+            "description": "Was the correct tag selected and the action saved?"
+          },
+          {
+            "icon": "help",
+            "color": "purple",
+            "title": "Notification missing?",
+            "description": "Check the recipient and notification method."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Test passes only when all three results are correct: confirmation email, contact tag, and internal notification. Check workflow activity and correct one item at a time.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Publish Briefly",
+        "description": "Change workflow to Published for testing."
+      },
+      {
+        "number": 2,
+        "title": "Submit Test Form",
+        "description": "Use your own name and email to submit the form."
+      },
+      {
+        "number": 3,
+        "title": "Check Three Results",
+        "description": "Verify: confirmation email arrived, tag was added, notification was sent."
+      },
+      {
+        "number": 4,
+        "title": "Correct and Retest",
+        "description": "Change one item at a time, save, and repeat the test. Record faults and corrections."
+      }
+    ],
+    "nextLessonTitle": "Adapt the Workflow to Your Business",
+    "quizzes": [
+      {
+        "question": "What is the strongest test method?",
+        "options": [
+          {
+            "option_text": "Just assume it works",
+            "is_correct": false
+          },
+          {
+            "option_text": "Publish briefly and complete the real starting event with your own details",
+            "is_correct": true
+          },
+          {
+            "option_text": "Never test workflows",
+            "is_correct": false
+          },
+          {
+            "option_text": "Ask someone else to guess if it works",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The strongest test is to publish the workflow briefly and actually submit the form with your own details. This tests the real trigger and all actions in sequence."
+      },
+      {
+        "question": "What are the three results to check?",
+        "options": [
+          {
+            "option_text": "Only the confirmation email",
+            "is_correct": false
+          },
+          {
+            "option_text": "Confirmation email, contact tag inquiry-new, and internal notification",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only the workflow name",
+            "is_correct": false
+          },
+          {
+            "option_text": "Nothing needs to be checked",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The three-result test checks: 1) Confirmation email arrived, 2) Contact has inquiry-new tag, 3) Internal notification was received. All three must pass."
+      },
+      {
+        "question": "What should you do if something fails?",
+        "options": [
+          {
+            "option_text": "Give up and delete the workflow",
+            "is_correct": false
+          },
+          {
+            "option_text": "Change one item at a time, save, and retest",
+            "is_correct": true
+          },
+          {
+            "option_text": "Change everything at once",
+            "is_correct": false
+          },
+          {
+            "option_text": "Ignore the failure",
+            "is_correct": false
+          }
+        ],
+        "explanation": "When troubleshooting, change one item at a time, save it, and repeat the full test. This helps identify exactly what was causing the problem."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "slug": "adapt-workflow-business",
+    "title": "Adapt the Workflow to Your Business",
+    "moduleWeek": 10,
+    "moduleName": "Workflows: An Introduction and Your First Simple Automation",
+    "learningGoal": "Apply the same workflow pattern to a real process used by your business.",
+    "sections": [
+      {
+        "title": "Choose Your Scenario",
+        "icon": "target",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "user",
+            "color": "blue",
+            "title": "Scenario A: Coach",
+            "description": "Prospect submits coaching application. Needs receipt message, inquiry-new tag, and notification to coach."
+          },
+          {
+            "icon": "briefcase",
+            "color": "cyan",
+            "title": "Scenario B: Consultant",
+            "description": "Business owner requests strategy conversation. Needs confirmation, tag, and notification to consultant."
+          },
+          {
+            "icon": "mic",
+            "color": "purple",
+            "title": "Scenario C: Speaker",
+            "description": "Event organizer submits speaking inquiry. Needs confirmation, tag, and notification to booking handler."
+          },
+          {
+            "icon": "tool",
+            "color": "amber",
+            "title": "Scenario D: Service Business",
+            "description": "Prospect requests quote. Needs confirmation, tag, and notification to person responsible for estimates."
+          }
+        ]
+      },
+      {
+        "title": "Exercise Steps",
+        "icon": "checklist",
+        "color": "green",
+        "items": [
+          {
+            "icon": "play",
+            "color": "blue",
+            "title": "1. Write Trigger Event",
+            "description": "Document the exact event that starts your workflow."
+          },
+          {
+            "icon": "filter",
+            "color": "cyan",
+            "title": "2. Name the Form",
+            "description": "Identify the exact form used as the filter."
+          },
+          {
+            "icon": "document",
+            "color": "green",
+            "title": "3. Draft Confirmation Email",
+            "description": "Write the message your contacts will receive."
+          },
+          {
+            "icon": "user",
+            "color": "purple",
+            "title": "4. Name the Owner",
+            "description": "Identify who is responsible for follow-up."
+          },
+          {
+            "icon": "clock",
+            "color": "amber",
+            "title": "5. Set Response Time",
+            "description": "Define expected response time for follow-up."
+          },
+          {
+            "icon": "settings",
+            "color": "indigo",
+            "title": "6. Build in Draft",
+            "description": "Create the workflow in Draft status."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "7. Test and Record",
+            "description": "Test with your details and record results."
+          },
+          {
+            "icon": "pencil",
+            "color": "rose",
+            "title": "8. Correct and Retest",
+            "description": "Fix any issues and test again."
+          }
+        ]
+      },
+      {
+        "title": "Finish Line",
+        "icon": "check",
+        "color": "green",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Complete When",
+            "description": "One selected form starts the workflow. Test contact receives confirmation. Contact record gets inquiry-new tag. Correct person receives notification. Workflow activity shows completed path. Named person owns next human action."
+          }
+        ]
+      },
+      {
+        "title": "What to Add Later",
+        "icon": "star",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "plus",
+            "color": "amber",
+            "title": "Future Improvements",
+            "description": "Once the first workflow works, you may add: Create follow-up task, Add contact to opportunity pipeline, Wait one business day, Send reminder, End follow-up after appointment booked. Test again after every change."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Apply the same pattern to your real business: one trigger, one filter, three actions, one owner. Complete the exercise and test thoroughly before adding complexity.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Choose Your Scenario",
+        "description": "Pick the scenario closest to your business or create your own."
+      },
+      {
+        "number": 2,
+        "title": "Complete Exercise Steps",
+        "description": "Work through all eight steps: trigger, form, email, owner, response time, build, test, correct."
+      },
+      {
+        "number": 3,
+        "title": "Reach the Finish Line",
+        "description": "Ensure all completion criteria are met before considering the workflow done."
+      }
+    ],
+    "nextLessonTitle": "Module 10 Complete",
+    "quizzes": [
+      {
+        "question": "What is the first step in adapting the workflow?",
+        "options": [
+          {
+            "option_text": "Immediately add complex features",
+            "is_correct": false
+          },
+          {
+            "option_text": "Choose your scenario and write the trigger event",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete the existing workflow",
+            "is_correct": false
+          },
+          {
+            "option_text": "Skip testing",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The first step is to choose your scenario and document the exact trigger event that starts your workflow. Planning before building prevents errors."
+      },
+      {
+        "question": "What should you do after the first workflow works?",
+        "options": [
+          {
+            "option_text": "Immediately add ten more actions",
+            "is_correct": false
+          },
+          {
+            "option_text": "Add one improvement at a time and test again",
+            "is_correct": true
+          },
+          {
+            "option_text": "Never touch it again",
+            "is_correct": false
+          },
+          {
+            "option_text": "Delete it and start over",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Once the first workflow works, add improvements one at a time: tasks, pipeline entries, waits, reminders. Test again after every change."
+      },
+      {
+        "question": "What is the finish line for this exercise?",
+        "options": [
+          {
+            "option_text": "The workflow is created in Draft",
+            "is_correct": false
+          },
+          {
+            "option_text": "Form starts workflow, confirmation sent, tag added, notification received, activity shows completion, owner named",
+            "is_correct": true
+          },
+          {
+            "option_text": "The workflow has 20 actions",
+            "is_correct": false
+          },
+          {
+            "option_text": "It looks pretty",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The finish line requires: form starts workflow, test contact receives confirmation, inquiry-new tag added, notification received, workflow activity shows completed path, and a named person owns the next action."
+      }
+    ]
+  }
+]

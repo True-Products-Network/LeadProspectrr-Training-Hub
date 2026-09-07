@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/audit-form/page": "app/audit-form/page.js",
+  "/audit/page": "app/audit/page.js",
+  "/calendar/page": "app/calendar/page.js",
+  "/email-audit-followup/page": "app/email-audit-followup/page.js",
+  "/email-week-1/page": "app/email-week-1/page.js",
+  "/page": "app/page.js",
+  "/pricing/page": "app/pricing/page.js",
+  "/scripts/page": "app/scripts/page.js",
+  "/tracking/page": "app/tracking/page.js"
+}

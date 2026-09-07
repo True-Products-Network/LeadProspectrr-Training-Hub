@@ -1,0 +1,17 @@
+{
+  "node": {
+    "7034a75ef2a8d905ac8f0e09a2aa92cb8ff891e2a9": {
+      "workers": {
+        "app/dashboard/resources/page": {
+          "moduleId": 60180,
+          "async": false,
+          "exportedName": "trackDownload",
+          "filename": "leadprospectrr-training/src/app/actions/download.ts"
+        }
+      },
+      "exportedName": "trackDownload",
+      "filename": "leadprospectrr-training/src/app/actions/download.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,1241 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "what-is-conversations-inbox",
+    "title": "What Is the Conversations Inbox?",
+    "moduleWeek": 4,
+    "moduleName": "Understanding the Conversations Inbox",
+    "learningGoal": "Understand what the Conversations Inbox is and what types of messages it can manage.",
+    "sections": [
+      {
+        "title": "The Message Center",
+        "icon": "mail",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "mail",
+            "color": "blue",
+            "title": "Email replies",
+            "description": "Responses to your email campaigns and templates"
+          },
+          {
+            "icon": "chat",
+            "color": "green",
+            "title": "SMS replies",
+            "description": "Text message conversations with contacts"
+          },
+          {
+            "icon": "message",
+            "color": "amber",
+            "title": "Website chat",
+            "description": "Live chat messages from your website"
+          },
+          {
+            "icon": "phone",
+            "color": "purple",
+            "title": "Missed call text-back",
+            "description": "Automated responses to missed calls"
+          },
+          {
+            "icon": "facebook",
+            "color": "cyan",
+            "title": "Facebook messages",
+            "description": "Messages from Facebook Business Page"
+          },
+          {
+            "icon": "google",
+            "color": "rose",
+            "title": "Google Business Profile",
+            "description": "Messages from Google Business"
+          },
+          {
+            "icon": "form",
+            "color": "indigo",
+            "title": "Form or funnel replies",
+            "description": "Responses from forms and funnels"
+          },
+          {
+            "icon": "target",
+            "color": "teal",
+            "title": "Campaign replies",
+            "description": "Replies to your marketing campaigns"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The Conversations Inbox is where your business listens and responds. It brings all communication into one place.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Navigate to the Conversations Inbox",
+        "description": "Find it in your LeadProspectrr main menu"
+      },
+      {
+        "number": 2,
+        "title": "Identify message sources",
+        "description": "Look at the channel icons to see where messages come from"
+      },
+      {
+        "number": 3,
+        "title": "Count your active conversations",
+        "description": "Get a sense of how many conversations are in your inbox"
+      }
+    ],
+    "nextLessonTitle": "Why the Inbox Matters",
+    "quizzes": [
+      {
+        "question": "What is the primary purpose of the Conversations Inbox?",
+        "options": [
+          {
+            "option_text": "To send marketing campaigns",
+            "is_correct": false
+          },
+          {
+            "option_text": "To manage all business messages, replies, and conversations in one place",
+            "is_correct": true
+          },
+          {
+            "option_text": "To create email templates only",
+            "is_correct": false
+          },
+          {
+            "option_text": "To store contact lists",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The Conversations Inbox is the central hub for all communication - emails, SMS, chat, social media messages, and more."
+      },
+      {
+        "question": "Which of these message types can appear in the Conversations Inbox?",
+        "options": [
+          {
+            "option_text": "Only email messages",
+            "is_correct": false
+          },
+          {
+            "option_text": "Email, SMS, website chat, Facebook, Google, and form replies",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only social media messages",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only automated messages",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The inbox can show conversations from multiple channels including email, SMS, website chat, Facebook Messenger, Google Business Profile, forms, and campaign replies."
+      },
+      {
+        "question": "Why is having one inbox better than checking multiple platforms?",
+        "options": [
+          {
+            "option_text": "It costs less money",
+            "is_correct": false
+          },
+          {
+            "option_text": "You don't miss messages and can respond faster",
+            "is_correct": true
+          },
+          {
+            "option_text": "It looks more professional",
+            "is_correct": false
+          },
+          {
+            "option_text": "Messages send automatically",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Having one central inbox prevents messages from being scattered across different platforms, reducing the chance of missing important conversations and helping you respond more quickly."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "why-inbox-matters",
+    "title": "Why the Inbox Matters",
+    "moduleWeek": 4,
+    "moduleName": "Understanding the Conversations Inbox",
+    "learningGoal": "Understand why managing the inbox well is critical for business growth and lead conversion.",
+    "sections": [
+      {
+        "title": "The Hidden Growth Opportunity",
+        "icon": "lightbulb",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "It's not just about getting more leads",
+            "description": "Businesses can also grow by doing better with the leads they already have"
+          },
+          {
+            "icon": "star",
+            "color": "green",
+            "title": "Every reply is an opportunity",
+            "description": "When someone replies, asks a question, or shows interest, they're giving you a chance to move forward"
+          }
+        ]
+      },
+      {
+        "title": "What You Lose When Messages Are Missed",
+        "icon": "warning",
+        "color": "rose",
+        "items": [
+          {
+            "icon": "calendar",
+            "color": "rose",
+            "title": "A booked call",
+            "description": "Someone wanted to talk but never got a response"
+          },
+          {
+            "icon": "user",
+            "color": "rose",
+            "title": "A new client",
+            "description": "They were ready to buy but went elsewhere"
+          },
+          {
+            "icon": "dollar",
+            "color": "rose",
+            "title": "A sale",
+            "description": "The opportunity went cold"
+          },
+          {
+            "icon": "share",
+            "color": "rose",
+            "title": "A referral",
+            "description": "They would have referred others if treated well"
+          },
+          {
+            "icon": "refresh",
+            "color": "rose",
+            "title": "A repeat customer",
+            "description": "They bought once but never returned"
+          },
+          {
+            "icon": "heart",
+            "color": "rose",
+            "title": "A trust-building moment",
+            "description": "The chance to build relationship was lost"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A fast, helpful reply can be the difference between a booked call and a lost lead.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Think about a missed message",
+        "description": "Recall a time when a delayed response cost you an opportunity"
+      },
+      {
+        "number": 2,
+        "title": "Calculate potential value",
+        "description": "What's one new client worth to your business?"
+      },
+      {
+        "number": 3,
+        "title": "Set a response goal",
+        "description": "Decide how quickly you want to respond to new messages"
+      }
+    ],
+    "nextLessonTitle": "Understanding the Inbox Layout",
+    "quizzes": [
+      {
+        "question": "Why is the Conversations Inbox important for business growth?",
+        "options": [
+          {
+            "option_text": "It automatically generates new leads",
+            "is_correct": false
+          },
+          {
+            "option_text": "It helps you convert existing leads by responding quickly and effectively",
+            "is_correct": true
+          },
+          {
+            "option_text": "It reduces your marketing costs",
+            "is_correct": false
+          },
+          {
+            "option_text": "It replaces your website",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The inbox helps you make the most of leads you already have. Fast, helpful responses convert interested prospects into booked calls and sales."
+      },
+      {
+        "question": "What happens when a message goes unanswered?",
+        "options": [
+          {
+            "option_text": "The lead waits indefinitely",
+            "is_correct": false
+          },
+          {
+            "option_text": "You may lose the opportunity - the lead goes cold or chooses a competitor",
+            "is_correct": true
+          },
+          {
+            "option_text": "The system automatically replies",
+            "is_correct": false
+          },
+          {
+            "option_text": "Nothing - leads don't expect responses",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Unanswered messages often result in lost opportunities. Leads expect timely responses and will move on if they don't hear back."
+      },
+      {
+        "question": "What is the main goal of inbox management?",
+        "options": [
+          {
+            "option_text": "To answer as many messages as possible",
+            "is_correct": false
+          },
+          {
+            "option_text": "To move conversations forward and convert leads",
+            "is_correct": true
+          },
+          {
+            "option_text": "To keep the inbox empty",
+            "is_correct": false
+          },
+          {
+            "option_text": "To automate all responses",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The goal isn't just to clear messages - it's to respond effectively and move each conversation toward a booking, sale, or next step."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "slug": "inbox-layout",
+    "title": "Understanding the Inbox Layout",
+    "moduleWeek": 4,
+    "moduleName": "Understanding the Conversations Inbox",
+    "learningGoal": "Learn the three main areas of the Conversations Inbox and what information each provides.",
+    "sections": [
+      {
+        "title": "Three Key Areas",
+        "icon": "layout",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "list",
+            "color": "blue",
+            "title": "Left side: Conversation List",
+            "description": "Who is talking - contact names, message previews, timestamps, read/unread status, assigned users, channel icons"
+          },
+          {
+            "icon": "message",
+            "color": "green",
+            "title": "Middle: Message Thread",
+            "description": "What they said - the full back-and-forth conversation history"
+          },
+          {
+            "icon": "user",
+            "color": "purple",
+            "title": "Right side: Contact Details",
+            "description": "Who they are - name, email, phone, tags, notes, lead source, appointments, opportunities, past activity"
+          }
+        ]
+      },
+      {
+        "title": "Contact Details Panel",
+        "icon": "info",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "tag",
+            "color": "amber",
+            "title": "Tags",
+            "description": "Categories and labels applied to the contact"
+          },
+          {
+            "icon": "document",
+            "color": "amber",
+            "title": "Notes",
+            "description": "Previous conversations and important details"
+          },
+          {
+            "icon": "calendar",
+            "color": "amber",
+            "title": "Appointments",
+            "description": "Scheduled calls and meetings"
+          },
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "Opportunities",
+            "description": "Sales pipeline stage and value"
+          },
+          {
+            "icon": "clock",
+            "color": "amber",
+            "title": "Past Activity",
+            "description": "History of interactions with this contact"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The inbox tells you what they said. The contact record tells you who they are.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Open the Conversations Inbox",
+        "description": "Navigate to the inbox in LeadProspectrr"
+      },
+      {
+        "number": 2,
+        "title": "Identify the three areas",
+        "description": "Locate the conversation list, message thread, and contact details"
+      },
+      {
+        "number": 3,
+        "title": "Review a contact's details",
+        "description": "Click on a conversation and check the right panel for contact information"
+      }
+    ],
+    "nextLessonTitle": "Before You Reply",
+    "quizzes": [
+      {
+        "question": "What information appears in the left panel of the Conversations Inbox?",
+        "options": [
+          {
+            "option_text": "The full message history",
+            "is_correct": false
+          },
+          {
+            "option_text": "The list of conversations with contact names and message previews",
+            "is_correct": true
+          },
+          {
+            "option_text": "Contact details and tags",
+            "is_correct": false
+          },
+          {
+            "option_text": "Email templates",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The left panel shows your conversation list - who's messaging you, preview text, timestamps, and status indicators."
+      },
+      {
+        "question": "Why should you read the full message thread before replying?",
+        "options": [
+          {
+            "option_text": "It's required by the system",
+            "is_correct": false
+          },
+          {
+            "option_text": "To understand the full context and avoid repeating information",
+            "is_correct": true
+          },
+          {
+            "option_text": "It makes the reply send faster",
+            "is_correct": false
+          },
+          {
+            "option_text": "To delete old messages",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Reading the full thread gives you context about previous conversations, preventing redundant questions and showing you understand the situation."
+      },
+      {
+        "question": "What can you learn from the contact details panel?",
+        "options": [
+          {
+            "option_text": "Only the contact's name",
+            "is_correct": false
+          },
+          {
+            "option_text": "Tags, notes, appointments, opportunities, and past activity",
+            "is_correct": true
+          },
+          {
+            "option_text": "Your account settings",
+            "is_correct": false
+          },
+          {
+            "option_text": "Other users' conversations",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The contact details panel provides a complete view of who you're talking to - their history with you, where they are in your pipeline, and any notes or tags."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "slug": "before-you-reply",
+    "title": "Before You Reply",
+    "moduleWeek": 4,
+    "moduleName": "Understanding the Conversations Inbox",
+    "learningGoal": "Learn what to check before responding to ensure your reply moves the conversation forward.",
+    "sections": [
+      {
+        "title": "The Pre-Reply Checklist",
+        "icon": "checklist",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "book",
+            "color": "blue",
+            "title": "Read the full message thread",
+            "description": "Don't just read the latest message - understand the full conversation"
+          },
+          {
+            "icon": "user",
+            "color": "green",
+            "title": "Check the contact record",
+            "description": "See who they are and their history with you"
+          },
+          {
+            "icon": "tag",
+            "color": "amber",
+            "title": "Look for tags or notes",
+            "description": "Previous context about this contact"
+          },
+          {
+            "icon": "calendar",
+            "color": "purple",
+            "title": "Check if they booked an appointment",
+            "description": "Don't ask them to book if they already did"
+          },
+          {
+            "icon": "target",
+            "color": "cyan",
+            "title": "Check if they're in a pipeline",
+            "description": "Know their current stage in your sales process"
+          },
+          {
+            "icon": "settings",
+            "color": "indigo",
+            "title": "See if automation already sent messages",
+            "description": "Avoid repeating what automation already said"
+          },
+          {
+            "icon": "arrow-right",
+            "color": "teal",
+            "title": "Decide the next step",
+            "description": "What should happen after this reply?"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Do not just answer the message. Move the conversation forward.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Pick an unread message",
+        "description": "Find a conversation that needs a response"
+      },
+      {
+        "number": 2,
+        "title": "Go through the checklist",
+        "description": "Check thread, contact record, tags, appointments, and pipeline"
+      },
+      {
+        "number": 3,
+        "title": "Decide the next step",
+        "description": "What action do you want them to take after reading your reply?"
+      }
+    ],
+    "nextLessonTitle": "How to Reply the Right Way",
+    "quizzes": [
+      {
+        "question": "Why is it important to check if someone already booked an appointment?",
+        "options": [
+          {
+            "option_text": "To cancel their appointment",
+            "is_correct": false
+          },
+          {
+            "option_text": "To avoid asking them to book again, which looks unprofessional",
+            "is_correct": true
+          },
+          {
+            "option_text": "To reschedule without telling them",
+            "is_correct": false
+          },
+          {
+            "option_text": "It's not important",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Asking someone to book when they already have an appointment shows you don't know your own business. Always check existing appointments first."
+      },
+      {
+        "question": "What should you do before replying to a message?",
+        "options": [
+          {
+            "option_text": "Reply immediately with the first thing that comes to mind",
+            "is_correct": false
+          },
+          {
+            "option_text": "Read the full thread, check contact details, and decide the next step",
+            "is_correct": true
+          },
+          {
+            "option_text": "Delete the message",
+            "is_correct": false
+          },
+          {
+            "option_text": "Forward it to someone else",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Taking a moment to understand the full context helps you write a more effective reply that moves the conversation forward."
+      },
+      {
+        "question": "Why should you check if automation already sent messages?",
+        "options": [
+          {
+            "option_text": "To delete the automation",
+            "is_correct": false
+          },
+          {
+            "option_text": "To avoid repeating information the contact already received",
+            "is_correct": true
+          },
+          {
+            "option_text": "To turn off all automation",
+            "is_correct": false
+          },
+          {
+            "option_text": "It's not necessary to check",
+            "is_correct": false
+          }
+        ],
+        "explanation": "If automation already sent a booking link or information, you don't want to confuse the contact by sending it again. Check what they've already received."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "slug": "how-to-reply",
+    "title": "How to Reply the Right Way",
+    "moduleWeek": 4,
+    "moduleName": "Understanding the Conversations Inbox",
+    "learningGoal": "Learn the Acknowledge → Answer → Advance formula for writing effective replies.",
+    "sections": [
+      {
+        "title": "The Reply Formula",
+        "icon": "message",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "check",
+            "color": "blue",
+            "title": "1. Acknowledge",
+            "description": "Let them know you saw their message. Example: 'Hi Sarah, thanks for reaching out.'"
+          },
+          {
+            "icon": "info",
+            "color": "green",
+            "title": "2. Answer",
+            "description": "Give a direct answer to their question. Example: 'Yes, we can help you set up your email campaign.'"
+          },
+          {
+            "icon": "arrow-right",
+            "color": "amber",
+            "title": "3. Advance",
+            "description": "Give one clear next step. Example: 'Would you like me to send you the booking link?'"
+          }
+        ]
+      },
+      {
+        "title": "Full Example",
+        "icon": "lightbulb",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "Complete reply using the formula",
+            "description": "Hi Sarah, thanks for reaching out. Yes, we can help you set up your email campaign. Would you like me to send you the booking link?"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Every reply should help the person take one small next step.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Choose a message to reply to",
+        "description": "Find a conversation that needs a response"
+      },
+      {
+        "number": 2,
+        "title": "Draft using the formula",
+        "description": "Write Acknowledge → Answer → Advance"
+      },
+      {
+        "number": 3,
+        "title": "Check for clarity",
+        "description": "Is your next step clear and easy to take?"
+      }
+    ],
+    "nextLessonTitle": "Using Templates Without Sounding Robotic",
+    "quizzes": [
+      {
+        "question": "What are the three parts of the reply formula?",
+        "options": [
+          {
+            "option_text": "Greet, Explain, Close",
+            "is_correct": false
+          },
+          {
+            "option_text": "Acknowledge, Answer, Advance",
+            "is_correct": true
+          },
+          {
+            "option_text": "Introduce, Describe, Finish",
+            "is_correct": false
+          },
+          {
+            "option_text": "Hello, Inform, Goodbye",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The formula is Acknowledge (let them know you saw the message), Answer (respond to their question), Advance (give a clear next step)."
+      },
+      {
+        "question": "What is the purpose of the 'Advance' step?",
+        "options": [
+          {
+            "option_text": "To end the conversation",
+            "is_correct": false
+          },
+          {
+            "option_text": "To give them one clear next step to take",
+            "is_correct": true
+          },
+          {
+            "option_text": "To ask multiple questions",
+            "is_correct": false
+          },
+          {
+            "option_text": "To promote a different product",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The Advance step moves the conversation forward by giving the contact one specific action to take, like booking a call or answering a question."
+      },
+      {
+        "question": "Why should replies be short and clear?",
+        "options": [
+          {
+            "option_text": "Longer replies are always better",
+            "is_correct": false
+          },
+          {
+            "option_text": "Short, clear replies are more likely to get a response",
+            "is_correct": true
+          },
+          {
+            "option_text": "The system limits message length",
+            "is_correct": false
+          },
+          {
+            "option_text": "It doesn't matter how long replies are",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Short, focused replies are easier to read and respond to. They respect the recipient's time and make it clear what action to take next."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "slug": "using-templates",
+    "title": "Using Templates Without Sounding Robotic",
+    "moduleWeek": 4,
+    "moduleName": "Understanding the Conversations Inbox",
+    "learningGoal": "Learn how to use templates effectively while adding personal touches that build trust.",
+    "sections": [
+      {
+        "title": "When to Use Templates",
+        "icon": "document",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "user-plus",
+            "color": "blue",
+            "title": "New lead replies",
+            "description": "Welcome messages for new inquiries"
+          },
+          {
+            "icon": "calendar",
+            "color": "green",
+            "title": "Booking replies",
+            "description": "Responses to appointment requests"
+          },
+          {
+            "icon": "dollar",
+            "color": "amber",
+            "title": "Price questions",
+            "description": "Standard responses about pricing"
+          },
+          {
+            "icon": "refresh",
+            "color": "purple",
+            "title": "Follow-up messages",
+            "description": "Checking in after initial contact"
+          },
+          {
+            "icon": "phone-missed",
+            "color": "cyan",
+            "title": "Missed call replies",
+            "description": "Responding to missed calls"
+          },
+          {
+            "icon": "star",
+            "color": "indigo",
+            "title": "Event follow-up",
+            "description": "Post-event thank you messages"
+          },
+          {
+            "icon": "gift",
+            "color": "teal",
+            "title": "Lead magnet replies",
+            "description": "Delivering free resources"
+          }
+        ]
+      },
+      {
+        "title": "The Rule: Template First, Personal Touch Second",
+        "icon": "lightbulb",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "document",
+            "color": "amber",
+            "title": "Template version",
+            "description": "Hi [First Name], thanks for reaching out. I'd be happy to help. What are you looking to get set up first?"
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "Personalized version",
+            "description": "Hi Sarah, thanks for reaching out. I'd be happy to help with the email campaign you mentioned. Are you looking to send a one-time campaign or set up a follow-up sequence?"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Templates save time. Personalization builds trust.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Identify repetitive replies",
+        "description": "What types of messages do you send over and over?"
+      },
+      {
+        "number": 2,
+        "title": "Create one template",
+        "description": "Write a template for your most common reply type"
+      },
+      {
+        "number": 3,
+        "title": "Practice personalizing",
+        "description": "Use the template as a base, then add specific details"
+      }
+    ],
+    "nextLessonTitle": "What to Do After You Reply",
+    "quizzes": [
+      {
+        "question": "What is the main risk of using templates?",
+        "options": [
+          {
+            "option_text": "They send too quickly",
+            "is_correct": false
+          },
+          {
+            "option_text": "They can sound cold or generic if not personalized",
+            "is_correct": true
+          },
+          {
+            "option_text": "They cost more to send",
+            "is_correct": false
+          },
+          {
+            "option_text": "They don't work with mobile",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Templates save time but can feel impersonal. The key is to use them as a starting point and add personal details that show you're paying attention."
+      },
+      {
+        "question": "What does 'Template first, personal touch second' mean?",
+        "options": [
+          {
+            "option_text": "Send the template, then send a personal message",
+            "is_correct": false
+          },
+          {
+            "option_text": "Start with a template, then customize it with specific details",
+            "is_correct": true
+          },
+          {
+            "option_text": "Create templates after writing personal messages",
+            "is_correct": false
+          },
+          {
+            "option_text": "Templates are more important than personalization",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Use the template as your foundation, then add personal touches like referencing their specific question, using their name, or mentioning details from their situation."
+      },
+      {
+        "question": "Which of these is a good use for templates?",
+        "options": [
+          {
+            "option_text": "Every single message should be a template",
+            "is_correct": false
+          },
+          {
+            "option_text": "Repetitive replies like new lead responses, booking confirmations, and follow-ups",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only for complaints",
+            "is_correct": false
+          },
+          {
+            "option_text": "Templates should never be used",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Templates are perfect for situations where you send similar messages repeatedly - new leads, booking replies, price questions, follow-ups, etc."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "slug": "after-you-reply",
+    "title": "What to Do After You Reply",
+    "moduleWeek": 4,
+    "moduleName": "Understanding the Conversations Inbox",
+    "learningGoal": "Learn how to update contact records after replying to protect the follow-up process.",
+    "sections": [
+      {
+        "title": "After the Reply: Update the Record",
+        "icon": "checklist",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "document",
+            "color": "blue",
+            "title": "Add a note",
+            "description": "Record what was discussed and any important details"
+          },
+          {
+            "icon": "tag",
+            "color": "green",
+            "title": "Add a tag",
+            "description": "Label the contact for easy filtering later"
+          },
+          {
+            "icon": "user-check",
+            "color": "amber",
+            "title": "Update lead status",
+            "description": "Move them to the appropriate status in your system"
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Add or update an opportunity",
+            "description": "Track them in your sales pipeline"
+          },
+          {
+            "icon": "calendar",
+            "color": "cyan",
+            "title": "Book an appointment",
+            "description": "If they agreed to a call or meeting"
+          },
+          {
+            "icon": "users",
+            "color": "indigo",
+            "title": "Assign to a team member",
+            "description": "If someone else should handle the follow-up"
+          },
+          {
+            "icon": "clock",
+            "color": "teal",
+            "title": "Set the next follow-up step",
+            "description": "Decide what happens next and when"
+          }
+        ]
+      },
+      {
+        "title": "Key Concept",
+        "icon": "lightbulb",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "check",
+            "color": "amber",
+            "title": "A reply handles the moment",
+            "description": "Your message responds to their immediate question"
+          },
+          {
+            "icon": "shield",
+            "color": "amber",
+            "title": "The contact update protects the follow-up",
+            "description": "Recording next steps ensures nothing falls through the cracks"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The message is not finished until the next step is recorded.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Reply to a conversation",
+        "description": "Send your response using the Acknowledge → Answer → Advance formula"
+      },
+      {
+        "number": 2,
+        "title": "Add a note",
+        "description": "Record what you discussed and any key details"
+      },
+      {
+        "number": 3,
+        "title": "Update tags or status",
+        "description": "Label the contact appropriately for future follow-up"
+      },
+      {
+        "number": 4,
+        "title": "Set the next step",
+        "description": "Decide what action needs to happen next and when"
+      }
+    ],
+    "nextLessonTitle": "Daily Inbox Routine",
+    "quizzes": [
+      {
+        "question": "Why should you update the contact record after replying?",
+        "options": [
+          {
+            "option_text": "It's required by law",
+            "is_correct": false
+          },
+          {
+            "option_text": "To ensure follow-up doesn't fall through the cracks",
+            "is_correct": true
+          },
+          {
+            "option_text": "To delete the conversation",
+            "is_correct": false
+          },
+          {
+            "option_text": "It's not necessary to update records",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Updating records after replying ensures you have context for future conversations and that next steps are tracked and not forgotten."
+      },
+      {
+        "question": "What does 'The message is not finished until the next step is recorded' mean?",
+        "options": [
+          {
+            "option_text": "You should keep messaging until they respond",
+            "is_correct": false
+          },
+          {
+            "option_text": "Sending a reply is only part of the process - you also need to document what happens next",
+            "is_correct": true
+          },
+          {
+            "option_text": "You must record phone calls",
+            "is_correct": false
+          },
+          {
+            "option_text": "All messages should be recorded on video",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The reply handles the immediate conversation, but recording the next step (tag, note, opportunity, appointment) ensures proper follow-up happens."
+      },
+      {
+        "question": "Which of these should you do after replying to a hot lead?",
+        "options": [
+          {
+            "option_text": "Delete the conversation",
+            "is_correct": false
+          },
+          {
+            "option_text": "Add a note, update tags, and create or update an opportunity",
+            "is_correct": true
+          },
+          {
+            "option_text": "Wait for them to reply again",
+            "is_correct": false
+          },
+          {
+            "option_text": "Mark it as spam",
+            "is_correct": false
+          }
+        ],
+        "explanation": "For hot leads, you should document the conversation with notes, apply appropriate tags, and track them in your opportunity pipeline."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 8,
+    "slug": "daily-inbox-routine",
+    "title": "Daily Inbox Routine",
+    "moduleWeek": 4,
+    "moduleName": "Understanding the Conversations Inbox",
+    "learningGoal": "Learn a simple 10-minute routine for managing the inbox without living in it all day.",
+    "sections": [
+      {
+        "title": "The 10-Minute Inbox Routine",
+        "icon": "clock",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "sun",
+            "color": "amber",
+            "title": "Morning: Check unread messages",
+            "description": "Look for new replies, booking questions, hot leads, missed call responses, and questions from active prospects"
+          },
+          {
+            "icon": "zap",
+            "color": "green",
+            "title": "Midday: Reply to hot leads",
+            "description": "Focus on people asking about price, how to start, booking, campaign replies, and help requests"
+          },
+          {
+            "icon": "moon",
+            "color": "indigo",
+            "title": "End of Day: Clean up follow-up",
+            "description": "Update notes, tags, opportunities, appointments, and next steps"
+          }
+        ]
+      },
+      {
+        "title": "What to Look For",
+        "icon": "target",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "flame",
+            "color": "amber",
+            "title": "Hot leads",
+            "description": "People asking about pricing or how to get started"
+          },
+          {
+            "icon": "calendar",
+            "color": "amber",
+            "title": "Booking requests",
+            "description": "People wanting to schedule calls or meetings"
+          },
+          {
+            "icon": "help-circle",
+            "color": "amber",
+            "title": "Questions from active prospects",
+            "description": "People already in your pipeline who need answers"
+          },
+          {
+            "icon": "phone-missed",
+            "color": "amber",
+            "title": "Missed call responses",
+            "description": "People who called and got your text-back"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The goal is not to live in your inbox. The goal is to control it.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Set three inbox check times",
+        "description": "Morning, midday, and end of day"
+      },
+      {
+        "number": 2,
+        "title": "Time your first session",
+        "description": "See how long it takes to clear unread messages"
+      },
+      {
+        "number": 3,
+        "title": "Practice the routine for one week",
+        "description": "Build the habit of Read → Reply → Record"
+      }
+    ],
+    "nextLessonTitle": "Module Completion",
+    "quizzes": [
+      {
+        "question": "How often should you check your Conversations Inbox?",
+        "options": [
+          {
+            "option_text": "Every 5 minutes all day long",
+            "is_correct": false
+          },
+          {
+            "option_text": "Three times per day: morning, midday, and end of day",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only once per week",
+            "is_correct": false
+          },
+          {
+            "option_text": "Never - it checks itself",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A 10-minute routine three times per day keeps you responsive without making you live in the inbox. This balances responsiveness with productivity."
+      },
+      {
+        "question": "What should you focus on during the midday inbox check?",
+        "options": [
+          {
+            "option_text": "All messages equally",
+            "is_correct": false
+          },
+          {
+            "option_text": "Hot leads - people asking about price, booking, or how to start",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only spam messages",
+            "is_correct": false
+          },
+          {
+            "option_text": "Deleting old conversations",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Midday is for priority responses to hot leads who are actively interested and ready to take action."
+      },
+      {
+        "question": "What is the main goal of having an inbox routine?",
+        "options": [
+          {
+            "option_text": "To spend all day in the inbox",
+            "is_correct": false
+          },
+          {
+            "option_text": "To control the inbox efficiently without it controlling you",
+            "is_correct": true
+          },
+          {
+            "option_text": "To avoid talking to leads",
+            "is_correct": false
+          },
+          {
+            "option_text": "To automate all responses",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The routine helps you stay on top of conversations efficiently so you can respond to leads promptly while still having time for other important work."
+      }
+    ]
+  }
+]

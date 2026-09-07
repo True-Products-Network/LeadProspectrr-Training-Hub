@@ -1,0 +1,222 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "opportunities-and-pipelines",
+    "title": "Opportunities and Pipelines",
+    "moduleWeek": 5,
+    "moduleName": "Opportunities and Pipelines",
+    "learningGoal": "Learn how to use Opportunities and Pipelines to track leads, monitor sales status, and keep follow-up clear.",
+    "sections": [
+      {
+        "title": "The Problem: Lost Leads",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "chat",
+            "color": "amber",
+            "title": "Leads Slip Through the Cracks",
+            "description": "Most leads are not lost because the person said no. They're lost because you didn't follow up at the right time or forgot the next step."
+          },
+          {
+            "icon": "document",
+            "color": "blue",
+            "title": "Inbox vs Pipeline",
+            "description": "The inbox shows the conversation. The pipeline shows the business status. You need both to manage leads effectively."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "The Solution",
+            "description": "LeadProspectrr separates conversations from opportunities, giving you a clear visual board to track where each lead stands."
+          }
+        ]
+      },
+      {
+        "title": "What is an Opportunity?",
+        "icon": "star",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "users",
+            "color": "blue",
+            "title": "A Potential Client",
+            "description": "An Opportunity is a lead or contact that could become a client or customer. Someone who has shown interest in working with you."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Examples of Opportunities",
+            "description": "Someone fills out a form, books a call, asks for pricing, replies to your text or email, or asks about working together."
+          },
+          {
+            "icon": "lightbulb",
+            "color": "amber",
+            "title": "Don't Let Them Sit",
+            "description": "These people should not just sit in the inbox. They should be tracked as Opportunities with clear next steps."
+          }
+        ]
+      },
+      {
+        "title": "What is a Pipeline?",
+        "icon": "settings",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "eye",
+            "color": "purple",
+            "title": "A Visual Board",
+            "description": "A Pipeline is a visual board that shows where each lead stands in your sales process at a glance."
+          },
+          {
+            "icon": "document",
+            "color": "cyan",
+            "title": "The Bucket Analogy",
+            "description": "Think of a pipeline like a row of buckets. Each lead sits in the bucket that matches where they are right now."
+          },
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Know What to Do",
+            "description": "The pipeline helps you know who needs a reply, who needs a proposal, and who may be ready to buy."
+          }
+        ]
+      },
+      {
+        "title": "Standard Pipeline Stages",
+        "icon": "checklist",
+        "color": "green",
+        "items": [
+          {
+            "icon": "users",
+            "color": "blue",
+            "title": "New Lead",
+            "description": "Interest shown, but no action taken yet. This is where all fresh opportunities start."
+          },
+          {
+            "icon": "chat",
+            "color": "cyan",
+            "title": "Contacted",
+            "description": "You have replied or reached out to the lead. The conversation has begun."
+          },
+          {
+            "icon": "clock",
+            "color": "amber",
+            "title": "Appointment Booked",
+            "description": "The lead has scheduled a call or consultation. A meeting is on the calendar."
+          },
+          {
+            "icon": "document",
+            "color": "indigo",
+            "title": "Proposal Sent",
+            "description": "Pricing or proposal has been delivered. Waiting for the lead to review and respond."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Won",
+            "description": "The lead has agreed to move forward. They are now a client or customer."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Lost",
+            "description": "Not moving forward at this time. This is not a failure—just a closed opportunity."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The golden rule of pipeline management: Never leave a lead without a clear next action. Every opportunity should have a stage and a defined follow-up step.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Open the Opportunities Area",
+        "description": "Navigate to Opportunities in LeadProspectrr and review your current pipeline stages."
+      },
+      {
+        "number": 2,
+        "title": "Create a Sample Opportunity",
+        "description": "Add a test opportunity with a name, estimated value, and place it in the New Lead stage."
+      },
+      {
+        "number": 3,
+        "title": "Practice Moving Stages",
+        "description": "Move your test opportunity through each pipeline stage and add notes at each step."
+      },
+      {
+        "number": 4,
+        "title": "Set a Daily Reminder",
+        "description": "Schedule 5 minutes each day to check your pipeline and update lead stages."
+      }
+    ],
+    "nextLessonTitle": "Calendar and Appointments",
+    "quizzes": [
+      {
+        "question": "What is the main difference between the inbox and the pipeline?",
+        "options": [
+          {
+            "option_text": "The inbox is faster than the pipeline",
+            "is_correct": false
+          },
+          {
+            "option_text": "The inbox shows conversations, the pipeline shows business status",
+            "is_correct": true
+          },
+          {
+            "option_text": "The pipeline replaces the inbox",
+            "is_correct": false
+          },
+          {
+            "option_text": "There is no difference",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The inbox shows what the person said (conversations), while the pipeline shows where they stand in your sales process (business status). You need both to manage leads effectively."
+      },
+      {
+        "question": "Which of these is NOT a standard pipeline stage?",
+        "options": [
+          {
+            "option_text": "New Lead",
+            "is_correct": false
+          },
+          {
+            "option_text": "Appointment Booked",
+            "is_correct": false
+          },
+          {
+            "option_text": "Waiting Forever",
+            "is_correct": true
+          },
+          {
+            "option_text": "Proposal Sent",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Standard pipeline stages are: New Lead, Contacted, Appointment Booked, Proposal Sent, Won, and Lost. 'Waiting Forever' is not a valid stage—leads should always have clear next actions."
+      },
+      {
+        "question": "What is the golden rule of pipeline management?",
+        "options": [
+          {
+            "option_text": "Always have at least 100 opportunities",
+            "is_correct": false
+          },
+          {
+            "option_text": "Never leave a lead without a clear next action",
+            "is_correct": true
+          },
+          {
+            "option_text": "Move leads to Won as quickly as possible",
+            "is_correct": false
+          },
+          {
+            "option_text": "Check the pipeline once per month",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The golden rule is to never leave a lead without a clear next action. Every opportunity should have a defined stage and a specific follow-up step to prevent leads from falling through the cracks."
+      }
+    ]
+  }
+]
