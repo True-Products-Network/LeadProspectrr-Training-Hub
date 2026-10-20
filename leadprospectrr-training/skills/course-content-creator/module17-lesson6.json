@@ -1,0 +1,159 @@
+{
+  "lessonNumber": 6,
+  "slug": "improve-based-on-conversations",
+  "title": "Improve based on real conversations",
+  "moduleWeek": 17,
+  "moduleName": "Follow-Up That Works",
+  "learningGoal": "Track whether the journey helps clients take the next step.",
+  "sections": [
+    {
+      "title": "Weekly Review Metrics",
+      "icon": "chart",
+      "color": "blue",
+      "items": [
+        {
+          "icon": "target",
+          "color": "blue",
+          "title": "Enquiry Form Submissions",
+          "description": "Count how many forms were submitted each week."
+        },
+        {
+          "icon": "mail",
+          "color": "blue",
+          "title": "First Emails Successfully Sent",
+          "description": "Track delivery and identify any sending failures."
+        },
+        {
+          "icon": "chat",
+          "color": "blue",
+          "title": "Replies and Bookings",
+          "description": "Measure replies and appointment bookings attributable to those enquiries."
+        },
+        {
+          "icon": "warning",
+          "color": "blue",
+          "title": "Unsubscribes and Complaints",
+          "description": "Monitor unsubscribes, complaints, and duplicate follow-ups."
+        },
+        {
+          "icon": "lightbulb",
+          "color": "blue",
+          "title": "Common Questions",
+          "description": "Identify questions that the first email could answer better."
+        }
+      ]
+    },
+    {
+      "title": "How to Interpret Results",
+      "icon": "info",
+      "color": "green",
+      "items": [
+        {
+          "icon": "warning",
+          "color": "green",
+          "title": "Do Not Compare Raw Counts Alone",
+          "description": "Do not compare raw booking counts without also considering the number and quality of enquiries."
+        },
+        {
+          "icon": "check",
+          "color": "green",
+          "title": "Start with an Observation",
+          "description": "Notice a pattern, make one small change, then check results."
+        },
+        {
+          "icon": "lightbulb",
+          "color": "green",
+          "title": "Exercise for Coaches",
+          "description": "If many people reply with questions but few book, what could you change about the email? Write one answer that helps the prospect before asking them to book."
+        }
+      ]
+    }
+  ],
+  "keyPoint": "Review weekly: form submissions, emails sent, replies, bookings, unsubscribes, and common questions. Do not compare raw booking counts without considering enquiry quality. Make one small change at a time.",
+  "actionSteps": [
+    {
+      "number": 1,
+      "title": "Set up weekly tracking",
+      "description": "Create a simple tracker for form submissions, emails sent, replies, bookings, and unsubscribes."
+    },
+    {
+      "number": 2,
+      "title": "Review common questions",
+      "description": "Look at replies and identify questions your first email could answer better."
+    },
+    {
+      "number": 3,
+      "title": "Make one small improvement",
+      "description": "Choose one change to test — a clearer subject line, a better booking link placement, or an added FAQ sentence."
+    }
+  ],
+  "nextLessonTitle": "Build your own enquiry-to-appointment journey",
+  "quizzes": [
+    {
+      "question": "What should you review weekly to improve your follow-up journey?",
+      "options": [
+        {
+          "option_text": "Only the number of bookings",
+          "is_correct": false
+        },
+        {
+          "option_text": "Form submissions, emails sent, replies, bookings, unsubscribes, and common questions",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only the workflow execution history",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only the calendar availability",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Review form submissions, first emails sent, replies and bookings, unsubscribes and complaints, and common questions. This gives a complete picture of how the journey is performing."
+    },
+    {
+      "question": "Why should you not compare raw booking counts alone?",
+      "options": [
+        {
+          "option_text": "Because bookings are not important",
+          "is_correct": false
+        },
+        {
+          "option_text": "Because you must also consider the number and quality of enquiries",
+          "is_correct": true
+        },
+        {
+          "option_text": "Because the workflow does not track bookings",
+          "is_correct": false
+        },
+        {
+          "option_text": "Because booking counts are always inaccurate",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Raw booking counts without context can be misleading. A drop in bookings might reflect fewer or lower-quality enquiries, not a broken follow-up process. Always consider enquiry volume and quality."
+    },
+    {
+      "question": "What is the recommended approach to improving the follow-up journey?",
+      "options": [
+        {
+          "option_text": "Redesign the entire workflow every week",
+          "is_correct": false
+        },
+        {
+          "option_text": "Start with an observation, make one small change, then check results",
+          "is_correct": true
+        },
+        {
+          "option_text": "Copy a competitor's workflow exactly",
+          "is_correct": false
+        },
+        {
+          "option_text": "Add more emails and reminders",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Start with an observation from your weekly review, make one small change, then check results. This controlled approach helps you understand what actually improves performance."
+    }
+  ]
+}

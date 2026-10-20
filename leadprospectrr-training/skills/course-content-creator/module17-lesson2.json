@@ -1,0 +1,166 @@
+{
+  "lessonNumber": 2,
+  "slug": "connect-starting-point",
+  "title": "Connect the starting point",
+  "moduleWeek": 17,
+  "moduleName": "Follow-Up That Works",
+  "learningGoal": "Start a workflow when the correct form is submitted.",
+  "sections": [
+    {
+      "title": "Review Your Enquiry Form",
+      "icon": "document",
+      "color": "blue",
+      "items": [
+        {
+          "icon": "search",
+          "color": "blue",
+          "title": "Open Sites → Forms",
+          "description": "Review your enquiry form and confirm name and email fields are present."
+        },
+        {
+          "icon": "check",
+          "color": "blue",
+          "title": "Confirm Required Fields",
+          "description": "Ensure the form captures the minimum information needed for follow-up."
+        }
+      ]
+    },
+    {
+      "title": "Create the Workflow Trigger",
+      "icon": "settings",
+      "color": "green",
+      "items": [
+        {
+          "icon": "target",
+          "color": "green",
+          "title": "Open Automation → Workflows",
+          "description": "Create a workflow from scratch."
+        },
+        {
+          "icon": "pencil",
+          "color": "green",
+          "title": "Name It Clearly",
+          "description": "Use a descriptive name like M17 | Consultation enquiry | Follow-up."
+        },
+        {
+          "icon": "link",
+          "color": "green",
+          "title": "Add Form Submitted Trigger",
+          "description": "Select the trigger Form Submitted, filter Form is, and choose only the intended enquiry form."
+        },
+        {
+          "icon": "warning",
+          "color": "green",
+          "title": "Save Unpublished",
+          "description": "Keep the workflow unpublished until you have tested it thoroughly."
+        }
+      ]
+    },
+    {
+      "title": "Why the Filter Matters",
+      "icon": "warning",
+      "color": "amber",
+      "items": [
+        {
+          "icon": "info",
+          "color": "amber",
+          "title": "Prevent Wrong Triggers",
+          "description": "Without the filter, the wrong form could start a sales follow-up, such as a customer service form or feedback survey."
+        },
+        {
+          "icon": "check",
+          "color": "amber",
+          "title": "Exercise for Consultants",
+          "description": "Choose the form used for strategy enquiries and note its exact name."
+        }
+      ]
+    }
+  ],
+  "keyPoint": "Create a workflow with the Form Submitted trigger, filter by the exact enquiry form, and keep it unpublished until tested. The filter prevents unrelated forms from triggering your sales sequence.",
+  "actionSteps": [
+    {
+      "number": 1,
+      "title": "Review your enquiry form",
+      "description": "Open Sites → Forms and confirm your enquiry form has name and email fields."
+    },
+    {
+      "number": 2,
+      "title": "Create a new workflow",
+      "description": "Open Automation → Workflows and create a workflow named M17 | Consultation enquiry | Follow-up."
+    },
+    {
+      "number": 3,
+      "title": "Add and filter the trigger",
+      "description": "Add Form Submitted trigger, filter Form is, and select only your intended enquiry form."
+    }
+  ],
+  "nextLessonTitle": "Write the first useful email",
+  "quizzes": [
+    {
+      "question": "What trigger starts the follow-up workflow?",
+      "options": [
+        {
+          "option_text": "Contact Created",
+          "is_correct": false
+        },
+        {
+          "option_text": "Form Submitted",
+          "is_correct": true
+        },
+        {
+          "option_text": "Email Opened",
+          "is_correct": false
+        },
+        {
+          "option_text": "Appointment Booked",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The workflow starts with the Form Submitted trigger, filtered to only the intended enquiry form. This ensures the right form submissions begin the follow-up sequence."
+    },
+    {
+      "question": "Why should you filter the Form Submitted trigger by a specific form?",
+      "options": [
+        {
+          "option_text": "To make the workflow run faster",
+          "is_correct": false
+        },
+        {
+          "option_text": "So unrelated forms do not trigger the sales sequence",
+          "is_correct": true
+        },
+        {
+          "option_text": "To reduce the number of workflow executions",
+          "is_correct": false
+        },
+        {
+          "option_text": "Because HighLevel requires it",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Without filtering by form, any form submission — including customer service forms or feedback surveys — could trigger your sales follow-up sequence. The filter ensures only the intended enquiry form starts the workflow."
+    },
+    {
+      "question": "When should you publish the workflow?",
+      "options": [
+        {
+          "option_text": "Immediately after creating it",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only after successful end-to-end testing",
+          "is_correct": true
+        },
+        {
+          "option_text": "After adding the first email action",
+          "is_correct": false
+        },
+        {
+          "option_text": "When the client asks for it",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Keep the workflow unpublished until you have tested it thoroughly. Publishing before testing risks sending incorrect or incomplete follow-ups to real prospects."
+    }
+  ]
+}

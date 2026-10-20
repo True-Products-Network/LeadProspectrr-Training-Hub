@@ -1,0 +1,178 @@
+{
+  "lessonNumber": 5,
+  "slug": "test-publish-monitor",
+  "title": "Test, publish and monitor",
+  "moduleWeek": 17,
+  "moduleName": "Follow-Up That Works",
+  "learningGoal": "Make the process reliable before a real prospect sees it.",
+  "sections": [
+    {
+      "title": "Test Checklist",
+      "icon": "checklist",
+      "color": "blue",
+      "items": [
+        {
+          "icon": "check",
+          "color": "blue",
+          "title": "Submit the Form",
+          "description": "Submit the selected form using a test email address."
+        },
+        {
+          "icon": "check",
+          "color": "blue",
+          "title": "Confirm Contact Record",
+          "description": "Check that the expected contact record appears in Contacts."
+        },
+        {
+          "icon": "check",
+          "color": "blue",
+          "title": "Check Workflow Enrollment",
+          "description": "Verify the workflow enrollment and the email in Conversations and/or workflow execution history."
+        },
+        {
+          "icon": "check",
+          "color": "blue",
+          "title": "Verify Email Delivery",
+          "description": "Check that the email is delivered and the booking link opens the intended calendar."
+        }
+      ]
+    },
+    {
+      "title": "Test Three Scenarios",
+      "icon": "settings",
+      "color": "green",
+      "items": [
+        {
+          "icon": "target",
+          "color": "green",
+          "title": "No-Response Scenario",
+          "description": "The single reminder is sent after the configured wait."
+        },
+        {
+          "icon": "chat",
+          "color": "green",
+          "title": "Reply Scenario",
+          "description": "Subsequent sales reminder is suppressed when the contact replies."
+        },
+        {
+          "icon": "check",
+          "color": "green",
+          "title": "Booking Scenario",
+          "description": "Subsequent sales reminder is suppressed when the contact books."
+        }
+      ]
+    },
+    {
+      "title": "Final Checks Before Publishing",
+      "icon": "warning",
+      "color": "amber",
+      "items": [
+        {
+          "icon": "check",
+          "color": "amber",
+          "title": "Opt-outs Respected",
+          "description": "Confirm opt-outs and workflow settings are respected."
+        },
+        {
+          "icon": "check",
+          "color": "amber",
+          "title": "Publish After Testing",
+          "description": "Publish and save only after all testing is successful."
+        },
+        {
+          "icon": "users",
+          "color": "amber",
+          "title": "Exercise for Service Businesses",
+          "description": "Write down who in your team should get a notification when an enquiry is submitted or a call is booked."
+        }
+      ]
+    }
+  ],
+  "keyPoint": "Test three scenarios before publishing: no response (reminder sends), reply (reminder suppressed), and booking (reminder suppressed). Only publish after successful end-to-end testing.",
+  "actionSteps": [
+    {
+      "number": 1,
+      "title": "Submit a test form",
+      "description": "Use a test email address to submit your enquiry form and confirm the contact record appears."
+    },
+    {
+      "number": 2,
+      "title": "Test the no-response path",
+      "description": "Wait for the configured time and confirm the reminder email sends correctly."
+    },
+    {
+      "number": 3,
+      "title": "Test reply and booking paths",
+      "description": "Verify that replying or booking suppresses the reminder email."
+    }
+  ],
+  "nextLessonTitle": "Improve based on real conversations",
+  "quizzes": [
+    {
+      "question": "When should you publish the workflow?",
+      "options": [
+        {
+          "option_text": "Immediately after creating it",
+          "is_correct": false
+        },
+        {
+          "option_text": "After successful end-to-end testing",
+          "is_correct": true
+        },
+        {
+          "option_text": "After adding the first email",
+          "is_correct": false
+        },
+        {
+          "option_text": "When the first real enquiry comes in",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Publish and save only after all testing is successful. Publishing before testing risks sending incorrect or incomplete follow-ups to real prospects."
+    },
+    {
+      "question": "What should you test besides the email wording?",
+      "options": [
+        {
+          "option_text": "Only the subject line",
+          "is_correct": false
+        },
+        {
+          "option_text": "Form filter, delivery, merge fields, link, timing, booking and reply exits, opt-outs",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only the booking link",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only the wait time",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Test the form filter, email delivery, merge fields, booking link, wait timing, booking and reply exit paths, and opt-out handling. The email wording is only one part of a reliable follow-up journey."
+    },
+    {
+      "question": "How many test scenarios should you run before publishing?",
+      "options": [
+        {
+          "option_text": "One: submit the form",
+          "is_correct": false
+        },
+        {
+          "option_text": "Three: no response, reply, and booked appointment",
+          "is_correct": true
+        },
+        {
+          "option_text": "Five: one for each step of the formula",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two: form submission and email delivery",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Run three tests: no response (reminder sends), reply (reminder suppressed), and booked appointment (reminder suppressed). This ensures all paths work correctly before going live."
+    }
+  ]
+}

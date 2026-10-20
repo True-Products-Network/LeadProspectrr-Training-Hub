@@ -1,0 +1,185 @@
+{
+  "lessonNumber": 4,
+  "slug": "add-timing-response-checks",
+  "title": "Add timing and response checks",
+  "moduleWeek": 17,
+  "moduleName": "Follow-Up That Works",
+  "learningGoal": "Avoid sending reminders to people who have already engaged.",
+  "sections": [
+    {
+      "title": "Add a Wait Step",
+      "icon": "clock",
+      "color": "blue",
+      "items": [
+        {
+          "icon": "clock",
+          "color": "blue",
+          "title": "Insert a Wait Action",
+          "description": "Add Wait after the first email. Start with 1 day as a training example, not a universal best timing rule."
+        },
+        {
+          "icon": "info",
+          "color": "blue",
+          "title": "Timing Is Context-Dependent",
+          "description": "The right wait time depends on your audience, offer, and industry. Test and adjust."
+        }
+      ]
+    },
+    {
+      "title": "Check Before Reminding",
+      "icon": "warning",
+      "color": "amber",
+      "items": [
+        {
+          "icon": "check",
+          "color": "amber",
+          "title": "Add Response Checks",
+          "description": "Before any reminder, add a decision or exit mechanism that checks whether the contact has replied or booked."
+        },
+        {
+          "icon": "settings",
+          "color": "amber",
+          "title": "Review Available Conditions",
+          "description": "Check your account's available workflow conditions and appointment settings."
+        },
+        {
+          "icon": "target",
+          "color": "amber",
+          "title": "End the Path if Engaged",
+          "description": "If the contact replied or booked, end the sales reminder path or remove them from the follow-up workflow."
+        }
+      ]
+    },
+    {
+      "title": "The Reminder Email",
+      "icon": "mail",
+      "color": "green",
+      "items": [
+        {
+          "icon": "mail",
+          "color": "green",
+          "title": "Subject: Would a short call be useful?",
+          "description": "Hi {{contact.first_name}}, Just following up on your enquiry. If a short conversation would help you decide on the next step, here is my calendar: [Insert booking link]. No pressure if the timing is not right. You can also reply with a question. Best, [Your name]"
+        },
+        {
+          "icon": "warning",
+          "color": "green",
+          "title": "Send Only One Reminder",
+          "description": "Send one helpful reminder, then end the workflow. A separate Customer Booked Appointment workflow can handle confirmations."
+        }
+      ]
+    },
+    {
+      "title": "Important Cautions",
+      "icon": "warning",
+      "color": "rose",
+      "items": [
+        {
+          "icon": "warning",
+          "color": "rose",
+          "title": "Wait Does Not Auto-Stop",
+          "description": "A simple 1-day Wait does not automatically stop messages when someone books. Configure this logic explicitly."
+        },
+        {
+          "icon": "warning",
+          "color": "rose",
+          "title": "SMS Requires Consent",
+          "description": "Do not use SMS without suitable consent, registration, and compliance checks."
+        },
+        {
+          "icon": "check",
+          "color": "rose",
+          "title": "Exercise for Trainers",
+          "description": "Describe two cases when a person should NOT receive the reminder."
+        }
+      ]
+    }
+  ],
+  "keyPoint": "A Wait action does not automatically know when someone has booked. You must explicitly configure reply checks, booking checks, or removal logic before sending any reminder.",
+  "actionSteps": [
+    {
+      "number": 1,
+      "title": "Add a Wait action",
+      "description": "Insert a 1-day Wait after the first email in your workflow."
+    },
+    {
+      "number": 2,
+      "title": "Add response or booking checks",
+      "description": "Configure conditions to check if the contact has replied or booked before sending a reminder."
+    },
+    {
+      "number": 3,
+      "title": "Draft one reminder email",
+      "description": "Write a single helpful reminder that ends the workflow after sending."
+    }
+  ],
+  "nextLessonTitle": "Test, publish and monitor",
+  "quizzes": [
+    {
+      "question": "Does a fixed Wait action automatically know when someone has booked an appointment?",
+      "options": [
+        {
+          "option_text": "Yes, Wait automatically stops when a booking is detected",
+          "is_correct": false
+        },
+        {
+          "option_text": "No; you must configure booking or reply checks explicitly",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only if the calendar is integrated with LeadProspectrr",
+          "is_correct": false
+        },
+        {
+          "option_text": "Yes, but only for appointments booked through the workflow link",
+          "is_correct": false
+        }
+      ],
+      "explanation": "A simple Wait action does not automatically stop messages when someone books. You must explicitly configure reply checks, booking checks, or removal logic in the workflow."
+    },
+    {
+      "question": "What are two valid reasons to stop a follow-up reminder?",
+      "options": [
+        {
+          "option_text": "The contact opened the email and clicked a link",
+          "is_correct": false
+        },
+        {
+          "option_text": "The contact replied or booked an appointment",
+          "is_correct": true
+        },
+        {
+          "option_text": "The contact visited your website",
+          "is_correct": false
+        },
+        {
+          "option_text": "The contact downloaded a PDF",
+          "is_correct": false
+        }
+      ],
+      "explanation": "If a contact has replied to your email or booked an appointment, they have engaged and should not receive a sales reminder. Other actions like opening an email or visiting a website do not necessarily indicate engagement."
+    },
+    {
+      "question": "How many reminder emails should the workflow send?",
+      "options": [
+        {
+          "option_text": "Three reminders over one week",
+          "is_correct": false
+        },
+        {
+          "option_text": "One helpful reminder, then end the workflow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Unlimited until the contact responds",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two reminders: one at 1 day and one at 3 days",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Send one helpful reminder, then end the workflow. A separate Customer Booked Appointment workflow can handle confirmations and reminders for appointments."
+    }
+  ]
+}

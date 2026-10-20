@@ -1,0 +1,1028 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "follow-up-is-journey",
+    "title": "Follow-up is a journey, not a chase",
+    "moduleWeek": 17,
+    "moduleName": "Follow-Up That Works",
+    "learningGoal": "Know what needs to happen between an enquiry and a booking.",
+    "sections": [
+      {
+        "title": "What a Lead Wants to Know",
+        "icon": "users",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "check",
+            "color": "blue",
+            "title": "Did you receive my message?",
+            "description": "A lead wants confirmation that their enquiry was received and is being handled."
+          },
+          {
+            "icon": "check",
+            "color": "blue",
+            "title": "Can you help me?",
+            "description": "They need to know if your service or product fits their specific situation."
+          },
+          {
+            "icon": "check",
+            "color": "blue",
+            "title": "What should I do next?",
+            "description": "A clear next step removes confusion and moves the conversation forward."
+          }
+        ]
+      },
+      {
+        "title": "The Five-Step Formula",
+        "icon": "checklist",
+        "color": "green",
+        "items": [
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "1. Capture",
+            "description": "A contact submits a form or makes an enquiry."
+          },
+          {
+            "icon": "mail",
+            "color": "green",
+            "title": "2. Respond",
+            "description": "Send a friendly acknowledgement promptly."
+          },
+          {
+            "icon": "link",
+            "color": "green",
+            "title": "3. Invite",
+            "description": "Offer one clear way to book a call or take the next step."
+          },
+          {
+            "icon": "clock",
+            "color": "green",
+            "title": "4. Check",
+            "description": "Allow time and check for a reply or booking."
+          },
+          {
+            "icon": "chat",
+            "color": "green",
+            "title": "5. Follow up",
+            "description": "Send a single relevant reminder if there has been no response or booking."
+          }
+        ]
+      },
+      {
+        "title": "Exercise: Map Your Lead's Question",
+        "icon": "pencil",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "lightbulb",
+            "color": "purple",
+            "title": "Write the exact question",
+            "description": "What is your ideal lead asking when they fill out your form?"
+          },
+          {
+            "icon": "check",
+            "color": "purple",
+            "title": "Write one helpful sentence",
+            "description": "Answer that question in a single sentence that reassures and guides them."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A lead wants to know three things: Did you receive my message? Can you help me? What should I do next? The five-step formula is Capture, Respond, Invite, Check, Follow up.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Identify your lead's primary question",
+        "description": "Write the exact question your ideal lead is asking when they fill out your form."
+      },
+      {
+        "number": 2,
+        "title": "Write a one-sentence answer",
+        "description": "Create one helpful sentence that answers their question and moves them forward."
+      },
+      {
+        "number": 3,
+        "title": "Review the five-step formula",
+        "description": "Check your current follow-up process against Capture, Respond, Invite, Check, Follow up."
+      }
+    ],
+    "nextLessonTitle": "Connect the starting point",
+    "quizzes": [
+      {
+        "question": "What are the three things a lead wants to know after submitting an enquiry?",
+        "options": [
+          {
+            "option_text": "Price, features, and competitors",
+            "is_correct": false
+          },
+          {
+            "option_text": "Did you receive my message? Can you help me? What should I do next?",
+            "is_correct": true
+          },
+          {
+            "option_text": "How fast, how cheap, how good",
+            "is_correct": false
+          },
+          {
+            "option_text": "Who are you, what do you do, why should I care",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A lead wants to know: Did you receive my message? Can you help me? What should I do next? A useful response answers these three questions without overwhelming them."
+      },
+      {
+        "question": "What is the correct order of the five-step follow-up formula?",
+        "options": [
+          {
+            "option_text": "Invite, Capture, Respond, Check, Follow up",
+            "is_correct": false
+          },
+          {
+            "option_text": "Capture, Respond, Invite, Check, Follow up",
+            "is_correct": true
+          },
+          {
+            "option_text": "Capture, Check, Respond, Invite, Follow up",
+            "is_correct": false
+          },
+          {
+            "option_text": "Respond, Capture, Invite, Follow up, Check",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The five-step formula is: 1. Capture (form submission), 2. Respond (acknowledgement), 3. Invite (clear next step), 4. Check (allow time), 5. Follow up (single reminder if needed)."
+      },
+      {
+        "question": "How many follow-up reminders should you send if there is no response?",
+        "options": [
+          {
+            "option_text": "As many as it takes until they reply",
+            "is_correct": false
+          },
+          {
+            "option_text": "Three reminders over two weeks",
+            "is_correct": false
+          },
+          {
+            "option_text": "A single relevant reminder",
+            "is_correct": true
+          },
+          {
+            "option_text": "None — never follow up",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The formula recommends sending a single relevant reminder if there has been no response or booking. Multiple unsolicited follow-ups can feel like chasing and damage trust."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "connect-starting-point",
+    "title": "Connect the starting point",
+    "moduleWeek": 17,
+    "moduleName": "Follow-Up That Works",
+    "learningGoal": "Start a workflow when the correct form is submitted.",
+    "sections": [
+      {
+        "title": "Review Your Enquiry Form",
+        "icon": "document",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "search",
+            "color": "blue",
+            "title": "Open Sites → Forms",
+            "description": "Review your enquiry form and confirm name and email fields are present."
+          },
+          {
+            "icon": "check",
+            "color": "blue",
+            "title": "Confirm Required Fields",
+            "description": "Ensure the form captures the minimum information needed for follow-up."
+          }
+        ]
+      },
+      {
+        "title": "Create the Workflow Trigger",
+        "icon": "settings",
+        "color": "green",
+        "items": [
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "Open Automation → Workflows",
+            "description": "Create a workflow from scratch."
+          },
+          {
+            "icon": "pencil",
+            "color": "green",
+            "title": "Name It Clearly",
+            "description": "Use a descriptive name like M17 | Consultation enquiry | Follow-up."
+          },
+          {
+            "icon": "link",
+            "color": "green",
+            "title": "Add Form Submitted Trigger",
+            "description": "Select the trigger Form Submitted, filter Form is, and choose only the intended enquiry form."
+          },
+          {
+            "icon": "warning",
+            "color": "green",
+            "title": "Save Unpublished",
+            "description": "Keep the workflow unpublished until you have tested it thoroughly."
+          }
+        ]
+      },
+      {
+        "title": "Why the Filter Matters",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "info",
+            "color": "amber",
+            "title": "Prevent Wrong Triggers",
+            "description": "Without the filter, the wrong form could start a sales follow-up, such as a customer service form or feedback survey."
+          },
+          {
+            "icon": "check",
+            "color": "amber",
+            "title": "Exercise for Consultants",
+            "description": "Choose the form used for strategy enquiries and note its exact name."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Create a workflow with the Form Submitted trigger, filter by the exact enquiry form, and keep it unpublished until tested. The filter prevents unrelated forms from triggering your sales sequence.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Review your enquiry form",
+        "description": "Open Sites → Forms and confirm your enquiry form has name and email fields."
+      },
+      {
+        "number": 2,
+        "title": "Create a new workflow",
+        "description": "Open Automation → Workflows and create a workflow named M17 | Consultation enquiry | Follow-up."
+      },
+      {
+        "number": 3,
+        "title": "Add and filter the trigger",
+        "description": "Add Form Submitted trigger, filter Form is, and select only your intended enquiry form."
+      }
+    ],
+    "nextLessonTitle": "Write the first useful email",
+    "quizzes": [
+      {
+        "question": "What trigger starts the follow-up workflow?",
+        "options": [
+          {
+            "option_text": "Contact Created",
+            "is_correct": false
+          },
+          {
+            "option_text": "Form Submitted",
+            "is_correct": true
+          },
+          {
+            "option_text": "Email Opened",
+            "is_correct": false
+          },
+          {
+            "option_text": "Appointment Booked",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The workflow starts with the Form Submitted trigger, filtered to only the intended enquiry form. This ensures the right form submissions begin the follow-up sequence."
+      },
+      {
+        "question": "Why should you filter the Form Submitted trigger by a specific form?",
+        "options": [
+          {
+            "option_text": "To make the workflow run faster",
+            "is_correct": false
+          },
+          {
+            "option_text": "So unrelated forms do not trigger the sales sequence",
+            "is_correct": true
+          },
+          {
+            "option_text": "To reduce the number of workflow executions",
+            "is_correct": false
+          },
+          {
+            "option_text": "Because HighLevel requires it",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Without filtering by form, any form submission — including customer service forms or feedback surveys — could trigger your sales follow-up sequence. The filter ensures only the intended enquiry form starts the workflow."
+      },
+      {
+        "question": "When should you publish the workflow?",
+        "options": [
+          {
+            "option_text": "Immediately after creating it",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only after successful end-to-end testing",
+            "is_correct": true
+          },
+          {
+            "option_text": "After adding the first email action",
+            "is_correct": false
+          },
+          {
+            "option_text": "When the client asks for it",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Keep the workflow unpublished until you have tested it thoroughly. Publishing before testing risks sending incorrect or incomplete follow-ups to real prospects."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "slug": "write-first-useful-email",
+    "title": "Write the first useful email",
+    "moduleWeek": 17,
+    "moduleName": "Follow-Up That Works",
+    "learningGoal": "Make the first reply helpful and human.",
+    "sections": [
+      {
+        "title": "The First Email Structure",
+        "icon": "mail",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "check",
+            "color": "blue",
+            "title": "Acknowledge the Enquiry",
+            "description": "Confirm you received their details and express interest in learning more."
+          },
+          {
+            "icon": "link",
+            "color": "blue",
+            "title": "Offer a Clear Next Step",
+            "description": "Provide one way to book a call — a tested calendar booking link."
+          },
+          {
+            "icon": "chat",
+            "color": "blue",
+            "title": "Invite Replies",
+            "description": "Let them know they can reply with a question if they are not ready to book."
+          }
+        ]
+      },
+      {
+        "title": "Example Email Template",
+        "icon": "document",
+        "color": "green",
+        "items": [
+          {
+            "icon": "mail",
+            "color": "green",
+            "title": "Subject: Thanks for getting in touch",
+            "description": "Hi {{contact.first_name}}, Thanks for your enquiry. I have received your details and would be pleased to learn more about what you are working on. If you would like to talk through your goals, you can choose a convenient time here: [Insert your tested calendar booking link]. If you have a question first, simply reply to this email. Best, [Your name]"
+          }
+        ]
+      },
+      {
+        "title": "Important Checks",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "check",
+            "color": "amber",
+            "title": "Verify Sender Details",
+            "description": "Check sender name, sender address, and merge field preview."
+          },
+          {
+            "icon": "link",
+            "color": "amber",
+            "title": "Test the Booking URL",
+            "description": "Confirm the link opens the intended calendar before using it in a live email."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Avoid False Claims",
+            "description": "Do not claim you personally reviewed an enquiry if that has not happened."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The first email should acknowledge the enquiry, offer one clear way to book, and invite questions. Always test your booking link and verify sender details before sending.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Draft your first email",
+        "description": "Write a short, helpful email that acknowledges the enquiry and offers a booking link."
+      },
+      {
+        "number": 2,
+        "title": "Test your booking link",
+        "description": "Click the calendar link to confirm it opens the correct booking page."
+      },
+      {
+        "number": 3,
+        "title": "Preview merge fields",
+        "description": "Check that {{contact.first_name}} and other merge fields display correctly."
+      }
+    ],
+    "nextLessonTitle": "Add timing and response checks",
+    "quizzes": [
+      {
+        "question": "What is the single action you want the prospect to take after reading the first email?",
+        "options": [
+          {
+            "option_text": "Visit your website homepage",
+            "is_correct": false
+          },
+          {
+            "option_text": "Book a call or reply with a question",
+            "is_correct": true
+          },
+          {
+            "option_text": "Follow you on social media",
+            "is_correct": false
+          },
+          {
+            "option_text": "Download a free guide",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The first email should have one clear call to action: book a call using the calendar link, or reply with a question if they need more information first."
+      },
+      {
+        "question": "Why should you test the booking URL before including it in the email?",
+        "options": [
+          {
+            "option_text": "To make the email look more professional",
+            "is_correct": false
+          },
+          {
+            "option_text": "To confirm it opens the intended calendar and works correctly",
+            "is_correct": true
+          },
+          {
+            "option_text": "Because HighLevel requires URL verification",
+            "is_correct": false
+          },
+          {
+            "option_text": "To track click-through rates",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Testing the booking URL ensures it opens the correct calendar, the times display properly, and the prospect can actually complete a booking. A broken link defeats the purpose of the follow-up."
+      },
+      {
+        "question": "What should you avoid claiming in the first email?",
+        "options": [
+          {
+            "option_text": "That you received their enquiry",
+            "is_correct": false
+          },
+          {
+            "option_text": "That you personally reviewed their enquiry if you have not",
+            "is_correct": true
+          },
+          {
+            "option_text": "That you would be pleased to learn more",
+            "is_correct": false
+          },
+          {
+            "option_text": "That they can reply with a question",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Do not claim you personally reviewed an enquiry if that has not happened. Automated emails should be honest about their nature to maintain trust with the prospect."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "slug": "add-timing-response-checks",
+    "title": "Add timing and response checks",
+    "moduleWeek": 17,
+    "moduleName": "Follow-Up That Works",
+    "learningGoal": "Avoid sending reminders to people who have already engaged.",
+    "sections": [
+      {
+        "title": "Add a Wait Step",
+        "icon": "clock",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "clock",
+            "color": "blue",
+            "title": "Insert a Wait Action",
+            "description": "Add Wait after the first email. Start with 1 day as a training example, not a universal best timing rule."
+          },
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Timing Is Context-Dependent",
+            "description": "The right wait time depends on your audience, offer, and industry. Test and adjust."
+          }
+        ]
+      },
+      {
+        "title": "Check Before Reminding",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "check",
+            "color": "amber",
+            "title": "Add Response Checks",
+            "description": "Before any reminder, add a decision or exit mechanism that checks whether the contact has replied or booked."
+          },
+          {
+            "icon": "settings",
+            "color": "amber",
+            "title": "Review Available Conditions",
+            "description": "Check your account's available workflow conditions and appointment settings."
+          },
+          {
+            "icon": "target",
+            "color": "amber",
+            "title": "End the Path if Engaged",
+            "description": "If the contact replied or booked, end the sales reminder path or remove them from the follow-up workflow."
+          }
+        ]
+      },
+      {
+        "title": "The Reminder Email",
+        "icon": "mail",
+        "color": "green",
+        "items": [
+          {
+            "icon": "mail",
+            "color": "green",
+            "title": "Subject: Would a short call be useful?",
+            "description": "Hi {{contact.first_name}}, Just following up on your enquiry. If a short conversation would help you decide on the next step, here is my calendar: [Insert booking link]. No pressure if the timing is not right. You can also reply with a question. Best, [Your name]"
+          },
+          {
+            "icon": "warning",
+            "color": "green",
+            "title": "Send Only One Reminder",
+            "description": "Send one helpful reminder, then end the workflow. A separate Customer Booked Appointment workflow can handle confirmations."
+          }
+        ]
+      },
+      {
+        "title": "Important Cautions",
+        "icon": "warning",
+        "color": "rose",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Wait Does Not Auto-Stop",
+            "description": "A simple 1-day Wait does not automatically stop messages when someone books. Configure this logic explicitly."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "SMS Requires Consent",
+            "description": "Do not use SMS without suitable consent, registration, and compliance checks."
+          },
+          {
+            "icon": "check",
+            "color": "rose",
+            "title": "Exercise for Trainers",
+            "description": "Describe two cases when a person should NOT receive the reminder."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A Wait action does not automatically know when someone has booked. You must explicitly configure reply checks, booking checks, or removal logic before sending any reminder.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Add a Wait action",
+        "description": "Insert a 1-day Wait after the first email in your workflow."
+      },
+      {
+        "number": 2,
+        "title": "Add response or booking checks",
+        "description": "Configure conditions to check if the contact has replied or booked before sending a reminder."
+      },
+      {
+        "number": 3,
+        "title": "Draft one reminder email",
+        "description": "Write a single helpful reminder that ends the workflow after sending."
+      }
+    ],
+    "nextLessonTitle": "Test, publish and monitor",
+    "quizzes": [
+      {
+        "question": "Does a fixed Wait action automatically know when someone has booked an appointment?",
+        "options": [
+          {
+            "option_text": "Yes, Wait automatically stops when a booking is detected",
+            "is_correct": false
+          },
+          {
+            "option_text": "No; you must configure booking or reply checks explicitly",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only if the calendar is integrated with LeadProspectrr",
+            "is_correct": false
+          },
+          {
+            "option_text": "Yes, but only for appointments booked through the workflow link",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A simple Wait action does not automatically stop messages when someone books. You must explicitly configure reply checks, booking checks, or removal logic in the workflow."
+      },
+      {
+        "question": "What are two valid reasons to stop a follow-up reminder?",
+        "options": [
+          {
+            "option_text": "The contact opened the email and clicked a link",
+            "is_correct": false
+          },
+          {
+            "option_text": "The contact replied or booked an appointment",
+            "is_correct": true
+          },
+          {
+            "option_text": "The contact visited your website",
+            "is_correct": false
+          },
+          {
+            "option_text": "The contact downloaded a PDF",
+            "is_correct": false
+          }
+        ],
+        "explanation": "If a contact has replied to your email or booked an appointment, they have engaged and should not receive a sales reminder. Other actions like opening an email or visiting a website do not necessarily indicate engagement."
+      },
+      {
+        "question": "How many reminder emails should the workflow send?",
+        "options": [
+          {
+            "option_text": "Three reminders over one week",
+            "is_correct": false
+          },
+          {
+            "option_text": "One helpful reminder, then end the workflow",
+            "is_correct": true
+          },
+          {
+            "option_text": "Unlimited until the contact responds",
+            "is_correct": false
+          },
+          {
+            "option_text": "Two reminders: one at 1 day and one at 3 days",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Send one helpful reminder, then end the workflow. A separate Customer Booked Appointment workflow can handle confirmations and reminders for appointments."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "slug": "test-publish-monitor",
+    "title": "Test, publish and monitor",
+    "moduleWeek": 17,
+    "moduleName": "Follow-Up That Works",
+    "learningGoal": "Make the process reliable before a real prospect sees it.",
+    "sections": [
+      {
+        "title": "Test Checklist",
+        "icon": "checklist",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "check",
+            "color": "blue",
+            "title": "Submit the Form",
+            "description": "Submit the selected form using a test email address."
+          },
+          {
+            "icon": "check",
+            "color": "blue",
+            "title": "Confirm Contact Record",
+            "description": "Check that the expected contact record appears in Contacts."
+          },
+          {
+            "icon": "check",
+            "color": "blue",
+            "title": "Check Workflow Enrollment",
+            "description": "Verify the workflow enrollment and the email in Conversations and/or workflow execution history."
+          },
+          {
+            "icon": "check",
+            "color": "blue",
+            "title": "Verify Email Delivery",
+            "description": "Check that the email is delivered and the booking link opens the intended calendar."
+          }
+        ]
+      },
+      {
+        "title": "Test Three Scenarios",
+        "icon": "settings",
+        "color": "green",
+        "items": [
+          {
+            "icon": "target",
+            "color": "green",
+            "title": "No-Response Scenario",
+            "description": "The single reminder is sent after the configured wait."
+          },
+          {
+            "icon": "chat",
+            "color": "green",
+            "title": "Reply Scenario",
+            "description": "Subsequent sales reminder is suppressed when the contact replies."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Booking Scenario",
+            "description": "Subsequent sales reminder is suppressed when the contact books."
+          }
+        ]
+      },
+      {
+        "title": "Final Checks Before Publishing",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "check",
+            "color": "amber",
+            "title": "Opt-outs Respected",
+            "description": "Confirm opt-outs and workflow settings are respected."
+          },
+          {
+            "icon": "check",
+            "color": "amber",
+            "title": "Publish After Testing",
+            "description": "Publish and save only after all testing is successful."
+          },
+          {
+            "icon": "users",
+            "color": "amber",
+            "title": "Exercise for Service Businesses",
+            "description": "Write down who in your team should get a notification when an enquiry is submitted or a call is booked."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Test three scenarios before publishing: no response (reminder sends), reply (reminder suppressed), and booking (reminder suppressed). Only publish after successful end-to-end testing.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Submit a test form",
+        "description": "Use a test email address to submit your enquiry form and confirm the contact record appears."
+      },
+      {
+        "number": 2,
+        "title": "Test the no-response path",
+        "description": "Wait for the configured time and confirm the reminder email sends correctly."
+      },
+      {
+        "number": 3,
+        "title": "Test reply and booking paths",
+        "description": "Verify that replying or booking suppresses the reminder email."
+      }
+    ],
+    "nextLessonTitle": "Improve based on real conversations",
+    "quizzes": [
+      {
+        "question": "When should you publish the workflow?",
+        "options": [
+          {
+            "option_text": "Immediately after creating it",
+            "is_correct": false
+          },
+          {
+            "option_text": "After successful end-to-end testing",
+            "is_correct": true
+          },
+          {
+            "option_text": "After adding the first email",
+            "is_correct": false
+          },
+          {
+            "option_text": "When the first real enquiry comes in",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Publish and save only after all testing is successful. Publishing before testing risks sending incorrect or incomplete follow-ups to real prospects."
+      },
+      {
+        "question": "What should you test besides the email wording?",
+        "options": [
+          {
+            "option_text": "Only the subject line",
+            "is_correct": false
+          },
+          {
+            "option_text": "Form filter, delivery, merge fields, link, timing, booking and reply exits, opt-outs",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only the booking link",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only the wait time",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Test the form filter, email delivery, merge fields, booking link, wait timing, booking and reply exit paths, and opt-out handling. The email wording is only one part of a reliable follow-up journey."
+      },
+      {
+        "question": "How many test scenarios should you run before publishing?",
+        "options": [
+          {
+            "option_text": "One: submit the form",
+            "is_correct": false
+          },
+          {
+            "option_text": "Three: no response, reply, and booked appointment",
+            "is_correct": true
+          },
+          {
+            "option_text": "Five: one for each step of the formula",
+            "is_correct": false
+          },
+          {
+            "option_text": "Two: form submission and email delivery",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Run three tests: no response (reminder sends), reply (reminder suppressed), and booked appointment (reminder suppressed). This ensures all paths work correctly before going live."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "slug": "improve-based-on-conversations",
+    "title": "Improve based on real conversations",
+    "moduleWeek": 17,
+    "moduleName": "Follow-Up That Works",
+    "learningGoal": "Track whether the journey helps clients take the next step.",
+    "sections": [
+      {
+        "title": "Weekly Review Metrics",
+        "icon": "chart",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "Enquiry Form Submissions",
+            "description": "Count how many forms were submitted each week."
+          },
+          {
+            "icon": "mail",
+            "color": "blue",
+            "title": "First Emails Successfully Sent",
+            "description": "Track delivery and identify any sending failures."
+          },
+          {
+            "icon": "chat",
+            "color": "blue",
+            "title": "Replies and Bookings",
+            "description": "Measure replies and appointment bookings attributable to those enquiries."
+          },
+          {
+            "icon": "warning",
+            "color": "blue",
+            "title": "Unsubscribes and Complaints",
+            "description": "Monitor unsubscribes, complaints, and duplicate follow-ups."
+          },
+          {
+            "icon": "lightbulb",
+            "color": "blue",
+            "title": "Common Questions",
+            "description": "Identify questions that the first email could answer better."
+          }
+        ]
+      },
+      {
+        "title": "How to Interpret Results",
+        "icon": "info",
+        "color": "green",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "green",
+            "title": "Do Not Compare Raw Counts Alone",
+            "description": "Do not compare raw booking counts without also considering the number and quality of enquiries."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Start with an Observation",
+            "description": "Notice a pattern, make one small change, then check results."
+          },
+          {
+            "icon": "lightbulb",
+            "color": "green",
+            "title": "Exercise for Coaches",
+            "description": "If many people reply with questions but few book, what could you change about the email? Write one answer that helps the prospect before asking them to book."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "Review weekly: form submissions, emails sent, replies, bookings, unsubscribes, and common questions. Do not compare raw booking counts without considering enquiry quality. Make one small change at a time.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Set up weekly tracking",
+        "description": "Create a simple tracker for form submissions, emails sent, replies, bookings, and unsubscribes."
+      },
+      {
+        "number": 2,
+        "title": "Review common questions",
+        "description": "Look at replies and identify questions your first email could answer better."
+      },
+      {
+        "number": 3,
+        "title": "Make one small improvement",
+        "description": "Choose one change to test — a clearer subject line, a better booking link placement, or an added FAQ sentence."
+      }
+    ],
+    "nextLessonTitle": "Build your own enquiry-to-appointment journey",
+    "quizzes": [
+      {
+        "question": "What should you review weekly to improve your follow-up journey?",
+        "options": [
+          {
+            "option_text": "Only the number of bookings",
+            "is_correct": false
+          },
+          {
+            "option_text": "Form submissions, emails sent, replies, bookings, unsubscribes, and common questions",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only the workflow execution history",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only the calendar availability",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Review form submissions, first emails sent, replies and bookings, unsubscribes and complaints, and common questions. This gives a complete picture of how the journey is performing."
+      },
+      {
+        "question": "Why should you not compare raw booking counts alone?",
+        "options": [
+          {
+            "option_text": "Because bookings are not important",
+            "is_correct": false
+          },
+          {
+            "option_text": "Because you must also consider the number and quality of enquiries",
+            "is_correct": true
+          },
+          {
+            "option_text": "Because the workflow does not track bookings",
+            "is_correct": false
+          },
+          {
+            "option_text": "Because booking counts are always inaccurate",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Raw booking counts without context can be misleading. A drop in bookings might reflect fewer or lower-quality enquiries, not a broken follow-up process. Always consider enquiry volume and quality."
+      },
+      {
+        "question": "What is the recommended approach to improving the follow-up journey?",
+        "options": [
+          {
+            "option_text": "Redesign the entire workflow every week",
+            "is_correct": false
+          },
+          {
+            "option_text": "Start with an observation, make one small change, then check results",
+            "is_correct": true
+          },
+          {
+            "option_text": "Copy a competitor's workflow exactly",
+            "is_correct": false
+          },
+          {
+            "option_text": "Add more emails and reminders",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Start with an observation from your weekly review, make one small change, then check results. This controlled approach helps you understand what actually improves performance."
+      }
+    ]
+  }
+]

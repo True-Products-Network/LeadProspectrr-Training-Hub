@@ -1,0 +1,178 @@
+{
+  "lessonNumber": 1,
+  "slug": "follow-up-is-journey",
+  "title": "Follow-up is a journey, not a chase",
+  "moduleWeek": 17,
+  "moduleName": "Follow-Up That Works",
+  "learningGoal": "Know what needs to happen between an enquiry and a booking.",
+  "sections": [
+    {
+      "title": "What a Lead Wants to Know",
+      "icon": "users",
+      "color": "blue",
+      "items": [
+        {
+          "icon": "check",
+          "color": "blue",
+          "title": "Did you receive my message?",
+          "description": "A lead wants confirmation that their enquiry was received and is being handled."
+        },
+        {
+          "icon": "check",
+          "color": "blue",
+          "title": "Can you help me?",
+          "description": "They need to know if your service or product fits their specific situation."
+        },
+        {
+          "icon": "check",
+          "color": "blue",
+          "title": "What should I do next?",
+          "description": "A clear next step removes confusion and moves the conversation forward."
+        }
+      ]
+    },
+    {
+      "title": "The Five-Step Formula",
+      "icon": "checklist",
+      "color": "green",
+      "items": [
+        {
+          "icon": "target",
+          "color": "green",
+          "title": "1. Capture",
+          "description": "A contact submits a form or makes an enquiry."
+        },
+        {
+          "icon": "mail",
+          "color": "green",
+          "title": "2. Respond",
+          "description": "Send a friendly acknowledgement promptly."
+        },
+        {
+          "icon": "link",
+          "color": "green",
+          "title": "3. Invite",
+          "description": "Offer one clear way to book a call or take the next step."
+        },
+        {
+          "icon": "clock",
+          "color": "green",
+          "title": "4. Check",
+          "description": "Allow time and check for a reply or booking."
+        },
+        {
+          "icon": "chat",
+          "color": "green",
+          "title": "5. Follow up",
+          "description": "Send a single relevant reminder if there has been no response or booking."
+        }
+      ]
+    },
+    {
+      "title": "Exercise: Map Your Lead's Question",
+      "icon": "pencil",
+      "color": "purple",
+      "items": [
+        {
+          "icon": "lightbulb",
+          "color": "purple",
+          "title": "Write the exact question",
+          "description": "What is your ideal lead asking when they fill out your form?"
+        },
+        {
+          "icon": "check",
+          "color": "purple",
+          "title": "Write one helpful sentence",
+          "description": "Answer that question in a single sentence that reassures and guides them."
+        }
+      ]
+    }
+  ],
+  "keyPoint": "A lead wants to know three things: Did you receive my message? Can you help me? What should I do next? The five-step formula is Capture, Respond, Invite, Check, Follow up.",
+  "actionSteps": [
+    {
+      "number": 1,
+      "title": "Identify your lead's primary question",
+      "description": "Write the exact question your ideal lead is asking when they fill out your form."
+    },
+    {
+      "number": 2,
+      "title": "Write a one-sentence answer",
+      "description": "Create one helpful sentence that answers their question and moves them forward."
+    },
+    {
+      "number": 3,
+      "title": "Review the five-step formula",
+      "description": "Check your current follow-up process against Capture, Respond, Invite, Check, Follow up."
+    }
+  ],
+  "nextLessonTitle": "Connect the starting point",
+  "quizzes": [
+    {
+      "question": "What are the three things a lead wants to know after submitting an enquiry?",
+      "options": [
+        {
+          "option_text": "Price, features, and competitors",
+          "is_correct": false
+        },
+        {
+          "option_text": "Did you receive my message? Can you help me? What should I do next?",
+          "is_correct": true
+        },
+        {
+          "option_text": "How fast, how cheap, how good",
+          "is_correct": false
+        },
+        {
+          "option_text": "Who are you, what do you do, why should I care",
+          "is_correct": false
+        }
+      ],
+      "explanation": "A lead wants to know: Did you receive my message? Can you help me? What should I do next? A useful response answers these three questions without overwhelming them."
+    },
+    {
+      "question": "What is the correct order of the five-step follow-up formula?",
+      "options": [
+        {
+          "option_text": "Invite, Capture, Respond, Check, Follow up",
+          "is_correct": false
+        },
+        {
+          "option_text": "Capture, Respond, Invite, Check, Follow up",
+          "is_correct": true
+        },
+        {
+          "option_text": "Capture, Check, Respond, Invite, Follow up",
+          "is_correct": false
+        },
+        {
+          "option_text": "Respond, Capture, Invite, Follow up, Check",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The five-step formula is: 1. Capture (form submission), 2. Respond (acknowledgement), 3. Invite (clear next step), 4. Check (allow time), 5. Follow up (single reminder if needed)."
+    },
+    {
+      "question": "How many follow-up reminders should you send if there is no response?",
+      "options": [
+        {
+          "option_text": "As many as it takes until they reply",
+          "is_correct": false
+        },
+        {
+          "option_text": "Three reminders over two weeks",
+          "is_correct": false
+        },
+        {
+          "option_text": "A single relevant reminder",
+          "is_correct": true
+        },
+        {
+          "option_text": "None — never follow up",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The formula recommends sending a single relevant reminder if there has been no response or booking. Multiple unsolicited follow-ups can feel like chasing and damage trust."
+    }
+  ]
+}

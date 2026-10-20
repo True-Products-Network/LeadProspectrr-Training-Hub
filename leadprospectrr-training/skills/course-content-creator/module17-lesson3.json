@@ -1,0 +1,160 @@
+{
+  "lessonNumber": 3,
+  "slug": "write-first-useful-email",
+  "title": "Write the first useful email",
+  "moduleWeek": 17,
+  "moduleName": "Follow-Up That Works",
+  "learningGoal": "Make the first reply helpful and human.",
+  "sections": [
+    {
+      "title": "The First Email Structure",
+      "icon": "mail",
+      "color": "blue",
+      "items": [
+        {
+          "icon": "check",
+          "color": "blue",
+          "title": "Acknowledge the Enquiry",
+          "description": "Confirm you received their details and express interest in learning more."
+        },
+        {
+          "icon": "link",
+          "color": "blue",
+          "title": "Offer a Clear Next Step",
+          "description": "Provide one way to book a call — a tested calendar booking link."
+        },
+        {
+          "icon": "chat",
+          "color": "blue",
+          "title": "Invite Replies",
+          "description": "Let them know they can reply with a question if they are not ready to book."
+        }
+      ]
+    },
+    {
+      "title": "Example Email Template",
+      "icon": "document",
+      "color": "green",
+      "items": [
+        {
+          "icon": "mail",
+          "color": "green",
+          "title": "Subject: Thanks for getting in touch",
+          "description": "Hi {{contact.first_name}}, Thanks for your enquiry. I have received your details and would be pleased to learn more about what you are working on. If you would like to talk through your goals, you can choose a convenient time here: [Insert your tested calendar booking link]. If you have a question first, simply reply to this email. Best, [Your name]"
+        }
+      ]
+    },
+    {
+      "title": "Important Checks",
+      "icon": "warning",
+      "color": "amber",
+      "items": [
+        {
+          "icon": "check",
+          "color": "amber",
+          "title": "Verify Sender Details",
+          "description": "Check sender name, sender address, and merge field preview."
+        },
+        {
+          "icon": "link",
+          "color": "amber",
+          "title": "Test the Booking URL",
+          "description": "Confirm the link opens the intended calendar before using it in a live email."
+        },
+        {
+          "icon": "warning",
+          "color": "amber",
+          "title": "Avoid False Claims",
+          "description": "Do not claim you personally reviewed an enquiry if that has not happened."
+        }
+      ]
+    }
+  ],
+  "keyPoint": "The first email should acknowledge the enquiry, offer one clear way to book, and invite questions. Always test your booking link and verify sender details before sending.",
+  "actionSteps": [
+    {
+      "number": 1,
+      "title": "Draft your first email",
+      "description": "Write a short, helpful email that acknowledges the enquiry and offers a booking link."
+    },
+    {
+      "number": 2,
+      "title": "Test your booking link",
+      "description": "Click the calendar link to confirm it opens the correct booking page."
+    },
+    {
+      "number": 3,
+      "title": "Preview merge fields",
+      "description": "Check that {{contact.first_name}} and other merge fields display correctly."
+    }
+  ],
+  "nextLessonTitle": "Add timing and response checks",
+  "quizzes": [
+    {
+      "question": "What is the single action you want the prospect to take after reading the first email?",
+      "options": [
+        {
+          "option_text": "Visit your website homepage",
+          "is_correct": false
+        },
+        {
+          "option_text": "Book a call or reply with a question",
+          "is_correct": true
+        },
+        {
+          "option_text": "Follow you on social media",
+          "is_correct": false
+        },
+        {
+          "option_text": "Download a free guide",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The first email should have one clear call to action: book a call using the calendar link, or reply with a question if they need more information first."
+    },
+    {
+      "question": "Why should you test the booking URL before including it in the email?",
+      "options": [
+        {
+          "option_text": "To make the email look more professional",
+          "is_correct": false
+        },
+        {
+          "option_text": "To confirm it opens the intended calendar and works correctly",
+          "is_correct": true
+        },
+        {
+          "option_text": "Because HighLevel requires URL verification",
+          "is_correct": false
+        },
+        {
+          "option_text": "To track click-through rates",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Testing the booking URL ensures it opens the correct calendar, the times display properly, and the prospect can actually complete a booking. A broken link defeats the purpose of the follow-up."
+    },
+    {
+      "question": "What should you avoid claiming in the first email?",
+      "options": [
+        {
+          "option_text": "That you received their enquiry",
+          "is_correct": false
+        },
+        {
+          "option_text": "That you personally reviewed their enquiry if you have not",
+          "is_correct": true
+        },
+        {
+          "option_text": "That you would be pleased to learn more",
+          "is_correct": false
+        },
+        {
+          "option_text": "That they can reply with a question",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Do not claim you personally reviewed an enquiry if that has not happened. Automated emails should be honest about their nature to maintain trust with the prospect."
+    }
+  ]
+}
