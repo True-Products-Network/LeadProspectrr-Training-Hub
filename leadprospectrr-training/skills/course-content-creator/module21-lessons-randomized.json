@@ -1,0 +1,1218 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "why-next-booking-starts-after-first",
+    "title": "Why the Next Booking Starts After the First",
+    "moduleWeek": 21,
+    "moduleName": "Turn One Booking into the Next Three",
+    "learningGoal": "Understand the difference between a completed appointment and an ongoing customer relationship, and identify three follow-up opportunities that can emerge from every booking.",
+    "sections": [
+      {
+        "title": "The Appointment Is Just the Beginning",
+        "icon": "clock",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Beyond the Calendar Event",
+            "description": "Most businesses treat a completed appointment as the end of the interaction. High-performing businesses treat it as the beginning of a relationship with three potential paths forward."
+          },
+          {
+            "icon": "users",
+            "color": "indigo",
+            "title": "The Three Opportunities",
+            "description": "Every completed appointment creates three potential opportunities: a repeat booking from the same customer, a referral to a new prospect, or a purchase of a related service."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "No Outcome Is Automatic",
+            "description": "These are opportunities, not guarantees. The customer may rebook, refer, or buy — or they may do none of these. Your follow-up sequence increases the likelihood but does not ensure results."
+          }
+        ]
+      },
+      {
+        "title": "Why Follow-Up Matters",
+        "icon": "mail",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Stay Top of Mind",
+            "description": "Customers are busy. Without follow-up, even satisfied clients forget to rebook or refer. A structured sequence keeps you visible at the right moments."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Build Trust Over Time",
+            "description": "Consistent, valuable follow-up demonstrates professionalism and care. It transforms a single transaction into an ongoing relationship."
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "Capture Missed Opportunities",
+            "description": "Many customers intend to rebook or refer but get distracted. A well-timed message reminds them while the positive experience is still fresh."
+          }
+        ]
+      },
+      {
+        "title": "Mapping Your Three Opportunities",
+        "icon": "checklist",
+        "color": "teal",
+        "items": [
+          {
+            "icon": "calendar",
+            "color": "teal",
+            "title": "Rebooking Path",
+            "description": "What is the natural next appointment for this customer? A follow-up session, maintenance visit, review meeting, or planning call?"
+          },
+          {
+            "icon": "share",
+            "color": "cyan",
+            "title": "Referral Path",
+            "description": "Who could this customer introduce you to? A colleague, friend, team member, or peer who has a similar need?"
+          },
+          {
+            "icon": "lightbulb",
+            "color": "amber",
+            "title": "Next Service Path",
+            "description": "What related service fits their goals? A package, workshop, implementation support, or advanced offering?"
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The most profitable customer relationships do not start with acquisition — they start with follow-up. Every completed appointment contains three opportunities: rebooking, referral, and next-service. Your job is to build a sequence that invites each opportunity respectfully, without pressure, and with clear value at every step.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Choose One Appointment Type",
+        "description": "Select a real appointment type from your business (e.g., discovery call, workshop, assessment). Write it down in your workbook."
+      },
+      {
+        "number": 2,
+        "title": "Map Three Follow-Up Opportunities",
+        "description": "For your chosen appointment, identify: (1) the natural rebooking opportunity, (2) who the customer could refer, and (3) a relevant next service to offer."
+      },
+      {
+        "number": 3,
+        "title": "Complete Workbook Mission 2",
+        "description": "Document your three opportunities and the value proposition for each. This becomes the foundation for your follow-up sequence."
+      }
+    ],
+    "nextLessonTitle": "Choose Your Trigger",
+    "quizzes": [
+      {
+        "question": "What are the three opportunities from every completed appointment?",
+        "options": [
+          {
+            "option_text": "Email, SMS, and phone call",
+            "is_correct": false
+          },
+          {
+            "option_text": "Rebooking, referral, and next service",
+            "is_correct": true
+          },
+          {
+            "option_text": "Marketing, sales, and support",
+            "is_correct": false
+          },
+          {
+            "option_text": "Discovery, proposal, and closing",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Every completed appointment creates three potential opportunities: a repeat booking from the same customer, a referral to a new prospect, or the purchase of a related service."
+      },
+      {
+        "question": "Are these three outcomes guaranteed after every appointment?",
+        "options": [
+          {
+            "option_text": "Yes, for appointments longer than 30 minutes",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only for existing customers, not new prospects",
+            "is_correct": false
+          },
+          {
+            "option_text": "Yes, if the follow-up sequence is built correctly",
+            "is_correct": false
+          },
+          {
+            "option_text": "No, they are opportunities to measure, not guaranteed results",
+            "is_correct": true
+          }
+        ],
+        "explanation": "These are opportunities, not guarantees. The customer may rebook, refer, or buy — or they may do none of these. A good follow-up sequence increases likelihood but cannot force outcomes."
+      },
+      {
+        "question": "Why is follow-up more effective than waiting for the customer to reach out?",
+        "options": [
+          {
+            "option_text": "Waiting never results in repeat business",
+            "is_correct": false
+          },
+          {
+            "option_text": "It is always more expensive to acquire new customers",
+            "is_correct": false
+          },
+          {
+            "option_text": "Customers often intend to rebook or refer but get distracted",
+            "is_correct": true
+          },
+          {
+            "option_text": "Follow-up is required by law in most industries",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Many satisfied customers genuinely intend to rebook or refer but become distracted by other priorities. Timely follow-up captures these intentions while the positive experience is still fresh."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "choose-your-trigger",
+    "title": "Choose Your Trigger",
+    "moduleWeek": 21,
+    "moduleName": "Turn One Booking into the Next Three",
+    "learningGoal": "Identify the right appointment completion trigger and filter it to the correct calendar and status so your follow-up sequence starts at the right moment.",
+    "sections": [
+      {
+        "title": "Understanding Triggers",
+        "icon": "settings",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "What Is a Trigger?",
+            "description": "A trigger is the event that starts your workflow. For post-appointment follow-up, you need a trigger that fires when an appointment is confirmed as completed — not just booked."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Booked vs Completed",
+            "description": "A booked appointment does not mean it happened. Your trigger must fire after confirmation that the customer showed up and the appointment was completed successfully."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "The Right Moment",
+            "description": "Starting follow-up too early (at booking) wastes effort if the appointment is cancelled. Starting too late misses the window when the experience is fresh."
+          }
+        ]
+      },
+      {
+        "title": "Setting Up the Appointment Trigger",
+        "icon": "target",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "search",
+            "color": "purple",
+            "title": "Find the Appointment Status Trigger",
+            "description": "In Automation > Workflows, create a new workflow and add a trigger. Look for 'Appointment Status Changed' or similar, depending on your account version."
+          },
+          {
+            "icon": "filter",
+            "color": "indigo",
+            "title": "Filter by Calendar",
+            "description": "If you have multiple calendars, filter to the specific calendar for this appointment type. This prevents the wrong follow-up from firing."
+          },
+          {
+            "icon": "check-circle",
+            "color": "green",
+            "title": "Filter by Status",
+            "description": "Set the status filter to 'completed', 'showed', or equivalent. This ensures the workflow only runs for appointments that actually happened."
+          }
+        ]
+      },
+      {
+        "title": "Fallback: Manual Tag Trigger",
+        "icon": "tag",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "When Statuses Are Inconsistent",
+            "description": "If your account does not reliably update appointment statuses, use a manual approach: apply a tag like 'appointment-completed' after confirming the appointment happened."
+          },
+          {
+            "icon": "settings",
+            "color": "indigo",
+            "title": "Tag-Based Trigger",
+            "description": "Create a trigger for 'Tag Added' and select your completion tag. This gives you full control over when the follow-up sequence begins."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Document Your Choice",
+            "description": "Write down which trigger you chose and why. If you use a manual tag, train your team to apply it consistently after every completed appointment."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The trigger is the foundation of your follow-up sequence. If it fires at the wrong time or for the wrong appointments, everything that follows is wasted effort. Take time to verify your trigger fires only when appointments are confirmed as completed, and always test with a sample contact before going live.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Navigate to Automation > Workflows",
+        "description": "Create a new workflow for your post-appointment follow-up sequence. Give it a clear name like 'Post-Discovery Follow-Up'."
+      },
+      {
+        "number": 2,
+        "title": "Add and Configure Your Trigger",
+        "description": "Add an appointment status trigger. Filter by the correct calendar and set the status to 'completed' or 'showed'. If statuses are unreliable, plan to use a manual tag instead."
+      },
+      {
+        "number": 3,
+        "title": "Write Down Your Trigger and Test Conditions",
+        "description": "Document the trigger type, calendar, and status filter. List the test conditions you will use to verify it works correctly."
+      }
+    ],
+    "nextLessonTitle": "Thank Your Customer",
+    "quizzes": [
+      {
+        "question": "When should the post-appointment follow-up workflow trigger?",
+        "options": [
+          {
+            "option_text": "One day before the scheduled appointment",
+            "is_correct": false
+          },
+          {
+            "option_text": "After the appointment is confirmed as completed or showed",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only if the customer pays an invoice",
+            "is_correct": false
+          },
+          {
+            "option_text": "As soon as the appointment is booked",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The trigger must fire after the appointment is confirmed as completed, not when it is booked. Starting at booking wastes effort if the appointment is cancelled or no-showed."
+      },
+      {
+        "question": "Why should you filter the trigger by calendar?",
+        "options": [
+          {
+            "option_text": "To avoid contacting the wrong person at the wrong stage",
+            "is_correct": true
+          },
+          {
+            "option_text": "To reduce the number of workflows in your account",
+            "is_correct": false
+          },
+          {
+            "option_text": "Calendar filtering is optional and not recommended",
+            "is_correct": false
+          },
+          {
+            "option_text": "To automatically cancel conflicting appointments",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Filtering by calendar ensures the follow-up sequence only runs for the specific appointment type you intended. Without this filter, a discovery call follow-up might fire after a support meeting."
+      },
+      {
+        "question": "What should you do if appointment statuses are unreliable in your account?",
+        "options": [
+          {
+            "option_text": "Delete the appointment and recreate it",
+            "is_correct": false
+          },
+          {
+            "option_text": "Trigger on booking instead and hope for the best",
+            "is_correct": false
+          },
+          {
+            "option_text": "Use a manually applied tag after confirmed completion",
+            "is_correct": true
+          },
+          {
+            "option_text": "Skip the trigger and send follow-up manually",
+            "is_correct": false
+          }
+        ],
+        "explanation": "If appointment statuses are inconsistent, use a manual tag (like 'appointment-completed') applied after you confirm the appointment happened. Create a 'Tag Added' trigger for this tag to start the workflow."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "slug": "thank-your-customer",
+    "title": "Thank Your Customer",
+    "moduleWeek": 21,
+    "moduleName": "Turn One Booking into the Next Three",
+    "learningGoal": "Create a relevant, timely thank-you message that confirms what was discussed and offers a useful resource or agreed next step.",
+    "sections": [
+      {
+        "title": "The Purpose of the Thank-You Message",
+        "icon": "mail",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Confirm the Value Delivered",
+            "description": "The thank-you message reinforces what was accomplished in the appointment. It reminds the customer why the time was well spent."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Set the Tone for Follow-Up",
+            "description": "A genuine, specific thank-you builds goodwill. It makes the later rebooking, referral, and offer messages feel natural rather than pushy."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Send Promptly",
+            "description": "The thank-you should arrive within a few hours of the completed appointment. Delay too long and it feels like an afterthought."
+          }
+        ]
+      },
+      {
+        "title": "What to Include",
+        "icon": "document",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Reference the Specific Discussion",
+            "description": "Mention what you talked about. Generic thank-yous feel automated. Specific references show you were engaged and value the customer's time."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Offer a Useful Resource",
+            "description": "Include a relevant resource: a summary document, next steps guide, helpful article, or anything that extends the value of the appointment."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Confirm Agreed Next Steps",
+            "description": "If you agreed on any next steps during the appointment, restate them. This keeps both parties aligned and demonstrates professionalism."
+          }
+        ]
+      },
+      {
+        "title": "Channel and Format",
+        "icon": "settings",
+        "color": "teal",
+        "items": [
+          {
+            "icon": "mail",
+            "color": "teal",
+            "title": "Email Is Standard",
+            "description": "Email is the most common channel for thank-you messages. It allows for longer content, attachments, and links. It also feels less intrusive than SMS."
+          },
+          {
+            "icon": "chat",
+            "color": "indigo",
+            "title": "SMS When Appropriate",
+            "description": "If you have explicit consent and the customer prefers SMS, a brief thank-you text can work well. Keep it short and include a link if needed."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Respect Consent and Preferences",
+            "description": "Only use channels the customer has agreed to. Include unsubscribe options where required. Never send promotional messages to someone who has opted out."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The thank-you message is not just politeness — it is strategic. It confirms value, builds goodwill, and sets the stage for every message that follows. Make it specific, timely, and genuinely useful. A generic 'thanks for your time' wastes the highest-engagement moment in your entire sequence.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Draft Your Thank-You Message",
+        "description": "Write a thank-you message that references your typical appointment discussion, includes a useful resource, and confirms any standard next steps."
+      },
+      {
+        "number": 2,
+        "title": "Add the Message to Your Workflow",
+        "description": "In your post-appointment workflow, add an email or SMS action immediately after the trigger. Use personalization fields for the customer's name and appointment details."
+      },
+      {
+        "number": 3,
+        "title": "Complete Workbook Mission 3",
+        "description": "Save your thank-you message draft and note which channel you chose. Document any resources or links you included."
+      }
+    ],
+    "nextLessonTitle": "Invite a Repeat Booking",
+    "quizzes": [
+      {
+        "question": "What is the primary purpose of the thank-you message?",
+        "options": [
+          {
+            "option_text": "To send a promotional offer",
+            "is_correct": false
+          },
+          {
+            "option_text": "To confirm value delivered and build goodwill for later follow-up",
+            "is_correct": true
+          },
+          {
+            "option_text": "To immediately ask for a referral",
+            "is_correct": false
+          },
+          {
+            "option_text": "To request payment for the appointment",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The thank-you message confirms the value of the appointment, reinforces what was discussed, and builds goodwill. This sets a positive tone that makes later rebooking, referral, and offer messages feel natural."
+      },
+      {
+        "question": "When should the thank-you message be sent?",
+        "options": [
+          {
+            "option_text": "One week after the appointment",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only if the customer does not rebook within 48 hours",
+            "is_correct": false
+          },
+          {
+            "option_text": "Within a few hours of the completed appointment",
+            "is_correct": true
+          },
+          {
+            "option_text": "Before the appointment as a reminder",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The thank-you should arrive within a few hours while the appointment is still fresh. Delay too long and it feels like an afterthought rather than a genuine expression of appreciation."
+      },
+      {
+        "question": "Which channel is most commonly used for thank-you messages?",
+        "options": [
+          {
+            "option_text": "Email, with SMS as an alternative when consent exists",
+            "is_correct": true
+          },
+          {
+            "option_text": "Phone call within 30 minutes",
+            "is_correct": false
+          },
+          {
+            "option_text": "Social media direct message",
+            "is_correct": false
+          },
+          {
+            "option_text": "Postal mail",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Email is the standard channel for thank-you messages because it allows for longer content, attachments, and links while feeling less intrusive than SMS. SMS can work if the customer has explicitly consented to text messages."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "slug": "invite-repeat-booking",
+    "title": "Invite a Repeat Booking",
+    "moduleWeek": 21,
+    "moduleName": "Turn One Booking into the Next Three",
+    "learningGoal": "Create a rebooking invitation that makes scheduling the next appointment straightforward by providing a clear calendar link and explaining the value of the next session.",
+    "sections": [
+      {
+        "title": "Why Rebooking Matters",
+        "icon": "calendar",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Easier Than New Acquisition",
+            "description": "Rebooking an existing customer is significantly easier and more cost-effective than finding a new prospect. They already know, like, and trust you."
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "Recurring Revenue",
+            "description": "Repeat bookings create predictable revenue. A customer who books regularly is worth far more over time than a one-time client."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Deepening the Relationship",
+            "description": "Each additional appointment strengthens the customer relationship and increases the likelihood of referrals and additional service purchases."
+          }
+        ]
+      },
+      {
+        "title": "Crafting the Rebooking Message",
+        "icon": "mail",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Explain the Value of the Next Session",
+            "description": "Do not just ask them to book again. Explain what the next session will cover and why it matters for their goals. Give them a reason to return."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Provide One Clear Calendar Link",
+            "description": "Include a direct link to your booking calendar. The easier you make it to book, the more likely they are to do it. Remove all friction."
+          },
+          {
+            "icon": "clock",
+            "color": "indigo",
+            "title": "Add a One-Day Wait",
+            "description": "Wait approximately one day after the thank-you message before sending the rebooking invitation. This gives the customer breathing room without letting too much time pass."
+          }
+        ]
+      },
+      {
+        "title": "Calendar Setup Tips",
+        "icon": "settings",
+        "color": "teal",
+        "items": [
+          {
+            "icon": "search",
+            "color": "teal",
+            "title": "Find Your Calendar Settings",
+            "description": "Navigate to Settings > Calendars (or Calendars > Calendar Settings, depending on your account layout). Ensure your calendar is configured correctly."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Test the Booking Link",
+            "description": "Click your own calendar link and complete a test booking. Verify the confirmation email, reminder settings, and that the appointment appears correctly."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Avoid Multiple Links",
+            "description": "Offering multiple calendars or booking options creates decision paralysis. Provide one clear, direct path to book the specific next appointment."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The rebooking invitation is not a demand — it is an invitation to continue progress. Make it easy by providing one clear calendar link, explain the value of the next session, and time it about a day after your thank-you message. The goal is to remove all friction between the customer's intention and the booking confirmation.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Identify the Natural Next Appointment",
+        "description": "For your chosen appointment type, what is the logical next session? A follow-up call, review meeting, or implementation check-in?"
+      },
+      {
+        "number": 2,
+        "title": "Draft the Rebooking Message",
+        "description": "Write a message that explains the value of the next session and includes your direct calendar booking link. Keep it concise and action-oriented."
+      },
+      {
+        "number": 3,
+        "title": "Add to Workflow with One-Day Wait",
+        "description": "In your workflow, add a wait step of approximately one day after the thank-you message, then add the rebooking invitation email or SMS."
+      }
+    ],
+    "nextLessonTitle": "Ask for Introductions",
+    "quizzes": [
+      {
+        "question": "Why is rebooking typically easier than acquiring a new customer?",
+        "options": [
+          {
+            "option_text": "It requires no marketing budget",
+            "is_correct": false
+          },
+          {
+            "option_text": "Rebooking is always free for the customer",
+            "is_correct": false
+          },
+          {
+            "option_text": "The customer already knows, likes, and trusts you",
+            "is_correct": true
+          },
+          {
+            "option_text": "New customers are not valuable",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Rebooking an existing customer is easier because they already have a relationship with you. They understand your value and have experienced your service firsthand, removing the trust-building phase required with new prospects."
+      },
+      {
+        "question": "How long should you wait after the thank-you message before sending the rebooking invitation?",
+        "options": [
+          {
+            "option_text": "Immediately after the thank-you",
+            "is_correct": false
+          },
+          {
+            "option_text": "Approximately one day",
+            "is_correct": true
+          },
+          {
+            "option_text": "One week",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only if they do not rebook on their own",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Wait approximately one day after the thank-you message. This gives the customer breathing room without letting too much time pass. Immediate rebooking feels pushy; waiting too long lets the positive experience fade."
+      },
+      {
+        "question": "What should you include in the rebooking message?",
+        "options": [
+          {
+            "option_text": "One clear calendar link and the value of the next session",
+            "is_correct": true
+          },
+          {
+            "option_text": "Multiple calendar links for flexibility",
+            "is_correct": false
+          },
+          {
+            "option_text": "A discount code for first-time customers",
+            "is_correct": false
+          },
+          {
+            "option_text": "A request for payment upfront",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Include one clear calendar link to remove friction, and explain the value of the next session to give the customer a reason to return. Multiple links create decision paralysis; a single, direct path works best."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "slug": "ask-for-introductions",
+    "title": "Ask for Introductions",
+    "moduleWeek": 21,
+    "moduleName": "Turn One Booking into the Next Three",
+    "learningGoal": "Request referrals respectfully by timing the ask after a positive experience, making it easy to introduce someone, and protecting third-party privacy.",
+    "sections": [
+      {
+        "title": "The Art of the Referral Ask",
+        "icon": "users",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Timing Is Everything",
+            "description": "Only ask for referrals after a positive experience. If the appointment did not go well, asking for introductions will feel tone-deaf and damage trust."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Make It Easy",
+            "description": "The easier you make it to refer, the more likely it is to happen. Provide a simple way to share your information without requiring the customer to write a long explanation."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Respect Privacy",
+            "description": "Never ask customers to share another person's private contact details without permission. Instead, ask them to introduce you or share your information for the prospect to reach out."
+          }
+        ]
+      },
+      {
+        "title": "Crafting the Referral Message",
+        "icon": "mail",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Be Specific About Who Helps",
+            "description": "Instead of 'know anyone who needs this?', ask about specific types of people: 'Do you know a colleague who is also planning an event this year?'"
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Provide a Shareable Resource",
+            "description": "Include a link to your calendar, website, or a specific landing page the prospect can visit. This lets the customer forward something useful rather than just your contact info."
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "Express Gratitude Regardless",
+            "description": "Thank the customer for considering it, whether they make an introduction or not. Gratitude maintains the relationship even when referrals do not happen immediately."
+          }
+        ]
+      },
+      {
+        "title": "Workflow Timing and Setup",
+        "icon": "settings",
+        "color": "teal",
+        "items": [
+          {
+            "icon": "clock",
+            "color": "teal",
+            "title": "Add a Two-Day Wait",
+            "description": "Send the referral request approximately two days after the rebooking invitation. This spaces out your messages and gives the customer time to act on the rebooking first."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Set a Stop Condition",
+            "description": "If the customer rebooks from your previous message, you may want to adjust or skip the referral message. Use workflow conditions to check booking status."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Do Not Over-Ask",
+            "description": "One well-timed referral request is enough. Repeatedly asking for introductions feels desperate and can damage the customer relationship."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A referral request is not a demand — it is an invitation to help someone else. Ask respectfully, make it easy, and accept either outcome graciously. The best referral messages are specific about who would benefit, provide something shareable, and express gratitude regardless of the result. One well-timed ask beats repeated begging every time.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Identify Your Ideal Referral",
+        "description": "Who would your customer know that fits your target audience? Be specific: colleagues, peers, team members, friends with similar needs."
+      },
+      {
+        "number": 2,
+        "title": "Draft the Referral Message",
+        "description": "Write a message that asks about a specific type of person, includes a shareable link, and thanks them regardless of the outcome."
+      },
+      {
+        "number": 3,
+        "title": "Add to Workflow with Two-Day Wait",
+        "description": "Add a wait step of approximately two days after the rebooking invitation, then add your referral request. Consider adding a condition to skip if already rebooked."
+      }
+    ],
+    "nextLessonTitle": "Present the Next Useful Service",
+    "quizzes": [
+      {
+        "question": "When is the best time to ask for a referral?",
+        "options": [
+          {
+            "option_text": "After a positive experience when the customer is satisfied",
+            "is_correct": true
+          },
+          {
+            "option_text": "In every message you send",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only after the customer has booked three times",
+            "is_correct": false
+          },
+          {
+            "option_text": "Immediately at the start of the appointment",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Only ask for referrals after a positive experience. If the appointment did not go well, asking for introductions feels tone-deaf. The referral request should come when the customer is most satisfied with your service."
+      },
+      {
+        "question": "How should you handle third-party contact information in a referral request?",
+        "options": [
+          {
+            "option_text": "Ask the customer to provide the person's email and phone number",
+            "is_correct": false
+          },
+          {
+            "option_text": "Look up the person's contact details online and reach out directly",
+            "is_correct": false
+          },
+          {
+            "option_text": "Third-party privacy is not a concern for referrals",
+            "is_correct": false
+          },
+          {
+            "option_text": "Ask the customer to introduce you or share your information instead",
+            "is_correct": true
+          }
+        ],
+        "explanation": "Never ask customers to share another person's private contact details without permission. Instead, provide a shareable link or ask them to make an introduction. Respect for privacy builds trust."
+      },
+      {
+        "question": "How many referral requests should you include in your follow-up sequence?",
+        "options": [
+          {
+            "option_text": "One in every message for maximum results",
+            "is_correct": false
+          },
+          {
+            "option_text": "None — referrals should only happen organically",
+            "is_correct": false
+          },
+          {
+            "option_text": "One well-timed request is enough",
+            "is_correct": true
+          },
+          {
+            "option_text": "At least three to ensure they see it",
+            "is_correct": false
+          }
+        ],
+        "explanation": "One well-timed referral request is enough. Repeatedly asking for introductions feels desperate and can damage the customer relationship. A single, respectful ask at the right moment is far more effective."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "slug": "present-next-useful-service",
+    "title": "Present the Next Useful Service",
+    "moduleWeek": 21,
+    "moduleName": "Turn One Booking into the Next Three",
+    "learningGoal": "Offer a relevant service without pressuring the customer by choosing an appropriate next offering based on their goals and presenting it with clear value.",
+    "sections": [
+      {
+        "title": "Choosing the Right Next Service",
+        "icon": "lightbulb",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Build on the Current Relationship",
+            "description": "The next service should be a natural extension of what you just delivered. It should feel like the logical next step, not a random upsell."
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Match Their Goals",
+            "description": "Choose a package, workshop, retainer, or related service based on the customer's stated goals. The better the fit, the more likely they are to be interested."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Avoid Pressure",
+            "description": "Present the service as an option, not a requirement. The customer should feel invited, not pushed. Pressure destroys trust and reduces the chance of any outcome."
+          }
+        ]
+      },
+      {
+        "title": "Crafting the Next-Offer Message",
+        "icon": "mail",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Connect to Their Goals",
+            "description": "Reference the goals they shared in the appointment. Show how this service directly addresses those goals and builds on what you already discussed."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Provide Clear Next Steps",
+            "description": "Include a direct link to learn more, book a consultation, or purchase. Make the path from interest to action as simple as possible."
+          },
+          {
+            "icon": "clock",
+            "color": "indigo",
+            "title": "Add a Two-Day Wait",
+            "description": "Send the next-offer message approximately two days after the referral request. This spaces out your messages and gives each one room to breathe."
+          }
+        ]
+      },
+      {
+        "title": "Examples by Business Type",
+        "icon": "users",
+        "color": "teal",
+        "items": [
+          {
+            "icon": "star",
+            "color": "teal",
+            "title": "Speaker",
+            "description": "After a keynote planning call, offer a workshop or half-day training programme that complements the keynote."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Coach",
+            "description": "After a discovery session, offer a coaching package that includes multiple sessions and email support between calls."
+          },
+          {
+            "icon": "lightbulb",
+            "color": "amber",
+            "title": "Consultant",
+            "description": "After an assessment, offer implementation support or a roadmap project that turns your recommendations into action."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The next-service offer is not about squeezing more money from a customer — it is about continuing to help them achieve their goals. When the service is genuinely relevant and presented as an invitation rather than a demand, customers appreciate the suggestion. Match the offer to their goals, make it easy to act, and accept their decision gracefully.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Identify Your Next Service",
+        "description": "What service naturally follows your chosen appointment type? A package, workshop, retainer, or advanced offering?"
+      },
+      {
+        "number": 2,
+        "title": "Draft the Next-Offer Message",
+        "description": "Write a message that connects the offer to the customer's goals, explains the value, and includes a clear call to action."
+      },
+      {
+        "number": 3,
+        "title": "Add to Workflow with Two-Day Wait",
+        "description": "Add a wait step of approximately two days after the referral request, then add your next-offer message."
+      }
+    ],
+    "nextLessonTitle": "Stop, Test, and Improve",
+    "quizzes": [
+      {
+        "question": "What should the next-service offer feel like to the customer?",
+        "options": [
+          {
+            "option_text": "A condition for receiving future appointments",
+            "is_correct": false
+          },
+          {
+            "option_text": "An invitation to continue making progress on their goals",
+            "is_correct": true
+          },
+          {
+            "option_text": "A limited-time discount they cannot refuse",
+            "is_correct": false
+          },
+          {
+            "option_text": "A mandatory upgrade they must purchase",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The next-service offer should feel like an invitation to continue progress, not a demand. When the service is genuinely relevant and presented respectfully, customers appreciate the suggestion rather than feeling pressured."
+      },
+      {
+        "question": "How should you choose which service to offer?",
+        "options": [
+          {
+            "option_text": "Always offer the most expensive service",
+            "is_correct": false
+          },
+          {
+            "option_text": "Match the service to the customer's stated goals",
+            "is_correct": true
+          },
+          {
+            "option_text": "Offer whatever service you are promoting this month",
+            "is_correct": false
+          },
+          {
+            "option_text": "Rotate through services randomly",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Choose a package, workshop, retainer, or related service based on the customer's stated goals. The better the fit between their needs and your offer, the more likely they are to be genuinely interested."
+      },
+      {
+        "question": "How long should you wait after the referral request before sending the next-offer message?",
+        "options": [
+          {
+            "option_text": "Only if they do not respond to the referral request",
+            "is_correct": false
+          },
+          {
+            "option_text": "One week",
+            "is_correct": false
+          },
+          {
+            "option_text": "Immediately after the referral request",
+            "is_correct": false
+          },
+          {
+            "option_text": "Approximately two days",
+            "is_correct": true
+          }
+        ],
+        "explanation": "Wait approximately two days after the referral request. This spaces out your messages and gives each one room to breathe. Sending messages too close together feels overwhelming and reduces engagement."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "slug": "stop-test-and-improve",
+    "title": "Stop, Test, and Improve",
+    "moduleWeek": 21,
+    "moduleName": "Turn One Booking into the Next Three",
+    "learningGoal": "Set safeguards to avoid irrelevant messages, test the complete workflow with a sample contact, and establish a review process to track real results over time.",
+    "sections": [
+      {
+        "title": "Why Stop Conditions Matter",
+        "icon": "warning",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Avoid Irrelevant Messages",
+            "description": "Without stop conditions, your workflow might send rebooking invitations to customers who already rebooked, or referral requests to customers who already referred someone."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Respect Customer Actions",
+            "description": "If a customer takes the action you requested, they should not receive further messages asking for the same thing. Stop conditions prevent this redundancy."
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "Protect the Relationship",
+            "description": "Sending messages that do not apply to the customer's current situation feels careless. Stop conditions show you are paying attention to their actions."
+          }
+        ]
+      },
+      {
+        "title": "Essential Stop Conditions",
+        "icon": "settings",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Reply Stop",
+            "description": "If the customer replies to any message, pause or stop the sequence. A reply indicates engagement and may require a human response rather than automated follow-up."
+          },
+          {
+            "icon": "calendar",
+            "color": "teal",
+            "title": "Rebooking Stop",
+            "description": "If the customer books another appointment, stop the rebooking invitation and adjust remaining messages accordingly."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Goal Completion Stop",
+            "description": "If the customer completes the goal of the sequence (rebooks, refers, or purchases), stop or transition to a different nurture sequence."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Opt-Out Stop",
+            "description": "If the customer unsubscribes or opts out, immediately stop all promotional messages. Honour their preferences without exception."
+          }
+        ]
+      },
+      {
+        "title": "Testing with a Sample Contact",
+        "icon": "users",
+        "color": "teal",
+        "items": [
+          {
+            "icon": "search",
+            "color": "teal",
+            "title": "Create a Test Contact",
+            "description": "Use a test contact with your own email or a dedicated test address. This lets you experience the sequence exactly as a real customer would."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Verify Timing and Content",
+            "description": "Check that messages arrive at the right intervals, contain the correct personalization, and include working links. Look for formatting issues or broken merge fields."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Test All Links",
+            "description": "Click every link in every message. Verify calendar links work, landing pages load, and unsubscribe options function correctly."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Check Stop Conditions",
+            "description": "Trigger each stop condition and verify the sequence behaves as expected. Test replies, rebookings, and opt-outs to ensure they halt the workflow."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A workflow without stop conditions is a liability. It wastes your credibility and annoys customers who already took action. Testing with a sample contact is not optional — it is essential. Check timing, content, links, and every stop condition before going live. Then set a 30-day review to measure real results and refine your approach.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Add Stop Conditions to Your Workflow",
+        "description": "Add reply, rebooking, goal-completion, and opt-out stops to your workflow. Verify each condition is configured correctly."
+      },
+      {
+        "number": 2,
+        "title": "Test with a Sample Contact",
+        "description": "Create a test contact and run through the entire sequence. Verify timing, content, personalization, links, and all stop conditions."
+      },
+      {
+        "number": 3,
+        "title": "Complete Workbook Missions 4–6",
+        "description": "Document your test results, note any issues found, and record your fixes. Set a 30-day review date to measure actual rebooking, referral, and next-service rates."
+      }
+    ],
+    "nextLessonTitle": "Module 22: Advanced Follow-Up Strategies",
+    "quizzes": [
+      {
+        "question": "Why are stop conditions essential in a follow-up workflow?",
+        "options": [
+          {
+            "option_text": "They reduce the total number of messages sent",
+            "is_correct": false
+          },
+          {
+            "option_text": "They prevent irrelevant messages after the customer takes action",
+            "is_correct": true
+          },
+          {
+            "option_text": "They are required by law in all countries",
+            "is_correct": false
+          },
+          {
+            "option_text": "They make the workflow run faster",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Stop conditions prevent redundant or irrelevant messages. If a customer already rebooked, they should not receive another rebooking invitation. Stop conditions respect customer actions and protect the relationship."
+      },
+      {
+        "question": "What should you do when a customer opts out or unsubscribes?",
+        "options": [
+          {
+            "option_text": "Immediately stop all promotional messages and honour their preferences",
+            "is_correct": true
+          },
+          {
+            "option_text": "Continue sending messages on a different channel",
+            "is_correct": false
+          },
+          {
+            "option_text": "Send one final message asking why they unsubscribed",
+            "is_correct": false
+          },
+          {
+            "option_text": "Add them to a different workflow instead",
+            "is_correct": false
+          }
+        ],
+        "explanation": "When a customer opts out, immediately stop all promotional messages and honour their preferences without exception. Continuing to message someone who unsubscribed damages trust and may violate regulations."
+      },
+      {
+        "question": "Why should you test the workflow with a sample contact before going live?",
+        "options": [
+          {
+            "option_text": "Sample contacts are required by GoHighLevel",
+            "is_correct": false
+          },
+          {
+            "option_text": "Testing is only needed for complex workflows",
+            "is_correct": false
+          },
+          {
+            "option_text": "Testing is a waste of time for simple sequences",
+            "is_correct": false
+          },
+          {
+            "option_text": "To verify triggers, timing, content, links, and stop conditions",
+            "is_correct": true
+          }
+        ],
+        "explanation": "Testing with a sample contact lets you experience the sequence as a customer would. You can verify timing, check content and personalization, test all links, and confirm stop conditions work before real contacts enter the workflow."
+      }
+    ]
+  }
+]
