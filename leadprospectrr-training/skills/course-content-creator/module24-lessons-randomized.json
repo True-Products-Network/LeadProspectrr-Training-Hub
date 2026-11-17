@@ -1,0 +1,1548 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "m24-find-result-worth-teaching",
+    "title": "Find a Result Worth Teaching",
+    "moduleWeek": 24,
+    "moduleName": "Create and Sell Your First Training Programme",
+    "learningGoal": "Pick a narrow problem and audience with a result they care about, and write a one-sentence learner promise.",
+    "sections": [
+      {
+        "title": "Why Most First Courses Fail",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Topic Is Too Large",
+            "description": "Do not sell Everything About Marketing. Instead sell Set Up Your First Referral Follow-Up in One Hour. Narrow focus wins."
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "The Formula",
+            "description": "After this programme, [audience] will be able to [specific action or finished item]."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Look for Patterns",
+            "description": "What questions do clients ask repeatedly? What do you explain more than once? What can people practice without you there?"
+          }
+        ]
+      },
+      {
+        "title": "Define Your Audience and Result",
+        "icon": "users",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "users",
+            "color": "indigo",
+            "title": "Audience",
+            "description": "Define precisely enough that they recognize themselves. Not small business owners but consultants who struggle to follow up after speaking events."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Problem",
+            "description": "Choose one that appears often and can be answered in a short session."
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Result",
+            "description": "Write one result you could demonstrate or check at the end. Something concrete, not feel more successful."
+          }
+        ]
+      },
+      {
+        "title": "Examples by Business",
+        "icon": "star",
+        "color": "teal",
+        "items": [
+          {
+            "icon": "star",
+            "color": "teal",
+            "title": "Speaker",
+            "description": "Create a QR-code follow-up idea after a talk."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Coach",
+            "description": "Complete a 90-day goal plan."
+          },
+          {
+            "icon": "lightbulb",
+            "color": "amber",
+            "title": "Consultant",
+            "description": "Map a single client process."
+          },
+          {
+            "icon": "users",
+            "color": "indigo",
+            "title": "Trainer",
+            "description": "Design one productive team meeting."
+          },
+          {
+            "icon": "settings",
+            "color": "blue",
+            "title": "Service Provider",
+            "description": "Use a preventive-care checklist."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A first course fails when the topic is too broad. Pick one narrow problem, one specific audience, and one demonstrable result. If you cannot write the learner promise in one sentence, your course is too large.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "List Three Questions",
+        "description": "Write down three customer questions you hear often."
+      },
+      {
+        "number": 2,
+        "title": "Choose One Problem",
+        "description": "Select the question that appears most often and can be answered in a short session."
+      },
+      {
+        "number": 3,
+        "title": "Write the Promise",
+        "description": "Complete: After this programme, [audience] will be able to [specific result]."
+      }
+    ],
+    "nextLessonTitle": "Turn the Result into Three Lessons",
+    "quizzes": [
+      {
+        "question": "Why do most first courses fail at the planning stage?",
+        "options": [
+          {
+            "option_text": "They are not marketed well enough",
+            "is_correct": false
+          },
+          {
+            "option_text": "The price is too high",
+            "is_correct": false
+          },
+          {
+            "option_text": "They do not have enough video content",
+            "is_correct": false
+          },
+          {
+            "option_text": "The topic is too large and unfocused",
+            "is_correct": true
+          }
+        ],
+        "explanation": "Most first courses fail because the topic is too broad. A narrow, specific result attracts committed learners who can actually achieve the promised outcome."
+      },
+      {
+        "question": "What should the learner promise look like?",
+        "options": [
+          {
+            "option_text": "A specific, demonstrable result in one sentence",
+            "is_correct": true
+          },
+          {
+            "option_text": "A guarantee of income or business growth",
+            "is_correct": false
+          },
+          {
+            "option_text": "A broad statement like feel more successful",
+            "is_correct": false
+          },
+          {
+            "option_text": "A list of everything covered in the course",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The learner promise should be specific and demonstrable. After this programme, [audience] will be able to [specific action]. Broad claims cannot be checked or measured."
+      },
+      {
+        "question": "Where should you look for course ideas?",
+        "options": [
+          {
+            "option_text": "Questions clients ask repeatedly and work you explain more than once",
+            "is_correct": true
+          },
+          {
+            "option_text": "The most complex service you offer",
+            "is_correct": false
+          },
+          {
+            "option_text": "Competitor websites and market research",
+            "is_correct": false
+          },
+          {
+            "option_text": "Trending topics on social media",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The best course ideas come from your existing work. What do clients ask repeatedly? What do you explain more than once? These are proven problems with known demand."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "m24-turn-result-into-three-lessons",
+    "title": "Turn the Result into Three Lessons",
+    "moduleWeek": 24,
+    "moduleName": "Create and Sell Your First Training Programme",
+    "learningGoal": "Draft a course structure using the staircase method: understand, practice, finish.",
+    "sections": [
+      {
+        "title": "The Staircase Method",
+        "icon": "settings",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Lesson 1: Understand",
+            "description": "Explain the problem and give one quick win. The learner sees why this matters and gets an early success."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Lesson 2: Practice",
+            "description": "Show the method; the learner tries it. This is where the core skill is built."
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "Lesson 3: Finish",
+            "description": "Complete the output, review it, and decide what comes next. The learner leaves with something finished."
+          }
+        ]
+      },
+      {
+        "title": "What Each Lesson Needs",
+        "icon": "checklist",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Goal",
+            "description": "One sentence stating what the learner will be able to do after this lesson."
+          },
+          {
+            "icon": "info",
+            "color": "cyan",
+            "title": "Teaching Point",
+            "description": "One core idea or method explained clearly with a real example."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Small Action",
+            "description": "One task the learner completes during or immediately after the lesson."
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "Done When Test",
+            "description": "A clear description of what successful completion looks like."
+          }
+        ]
+      },
+      {
+        "title": "Action-Based Titles",
+        "icon": "document",
+        "color": "teal",
+        "items": [
+          {
+            "icon": "check",
+            "color": "teal",
+            "title": "Good Examples",
+            "description": "Draft Your Promise, Map Your Process, Build Your Checklist."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Avoid",
+            "description": "Introduction to Strategy, Overview of Marketing, Understanding the Basics. These are vague and do not promise a result."
+          },
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Mini-Course Length",
+            "description": "Three lessons is enough. No need to invent more sections to look impressive."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The staircase method creates momentum. Lesson 1 gives understanding and a quick win. Lesson 2 builds the core skill through practice. Lesson 3 finishes with a completed output. Each lesson needs a goal, one teaching point, a small action, and a done-when test.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Write Three Titles",
+        "description": "Create action-based titles for each lesson using the staircase method."
+      },
+      {
+        "number": 2,
+        "title": "Describe Learner Activity",
+        "description": "Write one sentence describing what the learner does in each lesson."
+      },
+      {
+        "number": 3,
+        "title": "Add a Practice Tool",
+        "description": "Create one worksheet or checklist that helps learners finish the activities."
+      }
+    ],
+    "nextLessonTitle": "Build One Useful Lesson Before You Record a Library",
+    "quizzes": [
+      {
+        "question": "What are the three jobs of Lessons 1, 2, and 3 in the staircase model?",
+        "options": [
+          {
+            "option_text": "Watch, read, discuss",
+            "is_correct": false
+          },
+          {
+            "option_text": "Introduce, explain, conclude",
+            "is_correct": false
+          },
+          {
+            "option_text": "Understand the problem, practise the method, finish the output",
+            "is_correct": true
+          },
+          {
+            "option_text": "Plan, execute, review",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The staircase method uses Lesson 1 for understanding, Lesson 2 for practice, and Lesson 3 for finishing. This creates momentum and ensures learners leave with a completed result."
+      },
+      {
+        "question": "How many lessons should a mini-course have?",
+        "options": [
+          {
+            "option_text": "At least ten to look comprehensive",
+            "is_correct": false
+          },
+          {
+            "option_text": "As many as the topic requires",
+            "is_correct": false
+          },
+          {
+            "option_text": "It depends on the price point",
+            "is_correct": false
+          },
+          {
+            "option_text": "Three lessons is enough",
+            "is_correct": true
+          }
+        ],
+        "explanation": "A mini-course can have three lessons. No need to invent more sections to look impressive. Three well-designed lessons that deliver a specific result outperform ten unfocused lessons."
+      },
+      {
+        "question": "Which lesson title is better?",
+        "options": [
+          {
+            "option_text": "Overview of Marketing",
+            "is_correct": false
+          },
+          {
+            "option_text": "Draft Your Promise",
+            "is_correct": true
+          },
+          {
+            "option_text": "Introduction to Strategy",
+            "is_correct": false
+          },
+          {
+            "option_text": "Understanding the Basics",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Draft Your Promise is action-based and tells the learner exactly what they will do. Introduction to Strategy is vague and does not promise a result. Action-based titles attract committed learners."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "slug": "m24-build-one-useful-lesson",
+    "title": "Build One Useful Lesson Before You Record a Library",
+    "moduleWeek": 24,
+    "moduleName": "Create and Sell Your First Training Programme",
+    "learningGoal": "Prepare the first lesson and one student tool using a practical four-part sequence.",
+    "sections": [
+      {
+        "title": "The Four-Part Lesson Sequence",
+        "icon": "settings",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "Promise (30 seconds)",
+            "description": "Say what the lesson helps them do. This sets expectations and creates motivation."
+          },
+          {
+            "icon": "info",
+            "color": "cyan",
+            "title": "Teach (3-5 minutes)",
+            "description": "Explain one idea with a real example. One idea, not five. Real example, not theory."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Practice (3-5 minutes)",
+            "description": "Give the learner one task. They must do something, not just watch or read."
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "Check (30 seconds)",
+            "description": "Describe what successful completion looks like. The learner should know when they have succeeded."
+          }
+        ]
+      },
+      {
+        "title": "Content Formats",
+        "icon": "document",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "video",
+            "color": "purple",
+            "title": "Video",
+            "description": "Good for demonstrations and personal connection. Does not need professional production — clarity beats polish."
+          },
+          {
+            "icon": "document",
+            "color": "indigo",
+            "title": "Text and PDF",
+            "description": "Good for reference material and step-by-step instructions. Always accessible and searchable."
+          },
+          {
+            "icon": "image",
+            "color": "cyan",
+            "title": "Slides",
+            "description": "Good for structured explanations. Keep text minimal and visuals clear."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Combination",
+            "description": "Mix formats based on what serves the learner best. A short video plus a downloadable worksheet often works well."
+          }
+        ]
+      },
+      {
+        "title": "Important Checks",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Device Accessibility",
+            "description": "Ensure content is readable and accessible on the learner's device. Test on mobile."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Working Links",
+            "description": "Check all links and file formats. Broken links destroy trust."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Future Releases",
+            "description": "If parts will be released later, clearly say this before the customer pays and tell them when those parts arrive."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A practical first lesson can be short. Promise, teach, practice, check — four parts, each with a clear job. Do not grade camera quality; grade clarity and the learner's practical result. One usable lesson with a worksheet beats a library of unfinished content.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Write the Promise",
+        "description": "Write what Lesson 1 helps the learner do, in one sentence."
+      },
+      {
+        "number": 2,
+        "title": "Create Teaching Content",
+        "description": "Write three teaching bullet points with one real example."
+      },
+      {
+        "number": 3,
+        "title": "Design the Exercise",
+        "description": "Create one task the learner completes and a description of what success looks like."
+      },
+      {
+        "number": 4,
+        "title": "Build the Worksheet",
+        "description": "Create a worksheet headline and instructions for using it."
+      }
+    ],
+    "nextLessonTitle": "Create Your Course in LeadProspectrr",
+    "quizzes": [
+      {
+        "question": "What is the correct order of the four-part lesson sequence?",
+        "options": [
+          {
+            "option_text": "Teach, practise, promise, check",
+            "is_correct": false
+          },
+          {
+            "option_text": "Promise, teach, practise, check",
+            "is_correct": true
+          },
+          {
+            "option_text": "Check, promise, teach, practise",
+            "is_correct": false
+          },
+          {
+            "option_text": "Practise, teach, check, promise",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The correct order is Promise, Teach, Practice, Check. Promise sets expectations, Teach explains the idea, Practice gives a task, and Check defines success."
+      },
+      {
+        "question": "What matters more than camera quality?",
+        "options": [
+          {
+            "option_text": "High-resolution video",
+            "is_correct": false
+          },
+          {
+            "option_text": "Clarity and the learner's practical result",
+            "is_correct": true
+          },
+          {
+            "option_text": "Professional lighting and background",
+            "is_correct": false
+          },
+          {
+            "option_text": "Multiple camera angles",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Clarity and the learner's practical result matter more than production quality. A clear phone video that helps someone achieve a result beats a polished studio video that confuses them."
+      },
+      {
+        "question": "What should you do if parts of the programme will be released later?",
+        "options": [
+          {
+            "option_text": "Release all content at once to avoid confusion",
+            "is_correct": false
+          },
+          {
+            "option_text": "Hide this information until after purchase",
+            "is_correct": false
+          },
+          {
+            "option_text": "Promise everything is available immediately",
+            "is_correct": false
+          },
+          {
+            "option_text": "Clearly state this before the customer pays and tell them when parts arrive",
+            "is_correct": true
+          }
+        ],
+        "explanation": "If parts will be released later, clearly state this before the customer pays. Transparency builds trust; surprises about missing content create refunds and complaints."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "slug": "m24-create-course-leadprospectrr",
+    "title": "Create Your Course in LeadProspectrr",
+    "moduleWeek": 24,
+    "moduleName": "Create and Sell Your First Training Programme",
+    "learningGoal": "Create a course shell, add three lessons, upload content, and preview from the learner's perspective.",
+    "sections": [
+      {
+        "title": "Creating the Course Shell",
+        "icon": "settings",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "search",
+            "color": "blue",
+            "title": "Menu Path",
+            "description": "Memberships → Courses → Products → Create Product → Start from Scratch"
+          },
+          {
+            "icon": "tag",
+            "color": "indigo",
+            "title": "Course Title",
+            "description": "Use a result-focused name. What will the learner be able to do?"
+          },
+          {
+            "icon": "info",
+            "color": "cyan",
+            "title": "Description",
+            "description": "Clear, result-focused description that tells potential buyers exactly what they will achieve."
+          },
+          {
+            "icon": "image",
+            "color": "purple",
+            "title": "Thumbnail",
+            "description": "Optional but recommended. A simple, clear image that represents the outcome."
+          }
+        ]
+      },
+      {
+        "title": "Adding Lessons",
+        "icon": "document",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Course Editor",
+            "description": "Open the course editor and add your three lessons using the course-map controls."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Lesson 1 Content",
+            "description": "Put your prepared Lesson 1 content into its lesson. Attach the worksheet or checklist."
+          },
+          {
+            "icon": "settings",
+            "color": "indigo",
+            "title": "Save and Publish",
+            "description": "Save and publish content where appropriate. Preview from the learner's perspective before going live."
+          }
+        ]
+      },
+      {
+        "title": "Troubleshooting",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Cannot See Courses",
+            "description": "Verify account/sub-account and user permissions. Courses may not be enabled on all accounts."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "File Upload Fails",
+            "description": "Check file size and supported format. Large videos may need compression."
+          },
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Course vs Payment Product",
+            "description": "Do not confuse the learning course product with a payment product in the Payments menu. They are separate systems."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The course shell is the container; the lessons are the content. Create a clear title and description, add three action-oriented lessons, upload your prepared content, and always preview from the learner's perspective before publishing. A course that looks good to you but confusing to learners will not sell.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create the Shell",
+        "description": "Navigate to Memberships → Courses → Products and create a new course with result-focused title and description."
+      },
+      {
+        "number": 2,
+        "title": "Add Three Lessons",
+        "description": "Use the course editor to add your three action-oriented lessons."
+      },
+      {
+        "number": 3,
+        "title": "Upload Content",
+        "description": "Put Lesson 1 content and worksheet into the first lesson. Save and publish."
+      },
+      {
+        "number": 4,
+        "title": "Preview",
+        "description": "Preview the course from the learner's perspective. Check navigation, content display, and mobile experience."
+      }
+    ],
+    "nextLessonTitle": "Package a Clear Offer and Price",
+    "quizzes": [
+      {
+        "question": "Where do you create a course in LeadProspectrr?",
+        "options": [
+          {
+            "option_text": "Memberships → Courses → Products",
+            "is_correct": true
+          },
+          {
+            "option_text": "Automation → Workflows",
+            "is_correct": false
+          },
+          {
+            "option_text": "Sites → Funnels",
+            "is_correct": false
+          },
+          {
+            "option_text": "Payments → Products",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Courses are created in Memberships → Courses → Products. This is the learning content system, separate from payment products or marketing funnels."
+      },
+      {
+        "question": "What should the course title focus on?",
+        "options": [
+          {
+            "option_text": "The result the learner will achieve",
+            "is_correct": true
+          },
+          {
+            "option_text": "The price and discount available",
+            "is_correct": false
+          },
+          {
+            "option_text": "The number of lessons and hours of content",
+            "is_correct": false
+          },
+          {
+            "option_text": "The instructor's name and credentials",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The course title should focus on the result. People buy outcomes, not information. Set Up Your First Referral Follow-Up beats Marketing Mastery every time."
+      },
+      {
+        "question": "What should you do before publishing the course?",
+        "options": [
+          {
+            "option_text": "Preview from the learner's perspective",
+            "is_correct": true
+          },
+          {
+            "option_text": "Set the highest possible price",
+            "is_correct": false
+          },
+          {
+            "option_text": "Create marketing materials first",
+            "is_correct": false
+          },
+          {
+            "option_text": "Add as many lessons as possible",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Always preview from the learner's perspective before publishing. Check navigation, content display, and mobile experience. A course that looks good to you but confuses learners will not sell."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "slug": "m24-package-clear-offer-price",
+    "title": "Package a Clear Offer and Price",
+    "moduleWeek": 24,
+    "moduleName": "Create and Sell Your First Training Programme",
+    "learningGoal": "Explain what a buyer gets and create a saleable course offer with clear pricing.",
+    "sections": [
+      {
+        "title": "Offer Ingredients",
+        "icon": "settings",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "Result-Focused Name",
+            "description": "The offer name should match the course title and promise a clear outcome."
+          },
+          {
+            "icon": "users",
+            "color": "indigo",
+            "title": "Who It Is For",
+            "description": "Clearly state the audience and the problem this solves."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "What Is Included",
+            "description": "Three lessons and the practical tool. Be specific about deliverables."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Delivery Information",
+            "description": "How they access it, when content is available, and what format it is in."
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "Price and Terms",
+            "description": "One price and honest terms including refunds and taxes where applicable."
+          }
+        ]
+      },
+      {
+        "title": "Standard LeadProspectrr Path",
+        "icon": "link",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "search",
+            "color": "purple",
+            "title": "Menu Path",
+            "description": "Memberships → Courses → Offers → Create Offer"
+          },
+          {
+            "icon": "tag",
+            "color": "indigo",
+            "title": "Name and Select",
+            "description": "Name the offer and select the correct course."
+          },
+          {
+            "icon": "settings",
+            "color": "cyan",
+            "title": "Configure Pricing",
+            "description": "Set up free, one-time, or recurring pricing options."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Publish",
+            "description": "Change from Draft to Published and copy the offer link."
+          },
+          {
+            "icon": "eye",
+            "color": "teal",
+            "title": "Review",
+            "description": "Review in a private browser window before sharing publicly."
+          }
+        ]
+      },
+      {
+        "title": "Pricing Notes",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Example Prices",
+            "description": "$27, $47, or $97 are examples for a small course, not assumed market prices."
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Value Test",
+            "description": "Ask whether the outcome is valuable enough and whether people in your audience will pay."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Choose One Route",
+            "description": "Do not mix offer, payment-product, and direct course checkout paths. Choose one working route."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "An offer is a promise with a price. It must clearly state who it is for, what problem it solves, what is included, how it is delivered, and what it costs. Choose one checkout route — Offers, Payment Product, or Direct Pricing — and make sure it works end-to-end before sharing.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create the Offer",
+        "description": "Navigate to Memberships → Courses → Offers and create a new offer for your course."
+      },
+      {
+        "number": 2,
+        "title": "Set Pricing",
+        "description": "Configure one-time pricing. Choose a price that reflects the value of the outcome."
+      },
+      {
+        "number": 3,
+        "title": "Publish and Test",
+        "description": "Change status to Published, copy the offer link, and review in a private browser window."
+      }
+    ],
+    "nextLessonTitle": "Verify Payments and Student Access",
+    "quizzes": [
+      {
+        "question": "What is the difference between a course and an offer?",
+        "options": [
+          {
+            "option_text": "The course is free; the offer is paid",
+            "is_correct": false
+          },
+          {
+            "option_text": "They are the same thing with different names",
+            "is_correct": false
+          },
+          {
+            "option_text": "The course is the lesson content; the offer packages it for purchase or access",
+            "is_correct": true
+          },
+          {
+            "option_text": "The offer contains more lessons than the course",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The course is the lesson content and classroom. The offer packages it for purchase or access. One course can have multiple offers (free, paid, subscription)."
+      },
+      {
+        "question": "What status must a membership offer have before you share it for sale?",
+        "options": [
+          {
+            "option_text": "Draft",
+            "is_correct": false
+          },
+          {
+            "option_text": "Pending Review",
+            "is_correct": false
+          },
+          {
+            "option_text": "Archived",
+            "is_correct": false
+          },
+          {
+            "option_text": "Published",
+            "is_correct": true
+          }
+        ],
+        "explanation": "The offer must be Published before sharing it for sale. Draft offers are not accessible to buyers. Always verify the status before sharing links."
+      },
+      {
+        "question": "What should you do when choosing a checkout route?",
+        "options": [
+          {
+            "option_text": "Let the customer choose their preferred route",
+            "is_correct": false
+          },
+          {
+            "option_text": "Set up all three routes for maximum flexibility",
+            "is_correct": false
+          },
+          {
+            "option_text": "Always use the most complex route available",
+            "is_correct": false
+          },
+          {
+            "option_text": "Choose one working route and avoid mixing paths",
+            "is_correct": true
+          }
+        ],
+        "explanation": "Choose one working checkout route: Offers, Payment Product, or Direct Pricing. Mixing paths can create duplicate enrollments and confusion. Test one route thoroughly."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "slug": "m24-verify-payments-student-access",
+    "title": "Verify Payments and Student Access",
+    "moduleWeek": 24,
+    "moduleName": "Create and Sell Your First Training Programme",
+    "learningGoal": "Understand the complete buyer journey from payment to Lesson 1 and verify every step works.",
+    "sections": [
+      {
+        "title": "The Buyer Journey",
+        "icon": "link",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "search",
+            "color": "blue",
+            "title": "Visit Link",
+            "description": "Buyer clicks your offer link and reviews the course and price."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Pay",
+            "description": "Buyer completes payment through the connected provider."
+          },
+          {
+            "icon": "mail",
+            "color": "teal",
+            "title": "Receive Access",
+            "description": "Buyer receives course access automatically or through a grant workflow."
+          },
+          {
+            "icon": "settings",
+            "color": "indigo",
+            "title": "Sign In",
+            "description": "Buyer signs in to the learner portal or account."
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Open Lesson 1",
+            "description": "Buyer opens Lesson 1 and begins learning."
+          }
+        ]
+      },
+      {
+        "title": "Verification Steps",
+        "icon": "checklist",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Payment Provider",
+            "description": "Confirm a supported payment provider is connected under the account's payment integrations."
+          },
+          {
+            "icon": "eye",
+            "color": "teal",
+            "title": "Checkout Display",
+            "description": "Check that the offer/checkout shows the right price, currency, taxes, and course name."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Published Connection",
+            "description": "Confirm the checkout is connected to the published offer or course."
+          },
+          {
+            "icon": "settings",
+            "color": "indigo",
+            "title": "Test Purchase",
+            "description": "Run the provider's approved test flow with an email you can check. Never test-charge a real card without consent."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Access Verification",
+            "description": "In the test learner account, confirm the intended course appears and Lesson 1 works."
+          }
+        ]
+      },
+      {
+        "title": "Important Warnings",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Form Is Not Payment",
+            "description": "A form submission alone is not proof of payment. Do not grant access based on form submission unless payment is verified separately."
+          },
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Automatic Access",
+            "description": "Properly connected course-offer purchases can grant access automatically. Do not create a second grant workflow unless genuinely required."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Record Results",
+            "description": "Record what happened and repair broken steps before sharing publicly. Document any issues and fixes."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A course that cannot be bought and accessed is not a business. Verify every step: payment provider connected, checkout displays correctly, test purchase succeeds, access is granted, and Lesson 1 opens. Test with a fresh email, not your admin account. Document and fix issues before inviting real buyers.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Verify Payment Provider",
+        "description": "Confirm a supported payment provider is connected and configured correctly."
+      },
+      {
+        "number": 2,
+        "title": "Run Test Purchase",
+        "description": "Use the provider's approved test process. Complete payment with a test email you can check."
+      },
+      {
+        "number": 3,
+        "title": "Check Access",
+        "description": "Sign in as the test learner. Confirm the course appears and Lesson 1 opens correctly."
+      },
+      {
+        "number": 4,
+        "title": "Document and Fix",
+        "description": "Record any issues found and repair them before sharing the offer publicly."
+      }
+    ],
+    "nextLessonTitle": "Welcome the Customer and Guide Lesson 1",
+    "quizzes": [
+      {
+        "question": "What should you check immediately after an approved test purchase?",
+        "options": [
+          {
+            "option_text": "Your bank account balance",
+            "is_correct": false
+          },
+          {
+            "option_text": "That the correct learner has access to the correct course and can open Lesson 1",
+            "is_correct": true
+          },
+          {
+            "option_text": "Social media engagement on the offer post",
+            "is_correct": false
+          },
+          {
+            "option_text": "The number of website visitors",
+            "is_correct": false
+          }
+        ],
+        "explanation": "After a test purchase, verify that the correct learner account has access to the correct course and can open Lesson 1. This confirms the entire buyer journey works end-to-end."
+      },
+      {
+        "question": "Why should you not grant paid course access based on a form submission alone?",
+        "options": [
+          {
+            "option_text": "Forms cannot capture email addresses",
+            "is_correct": false
+          },
+          {
+            "option_text": "A form submission does not confirm successful payment",
+            "is_correct": true
+          },
+          {
+            "option_text": "Payment providers reject form-based access",
+            "is_correct": false
+          },
+          {
+            "option_text": "Forms are too slow to process",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A form submission alone is not proof of payment. Someone could submit the form without paying. Only grant access after verified successful payment, using Course Grant Offer if needed."
+      },
+      {
+        "question": "When should you create a second grant workflow?",
+        "options": [
+          {
+            "option_text": "For every course to be safe",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only if a separate external checkout or sales route genuinely requires one",
+            "is_correct": true
+          },
+          {
+            "option_text": "For all paid courses automatically",
+            "is_correct": false
+          },
+          {
+            "option_text": "When the first workflow fails",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Do not create a second grant workflow unless genuinely required. Properly connected course-offer purchases grant access automatically. Extra workflows create complexity and potential conflicts."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "slug": "m24-welcome-customer-guide-lesson-1",
+    "title": "Welcome the Customer and Guide Lesson 1",
+    "moduleWeek": 24,
+    "moduleName": "Create and Sell Your First Training Programme",
+    "learningGoal": "Write and automate a welcome message that tells learners exactly what to do next.",
+    "sections": [
+      {
+        "title": "What a Welcome Message Must Answer",
+        "icon": "mail",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "What Did I Buy?",
+            "description": "Remind them of the course name and the main result they are working toward."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "How Do I Sign In?",
+            "description": "Provide verified login steps or a direct access link. Do not invent a generic portal URL."
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Where Do I Start?",
+            "description": "Point directly to Lesson 1. Remove all friction between welcome and action."
+          },
+          {
+            "icon": "document",
+            "color": "indigo",
+            "title": "Where Is the Worksheet?",
+            "description": "Tell them where to find the downloadable resource and how to use it."
+          },
+          {
+            "icon": "chat",
+            "color": "teal",
+            "title": "Who Do I Contact?",
+            "description": "Provide a clear support method for questions or technical issues."
+          }
+        ]
+      },
+      {
+        "title": "Building the Welcome Workflow",
+        "icon": "settings",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "search",
+            "color": "purple",
+            "title": "Menu Path",
+            "description": "Automation → Workflows → Create Workflow"
+          },
+          {
+            "icon": "target",
+            "color": "indigo",
+            "title": "Trigger",
+            "description": "Product Access Granted with the correct product filter. This fires when the learner gets course access."
+          },
+          {
+            "icon": "mail",
+            "color": "teal",
+            "title": "Send Email",
+            "description": "Add Send Email action with the welcome message. Optionally add a CRM tag or internal alert."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Test",
+            "description": "Publish/activate the workflow and test with a fresh student record. Verify the email arrives and links work."
+          }
+        ]
+      },
+      {
+        "title": "Important Checks",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Existing Notifications",
+            "description": "For some enrollment methods, standard account or portal notifications may already go out. Test actual behavior before adding an extra login email."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "No Resend",
+            "description": "Check messages do not resend unnecessarily when a person already has access. Use conditions to prevent duplicate welcomes."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Verified Links Only",
+            "description": "Use verified links or the confirmed learner-login procedure. Do not guess or invent URLs."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A welcome message is a map, not just a greeting. It must tell the learner exactly what they bought, how to access it, where to start, where the resources are, and who to contact for help. A confused learner who does not know where to start is a learner who will refund.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Draft the Welcome Email",
+        "description": "Write a welcome message that answers all five questions: what, how, where, resources, and help."
+      },
+      {
+        "number": 2,
+        "title": "Create the Workflow",
+        "description": "Build a workflow with Product Access Granted trigger and Send Email action."
+      },
+      {
+        "number": 3,
+        "title": "Test Thoroughly",
+        "description": "Test with a fresh student record. Verify the email arrives, links work, and no duplicates send."
+      }
+    ],
+    "nextLessonTitle": "Invite Your First Buyers and Improve from Feedback",
+    "quizzes": [
+      {
+        "question": "What five things should a welcome email tell the student?",
+        "options": [
+          {
+            "option_text": "Module outline, lesson count, video duration, certificate details, community link",
+            "is_correct": false
+          },
+          {
+            "option_text": "Instructor bio, company history, testimonials, refund policy, terms of service",
+            "is_correct": false
+          },
+          {
+            "option_text": "Price, discount, expiry, bonus, guarantee",
+            "is_correct": false
+          },
+          {
+            "option_text": "Course purchased, login steps, where to start, worksheet location, support contact",
+            "is_correct": true
+          }
+        ],
+        "explanation": "A welcome email should answer: What did I buy? How do I sign in? Where do I start? Where is the worksheet? Who do I contact for help? These five items remove friction and get learners started immediately."
+      },
+      {
+        "question": "What trigger should start the welcome workflow?",
+        "options": [
+          {
+            "option_text": "Form Submitted",
+            "is_correct": false
+          },
+          {
+            "option_text": "Product Access Granted with the correct product filter",
+            "is_correct": true
+          },
+          {
+            "option_text": "Contact Created",
+            "is_correct": false
+          },
+          {
+            "option_text": "Appointment Booked",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Use Product Access Granted with the correct product filter. This fires when the learner actually gets course access, not when they register, submit a form, or create an account."
+      },
+      {
+        "question": "Why should you test actual behavior before adding a welcome email?",
+        "options": [
+          {
+            "option_text": "Welcome emails always conflict with payment confirmations",
+            "is_correct": false
+          },
+          {
+            "option_text": "Welcome emails are optional and rarely needed",
+            "is_correct": false
+          },
+          {
+            "option_text": "Testing is only required for paid courses",
+            "is_correct": false
+          },
+          {
+            "option_text": "Some enrollment methods already send standard notifications",
+            "is_correct": true
+          }
+        ],
+        "explanation": "Some enrollment methods send standard account or portal notifications automatically. Test actual behavior to avoid duplicate emails and ensure your welcome adds value rather than noise."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 8,
+    "slug": "m24-invite-first-buyers-improve",
+    "title": "Invite Your First Buyers and Improve from Feedback",
+    "moduleWeek": 24,
+    "moduleName": "Create and Sell Your First Training Programme",
+    "learningGoal": "Create a small, ethical launch plan and establish a feedback loop for continuous improvement.",
+    "sections": [
+      {
+        "title": "The 7-Day First-Sale Plan",
+        "icon": "calendar",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "Day 1: Promise",
+            "description": "Finish the promise and course description. Make sure the outcome is crystal clear."
+          },
+          {
+            "icon": "document",
+            "color": "indigo",
+            "title": "Day 2: Outlines",
+            "description": "Finish your three lesson outlines and the first lesson."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Day 3: Upload",
+            "description": "Upload the first version and worksheet to the course."
+          },
+          {
+            "icon": "settings",
+            "color": "purple",
+            "title": "Day 4: Payment",
+            "description": "Configure and test payment and access end-to-end."
+          },
+          {
+            "icon": "mail",
+            "color": "teal",
+            "title": "Day 5: Welcome",
+            "description": "Test welcome email and learner journey with a fresh test contact."
+          },
+          {
+            "icon": "users",
+            "color": "cyan",
+            "title": "Day 6: Invite",
+            "description": "Invite a small relevant group with a clear description and honest availability."
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "Day 7: Improve",
+            "description": "Collect questions, identify the next improvement, and update the material."
+          }
+        ]
+      },
+      {
+        "title": "First Invitation Template",
+        "icon": "chat",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "The Ask",
+            "description": "Do you want to [desired outcome]?"
+          },
+          {
+            "icon": "info",
+            "color": "cyan",
+            "title": "The Offer",
+            "description": "I have put together a short training programme that helps [audience] [result]."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "The Details",
+            "description": "It includes three lessons and a practical [tool]. Here is what is covered: [brief detail]."
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "The Price",
+            "description": "It costs [price]."
+          },
+          {
+            "icon": "link",
+            "color": "indigo",
+            "title": "The Link",
+            "description": "You can see the details here: [tested checkout link]."
+          }
+        ]
+      },
+      {
+        "title": "Measuring Success",
+        "icon": "target",
+        "color": "teal",
+        "items": [
+          {
+            "icon": "info",
+            "color": "teal",
+            "title": "Interest",
+            "description": "How many people clicked or asked questions about the offer?"
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Conversion",
+            "description": "How many invites led to purchases?"
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Completion",
+            "description": "How many buyers opened Lesson 1 and completed the course?"
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Feedback",
+            "description": "What questions, refund requests, or support issues arose?"
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "No Income Guarantee",
+            "description": "Measuring these indicators is more useful than guessing. Data tells you what to improve."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A course that sits unpublished is not a business. Create a 7-day launch plan, invite a small relevant group, and measure real indicators: interest, conversion, completion, and feedback. No income is guaranteed, but data tells you exactly what to improve. A course that evolves based on learner feedback will outperform a perfect course that never launches.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create Your 7-Day Plan",
+        "description": "Map out each day from promise to first invitation. Set realistic deadlines."
+      },
+      {
+        "number": 2,
+        "title": "Draft Your Invitation",
+        "description": "Write a simple, honest invitation using the template. No hype, no guarantees."
+      },
+      {
+        "number": 3,
+        "title": "Identify Your First Group",
+        "description": "Choose 5-10 relevant people who have the problem your course solves."
+      },
+      {
+        "number": 4,
+        "title": "Set Up Feedback Collection",
+        "description": "Plan how you will collect questions, track completion, and identify improvements."
+      }
+    ],
+    "nextLessonTitle": "Module 25: Scaling Your Training Business",
+    "quizzes": [
+      {
+        "question": "What is the purpose of the 7-day first-sale plan?",
+        "options": [
+          {
+            "option_text": "To guarantee a specific income target",
+            "is_correct": false
+          },
+          {
+            "option_text": "To compete with established course platforms",
+            "is_correct": false
+          },
+          {
+            "option_text": "To create a structured launch and feedback process",
+            "is_correct": true
+          },
+          {
+            "option_text": "To avoid testing the course before selling",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The 7-day plan creates structure for launching and gathering feedback. It is not an income guarantee. The goal is to get real learners, measure results, and improve based on data."
+      },
+      {
+        "question": "What are two useful early indicators besides revenue?",
+        "options": [
+          {
+            "option_text": "Course length and production quality",
+            "is_correct": false
+          },
+          {
+            "option_text": "Number of video views and email subscribers",
+            "is_correct": false
+          },
+          {
+            "option_text": "Checkout conversion and Lesson 1 completion rate",
+            "is_correct": true
+          },
+          {
+            "option_text": "Website traffic and social media followers",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Useful early indicators include checkout conversion, course sign-in rate, Lesson 1 completion, student questions, refunds, and learner feedback. These tell you whether the course works, not just whether it sells."
+      },
+      {
+        "question": "What should your first invitation include?",
+        "options": [
+          {
+            "option_text": "A detailed comparison with competitor courses",
+            "is_correct": false
+          },
+          {
+            "option_text": "A clear description of the outcome, audience, contents, price, and tested link",
+            "is_correct": true
+          },
+          {
+            "option_text": "Guaranteed results and income projections",
+            "is_correct": false
+          },
+          {
+            "option_text": "Urgency tactics and limited-time pressure",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Your first invitation should be honest and clear: the outcome, who it is for, what is included, the price, and a tested checkout link. No hype, no guarantees, no pressure. Ethical marketing builds long-term trust."
+      }
+    ]
+  }
+]
