@@ -1,0 +1,1667 @@
+[
+  {
+    "lessonNumber": 1,
+    "slug": "m22-start-with-business-conversation",
+    "title": "Start with the Business Conversation",
+    "moduleWeek": 22,
+    "moduleName": "Turn a Speaking Engagement into New Business",
+    "learningGoal": "Identify what happens after somebody has heard you speak and define one natural next action that turns audience attention into a follow-up opportunity.",
+    "sections": [
+      {
+        "title": "The Problem with Applause",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Applause Is Not a Business Model",
+            "description": "A room full of applause is valuable, but it does not provide a way to follow up. Without a system, even the best talk becomes a one-time event with no lasting business impact."
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "One Natural Next Action",
+            "description": "Every talk needs one clear next step. Not five options — one simple, relevant action that moves an interested attendee toward a conversation."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "The Chain",
+            "description": "Talk → useful gift → form submission → email delivery → optional appointment. Each link depends on the one before it."
+          }
+        ]
+      },
+      {
+        "title": "Define Your Event Goal",
+        "icon": "target",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "users",
+            "color": "indigo",
+            "title": "Audience",
+            "description": "Who is in the room? Be specific about their role, industry, and the problem they share."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Pressing Issue",
+            "description": "What problem did your talk address? The resource and follow-up must connect directly to this same issue."
+          },
+          {
+            "icon": "calendar",
+            "color": "teal",
+            "title": "Next Conversation",
+            "description": "What 15- or 20-minute call would be genuinely useful to someone who found your talk valuable?"
+          }
+        ]
+      },
+      {
+        "title": "Examples by Business",
+        "icon": "star",
+        "color": "teal",
+        "items": [
+          {
+            "icon": "star",
+            "color": "teal",
+            "title": "Speaker",
+            "description": "Leadership Reset Checklist after a leadership keynote; invite attendees to a workplace leadership discussion."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Coach",
+            "description": "7 Questions to Find Your Next Goal after a coaching workshop; invite to an introductory session."
+          },
+          {
+            "icon": "lightbulb",
+            "color": "amber",
+            "title": "Consultant",
+            "description": "Process Waste Scorecard after a business systems talk; invite to a discovery call."
+          },
+          {
+            "icon": "users",
+            "color": "indigo",
+            "title": "Trainer",
+            "description": "Team Training Needs Checklist after a learning session; invite to a needs review."
+          },
+          {
+            "icon": "settings",
+            "color": "blue",
+            "title": "Service Business",
+            "description": "Maintenance Risk Checklist after a customer education presentation; invite to an assessment."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A talk without a follow-up system is a missed opportunity. Define one natural next action before you design anything else. The resource, form, and follow-up must all serve the same audience and the same problem your talk addressed.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Choose Your Talk",
+        "description": "Write your talk title and the audience in your workbook."
+      },
+      {
+        "number": 2,
+        "title": "Define the Problem",
+        "description": "Identify the pressing issue your talk addresses and the one 15- or 20-minute call worth offering."
+      },
+      {
+        "number": 3,
+        "title": "Complete Workbook Page 2",
+        "description": "Map the talk title, audience, problem, and next conversation. Verify they all connect to the same theme."
+      }
+    ],
+    "nextLessonTitle": "Create the Free Resource",
+    "quizzes": [
+      {
+        "question": "What is the main problem with relying on applause alone after a talk?",
+        "options": [
+          {
+            "option_text": "Applause makes the speaker overconfident",
+            "is_correct": false
+          },
+          {
+            "option_text": "Applause does not provide a way to follow up with interested attendees",
+            "is_correct": true
+          },
+          {
+            "option_text": "Applause is too loud and distracting",
+            "is_correct": false
+          },
+          {
+            "option_text": "Audiences rarely applaud anymore",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Applause feels good but creates no business outcome. Without a follow-up system, even the best talk becomes a one-time event with no lasting impact."
+      },
+      {
+        "question": "How many natural next actions should each talk have?",
+        "options": [
+          {
+            "option_text": "None — let the audience decide what to do",
+            "is_correct": false
+          },
+          {
+            "option_text": "As many as possible to increase chances",
+            "is_correct": false
+          },
+          {
+            "option_text": "At least three options for flexibility",
+            "is_correct": false
+          },
+          {
+            "option_text": "One clear, relevant next action",
+            "is_correct": true
+          }
+        ],
+        "explanation": "Every talk needs one clear next step. Multiple options create decision paralysis. One simple, relevant action moves interested attendees toward a conversation."
+      },
+      {
+        "question": "What must the resource and follow-up offer connect to?",
+        "options": [
+          {
+            "option_text": "The speaker's most expensive service",
+            "is_correct": false
+          },
+          {
+            "option_text": "The same audience problem the talk addressed",
+            "is_correct": true
+          },
+          {
+            "option_text": "The event organizer's priorities",
+            "is_correct": false
+          },
+          {
+            "option_text": "A different topic to show range",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The resource and follow-up must connect directly to the problem your talk addressed. Relevance makes the gift useful and creates a natural next conversation."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "slug": "m22-create-the-free-resource",
+    "title": "Create the Free Resource",
+    "moduleWeek": 22,
+    "moduleName": "Turn a Speaking Engagement into New Business",
+    "learningGoal": "Produce a small, relevant lead magnet that the audience can use within 10 minutes and that creates a natural next conversation.",
+    "sections": [
+      {
+        "title": "What Makes a Good Resource",
+        "icon": "lightbulb",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Quick to Use",
+            "description": "The audience should be able to use the gift within 10 minutes. If it requires hours of work, it will sit in their downloads folder unused."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Practical Formats",
+            "description": "Good choices: checklist, scorecard, worksheet, cheat sheet, template, mini-guide, or diagnostic. These are immediately actionable."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Not a Brochure",
+            "description": "Avoid making the resource a product brochure. The goal is genuine usefulness, not a disguised sales pitch."
+          }
+        ]
+      },
+      {
+        "title": "Resource Structure",
+        "icon": "document",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Title",
+            "description": "Clear and specific. Example: 5-Minute Leadership Reset Checklist."
+          },
+          {
+            "icon": "info",
+            "color": "cyan",
+            "title": "One-Sentence Promise",
+            "description": "What will they be able to do after using it? Example: Identify the three habits most damaging your team's focus."
+          },
+          {
+            "icon": "checklist",
+            "color": "teal",
+            "title": "3-5 Steps",
+            "description": "Enough to be useful, not so many that it overwhelms. Each step should be actionable."
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "Useful Example",
+            "description": "Show what good looks like. One completed example helps people start immediately."
+          },
+          {
+            "icon": "link",
+            "color": "indigo",
+            "title": "Next Action",
+            "description": "What should they do after completing the resource? This bridges naturally to your follow-up offer."
+          }
+        ]
+      },
+      {
+        "title": "Build and Store",
+        "icon": "settings",
+        "color": "teal",
+        "items": [
+          {
+            "icon": "document",
+            "color": "teal",
+            "title": "Export as PDF",
+            "description": "PDF is the most reliable format for sharing. It looks professional and works on any device."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Stable Download Location",
+            "description": "Store the PDF at a URL that will not change. Use your website, a file hosting service, or a document management system."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Test the Download",
+            "description": "Download the file yourself on both desktop and mobile. Verify it opens correctly and looks as intended."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The best lead magnets are not the most comprehensive — they are the most immediately useful. A one-page checklist that someone uses today is worth more than a 50-page guide they never open. Build for action, not for impressiveness.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Choose Your Format",
+        "description": "Select checklist, scorecard, worksheet, cheat sheet, template, or mini-guide based on your talk content."
+      },
+      {
+        "number": 2,
+        "title": "Draft the Resource",
+        "description": "Write title, promise, 3-5 steps, one example, and next action. Keep it to one page if possible."
+      },
+      {
+        "number": 3,
+        "title": "Export and Test",
+        "description": "Export as PDF, upload to a stable location, and test the download on desktop and mobile. Record the URL in your workbook."
+      }
+    ],
+    "nextLessonTitle": "Build the LeadProspectrr Form",
+    "quizzes": [
+      {
+        "question": "How long should it take the audience to use the free resource?",
+        "options": [
+          {
+            "option_text": "A full day of focused work",
+            "is_correct": false
+          },
+          {
+            "option_text": "Several hours to get full value",
+            "is_correct": false
+          },
+          {
+            "option_text": "Within 10 minutes",
+            "is_correct": true
+          },
+          {
+            "option_text": "It depends on the complexity of the topic",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The audience should be able to use the gift within 10 minutes. If it requires hours of work, it will sit unused. Quick wins create positive associations with your brand."
+      },
+      {
+        "question": "Which of these is NOT a good format for a speaking-event lead magnet?",
+        "options": [
+          {
+            "option_text": "A product brochure disguised as a guide",
+            "is_correct": true
+          },
+          {
+            "option_text": "A one-page checklist",
+            "is_correct": false
+          },
+          {
+            "option_text": "A simple scorecard",
+            "is_correct": false
+          },
+          {
+            "option_text": "A worksheet with 5 prompts",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Avoid making the resource a product brochure. The goal is genuine usefulness, not a disguised sales pitch. Brochures feel promotional and reduce trust."
+      },
+      {
+        "question": "What should you include at the end of the resource?",
+        "options": [
+          {
+            "option_text": "A lengthy biography of the speaker",
+            "is_correct": false
+          },
+          {
+            "option_text": "A request to share on social media",
+            "is_correct": false
+          },
+          {
+            "option_text": "A detailed price list of all services",
+            "is_correct": false
+          },
+          {
+            "option_text": "A clear next action that bridges to your follow-up offer",
+            "is_correct": true
+          }
+        ],
+        "explanation": "The resource should end with a clear next action. This bridges naturally to your follow-up offer and makes the path from resource to conversation obvious."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "slug": "m22-build-the-capture-form",
+    "title": "Build the Capture Form",
+    "moduleWeek": 22,
+    "moduleName": "Turn a Speaking Engagement into New Business",
+    "learningGoal": "Create a simple form that collects only necessary details, explains the purpose of collection, and includes appropriate privacy and consent handling.",
+    "sections": [
+      {
+        "title": "Form Design Principles",
+        "icon": "settings",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Minimal Fields",
+            "description": "Only collect what you need. First Name and Email are usually enough. Every extra field reduces completion rates."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Privacy Notice",
+            "description": "Explain why you are collecting details and how you will use them. Link to your privacy policy. This builds trust and may be legally required."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Separate Consent",
+            "description": "When follow-up requires marketing consent, make it a separate optional choice. Do not make SMS consent compulsory in return for a resource."
+          }
+        ]
+      },
+      {
+        "title": "Building the Form",
+        "icon": "target",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "search",
+            "color": "purple",
+            "title": "Menu Path",
+            "description": "Sites → Forms → + Create New Form"
+          },
+          {
+            "icon": "tag",
+            "color": "indigo",
+            "title": "Form Name",
+            "description": "Use a clear naming convention: M22 | [Event] | Resource Request. This makes submissions easy to find later."
+          },
+          {
+            "icon": "users",
+            "color": "teal",
+            "title": "Required Fields",
+            "description": "First Name and Email as required. Consider one optional dropdown asking their biggest challenge for segmentation."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Test Submission",
+            "description": "Submit using your own test email. Confirm it appears in Sites → Forms → Submissions and in Contacts."
+          }
+        ]
+      },
+      {
+        "title": "What to Avoid",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Too Many Fields",
+            "description": "Phone, company, job title, budget — each extra field reduces completions. Only ask for what you truly need."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Compulsory Marketing Consent",
+            "description": "Do not require marketing consent to receive the resource. The resource is the exchange for contact details; marketing consent is separate."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Unclear Purpose",
+            "description": "Vague forms feel suspicious. Clearly state what they will receive and what happens next."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A form is a transaction, not a survey. Every field you add reduces completions. Collect only what you need, be transparent about why, and keep marketing consent separate. A simple form with high completion beats a detailed form with low submission.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create the Form",
+        "description": "Navigate to Sites → Forms and create a new form with First Name and Email as required fields."
+      },
+      {
+        "number": 2,
+        "title": "Add Privacy Text",
+        "description": "Include a brief explanation of how you will use their details and link to your privacy notice."
+      },
+      {
+        "number": 3,
+        "title": "Test and Verify",
+        "description": "Submit using your own test email. Confirm the submission appears in both Forms → Submissions and Contacts."
+      }
+    ],
+    "nextLessonTitle": "Create the Funnel and Thank-You Page",
+    "quizzes": [
+      {
+        "question": "Which two fields are usually enough for a simple resource request form?",
+        "options": [
+          {
+            "option_text": "First Name, Last Name, Email, Phone, Company",
+            "is_correct": false
+          },
+          {
+            "option_text": "First Name and Email",
+            "is_correct": true
+          },
+          {
+            "option_text": "Email only — names are not needed",
+            "is_correct": false
+          },
+          {
+            "option_text": "Full address and postal code",
+            "is_correct": false
+          }
+        ],
+        "explanation": "First Name and Email are usually enough. Every extra field reduces completion rates. Only collect what you truly need for follow-up."
+      },
+      {
+        "question": "Should marketing consent be required to receive the free resource?",
+        "options": [
+          {
+            "option_text": "Yes, consent is required for all form submissions",
+            "is_correct": false
+          },
+          {
+            "option_text": "It depends on the event size",
+            "is_correct": false
+          },
+          {
+            "option_text": "No, marketing consent should be a separate optional choice",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only if the resource is valuable",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Do not make marketing consent compulsory in return for a resource. The resource is the exchange for contact details; marketing consent is a separate optional choice."
+      },
+      {
+        "question": "Where should you check that test submissions appear?",
+        "options": [
+          {
+            "option_text": "In the Analytics dashboard only",
+            "is_correct": false
+          },
+          {
+            "option_text": "Both Forms → Submissions and Contacts",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only in the Forms section",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only in your email inbox",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Test submissions should appear in both Forms → Submissions and Contacts. This confirms the form is connected properly and creates a contact record for workflow triggers."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "slug": "m22-create-funnel-thank-you-page",
+    "title": "Create the Funnel and Thank-You Page",
+    "moduleWeek": 22,
+    "moduleName": "Turn a Speaking Engagement into New Business",
+    "learningGoal": "Build a mobile-friendly landing page and thank-you experience that makes requesting the resource simple and sets up the next action.",
+    "sections": [
+      {
+        "title": "The Two-Step Funnel",
+        "icon": "link",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "Capture Page",
+            "description": "Benefit headline, description of the free gift, short form, reassuring privacy line, and a clear button: Send me the checklist."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Thank-You Page",
+            "description": "Confirm the request is on its way, provide a direct resource link if appropriate, and offer a separate optional booking button."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Mobile First",
+            "description": "Most QR scans happen on phones. Test every element on mobile before publishing."
+          }
+        ]
+      },
+      {
+        "title": "Building the Pages",
+        "icon": "settings",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "search",
+            "color": "purple",
+            "title": "Menu Path",
+            "description": "Sites → Funnels"
+          },
+          {
+            "icon": "tag",
+            "color": "indigo",
+            "title": "Funnel Name",
+            "description": "Use a clear name: M22 | [Event] | Speaker Gift. This keeps your funnels organized."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Public URL",
+            "description": "Publish and copy the public landing-page URL. Do not point the QR at an editor or preview URL."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "HTTPS Test",
+            "description": "The public page must load over HTTPS. Test it outside the editor on both desktop and mobile."
+          }
+        ]
+      },
+      {
+        "title": "Page Elements",
+        "icon": "document",
+        "color": "teal",
+        "items": [
+          {
+            "icon": "target",
+            "color": "teal",
+            "title": "Headline",
+            "description": "Lead with the benefit, not the speaker name. Example: Get the 5-Minute Leadership Reset Checklist."
+          },
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Description",
+            "description": "Two sentences about what they will receive and why it matters. Keep it brief."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Form",
+            "description": "Embed the form you built in Lesson 3. Keep it visible without scrolling on mobile."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Privacy Line",
+            "description": "Reassure them: We respect your privacy. Unsubscribe anytime. Link to your full policy."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The funnel is where interest becomes action. A mobile-friendly page with a clear benefit, simple form, and reassuring privacy line will outperform a beautiful but confusing page every time. Test on your phone before you show it to an audience.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create the Funnel",
+        "description": "Navigate to Sites → Funnels and create a two-step funnel with capture and thank-you pages."
+      },
+      {
+        "number": 2,
+        "title": "Build the Capture Page",
+        "description": "Add benefit headline, description, embedded form, privacy line, and clear call-to-action button."
+      },
+      {
+        "number": 3,
+        "title": "Build the Thank-You Page",
+        "description": "Confirm the request, provide resource link, and offer an optional booking button."
+      },
+      {
+        "number": 4,
+        "title": "Test on Mobile",
+        "description": "Open the published URL on your phone and submit the form. Verify the experience works smoothly."
+      }
+    ],
+    "nextLessonTitle": "Generate a QR Code",
+    "quizzes": [
+      {
+        "question": "How many steps should the funnel have?",
+        "options": [
+          {
+            "option_text": "One page with everything on it",
+            "is_correct": false
+          },
+          {
+            "option_text": "Two steps: capture page and thank-you page",
+            "is_correct": true
+          },
+          {
+            "option_text": "It depends on the event size",
+            "is_correct": false
+          },
+          {
+            "option_text": "At least five pages for completeness",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A two-step funnel works best: capture page for the form, thank-you page for confirmation and next steps. More steps create friction; one page can feel cluttered."
+      },
+      {
+        "question": "What type of URL should you use for the QR code destination?",
+        "options": [
+          {
+            "option_text": "A private internal link",
+            "is_correct": false
+          },
+          {
+            "option_text": "The editor or preview URL",
+            "is_correct": false
+          },
+          {
+            "option_text": "A link to your main website homepage",
+            "is_correct": false
+          },
+          {
+            "option_text": "The published public URL over HTTPS",
+            "is_correct": true
+          }
+        ],
+        "explanation": "Always use the published public URL over HTTPS. Editor or preview URLs will not work for attendees. The public URL is what they will actually scan and visit."
+      },
+      {
+        "question": "Why should you test the funnel on a mobile phone?",
+        "options": [
+          {
+            "option_text": "Only iPhone users scan QR codes",
+            "is_correct": false
+          },
+          {
+            "option_text": "Phones have better screens than projectors",
+            "is_correct": false
+          },
+          {
+            "option_text": "Most QR scans happen on phones, so mobile experience is critical",
+            "is_correct": true
+          },
+          {
+            "option_text": "Mobile testing is optional if desktop looks good",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Most QR scans happen on phones. If the mobile experience is poor — form fields too small, buttons hard to tap, page slow to load — attendees will abandon before submitting."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "slug": "m22-generate-qr-code",
+    "title": "Generate a QR Code",
+    "moduleWeek": 22,
+    "moduleName": "Turn a Speaking Engagement into New Business",
+    "learningGoal": "Create a dynamic QR code that points to the published funnel page and is scannable from a projected slide.",
+    "sections": [
+      {
+        "title": "Why QR Codes Work",
+        "icon": "link",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Instant Access",
+            "description": "A QR code removes the friction of typing a URL. One scan opens the page immediately."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Dynamic Codes",
+            "description": "Native HighLevel QR codes are dynamic. You can change the destination later without generating a new code."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Not a Lead Capture",
+            "description": "A QR scan opens a URL. It does not collect personal details or establish consent until the visitor submits the form."
+          }
+        ]
+      },
+      {
+        "title": "Creating the QR Code",
+        "icon": "settings",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "search",
+            "color": "purple",
+            "title": "Menu Path",
+            "description": "Sites → QR Codes → Create QR Code"
+          },
+          {
+            "icon": "tag",
+            "color": "indigo",
+            "title": "Name",
+            "description": "Use a clear name: M22 | [Event] | Resource QR. This keeps your QR codes organized."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Destination",
+            "description": "Choose Funnel or Website as the destination type. Select the published funnel page or paste its URL."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "High Contrast",
+            "description": "Customize with high contrast for better scanning. Dark code on light background works best."
+          }
+        ]
+      },
+      {
+        "title": "Testing and Fallbacks",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "search",
+            "color": "amber",
+            "title": "Multi-Device Test",
+            "description": "Scan with two different phones (or a phone plus a separate device). Verify the link points to the correct page."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Short URL Fallback",
+            "description": "Keep a visible short URL as a fallback for anyone who cannot or prefers not to scan."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Projector Test",
+            "description": "Test the QR at projected-slide size, not just close to the screen. It must work from the back of the room."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A QR code is a bridge, not a destination. It must be large enough, high contrast enough, and point to a live URL that works on mobile. Test from the back of the room, not just from your desk. A broken QR code wastes the entire talk.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create the QR Code",
+        "description": "Navigate to Sites → QR Codes and create a new code pointing to your published funnel page."
+      },
+      {
+        "number": 2,
+        "title": "Customize and Download",
+        "description": "Use high contrast, download PNG or SVG, and save with a clear filename."
+      },
+      {
+        "number": 3,
+        "title": "Test Thoroughly",
+        "description": "Scan with multiple devices, verify the destination, and test from a distance similar to the back of a room."
+      }
+    ],
+    "nextLessonTitle": "Make the QR Slide and Spoken Invitation",
+    "quizzes": [
+      {
+        "question": "What does a QR code do on its own?",
+        "options": [
+          {
+            "option_text": "It sends an email to the scanner automatically",
+            "is_correct": false
+          },
+          {
+            "option_text": "It opens a destination URL; it does not collect data or establish consent",
+            "is_correct": true
+          },
+          {
+            "option_text": "It automatically collects contact details from anyone who scans it",
+            "is_correct": false
+          },
+          {
+            "option_text": "It books an appointment in the speaker's calendar",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A QR code only opens a URL. It does not collect personal details or establish consent until the visitor submits a form. Do not confuse scans with leads."
+      },
+      {
+        "question": "Why are dynamic QR codes better than static ones?",
+        "options": [
+          {
+            "option_text": "They are required by law",
+            "is_correct": false
+          },
+          {
+            "option_text": "They look more professional",
+            "is_correct": false
+          },
+          {
+            "option_text": "They scan faster",
+            "is_correct": false
+          },
+          {
+            "option_text": "You can change the destination later without generating a new code",
+            "is_correct": true
+          }
+        ],
+        "explanation": "Dynamic QR codes let you change the destination URL later. If you update your funnel or run the same talk at multiple events, you can adjust the destination without redesigning your slide."
+      },
+      {
+        "question": "How should you test the QR code?",
+        "options": [
+          {
+            "option_text": "Scan it once from your desk",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only test on the newest iPhone",
+            "is_correct": false
+          },
+          {
+            "option_text": "Testing is not necessary for HighLevel QR codes",
+            "is_correct": false
+          },
+          {
+            "option_text": "Test with multiple devices and from a distance like the back of a room",
+            "is_correct": true
+          }
+        ],
+        "explanation": "Test with multiple devices and from a realistic distance. A QR that works when held close to the screen may fail when projected at the back of a large room."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "slug": "m22-make-qr-slide-spoken-invitation",
+    "title": "Make the QR Slide and Spoken Invitation",
+    "moduleWeek": 22,
+    "moduleName": "Turn a Speaking Engagement into New Business",
+    "learningGoal": "Design a presentation slide that presents the QR offer clearly and practice a spoken invitation that feels natural, not salesy.",
+    "sections": [
+      {
+        "title": "Slide Design",
+        "icon": "image",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "Big QR Code",
+            "description": "The QR should be the largest element on the slide. Leave enough quiet space around it for reliable scanning."
+          },
+          {
+            "icon": "info",
+            "color": "cyan",
+            "title": "Benefit Headline",
+            "description": "One line stating what they get. Example: Get the 5-Minute Leadership Checklist."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Short Description",
+            "description": "One sentence about what it does. Keep it visible and readable from the back row."
+          },
+          {
+            "icon": "link",
+            "color": "indigo",
+            "title": "Short URL",
+            "description": "Include a visible short URL as a fallback for anyone who cannot scan."
+          }
+        ]
+      },
+      {
+        "title": "The Spoken Invitation",
+        "icon": "chat",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Natural Timing",
+            "description": "Show the QR slide while discussing the next useful step, and again at Q&A or the end. Do not interrupt your talk to pitch."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Suggested Script",
+            "description": "We have covered a lot. I have put the key actions into a short worksheet you can use today. Scan this QR code and I will send it to your inbox. If you would like to talk through your situation, there is also an optional booking link afterward."
+          },
+          {
+            "icon": "clock",
+            "color": "indigo",
+            "title": "Under 20 Seconds",
+            "description": "Practice until you can deliver the invitation in under 20 seconds. Brevity respects the audience's time."
+          }
+        ]
+      },
+      {
+        "title": "What to Avoid",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Too Early",
+            "description": "Do not show the QR in the first five minutes. The audience needs to trust your content before they want your resource."
+          },
+          {
+            "icon": "warning",
+            "color": "rose",
+            "title": "Too Pushy",
+            "description": "Avoid language that pressures. Let the QR be an invitation, not a demand."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Cluttered Slide",
+            "description": "Too much text, too many colors, or competing elements make the QR hard to find and scan."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The QR slide is not an advertisement — it is a service. Present it as a natural next step for people who found your talk valuable. A clear slide plus a brief, practiced invitation will outperform a flashy slide plus an awkward pitch every time.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Design the Slide",
+        "description": "Create a slide with large QR code, benefit headline, short description, and visible short URL."
+      },
+      {
+        "number": 2,
+        "title": "Write Your Script",
+        "description": "Draft a 15-20 second spoken invitation that feels natural and explains the benefit."
+      },
+      {
+        "number": 3,
+        "title": "Practice Aloud",
+        "description": "Practice the sentence aloud with the QR visible on screen. Time yourself and refine until it feels natural."
+      }
+    ],
+    "nextLessonTitle": "Build the Follow-Up Workflow",
+    "quizzes": [
+      {
+        "question": "When should you show the QR slide during your talk?",
+        "options": [
+          {
+            "option_text": "Continuously throughout the entire presentation",
+            "is_correct": false
+          },
+          {
+            "option_text": "In the first five minutes to capture attention",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only after everyone has applauded",
+            "is_correct": false
+          },
+          {
+            "option_text": "While discussing the next useful step, and again at Q&A or the end",
+            "is_correct": true
+          }
+        ],
+        "explanation": "Show the QR while discussing the next useful step, and again at Q&A or the end. The audience needs to trust your content before they want your resource. Too early feels pushy; too late misses engaged attendees."
+      },
+      {
+        "question": "How long should the spoken invitation take?",
+        "options": [
+          {
+            "option_text": "At least two minutes to explain all benefits",
+            "is_correct": false
+          },
+          {
+            "option_text": "It depends on the audience size",
+            "is_correct": false
+          },
+          {
+            "option_text": "As long as needed to cover every feature",
+            "is_correct": false
+          },
+          {
+            "option_text": "Under 20 seconds",
+            "is_correct": true
+          }
+        ],
+        "explanation": "Practice until you can deliver the invitation in under 20 seconds. Brevity respects the audience's time and prevents the invitation from feeling like a sales pitch."
+      },
+      {
+        "question": "What should be the largest element on the QR slide?",
+        "options": [
+          {
+            "option_text": "The speaker's logo and branding",
+            "is_correct": false
+          },
+          {
+            "option_text": "The QR code itself",
+            "is_correct": true
+          },
+          {
+            "option_text": "Testimonials from previous attendees",
+            "is_correct": false
+          },
+          {
+            "option_text": "A detailed description of the resource",
+            "is_correct": false
+          }
+        ],
+        "explanation": "The QR code should be the largest element. It must be scannable from the back of the room. Branding and descriptions are secondary to the code's visibility and function."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "slug": "m22-build-follow-up-workflow",
+    "title": "Build the Follow-Up Workflow",
+    "moduleWeek": 22,
+    "moduleName": "Turn a Speaking Engagement into New Business",
+    "learningGoal": "Create an automated workflow that delivers the promised resource, tags the lead, and provides appropriate next steps without being pushy.",
+    "sections": [
+      {
+        "title": "Workflow Structure",
+        "icon": "settings",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "Trigger",
+            "description": "Form Submitted, filtered to the specific event form. A QR scan without a form submission does not fire this trigger."
+          },
+          {
+            "icon": "tag",
+            "color": "indigo",
+            "title": "Tag",
+            "description": "Add Contact Tag: Event | [Event Name] | Resource Requested. This segments leads by event for future reference."
+          },
+          {
+            "icon": "mail",
+            "color": "teal",
+            "title": "Immediate Email",
+            "description": "Subject: Here is your [resource name]. Include a working download link. Deliver what you promised, instantly."
+          }
+        ]
+      },
+      {
+        "title": "Nurture Sequence",
+        "icon": "mail",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "clock",
+            "color": "indigo",
+            "title": "Wait 2 Days",
+            "description": "Give them time to use the resource before following up."
+          },
+          {
+            "icon": "mail",
+            "color": "purple",
+            "title": "Email 2",
+            "description": "One related tip plus a simple question. Keep it helpful, not salesy."
+          },
+          {
+            "icon": "clock",
+            "color": "indigo",
+            "title": "Wait 3 More Days",
+            "description": "Space out messages to avoid overwhelming."
+          },
+          {
+            "icon": "mail",
+            "color": "cyan",
+            "title": "Email 3",
+            "description": "Offer the booking link to a relevant introductory conversation. Make it optional, not demanding."
+          }
+        ]
+      },
+      {
+        "title": "Protections and Best Practices",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Verify Permissions",
+            "description": "Confirm opt-in permissions before sending marketing messages. Include unsubscribe controls."
+          },
+          {
+            "icon": "settings",
+            "color": "indigo",
+            "title": "Stop on Reply",
+            "description": "Configure the workflow to stop or branch on reply. A reply indicates engagement that deserves a human response."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Avoid Duplicates",
+            "description": "Do not send duplicate emails from both Form Autoresponder and Workflow. Choose one delivery method."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Test Before Publishing",
+            "description": "Test on an internal email. Confirm delivery, contact tag, and later actions. Use shortened test waits, then restore real delays."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "The follow-up workflow is where promises are kept. Deliver the resource instantly, tag the lead for segmentation, nurture with helpful content, and invite a conversation only after providing value. A workflow that delivers on its promises builds trust; one that spams destroys it.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create the Workflow",
+        "description": "Navigate to Automation → Workflows and create a new workflow named M22 | [Event] | Speaker Follow-Up."
+      },
+      {
+        "number": 2,
+        "title": "Add Trigger and Actions",
+        "description": "Add Form Submitted trigger filtered to your specific form. Add tag, immediate email, waits, and nurture emails."
+      },
+      {
+        "number": 3,
+        "title": "Configure Protections",
+        "description": "Add stop-on-reply, unsubscribe controls, and verify no duplicate delivery from Form Autoresponder."
+      },
+      {
+        "number": 4,
+        "title": "Test Thoroughly",
+        "description": "Test on an internal email. Confirm delivery, tag, and later actions. Use shortened test waits if needed."
+      }
+    ],
+    "nextLessonTitle": "Add a Booking Calendar",
+    "quizzes": [
+      {
+        "question": "What trigger should start the resource delivery workflow?",
+        "options": [
+          {
+            "option_text": "QR Code Scanned",
+            "is_correct": false
+          },
+          {
+            "option_text": "Appointment Booked",
+            "is_correct": false
+          },
+          {
+            "option_text": "Form Submitted, filtered to the specific event form",
+            "is_correct": true
+          },
+          {
+            "option_text": "Contact Created",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Use Form Submitted filtered to the specific event form. A QR scan without a form submission does not fire this trigger. Only form submissions indicate genuine interest."
+      },
+      {
+        "question": "Why should you avoid duplicate email delivery from both Form Autoresponder and Workflow?",
+        "options": [
+          {
+            "option_text": "It costs more to send two emails",
+            "is_correct": false
+          },
+          {
+            "option_text": "HighLevel does not allow both to be active",
+            "is_correct": false
+          },
+          {
+            "option_text": "Receiving the same email twice looks unprofessional and annoys contacts",
+            "is_correct": true
+          },
+          {
+            "option_text": "Duplicate emails are required for deliverability",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Duplicate delivery looks unprofessional and annoys contacts. Choose one method: either the Form Autoresponder or the Workflow, not both."
+      },
+      {
+        "question": "What should happen when a contact replies to a workflow email?",
+        "options": [
+          {
+            "option_text": "Continue sending automated messages as planned",
+            "is_correct": false
+          },
+          {
+            "option_text": "Automatically book an appointment for them",
+            "is_correct": false
+          },
+          {
+            "option_text": "Stop or branch the workflow to allow human response",
+            "is_correct": true
+          },
+          {
+            "option_text": "Send them a discount code immediately",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A reply indicates engagement that deserves a human response. Configure the workflow to stop or branch on reply so you can respond personally rather than sending more automated messages."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 8,
+    "slug": "m22-add-booking-calendar",
+    "title": "Add a Booking Calendar",
+    "moduleWeek": 22,
+    "moduleName": "Turn a Speaking Engagement into New Business",
+    "learningGoal": "Create a simple booking calendar that lets interested people choose a time voluntarily, and integrate it into the thank-you page and follow-up emails.",
+    "sections": [
+      {
+        "title": "Calendar Setup",
+        "icon": "calendar",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "search",
+            "color": "blue",
+            "title": "Menu Path",
+            "description": "Calendars → Calendar Settings → + New Calendar (or Settings → Calendars in some layouts)"
+          },
+          {
+            "icon": "clock",
+            "color": "indigo",
+            "title": "Duration",
+            "description": "Create a 15- or 20-minute Personal Booking calendar. Short enough to feel low-commitment, long enough to be useful."
+          },
+          {
+            "icon": "settings",
+            "color": "purple",
+            "title": "Configuration",
+            "description": "Set host, availability, location or video connection, booking rules, and confirmation settings."
+          },
+          {
+            "icon": "link",
+            "color": "cyan",
+            "title": "Share Link",
+            "description": "Use Share to copy the permanent booking link. This is what you will put on the thank-you page and in emails."
+          }
+        ]
+      },
+      {
+        "title": "Integration Points",
+        "icon": "link",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Thank-You Page",
+            "description": "Put the booking link on the thank-you page as a separate optional button. Do not make it the primary action."
+          },
+          {
+            "icon": "mail",
+            "color": "teal",
+            "title": "Follow-Up Email",
+            "description": "Include the booking link in Email 3 of the nurture sequence. Present it as an option, not a requirement."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Test Booking",
+            "description": "Test a time on your phone and then cancel the test appointment. Verify the confirmation email and calendar entry work correctly."
+          }
+        ]
+      },
+      {
+        "title": "Important Principles",
+        "icon": "warning",
+        "color": "amber",
+        "items": [
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Voluntary Choice",
+            "description": "The attendee chooses a time. Do not use the workflow Book Appointment action to place attendees into appointments without their choosing."
+          },
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Optional Not Required",
+            "description": "Booking is always optional. Some people will want the resource without a call. Respect their choice."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Working Availability",
+            "description": "Keep your calendar updated. Nothing destroys trust faster than booking a time that the host cannot honor."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A booking calendar is an invitation, not an assignment. Let interested people choose a time that works for them. Make it optional, keep it updated, and present it as a natural next step rather than a requirement. The best bookings come from people who genuinely want to talk, not from those who feel pressured.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Create the Calendar",
+        "description": "Navigate to Calendars and create a 15- or 20-minute booking calendar with your availability."
+      },
+      {
+        "number": 2,
+        "title": "Copy the Share Link",
+        "description": "Use the Share feature to copy the permanent booking link."
+      },
+      {
+        "number": 3,
+        "title": "Add to Thank-You Page and Email",
+        "description": "Put the link on the thank-you page and in Email 3 of the nurture sequence."
+      },
+      {
+        "number": 4,
+        "title": "Test and Verify",
+        "description": "Book a test appointment on your phone, verify confirmation, then cancel. Record the URL in your workbook."
+      }
+    ],
+    "nextLessonTitle": "Rehearse, Launch, and Measure",
+    "quizzes": [
+      {
+        "question": "How long should the booking calendar appointment be?",
+        "options": [
+          {
+            "option_text": "As short as possible — 5 minutes is ideal",
+            "is_correct": false
+          },
+          {
+            "option_text": "It depends on the speaker's usual rate",
+            "is_correct": false
+          },
+          {
+            "option_text": "15 or 20 minutes",
+            "is_correct": true
+          },
+          {
+            "option_text": "At least one hour to cover everything",
+            "is_correct": false
+          }
+        ],
+        "explanation": "A 15- or 20-minute calendar works best. It is short enough to feel low-commitment but long enough to be genuinely useful. Longer durations create resistance; shorter durations feel rushed."
+      },
+      {
+        "question": "Should you automatically book appointments for attendees using a workflow action?",
+        "options": [
+          {
+            "option_text": "Only for attendees who downloaded the resource",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only if they provided phone number",
+            "is_correct": false
+          },
+          {
+            "option_text": "Yes, it saves time and ensures follow-up",
+            "is_correct": false
+          },
+          {
+            "option_text": "No, the attendee must choose a time voluntarily",
+            "is_correct": true
+          }
+        ],
+        "explanation": "Never use the workflow Book Appointment action to place attendees into appointments without their choosing. The attendee must select a time voluntarily. Auto-booking without consent is disrespectful and counterproductive."
+      },
+      {
+        "question": "Where should you place the booking link?",
+        "options": [
+          {
+            "option_text": "In every message you send",
+            "is_correct": false
+          },
+          {
+            "option_text": "On the thank-you page and in the nurture sequence email",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only in the first email immediately after form submission",
+            "is_correct": false
+          },
+          {
+            "option_text": "Only on your main website",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Place the booking link on the thank-you page as an optional next step, and include it in Email 3 of the nurture sequence. This gives people multiple chances to book without feeling pressured."
+      }
+    ]
+  },
+  {
+    "lessonNumber": 9,
+    "slug": "m22-rehearse-launch-measure",
+    "title": "Rehearse, Launch, and Measure",
+    "moduleWeek": 22,
+    "moduleName": "Turn a Speaking Engagement into New Business",
+    "learningGoal": "Complete a full end-to-end test of the speaker-to-client system and establish metrics to measure whether the talk is producing business opportunities.",
+    "sections": [
+      {
+        "title": "The Dry Run",
+        "icon": "checklist",
+        "color": "blue",
+        "items": [
+          {
+            "icon": "target",
+            "color": "blue",
+            "title": "Project the QR",
+            "description": "Display the QR slide on a screen or projector. Verify it is visible and scannable from a realistic distance."
+          },
+          {
+            "icon": "search",
+            "color": "cyan",
+            "title": "Scan and Check",
+            "description": "Scan with a phone, check the capture page loads, submit the form, and verify the contact and tag appear."
+          },
+          {
+            "icon": "mail",
+            "color": "teal",
+            "title": "Receive Resource",
+            "description": "Confirm the resource email arrives with working download link. Check formatting and personalization."
+          },
+          {
+            "icon": "calendar",
+            "color": "indigo",
+            "title": "Test Booking",
+            "description": "Open the booking link, choose a time, and confirm the calendar works. Cancel the test appointment afterward."
+          },
+          {
+            "icon": "settings",
+            "color": "purple",
+            "title": "Check Exits",
+            "description": "Verify workflow exit rules and unsubscribe function correctly. Test reply handling if configured."
+          }
+        ]
+      },
+      {
+        "title": "Metrics to Track",
+        "icon": "target",
+        "color": "purple",
+        "items": [
+          {
+            "icon": "info",
+            "color": "blue",
+            "title": "Audience Size",
+            "description": "Estimated number of attendees. This is your baseline for all other metrics."
+          },
+          {
+            "icon": "search",
+            "color": "cyan",
+            "title": "QR Scans",
+            "description": "How many times the QR was scanned. Note: scans indicate interest, not automatically individual leads."
+          },
+          {
+            "icon": "check",
+            "color": "green",
+            "title": "Form Submissions",
+            "description": "How many people completed the form. This is your actual lead count."
+          },
+          {
+            "icon": "mail",
+            "color": "teal",
+            "title": "Emails Delivered",
+            "description": "How many resource emails were successfully delivered."
+          },
+          {
+            "icon": "calendar",
+            "color": "indigo",
+            "title": "Appointments Booked",
+            "description": "How many people chose a time on your calendar."
+          },
+          {
+            "icon": "star",
+            "color": "amber",
+            "title": "Clients Gained",
+            "description": "How many appointments converted to paying clients."
+          }
+        ]
+      },
+      {
+        "title": "Example Conversion",
+        "icon": "star",
+        "color": "teal",
+        "items": [
+          {
+            "icon": "info",
+            "color": "teal",
+            "title": "Sample Numbers",
+            "description": "100 attendees, 30 scans, 20 form submissions, 4 appointments, 1 new client."
+          },
+          {
+            "icon": "target",
+            "color": "purple",
+            "title": "Key Rate",
+            "description": "Submissions to appointments: 4 ÷ 20 = 20%. This shows how well your nurture sequence converts interest to conversation."
+          },
+          {
+            "icon": "warning",
+            "color": "amber",
+            "title": "Not Guaranteed",
+            "description": "These are example numbers, not promised results. Your results will vary based on audience, talk quality, and offer relevance."
+          }
+        ]
+      }
+    ],
+    "keyPoint": "A system that has not been tested is a system that will fail. Project the QR, scan it, submit the form, receive the email, book a test appointment, and check every exit path. Then track real numbers: audience, scans, submissions, bookings, and clients. Data tells you what to improve; guessing wastes effort.",
+    "actionSteps": [
+      {
+        "number": 1,
+        "title": "Complete the Dry Run",
+        "description": "Walk through every step from QR scan to booking. Fix any issues before the real event."
+      },
+      {
+        "number": 2,
+        "title": "Set Up Tracking",
+        "description": "Prepare a simple scoreboard to record audience size, scans, submissions, emails delivered, bookings, and clients."
+      },
+      {
+        "number": 3,
+        "title": "Fill in the Event Scoreboard",
+        "description": "After the event, record actual numbers in your workbook. Calculate conversion rates and identify what to improve."
+      }
+    ],
+    "nextLessonTitle": "Module 23: Advanced Lead Capture Strategies",
+    "quizzes": [
+      {
+        "question": "What is the first step in the dry run?",
+        "options": [
+          {
+            "option_text": "Project the QR slide and verify it is scannable from a realistic distance",
+            "is_correct": true
+          },
+          {
+            "option_text": "Send test emails to your entire contact list",
+            "is_correct": false
+          },
+          {
+            "option_text": "Publish the funnel to social media",
+            "is_correct": false
+          },
+          {
+            "option_text": "Book a real appointment with a colleague",
+            "is_correct": false
+          }
+        ],
+        "explanation": "Start by projecting the QR slide and verifying it is visible and scannable. If the QR does not work in real venue conditions, the rest of the system is irrelevant."
+      },
+      {
+        "question": "Which metric shows how well your nurture sequence converts interest to conversation?",
+        "options": [
+          {
+            "option_text": "Emails delivered divided by QR scans",
+            "is_correct": false
+          },
+          {
+            "option_text": "QR scans divided by audience size",
+            "is_correct": false
+          },
+          {
+            "option_text": "Clients gained divided by audience size",
+            "is_correct": false
+          },
+          {
+            "option_text": "Appointments booked divided by form submissions",
+            "is_correct": true
+          }
+        ],
+        "explanation": "Appointments booked ÷ form submissions shows your conversion from lead to conversation. This reveals how well your nurture sequence and offer resonate with interested people."
+      },
+      {
+        "question": "Do QR scans automatically equal individual leads?",
+        "options": [
+          {
+            "option_text": "Yes, every scan creates a new lead record",
+            "is_correct": false
+          },
+          {
+            "option_text": "No, scans indicate interest but do not create leads until the form is submitted",
+            "is_correct": true
+          },
+          {
+            "option_text": "Only if the scanner has an account",
+            "is_correct": false
+          },
+          {
+            "option_text": "Yes, but only on iPhones",
+            "is_correct": false
+          }
+        ],
+        "explanation": "QR scans indicate interest but do not automatically create leads. The same person may scan multiple times. Only form submissions create contact records and trigger workflows."
+      }
+    ]
+  }
+]
