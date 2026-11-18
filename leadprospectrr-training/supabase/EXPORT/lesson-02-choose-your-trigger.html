@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Your Trigger</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen p-8">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold text-slate-900 mb-8">Choose Your Trigger</h1>
+    <div class="space-y-8">
+  <!-- Learning Goal -->
+  <div class="bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl p-6 text-white shadow-lg">
+    <div class="flex items-center gap-3 mb-3">
+      <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      </div>
+      <h3 class="text-lg font-bold">Learning Goal</h3>
+    </div>
+    <p class="text-white/90 text-lg">Identify the right appointment completion trigger and filter it to the correct calendar and status so your follow-up sequence starts at the right moment.</p>
+  </div>
+
+  <!-- Understanding Triggers -->
+  <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-6 border border-blue-100">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+      </div>
+      <h3 class="text-xl font-bold text-slate-900">Understanding Triggers</h3>
+    </div>
+    
+    <div class="space-y-3">
+      
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">What Is a Trigger?</h4>
+          <p class="text-sm text-slate-600">A trigger is the event that starts your workflow. For post-appointment follow-up, you need a trigger that fires when an appointment is confirmed as completed — not just booked.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">Booked vs Completed</h4>
+          <p class="text-sm text-slate-600">A booked appointment does not mean it happened. Your trigger must fire after confirmation that the customer showed up and the appointment was completed successfully.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">The Right Moment</h4>
+          <p class="text-sm text-slate-600">Starting follow-up too early (at booking) wastes effort if the appointment is cancelled. Starting too late misses the window when the experience is fresh.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Setting Up the Appointment Trigger -->
+  <div class="bg-gradient-to-br from-slate-50 to-purple-50 rounded-2xl p-6 border border-purple-100">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      </div>
+      <h3 class="text-xl font-bold text-slate-900">Setting Up the Appointment Trigger</h3>
+    </div>
+    
+    <div class="space-y-3">
+      
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">Find the Appointment Status Trigger</h4>
+          <p class="text-sm text-slate-600">In Automation > Workflows, create a new workflow and add a trigger. Look for 'Appointment Status Changed' or similar, depending on your account version.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">Filter by Calendar</h4>
+          <p class="text-sm text-slate-600">If you have multiple calendars, filter to the specific calendar for this appointment type. This prevents the wrong follow-up from firing.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">Filter by Status</h4>
+          <p class="text-sm text-slate-600">Set the status filter to 'completed', 'showed', or equivalent. This ensures the workflow only runs for appointments that actually happened.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fallback: Manual Tag Trigger -->
+  <div class="bg-gradient-to-br from-slate-50 to-amber-50 rounded-2xl p-6 border border-amber-100">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+      </div>
+      <h3 class="text-xl font-bold text-slate-900">Fallback: Manual Tag Trigger</h3>
+    </div>
+    
+    <div class="space-y-3">
+      
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">When Statuses Are Inconsistent</h4>
+          <p class="text-sm text-slate-600">If your account does not reliably update appointment statuses, use a manual approach: apply a tag like 'appointment-completed' after confirming the appointment happened.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">Tag-Based Trigger</h4>
+          <p class="text-sm text-slate-600">Create a trigger for 'Tag Added' and select your completion tag. This gives you full control over when the follow-up sequence begins.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <div>
+          <h4 class="font-semibold text-slate-900">Document Your Choice</h4>
+          <p class="text-sm text-slate-600">Write down which trigger you chose and why. If you use a manual tag, train your team to apply it consistently after every completed appointment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Key Point -->
+  <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 border-l-4 border-amber-400">
+    <div class="flex items-start gap-4">
+      <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center flex-shrink-0">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold text-amber-900 mb-2">Key Point</h3>
+        <p class="text-amber-800 text-lg">The trigger is the foundation of your follow-up sequence. If it fires at the wrong time or for the wrong appointments, everything that follows is wasted effort. Take time to verify your trigger fires only when appointments are confirmed as completed, and always test with a sample contact before going live.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Action Steps -->
+  <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 border-2 border-emerald-200">
+    <div class="flex items-center gap-3 mb-5">
+      <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+      </div>
+      <h3 class="text-xl font-bold text-emerald-900">Action Steps — Thank Your Customer</h3>
+    </div>
+    
+    <div class="space-y-4">
+      
+      <div class="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+        <div>
+          <p class="font-semibold text-slate-900">Navigate to Automation > Workflows</p>
+          <p class="text-slate-600 text-sm">Create a new workflow for your post-appointment follow-up sequence. Give it a clear name like 'Post-Discovery Follow-Up'.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+        <div>
+          <p class="font-semibold text-slate-900">Add and Configure Your Trigger</p>
+          <p class="text-slate-600 text-sm">Add an appointment status trigger. Filter by the correct calendar and set the status to 'completed' or 'showed'. If statuses are unreliable, plan to use a manual tag instead.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm">
+        <div class="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+        <div>
+          <p class="font-semibold text-slate-900">Write Down Your Trigger and Test Conditions</p>
+          <p class="text-slate-600 text-sm">Document the trigger type, calendar, and status filter. List the test conditions you will use to verify it works correctly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</body>
+</html>

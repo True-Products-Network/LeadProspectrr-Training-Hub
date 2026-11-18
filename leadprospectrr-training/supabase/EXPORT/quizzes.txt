@@ -1,0 +1,183 @@
+MODULE 21 QUIZZES
+================
+
+Question 1: What are the three opportunities from every completed appointment?
+  A. Email, SMS, and phone call
+  B. Rebooking, referral, and next service ✓ CORRECT
+  C. Marketing, sales, and support
+  D. Discovery, proposal, and closing
+
+Explanation: Every completed appointment creates three potential opportunities: a repeat booking from the same customer, a referral to a new prospect, or the purchase of a related service.
+
+---
+
+Question 2: Are these three outcomes guaranteed after every appointment?
+  A. Yes, for appointments longer than 30 minutes
+  B. Only for existing customers, not new prospects
+  C. Yes, if the follow-up sequence is built correctly
+  D. No, they are opportunities to measure, not guaranteed results ✓ CORRECT
+
+Explanation: These are opportunities, not guarantees. The customer may rebook, refer, or buy — or they may do none of these. A good follow-up sequence increases likelihood but cannot force outcomes.
+
+---
+
+Question 3: Why is follow-up more effective than waiting for the customer to reach out?
+  A. Waiting never results in repeat business
+  B. It is always more expensive to acquire new customers
+  C. Customers often intend to rebook or refer but get distracted ✓ CORRECT
+  D. Follow-up is required by law in most industries
+
+Explanation: Many satisfied customers genuinely intend to rebook or refer but become distracted by other priorities. Timely follow-up captures these intentions while the positive experience is still fresh.
+
+---
+
+Question 4: When should the post-appointment follow-up workflow trigger?
+  A. One day before the scheduled appointment
+  B. After the appointment is confirmed as completed or showed ✓ CORRECT
+  C. Only if the customer pays an invoice
+  D. As soon as the appointment is booked
+
+Explanation: The trigger must fire after the appointment is confirmed as completed, not when it is booked. Starting at booking wastes effort if the appointment is cancelled or no-showed.
+
+---
+
+Question 5: Why should you filter the trigger by calendar?
+  A. To avoid contacting the wrong person at the wrong stage ✓ CORRECT
+  B. To reduce the number of workflows in your account
+  C. Calendar filtering is optional and not recommended
+  D. To automatically cancel conflicting appointments
+
+Explanation: Filtering by calendar ensures the follow-up sequence only runs for the specific appointment type you intended. Without this filter, a discovery call follow-up might fire after a support meeting.
+
+---
+
+Question 6: What is the primary purpose of the thank-you message?
+  A. To send a promotional offer
+  B. To confirm value delivered and build goodwill for later follow-up ✓ CORRECT
+  C. To immediately ask for a referral
+  D. To request payment for the appointment
+
+Explanation: The thank-you message confirms the value of the appointment, reinforces what was discussed, and builds goodwill. This sets a positive tone that makes later rebooking, referral, and offer messages feel natural.
+
+---
+
+Question 7: When should the thank-you message be sent?
+  A. One week after the appointment
+  B. Only if the customer does not rebook within 48 hours
+  C. Within a few hours of the completed appointment ✓ CORRECT
+  D. Before the appointment as a reminder
+
+Explanation: The thank-you should arrive within a few hours while the appointment is still fresh. Delay too long and it feels like an afterthought rather than a genuine expression of appreciation.
+
+---
+
+Question 8: Which channel is most commonly used for thank-you messages?
+  A. Email, with SMS as an alternative when consent exists ✓ CORRECT
+  B. Phone call within 30 minutes
+  C. Social media direct message
+  D. Postal mail
+
+Explanation: Email is the standard channel for thank-you messages because it allows for longer content, attachments, and links while feeling less intrusive than SMS. SMS can work if the customer has explicitly consented to text messages.
+
+---
+
+Question 9: Why is rebooking typically easier than acquiring a new customer?
+  A. It requires no marketing budget
+  B. Rebooking is always free for the customer
+  C. The customer already knows, likes, and trusts you ✓ CORRECT
+  D. New customers are not valuable
+
+Explanation: Rebooking an existing customer is easier because they already have a relationship with you. They understand your value and have experienced your service firsthand, removing the trust-building phase required with new prospects.
+
+---
+
+Question 10: How long should you wait after the thank-you message before sending the rebooking invitation?
+  A. Immediately after the thank-you
+  B. Approximately one day ✓ CORRECT
+  C. One week
+  D. Only if they do not rebook on their own
+
+Explanation: Wait approximately one day after the thank-you message. This gives the customer breathing room without letting too much time pass. Immediate rebooking feels pushy; waiting too long lets the positive experience fade.
+
+---
+
+Question 11: What should you include in the rebooking message?
+  A. One clear calendar link and the value of the next session ✓ CORRECT
+  B. Multiple calendar links for flexibility
+  C. A discount code for first-time customers
+  D. A request for payment upfront
+
+Explanation: Include one clear calendar link to remove friction, and explain the value of the next session to give the customer a reason to return. Multiple links create decision paralysis; a single, direct path works best.
+
+---
+
+Question 12: When is the best time to ask for a referral?
+  A. After a positive experience when the customer is satisfied ✓ CORRECT
+  B. In every message you send
+  C. Only after the customer has booked three times
+  D. Immediately at the start of the appointment
+
+Explanation: Only ask for referrals after a positive experience. If the appointment did not go well, asking for introductions feels tone-deaf. The referral request should come when the customer is most satisfied with your service.
+
+---
+
+Question 13: How many referral requests should you include in your follow-up sequence?
+  A. One in every message for maximum results
+  B. None — referrals should only happen organically
+  C. One well-timed request is enough ✓ CORRECT
+  D. At least three to ensure they see it
+
+Explanation: One well-timed referral request is enough. Repeatedly asking for introductions feels desperate and can damage the customer relationship. A single, respectful ask at the right moment is far more effective.
+
+---
+
+Question 14: What should the next-service offer feel like to the customer?
+  A. A condition for receiving future appointments
+  B. An invitation to continue making progress on their goals ✓ CORRECT
+  C. A limited-time discount they cannot refuse
+  D. A mandatory upgrade they must purchase
+
+Explanation: The next-service offer should feel like an invitation to continue progress, not a demand. When the service is genuinely relevant and presented respectfully, customers appreciate the suggestion rather than feeling pressured.
+
+---
+
+Question 15: How long should you wait after the referral request before sending the next-offer message?
+  A. Only if they do not respond to the referral request
+  B. One week
+  C. Immediately after the referral request
+  D. Approximately two days ✓ CORRECT
+
+Explanation: Wait approximately two days after the referral request. This spaces out your messages and gives each one room to breathe. Sending messages too close together feels overwhelming and reduces engagement.
+
+---
+
+Question 16: Why are stop conditions essential in a follow-up workflow?
+  A. They reduce the total number of messages sent
+  B. They prevent irrelevant messages after the customer takes action ✓ CORRECT
+  C. They are required by law in all countries
+  D. They make the workflow run faster
+
+Explanation: Stop conditions prevent redundant or irrelevant messages. If a customer already rebooked, they should not receive another rebooking invitation. Stop conditions respect customer actions and protect the relationship.
+
+---
+
+Question 17: What should you do when a customer opts out or unsubscribes?
+  A. Immediately stop all promotional messages and honour their preferences ✓ CORRECT
+  B. Continue sending messages on a different channel
+  C. Send one final message asking why they unsubscribed
+  D. Add them to a different workflow instead
+
+Explanation: When a customer opts out, immediately stop all promotional messages and honour their preferences without exception. Continuing to message someone who unsubscribed damages trust and may violate regulations.
+
+---
+
+Question 18: Why should you test the workflow with a sample contact before going live?
+  A. Sample contacts are required by GoHighLevel
+  B. Testing is only needed for complex workflows
+  C. Testing is a waste of time for simple sequences
+  D. To verify triggers, timing, content, links, and stop conditions ✓ CORRECT
+
+Explanation: Testing with a sample contact lets you experience the sequence as a customer would. You can verify timing, check content and personalization, test all links, and confirm stop conditions work before real contacts enter the workflow.
+
+---
+
